@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The final <b>redacted evidence</b> package separates artifacts carrying BL-LANTERN-9 from physical-access and support findings that still need attribution. That distinction protects both the investigation and the people who reported it.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Asha Moreno:</b> Close the review with precise findings, protected identities, and explicit open questions."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The final <b>redacted evidence</b> package keeps the marker-linked artifacts together but does not force every later report under the same attribution. A useful map marks its unknown territory.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> The debrief preserves the patterns without pretending every link is proven."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The public-facing <b>redacted evidence</b> can name verified patterns and safe actions while removing identities, authentication data, live lures, and internal access routes.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> The debrief can inform the public without exposing targeted people or publishing an attack map."
+    }
+  ],
+  "taskID": "ismg6860_u03_q22_t00_finale",
+  "parentQuestID": "ismg6860_u03_q22",
+  "articleID": "u03_safe_reporting",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

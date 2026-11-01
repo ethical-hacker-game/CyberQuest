@@ -1,0 +1,23 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Every boundary in this engagement comes from written authorization. Asterlink approved one CIDR block for the first pass. Traffic outside it would be unauthorized and could create an incident.",
+      "taskInstructions": "Open the scope sheet email and type the approved CIDR, including its prefix length.",
+      "taskQuestion": "What CIDR range is authorized for the first scan?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. 10.42.18.0/24 is the approved range for the first scan.",
+      "correctAnswers": [
+        "10.42.18.0/24"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u02_q02_t01",
+  "parentQuestID": "ismg6860_u02_q02",
+  "articleID": "u02_authorized_scanning",
+  "mailsOnStart": [
+    "ismg6860_u02_q02_t01_scope_sheet"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

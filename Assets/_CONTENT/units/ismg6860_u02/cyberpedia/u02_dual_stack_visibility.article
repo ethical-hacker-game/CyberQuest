@@ -1,0 +1,12 @@
+{
+  "articleID": "u02_dual_stack_visibility",
+  "videoURL": null,
+  "title": "Dual-Stack Network Visibility",
+  "content": "A dual-stack system uses both IPv4 and IPv6. The two address families provide separate routes and exposure paths, so an IPv4-only inventory or scan can miss services that remain reachable over IPv6. Security controls and monitoring must cover both.\n\nIPv6 is not simply a longer form of IPv4. It has its own addressing, neighbor discovery, router advertisements, routing, and firewall rules. A host may receive an IPv6 address automatically even when a team primarily manages it through IPv4. Conversely, discovering an IPv6 address does not mean every IPv4 permission automatically authorizes scanning an entire IPv6 prefix. Scope should be confirmed in terms of the asset, address family, and permitted range.\n\n<b>Validate both paths</b>\n\nBuild inventories that associate each asset with all known addresses. Review DNS, router and neighbor information, endpoint configuration, and approved packet captures. Test only authorized targets with tools configured explicitly for the correct address family. Compare listening services and access rules across IPv4 and IPv6; a service restricted on one path may be exposed on the other.\n\nMonitoring needs the same parity. Ensure firewalls, sensors, logs, and alert rules process IPv6 rather than silently ignoring it. Treat router advertisements and other IPv6 control traffic as useful context, but verify ownership before drawing conclusions from an address alone.\n\nThe goal is consistent policy, not merely discovering more addresses. A dual-stack asset should have equivalent ownership, segmentation, least-privilege access, and evidence quality across both address families.",
+  "links": [
+    "IPv4-only scanning",
+    "router advertisement",
+    "dual-stack",
+    "both address families"
+  ]
+}

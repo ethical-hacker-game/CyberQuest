@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "zonetransferkit",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Before I write a word about the plant boundary, I need to know what our own nameserver says about us. It holds every name in <b>hallowayprecision.com</b>, and copying that zone is supposed to be a private handover between it and our secondaries.\n\nThere is a kit in the lab built for making that request properly, and for checking what comes back against the address space we actually pay for.",
+      "taskInstructions": "Open the Lab panel and review the Zone Transfer Kit capability and cost.",
+      "taskQuestion": "Unlock the Zone Transfer Kit in the Lab panel.",
+      "taskCompleteText": "<b>Dana Osei:</b> Zone Transfer Kit is ready. Test the transfer and compare returned addresses with our documented allocations."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "zonetransferkit",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Walking a network host by host is for people who bill by the hour. A nameserver that was never told which machines may copy its zone will recite the whole thing to anyone who asks in the right dialect, and I have yet to meet a plant that got that setting right.\n\nWhat you want is the kit that makes that request cleanly and then tells you which of the answers are genuinely theirs.",
+      "taskInstructions": "Open the Lab panel and review the Zone Transfer Kit capability and cost.",
+      "taskQuestion": "Unlock the Zone Transfer Kit in the Lab panel.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Zone Transfer Kit is ready. Pull the current zone and separate confirmed records from ownership assumptions."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "zonetransferkit",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> A published name outside Halloway's allocation would expand the investigation, but it would not by itself prove a route into the plant. Zone Transfer Kit will give us the records needed for a precise follow-up.",
+      "taskInstructions": "Open the Lab panel and review the Zone Transfer Kit capability and cost.",
+      "taskQuestion": "Unlock the Zone Transfer Kit in the Lab panel.",
+      "taskCompleteText": "<b>Priya Nandan:</b> Zone Transfer Kit is ready. Document the returned records before drawing conclusions about the endpoints."
+    }
+  ],
+  "taskID": "ismg6860_u05_q08_t00_unlock_zonetransferkit",
+  "parentQuestID": "ismg6860_u05_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u05_q14",
+  "cityIndex": 7338,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q14_t01",
+    "ismg6860_u05_q14_t02",
+    "ismg6860_u05_q14_t03_sequence",
+    "ismg6860_u05_q14_t04"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Web-Based Enumeration",
+      "questDescription": "Dana Osei has no usable BridgeWorks contract archive. Enumerate Halloway's public site for legacy content that can establish publication and dissolution milestones without substituting for the missing agreement.",
+      "questCompleteText": "<b>Dana Osei:</b> The unlinked portal remained online after BridgeWorks filed for dissolution and still exposes two author usernames. The contract end date and account status require separate records.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Web-Based Enumeration",
+      "questDescription": "Reyes Calloway points at the public site. Forgotten content is the most reliable kind of disclosure, because nobody is maintaining what nobody remembers.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The legacy portal is still served and exposes dated content plus two usernames. It maps the public footprint, not valid credentials or a complete contract history.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Web-Based Enumeration",
+      "questDescription": "Priya Nandan wants the public timeline documented precisely. Use the legacy portal to establish what remained published after BridgeWorks dissolved without inventing an approval or access history.",
+      "questCompleteText": "<b>Priya Nandan:</b> The public record shows the portal persisted after the vendor's dissolution notice. It does not show who could authenticate or when the contract formally ended.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

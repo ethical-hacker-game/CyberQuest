@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The record lists an established creation date and the registrar.",
+        "The domain was created recently and registrant details are privacy-redacted.",
+        "The record lists a common authoritative name server.",
+        "The record lists a renewal date and domain status code."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Marcus:</b> The WHOIS record for <b>securefund-login.com</b> lists a creation date of <b>2026-09-20</b> and registrant details redacted by a privacy service. Both fields need cautious interpretation.",
+      "taskInstructions": "Review the linked <b>domain lookup</b> guidance, then identify the combination that warrants follow-up without proving malicious intent.",
+      "taskQuestion": "Which registration details raise a risk signal?",
+      "taskCompleteText": "<b>Marcus:</b> Recent creation plus privacy-redacted registrant details is worth correlating with the message and page evidence. Neither field alone proves the domain is malicious."
+    }
+  ],
+  "taskID": "ismg6860_u01_q27_t04",
+  "parentQuestID": "ismg6860_u01_q27",
+  "articleID": "u01_domain_registration_intelligence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

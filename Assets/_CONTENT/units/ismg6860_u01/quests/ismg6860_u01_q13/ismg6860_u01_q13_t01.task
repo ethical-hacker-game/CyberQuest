@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Assume the release schedule was stolen and notify the market immediately.",
+        "Assume customer records were taken and reset every customer account.",
+        "Preserve the traffic evidence and determine what data transferred, its sensitivity, and the affected systems before ranking impact.",
+        "Wait for the suspected actor to describe what was taken."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Piotr Novak:</b> I'm Piotr Novak, head of network operations at ByteSystems. We recorded an unusual outbound spike before the fall launch, but we have not confirmed which files transferred or whether the event involved personal data, credentials, or product material. Leadership wants an impact rating now.",
+      "taskInstructions": "Choose the first triage step that supports an evidence-based impact assessment.",
+      "taskQuestion": "What should ByteSystems establish before ranking the incident's impact?",
+      "taskCompleteText": "<b>Piotr Novak:</b> Correct. The traffic evidence, transferred data categories, sensitivity, and affected systems determine impact and notification obligations; speculation about one artifact does not."
+    }
+  ],
+  "taskID": "ismg6860_u01_q13_t01",
+  "parentQuestID": "ismg6860_u01_q13",
+  "articleID": "u01_incident_response",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

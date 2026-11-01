@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Now examine why the lures work. Curiosity, <b>fear</b>, urgency, and the need to belong can narrow attention without making the target responsible. Start with a warranty call that threatens a loss.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Asha Moreno:</b> Separate the emotional pressure from the action the caller requests."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Look past the delivery channel to the pressure underneath it: curiosity, <b>fear</b>, urgency, and belonging. The next call manufactures a threatened loss to make its demand feel necessary.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> Identify the invented loss, the deadline, and the requested information."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Effective warnings explain why a lure feels persuasive without blaming its target. Start with <b>fear</b>: a warranty call that threatens a loss while Riley is preparing for a shift.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> Document the pressure and give people a safe way to verify the claim."
+    }
+  ],
+  "taskID": "ismg6860_u03_q12_t00_voice",
+  "parentQuestID": "ismg6860_u03_q12",
+  "articleID": "u03_human_triggers",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

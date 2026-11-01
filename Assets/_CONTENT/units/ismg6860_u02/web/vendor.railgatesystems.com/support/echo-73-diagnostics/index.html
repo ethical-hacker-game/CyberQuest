@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECHO-series diagnostics node placement: RailGate Support</title>
+  <script src="../../../cq-bridge.js"></script>
+  <style>
+    :root{
+      --ink:#1e2733;--muted:#63707f;--line:#e3e8ee;--bg:#f4f6f9;--rail:#123a5e;--railed:#0e2f4d;
+      --accent:#0c7c59;--accentbg:#e7f5ef;--warn:#b4341f;--warnbg:#fdecea;--card:#fff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    a{color:#146aa8;text-decoration:none}
+    code{font-family:Consolas,"Courier New",monospace;background:#eef2f6;border:1px solid #dde4ec;border-radius:4px;padding:1px 6px;font-size:12.5px;color:#153048}
+    /* header */
+    header{background:var(--rail);color:#fff}
+    .bar{max-width:1080px;margin:auto;display:flex;align-items:center;gap:14px;padding:14px 24px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px}
+    .brand .mk{width:26px;height:26px;border-radius:6px;background:#fff;position:relative}
+    .brand .mk:before{content:"";position:absolute;left:6px;top:6px;right:6px;bottom:6px;border:3px solid var(--rail);border-radius:2px}
+    .brand small{font-weight:600;font-size:11px;color:#a9c6df;letter-spacing:.5px}
+    .bar nav{margin-left:auto;display:flex;gap:18px;font-size:14px}
+    .bar nav a{color:#cfe0ef;font-weight:600}
+    .subbar{background:var(--railed);color:#bcd3e6;font-size:13px}
+    .subbar .in{max-width:1080px;margin:auto;padding:9px 24px}
+    /* layout */
+    .shell{max-width:1080px;margin:24px auto;padding:0 24px;display:grid;grid-template-columns:1fr 280px;gap:26px}
+    .crumb{color:var(--muted);font-size:12.5px;margin-bottom:12px}
+    .crumb a{color:var(--muted)}
+    article{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px 30px}
+    article h1{font-size:24px;margin:0 0 12px}
+    .meta{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:12.5px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+    .meta b{color:#3a4756}
+    .applies{display:inline-block;font-size:11px;font-weight:700;color:#1d5b45;background:var(--accentbg);border:1px solid #bfe3d3;border-radius:20px;padding:3px 11px}
+    article h2{font-size:16px;margin:24px 0 8px}
+    article p{color:#37424f}
+    .warn{border:1px solid #f0c3bd;border-left:4px solid var(--warn);background:var(--warnbg);border-radius:8px;padding:14px 16px;margin:18px 0}
+    .warn b{color:#9a2a18}
+    /* accordion */
+    .acc{border:1px solid var(--line);border-radius:8px;margin:12px 0;overflow:hidden}
+    .acc>summary{cursor:pointer;padding:13px 16px;font-weight:700;font-size:14px;background:#fafbfc;list-style:none;display:flex;align-items:center}
+    .acc>summary::-webkit-details-marker{display:none}
+    .acc>summary:after{content:"+";margin-left:auto;color:var(--muted);font-weight:700}
+    .acc[open]>summary:after{content:"–"}
+    .acc .body{padding:2px 16px 15px}
+    ul{margin:8px 0;padding-left:20px} li{margin:4px 0;color:#37424f}
+    .steps{margin:8px 0;padding-left:20px} .steps li{margin:6px 0}
+    /* sidebar */
+    aside .box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:18px}
+    aside h3{font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin:0 0 10px}
+    aside a{display:block;font-size:13.5px;padding:6px 0;border-bottom:1px solid #eef1f5;color:#215f8f}
+    aside a:last-child{border-bottom:none}
+    .helpful{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted)}
+    .helpful button{border:1px solid var(--line);background:#fff;border-radius:6px;padding:5px 13px;font-weight:700;cursor:pointer;color:#3a4756}
+    footer{border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;background:#fff}
+    footer .in{max-width:1080px;margin:auto;padding:18px 24px;display:flex;flex-wrap:wrap;gap:6px 20px}
+    footer .sp{margin-left:auto}
+    @media(max-width:820px){.shell{grid-template-columns:1fr}.bar nav{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div class="brand"><span class="mk"></span><span>RailGate Systems<br><small>Support &amp; Knowledge Base</small></span></div>
+      <nav><a href="#">Products</a><a href="#">Downloads</a><a href="#">Support</a><a href="#">Contact</a></nav>
+    </div>
+    <div class="subbar"><div class="in">Knowledge Base · Field diagnostics · ECHO-series appliances</div></div>
+  </header>
+
+  <div class="shell">
+    <div>
+      <div class="crumb"><a href="#">Support</a> › <a href="#">ECHO series</a> › Diagnostics node placement</div>
+      <article>
+        <h1>ECHO-series diagnostics node: network placement &amp; the TCP/8080 console</h1>
+        <div class="meta">
+          <span>Article ID <b>KB-ECHO-0731</b></span>
+          <span>Last updated <b>3 weeks ago</b></span>
+          <span>Applies to <span class="applies">ECHO-series (ECHO-70 … ECHO-79)</span></span>
+        </div>
+
+        <p>ECHO-series appliances ship with an on-device diagnostics console used by field engineers during
+        commissioning and maintenance. This article describes where an ECHO node should sit on the customer
+        network and how to handle its diagnostics interface before a production launch.</p>
+
+        <div class="warn">
+          <b>Before production:</b> the legacy diagnostics console listens on <code>TCP/8080</code>. It is intended
+          for the vendor-maintenance segment only. Disable or firewall it before go-live: it must not be reachable
+          from public-facing DMZ services, and the appliance should never initiate sessions into ticketing or
+          fare-validation networks.
+        </div>
+
+        <h2>Recommended placement</h2>
+        <p>Install ECHO nodes on a dedicated vendor-maintenance segment, isolated from rider-facing systems.
+        Diagnostics traffic should stay inside that segment; production data paths belong to the application
+        network, not the maintenance appliance.</p>
+
+        <details class="acc" open>
+          <summary>Ports the appliance exposes</summary>
+          <div class="body">
+            <ul>
+              <li><code>443/tcp</code>: DeviceControl API (TLS). Used by the RailGate management platform.</li>
+              <li><code>8080/tcp</code>: <b>Diagnostics console (HTTP)</b>. Maintenance only; restrict before production.</li>
+              <li><code>9100/tcp</code>: Device telemetry. Keep filtered from general network access.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary>Hardening the diagnostics console before launch</summary>
+          <div class="body">
+            <ol class="steps">
+              <li>Confirm the ECHO node is on the vendor-maintenance segment only.</li>
+              <li>Disable the <code>TCP/8080</code> console, or restrict it to the maintenance management host.</li>
+              <li>Verify the appliance cannot route to ticketing / fare-validation addresses.</li>
+              <li>Re-check firmware: report the running diagnostics build with your support case.</li>
+            </ol>
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary>Segmentation notes</summary>
+          <div class="body">
+            <p>ECHO diagnostics nodes are maintenance devices. A node that can reach a ticketing address, or that
+            answers on <code>8080</code> from a public DMZ, indicates a segmentation gap that should be corrected
+            before the network carries rider traffic.</p>
+          </div>
+        </details>
+
+        <div class="helpful"><span>Was this article helpful?</span><button>Yes</button><button>No</button></div>
+      </article>
+    </div>
+
+    <aside>
+      <div class="box">
+        <h3>Related articles</h3>
+        <a href="#">ECHO-series commissioning checklist</a>
+        <a href="#">Reporting the diagnostics firmware build</a>
+        <a href="#">DeviceControl API (443) integration</a>
+        <a href="#">Vendor-maintenance segment design</a>
+      </div>
+      <div class="box">
+        <h3>Need help?</h3>
+        <a href="#">Open a support case</a>
+        <a href="#">Field engineering contacts</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer><div class="in">
+    <span>© RailGate Systems</span><span>Support</span><span>Product security</span><span>Legal</span>
+    <span class="sp">KB-ECHO-0731</span>
+  </div></footer>
+
+  <script>
+    // Progressive enhancement only: <details> works natively without JS; this just lets one
+    // open section collapse others for a tidier read.
+    (function(){
+      var accs=[].slice.call(document.querySelectorAll('details.acc'));
+      accs.forEach(function(d){
+        d.addEventListener('toggle',function(){
+          if(d.open) accs.forEach(function(o){ if(o!==d) o.open=false; });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

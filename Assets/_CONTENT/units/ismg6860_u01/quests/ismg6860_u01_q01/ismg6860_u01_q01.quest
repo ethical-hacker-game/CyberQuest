@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u01_q01",
+  "cityIndex": 6892,
+  "questIconID": "quest_icon_recon_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q01_task1"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Attack Lifecycle Basics",
+      "questDescription": "Samira has sent you an overview of the Cyber Kill Chain. Review it to identify the stage in which an attacker gathers information about a target before attempting access.",
+      "questCompleteText": "<b>Samira:</b> You identified reconnaissance as the information-gathering stage. Understanding this early activity gives defenders a chance to reduce exposure before an attack progresses.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": ""
+    }
+  ]
+}

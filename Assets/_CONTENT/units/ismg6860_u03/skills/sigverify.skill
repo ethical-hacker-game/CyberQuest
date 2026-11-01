@@ -1,0 +1,9 @@
+{
+  "skillID": "sigverify",
+  "skillName": "Signature Verifier",
+  "skillDescription": "A build comparison tool. Places package identifiers, hashes, and signing certificates side by side, so a repackaged application can be separated from the genuine one by evidence rather than by eye.",
+  "price": 3000,
+  "order": 40,
+  "requireTask": true,
+  "lockInDemo": false
+}

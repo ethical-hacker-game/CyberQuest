@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "All accounts including this one log in during normal plant shift hours.",
+        "The account appears on every Unix host in the segment at exactly the same moment each day.",
+        "In this snapshot the Halloway users are within shift hours, while svc_bridgeworks is at 02:41 from 198.51.100.77.",
+        "No other accounts are visible, so no meaningful comparison can be drawn."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Compare the visible Unix sessions across the segment, then inspect the detailed historian entry. Treat the result as a snapshot, not a long-term pattern.",
+      "taskInstructions": "Run <b>rwho</b> in the terminal to list sessions across the segment, then <b>rusers -l 10.30.14.52</b> for the source address of that session.",
+      "taskQuestion": "What does the comparison across hosts show?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. In this snapshot, svc_bridgeworks is the only 02:41 session and rusers lists 198.51.100.77 as its source."
+    },
+    {
+      "answers": [
+        "All accounts including this one log in during normal plant shift hours.",
+        "The account appears on every Unix host in the segment at exactly the same moment each day.",
+        "In this snapshot the Halloway users are within shift hours, while svc_bridgeworks is at 02:41 from 198.51.100.77.",
+        "No other accounts are visible, so no meaningful comparison can be drawn."
+      ],
+      "correctAnswer": 2,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Compare the current sessions and retrieve the detailed source address. One snapshot can show an outlier, but not whether a person or process created it.",
+      "taskInstructions": "Run <b>rwho</b> in the terminal to list sessions across the segment, then <b>rusers -l 10.30.14.52</b> for the source address of that session.",
+      "taskQuestion": "What does the comparison across hosts show?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The snapshot shows a 02:41 outlier sourced from 198.51.100.77; recurrence and operator remain unknown."
+    },
+    {
+      "answers": [
+        "All accounts including this one log in during normal plant shift hours.",
+        "The account appears on every Unix host in the segment at exactly the same moment each day.",
+        "In this snapshot the Halloway users are within shift hours, while svc_bridgeworks is at 02:41 from 198.51.100.77.",
+        "No other accounts are visible, so no meaningful comparison can be drawn."
+      ],
+      "correctAnswer": 2,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Compare the visible session times and record the detailed source address. Keep the conclusion limited to what this snapshot shows.",
+      "taskInstructions": "Run <b>rwho</b> in the terminal to list sessions across the segment, then <b>rusers -l 10.30.14.52</b> for the source address of that session.",
+      "taskQuestion": "What does the comparison across hosts show?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The visible outlier is svc_bridgeworks at 02:41 from 198.51.100.77. The snapshot does not establish a recurring pattern."
+    }
+  ],
+  "taskID": "ismg6860_u05_q13_t02",
+  "parentQuestID": "ismg6860_u05_q13",
+  "articleID": "u05_unix_user_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

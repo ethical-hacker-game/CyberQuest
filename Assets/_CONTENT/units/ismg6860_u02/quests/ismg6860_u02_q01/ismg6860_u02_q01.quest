@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u02_q01",
+  "cityIndex": 4988,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q01_t01",
+    "ismg6860_u02_q01_t02",
+    "ismg6860_u02_q01_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Launch Window",
+      "questDescription": "Mira opens the authorized scan window and frames scanning as evidence-driven reconnaissance under operational pressure.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> The purpose, range, and operational limits are clear. Keep every scan inside them.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    }
+  ]
+}

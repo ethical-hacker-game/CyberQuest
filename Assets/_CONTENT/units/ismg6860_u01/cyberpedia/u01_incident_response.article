@@ -1,0 +1,13 @@
+{
+  "articleID": "u01_incident_response",
+  "videoURL": null,
+  "title": "Incident Response and Evidence",
+  "content": "Incident response is the coordinated process used to detect, analyze, contain, eradicate, and recover from a security incident. The first action is not always to shut everything down. Responders must balance potential damage, service availability, safety, legal duties, and the need to preserve evidence.\n\n<b>Stabilize and document</b>\nUse an approved communication channel, record who reported the event and when, and preserve relevant logs, messages, files, screenshots, and system state. Keep originals unchanged where practical; analyze working copies and record transfers so the evidence remains traceable. Collect only relevant material and protect it from unauthorized access. Avoid speculative accusations in reports.\n\nContainment limits further harm while the team determines scope. Depending on the incident, it may involve isolating a host, disabling an account, blocking a malicious indicator, revoking a secret, or restricting a service. A rushed action can erase volatile evidence or cause unnecessary downtime, so follow prepared procedures and coordinate with system owners. If people, regulated data, extortion, or criminal activity may be involved, engage the organization's legal, privacy, leadership, or law-enforcement contacts as required rather than negotiating or disclosing independently.\n\nAfter containment, remove the cause, close exploited weaknesses, restore systems from trusted sources, monitor for recurrence, and validate normal operation. Finish with a factual timeline, impact assessment, notification record, and lessons learned. Strong incident response is evidence-led and proportionate: it protects people and operations while giving decision-makers enough reliable information to act.",
+  "links": [
+    "preserve evidence",
+    "containment",
+    "forensic evidence",
+    "evidence package",
+    "secure transfer"
+  ]
+}

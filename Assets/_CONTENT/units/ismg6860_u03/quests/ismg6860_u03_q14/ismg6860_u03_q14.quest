@@ -1,0 +1,43 @@
+{
+  "questID": "ismg6860_u03_q14",
+  "cityIndex": 5144,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q14_t00_unlock_metareader",
+    "ismg6860_u03_q14_t01",
+    "ismg6860_u03_q14_t02",
+    "ismg6860_u03_q14_t04_camera_audit",
+    "ismg6860_u03_q14_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Photo With A Route",
+      "questDescription": "Review Riley's public setup photo, document the location and operational details it exposes, and reduce the resulting route risk.",
+      "questCompleteText": "<b>Asha Moreno:</b> The exposed location and route are documented, and the coverage now addresses the risk.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Photo With A Route",
+      "questDescription": "Assess how Riley's public setup photo combines location, timing, badge details, and a staging route into useful reconnaissance.",
+      "questCompleteText": "<b>Felix Rane:</b> The useful reconnaissance is identified, and the exposed route is harder to exploit.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Photo With A Route",
+      "questDescription": "Document what Riley's public setup photo reveals and reduce the exposure without blaming the volunteer who shared it.",
+      "questCompleteText": "<b>Imani Vale:</b> The response addresses the exposed route without shifting responsibility onto Riley.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

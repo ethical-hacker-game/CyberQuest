@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "minigameType": "DataRover",
+      "minigameHeaderText": "Directory Listing Evidence Recovery",
+      "durationOverride": 0,
+      "difficulty": "Hard",
+      "dataRoverSettings": {
+        "packetIntegrity": 3,
+        "shardCount": 7,
+        "patrolSpeedMultiplier": 1.1,
+        "layoutIndex": 0,
+        "shardLabel": "EXPOSED FILE",
+        "patrolLabel": "DETECTION SWEEP"
+      },
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Model how exposed files could be collected while monitoring sweeps the area. This exercise estimates opportunity; it does not prove that anyone downloaded the real archive.",
+      "taskInstructions": "Use WASD or the arrow keys to collect seven <b>EXPOSED FILE</b> shards. Detection sweeps follow fixed routes and cannot see through walls. Three detections end the run.",
+      "taskQuestion": "Complete the directory exposure simulation.",
+      "taskCompleteText": "<b>Mara Voss:</b> Simulation complete. Record it as an impact model, separate from the observed directory listing and access-log evidence."
+    }
+  ],
+  "taskID": "ismg6860_u04_q05_t02_data_rover",
+  "parentQuestID": "ismg6860_u04_q05",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

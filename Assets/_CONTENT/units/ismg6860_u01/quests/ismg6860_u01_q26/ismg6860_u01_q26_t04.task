@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Reset staff passwords now and skip the archive review.",
+        "Delete the live pages again but leave snapshots available.",
+        "Ask the authorized owner to request removal from Wayback.",
+        "Accuse the competitor based on the archived draft alone."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Kent:</b> We found a sensitive draft in an archived snapshot. The live page is already gone, so the owner can use the archive provider's removal process while we check for other public copies.",
+      "taskInstructions": "Review the Cyberpedia guidance on <b>archived snapshots</b> and choose a proportionate immediate response.",
+      "taskQuestion": "What should I recommend to the authorized owner?",
+      "taskCompleteText": "<b>Mara Kent:</b> Recommend that the authorized owner request removal of the sensitive snapshot and check for other copies. Removal requests may not erase copies held elsewhere."
+    }
+  ],
+  "taskID": "ismg6860_u01_q26_t04",
+  "parentQuestID": "ismg6860_u01_q26",
+  "articleID": "u01_web_archives",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

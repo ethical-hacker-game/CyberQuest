@@ -1,0 +1,25 @@
+{
+    "questID":  "ismg6860_u04_q04",
+    "cityIndex":  7168,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q04_t01",
+                    "ismg6860_u04_q04_t02",
+                    "ismg6860_u04_q04_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  true,
+    "variants":  [
+                     {
+                         "persona":  "Universal Persona Content",
+                         "questName":  "Misconfiguration Exploits: Exposed Setup",
+                         "questDescription":  "Validate an exposed setup page without changing application state.",
+                         "questCompleteText":  "Quest complete. The evidence has been recorded for the Northbridge vulnerability assessment.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

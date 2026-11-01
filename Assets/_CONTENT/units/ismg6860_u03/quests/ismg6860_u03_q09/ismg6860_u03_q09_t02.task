@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The invite claims to provide Harborview badge support. Record the organizer's domain so we can compare that claim with its actual source.",
+      "taskInstructions": "Reopen the invite metadata in <b>Mail</b> and type only the domain after the organizer's <b>@</b> sign.",
+      "taskQuestion": "Which domain sent the calendar invite?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: harbor-badge-verify.com, the same external domain used by the West Gate QR lure.",
+      "correctAnswers": ["harbor-badge-verify.com"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The badge-support title is presentation. The organizer domain tells us which infrastructure delivered the invite.",
+      "taskInstructions": "Reopen the invite metadata in <b>Mail</b> and type only the domain after the organizer's <b>@</b> sign.",
+      "taskQuestion": "Which domain sent the calendar invite?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: harbor-badge-verify.com, reused from the West Gate QR lure.",
+      "correctAnswers": ["harbor-badge-verify.com"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A useful warning should name the infrastructure behind the invite, not imply that every standard calendar file is malicious.",
+      "taskInstructions": "Reopen the invite metadata in <b>Mail</b> and type only the domain after the organizer's <b>@</b> sign.",
+      "taskQuestion": "Which domain sent the calendar invite?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: harbor-badge-verify.com. That connects the invite to a specific known lure.",
+      "correctAnswers": ["harbor-badge-verify.com"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q09_t02",
+  "parentQuestID": "ismg6860_u03_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

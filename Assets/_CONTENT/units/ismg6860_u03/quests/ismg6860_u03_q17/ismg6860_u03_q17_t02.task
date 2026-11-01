@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the clothing used to support the visitor's claim of belonging. A specific indicator is more useful than a vague warning about suspicious people.",
+      "taskInstructions": "Reopen <b>Mail</b>, read Theo's door-camera note, and type the two-word clothing description.",
+      "taskQuestion": "What did the intruder wear to look authorized?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: vendor shirt. Clothing supported the claim but did not prove authorization.",
+      "correctAnswers": ["vendor shirt", "vendor t-shirt"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Identify the clothing that made the delivery story more plausible without functioning as an actual credential.",
+      "taskInstructions": "Reopen <b>Mail</b>, read Theo's door-camera note, and type the two-word clothing description.",
+      "taskQuestion": "What did the intruder wear to look authorized?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: vendor shirt. It strengthened the pretext without establishing authorization.",
+      "correctAnswers": ["vendor shirt", "vendor t-shirt"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Clothing is not a credential. Record the specific item that supported the visitor's story so the briefing can focus on verification rather than profiling.",
+      "taskInstructions": "Reopen <b>Mail</b>, read Theo's door-camera note, and type the two-word clothing description.",
+      "taskQuestion": "What did the intruder wear to look authorized?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: vendor shirt. The briefing can distinguish appearance from authorization.",
+      "correctAnswers": ["vendor shirt", "vendor t-shirt"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q17_t02",
+  "parentQuestID": "ismg6860_u03_q17",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

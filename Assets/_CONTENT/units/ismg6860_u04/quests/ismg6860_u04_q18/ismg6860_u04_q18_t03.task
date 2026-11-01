@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Operations needs an immediate sequence for reducing exposure, preserving evidence, correcting the component, and verifying the result.",
+      "taskInstructions": "Use <link=\"u04_struts_rce_response\"><u>the Struts RCE response guidance</u></link> to choose the strongest first response.",
+      "taskQuestion": "What should Northbridge do first?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Contain the exposure, patch or mitigate it, monitor for compromise, and verify the correction.",
+      "answers": [
+        "Wait for the annual maintenance window before applying any mitigation whatsoever.",
+        "Quietly hide the finding from the operations team purely to avoid alarming anyone at all.",
+        "Simply rename the vulnerable service and quietly move along to other unrelated work.",
+        "Isolate the affected service, patch or mitigate it, monitor for indicators, and rescan."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A critical advisory on a public tier makes delay part of the exposure. Choose the response that closes the window and checks whether anyone arrived first.",
+      "taskInstructions": "Use <link=\"u04_struts_rce_response\"><u>the Struts RCE response guidance</u></link> to choose the strongest first response.",
+      "taskQuestion": "What should Northbridge do first?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Isolation, mitigation, monitoring, and rescanning reduce both immediate and residual risk.",
+      "answers": [
+        "Wait for the annual maintenance window before applying any mitigation whatsoever.",
+        "Quietly hide the finding from the operations team purely to avoid alarming anyone at all.",
+        "Simply rename the vulnerable service and quietly move along to other unrelated work.",
+        "Isolate the affected service, patch or mitigate it, monitor for indicators, and rescan."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A critical RCE finding on a resident-facing service requires action before the next routine maintenance window. Choose the response that protects users and preserves evidence.",
+      "taskInstructions": "Use <link=\"u04_struts_rce_response\"><u>the Struts RCE response guidance</u></link> to choose the strongest first response.",
+      "taskQuestion": "What should Northbridge do first?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Rapid containment and verified remediation protect users without hiding uncertainty.",
+      "answers": [
+        "Wait for the annual maintenance window before applying any mitigation whatsoever.",
+        "Quietly hide the finding from the operations team purely to avoid alarming anyone at all.",
+        "Simply rename the vulnerable service and quietly move along to other unrelated work.",
+        "Isolate the affected service, patch or mitigate it, monitor for indicators, and rescan."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q18_t03",
+  "parentQuestID": "ismg6860_u04_q18",
+  "articleID": "u04_struts_rce_response",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

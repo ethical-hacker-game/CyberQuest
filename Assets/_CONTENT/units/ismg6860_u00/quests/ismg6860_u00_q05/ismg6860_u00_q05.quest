@@ -1,0 +1,33 @@
+{
+  "questID": "ismg6860_u00_q05",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_terminal",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u00_q05_t01_open_scanner",
+    "ismg6860_u00_q05_t02_scanner_finding",
+    "ismg6860_u00_q05_t03_scanner_signal"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Scanner Console",
+      "questDescription": "Michele uses the scanner report to show {player} how operations reads scanner evidence: find the issue, ignore noise, and keep the fix reproducible.",
+      "questCompleteText": "Scanner Console complete. Michele has the scanner finding in a form an operations owner can reproduce.",
+      "questCharacterID": "u00_michele",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Scanner Console",
+      "questDescription": "Ana uses the scanner report to show {player} how risk communication reads scanner evidence: name the issue clearly without turning noise into panic.",
+      "questCompleteText": "Scanner Console complete. Ana has a clear finding that can be explained without overstating the evidence.",
+      "questCharacterID": "u00_ana",
+      "appScenarioID": ""
+    }
+  ]
+}

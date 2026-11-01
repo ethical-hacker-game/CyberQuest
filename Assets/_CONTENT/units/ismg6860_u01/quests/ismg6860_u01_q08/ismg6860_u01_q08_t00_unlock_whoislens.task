@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "whoislens",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Taylor:</b> Registration records can change and individual fields can be misleading without context. Unlock WHOIS Lens so you can interpret the full record and document the query target, source, and lookup time.",
+      "taskInstructions": "Open the Lab panel and unlock <b>WHOIS Lens</b>.",
+      "taskQuestion": "Unlock the WHOIS Lens in the Lab panel.",
+      "taskCompleteText": "<b>Taylor:</b> WHOIS Lens is available. Use it to read registration fields in context and record enough information to preserve the observation."
+    }
+  ],
+  "taskID": "ismg6860_u01_q08_t00_unlock_whoislens",
+  "parentQuestID": "ismg6860_u01_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

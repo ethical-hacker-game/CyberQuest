@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> ICMP tells part of the story. Some hosts reply, some drop echo requests by policy, and some firewall paths rewrite the response before it ever reaches you. A single packet type is not a conclusion.",
+      "taskInstructions": "",
+      "taskQuestion": "Why is ping discovery not final proof that a host is absent?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. A host can block ICMP while still exposing live services.",
+      "answers": [
+        "ICMP replies are required before any TCP port can open.",
+        "Private addresses are unable to respond to a ping sweep.",
+        "Nmap skips live hosts unless ICMP is explicitly allowed.",
+        "A host can block ICMP but still expose live services."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> A quiet ping is information, not certainty. A host can ignore echo requests while still listening on another service.",
+      "taskInstructions": "",
+      "taskQuestion": "Why is ping discovery not final proof that a host is absent?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Exactly. Quiet is not the same as absent.",
+      "answers": [
+        "ICMP replies are required before any TCP port can open.",
+        "Private addresses are unable to respond to a ping sweep.",
+        "Nmap skips live hosts unless ICMP is explicitly allowed.",
+        "A host can block ICMP but still expose live services."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> A quiet ping is exactly the kind of thing an agency uses to close a public-risk question early. Echo requests can be blocked while the host keeps exposing something the city should have to explain.",
+      "taskInstructions": "",
+      "taskQuestion": "Why is ping discovery not final proof that a host is absent?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Right. A quiet host can still expose a service that requires review.",
+      "answers": [
+        "ICMP replies are required before any TCP port can open.",
+        "Private addresses are unable to respond to a ping sweep.",
+        "Nmap skips live hosts unless ICMP is explicitly allowed.",
+        "A host can block ICMP but still expose live services."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u02_q04_t02",
+  "parentQuestID": "ismg6860_u02_q04",
+  "articleID": "u02_host_discovery",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

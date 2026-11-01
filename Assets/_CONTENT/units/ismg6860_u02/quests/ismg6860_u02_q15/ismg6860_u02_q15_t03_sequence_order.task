@@ -1,0 +1,101 @@
+{
+  "variants": [
+    {
+      "minigameType": "SequenceOrder",
+      "minigameHeaderText": "ECHO-73 Scan-to-Handoff Workflow",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "orderSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Defensible Network Scan",
+            "recommendedDifficulty": "Normal",
+            "headline": "Order the scanning workflow from authorization to final handoff.",
+            "items": [
+              "Confirm scope and authorization",
+              "Discover responding hosts",
+              "Identify ports and services",
+              "Validate packet and host evidence",
+              "Interpret exposure and business risk",
+              "Hand off findings with remediation"
+            ],
+            "lesson": "A scan becomes useful only when scope, evidence, interpretation, and handoff remain connected."
+          }
+        ],
+        "checksAllowed": 3
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Reconstruct the evidence chain before the report reaches the <b>authorized incident owner</b>. A defensible handoff connects authorization, collection, interpretation, and remediation in order.",
+      "taskInstructions": "Arrange all six workflow stages in chronological sequence, from the earliest authorization decision to the final remediation handoff. Only three CHECK ORDER attempts are allowed before the console locks out.",
+      "taskQuestion": "Reconstruct the ECHO-73 scanning workflow.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> That sequence preserves traceability from authorization through remediation handoff."
+    },
+    {
+      "minigameType": "SequenceOrder",
+      "minigameHeaderText": "ECHO-73 Scan-to-Handoff Workflow",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "orderSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Defensible Network Scan",
+            "recommendedDifficulty": "Normal",
+            "headline": "Order the scanning workflow from authorization to final handoff.",
+            "items": [
+              "Confirm scope and authorization",
+              "Discover responding hosts",
+              "Identify ports and services",
+              "Validate packet and host evidence",
+              "Interpret exposure and business risk",
+              "Hand off findings with remediation"
+            ],
+            "lesson": "A scan becomes useful only when scope, evidence, interpretation, and handoff remain connected."
+          }
+        ],
+        "checksAllowed": 3
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> Raw output becomes a useful map only when each observation supports the next conclusion. Rebuild the chain that should precede any <b>public communication</b> or private use of the finding.",
+      "taskInstructions": "Arrange all six workflow stages in chronological sequence, from the earliest authorization decision to the final remediation handoff. Only three CHECK ORDER attempts are allowed before the console locks out.",
+      "taskQuestion": "Reconstruct the ECHO-73 scanning workflow.",
+      "taskCompleteText": "<b>Kade Mercer:</b> The ordered chain turns disconnected output into a map that can be checked."
+    },
+    {
+      "minigameType": "SequenceOrder",
+      "minigameHeaderText": "ECHO-73 Scan-to-Handoff Workflow",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "orderSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Defensible Network Scan",
+            "recommendedDifficulty": "Normal",
+            "headline": "Order the scanning workflow from authorization to final handoff.",
+            "items": [
+              "Confirm scope and authorization",
+              "Discover responding hosts",
+              "Identify ports and services",
+              "Validate packet and host evidence",
+              "Interpret exposure and business risk",
+              "Hand off findings with remediation"
+            ],
+            "lesson": "A scan becomes useful only when scope, evidence, interpretation, and handoff remain connected."
+          }
+        ],
+        "checksAllowed": 3
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> A <b>redacted truth</b> remains credible only when the complete source record has a defensible chain. Reconstruct the workflow from authorization through remediation handoff.",
+      "taskInstructions": "Arrange all six workflow stages in chronological sequence, from the earliest authorization decision to the final remediation handoff. Only three CHECK ORDER attempts are allowed before the console locks out.",
+      "taskQuestion": "Reconstruct the ECHO-73 scanning workflow.",
+      "taskCompleteText": "<b>Lena Ortiz:</b> The chain is complete, so the public summary can be traced back to verified evidence."
+    }
+  ],
+  "taskID": "ismg6860_u02_q15_t03_sequence_order",
+  "parentQuestID": "ismg6860_u02_q15",
+  "articleID": "u02_responsible_reporting",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

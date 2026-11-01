@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The string was too short to resist a dictionary attack against the agent.",
+        "SNMPv2c transmits the community string in cleartext, so observing the traffic reveals it.",
+        "The switch stack silently falls back to the public community string whenever the custom one fails.",
+        "Community strings only protect write access, never read access, in any version."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> One more thing and then we move on. I had a capture running on the segment while you were walking that tree, and it is not comfortable reading.\n\nWe did the responsible thing here. We replaced the vendor default community string years ago and wrote the new one in the runbook. I would like to understand why that bought us so little.",
+      "taskInstructions": "Run <b>tcpdump snmp</b> in the terminal and read the raw bytes of the two SNMP exchanges it prints.",
+      "taskQuestion": "Why did changing the community string provide so little protection?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. SNMPv1 and v2c expose the community string in cleartext. SNMPv3 with authentication and privacy protects the credential and payload."
+    },
+    {
+      "answers": [
+        "The string was too short to resist a dictionary attack against the agent.",
+        "SNMPv2c transmits the community string in cleartext, so observing the traffic reveals it.",
+        "The switch stack silently falls back to the public community string whenever the custom one fails.",
+        "Community strings only protect write access, never read access, in any version."
+      ],
+      "correctAnswer": 1,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Halloway replaced the default string, documented the change, and treated the new value as a secret. Inspect the captured exchange and decide whether the protocol preserves that secrecy.",
+      "taskInstructions": "Run <b>tcpdump snmp</b> in the terminal and read the raw bytes of the two SNMP exchanges it prints.",
+      "taskQuestion": "Why did changing the community string provide so little protection?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. SNMPv2c exposes the community string to anyone who captures the exchange. SNMPv3 authPriv would protect both authentication and payload data."
+    },
+    {
+      "answers": [
+        "The string was too short to resist a dictionary attack against the agent.",
+        "SNMPv2c transmits the community string in cleartext, so observing the traffic reveals it.",
+        "The switch stack silently falls back to the public community string whenever the custom one fails.",
+        "Community strings only protect write access, never read access, in any version."
+      ],
+      "correctAnswer": 1,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Halloway's line will be that they secured this, because they moved off the vendor default community string and there is a ticket to prove it. That sentence will end up in a compliance summary somebody signs.\n\nI need to be able to say precisely why the claim does not survive contact with the wire.",
+      "taskInstructions": "Run <b>tcpdump snmp</b> in the terminal and read the raw bytes of the two SNMP exchanges it prints.",
+      "taskQuestion": "Why did changing the community string provide so little protection?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The capture shows the SNMPv2c community string in cleartext. SNMPv3 with privacy is the defensible replacement."
+    }
+  ],
+  "taskID": "ismg6860_u05_q04_t04",
+  "parentQuestID": "ismg6860_u05_q04",
+  "articleID": "u05_snmp_versions",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

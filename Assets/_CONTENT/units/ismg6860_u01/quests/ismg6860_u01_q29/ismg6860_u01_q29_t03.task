@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": false,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Aisha:</b> These entries show ICMP Echo Requests and Replies, but no login, service interaction, or file transfer. A reply confirms a response to the probe; it does not show what access the source had, if any.",
+      "taskInstructions": "Use <b>reachability probes</b> guidance to keep the conclusion within the packet evidence.",
+      "taskQuestion": "Does this capture prove the source accessed a host account or its data?",
+      "taskCompleteText": "<b>Aisha:</b> No. The excerpt establishes responses to ICMP probes, not account access or data collection. The source and intent still require independent investigation."
+    }
+  ],
+  "taskID": "ismg6860_u01_q29_t03",
+  "parentQuestID": "ismg6860_u01_q29",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

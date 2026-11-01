@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The account was disabled at that timestamp and the record is a leftover.",
+        "The timestamp predates the share, so the account cannot be related to it.",
+        "It is a scheduled backup window, which explains the hour completely.",
+        "It authenticated recently, at an hour when nobody at Halloway is working."
+      ],
+      "correctAnswer": 3,
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> The listing mixes BridgeWorks configuration with Halloway drawings. Now check the enabled service account associated with that name. Halloway's two shifts run from 06:00 to 22:00 local time.",
+      "taskInstructions": "Run <b>enum4linux -U 10.30.14.52</b> and compare the svc_bridgeworks last-logon timestamp with the shift window.",
+      "taskQuestion": "What does the account's last logon timestamp tell you?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The enabled account authenticated at 02:41, outside both Halloway shifts. That is recent use, not evidence of a dormant account."
+    }
+  ],
+  "taskID": "ismg6860_u05_q03_t03",
+  "parentQuestID": "ismg6860_u05_q03",
+  "articleID": "u05_netbios_smb",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

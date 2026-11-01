@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u02_d04",
+  "cityIndex": 5004,
+  "questIconID": "u02_decision",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u02_d04_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "What Goes Forward",
+      "questDescription": "Choose who receives the verified finding, how much technical detail they receive, and whether wider disclosure follows remediation time.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> Your reporting posture is recorded. It determines how the verified evidence will be handled in the final handoff.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    }
+  ]
+}

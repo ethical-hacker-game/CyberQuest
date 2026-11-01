@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the carrier's term for the attempted number transfer before interpreting its wider impact.",
+      "taskInstructions": "Reopen the carrier fraud note in <b>Mail</b> and type the attack type.",
+      "taskQuestion": "What attack type did the carrier note flag?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: SIM swap. If successful, it could redirect calls and SMS authentication codes.",
+      "correctAnswers": [
+        "SIM swap"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the carrier's exact term for the attempted number transfer. It identifies the recovery route being tested.",
+      "taskInstructions": "Reopen the carrier fraud note in <b>Mail</b> and type the attack type.",
+      "taskQuestion": "What attack type does the fraud note record?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: SIM swap. The failed request still maps a valuable takeover route.",
+      "correctAnswers": [
+        "SIM swap"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A useful warning should name the attempted technique without publishing Riley's private carrier details.",
+      "taskInstructions": "Reopen the carrier fraud note in <b>Mail</b> and type the attack type.",
+      "taskQuestion": "What attack type did Dev's note record?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: SIM swap. That is specific enough for a warning without exposing recovery data.",
+      "correctAnswers": [
+        "SIM swap"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q06_t02",
+  "parentQuestID": "ismg6860_u03_q06",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Removing one task is insufficient if the account remains overprivileged and new tasks can appear unnoticed. Choose the control set that reduces recurrence and makes change visible.",
+      "taskInstructions": "Read <link=\"u04_scheduled_task_persistence\"><u>the NightlyExport persistence condition</u></link>, then select the strongest remediation.",
+      "taskQuestion": "Which control set is strongest?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Monitor scheduled tasks, rotate service credentials, and apply least privilege to reduce persistence risk.",
+      "answers": [
+        "Turn off all monitoring completely so that alerts stop interrupting the whole team.",
+        "Give every service account the same shared login password.",
+        "Leave all of the old scheduled tasks completely undocumented and fully untouched.",
+        "Continuously monitor scheduled tasks, rotate all service credentials, and enforce least privilege."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Persistence thrives where recurring tasks and service accounts are not reviewed. Choose controls that make unauthorized changes visible and limit what the account can do.",
+      "taskInstructions": "Read <link=\"u04_scheduled_task_persistence\"><u>the NightlyExport persistence condition</u></link>, then select the strongest remediation.",
+      "taskQuestion": "Which control set is strongest?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Monitoring and least privilege shorten the time that an unauthorized task or account can remain useful.",
+      "answers": [
+        "Turn off all monitoring completely so that alerts stop interrupting the whole team.",
+        "Give every service account the same shared login password.",
+        "Leave all of the old scheduled tasks completely undocumented and fully untouched.",
+        "Continuously monitor scheduled tasks, rotate all service credentials, and enforce least privilege."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Protection must still work when the team is busy and nobody is manually reviewing every host. Choose controls that expose unauthorized scheduled-task changes and reduce account privilege.",
+      "taskInstructions": "Read <link=\"u04_scheduled_task_persistence\"><u>the NightlyExport persistence condition</u></link>, then select the strongest remediation.",
+      "taskQuestion": "Which control set is strongest?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Continuous monitoring and least privilege reduce the chance that a recurring task quietly preserves access.",
+      "answers": [
+        "Turn off all monitoring completely so that alerts stop interrupting the whole team.",
+        "Give every service account the same shared login password.",
+        "Leave all of the old scheduled tasks completely undocumented and fully untouched.",
+        "Continuously monitor scheduled tasks, rotate all service credentials, and enforce least privilege."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q20_t02",
+  "parentQuestID": "ismg6860_u04_q20",
+  "articleID": "u04_scheduled_task_persistence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

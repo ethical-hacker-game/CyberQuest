@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Run a full-site crawl before checking past exposure.",
+        "Search a public web archive for older GoalPost snapshots.",
+        "Scan the live site for vulnerabilities right away.",
+        "Confront the rival newsroom based on timing alone."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Kent:</b> Our published angles keep appearing in a rival's feed. We have no evidence of a breach; check whether an older public copy could explain the timing.",
+      "taskInstructions": "Review the archive guidance on the <b>Wayback Machine</b>.",
+      "taskQuestion": "Where should we begin checking for past public exposure?",
+      "taskCompleteText": "<b>Mara Kent:</b> A public archive is a low-impact place to check for older copies. A capture can show what the archive recorded, but not who else viewed it."
+    }
+  ],
+  "taskID": "ismg6860_u01_q26_t01",
+  "parentQuestID": "ismg6860_u01_q26",
+  "articleID": "u01_web_archives",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

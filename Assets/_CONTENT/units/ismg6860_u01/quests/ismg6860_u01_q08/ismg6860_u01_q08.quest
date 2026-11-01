@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q08",
+  "cityIndex": 3689,
+  "questIconID": "quest_icon_whois_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q08_t00_unlock_whoislens",
+    "ismg6860_u01_q08_t01",
+    "ismg6860_u01_q08_t02"
+  ],
+  "requiredQuestID": "ismg6860_u01_d02",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Whois Recon",
+      "questDescription": "NexaCore has authorized a public registration-record review of shadowtech.com. Identify the listed registrant, preserve the relevant lookup context, and keep attribution separate from what the WHOIS record actually proves.",
+      "questCompleteText": "<b>Taylor:</b> You documented Riley Calder as the listed registrant while preserving the lookup context and attribution limits. The evidence is ready for a separate decision about how to handle the exposed personal data.",
+      "questCharacterID": "u01_taylor_chen",
+      "appScenarioID": ""
+    }
+  ]
+}

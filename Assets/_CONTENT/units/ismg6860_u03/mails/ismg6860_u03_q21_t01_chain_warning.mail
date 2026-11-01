@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u03_q21_t01_chain_warning",
+  "parentTaskID": "ismg6860_u03_q21_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Hoax, scareware, and resolver evidence",
+      "shortSummary": "Asha forwards three separately recorded findings and a DNS comparison.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Three findings were reported in the same period. Preserve and assess them separately.\n\nEvidence summary:\nForwarded warning subject: Forward this to every volunteer now\nScareware prompt: Install Harbor Shield Cleaner\nQueried hostname: portal.harborviewexpo.org\nApproved baseline: 203.0.113.24\nIndependent resolver A: 203.0.113.24\nIndependent resolver B: 203.0.113.24\nAffected mobile clients: 198.51.100.73\n\nAsha",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Hoax, scareware, and resolver evidence",
+      "shortSummary": "Felix forwards three separately recorded findings and a DNS comparison.",
+      "date": "0001-01-01T00:00:00",
+      "body": "The reports arrived together, but the resolver values are the measurable network evidence.\n\nEvidence summary:\nForwarded warning subject: Forward this to every volunteer now\nScareware prompt: Install Harbor Shield Cleaner\nQueried hostname: portal.harborviewexpo.org\nApproved baseline: 203.0.113.24\nIndependent resolver A: 203.0.113.24\nIndependent resolver B: 203.0.113.24\nAffected mobile clients: 198.51.100.73\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Hoax, scareware, and resolver evidence",
+      "shortSummary": "Imani forwards three separately recorded findings and a DNS comparison.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Preserve the forwarded warning without blaming volunteers, and compare the resolver values directly.\n\nEvidence summary:\nForwarded warning subject: Forward this to every volunteer now\nScareware prompt: Install Harbor Shield Cleaner\nQueried hostname: portal.harborviewexpo.org\nApproved baseline: 203.0.113.24\nIndependent resolver A: 203.0.113.24\nIndependent resolver B: 203.0.113.24\nAffected mobile clients: 198.51.100.73\n\nImani",
+      "attachements": []
+    }
+  ]
+}

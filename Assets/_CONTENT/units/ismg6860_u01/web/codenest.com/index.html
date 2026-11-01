@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeNest</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="../cq-bridge.js"></script>
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <a class="logo" href="./" data-home>CodeNest</a>
+      <form class="search" data-search-form>
+        <input data-search-input name="q" autocomplete="off" spellcheck="false" placeholder="Search repositories" aria-label="Search repositories">
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <section class="content" aria-live="polite">
+      <h1 data-title>Top public projects</h1>
+      <div class="project-list" data-list></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

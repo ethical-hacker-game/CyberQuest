@@ -1,0 +1,12 @@
+{
+  "articleID": "u00_evidence_reasoning",
+  "videoURL": null,
+  "title": "From Observation to Finding",
+  "content": "Security evidence becomes useful when it supports a precise statement that another person can check. An <b>observation</b> is what a source directly shows, such as a value in a web page or a line in command output. An <b>inference</b> explains what that observation may mean. A <b>finding</b> combines supported observations with a carefully limited conclusion.\n\nKeep these levels separate. A hostname resolving to an address proves that a DNS response was returned at that time; it does not by itself prove ownership, compromise, or permission to scan. A scanner alert identifies a condition worth reviewing; it does not automatically prove that an attacker exploited it. Overstating evidence makes a report less trustworthy and can send responders toward the wrong problem.\n\nRecord enough context for reproduction: the source, target, date and time, exact command or navigation path, relevant output, and any assumptions. Preserve original evidence when possible instead of copying only the sentence that supports a preferred conclusion. Use stable case identifiers so screenshots, messages, command output, and recommendations remain connected as the work moves between people.\n\nAn <b>evidence chain</b> does not need to be large. It needs to be coherent. Each item should have a known source, a clear relationship to the case, and a reason it matters. Corroborating independent sources increases confidence, while conflicting evidence should be recorded and investigated rather than hidden.\n\nA strong report says what was observed, what it supports, what it does not establish, and what safe next step would reduce uncertainty. That discipline turns isolated tool output into defensible security work.",
+  "links": [
+    "piece of evidence",
+    "evidence chain",
+    "exact host value"
+  ]
+}
+

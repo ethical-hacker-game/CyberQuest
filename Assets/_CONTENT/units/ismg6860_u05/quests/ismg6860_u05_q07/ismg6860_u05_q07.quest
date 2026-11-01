@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u05_q07",
+  "cityIndex": 7219,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q07_t01",
+    "ismg6860_u05_q07_t02",
+    "ismg6860_u05_q07_t03_app",
+    "ismg6860_u05_q07_t04"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "SMTP Enumeration",
+      "questDescription": "Dana Osei found an old alert-forwarding rule in the mail configuration. Query SMTP manually and distinguish a verification refusal from an address accepted for delivery.",
+      "questCompleteText": "<b>Dana Osei:</b> The server accepts svc_bridgeworks and bw-alerts as recipients, rejects the negative control, and still has a BridgeWorks forwarding rule configured. Delivery and readership were not tested.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": "wireshark_smtp_probe"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "SMTP Enumeration",
+      "questDescription": "Reyes Calloway wants the recipient behavior mapped precisely. Compare SMTP replies and identify which addresses the server accepts without claiming successful delivery.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The server distinguishes accepted recipients from an unknown address and exposes a BridgeWorks forwarding rule. That is useful enumeration without proving who receives the forwarded mail.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": "wireshark_smtp_probe"
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "SMTP Enumeration",
+      "questDescription": "Priya Nandan wants the stale alert path documented without speculation. Determine which recipients the server accepts and whether a BridgeWorks forwarding rule remains configured.",
+      "questCompleteText": "<b>Priya Nandan:</b> Halloway's server accepts the alert address and reports a forwarding rule to BridgeWorks. The configuration is proven; actual delivery and readership remain unverified.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": "wireshark_smtp_probe"
+    }
+  ]
+}

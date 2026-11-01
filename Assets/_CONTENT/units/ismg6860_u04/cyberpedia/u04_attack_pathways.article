@@ -1,0 +1,13 @@
+{
+  "articleID": "u04_attack_pathways",
+  "videoURL": null,
+  "title": "Attack Pathways and Chained Risk",
+  "content": "<b>An attack pathway is a defensible model of how separate weaknesses could combine to produce a larger consequence.</b> It is not proof that every step has occurred, and it should not become an exploitation guide. Its purpose is to show defenders which relationships make isolated findings more dangerous together.\n\nModel the environment as assets and identities connected by allowed relationships. Assets may include public applications, endpoints, management services, data stores, and internal shares. Connections may include network reachability, service permissions, credentials, trust, administrative access, or automated tasks. A pathway becomes plausible when evidence supports both the conditions and the transitions between them.\n\nCommon pathway roles include:\n\n- an initial foothold or exposed entry condition;\n- privilege escalation that increases what limited access could do;\n- weak credential controls that make additional identities easier to misuse;\n- lateral movement or a pivot from one reachable system to another;\n- persistence conditions that could let unauthorized access survive;\n- access to a high-impact system, service, or dataset.\n\nLabel every step by confidence. A verified node is not the same as a verified transition. If reachability is confirmed but credential use was not tested, show that distinction. Record assumptions, required privileges, existing controls, and the safe evidence supporting each connection. Do not claim a complete compromise merely because the individual ingredients exist.\n\nPathway analysis improves remediation priority. Defenders can break a chain at a choke point by removing unnecessary trust, segmenting networks, enforcing least privilege, correcting service permissions, strengthening identity controls, patching exposed components, and monitoring critical transitions. Fixing one high-leverage connection may reduce several risks at once.\n\nRebuild the pathway after remediation and verify that the intended connection is gone. The strongest outcome is not a dramatic exploit demonstration; it is a clear map showing why a chain was plausible and where defenders can reliably interrupt it.",
+  "links": [
+    "attack pathways",
+    "exploitation pathways",
+    "pathway analysis",
+    "pivot risk",
+    "persistence risk"
+  ]
+}

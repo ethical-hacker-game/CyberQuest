@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "anonsurf",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Shade:</b> Use the investigation client assigned to this case, not an everyday browsing environment. Isolation limits overlap with personal accounts and files, but it does not make unsafe actions anonymous or harmless.",
+      "taskInstructions": "Open the Lab panel and unlock <b>AnonSurf</b> for this authorized investigation.",
+      "taskQuestion": "Unlock AnonSurf in the Lab panel.",
+      "taskCompleteText": "<b>Shade:</b> AnonSurf is unlocked. Keep personal accounts, unnecessary downloads, and out-of-scope interaction out of this environment."
+    }
+  ],
+  "taskID": "ismg6860_u01_q12_t01",
+  "parentQuestID": "ismg6860_u01_q12",
+  "articleID": "u01_safe_investigation_environments",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

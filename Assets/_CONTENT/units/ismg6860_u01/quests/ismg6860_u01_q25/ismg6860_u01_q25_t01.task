@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Date",
+        "Location",
+        "Server",
+        "The HTTP status line"
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Maya:</b> One request to the site returned this response. Which field tells us where the client was directed?\n\n<b>HTTP/1.1 302 Found\nLocation: https://expose-login.freepress-check.com/login\nDate: 2025-07-14T10:12:37Z\nServer: mock-httpd/1.0</b>",
+      "taskInstructions": "Review the Cyberpedia guidance on an <b>HTTP redirect</b>.",
+      "taskQuestion": "Which header names the redirect destination?",
+      "taskCompleteText": "<b>Maya:</b> The Location header names the next URL. The 302 status indicates a redirect response; neither field identifies who configured it."
+    }
+  ],
+  "taskID": "ismg6860_u01_q25_t01",
+  "parentQuestID": "ismg6860_u01_q25",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

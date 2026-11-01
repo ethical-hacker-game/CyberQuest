@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Fragmented packets are in this module because defenders need to know that some inspection paths reassemble traffic badly. We look at that weakness so we can describe it inside a controlled test, never to slip a scan past somebody's monitoring. The distinction is the whole reason this stays within an authorized scope.",
+      "taskInstructions": "Run <b>hping3 -S -f -p 443 10.42.18.73</b> and use the logged defensive response as context.",
+      "taskQuestion": "Why is fragmentation covered here?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. Fragmentation is covered to understand defensive behavior within controlled validation.",
+      "answers": [
+        "To evade monitoring during an unauthorized scan of the range.",
+        "To prove that IPv6 is disabled on the target host.",
+        "To replace ordinary service detection entirely.",
+        "To understand firewall and IDS behavior in a controlled validation."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> Fragmentation is a standing reminder that controls have seams, and seams are where the interesting things live. That said, this exercise has an edge to it and we are staying on this side of the edge. Knowing a blind spot exists is a finding; walking through it on this engagement would be something else entirely.",
+      "taskInstructions": "Run <b>hping3 -S -f -p 443 10.42.18.73</b> and use the logged defensive response as context.",
+      "taskQuestion": "Why is fragmentation covered here?",
+      "taskCompleteText": "<b>Kade Mercer:</b> The control response is documented without turning the check into an evasion attempt.",
+      "answers": [
+        "To evade monitoring during an unauthorized scan of the range.",
+        "To prove that IPv6 is disabled on the target host.",
+        "To replace ordinary service detection entirely.",
+        "To understand firewall and IDS behavior in a controlled validation."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> Fragmentation belongs in the report as a control concern: an inspection gap the people responsible ought to close. What it must never become is a set of steps a reader can copy straight out of the piece. That line is the difference between accountability work and handing somebody a weapon.",
+      "taskInstructions": "Run <b>hping3 -S -f -p 443 10.42.18.73</b> and use the logged defensive response as context.",
+      "taskQuestion": "Why is fragmentation covered here?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> The defensive behavior is useful context, not a public evasion guide.",
+      "answers": [
+        "To evade monitoring during an unauthorized scan of the range.",
+        "To prove that IPv6 is disabled on the target host.",
+        "To replace ordinary service detection entirely.",
+        "To understand firewall and IDS behavior in a controlled validation."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u02_q11_t03",
+  "parentQuestID": "ismg6860_u02_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

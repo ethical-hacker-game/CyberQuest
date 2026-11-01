@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A caller can <b>borrow authority</b> by using a title and urgency to request entry without verification. Review the observed claim and requested exception before drawing conclusions.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Badge voice call summary</b>.",
+      "taskQuestion": "Open the badge voice call summary.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The caller claimed authority and requested that a visitor bypass the badge check; the outcome is not recorded.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q18_t01_badge_call"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Callers can <b>borrow authority</b> by pairing a plausible title with an urgent exception. Read what this caller claimed and what the badge desk was asked to do.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Badge voice call summary</b>.",
+      "taskQuestion": "Open the badge voice call summary.",
+      "taskCompleteText": "<b>Felix Rane:</b> The title and deadline supported the request, but the note does not establish that it worked.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q18_t01_badge_call"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A caller can <b>borrow authority</b> and put badge-desk staff between a verification rule and claimed leadership. Review the request without blaming staff or assuming its outcome.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Badge voice call summary</b>.",
+      "taskQuestion": "Open the badge voice call summary.",
+      "taskCompleteText": "<b>Imani Vale:</b> The authority pressure is documented, and the staff member's response remains unknown.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q18_t01_badge_call"
+    }
+  ],
+  "taskID": "ismg6860_u03_q18_t01",
+  "parentQuestID": "ismg6860_u03_q18",
+  "articleID": "u03_physical_social_engineering",
+  "mailsOnStart": [
+    "ismg6860_u03_q18_t01_badge_call"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

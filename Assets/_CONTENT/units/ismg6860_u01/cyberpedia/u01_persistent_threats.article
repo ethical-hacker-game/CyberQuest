@@ -1,0 +1,12 @@
+{
+  "articleID": "u01_persistent_threats",
+  "videoURL": null,
+  "title": "Persistent Threats and Espionage",
+  "content": "A persistent threat is an adversary that pursues an objective over time and adapts when blocked. An advanced persistent threat, or APT, usually describes a capable, targeted operation with the resources and intent to maintain access. The label should describe evidence of behavior, not simply make an incident sound severe. Corporate espionage is an objective: stealing confidential business information or strategic advantage. It can be conducted by insiders, criminals, competitors, or state-linked groups and does not always require an advanced technical intrusion.\n\nPersistent operations often begin with research into people, suppliers, domains, and exposed systems. They may use targeted phishing, look-alike infrastructure, stolen credentials, or vulnerable services to gain access. Once inside, an actor may establish persistence, escalate privileges, move laterally, collect data, and exfiltrate it gradually to avoid detection. No single symptom proves this sequence. Analysts build confidence by correlating identity, endpoint, network, email, and public-source evidence across time.\n\n<b>Defensive priorities</b>\nPreserve logs and create a timeline before making broad changes. Contain confirmed access through coordinated account, host, and network controls while hunting for related activity. Strengthen privileged access, segmentation, patching, email security, endpoint monitoring, and protection of high-value data. Reduce unnecessary public information that supports targeting, and monitor new domains or infrastructure that imitate the organization.\n\nLeadership briefings should distinguish confirmed facts, likely interpretations, and unknowns. Avoid attributing an operation to a specific group without strong, independently verified evidence. Effective defense focuses first on removing access and protecting critical assets, regardless of who may be responsible.",
+  "links": [
+    "persist undetected",
+    "persistent group",
+    "move laterally",
+    "targeted intrusion"
+  ]
+}

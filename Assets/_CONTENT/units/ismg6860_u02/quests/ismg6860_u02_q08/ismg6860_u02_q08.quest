@@ -1,0 +1,40 @@
+{
+  "questID": "ismg6860_u02_q08",
+  "cityIndex": 4997,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q08_t01",
+    "ismg6860_u02_q08_t02"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "The Shape Of A Host",
+      "questDescription": "Interpret the OS fingerprint with its confidence level and supporting TTL clue.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> Embedded Linux at 87% confidence and TTL 64 support a hypothesis, not a confirmed identity.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "The Shape Of A Host",
+      "questDescription": "Use the OS fingerprint to sharpen the host profile without trusting one automated guess blindly.",
+      "questCompleteText": "<b>Kade Mercer:</b> The 87%-confidence fingerprint and TTL 64 improve the profile without settling it.",
+      "questCharacterID": "u02_kade_mercer",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "The Shape Of A Host",
+      "questDescription": "Build a cautious technical summary that preserves the fingerprint's uncertainty.",
+      "questCompleteText": "<b>Lena Ortiz:</b> The record keeps the 87% confidence and TTL 64 visible, so probability never becomes public certainty.",
+      "questCharacterID": "u02_lena_ortiz",
+      "appScenarioID": ""
+    }
+  ]
+}

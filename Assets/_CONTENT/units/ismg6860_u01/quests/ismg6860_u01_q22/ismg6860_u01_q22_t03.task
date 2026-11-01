@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "A single after-hours login from an unknown address.",
+        "One blocked admin request with no other activity.",
+        "Correlated signs of targeted access maintained over time.",
+        "Several requests from one internal address in minutes."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> APT describes a targeted operation that maintains access over time. This sample covers only a short period, so decide what evidence would support that stronger classification.",
+      "taskInstructions": "Review <b>Persistent Threats and Espionage</b>, then distinguish a sustained operation from an isolated suspicious event.",
+      "taskQuestion": "Which evidence would best support classifying this as an APT?",
+      "taskCompleteText": "<b>Samira:</b> Correlated evidence of targeted access maintained over time would support that assessment. Keep the current finding provisional until investigators verify it."
+    }
+  ],
+  "taskID": "ismg6860_u01_q22_t03",
+  "parentQuestID": "ismg6860_u01_q22",
+  "articleID": "u01_persistent_threats",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

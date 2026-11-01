@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "rpcbind, the registry that maps RPC programs to ports.",
+        "NFS, the file-sharing service registered on TCP port 2049.",
+        "mountd, the helper that handles NFS mount requests.",
+        "nlockmgr, the service that coordinates file locking."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Back to the historian. We spent a week arguing about the SMB share on that box and nobody stopped to ask what else it hands out, and there is Unix sitting underneath the Samba.\n\nOn a Unix host the sharing services announce themselves to a portmapper, <b>rpcbind</b> on anything built this decade, and it will introduce every one of them to a stranger without being asked twice.",
+      "taskInstructions": "Run <b>rpcinfo -p 10.30.14.52</b> in the terminal and read the service column of the listing.",
+      "taskQuestion": "Which file-sharing service is registered with the portmapper?",
+      "taskCompleteText": "<b>Dana Osei:</b> NFS is registered on TCP port 2049. The listing also identifies its mount and locking support services."
+    },
+    {
+      "answers": [
+        "rpcbind, the registry that maps RPC programs to ports.",
+        "NFS, the file-sharing service registered on TCP port 2049.",
+        "mountd, the helper that handles NFS mount requests.",
+        "nlockmgr, the service that coordinates file locking."
+      ],
+      "correctAnswer": 1,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> A portmapper is a directory of services, and <b>rpcbind</b> has never learned how to say no to a stranger. It will name which services live on a host and which ports they answer on, free of charge, and those ports are often high enough that an ordinary scan never reaches them.\n\nWhatever the historian registered there has been sitting in plain sight since the day BridgeWorks switched it on.",
+      "taskInstructions": "Run <b>rpcinfo -p 10.30.14.52</b> in the terminal and read the service column of the listing.",
+      "taskQuestion": "Which file-sharing service is registered with the portmapper?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> NFS is the registered file-sharing service. The portmapper also discloses the supporting programs and their dynamic ports."
+    },
+    {
+      "answers": [
+        "rpcbind, the registry that maps RPC programs to ports.",
+        "NFS, the file-sharing service registered on TCP port 2049.",
+        "mountd, the helper that handles NFS mount requests.",
+        "nlockmgr, the service that coordinates file locking."
+      ],
+      "correctAnswer": 1,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Whatever that box has registered is what leaves that box, and what sits on it is the plant's own work.\n\nHalloway keeps telling me the drawings only ever moved across one share. I would rather the historian answered that question for itself.",
+      "taskInstructions": "Run <b>rpcinfo -p 10.30.14.52</b> in the terminal and read the service column of the listing.",
+      "taskQuestion": "Which file-sharing service is registered with the portmapper?",
+      "taskCompleteText": "<b>Priya Nandan:</b> NFS is registered on the historian. That establishes service exposure, not whether any drawings were accessed."
+    }
+  ],
+  "taskID": "ismg6860_u05_q09_t01",
+  "parentQuestID": "ismg6860_u05_q09",
+  "articleID": "u05_rpc_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

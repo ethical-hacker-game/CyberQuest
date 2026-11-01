@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ports &amp; Protocols Reference: ScanLab Docs</title>
+  <script src="../../cq-bridge.js"></script>
+  <style>
+    :root{
+      --ink:#1c2530;--muted:#657286;--line:#e6e9ef;--bg:#ffffff;--rail:#0d1b2a;
+      --accent:#5a4ff3;--accentbg:#eeecfe;--code:#0f2233;--codebg:#f5f7fa;
+      --hi:#c2410c;--hibg:#fff4ec;--ok:#3f9142;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+    a{color:var(--accent);text-decoration:none}
+    code,.mono{font-family:"JetBrains Mono",Consolas,"Courier New",monospace}
+    /* top nav */
+    .topnav{display:flex;align-items:center;gap:18px;height:56px;padding:0 22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:5}
+    .brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:16px}
+    .brand .mk{width:24px;height:24px;border-radius:6px;background:linear-gradient(135deg,#6a5cff,#4a2fd6);position:relative}
+    .brand .mk:after{content:"";position:absolute;inset:7px;border:2px solid #fff;border-radius:50%;border-right-color:transparent;transform:rotate(35deg)}
+    .brand span small{color:var(--muted);font-weight:600;font-size:11px;margin-left:2px}
+    .topnav nav{display:flex;gap:18px;font-size:14px;font-weight:600;color:#3a4658}
+    .topnav nav a{color:#3a4658}
+    .topnav .search{margin-left:auto;display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:7px;padding:7px 11px;color:var(--muted);font-size:13px;min-width:210px;background:#fbfcfe}
+    .topnav .search input{border:none;outline:none;background:transparent;font-size:13px;width:100%;color:var(--ink)}
+    /* layout */
+    .shell{display:grid;grid-template-columns:230px 1fr;max-width:1180px;margin:0 auto}
+    .side{border-right:1px solid var(--line);padding:24px 14px;height:calc(100vh - 56px);position:sticky;top:56px;overflow:auto}
+    .side h4{margin:14px 10px 6px;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+    .side a{display:block;padding:7px 10px;border-radius:6px;color:#3a4658;font-size:13.5px}
+    .side a.active{background:var(--accentbg);color:#3a2fc0;font-weight:700}
+    .side a:hover{background:#f4f5f9}
+    main{padding:30px 40px;max-width:820px}
+    .crumb{color:var(--muted);font-size:12.5px;margin-bottom:10px}
+    h1{font-size:28px;margin:0 0 6px}
+    .lead{color:#455163;font-size:15px;margin:0 0 22px}
+    h2{font-size:18px;margin:30px 0 10px;padding-top:6px}
+    p{color:#354152}
+    .filter{display:flex;align-items:center;gap:10px;margin:6px 0 12px}
+    .filter input{flex:1;border:1px solid var(--line);border-radius:7px;padding:9px 12px;font-size:14px;outline:none}
+    .filter input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accentbg)}
+    .filter .count{color:var(--muted);font-size:12.5px;white-space:nowrap}
+    table{width:100%;border-collapse:collapse;font-size:13.5px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+    th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+    th{background:#f7f8fb;color:#4a566a;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+    tr:last-child td{border-bottom:none}
+    td .port{font-weight:700;color:#12233a}
+    .risk{font-weight:700;font-size:12px;padding:2px 9px;border-radius:20px}
+    .risk.low{color:#2f6a34;background:#e9f5ea} .risk.med{color:#93590a;background:#fdf3e2} .risk.high{color:#a32218;background:#fdeceb}
+    .callout{border:1px solid #e6e9ef;border-left:4px solid var(--accent);background:#faf9ff;border-radius:8px;padding:13px 16px;margin:16px 0;font-size:13.5px;color:#3a4353}
+    code{background:var(--codebg);border:1px solid #e6ebf1;border-radius:4px;padding:1px 6px;font-size:12.5px;color:#173049}
+    footer{border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;padding:20px 40px;margin-top:36px}
+    .norow{color:var(--muted);font-size:13px;padding:14px 13px}
+    @media(max-width:820px){.shell{grid-template-columns:1fr}.side{display:none}main{padding:24px}}
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <div class="brand"><span class="mk"></span><span>ScanLab<small>docs</small></span></div>
+    <nav><a href="#">Guides</a><a href="#">Reference</a><a href="#">Tools</a><a href="#">Blog</a></nav>
+    <div class="search"><span>⌕</span><input placeholder="Search docs…" aria-label="Search docs"></div>
+  </div>
+
+  <div class="shell">
+    <aside class="side">
+      <h4>Reference</h4>
+      <a href="#">Scan states</a>
+      <a href="#">Service detection</a>
+      <a class="active" href="#ports">Ports &amp; protocols</a>
+      <a href="#">TCP flags</a>
+      <a href="#">UDP &amp; ICMP</a>
+      <h4>Guides</h4>
+      <a href="#">Reading scan output</a>
+      <a href="#">Verifying findings</a>
+    </aside>
+
+    <main>
+      <div class="crumb">Reference › Ports &amp; protocols</div>
+      <h1>Common ports &amp; protocols</h1>
+      <p class="lead">A quick reference for interpreting the service labels a scanner reports. Port numbers
+      are conventions, not proof: always corroborate with service detection and packet capture.</p>
+
+      <h2 id="ports">Well-known &amp; commonly-seen services</h2>
+      <div class="filter">
+        <input data-filter placeholder="Filter by port, service, or keyword (e.g. 8080, diagnostics, udp)" aria-label="Filter table">
+        <span class="count" data-count></span>
+      </div>
+      <table>
+        <thead><tr><th style="width:74px">Port</th><th style="width:64px">Proto</th><th>Typical service</th><th>Notes</th><th style="width:78px">Risk</th></tr></thead>
+        <tbody data-rows>
+          <tr><td><span class="port">443</span></td><td>tcp</td><td>HTTPS / TLS-wrapped app</td><td>Encrypted web or API service. Common and expected on public hosts.</td><td><span class="risk low">Low</span></td></tr>
+          <tr><td><span class="port">8080</span></td><td>tcp</td><td>Alternate HTTP</td><td>Frequently an admin panel, proxy, or <b>device diagnostics console</b>. Review carefully when exposed.</td><td><span class="risk med">Review</span></td></tr>
+          <tr><td><span class="port">9100</span></td><td>tcp</td><td>Raw print / JetDirect</td><td>Printer or device telemetry. Risky when reachable outside a maintenance segment.</td><td><span class="risk high">High</span></td></tr>
+          <tr><td><span class="port">161</span></td><td>udp</td><td>SNMP</td><td>Management protocol. Often reported <code>open|filtered</code>: the scanner cannot always tell a quiet service from a filtered one.</td><td><span class="risk med">Review</span></td></tr>
+          <tr><td><span class="port">22</span></td><td>tcp</td><td>SSH</td><td>Remote administration. Expected on managed hosts; unexpected exposure is worth noting.</td><td><span class="risk med">Review</span></td></tr>
+          <tr><td><span class="port">N/A</span></td><td>icmp</td><td>Echo / error reporting</td><td>Used for host discovery. Commonly filtered by policy, so silence is not proof of absence.</td><td><span class="risk low">Low</span></td></tr>
+        </tbody>
+      </table>
+      <p class="norow" data-empty hidden>No entries match that filter.</p>
+
+      <div class="callout">
+        A scanner's <code>open</code>, <code>closed</code>, and <code>filtered</code> labels describe the
+        response category observed from packets, not the safety of a service. Confirm anything exposed with
+        service/version detection before you record it as a finding.
+      </div>
+
+      <h2>See also</h2>
+      <p><a href="#">Service &amp; version detection</a> · <a href="#">Interpreting <code>open|filtered</code></a> · <a href="#">Scan states explained</a></p>
+    </main>
+  </div>
+
+  <footer>© ScanLab · Reference documentation · This page is informational and vendor-neutral.</footer>
+
+  <script>
+    // Progressive enhancement: client-side table filter. Full table is present without JS.
+    (function(){
+      var input=document.querySelector('[data-filter]');
+      var body=document.querySelector('[data-rows]');
+      var count=document.querySelector('[data-count]');
+      var empty=document.querySelector('[data-empty]');
+      if(!input||!body) return;
+      var rows=[].slice.call(body.querySelectorAll('tr'));
+      function apply(){
+        var q=input.value.trim().toLowerCase(); var shown=0;
+        rows.forEach(function(r){
+          var hit=!q||r.textContent.toLowerCase().indexOf(q)>-1;
+          r.hidden=!hit; if(hit) shown++;
+        });
+        if(count) count.textContent=shown+' of '+rows.length;
+        if(empty) empty.hidden=shown!==0;
+      }
+      input.addEventListener('input',apply); apply();
+    })();
+  </script>
+</body>
+</html>

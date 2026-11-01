@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q09",
+  "cityIndex": 3995,
+  "questIconID": "quest_icon_databreach_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q09_t01",
+    "ismg6860_u01_q09_t03_decrypt",
+    "ismg6860_u01_q09_t02"
+  ],
+  "requiredQuestID": "ismg6860_u01_d03",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Email Origin Trace",
+      "questDescription": "Samira flags an urgent account-security message as a likely phishing attempt. Preserve its raw source, practice removing reversible encoding, then use EmailTrackerPro to inspect the recorded relay path. Treat the final route endpoint as a technical lead, not proof of who authored the message.",
+      "questCompleteText": "<b>Samira:</b> You preserved the message source and traced its recorded relay path to the endpoint shown in the report. That address is useful for correlation, but it does not identify the author by itself.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": "emailtrackerpro_quest_9_1"
+    }
+  ]
+}

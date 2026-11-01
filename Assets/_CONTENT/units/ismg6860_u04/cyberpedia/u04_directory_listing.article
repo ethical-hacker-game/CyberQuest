@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_directory_listing",
+  "videoURL": null,
+  "title": "Directory Listing Exposure",
+  "content": "A <b>directory listing</b> displays file names and metadata when a web server has no index page or allows folder browsing. Public listings can reveal backups, configuration files, logs, and naming patterns. Record the URL, visible entries, dates, and access conditions without downloading sensitive files. A filename can justify investigation and removal, but it does not prove what the file contains or whether anyone accessed it. Disable unnecessary directory indexing and store backups outside public web roots.",
+  "links": [
+    "directory listing exposure"
+  ]
+}

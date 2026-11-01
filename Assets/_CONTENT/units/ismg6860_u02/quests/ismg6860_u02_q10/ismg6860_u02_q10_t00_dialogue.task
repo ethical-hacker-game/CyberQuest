@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> You chose coordination, so the quiet-target checks are validation work, not evasion. UDP and filtered ports are exactly where a junior assessor guesses and then writes the guess down as a fact. What I want out of this pass is an honest account of what the firewall reveals and what it refuses to.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Keep each conclusion tied to the response we actually observed."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> You chose to keep the map growing, and this is the stretch most people skip. Quiet protocols are where silence gets mistaken for an empty room, and an empty room is exactly what a lazy mapper wants to believe. A note that says unknown is worth more than a confident lie.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Kade Mercer:</b> Record uncertainty when the response does not settle the state."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> You chose minimal proof and better questions, and this next stretch rewards that. Quiet-target evidence can demonstrate a blind spot without publishing a live route into it. The trick is describing the uncertainty precisely enough that a reader trusts the rest of the report.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Keep the uncertainty visible so nobody can turn it into a stronger claim later."
+    }
+  ],
+  "taskID": "ismg6860_u02_q10_t00_dialogue",
+  "parentQuestID": "ismg6860_u02_q10",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

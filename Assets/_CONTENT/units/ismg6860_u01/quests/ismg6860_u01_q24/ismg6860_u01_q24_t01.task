@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Shodan can browse users' social media profiles.",
+        "Shodan mainly searches for personal email accounts online.",
+        "Shodan indexes internet-connected devices, not web pages.",
+        "Shodan stores its scan results in cloud storage."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Arjun Rao:</b> BoxCom's client found an unknown controller exposed to the public Internet. Choose a tool that can search what networked equipment exposes.",
+      "taskInstructions": "Review the Cyberpedia guidance on a <b>device indexer</b>.",
+      "taskQuestion": "Why is a device indexer useful for this investigation?",
+      "taskCompleteText": "<b>Arjun Rao:</b> A device indexer searches services and banners from internet-connected equipment, which can reveal exposed appliances."
+    }
+  ],
+  "taskID": "ismg6860_u01_q24_t01",
+  "parentQuestID": "ismg6860_u01_q24",
+  "articleID": "u01_device_search_engines",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

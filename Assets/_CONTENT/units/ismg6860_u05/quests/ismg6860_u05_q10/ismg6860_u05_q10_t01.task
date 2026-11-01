@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "HistorianFeed"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> The historian's Java layer uses an RMI registry to publish remote object names. Check what the registry reveals from our authorized test segment.",
+      "taskInstructions": "Run <b>msfconsole rmi</b> in the terminal; the module lists the names bound in the registry on port 1099.",
+      "taskQuestion": "What object name does the RMI registry advertise?",
+      "taskCompleteText": "<b>Dana Osei:</b> HistorianFeed is the single object name returned by the registry."
+    },
+    {
+      "correctAnswers": [
+        "HistorianFeed"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> The historian's Java layer publishes a registry of remote objects. Query it and preserve the exact object name it returns.",
+      "taskInstructions": "Run <b>msfconsole rmi</b> in the terminal; the module lists the names bound in the registry on port 1099.",
+      "taskQuestion": "What object name does the RMI registry advertise?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> HistorianFeed is the object name exposed by the reachable registry."
+    },
+    {
+      "correctAnswers": [
+        "HistorianFeed"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The historian's Java registry may reveal object names without proving that those objects can be invoked. Record the exact name returned to us.",
+      "taskInstructions": "Run <b>msfconsole rmi</b> in the terminal; the module lists the names bound in the registry on port 1099.",
+      "taskQuestion": "What object name does the RMI registry advertise?",
+      "taskCompleteText": "<b>Priya Nandan:</b> HistorianFeed is the verified disclosure. Its callable behavior remains unknown."
+    }
+  ],
+  "taskID": "ismg6860_u05_q10_t01",
+  "parentQuestID": "ismg6860_u05_q10",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

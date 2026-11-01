@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="color-scheme" content="dark" />
+	<title>Shodan • Device Indexer</title>
+	<style>
+		:root {
+			--bg: #0b1020;
+			--panel: #0f1730;
+			--panel2: #0b1329;
+			--text: #e7ecff;
+			--muted: #a8b3d9;
+			--faint: #7683b5;
+			--border: rgba(255,255,255,0.10);
+			--border2: rgba(255,255,255,0.07);
+			--accent: #7dd3fc;
+			--accent2: #a78bfa;
+			--good: #34d399;
+			--warn: #fbbf24;
+			--danger: #fb7185;
+			--shadow: 0 12px 40px rgba(0,0,0,0.45);
+			--radius: 14px;
+			--mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+			--sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+		}
+
+		* { box-sizing: border-box; }
+		html, body { height: 100%; }
+		body {
+			margin: 0;
+			font-family: var(--sans);
+			background:
+				radial-gradient(1100px 700px at 20% 0%, rgba(125, 211, 252, 0.12), transparent 60%),
+				radial-gradient(900px 600px at 90% 18%, rgba(167, 139, 250, 0.10), transparent 55%),
+				radial-gradient(800px 500px at 50% 100%, rgba(52, 211, 153, 0.07), transparent 55%),
+				var(--bg);
+			color: var(--text);
+			letter-spacing: 0.1px;
+		}
+
+		a { color: inherit; }
+		button, input { font: inherit; }
+
+		:focus-visible {
+			outline: 2px solid var(--accent);
+			outline-offset: 2px;
+			border-radius: 10px;
+		}
+
+		.app {
+			min-height: 100%;
+			display: grid;
+			grid-template-rows: auto 1fr;
+		}
+
+		header {
+			position: sticky;
+			top: 0;
+			z-index: 20;
+			backdrop-filter: blur(10px);
+			background: linear-gradient(to bottom, rgba(11, 16, 32, 0.92), rgba(11, 16, 32, 0.65));
+			border-bottom: 1px solid var(--border2);
+		}
+
+		.header-inner {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 14px 18px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 12px;
+		}
+
+		.brand {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			user-select: none;
+		}
+
+		.logo {
+			width: 34px;
+			height: 34px;
+			border-radius: 10px;
+			background: linear-gradient(135deg, rgba(125,211,252,0.20), rgba(167,139,250,0.18));
+			border: 1px solid var(--border);
+			box-shadow: var(--shadow);
+			display: grid;
+			place-items: center;
+		}
+
+		.logo svg { opacity: 0.95; }
+		.brand h1 {
+			margin: 0;
+			font-size: 15px;
+			font-weight: 650;
+			letter-spacing: 0.3px;
+		}
+		.brand .sub {
+			margin: 0;
+			color: var(--faint);
+			font-size: 12px;
+		}
+
+		.top-actions {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			color: var(--muted);
+		}
+
+		.pill {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			padding: 9px 10px;
+			border: 1px solid var(--border2);
+			border-radius: 999px;
+			background: rgba(15, 23, 48, 0.55);
+			box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+			user-select: none;
+		}
+
+		.pill .label { font-size: 12px; color: var(--faint); }
+		.pill .value { font-size: 12px; color: var(--muted); }
+		.pill.disabled { opacity: 0.75; }
+
+		.icon-btn {
+			width: 36px;
+			height: 36px;
+			border-radius: 12px;
+			border: 1px solid var(--border2);
+			background: rgba(15, 23, 48, 0.55);
+			display: grid;
+			place-items: center;
+			box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+			cursor: default;
+			user-select: none;
+		}
+		.icon-btn svg { opacity: 0.9; }
+
+		main {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 22px 18px 34px;
+			width: 100%;
+		}
+
+		.hero {
+			padding: 18px;
+			border: 1px solid var(--border2);
+			background: linear-gradient(180deg, rgba(15, 23, 48, 0.62), rgba(15, 23, 48, 0.28));
+			border-radius: var(--radius);
+			box-shadow: var(--shadow);
+		}
+
+		.hero-grid {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 14px;
+			align-items: center;
+		}
+
+		.headline {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 18px;
+		}
+
+		.headline h2 {
+			margin: 0;
+			font-size: 20px;
+			letter-spacing: 0.2px;
+			font-weight: 650;
+		}
+
+		.headline p {
+			margin: 6px 0 0;
+			color: var(--muted);
+			font-size: 13px;
+			max-width: 75ch;
+		}
+
+		.search-row {
+			display: grid;
+			grid-template-columns: 1fr auto;
+			gap: 10px;
+			align-items: center;
+		}
+
+		.search-box {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding: 12px 12px;
+			border-radius: 16px;
+			border: 1px solid var(--border);
+			background: rgba(10, 16, 35, 0.65);
+			box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+		}
+
+		.search-box svg { color: var(--faint); }
+		.search-box input {
+			width: 100%;
+			border: none;
+			background: transparent;
+			color: var(--text);
+			font-size: 16px;
+			padding: 6px 0;
+			outline: none;
+		}
+		.search-box input::placeholder { color: rgba(168, 179, 217, 0.70); }
+
+		.primary {
+			padding: 12px 14px;
+			border-radius: 14px;
+			border: 1px solid rgba(125,211,252,0.35);
+			background: linear-gradient(180deg, rgba(125,211,252,0.18), rgba(125,211,252,0.10));
+			color: var(--text);
+			font-weight: 650;
+			letter-spacing: 0.2px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+			cursor: pointer;
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+		}
+
+		.primary:active { transform: translateY(1px); }
+
+		.hint {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+			color: var(--faint);
+			font-size: 12px;
+		}
+
+		.hint strong {
+			color: var(--accent);
+			font-weight: 700;
+		}
+
+		.layout {
+			margin-top: 18px;
+			display: grid;
+			grid-template-columns: 1.5fr 0.9fr;
+			gap: 14px;
+			align-items: start;
+		}
+
+		@media (max-width: 980px) {
+			.layout { grid-template-columns: 1fr; }
+		}
+
+		.panel {
+			border: 1px solid var(--border2);
+			border-radius: var(--radius);
+			background: linear-gradient(180deg, rgba(15, 23, 48, 0.55), rgba(15, 23, 48, 0.25));
+			box-shadow: var(--shadow);
+			overflow: hidden;
+		}
+
+		.panel-header {
+			padding: 12px 14px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+			border-bottom: 1px solid var(--border2);
+			background: rgba(11, 19, 41, 0.55);
+		}
+
+		.panel-header .title {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		.panel-header h3 {
+			margin: 0;
+			font-size: 13px;
+			font-weight: 700;
+			letter-spacing: 0.35px;
+			text-transform: uppercase;
+			color: rgba(231, 236, 255, 0.90);
+		}
+
+		.panel-header .meta {
+			font-size: 12px;
+			color: var(--faint);
+		}
+
+		.panel-body { padding: 14px; }
+
+		.empty {
+			padding: 14px;
+			color: var(--muted);
+			border: 1px dashed rgba(255,255,255,0.15);
+			border-radius: 12px;
+			background: rgba(11, 16, 32, 0.35);
+		}
+
+		.msg {
+			margin: 0;
+			color: var(--muted);
+			font-size: 13px;
+			line-height: 1.45;
+		}
+
+		.msg strong { color: var(--text); }
+
+		.result-card {
+			border: 1px solid var(--border2);
+			border-radius: 14px;
+			background: linear-gradient(180deg, rgba(11, 19, 41, 0.55), rgba(11, 19, 41, 0.28));
+			padding: 14px;
+			display: grid;
+			gap: 10px;
+		}
+
+		.hostline {
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			gap: 10px;
+			flex-wrap: wrap;
+		}
+
+		.host {
+			font-weight: 750;
+			letter-spacing: 0.2px;
+			font-size: 15px;
+		}
+
+		.host small {
+			font-weight: 550;
+			color: var(--faint);
+			margin-left: 8px;
+		}
+
+		.tags {
+			display: flex;
+			gap: 6px;
+			flex-wrap: wrap;
+		}
+
+		.tag {
+			font-size: 11px;
+			padding: 4px 8px;
+			border-radius: 999px;
+			border: 1px solid var(--border2);
+			color: var(--muted);
+			background: rgba(0,0,0,0.15);
+			user-select: none;
+		}
+		.tag.good { border-color: rgba(52, 211, 153, 0.35); color: rgba(52, 211, 153, 0.95); }
+		.tag.warn { border-color: rgba(251, 191, 36, 0.35); color: rgba(251, 191, 36, 0.95); }
+
+		.summary {
+			margin: 0;
+			color: rgba(231,236,255,0.92);
+			font-size: 13px;
+			line-height: 1.45;
+		}
+
+		.summary .danger {
+			color: rgba(251, 113, 133, 0.95);
+			font-weight: 700;
+		}
+
+		.ports {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+		}
+
+		.port {
+			border: 1px solid var(--border2);
+			background: rgba(0,0,0,0.15);
+			border-radius: 12px;
+			padding: 8px 10px;
+			min-width: 210px;
+		}
+
+		.port .pnum {
+			font-family: var(--mono);
+			font-size: 12px;
+			color: rgba(231,236,255,0.90);
+			margin-bottom: 3px;
+		}
+		.port .pdesc {
+			font-size: 12px;
+			color: var(--muted);
+		}
+
+		.banner-excerpt {
+			padding: 10px 12px;
+			border-radius: 12px;
+			border: 1px solid rgba(167, 139, 250, 0.22);
+			background: linear-gradient(180deg, rgba(167, 139, 250, 0.10), rgba(167, 139, 250, 0.06));
+			font-family: var(--mono);
+			font-size: 12px;
+			color: rgba(231,236,255,0.92);
+			overflow: auto;
+		}
+
+		.actions {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+			flex-wrap: wrap;
+			margin-top: 2px;
+		}
+
+		.toggle {
+			border: 1px solid rgba(125, 211, 252, 0.30);
+			background: rgba(125, 211, 252, 0.10);
+			color: rgba(231,236,255,0.95);
+			padding: 9px 10px;
+			border-radius: 12px;
+			cursor: pointer;
+			font-weight: 650;
+			letter-spacing: 0.2px;
+		}
+
+		.toggle[aria-expanded="true"] {
+			border-color: rgba(52, 211, 153, 0.35);
+			background: rgba(52, 211, 153, 0.10);
+		}
+
+		.fineprint {
+			color: var(--faint);
+			font-size: 12px;
+		}
+
+		.mono-block {
+			font-family: var(--mono);
+			font-size: 12px;
+			line-height: 1.55;
+			white-space: pre-wrap;
+			word-break: break-word;
+			padding: 12px;
+			border-radius: 12px;
+			border: 1px solid var(--border2);
+			background: rgba(0, 0, 0, 0.18);
+			color: rgba(231,236,255,0.92);
+			overflow: auto;
+			max-height: 440px;
+		}
+
+		.details-kv {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 10px;
+		}
+
+		.kv {
+			border: 1px solid var(--border2);
+			border-radius: 12px;
+			background: rgba(11, 16, 32, 0.35);
+			padding: 10px 12px;
+		}
+
+		.kv .k {
+			font-size: 11px;
+			text-transform: uppercase;
+			letter-spacing: 0.35px;
+			color: var(--faint);
+			margin-bottom: 4px;
+		}
+
+		.kv .v {
+			font-size: 13px;
+			color: rgba(231,236,255,0.92);
+			font-weight: 650;
+		}
+
+		.inert {
+			pointer-events: none;
+			filter: saturate(0.92);
+		}
+
+		.sr-only {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+			white-space: nowrap;
+			border-width: 0;
+		}
+	</style>
+  <script src="../cq-bridge.js"></script>
+</head>
+
+<body>
+	<!--
+		Builder notes (safe to edit):
+		- Change the BoxCom-only result content inside BOXCOM_DATA in the script.
+		- Update the host/IP, banners, vendor/product strings, ports, and location there.
+		- UI requirement reminder: do not use the words "simulation", "mockup", or "beta" in any visible UI messages.
+	-->
+
+	<div class="app">
+		<header>
+			<div class="header-inner">
+				<div class="brand" aria-label="Site header">
+					<div class="logo" aria-hidden="true">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							<path d="M7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+							<path d="M10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+							<path d="M12 12L12 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+						</svg>
+					</div>
+					<div>
+						<h1>Shodan • Device Indexer</h1>
+						<p class="sub">Recon portal • host & banner index</p>
+					</div>
+				</div>
+
+				<div class="top-actions" aria-label="Top controls (visual)">
+					<div class="pill disabled inert" role="button" aria-disabled="true" tabindex="-1" title="Disabled">
+						<span class="label">Filters</span>
+						<span class="value">Internet / Banners / Ports</span>
+						<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+
+					<div class="pill disabled inert" role="button" aria-disabled="true" tabindex="-1" title="Disabled">
+						<span class="label">Plan</span>
+						<span class="value">Operator</span>
+					</div>
+
+					<div class="icon-btn inert" aria-disabled="true" title="Account">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							<path d="M12 13C14.2091 13 16 11.2091 16 9C16 6.79086 14.2091 5 12 5C9.79086 5 8 6.79086 8 9C8 11.2091 9.79086 13 12 13Z" stroke="currentColor" stroke-width="2" />
+						</svg>
+						<span class="sr-only">Account</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero" aria-label="Search">
+				<div class="hero-grid">
+					<div class="headline">
+						<div>
+							<h2>Search indexed devices, banners, and exposed services</h2>
+							<p>Query hosts by organization name, vendor strings, service fingerprints, ports, and protocol banners.</p>
+						</div>
+					</div>
+
+					<div class="search-row">
+						<div class="search-box" role="search">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+								<path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="currentColor" stroke-width="2" />
+								<path d="M21 21L16.7 16.7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							</svg>
+							<label class="sr-only" for="q">Search</label>
+							<input id="q" type="text" autocomplete="off" spellcheck="false" inputmode="search" placeholder="Search hosts, vendors, banners..." />
+						</div>
+
+						<button id="searchBtn" class="primary" type="button" aria-label="Run search">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+								<path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="currentColor" stroke-width="2" />
+								<path d="M21 21L16.7 16.7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+							</svg>
+							Search
+						</button>
+					</div>
+
+					<div class="hint">
+						<div class="inert" aria-hidden="true">Saved queries • Export • Monitor</div>
+						<div>Enter a query and press Enter</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="layout" aria-label="Search results">
+				<div class="panel" aria-label="Results panel">
+					<div class="panel-header">
+						<div class="title">
+							<h3>Results</h3>
+							<span class="meta" id="resultsMeta">Awaiting query</span>
+						</div>
+						<div class="meta inert" aria-hidden="true">Sort: Relevance</div>
+					</div>
+					<div class="panel-body" id="results">
+						<div class="empty">
+							<p class="msg"><strong>Tip:</strong> Enter a query to retrieve indexed hosts.</p>
+						</div>
+					</div>
+				</div>
+
+				<aside class="panel" aria-label="Details panel">
+					<div class="panel-header">
+						<div class="title">
+							<h3>Details</h3>
+							<span class="meta" id="detailsMeta">No selection</span>
+						</div>
+						<div class="meta inert" aria-hidden="true">Inspector</div>
+					</div>
+					<div class="panel-body" id="details">
+						<div class="empty">
+							<p class="msg"><strong>No host selected.</strong> Use “View banners &amp; ports” on a result to load the inspector.</p>
+						</div>
+					</div>
+				</aside>
+			</section>
+		</main>
+	</div>
+
+	<script>
+		// ===== Exercise data (edit here) =====
+		const BOXCOM_DATA = Object.freeze({
+			org: "BoxCom",
+			host: "198.51.100.23",
+			location: "boxcom.com (public footprint)",
+			deviceTypeLabel: "Device classification: HVAC controller / BMS / RTU",
+			summaryLine: "Exposed HVAC controller (BMS/RTU) reachable from the public Internet: immediate review recommended.",
+			explanation:
+				"This looks like a building HVAC controller (BMS/RTU) exposed publicly. These devices typically control climate systems and should not be directly reachable from the internet.",
+			tags: [
+				{ text: "HVAC controller", kind: "warn" },
+				{ text: "BMS", kind: "warn" },
+				{ text: "RTU", kind: "warn" },
+				{ text: "ICS", kind: "" },
+				{ text: "Public", kind: "good" }
+			],
+			ports: [
+				{
+					proto: "tcp",
+					port: 80,
+					service: "HTTP",
+					product: "BMS Web Interface",
+					note: "Title: \"BoxCom BMS: HVAC Controller\""
+				},
+				{
+					proto: "tcp",
+					port: 502,
+					service: "modbus",
+					product: "Trane RTU Controller",
+					note: "Service banner: \"Trane RTU controller - modbus-rtu - firmware v3.4\""
+				},
+				{
+					proto: "udp",
+					port: 161,
+					service: "SNMP",
+					product: "Trane HVAC RTU",
+					note: "sysDescr: \"Trane HVAC RTU v3.4 (BoxCom-HVAC-RTU-01)\""
+				}
+			],
+			banners: {
+				overview: [
+					"Device Type: HVAC Controller / RTU / Building Management System (BMS)",
+					"Vendor: Trane",
+					"BACnet Device Name: BoxCom-HVAC-RTU-01",
+					"Observed: public Internet reachable"
+				],
+				fingerprint:
+					"banner: Trane RTU v3.4 Build 12 | device-type: HVAC Controller | product: Trane RTU Controller",
+				portBlocks: [
+					{
+						label: "80/tcp: HTTP: BMS Web Interface",
+						text: [
+							"HTTP/1.1 200 OK",
+							"Server: Trane-RTU/3.4",
+							"X-Device-Class: HVAC Controller",
+							"Title: BoxCom BMS: HVAC Controller",
+							"Vendor: Trane",
+							"Device: RTU / BMS",
+							""
+						].join("\n")
+					},
+					{
+						label: "502/tcp: modbus",
+						text: [
+							"modbus: Trane RTU v3.4 Build 12",
+							"unit-id: 01",
+							"device-type: HVAC Controller",
+							"product: Trane RTU Controller",
+							"banner: Trane RTU controller - modbus-rtu - firmware v3.4",
+							""
+						].join("\n")
+					},
+					{
+						label: "161/udp: SNMP",
+						text: [
+							"SNMPv2-MIB::sysDescr.0 = STRING: Trane HVAC RTU v3.4 (BoxCom-HVAC-RTU-01)",
+							"SNMPv2-MIB::sysName.0  = STRING: BoxCom-HVAC-RTU-01",
+							"SNMPv2-MIB::sysContact.0 = STRING: Facilities",
+							"SNMPv2-MIB::sysLocation.0 = STRING: boxcom.com",
+							""
+						].join("\n")
+					}
+				]
+			}
+		});
+
+		// ===== UI wiring =====
+		const elQuery = document.getElementById("q");
+		const elSearchBtn = document.getElementById("searchBtn");
+		const elResults = document.getElementById("results");
+		const elDetails = document.getElementById("details");
+		const elResultsMeta = document.getElementById("resultsMeta");
+		const elDetailsMeta = document.getElementById("detailsMeta");
+
+		function normalizeQuery(raw) {
+			return String(raw || "")
+				.trim()
+				.toLowerCase()
+				.replace(/\s+/g, " ");
+		}
+
+		function isBoxComQuery(q) {
+			const normalized = normalizeQuery(q);
+			const compact = normalized.replace(/\s+/g, "");
+			return compact === "boxcom";
+		}
+
+		function clearDetails() {
+			elDetailsMeta.textContent = "No selection";
+			elDetails.innerHTML = `
+				<div class="empty">
+					<p class="msg"><strong>No host selected.</strong> Use “View banners &amp; ports” on a result to load the inspector.</p>
+				</div>
+			`;
+		}
+
+		function renderLimitedScopeMessage() {
+			elResultsMeta.textContent = "0 hosts";
+			elResults.innerHTML = `
+				<div class="empty" role="status" aria-live="polite">
+					<p class="msg">Search scope currently limited for this exercise. Please refine your query and try again.</p>
+					<p class="msg" style="margin-top:8px; color: var(--faint);">Tip: search by organization name, vendor strings, or service banners.</p>
+				</div>
+			`;
+			clearDetails();
+		}
+
+		function renderBoxComResult() {
+			elResultsMeta.textContent = "1 host";
+
+			const tagsHtml = BOXCOM_DATA.tags
+				.map(t => `<span class="tag ${t.kind}">${escapeHtml(t.text)}</span>`)
+				.join(" ");
+
+			const portsHtml = BOXCOM_DATA.ports
+				.map(p => {
+					const pnum = `${p.port}/${p.proto}`;
+					const pdesc = `${p.service}: ${p.product}: ${p.note}`;
+					return `
+						<div class="port">
+							<div class="pnum">${escapeHtml(pnum)}</div>
+							<div class="pdesc">${escapeHtml(pdesc)}</div>
+						</div>
+					`;
+				})
+				.join("");
+
+			const excerpt = BOXCOM_DATA.banners.fingerprint;
+
+			elResults.innerHTML = `
+				<article class="result-card" aria-label="Result: ${escapeHtml(BOXCOM_DATA.org)}">
+					<div class="hostline">
+						<div class="host">
+							${escapeHtml(BOXCOM_DATA.host)}
+							<small>${escapeHtml(BOXCOM_DATA.location)}</small>
+						</div>
+						<div class="tags" aria-label="Classification tags">${tagsHtml}</div>
+					</div>
+
+					<p class="summary">
+						<span class="danger">${escapeHtml(BOXCOM_DATA.summaryLine)}</span>
+					</p>
+
+					<div class="ports" aria-label="Open ports">
+						${portsHtml}
+					</div>
+
+					<div class="banner-excerpt" aria-label="Banner excerpt">
+						${escapeHtml(excerpt)}
+					</div>
+
+					<p class="msg" style="margin:0;">
+						${escapeHtml(BOXCOM_DATA.explanation)}
+					</p>
+
+					<div class="actions">
+						<button id="viewDetailsBtn" class="toggle" type="button" aria-expanded="false">
+							View banners &amp; ports
+						</button>
+						<div class="fineprint">Device Type: <strong>HVAC Controller / RTU / Building Management System (BMS)</strong></div>
+					</div>
+				</article>
+			`;
+
+			const btn = document.getElementById("viewDetailsBtn");
+			btn.addEventListener("click", () => {
+				const expanded = btn.getAttribute("aria-expanded") === "true";
+				const next = !expanded;
+				btn.setAttribute("aria-expanded", String(next));
+				if (next) {
+					renderDetailsPane();
+					elDetails.scrollIntoView({ block: "nearest", behavior: "smooth" });
+				} else {
+					clearDetails();
+				}
+			});
+		}
+
+		function renderDetailsPane() {
+			elDetailsMeta.textContent = BOXCOM_DATA.host;
+
+			const kvHtml = `
+				<div class="details-kv">
+					<div class="kv">
+						<div class="k">Device classification</div>
+						<div class="v">${escapeHtml(BOXCOM_DATA.deviceTypeLabel.replace(/^Device classification:\s*/i, ""))}</div>
+					</div>
+					<div class="kv">
+						<div class="k">Host</div>
+						<div class="v">${escapeHtml(BOXCOM_DATA.host)}</div>
+					</div>
+					<div class="kv">
+						<div class="k">Location</div>
+						<div class="v">${escapeHtml(BOXCOM_DATA.location)}</div>
+					</div>
+				</div>
+			`;
+
+			const blockLines = [];
+			blockLines.push("=== Classification ===");
+			blockLines.push(BOXCOM_DATA.deviceTypeLabel);
+			blockLines.push("");
+			blockLines.push("=== Overview ===");
+			BOXCOM_DATA.banners.overview.forEach(line => blockLines.push(line));
+			blockLines.push("");
+			blockLines.push("=== Open Ports ===");
+			BOXCOM_DATA.ports.forEach(p => {
+				blockLines.push(`${p.port}/${p.proto}: ${p.service}: ${p.product}`);
+				blockLines.push(`  ${p.note}`);
+			});
+			blockLines.push("");
+			blockLines.push("=== Fingerprint Snippet ===");
+			blockLines.push(BOXCOM_DATA.banners.fingerprint);
+			blockLines.push("");
+			blockLines.push("=== Banners ===");
+			BOXCOM_DATA.banners.portBlocks.forEach(pb => {
+				blockLines.push(`[${pb.label}]`);
+				blockLines.push(pb.text);
+			});
+
+			elDetails.innerHTML = `
+				${kvHtml}
+				<div style="height: 10px"></div>
+				<div class="mono-block" role="region" aria-label="Banners and fingerprint details">${escapeHtml(blockLines.join("\n"))}</div>
+			`;
+		}
+
+		function renderSearch() {
+			const q = elQuery.value;
+
+			if (isBoxComQuery(q)) {
+				renderBoxComResult();
+				clearDetails();
+				return;
+			}
+
+			renderLimitedScopeMessage();
+		}
+
+		function escapeHtml(s) {
+			return String(s)
+				.replace(/&/g, "&amp;")
+				.replace(/</g, "&lt;")
+				.replace(/>/g, "&gt;")
+				.replace(/\"/g, "&quot;")
+				.replace(/'/g, "&#39;");
+		}
+
+		elSearchBtn.addEventListener("click", renderSearch);
+		elQuery.addEventListener("keydown", (e) => {
+			if (e.key === "Enter") {
+				e.preventDefault();
+				renderSearch();
+			}
+		});
+
+		// Note: no URL query/hash-based hints are used.
+	</script>
+</body>
+</html>

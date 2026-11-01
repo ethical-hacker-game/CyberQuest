@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Separate the direct carrier finding from surrounding context. Choose the entry that documents an attempted takeover of Riley's number.",
+      "taskInstructions": "Use the fraud review excerpt in Dev Patel's forwarded note.",
+      "taskQuestion": "Which clue best supports the SIM-swap finding?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The SIM-swap request and failed PIN reset directly support the finding.",
+      "answers": [
+        "The carrier log was captured during the expo morning.",
+        "Riley's phone appears in the same incident timeline.",
+        "The account page shows a normal device support menu.",
+        "A SIM-swap request and failed PIN reset target Riley's number."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Separate the direct carrier finding from timestamps and campaign context. Choose the entry that records the attempted takeover route.",
+      "taskInstructions": "Use the fraud review excerpt in Dev Patel's forwarded note.",
+      "taskQuestion": "Which clue carries the actual finding?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The SIM-swap request and failed PIN reset identify the route that was tested.",
+      "answers": [
+        "A SIM-swap request and failed PIN reset target Riley's number.",
+        "The carrier log was captured during the expo morning.",
+        "Riley's phone appears in the same incident timeline.",
+        "The account page shows a normal device support menu."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A warning needs a direct, verifiable finding. Choose the carrier entry that shows Riley's number was targeted.",
+      "taskInstructions": "Use the fraud review excerpt in Dev Patel's forwarded note.",
+      "taskQuestion": "Which clue best supports that Riley's number was targeted?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The SIM-swap request and failed PIN reset directly document the attempt.",
+      "answers": [
+        "The carrier log was captured during the expo morning.",
+        "A SIM-swap request and failed PIN reset target Riley's number.",
+        "Riley's phone appears in the same incident timeline.",
+        "The account page shows a normal device support menu."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u03_q06_t03",
+  "parentQuestID": "ismg6860_u03_q06",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

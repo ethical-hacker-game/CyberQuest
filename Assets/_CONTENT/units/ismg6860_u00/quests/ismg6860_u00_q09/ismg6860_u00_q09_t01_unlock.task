@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "casejournal",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> The Case Journal comes out of our equipment budget. It is a small investment in keeping the record usable: confirmed values stay attached to the case instead of getting lost between tools.",
+      "taskInstructions": "",
+      "taskQuestion": "Unlock the Case Journal in the Lab panel.",
+      "taskCompleteText": "<b>Ed:</b> The Case Journal is equipped. From here, every value you confirm is preserved for the handoff instead of living in your memory."
+    }
+  ],
+  "taskID": "ismg6860_u00_q09_t01_unlock",
+  "parentQuestID": "ismg6860_u00_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

@@ -1,0 +1,11 @@
+{
+  "articleID": "u03_physical_social_engineering",
+  "videoURL": null,
+  "title": "Physical Social Engineering",
+  "content": "Physical social engineering uses a believable story, appearance, or social pressure to bypass controls at a building, event, or restricted area. The attacker may pose as a vendor, courier, employee, visitor, or assistant and rely on another person's helpfulness or respect for authority.\n\n<b>Pretexting and tailgating</b>\n\nA pretext is the invented situation that makes a request seem legitimate. Props such as uniforms, boxes, tools, lanyards, or a confident phone call support the story but do not prove authorization. Tailgating occurs when an unauthorized person follows an authorized person through a controlled entrance. The request may be framed so that refusing feels rude: the person's hands are full, the delivery is urgent, or an important meeting is supposedly waiting.\n\nAuthority can create similar pressure. A caller may claim a senior title or say they act for an executive, then demand an exception to badge, visitor, or identity checks. Real authority should be verifiable and should not require staff to abandon established controls. A title, uniform, or familiar organization name is a claim, not a credential.\n\n<b>Use process to remove the social conflict</b>\n\nDo not confront or accuse someone when a safer verification process is available. Direct unbadged visitors to the reception or security desk, require each person to use their own credential, and verify unusual instructions through a known contact. If a person refuses the process, attempts to rush past it, or creates an immediate safety concern, contact physical security.\n\nReport the time, location, description, claimed role, direction of travel, and the control that was tested. Preserve relevant access logs or camera references according to policy. Support the employee or volunteer who received the request; attackers deliberately create awkward situations. Clear procedures, visible help points, and a culture that permits a polite no are stronger than expecting individuals to judge every stranger perfectly.",
+  "links": [
+    "door-camera note",
+    "unbadged entry",
+    "borrow authority"
+  ]
+}

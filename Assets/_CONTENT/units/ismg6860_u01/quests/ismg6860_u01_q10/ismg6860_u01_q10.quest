@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u01_q10",
+  "cityIndex": 377,
+  "questIconID": "quest_icon_trainingacademy_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q10_t01",
+    "ismg6860_u01_q10_t02"
+  ],
+  "requiredQuestID": "ismg6860_u01_q09",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Host Discovery Demo",
+      "questDescription": "Samira asks {player} to run an authorized Zenmap host-discovery check against the academy's sandbox target. Review the result, then distinguish evidence that a host responded from claims about its ports, services, vulnerabilities, ownership, or physical location.",
+      "questCompleteText": "<b>Samira:</b> You confirmed that the sandbox target responded to the approved discovery probe. Because this check did not scan ports or services, those remain unknown until a separately authorized assessment tests them.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": "zenmap_quest_10_1"
+    }
+  ]
+}

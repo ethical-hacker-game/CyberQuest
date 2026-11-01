@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "safevalidate",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Validation Kit compares scanner claims with read-only HTTP evidence such as status, headers, and page identity. It does not submit forms or change configuration.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Validation Kit</b>.",
+      "taskQuestion": "Unlock the Validation Kit in the Lab panel.",
+      "taskCompleteText": "<b>Mara Voss:</b> Validation Kit is ready. Verify the setup finding with read-only evidence."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "safevalidate",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Validation Kit confirms status, headers, and page identity without submitting forms. A verified route is more useful than a scanner guess.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Validation Kit</b>.",
+      "taskQuestion": "Unlock the Validation Kit in the Lab panel.",
+      "taskCompleteText": "<b>Felix Rane:</b> Validation Kit is ready. Verify the setup route without changing it."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "safevalidate",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Validation Kit confirms status, headers, and page identity without changing the resident-facing service. That keeps the evidence defensible.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Validation Kit</b>.",
+      "taskQuestion": "Unlock the Validation Kit in the Lab panel.",
+      "taskCompleteText": "<b>Imani Vale:</b> Validation Kit is ready. Verify the setup route with read-only evidence."
+    }
+  ],
+  "taskID": "ismg6860_u04_q07_t00_unlock_safevalidate",
+  "parentQuestID": "ismg6860_u04_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

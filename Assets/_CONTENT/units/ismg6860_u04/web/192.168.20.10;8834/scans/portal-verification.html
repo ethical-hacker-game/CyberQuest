@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nessus / Northbridge Portal: External Verification</title>
+  <style>
+    :root{--ink:#1b2733;--muted:#67737f;--line:#e1e6ec;--bg:#f3f5f8;--accent:#19b3a6;
+      --crit:#7a1126;--high:#d63b2f;--med:#e08a00;--low:#3f9142;--info:#2476c4}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);font-size:14px}
+    .topbar{display:flex;align-items:center;gap:22px;background:#0a1a2f;color:#fff;padding:0 22px;height:54px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.5px;font-size:18px}
+    .logo .mark{width:22px;height:22px;border-radius:50%;background:conic-gradient(from 180deg,#19b3a6,#1aa0e6,#19b3a6);box-shadow:0 0 0 3px rgba(25,179,166,.25)}
+    .topbar nav{display:flex;gap:4px;height:100%}
+    .topbar nav a{color:#cfe0ee;text-decoration:none;padding:0 16px;display:flex;align-items:center;font-weight:600;border-bottom:3px solid transparent}
+    .topbar nav a.active{color:#fff;border-bottom-color:var(--accent)}
+    .topbar .spacer{flex:1}
+    .topbar .user{font-size:13px;color:#9fb3c6}
+    .main{max-width:1080px;margin:0 auto;padding:22px 26px 60px}
+    .crumbs{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .crumbs a{color:var(--accent);text-decoration:none}
+    h1{margin:2px 0 4px;font-size:23px;font-weight:600}
+    .meta{display:flex;gap:26px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-bottom:16px}
+    .meta b{color:#2c3a47;font-weight:600}
+    .tabs{display:flex;gap:2px;border-bottom:1px solid var(--line);margin-bottom:18px}
+    .tabs a{padding:10px 16px;text-decoration:none;color:#56646f;font-weight:600;border-bottom:3px solid transparent}
+    .tabs a.active{color:#0d6f66;border-bottom-color:var(--accent)}
+    .card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:20px}
+    .card>h3{margin:0;padding:13px 18px;border-bottom:1px solid var(--line);font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:#56646f;background:#fafbfc}
+    table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);font-size:13.5px;vertical-align:middle}
+    th{background:#fafbfc;color:#56646f;font-weight:600;font-size:11px;letter-spacing:.6px;text-transform:uppercase}
+    tr:last-child td{border-bottom:none}
+    .sev{display:inline-block;min-width:64px;text-align:center;color:#fff;font-weight:700;font-size:11px;letter-spacing:.4px;padding:4px 8px;border-radius:3px;text-transform:uppercase}
+    .s-crit{background:var(--crit)}.s-high{background:var(--high)}.s-med{background:var(--med)}.s-low{background:var(--low)}.s-info{background:var(--info)}
+    .vname{font-weight:700;color:#15334f;text-decoration:none}
+    .vname:hover{color:var(--accent)}
+    .detail h2{font-size:19px;margin:0 0 14px}
+    .kv{display:grid;grid-template-columns:170px 1fr;gap:8px 18px;font-size:13.5px;padding:16px 18px}
+    .kv div:nth-child(odd){color:var(--muted);font-weight:600}
+    .sect{padding:0 18px 18px}
+    .sect h4{margin:18px 0 6px;font-size:13px;letter-spacing:.4px;text-transform:uppercase;color:#56646f}
+    .sect p{margin:0 0 8px;line-height:1.55}
+    pre{background:#0e1c2b;color:#d6e6f2;border-radius:5px;padding:14px 16px;font-family:Consolas,"Courier New",monospace;font-size:12.5px;line-height:1.55;overflow:auto;white-space:pre-wrap}
+    code{background:#edf1f5;border:1px solid #dce3eb;border-radius:4px;padding:1px 5px;font-family:Consolas,monospace}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo"><span class="mark"></span>Nessus</div>
+    <nav><a class="active" href="../../192.168.20.10;8834/">Scans</a><a href="../../192.168.20.10;8834/">Settings</a></nav>
+    <div class="spacer"></div>
+    <div class="user">analyst@assessment &nbsp;|&nbsp; Professional</div>
+  </div>
+
+  <main class="main">
+    <div class="crumbs"><a href="../../192.168.20.10;8834/">My Scans</a> &rsaquo; Northbridge Portal: External Verification</div>
+    <h1>Northbridge Portal &mdash; External Verification</h1>
+    <div class="meta">
+      <span><b>Target:</b> portal.northbridge.com</span>
+      <span><b>Status:</b> Completed</span>
+      <span><b>Policy:</b> Web Application Verification</span>
+      <span><b>Scanner:</b> Local Scanner</span>
+    </div>
+
+    <div class="tabs">
+      <a href="../../192.168.20.10;8834/scans/portal-verification.html">Hosts</a>
+      <a class="active" href="../../192.168.20.10;8834/scans/portal-verification.html">Vulnerabilities</a>
+      <a href="../../192.168.20.10;8834/scans/portal-verification.html">History</a>
+    </div>
+
+    <div class="card">
+      <h3>Vulnerabilities &mdash; portal.northbridge.com</h3>
+      <table>
+        <thead><tr><th style="width:110px">Severity</th><th>Name</th><th style="width:160px">Family</th><th style="width:80px">Count</th></tr></thead>
+        <tbody>
+          <tr><td><span class="sev s-high">High</span></td><td><a class="vname" href="#setup">Web Application Setup / Install Interface Accessible</a></td><td>Web Servers</td><td>1</td></tr>
+          <tr><td><span class="sev s-med">Medium</span></td><td><a class="vname" href="#ssh">OpenSSH &lt; 7.4 Service Detection (internal host)</a></td><td>Service Detection</td><td>1</td></tr>
+          <tr><td><span class="sev s-low">Low</span></td><td><a class="vname" href="#hdr">Missing &lsquo;X-Frame-Options&rsquo; Response Header</a></td><td>Web Servers</td><td>1</td></tr>
+          <tr><td><span class="sev s-info">Info</span></td><td><a class="vname" href="#http">HTTP Server Type and Title</a></td><td>Web Servers</td><td>1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card detail" id="setup">
+      <div class="kv">
+        <div>Plugin&nbsp;Name</div><div><b>Web Application Setup / Install Interface Accessible</b></div>
+        <div>Severity</div><div><span class="sev s-high">High</span></div>
+        <div>Plugin ID</div><div>50988</div>
+        <div>Family</div><div>Web Servers</div>
+        <div>Risk (CVSS v3.1)</div><div>7.5 (AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)</div>
+      </div>
+      <div class="sect">
+        <h4>Description</h4>
+        <p>The remote web server exposes a deployment / setup interface that should be removed or restricted after installation. A reachable setup wizard can disclose configuration details and, depending on state, allow reconfiguration of the application.</p>
+        <h4>Solution</h4>
+        <p>Remove the setup routes after deployment, or restrict them to approved maintenance hosts. Confirm the wizard cannot be reached from public networks.</p>
+        <h4>Output</h4>
+        <pre>Finding      : Exposed setup interface
+Method       : GET (read-only request)
+URL          : https://portal.northbridge.com/setup/install/
+HTTP status  : 200 OK
+Content-Type : text/html
+Page title   : Northbridge Portal Setup Wizard
+Form controls: visible, disabled
+Form action  : not submitted</pre>
+      </div>
+    </div>
+
+    <div class="card detail" id="ssh">
+      <div class="kv">
+        <div>Plugin&nbsp;Name</div><div><b>OpenSSH &lt; 7.4 Service Detection</b></div>
+        <div>Severity</div><div><span class="sev s-med">Medium</span></div>
+        <div>Plugin ID</div><div>10267</div>
+        <div>Family</div><div>Service Detection</div>
+        <div>Host</div><div>ops-jump-03</div>
+      </div>
+      <div class="sect">
+        <h4>Description</h4>
+        <p>An outdated OpenSSH banner was observed on an internal operations host. The version string is a lead for further review; it is not by itself proof of an exploitable condition.</p>
+        <h4>Provenance</h4>
+        <p>Source: credentialed internal scan, imported for comparison. This row was not discovered from the external scan surface.</p>
+        <h4>Output</h4>
+        <pre>Service      : OpenSSH 7.2
+Host         : ops-jump-03
+Reachability : internal operations network only
+              (not reachable from the external scan surface)</pre>
+      </div>
+    </div>
+
+    <div class="card detail" id="hdr">
+      <div class="kv">
+        <div>Plugin&nbsp;Name</div><div><b>Missing &lsquo;X-Frame-Options&rsquo; Response Header</b></div>
+        <div>Severity</div><div><span class="sev s-low">Low</span></div>
+        <div>Plugin ID</div><div>50345</div>
+        <div>Family</div><div>Web Servers</div>
+      </div>
+      <div class="sect">
+        <h4>Output</h4>
+        <pre>https://portal.northbridge.com/ does not set the
+X-Frame-Options response header on at least one page.</pre>
+      </div>
+    </div>
+  </main>
+  <script src="../../cq-bridge.js"></script>
+</body>
+</html>

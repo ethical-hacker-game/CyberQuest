@@ -1,0 +1,299 @@
+{
+  "variants": [
+    {
+      "minigameType": "TraceIntruder",
+      "minigameHeaderText": "Privilege Escalation Path",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "traceSettings": {
+        "nodes": [
+          {
+            "id": "public-app",
+            "label": "PUBLIC-APP",
+            "role": "Entry",
+            "detail": "Initial low-privilege application foothold",
+            "position": {
+              "x": 0.08,
+              "y": 0.5
+            }
+          },
+          {
+            "id": "service-account",
+            "label": "SVC-REPORT",
+            "role": "Pivot",
+            "detail": "Service account with excessive local permissions",
+            "position": {
+              "x": 0.3,
+              "y": 0.72
+            }
+          },
+          {
+            "id": "admin-host",
+            "label": "ADMIN-HOST",
+            "role": "Pivot",
+            "detail": "Management host reachable through reused service permissions",
+            "position": {
+              "x": 0.58,
+              "y": 0.62
+            }
+          },
+          {
+            "id": "privileged-service",
+            "label": "PRIV-SERVICE",
+            "role": "Target",
+            "detail": "Privileged service controlling assessment records",
+            "position": {
+              "x": 0.9,
+              "y": 0.55
+            }
+          },
+          {
+            "id": "patch-server",
+            "label": "PATCH-SERVER",
+            "role": "Decoy",
+            "detail": "Segmented maintenance host with no credential path",
+            "position": {
+              "x": 0.48,
+              "y": 0.18
+            }
+          }
+        ],
+        "links": [
+          {
+            "fromId": "public-app",
+            "toId": "service-account",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario assumption: the initial foothold can invoke the over-permissioned service account.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "service-account",
+            "toId": "admin-host",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario assumption: reused service permissions permit access to the management host.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "admin-host",
+            "toId": "privileged-service",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario assumption: the management host can reach the privileged service directly.",
+            "isContainmentPoint": true
+          },
+          {
+            "fromId": "service-account",
+            "toId": "patch-server",
+            "attackerCanTraverse": false,
+            "evidence": "Scenario control: maintenance VLAN policy denies the service-account route.",
+            "isContainmentPoint": false
+          }
+        ],
+        "attackerStepEvery": 2
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> This exercise models a hypothetical chain from an assumed low-privilege foothold through the confirmed permission weakness. The transitions are analysis assumptions, not evidence that an attack occurred.",
+      "taskInstructions": "Trace hop by hop from the magenta entry node to the yellow target, then cut a link that still lies between the intruder and the target. Inspecting link evidence is free; every hop, backtrack, or failed cut ticks the clock that advances the intruder.",
+      "taskQuestion": "Trace and contain the escalation path.",
+      "taskCompleteText": "<b>Mara Voss:</b> The model shows potential impact and a containment point. Label its assumed transitions separately from the confirmed permission finding."
+    },
+    {
+      "minigameType": "TraceIntruder",
+      "minigameHeaderText": "Privilege Escalation Path",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "traceSettings": {
+        "nodes": [
+          {
+            "id": "public-app",
+            "label": "PUBLIC-APP",
+            "role": "Entry",
+            "detail": "Initial low-privilege application foothold",
+            "position": {
+              "x": 0.08,
+              "y": 0.5
+            }
+          },
+          {
+            "id": "service-account",
+            "label": "SVC-REPORT",
+            "role": "Pivot",
+            "detail": "Service account with excessive local permissions",
+            "position": {
+              "x": 0.3,
+              "y": 0.72
+            }
+          },
+          {
+            "id": "admin-host",
+            "label": "ADMIN-HOST",
+            "role": "Pivot",
+            "detail": "Management host reachable through reused service permissions",
+            "position": {
+              "x": 0.58,
+              "y": 0.62
+            }
+          },
+          {
+            "id": "privileged-service",
+            "label": "PRIV-SERVICE",
+            "role": "Target",
+            "detail": "Privileged service controlling assessment records",
+            "position": {
+              "x": 0.9,
+              "y": 0.55
+            }
+          },
+          {
+            "id": "patch-server",
+            "label": "PATCH-SERVER",
+            "role": "Decoy",
+            "detail": "Segmented maintenance host with no credential path",
+            "position": {
+              "x": 0.48,
+              "y": 0.18
+            }
+          }
+        ],
+        "links": [
+          {
+            "fromId": "public-app",
+            "toId": "service-account",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario assumption: the initial foothold can invoke the over-permissioned service account.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "service-account",
+            "toId": "admin-host",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario assumption: reused service permissions permit access to the management host.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "admin-host",
+            "toId": "privileged-service",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario assumption: the management host can reach the privileged service directly.",
+            "isContainmentPoint": true
+          },
+          {
+            "fromId": "service-account",
+            "toId": "patch-server",
+            "attackerCanTraverse": false,
+            "evidence": "Scenario control: maintenance VLAN policy denies the service-account route.",
+            "isContainmentPoint": false
+          }
+        ],
+        "attackerStepEvery": 2
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Model how an assumed foothold could use the confirmed permission weakness. The diagram estimates a possible route; it does not establish that every transition works.",
+      "taskInstructions": "Trace hop by hop from the magenta entry node to the yellow target, then cut a link that still lies between the intruder and the target. Inspecting link evidence is free; every hop, backtrack, or failed cut ticks the clock that advances the intruder.",
+      "taskQuestion": "Trace and contain the escalation path.",
+      "taskCompleteText": "<b>Felix Rane:</b> The model identifies a possible route and containment point. Its value depends on keeping assumptions visible."
+    },
+    {
+      "minigameType": "TraceIntruder",
+      "minigameHeaderText": "Privilege Escalation Path",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "traceSettings": {
+        "nodes": [
+          {
+            "id": "public-app",
+            "label": "PUBLIC-APP",
+            "role": "Entry",
+            "detail": "Initial low-privilege application foothold",
+            "position": {
+              "x": 0.08,
+              "y": 0.5
+            }
+          },
+          {
+            "id": "service-account",
+            "label": "SVC-REPORT",
+            "role": "Pivot",
+            "detail": "Service account with excessive local permissions",
+            "position": {
+              "x": 0.3,
+              "y": 0.72
+            }
+          },
+          {
+            "id": "admin-host",
+            "label": "ADMIN-HOST",
+            "role": "Pivot",
+            "detail": "Management host reachable through reused service permissions",
+            "position": {
+              "x": 0.58,
+              "y": 0.62
+            }
+          },
+          {
+            "id": "privileged-service",
+            "label": "PRIV-SERVICE",
+            "role": "Target",
+            "detail": "Privileged service controlling assessment records",
+            "position": {
+              "x": 0.9,
+              "y": 0.55
+            }
+          },
+          {
+            "id": "patch-server",
+            "label": "PATCH-SERVER",
+            "role": "Decoy",
+            "detail": "Segmented maintenance host with no credential path",
+            "position": {
+              "x": 0.48,
+              "y": 0.18
+            }
+          }
+        ],
+        "links": [
+          {
+            "fromId": "public-app",
+            "toId": "service-account",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario assumption: the initial foothold can invoke the over-permissioned service account.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "service-account",
+            "toId": "admin-host",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario assumption: reused service permissions permit access to the management host.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "admin-host",
+            "toId": "privileged-service",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario assumption: the management host can reach the privileged service directly.",
+            "isContainmentPoint": true
+          },
+          {
+            "fromId": "service-account",
+            "toId": "patch-server",
+            "attackerCanTraverse": false,
+            "evidence": "Scenario control: maintenance VLAN policy denies the service-account route.",
+            "isContainmentPoint": false
+          }
+        ],
+        "attackerStepEvery": 2
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Use the model to explain possible impact and where defenders can break the chain. Do not present the assumed foothold or transitions as confirmed events.",
+      "taskInstructions": "Trace hop by hop from the magenta entry node to the yellow target, then cut a link that still lies between the intruder and the target. Inspecting link evidence is free; every hop, backtrack, or failed cut ticks the clock that advances the intruder.",
+      "taskQuestion": "Trace and contain the escalation path.",
+      "taskCompleteText": "<b>Imani Vale:</b> The model communicates potential impact without claiming that the hypothetical chain has occurred."
+    }
+  ],
+  "taskID": "ismg6860_u04_q16_t03_trace_intruder",
+  "parentQuestID": "ismg6860_u04_q16",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

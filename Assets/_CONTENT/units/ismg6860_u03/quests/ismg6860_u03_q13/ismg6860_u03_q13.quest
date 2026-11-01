@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u03_q13",
+  "cityIndex": 5143,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q13_t01",
+    "ismg6860_u03_q13_t02",
+    "ismg6860_u03_q13_t04_sonar",
+    "ismg6860_u03_q13_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Prize Storm",
+      "questDescription": "Analyze a measured prize-spam batch and distinguish its repeated campaign indicators from unrelated message noise.",
+      "questCompleteText": "<b>Asha Moreno:</b> The batch's scale, template, sender rotation, and repeated marker are documented without overcounting unrelated spam.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Prize Storm",
+      "questDescription": "Analyze how one reward-and-urgency template uses sender rotation and volume to make a low response rate worthwhile.",
+      "questCompleteText": "<b>Felix Rane:</b> The batch economics and marker connection are documented without inflating the campaign count.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Prize Storm",
+      "questDescription": "Measure the prize-spam batch and collect specific indicators for a warning that does not exaggerate its scope.",
+      "questCompleteText": "<b>Imani Vale:</b> The warning can explain the batch's scale and repeated marker while separating unrelated spam.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

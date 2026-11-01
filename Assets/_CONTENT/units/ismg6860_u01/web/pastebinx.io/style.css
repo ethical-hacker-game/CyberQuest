@@ -1,0 +1,243 @@
+:root {
+  color-scheme: dark;
+  --bg: #06070d;
+  --panel: #101423;
+  --panel-soft: #181e33;
+  --border: #2f3857;
+  --accent: #6f8cf5;
+  --text: #f5f7ff;
+  --muted: #a3acc7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, #10152a, #05060a 65%);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.app-shell {
+  width: min(960px, 100%);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.35);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: clamp(2rem, 4.2vw, 2.75rem);
+  letter-spacing: 0.08em;
+  margin: 0;
+  background: linear-gradient(120deg, #8ec5fc, #6f8cf5 45%, #a777e3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 25px rgba(111, 140, 245, 0.35);
+}
+
+header p {
+  margin: 0 auto;
+  color: var(--muted);
+  max-width: 48ch;
+}
+
+.mock-nav,
+.meta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.meta-links {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}
+
+.mock-nav button,
+.meta-links button {
+  font: inherit;
+  border-radius: 999px;
+  border: 1px dashed var(--border);
+  padding: 0.55rem 1.3rem;
+  background: rgba(16, 20, 35, 0.65);
+  color: var(--text);
+  letter-spacing: 0.02em;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.meta-links button {
+  padding: 0.45rem 1rem;
+  color: var(--muted);
+}
+
+.mock-nav button:disabled,
+.meta-links button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.mock-nav button:disabled:hover,
+.meta-links button:disabled:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.search-bar input,
+.search-bar button {
+  font: inherit;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 0.9rem 1.25rem;
+  background: var(--panel-soft);
+  color: var(--muted);
+}
+
+.search-bar input {
+  flex: 1;
+}
+
+.search-bar input:disabled,
+.search-bar button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.composer {
+  background: var(--panel-soft);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.composer h2 {
+  margin: 0;
+}
+
+textarea {
+  width: 100%;
+  min-height: 320px;
+  background: transparent;
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  color: var(--text);
+  font: 500 1rem/1.6 "Fira Code", "SFMono-Regular", Consolas, monospace;
+  padding: 1.25rem;
+  resize: vertical;
+}
+
+textarea::placeholder {
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.actions span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.cta-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+button.primary {
+  font: inherit;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  padding: 0.95rem 2.75rem;
+  background: linear-gradient(135deg, rgba(111, 140, 245, 0.15), rgba(111, 140, 245, 0.4));
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+button.primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 0.4rem);
+  right: 0;
+  background: #0f111a;
+  color: var(--text);
+  font-size: 0.85rem;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  width: max-content;
+  max-width: 240px;
+}
+
+.cta-wrapper:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+
+  .app-shell {
+    padding: 1.5rem;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

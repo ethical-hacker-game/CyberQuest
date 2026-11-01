@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "resolvecheck",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A reported <b>DNS anomaly</b> needs comparison evidence. Resolver Check queries the same hostname through independent resolvers and highlights inconsistent answers.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Resolver Check</b>.",
+      "taskQuestion": "Unlock Resolver Check.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Resolver Check is ready to compare the reported answer with independent sources."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "resolvecheck",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A <b>DNS anomaly</b> becomes defensible when the same hostname returns different answers through independent resolvers. Resolver Check exposes that discrepancy.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Resolver Check</b>.",
+      "taskQuestion": "Unlock Resolver Check.",
+      "taskCompleteText": "<b>Felix Rane:</b> Resolver Check is ready to show where the hostname answers diverge."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "resolvecheck",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Verify the reported <b>DNS anomaly</b> through sources outside the affected clients before assigning cause or blaming users. Resolver Check provides that comparison.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Resolver Check</b>.",
+      "taskQuestion": "Unlock Resolver Check.",
+      "taskCompleteText": "<b>Imani Vale:</b> Resolver Check is ready to test the report without shifting blame onto users."
+    }
+  ],
+  "taskID": "ismg6860_u03_q21_t00_unlock_resolvecheck",
+  "parentQuestID": "ismg6860_u03_q21",
+  "articleID": "u03_deceptive_redirects",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

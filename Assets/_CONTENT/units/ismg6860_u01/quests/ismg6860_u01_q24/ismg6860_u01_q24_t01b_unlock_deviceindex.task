@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "deviceindex",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Arjun Rao:</b> The client approved a Device Index license for this assessment. Unlock it in the Lab panel so we can inspect public service banners, ports, and vendor details.",
+      "taskInstructions": "",
+      "taskQuestion": "Unlock Device Index in the Lab panel.",
+      "taskCompleteText": "<b>Arjun Rao:</b> Device Index is ready. Search for BoxCom and inspect the returned host's banners and ports."
+    }
+  ],
+  "taskID": "ismg6860_u01_q24_t01b_unlock_deviceindex",
+  "parentQuestID": "ismg6860_u01_q24",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

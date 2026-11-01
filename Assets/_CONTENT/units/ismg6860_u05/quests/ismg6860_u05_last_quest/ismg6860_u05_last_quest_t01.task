@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u05_last_quest_t01_followup",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Colm Fairweather:</b> Dana sent her follow-up this morning and copied me in. It is not a thank-you note, it is a list of what Halloway actually changed, which is rarer and worth considerably more.\n\nYou should see what came of a week of asking careful questions and touching nothing.",
+      "taskInstructions": "Open Mail and select <b>Re: Enumeration Engagement - What We Did About It</b> from Dana Osei.",
+      "taskQuestion": "Open Dana's engagement follow-up.",
+      "taskCompleteText": "<b>Colm Fairweather:</b> Halloway disabled the account, removed the unaccounted IKE configuration after review, and assigned the remaining remediation. Engagement closed."
+    },
+    {
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u05_last_quest_t01_followup",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Colm Fairweather:</b> Dana sent her follow-up and copied me in. Most of it closed, one item still sitting with their change board, and a question in there about how she should read your emphasis.\n\nI would go through it before you consider this engagement finished.",
+      "taskInstructions": "Open Mail and select <b>Re: Enumeration Engagement - What We Did About It</b> from Dana Osei.",
+      "taskQuestion": "Open Dana's engagement follow-up.",
+      "taskCompleteText": "<b>Colm Fairweather:</b> Halloway disabled the account, but the underemphasized maintenance trunk remains in change control. The official engagement is closed."
+    },
+    {
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u05_last_quest_t01_followup",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Colm Fairweather:</b> Dana sent her follow-up. Everything closed or dated, faster than that plant has ever moved, and she says so without being asked.\n\nThere is also a paragraph about how the findings travelled. That one is worth sitting with rather than skimming.",
+      "taskInstructions": "Open Mail and select <b>Re: Enumeration Engagement - What We Did About It</b> from Dana Osei.",
+      "taskQuestion": "Open Dana's engagement follow-up.",
+      "taskCompleteText": "<b>Colm Fairweather:</b> Halloway accelerated the account and configuration response, while the SNMP migration remains scheduled. The delivery decision damaged client trust."
+    }
+  ],
+  "taskID": "ismg6860_u05_last_quest_t01",
+  "parentQuestID": "ismg6860_u05_last_quest",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u05_last_quest_t01_followup"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

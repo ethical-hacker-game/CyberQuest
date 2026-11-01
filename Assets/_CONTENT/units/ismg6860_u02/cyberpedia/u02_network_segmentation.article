@@ -1,0 +1,11 @@
+{
+  "articleID": "u02_network_segmentation",
+  "videoURL": null,
+  "title": "Network Segmentation and Trust Boundaries",
+  "content": "Network segmentation divides an environment into zones with different purposes and trust levels. Instead of allowing every device to communicate freely, firewalls, access-control rules, and routing policy permit only the traffic each zone requires.\n\nA public-facing DMZ, an internal ticketing network, and a vendor maintenance network serve different functions. The DMZ must accept selected traffic from outside, while business systems and administrative interfaces need stronger protection. A vendor device may require a narrow management route, but it should not gain broad access to unrelated internal services simply because both systems belong to the same organization.\n\n<b>How to evaluate a boundary</b>\n\nStart with the intended data flow: who needs to initiate a connection, to which destination, on which protocol and port, and for what operational reason? Compare that design with observed traffic. A connection crossing zones is not automatically malicious, but an undocumented or unnecessarily broad path is a segmentation concern. The evidence should distinguish an allowed business flow from a policy exception, a misconfiguration, or an unmanaged bridge.\n\nA firewall is effective only when its rules express the intended policy. Physical placement on a diagram is not enough. Apply least privilege, restrict management services to dedicated networks, control both directions where appropriate, log meaningful boundary events, and review temporary vendor access after maintenance ends.\n\nSegmentation reduces blast radius. If one public or vendor-managed host is compromised, strong boundaries limit what the attacker can reach next. It also makes monitoring clearer because unexpected cross-zone traffic becomes easier to identify and investigate.",
+  "links": [
+    "segmentation",
+    "policy boundary",
+    "vendor-to-ticketing path"
+  ]
+}

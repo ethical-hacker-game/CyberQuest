@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Theo Kwan from physical security reported an unbadged person requesting access at West Gate. The location overlaps earlier evidence, but the note must be assessed on its own before we connect it to the campaign.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Asha Moreno:</b> Start with what the door-camera note observed and keep attribution separate."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Theo Kwan reported an unbadged person using an urgent delivery story at West Gate. Analyze the pretext and the control it tested before deciding whether it connects to anything else.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> The physical access attempt is a new lead, not proof of who directed it."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Theo Kwan reported an unbadged person pressuring a West Gate volunteer for access. Document the request and the process gap without blaming the volunteer or assuming who sent the visitor.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> The report can address the entry pressure without overstating attribution."
+    }
+  ],
+  "taskID": "ismg6860_u03_q17_t00_voice",
+  "parentQuestID": "ismg6860_u03_q17",
+  "articleID": "u03_physical_social_engineering",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

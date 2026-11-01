@@ -1,0 +1,26 @@
+{
+    "questID":  "ismg6860_u04_q01",
+    "cityIndex":  7117,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q01_t00_intro",
+                    "ismg6860_u04_q01_t01",
+                    "ismg6860_u04_q01_t02",
+                    "ismg6860_u04_q01_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  true,
+    "variants":  [
+                     {
+                         "persona":  "Universal Persona Content",
+                         "questName":  "Misconfiguration Exploits: File Permissions",
+                         "questDescription":  "Start the authorized assessment by checking a server evidence package for overly broad file permissions.",
+                         "questCompleteText":  "Quest complete. The evidence has been recorded for the Northbridge vulnerability assessment.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

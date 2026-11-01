@@ -1,0 +1,9 @@
+{
+  "skillID": "pathmapper",
+  "skillName": "Attack Path Mapper",
+  "skillDescription": "A chaining view for confirmed findings. Links them by trust relationship and reachability to lay out a route through the environment, changing nothing on the network and using only evidence already collected.",
+  "price": 3500,
+  "order": 60,
+  "requireTask": true,
+  "lockInDemo": false
+}

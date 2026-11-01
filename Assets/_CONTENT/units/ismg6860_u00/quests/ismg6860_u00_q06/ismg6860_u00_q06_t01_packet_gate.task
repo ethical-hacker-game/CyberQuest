@@ -1,0 +1,61 @@
+{
+  "variants": [
+    {
+      "minigameType": "Connections",
+      "minigameHeaderText": "Training Northstar Packet Gate",
+      "durationOverride": 45.0,
+      "difficulty": "Easy",
+      "connectionsSettings": {
+        "positiveConnections": [
+          "HTTPS Patient Portal Request",
+          "DNS Lookup",
+          "Patch Repository Download",
+          "Authenticated Staff Login"
+        ],
+        "negativeConnections": [
+          "Directory Enumeration",
+          "Repeated Failed Login Burst",
+          "Unapproved Admin Panel Probe",
+          "Suspicious Archive Download"
+        ]
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> Evidence is useful only if the fix keeps the service alive. Blocking everything is not a professional control; the gate has to let real work through while stopping the probes.",
+      "taskInstructions": "Let portal requests, DNS lookups, patch downloads, and authenticated staff logins through. Stop directory enumeration, repeated failed login bursts, unapproved admin-panel probes, and suspicious archive downloads.",
+      "taskQuestion": "Tune the packet gate.",
+      "taskCompleteText": "<b>Michele:</b> Good. The control blocks the probes and still lets normal service traffic through."
+    },
+    {
+      "minigameType": "Connections",
+      "minigameHeaderText": "Training Northstar Packet Gate",
+      "durationOverride": 45.0,
+      "difficulty": "Easy",
+      "connectionsSettings": {
+        "positiveConnections": [
+          "HTTPS Patient Portal Request",
+          "DNS Lookup",
+          "Patch Repository Download",
+          "Authenticated Staff Login"
+        ],
+        "negativeConnections": [
+          "Directory Enumeration",
+          "Repeated Failed Login Burst",
+          "Unapproved Admin Panel Probe",
+          "Suspicious Archive Download"
+        ]
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> A protective control still has to serve people. Safety that becomes a shutdown just moves the harm somewhere less visible.",
+      "taskInstructions": "Let portal requests, DNS lookups, patch downloads, and authenticated staff logins through. Stop directory enumeration, repeated failed login bursts, unapproved admin-panel probes, and suspicious archive downloads.",
+      "taskQuestion": "Tune the packet gate.",
+      "taskCompleteText": "<b>Ana:</b> Good. People can still reach the service, and the suspicious traffic is stopped."
+    }
+  ],
+  "taskID": "ismg6860_u00_q06_t01_packet_gate",
+  "parentQuestID": "ismg6860_u00_q06",
+  "articleID": "u00_traffic_controls",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

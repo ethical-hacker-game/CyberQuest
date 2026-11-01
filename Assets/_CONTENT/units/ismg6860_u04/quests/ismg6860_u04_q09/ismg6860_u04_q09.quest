@@ -1,0 +1,41 @@
+{
+    "questID":  "ismg6860_u04_q09",
+    "cityIndex":  7253,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q09_t01",
+                    "ismg6860_u04_q09_t02",
+                    "ismg6860_u04_q09_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "Analysis: Feasibility",
+                         "questDescription":  "Assess what the setup-page evidence establishes about exposure and exploitation feasibility.",
+                         "questCompleteText":  "Feasibility analysis complete. Public exposure is verified; state-changing capability remains unverified and requires a separately authorized test.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "Analysis: Feasibility",
+                         "questDescription":  "Assess what the setup-page evidence establishes about exposure and exploitation feasibility.",
+                         "questCompleteText":  "Feasibility analysis complete. Public exposure is verified; state-changing capability remains unverified and requires a separately authorized test.",
+                         "questCharacterID":  "u04_felix_rane",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "Analysis: Feasibility",
+                         "questDescription":  "Assess what the setup-page evidence establishes about exposure and exploitation feasibility.",
+                         "questCompleteText":  "Feasibility analysis complete. Public exposure is verified; state-changing capability remains unverified and requires a separately authorized test.",
+                         "questCharacterID":  "u04_imani_vale",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

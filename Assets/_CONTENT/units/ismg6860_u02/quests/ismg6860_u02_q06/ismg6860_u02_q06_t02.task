@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Port numbers are conventions, not proof. Use the reference page during service identification to compare the observed ports with their common uses.",
+      "taskInstructions": "Browse to <b>reference.scanlab.io/ports-protocols</b>.",
+      "taskQuestion": "Open the common ports reference page.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> The reference gives us common uses for each port, but the observed banner remains the stronger host-specific evidence.",
+      "correctAnswer": "reference.scanlab.io/ports-protocols"
+    }
+  ],
+  "taskID": "ismg6860_u02_q06_t02",
+  "parentQuestID": "ismg6860_u02_q06",
+  "articleID": "u02_service_identification",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

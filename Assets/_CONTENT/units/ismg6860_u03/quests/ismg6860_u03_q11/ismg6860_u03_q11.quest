@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u03_q11",
+  "cityIndex": 5141,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q11_t00_voice",
+    "ismg6860_u03_q11_t01",
+    "ismg6860_u03_q11_t02",
+    "ismg6860_u03_q11_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Tunnel With A Logo",
+      "questDescription": "Inspect a VPN claiming official Harborview protection and compare that affiliation with its declared publisher.",
+      "questCompleteText": "<b>Asha Moreno:</b> The publisher mismatch is documented. Stop installation until Harborview can independently verify the VPN.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Tunnel With A Logo",
+      "questDescription": "Inspect the provenance behind a VPN that uses Harborview language to gain trust.",
+      "questCompleteText": "<b>Felix Rane:</b> The listing's affiliation claim and mismatched publisher are both documented.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Tunnel With A Logo",
+      "questDescription": "Collect the publisher evidence visitors need to assess a VPN promoted as official expo protection.",
+      "questCompleteText": "<b>Imani Vale:</b> The warning can name the publisher mismatch without alleging network behavior the listing does not prove.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

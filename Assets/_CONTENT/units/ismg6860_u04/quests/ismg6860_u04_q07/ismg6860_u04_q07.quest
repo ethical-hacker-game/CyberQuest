@@ -1,0 +1,42 @@
+{
+    "questID":  "ismg6860_u04_q07",
+    "cityIndex":  7219,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q07_t00_unlock_safevalidate",
+                    "ismg6860_u04_q07_t01",
+                    "ismg6860_u04_q07_t02",
+                    "ismg6860_u04_q07_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "Analysis: Verification",
+                         "questDescription":  "Mara Voss frames this step for {player}. Confirm a scanner claim with independent, safe evidence.",
+                         "questCompleteText":  "Analysis: Verification complete. The setup route is now verified rather than scanner-claimed, with the 200 response captured and no state ever changed.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "Analysis: Verification",
+                         "questDescription":  "Felix Rane frames this step for {player}. Confirm a scanner claim with independent, safe evidence.",
+                         "questCompleteText":  "Analysis: Verification complete. Felix files the verified setup route away; proof that something is reachable beats a maybe every time.",
+                         "questCharacterID":  "u04_felix_rane",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "Analysis: Verification",
+                         "questDescription":  "Imani Vale frames this step for {player}. Confirm a scanner claim with independent, safe evidence.",
+                         "questCompleteText":  "Analysis: Verification complete. Imani is satisfied the setup exposure is proven, not guessed, so no official can wave it off as a false positive.",
+                         "questCharacterID":  "u04_imani_vale",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

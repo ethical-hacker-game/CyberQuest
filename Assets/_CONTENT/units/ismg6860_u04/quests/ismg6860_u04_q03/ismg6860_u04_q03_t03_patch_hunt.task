@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "minigameType": "PatchHunt",
+      "minigameHeaderText": "Outdated Service Triage",
+      "durationOverride": 30,
+      "difficulty": "Normal",
+      "patchHuntSettings": {
+        "packetIntegrity": 3,
+        "spawnInterval": 1.3,
+        "breachLifetime": 1.8,
+        "honeypotChance": 0.35,
+        "breachLabel": "VERIFIED PATCH NEEDED",
+        "honeypotLabel": "PATCH ALREADY VERIFIED"
+      },
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> The team has checked these patch records. Prioritize services still needing a fix and leave already-patched entries alone.",
+      "taskInstructions": "For 30 seconds, click <b>VERIFIED PATCH NEEDED</b> targets before their timer rings expire. Leave <b>PATCH ALREADY VERIFIED</b> targets alone; clicking them costs points. Missing three needed patches ends the run.",
+      "taskQuestion": "Prioritize the verified patch backlog.",
+      "taskCompleteText": "<b>Mara Voss:</b> Triage complete. Keep verified patch needs on the remediation list; an old banner alone is not enough."
+    }
+  ],
+  "taskID": "ismg6860_u04_q03_t03_patch_hunt",
+  "parentQuestID": "ismg6860_u04_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

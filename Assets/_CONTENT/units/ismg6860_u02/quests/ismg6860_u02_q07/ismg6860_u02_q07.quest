@@ -1,0 +1,44 @@
+{
+  "questID": "ismg6860_u02_q07",
+  "cityIndex": 4996,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q07_t00_dialogue",
+    "ismg6860_u02_q07_t00b_unlock_capturefilters",
+    "ismg6860_u02_q07_t01",
+    "ismg6860_u02_q07_t02",
+    "ismg6860_u02_q07_t04_packet_rush",
+    "ismg6860_u02_q07_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "The Capture Says Otherwise",
+      "questDescription": "Inspect the captured flow, verify its endpoints, and report only what the packets support.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> The capture records ECHO-73 initiating traffic to 10.42.22.41 in ticketing. That supports a segmentation finding, not exploitation.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": "wireshark_echo_flow"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "The Capture Says Otherwise",
+      "questDescription": "Inspect the captured flow and identify the endpoints that give the observed route its value.",
+      "questCompleteText": "<b>Kade Mercer:</b> The capture records ECHO-73 initiating traffic to 10.42.22.41. That observed route is the valuable part of the map.",
+      "questCharacterID": "u02_kade_mercer",
+      "appScenarioID": "wireshark_echo_flow"
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "The Capture Says Otherwise",
+      "questDescription": "Verify the observed ticketing flow and preserve only the details needed for accountable reporting.",
+      "questCompleteText": "<b>Lena Ortiz:</b> The capture documents vendor-to-ticketing traffic without including unrelated rider data or claiming an attack.",
+      "questCharacterID": "u02_lena_ortiz",
+      "appScenarioID": "wireshark_echo_flow"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "hallowayprecision.com",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> I have no contract records for BridgeWorks at all. Everything from that era sat on a fileshare that was migrated badly in 2024, and what came out the other side is unusable.\n\nOur own site, though, has been running longer than anyone currently on staff, and websites are terrible at forgetting.",
+      "taskInstructions": "The address is <b>hallowayprecision.com</b>. Load it in the web browser and leave that page showing, because the check reads whichever site the browser is on.",
+      "taskQuestion": "Open the Halloway Precision public website.",
+      "taskCompleteText": "<b>Dana Osei:</b> The public site is open. Its visible navigation provides the baseline for the content-discovery check."
+    },
+    {
+      "correctAnswer": "hallowayprecision.com",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Skip the internal records. They were migrated by people who were not paid to care what they lost. Forgotten content is the most reliable disclosure there is, because nobody maintains what nobody remembers, and a company's own front door is the cheapest place in the world to start looking.",
+      "taskInstructions": "The address is <b>hallowayprecision.com</b>. Load it in the web browser and leave that page showing, because the check reads whichever site the browser is on.",
+      "taskQuestion": "Open the Halloway Precision public website.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The public site is loaded. Now compare its visible navigation with what the server returns directly."
+    },
+    {
+      "correctAnswer": "hallowayprecision.com",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Halloway cannot produce the BridgeWorks contract timeline from its internal files. Start with the public record, but keep publication dates separate from access and approval history.",
+      "taskInstructions": "The address is <b>hallowayprecision.com</b>. Load it in the web browser and leave that page showing, because the check reads whichever site the browser is on.",
+      "taskQuestion": "Open the Halloway Precision public website.",
+      "taskCompleteText": "<b>Priya Nandan:</b> The public site is available. Use it as the visible baseline before checking for undisclosed paths."
+    }
+  ],
+  "taskID": "ismg6860_u05_q14_t01",
+  "parentQuestID": "ismg6860_u05_q14",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": true,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Milo Navarro:</b> From this seat I can read an employee's username and see most keystrokes as they enter a password on a public terminal. The screen faces the café seating.",
+      "taskInstructions": "Review <b>shoulder surfing</b> guidance, then judge what a nearby observer could learn from this view.",
+      "taskQuestion": "Could someone nearby learn sensitive login data from this angle?",
+      "taskCompleteText": "<b>Milo Navarro:</b> Yes. A clear view can expose credentials without malware or network access."
+    }
+  ],
+  "taskID": "ismg6860_u01_q28_t01",
+  "parentQuestID": "ismg6860_u01_q28",
+  "articleID": "u01_physical_information_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

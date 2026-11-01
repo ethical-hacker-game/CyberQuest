@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u05_q01_t01_authorization",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> I countersigned Cordata's authorization this morning. Its boundary is the one I can defend when someone asks why a consultant queried production systems.\n\nYou may ask a service what it knows. You may not change what it knows.",
+      "taskInstructions": "Open Mail and read Dana's engagement authorization.",
+      "taskQuestion": "Open Dana's engagement authorization email.",
+      "taskCompleteText": "<b>Dana Osei:</b> The approved work is read-only. Do not change system state or access production historian data."
+    }
+  ],
+  "taskID": "ismg6860_u05_q01_t01",
+  "parentQuestID": "ismg6860_u05_q01",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u05_q01_t01_authorization"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

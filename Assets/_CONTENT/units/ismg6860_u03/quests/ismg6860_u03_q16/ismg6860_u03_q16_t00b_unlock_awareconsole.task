@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "awareconsole",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Awareness Console reads response rates and reporting times in aggregate. The exercise captured no credentials and the report contains no participant names.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Awareness Console</b>.",
+      "taskQuestion": "Unlock Awareness Console.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Awareness Console is ready to display privacy-preserving results."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "awareconsole",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Awareness Console turns the exercise into aggregate rates and reporting times. That is enough to rank the triggers without identifying anyone.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Awareness Console</b>.",
+      "taskQuestion": "Unlock Awareness Console.",
+      "taskCompleteText": "<b>Felix Rane:</b> Awareness Console is ready to compare the aggregate trigger rates."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "awareconsole",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Awareness Console reports which pressures worked and how often, with no individual attached. Publish the pattern, never a participant.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Awareness Console</b>.",
+      "taskQuestion": "Unlock Awareness Console.",
+      "taskCompleteText": "<b>Imani Vale:</b> Awareness Console is ready, and its results do not expose individuals."
+    }
+  ],
+  "taskID": "ismg6860_u03_q16_t00b_unlock_awareconsole",
+  "parentQuestID": "ismg6860_u03_q16",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

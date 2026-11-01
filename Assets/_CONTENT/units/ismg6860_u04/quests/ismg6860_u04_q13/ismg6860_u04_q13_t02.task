@@ -1,0 +1,60 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Compare the three hosts by vulnerability level and headline issue.",
+      "taskInstructions": "On the LanGuard dashboard, find the only host rated <b>High</b> with missing critical updates.",
+      "taskQuestion": "Which host has the highest patch risk?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. NB-FIN-07 is rated High and reports six missing security updates, including three Critical.",
+      "correctAnswers": [
+        "NB-FIN-07",
+        "NB FIN 07",
+        "NBFIN07",
+        "FIN-07",
+        "FIN 07",
+        "finance host",
+        "finance endpoint"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Compare the three hosts and identify the one with the strongest patch-risk signal.",
+      "taskInstructions": "On the LanGuard dashboard, find the only host rated <b>High</b> with missing critical updates.",
+      "taskQuestion": "Which host has the highest patch risk?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. NB-FIN-07 is the weakest host in this audit.",
+      "correctAnswers": [
+        "NB-FIN-07",
+        "NB FIN 07",
+        "NBFIN07",
+        "FIN-07",
+        "FIN 07",
+        "finance host",
+        "finance endpoint"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Identify the endpoint with the highest vulnerability level and missing critical updates.",
+      "taskInstructions": "On the LanGuard dashboard, find the only host rated <b>High</b> with missing critical updates.",
+      "taskQuestion": "Which host has the highest patch risk?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. NB-FIN-07 requires the most urgent host-level remediation.",
+      "correctAnswers": [
+        "NB-FIN-07",
+        "NB FIN 07",
+        "NBFIN07",
+        "FIN-07",
+        "FIN 07",
+        "finance host",
+        "finance endpoint"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u04_q13_t02",
+  "parentQuestID": "ismg6860_u04_q13",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input",
+  "correctAnswers": []
+}

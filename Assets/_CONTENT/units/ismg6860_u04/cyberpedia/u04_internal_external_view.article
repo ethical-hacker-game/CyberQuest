@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_internal_external_view",
+  "videoURL": null,
+  "title": "Internal and External Assessment Views",
+  "content": "An <b>external assessment</b> observes systems and services reachable from the internet. An <b>internal assessment</b> runs from an authorized position inside the network and may reach application servers, file shares, management interfaces, and trust paths hidden from outsiders. The views answer different questions and should not be expected to produce identical findings. Record the scanner location and route each result to the team that owns the affected application, host, or network control.",
+  "links": [
+    "internal and external assessment views"
+  ]
+}

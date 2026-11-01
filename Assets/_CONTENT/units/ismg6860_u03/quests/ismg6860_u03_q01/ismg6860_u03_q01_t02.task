@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> The reports use different channels, but each pressures staff to bypass normal verification. Our first assessment should reflect the shared evidence without claiming more than we know.",
+      "taskInstructions": "Use the four reports and repeated marker in the intake.",
+      "taskQuestion": "What is the safest first read on these reports?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The shared marker supports treating these reports as one coordinated campaign while we investigate further.",
+      "answers": [
+        "Treat them as one coordinated social engineering campaign.",
+        "Treat them as launch-week noise until the same channel repeats.",
+        "Attribute them to a badge app fault without further evidence.",
+        "Close them as unrelated support tickets from different staff."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u03_q01_t02",
+  "parentQuestID": "ismg6860_u03_q01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

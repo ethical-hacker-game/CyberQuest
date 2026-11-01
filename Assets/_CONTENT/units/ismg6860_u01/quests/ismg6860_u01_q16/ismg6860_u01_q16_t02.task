@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": false,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Evelyn Marston:</b> Compare that result with the bank's published domain, <b>summittrust.com</b>. A different domain is a warning sign, but legitimate organizations can use outside mail providers, so we still need independent verification.",
+      "taskInstructions": "In NetLookup, enter <b>summittrust.com</b>. Compare both results' <b>Parsed domain</b> and <b>Registrant / Organization</b> fields.",
+      "taskQuestion": "Do the two results show the same parsed domain and listed registrant?",
+      "taskCompleteText": "<b>Evelyn Marston:</b> No. The alert address resolves to a different parsed domain and listed registrant. Do not use its link or reply address; use the bank's published reporting channel to verify the message."
+    }
+  ],
+  "taskID": "ismg6860_u01_q16_t02",
+  "parentQuestID": "ismg6860_u01_q16",
+  "articleID": "u01_domain_registration_intelligence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

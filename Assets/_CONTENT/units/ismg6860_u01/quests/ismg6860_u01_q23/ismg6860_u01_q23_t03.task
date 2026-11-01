@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "A look-alike page and an email failing Arcadia authentication checks.",
+        "A confirmed employee login followed by theft of company data.",
+        "Public records naming the person who registered the domain.",
+        "Evidence tying the infrastructure to a verified APT group."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Etienne:</b> Let's verify what the public capture actually documents before we brief the team.",
+      "taskInstructions": "Use the <b>public records and registries</b> workflow: open Cyber Search and search for <b>arcadia robotics phishing</b>. Open <b>Investigation: Phishing landing capture: arcadia-support[.]com</b> and review its landing-page summary and sanitized email header.",
+      "taskQuestion": "Which finding is directly supported by the capture?",
+      "taskCompleteText": "<b>Etienne:</b> The capture documents a look-alike support page and a message from its domain that failed Arcadia's email authentication checks. It does not show that the recipient entered credentials or that an account was compromised."
+    }
+  ],
+  "taskID": "ismg6860_u01_q23_t03",
+  "parentQuestID": "ismg6860_u01_q23",
+  "articleID": "u01_osint_fundamentals",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

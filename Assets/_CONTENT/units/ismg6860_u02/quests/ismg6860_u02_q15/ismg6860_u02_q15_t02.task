@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The assessment produced an accurate map without exploitation or disruption. Operations can now isolate the vendor device, restrict its diagnostics service, and monitor the ticketing boundary.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> The authorized scan window is closed, and the remediation record is ready for follow-up."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> The final map connects systems, services, routes, and blind spots. Retaining that detail creates both leverage and responsibility for how it is protected and used.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Kade Mercer:</b> The scan is over. What happens to the retained map remains part of your decision."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> The evidence supports a public-interest summary without live addresses, service strings, or packet-level route details. Asterlink gets a fix window, and riders retain a clear basis for follow-up.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Lena Ortiz:</b> The redacted timeline is ready for coordinated release after the remediation window."
+    }
+  ],
+  "taskID": "ismg6860_u02_q15_t02",
+  "parentQuestID": "ismg6860_u02_q15",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

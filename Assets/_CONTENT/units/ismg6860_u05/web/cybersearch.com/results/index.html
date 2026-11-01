@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyber Search Results</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../../cq-bridge.js"></script>
+</head>
+<body>
+  <main class="results">
+    <header class="results-header">
+      <form class="search-form" data-search-form>
+        <input data-search-input name="q" autocomplete="off" spellcheck="false" aria-label="Search query">
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <section class="results-content" aria-live="polite">
+      <h1 data-results-title>Type something to begin your search.</h1>
+      <div class="result-list" data-results-list></div>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+</html>

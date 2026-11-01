@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u02_q02",
+  "cityIndex": 4989,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q02_t01",
+    "ismg6860_u02_q02_t02",
+    "ismg6860_u02_q02_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Scope Lines",
+      "questDescription": "Confirm the authorized range, approved jump host, and operational constraints before sending scan traffic.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> The range, source host, and services at risk are documented. We can begin without guessing at the boundaries.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    }
+  ]
+}

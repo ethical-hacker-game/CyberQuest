@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LanternPass Support Chat</title>
+  <style>
+    :root { --ink:#1f2933; --muted:#5b6675; --line:#d6dde6; --panel:#ffffff; --bg:#eef3f7; --accent:#235a87; --warn:#8a4b12; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
+    header { background:#173f5f; color:white; padding:28px 32px; border-bottom:4px solid #f2b84b; }
+    header h1 { margin:0; font-size:30px; letter-spacing:0; }
+    header p { margin:6px 0 0; color:#dceaf4; }
+    main { max-width:980px; margin:28px auto; padding:0 24px 42px; }
+    section { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:18px 20px; margin:0 0 16px; }
+    h2 { margin:0 0 8px; font-size:20px; color:#173f5f; }
+    p { margin:0; }
+    code { background:#eef2f6; border:1px solid #d9e1ea; border-radius:4px; padding:2px 5px; }
+    .archive { color:var(--muted); font-size:14px; margin-bottom:12px; }
+    .notice { border-left:5px solid var(--warn); }
+    .message { padding:10px 12px; margin:9px 0; border-radius:5px; max-width:82%; }
+    .system { background:#fff3df; border:1px solid #e7c58e; max-width:100%; }
+    .riley { background:#e8f1f8; border:1px solid #bfd1df; margin-left:auto; }
+    .agent { background:#f2f3f5; border:1px solid #d6d9de; }
+    .time { color:var(--muted); font-size:12px; display:block; margin-bottom:3px; }
+    footer { text-align:center; color:var(--muted); padding:20px; font-size:13px; }
+  </style>
+</head>
+<body>
+  <header><h1>LanternPass Chat Archive</h1><p>Read-only incident record</p></header>
+  <main>
+    <section class="notice">
+      <h2>Archive Details</h2>
+      <p class="archive">Captured 14 May · Session LP-4471 · No reply controls are active</p>
+      <p>This record preserves the account notice and subsequent support conversation. It does not establish what caused the initial error.</p>
+    </section>
+    <section>
+      <h2>Support Identity</h2>
+      <p>Agent display name: <code>Harbor Mobile Recovery</code></p>
+    </section>
+    <section>
+      <h2>Captured Transcript</h2>
+      <div class="message system"><span class="time">14:07 · LanternPass notice</span>Session unavailable. Error LP-401. Sign-in is temporarily blocked.</div>
+      <div class="message agent"><span class="time">14:08 · Harbor Mobile Recovery</span>We detected a mobile synchronization error on your LanternPass account. I can restore access before your shift check-in.</div>
+      <div class="message riley"><span class="time">14:09 · Riley</span>How do I verify this support channel?</div>
+      <div class="message agent"><span class="time">14:09 · Harbor Mobile Recovery</span>Send the six-digit one-time sign-in code that was just delivered to your phone. I will clear the lock immediately.</div>
+      <div class="message riley"><span class="time">14:10 · Riley</span>I will not share an authentication code. I am contacting support through the official staff directory.</div>
+    </section>
+  </main>
+  <footer>LanternPass incident archive · Read-only</footer>
+  <script src="../../cq-bridge.js"></script>
+</body>
+</html>

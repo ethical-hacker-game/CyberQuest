@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Now the condition has to become controls that survive contact with an operations team. The right recommendation is not the strictest one; it is the one that lowers what a guessed or stolen credential is worth, without creating a permanent queue at the help desk.\n\nThis paragraph gets read by the people who have to fund it. It needs to sound like engineering rather than scolding.",
+      "taskInstructions": "",
+      "taskQuestion": "Which remediation is strongest?",
+      "taskCompleteText": "Correct. Stronger policy, lockout controls, and MFA reduce credential attack risk.",
+      "answers": [
+        "Shorten the required passwords so that users are able to more easily remember them.",
+        "Turn off account monitoring completely in order to reduce the daily alert noise.",
+        "Increase password length, enable lockout controls, and add MFA where appropriate.",
+        "Keep the existing default passwords on all service accounts purely for convenience."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Ask what would actually have stopped somebody like me. Not the rule that irritates staff every ninety days, the one that makes a working credential stop being enough on its own.\n\nThat is the uncomfortable part of writing this section honestly. You are naming the control you would least want to run into.",
+      "taskInstructions": "",
+      "taskQuestion": "Which remediation is strongest?",
+      "taskCompleteText": "Correct. Stronger policy, lockout controls, and MFA reduce credential attack risk.",
+      "answers": [
+        "Shorten the required passwords so that users are able to more easily remember them.",
+        "Turn off account monitoring completely in order to reduce the daily alert noise.",
+        "Increase password length, enable lockout controls, and add MFA where appropriate.",
+        "Keep the existing default passwords on all service accounts purely for convenience."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Northbridge will implement whichever line is easiest to defend in a meeting, so the recommendation has to be the strong one and the reasonable one at the same time.\n\nAnd it has to protect the people who never got to choose their own security posture: the residents whose records sit behind these accounts and had no vote on the rules guarding them.",
+      "taskInstructions": "",
+      "taskQuestion": "Which remediation is strongest?",
+      "taskCompleteText": "Correct. Stronger policy, lockout controls, and MFA reduce credential attack risk.",
+      "answers": [
+        "Shorten the required passwords so that users are able to more easily remember them.",
+        "Turn off account monitoring completely in order to reduce the daily alert noise.",
+        "Increase password length, enable lockout controls, and add MFA where appropriate.",
+        "Keep the existing default passwords on all service accounts purely for convenience."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q17_t04",
+  "parentQuestID": "ismg6860_u04_q17",
+  "articleID": "u04_credential_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

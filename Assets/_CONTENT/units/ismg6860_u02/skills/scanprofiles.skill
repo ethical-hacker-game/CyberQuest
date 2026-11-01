@@ -1,0 +1,9 @@
+{
+  "skillID": "scanprofiles",
+  "skillName": "Scan Profiles",
+  "skillDescription": "A training framework for pairing an approved target, scan flags, and timing before running a command.",
+  "price": 1800,
+  "order": 20,
+  "requireTask": true,
+  "lockInDemo": false
+}

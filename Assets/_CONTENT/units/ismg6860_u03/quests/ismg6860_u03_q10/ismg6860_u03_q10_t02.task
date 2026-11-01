@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The prize code shares the campaign's established marker. Record it as a lead connecting this page to the other lures; corroboration is still required.",
+      "taskInstructions": "Type the prize code shown under <b>Campaign marker</b>, including its dashes.",
+      "taskQuestion": "What campaign marker appears in the giveaway?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: BL-LANTERN-9-PRIZE. The shared marker connects the page to the investigation without proving authorship by itself.",
+      "correctAnswers": [
+        "BL-LANTERN-9-PRIZE"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The prize code extends a marker already seen across the investigation. Record the lead without treating one reused string as final attribution.",
+      "taskInstructions": "Type the prize code shown under <b>Campaign marker</b>, including its dashes.",
+      "taskQuestion": "What campaign marker appears in the giveaway?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: BL-LANTERN-9-PRIZE. Useful linkage, not final attribution.",
+      "correctAnswers": [
+        "BL-LANTERN-9-PRIZE"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The prize code repeats a marker from the badge lures. Record the connection accurately without presenting a shared string as conclusive attribution.",
+      "taskInstructions": "Type the prize code shown under <b>Campaign marker</b>, including its dashes.",
+      "taskQuestion": "What campaign marker appears in the giveaway?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: BL-LANTERN-9-PRIZE. The warning can describe the shared marker as a connection under investigation.",
+      "correctAnswers": [
+        "BL-LANTERN-9-PRIZE"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q10_t02",
+  "parentQuestID": "ismg6860_u03_q10",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

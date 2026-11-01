@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u03_d04",
+  "cityIndex": 5170,
+  "questIconID": "u03_decision",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u03_d04_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Doorway Choice",
+      "questDescription": "Choose how Harborview should handle overlapping online and physical evidence while protecting people and sensitive access details.",
+      "questCompleteText": "<b>Asha Moreno:</b> The evidence now has an authorized response path and defined sharing boundaries.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    }
+  ]
+}

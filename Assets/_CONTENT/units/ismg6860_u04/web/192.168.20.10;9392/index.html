@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greenbone Security Assistant: Reports</title>
+  <style>
+    :root{--ink:#22312a;--muted:#6a7a72;--line:#dde6df;--bg:#eef3ee;--green:#5a9e2f;--green-d:#3f6f22;--rail:#1d2b24;
+      --crit:#8b1a1a;--high:#cf3a2e;--med:#e08a00;--low:#2f72c0;--log:#8a958f}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);font-size:14px}
+    .topbar{display:flex;align-items:center;gap:18px;background:linear-gradient(90deg,#1d2b24,#2c4630);color:#fff;padding:0 22px;height:52px}
+    .logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:16px}
+    .logo .mark{width:24px;height:24px;border-radius:6px;background:radial-gradient(circle at 30% 30%,#9bd45a,#5a9e2f);display:flex;align-items:center;justify-content:center;color:#16320a;font-weight:900}
+    .logo small{font-weight:400;color:#bcd2bf;font-size:12px}
+    .topbar .spacer{flex:1}
+    .topbar .user{font-size:13px;color:#bcd2bf}
+    .menu{display:flex;gap:2px;background:#27412c;padding:0 16px}
+    .menu a{color:#d6e6d4;text-decoration:none;padding:11px 15px;font-weight:600;font-size:13.5px;border-bottom:3px solid transparent}
+    .menu a.active{color:#fff;border-bottom-color:var(--green)}
+    .main{max-width:1080px;margin:0 auto;padding:24px 26px 60px}
+    h1{margin:0 0 16px;font-size:23px;font-weight:600}
+    .card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+    table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);font-size:13.5px;vertical-align:middle}
+    th{background:#f4f8f3;color:#56655b;font-weight:600;font-size:11px;letter-spacing:.6px;text-transform:uppercase}
+    tr:last-child td{border-bottom:none}
+    .rname{font-weight:700;color:#2c4f1c;text-decoration:none}
+    .rname:hover{color:var(--green)}
+    .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;background:#3fa05a;vertical-align:middle}
+    .sevbar{display:flex;height:10px;width:170px;border-radius:3px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+    .sevbar span{display:block;height:100%}
+    .pill{display:inline-block;font-size:11px;font-weight:700;color:#fff;border-radius:10px;padding:2px 9px;margin-right:5px}
+    .legend{display:flex;gap:16px;margin:16px 2px 0;font-size:12px;color:var(--muted);flex-wrap:wrap}
+    .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo"><span class="mark">G</span>Greenbone Security Assistant <small>OpenVAS</small></div>
+    <div class="spacer"></div>
+    <div class="user">analyst@assessment</div>
+  </div>
+  <div class="menu">
+    <a href="../192.168.20.10;9392/">Dashboards</a>
+    <a href="../192.168.20.10;9392/">Scans &#9662;</a>
+    <a class="active" href="../192.168.20.10;9392/">Reports</a>
+    <a href="../192.168.20.10;9392/">Assets</a>
+    <a href="../192.168.20.10;9392/">Configuration</a>
+  </div>
+
+  <main class="main">
+    <h1>Reports <span style="font-size:14px;color:var(--muted);font-weight:400">(2 of 2)</span></h1>
+    <div class="card">
+      <table>
+        <thead><tr><th style="width:32%">Task / Report</th><th>Severity Distribution</th><th>Highest</th><th style="width:150px">Date</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="dot"></span><a class="rname" href="../192.168.20.10;9392/reports/external.html">Northbridge External Scan</a></td>
+            <td><div class="sevbar"><span style="width:0%;background:var(--crit)"></span><span style="width:55%;background:var(--high)"></span><span style="width:0%;background:var(--med)"></span><span style="width:25%;background:var(--low)"></span><span style="width:20%;background:var(--log)"></span></div></td>
+            <td><span class="pill" style="background:var(--high)">High 7.5</span></td>
+            <td style="color:var(--muted)">Today 09:40</td>
+          </tr>
+          <tr>
+            <td><span class="dot"></span><a class="rname" href="../192.168.20.10;9392/reports/internal.html">Northbridge Internal Scan</a></td>
+            <td><div class="sevbar"><span style="width:25%;background:var(--crit)"></span><span style="width:25%;background:var(--high)"></span><span style="width:40%;background:var(--med)"></span><span style="width:0%;background:var(--low)"></span><span style="width:10%;background:var(--log)"></span></div></td>
+            <td><span class="pill" style="background:var(--crit)">Critical 9.8</span></td>
+            <td style="color:var(--muted)">Today 10:18</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--crit)"></i>Critical</span>
+      <span><i style="background:var(--high)"></i>High</span>
+      <span><i style="background:var(--med)"></i>Medium</span>
+      <span><i style="background:var(--low)"></i>Low</span>
+      <span><i style="background:var(--log)"></i>Log / Info</span>
+    </div>
+  </main>
+  <script src="../cq-bridge.js"></script>
+</body>
+</html>

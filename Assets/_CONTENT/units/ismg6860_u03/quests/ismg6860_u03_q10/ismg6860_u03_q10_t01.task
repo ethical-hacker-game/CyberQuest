@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A mobile game <b>giveaway page</b> is offering expo prize crates. Inspect what it asks players to provide, but do not enter an account or join the promotion.",
+      "taskInstructions": "Open the browser, search <b>lucky squad drop</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the Fake giveaway in mobile game evidence page.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Page captured. Now document the campaign marker and credential request.",
+      "correctAnswer": "lucky-squad-drop.com/lucky-squad-drop"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> This <b>giveaway page</b> combines a prize, scarcity, and game-community language. Inspect what entry costs the player without connecting an account.",
+      "taskInstructions": "Open the browser, search <b>lucky squad drop</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the Fake giveaway in mobile game evidence page.",
+      "taskCompleteText": "<b>Felix Rane:</b> Page captured. The useful evidence is the marker and the information demanded for entry.",
+      "correctAnswer": "lucky-squad-drop.com/lucky-squad-drop"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> This <b>giveaway page</b> reaches players outside Harborview's internal warning channels. Inspect its entry requirement so the community warning can be specific.",
+      "taskInstructions": "Open the browser, search <b>lucky squad drop</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the Fake giveaway in mobile game evidence page.",
+      "taskCompleteText": "<b>Imani Vale:</b> Page captured. We can warn players using its exact marker and credential request.",
+      "correctAnswer": "lucky-squad-drop.com/lucky-squad-drop"
+    }
+  ],
+  "taskID": "ismg6860_u03_q10_t01",
+  "parentQuestID": "ismg6860_u03_q10",
+  "articleID": "u03_reward_and_volume_scams",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

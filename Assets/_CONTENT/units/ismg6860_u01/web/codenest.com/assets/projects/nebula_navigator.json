@@ -1,0 +1,17 @@
+{
+  "id": "nebula-navigator",
+  "name": "Nebula Navigator",
+  "user": "astrodev",
+  "description": "Space weather visualizer built for orbital mission planners.",
+  "isPublic": true,
+  "files": [
+    {
+      "name": "README.md",
+      "content": "# Nebula Navigator\nA compact toolkit for predicting stellar wind bursts with customizable alerts."
+    },
+    {
+      "name": "main.dart",
+      "content": "void main() {\n  print('Launching Nebula Navigator');\n}"
+    }
+  ]
+}

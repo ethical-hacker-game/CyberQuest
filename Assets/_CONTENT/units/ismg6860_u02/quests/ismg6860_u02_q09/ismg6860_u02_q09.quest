@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u02_q09",
+  "cityIndex": 4998,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q09_t01",
+    "ismg6860_u02_q09_t02",
+    "ismg6860_u02_q09_t03",
+    "ismg6860_u02_q09_t04_dialogue"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "The Unneeded Door",
+      "questDescription": "Compare ECHO-73's service summary with RailGate's placement guidance and prepare a precise remediation finding.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> TCP/8080 is a maintenance-only console requiring remediation, and the firewall alert now requires coordination before further checks.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": "netscantools_echo_summary"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "The Unneeded Door",
+      "questDescription": "Turn the service summary and vendor guidance into a precise profile of the maintenance console.",
+      "questCompleteText": "<b>Kade Mercer:</b> TCP/8080 is the maintenance-only console in the profile, and the edge logs now show the scan activity.",
+      "questCharacterID": "u02_kade_mercer",
+      "appScenarioID": "netscantools_echo_summary"
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "The Unneeded Door",
+      "questDescription": "Use the service summary and vendor guidance to build a precise, supportable oversight finding.",
+      "questCompleteText": "<b>Lena Ortiz:</b> TCP/8080 supports a concrete remediation request, while the alert raises a separate monitoring question.",
+      "questCharacterID": "u02_lena_ortiz",
+      "appScenarioID": "netscantools_echo_summary"
+    }
+  ]
+}

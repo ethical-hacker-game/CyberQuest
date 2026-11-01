@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_feasibility_evidence",
+  "videoURL": null,
+  "title": "Feasibility: Evidence and Testing Boundaries",
+  "content": "<b>Exposure</b> and <b>exploitation feasibility</b> are separate conclusions. A public 200 response can verify that an interface is reachable. It does not prove that its controls work, that configuration can be changed, or that anyone has abused it. Record technical preconditions such as enabled controls, authentication, network access, and required privileges. Also record the testing boundary: if proving impact requires submitting data or changing state, obtain separate authorization. Lack of authorization limits the test; it is not evidence that exploitation would succeed or fail.",
+  "links": [
+    "feasibility evidence"
+  ]
+}

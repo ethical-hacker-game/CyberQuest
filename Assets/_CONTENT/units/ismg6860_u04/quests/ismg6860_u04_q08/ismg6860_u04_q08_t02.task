@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Assign a tier that reflects the verified public listing and likely sensitivity without claiming the archive was opened or exploited.",
+      "taskInstructions": "Use the factors in <link=\"u04_practical_risk_context\"><u>practical risk context</u></link> and select the rating with an evidence-matched rationale.",
+      "taskQuestion": "What is the best risk tier?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. High reflects verified public exposure and likely sensitive content, with uncertainty stated separately.",
+      "answers": [
+        "Informational, because only the directory page design was observed.",
+        "Low, because filenames cannot create any security exposure.",
+        "Medium, because the archive was proved harmless without a download.",
+        "High, because public access to a likely sensitive administrative backup is verified, while its contents and any misuse remain unconfirmed."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Assign a tier that reflects the confirmed public route and likely value of the archive without inventing evidence about its contents.",
+      "taskInstructions": "Use the factors in <link=\"u04_practical_risk_context\"><u>practical risk context</u></link> and select the rating with an evidence-matched rationale.",
+      "taskQuestion": "What is the best risk tier?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. High captures the verified opportunity while keeping untested impact explicit.",
+      "answers": [
+        "Informational, because only the directory page design was observed.",
+        "Low, because filenames cannot create any security exposure.",
+        "Medium, because the archive was proved harmless without a download.",
+        "High, because public access to a likely sensitive administrative backup is verified, while its contents and any misuse remain unconfirmed."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Assign a tier that reflects the verified exposure and public-service context without overstating what happened to the archive.",
+      "taskInstructions": "Use the factors in <link=\"u04_practical_risk_context\"><u>practical risk context</u></link> and select the rating with an evidence-matched rationale.",
+      "taskQuestion": "What is the best risk tier?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. High communicates urgency while keeping unverified contents and misuse out of the claim.",
+      "answers": [
+        "Informational, because only the directory page design was observed.",
+        "Low, because filenames cannot create any security exposure.",
+        "Medium, because the archive was proved harmless without a download.",
+        "High, because public access to a likely sensitive administrative backup is verified, while its contents and any misuse remain unconfirmed."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q08_t02",
+  "parentQuestID": "ismg6860_u04_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>pastebinx.io &mdash; Mock Paste Service</title>
+		<link rel="stylesheet" href="style.css" />
+	  <script src="../cq-bridge.js"></script>
+</head>
+	<body>
+		<div class="app-shell">
+			<header>
+				<h1>PASTEBINX</h1>
+				<p>
+					A concept pasteboard for sharing encrypted snippets across teams. This interactive
+					mock keeps critical controls disabled for safety.
+				</p>
+			</header>
+
+			<nav class="mock-nav" aria-label="Mock categories">
+				<button type="button" disabled aria-disabled="true" title="Categories are disabled in this mock">
+					Trending vaults
+				</button>
+				<button type="button" disabled aria-disabled="true" title="Categories are disabled in this mock">
+					Security research
+				</button>
+				<button type="button" disabled aria-disabled="true" title="Categories are disabled in this mock">
+					AI labs
+				</button>
+				<button type="button" disabled aria-disabled="true" title="Categories are disabled in this mock">
+					Release notes
+				</button>
+				<button type="button" disabled aria-disabled="true" title="Categories are disabled in this mock">
+					Incident response
+				</button>
+			</nav>
+
+			<div class="search-bar" role="search">
+				<input type="search" placeholder="Search public mock snippets" disabled aria-disabled="true" />
+				<button type="button" disabled aria-disabled="true">Search</button>
+			</div>
+
+			<section class="composer" aria-labelledby="composer-title">
+				<h2 id="composer-title">Create a mock snippet</h2>
+				<textarea placeholder="Paste or type code here..." spellcheck="false" disabled aria-disabled="true"></textarea>
+				<div class="actions">
+					<span>Submission temporarily disabled while this is a simulation.</span>
+					<span class="cta-wrapper">
+						<button class="primary" type="button" disabled aria-disabled="true">Submit snippet</button>
+						<span class="tooltip">Not available in this simulation.</span>
+					</span>
+				</div>
+			</section>
+
+			<div class="meta-links" aria-label="Account and policy shortcuts">
+				<button type="button" disabled aria-disabled="true" title="Login is disabled in this mock">
+					Log in
+				</button>
+				<button type="button" disabled aria-disabled="true" title="Registration is disabled in this mock">
+					Register
+				</button>
+				<button type="button" disabled aria-disabled="true" title="Privacy settings are disabled in this mock">
+					Privacy policy
+				</button>
+				<button type="button" disabled aria-disabled="true" title="Terms remain static in this mock">
+					Terms of service
+				</button>
+				<button type="button" disabled aria-disabled="true" title="Content guidelines unavailable in this mock">
+					Content guidelines
+				</button>
+			</div>
+
+			<footer>
+				pastebinx.io
+			</footer>
+		</div>
+	</body>
+</html>

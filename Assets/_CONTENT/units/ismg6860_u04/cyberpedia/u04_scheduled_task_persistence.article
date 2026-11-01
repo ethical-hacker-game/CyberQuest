@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_scheduled_task_persistence",
+  "videoURL": null,
+  "title": "NightlyExport Scheduled-Task Condition",
+  "content": "<b>The scheduled-task audit confirms that NightlyExport on NB-FIN-07 runs as the overprivileged svc-web account.</b> This is a persistence condition because a recurring task can retain useful privilege after an initial compromise; it does not prove that unauthorized access has occurred. Remediate by reviewing the task's necessity and definition, applying least privilege to its account, rotating relevant credentials, monitoring task changes, and verifying the resulting configuration.",
+  "links": [
+    "the NightlyExport persistence condition"
+  ]
+}

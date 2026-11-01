@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u03_q09_t01_calendar_invite",
+  "parentTaskID": "ismg6860_u03_q09_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Fwd: repeating badge-support invite: Riley",
+      "shortSummary": "Riley forwards a calendar invite that keeps re-pinging with a support link.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Riley sent this after repeated badge-support reminders. Preserve the metadata before removing the invite through the calendar's safe controls.\n\nInvite metadata:\nTitle: LanternPass Badge Support\nFormat: ICS\nOrganizer: support@harbor-badge-verify.com\nReminder loop: every 15 minutes\nEmbedded URL: https://harbor-badge-verify.com/revalidate\nMarker: BL-LANTERN-9\n\nAsha",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Fwd: repeating badge-support invite: Riley",
+      "shortSummary": "Riley forwards a calendar invite that keeps re-pinging with a support link.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Riley's calendar has delivered this badge-support reminder every fifteen minutes. Read how the organizer and URL connect it to the campaign.\n\nInvite metadata:\nTitle: LanternPass Badge Support\nFormat: ICS\nOrganizer: support@harbor-badge-verify.com\nReminder loop: every 15 minutes\nEmbedded URL: https://harbor-badge-verify.com/revalidate\nMarker: BL-LANTERN-9\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Fwd: repeating badge-support invite: Riley",
+      "shortSummary": "Riley forwards a calendar invite that keeps re-pinging with a support link.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Riley forwarded this after hours of fifteen-minute reminders. Preserve the organizer and destination so others can recognize it without exposing Riley's schedule.\n\nInvite metadata:\nTitle: LanternPass Badge Support\nFormat: ICS\nOrganizer: support@harbor-badge-verify.com\nReminder loop: every 15 minutes\nEmbedded URL: https://harbor-badge-verify.com/revalidate\nMarker: BL-LANTERN-9\n\nImani",
+      "attachements": []
+    }
+  ]
+}

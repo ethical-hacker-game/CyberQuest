@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Theo's <b>door-camera note</b> records the visitor's appearance, request, and lack of a visible badge. Review those observations before interpreting the event.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Door-camera note: West Gate</b>.",
+      "taskQuestion": "Open Theo Kwan's door-camera note.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The note records an unbadged visitor, boxes, and an urgent delivery request; it does not confirm entry.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q17_t01_door_note"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Theo's <b>door-camera note</b> records clothing, boxes, an urgent delivery claim, and no visible badge. Read the observed details before pricing the pretext.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Door-camera note: West Gate</b>.",
+      "taskQuestion": "Open Theo Kwan's door-camera note.",
+      "taskCompleteText": "<b>Felix Rane:</b> The note documents a plausible pretext but does not establish that access succeeded.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q17_t01_door_note"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Theo's <b>door-camera note</b> shows the social pressure placed on a volunteer. Review what was observed without assuming the volunteer opened the door.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Door-camera note: West Gate</b>.",
+      "taskQuestion": "Open Theo Kwan's door-camera note.",
+      "taskCompleteText": "<b>Imani Vale:</b> The request and pressure are documented without blaming the volunteer or claiming a breach.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q17_t01_door_note"
+    }
+  ],
+  "taskID": "ismg6860_u03_q17_t01",
+  "parentQuestID": "ismg6860_u03_q17",
+  "articleID": "u03_physical_social_engineering",
+  "mailsOnStart": [
+    "ismg6860_u03_q17_t01_door_note"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

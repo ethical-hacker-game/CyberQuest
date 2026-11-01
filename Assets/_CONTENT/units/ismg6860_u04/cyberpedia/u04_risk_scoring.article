@@ -1,0 +1,12 @@
+{
+  "articleID": "u04_risk_scoring",
+  "videoURL": null,
+  "title": "Risk Scoring and Business Context",
+  "content": "<b>A technical severity score describes a vulnerability. A practical risk rating describes what the vulnerability means in its environment.</b>\n\nScanner severity is a useful starting point, not the final decision. Risk depends on both the likelihood of harmful use and the impact if that use succeeds. Two systems with the same technical weakness can deserve different priorities because their exposure, data, users, and operational roles are different.\n\nA defensible rating considers several factors:\n\n- <b>Evidence confidence:</b> Is the condition only suspected, or has it been verified?\n- <b>Exposure:</b> Is the asset public, internal, segmented, or reachable only by trusted administrators?\n- <b>Exploitability:</b> What access, knowledge, user action, or other preconditions are required?\n- <b>Impact:</b> Could the issue affect confidentiality, integrity, availability, safety, privacy, or public trust?\n- <b>Asset importance:</b> Does the system support critical services, sensitive records, or a large number of users?\n- <b>Blast radius:</b> Could the affected asset provide access to other systems or identities?\n- <b>Existing controls:</b> Do monitoring, filtering, least privilege, backups, or rapid recovery reduce the realistic consequence?\n\nUse the same rating model across findings and record the reason for every adjustment. A high rating should be traceable to evidence and context, not to dramatic wording. A lower rating should not hide uncertainty or an inconvenient business impact. When evidence is incomplete, state the uncertainty separately instead of silently lowering severity.\n\nRisk tiers are decision tools. They should help owners decide what to contain immediately, what to schedule next, and what can be accepted or monitored. Reassess the rating when exposure changes, new evidence appears, or controls are added. This keeps risk scoring tied to current conditions rather than to a scanner snapshot.",
+  "links": [
+    "risk scoring",
+    "practical risk score",
+    "risk tier",
+    "scanner severity"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "articleID": "u05_ntp_enumeration",
+  "videoURL": null,
+  "title": "NTP, Clock Drift, and Evidence Integrity",
+  "content": "<b>A measured clock offset must be accounted for when logs from several systems are placed on one timeline.</b>\n\nThe Network Time Protocol synchronizes clocks over UDP 123. Peer lists identify selected upstream servers, while stratum values show each server's position in the time hierarchy. The output also separates network delay, clock offset, and jitter; these values are not interchangeable.\n\nA substantial offset complicates incident reconstruction because timestamps from one host no longer align directly with the firewall, directory, or mail server. If investigators know the measured difference, they can compensate for it, but correcting the time source is necessary for reliable future records.\n\nSelecting a source outside the organization is a separate governance finding because timestamp accuracy depends on infrastructure the organization does not operate. The peer name and offset do not, by themselves, prove why the drift occurred or when the configuration was last reviewed.",
+  "links": [
+    "Network Time Protocol",
+    "stratum",
+    "clock drift",
+    "NTP"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "decisionText": "Send the evidence to Northbridge through the authorized assessment channel.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Keep an undisclosed private copy for future leverage.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Prepare a protected public-interest disclosure if leadership suppresses the finding.",
+      "personaIndex": 2,
+      "personaValueChange": 10
+    }
+  ],
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> The exposed setup page, backup listing, and probe logs now form a sensitive evidence package. Leadership wants it contained internally, Felix sees leverage in it, and Imani Vale argues that residents must be protected from a quiet cover-up.",
+      "taskInstructions": "Read <link=\"u04_evidence_handling\"><u>handling sensitive evidence</u></link>, then choose who receives or controls the material.",
+      "taskQuestion": "How do you handle the sensitive evidence?",
+      "taskCompleteText": "<b>Mara Voss:</b> Understood. I will proceed according to your decision."
+    }
+  ],
+  "taskID": "ismg6860_u04_d01_decision",
+  "parentQuestID": "ismg6860_u04_d01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision"
+}

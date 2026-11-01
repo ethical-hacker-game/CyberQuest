@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u02_q01_t02_authorization",
+  "parentTaskID": "ismg6860_u02_q01_t02",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Dr. Mira Sen <mira.sen@asterlinktransit.com>",
+      "subject": "Authorized scan window for Asterlink launch",
+      "shortSummary": "Approved ranges, time window, and rules of engagement for the launch scan.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nAsterlink Transit has approved a controlled scan window from 22:00 to 23:30 local time. The authorized IPv4 range is 10.42.18.0/24. The jump host is 10.42.18.10. Public DMZ services, ticketing validation, and vendor maintenance evidence may be reviewed only when the task instructions reference them.\n\nDo not scan 10.42.30.0/24, the broader vendor block, camera networks, or any external address unless written expansion is provided. Discovery and validation are allowed; exploitation, disruption, brute force, credential testing, and state-changing requests are prohibited.\n\nThe throughline is the undocumented host that appeared in the first handoff note: 10.42.18.73, also labeled ECHO-73. Treat it as a question, not a target to break.\n\nMira",
+      "attachements": []
+    }
+  ]
+}

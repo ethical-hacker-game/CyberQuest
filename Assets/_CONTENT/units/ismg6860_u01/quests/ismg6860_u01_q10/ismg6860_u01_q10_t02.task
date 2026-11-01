@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The target responded to this host-discovery scan; no ports or services were tested.",
+        "Every TCP and UDP port on the target is open.",
+        "The address belongs to the organization running the academy.",
+        "The responding system contains an exploitable vulnerability."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> Interpret only what the output supports. A host-up result is useful for mapping, but the `-sn` option deliberately skips the port scan.",
+      "taskInstructions": "Choose the conclusion supported by the completed Zenmap result.",
+      "taskQuestion": "What does this host-discovery result establish?",
+      "taskCompleteText": "<b>Samira:</b> Correct. The target responded during the discovery check, but its ports, services, ownership, and vulnerability status were not established."
+    }
+  ],
+  "taskID": "ismg6860_u01_q10_t02",
+  "parentQuestID": "ismg6860_u01_q10",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

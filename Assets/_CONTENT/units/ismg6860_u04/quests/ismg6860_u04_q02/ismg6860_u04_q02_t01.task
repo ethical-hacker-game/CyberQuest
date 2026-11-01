@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Residents use this portal for permits, records, and support. Find the public homepage before checking its server configuration.",
+      "taskInstructions": "Open the Web Browser. In Cyber Search, search for <b>Northbridge portal</b> and open <b>Northbridge Citizen Services</b>.",
+      "taskQuestion": "Open the Northbridge Citizen Services homepage.",
+      "taskCompleteText": "<b>Mara Voss:</b> That is our approved target. Now check what its server exposes.",
+      "correctAnswer": "portal.northbridge.com"
+    }
+  ],
+  "taskID": "ismg6860_u04_q02_t01",
+  "parentQuestID": "ismg6860_u04_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

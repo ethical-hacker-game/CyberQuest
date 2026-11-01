@@ -1,0 +1,155 @@
+:root {
+  color-scheme: dark;
+  --page: #05060f;
+  --panel: #0b1124;
+  --panel-soft: #10192f;
+  --cyan: #00f0ff;
+  --cyan-soft: #8af5ff;
+  --text: #ffffff;
+  --muted: #b6c8ff;
+  --dim: #6b7695;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, var(--page), var(--panel-soft));
+  color: var(--text);
+}
+
+.home {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  position: relative;
+}
+
+.search-panel {
+  width: min(640px, 100%);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  color: var(--cyan);
+  font-size: clamp(44px, 10vw, 56px);
+  font-weight: 700;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.search-form input {
+  min-width: 0;
+  border: 1px solid rgba(138, 245, 255, 0.35);
+  background: rgba(11, 17, 36, 0.92);
+  color: var(--text);
+  padding: 16px 18px;
+  font-size: 18px;
+  outline: none;
+}
+
+.search-form input:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.18);
+}
+
+.search-form button {
+  border: 0;
+  background: var(--cyan);
+  color: #04101c;
+  padding: 0 22px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.results {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.results-header {
+  max-width: 960px;
+  margin: 0 auto 24px;
+}
+
+.results-header .search-form {
+  margin-top: 0;
+}
+
+.results-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.results-content h1 {
+  color: var(--cyan-soft);
+  font-size: clamp(22px, 4vw, 28px);
+  margin-bottom: 16px;
+}
+
+.result-list {
+  display: grid;
+  gap: 16px;
+}
+
+.result-card {
+  display: block;
+  background: var(--panel);
+  color: inherit;
+  padding: 20px;
+  text-decoration: none;
+  border: 1px solid rgba(138, 245, 255, 0.12);
+}
+
+.result-card[href]:hover,
+.result-card[href]:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.16);
+}
+
+.result-card h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.result-card p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.result-card span {
+  color: var(--cyan);
+  overflow-wrap: anywhere;
+}
+
+.result-card .unavailable {
+  color: var(--dim);
+}
+
+@media (max-width: 620px) {
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .search-form button {
+    min-height: 50px;
+  }
+}

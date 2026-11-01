@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "app_stage_changed",
+      "actionTag": "nametable",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> Before we rely on the terminal output, verify the registered roles with a second tool. Agreement between independent queries gives us stronger evidence.",
+      "taskInstructions": "Open NetScanTools Pro and review the NetBIOS name table for FORGE-HIST01.",
+      "taskQuestion": "Open the NetScanTools Pro NetBIOS name table view.",
+      "taskCompleteText": "<b>Dana Osei:</b> Confirmed. NetScanTools Pro also shows the <20> file server service on FORGE-HIST01."
+    }
+  ],
+  "taskID": "ismg6860_u05_q02_t03_app",
+  "parentQuestID": "ismg6860_u05_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

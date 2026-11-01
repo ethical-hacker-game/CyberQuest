@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "It synchronizes to an external upstream server outside Halloway's control.",
+        "It has no time source configured and relies entirely on its hardware clock.",
+        "It synchronizes to the domain controller like every other host on the segment.",
+        "It acts as the authoritative time source for the whole plant network."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> The historian's timestamps do not align with the rest of the plant. Compare its selected Network Time Protocol peer with the domain controller before we decide how to correct the timeline.",
+      "taskInstructions": "Run <b>ntpq peers</b> and compare the historian's row against the domain controller's.",
+      "taskQuestion": "What does the historian's NTP configuration show?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. FORGE-HIST01 selects an external BridgeWorks peer while the domain controller uses Halloway's local reference. The peer choice does not by itself explain the measured offset."
+    },
+    {
+      "answers": [
+        "It synchronizes to an external upstream server outside Halloway's control.",
+        "It has no time source configured and relies entirely on its hardware clock.",
+        "It synchronizes to the domain controller like every other host on the segment.",
+        "It acts as the authoritative time source for the whole plant network."
+      ],
+      "correctAnswer": 0,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Network Time Protocol matters when logs from several systems must share one timeline. Compare the historian's selected peer with the domain controller's reference.",
+      "taskInstructions": "Run <b>ntpq peers</b> and compare the historian's row against the domain controller's.",
+      "taskQuestion": "What does the historian's NTP configuration show?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The historian selects an external BridgeWorks peer rather than Halloway's domain controller. Record that dependency without inventing its cause."
+    },
+    {
+      "answers": [
+        "It synchronizes to an external upstream server outside Halloway's control.",
+        "It has no time source configured and relies entirely on its hardware clock.",
+        "It synchronizes to the domain controller like every other host on the segment.",
+        "It acts as the authoritative time source for the whole plant network."
+      ],
+      "correctAnswer": 0,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Plant records need a traceable time source before investigators can compare them with other systems. Check which Network Time Protocol peer the historian selects.",
+      "taskInstructions": "Run <b>ntpq peers</b> and compare the historian's row against the domain controller's.",
+      "taskQuestion": "What does the historian's NTP configuration show?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The historian selects an external BridgeWorks peer instead of Halloway's domain controller. That unmanaged dependency belongs in the record."
+    }
+  ],
+  "taskID": "ismg6860_u05_q06_t01",
+  "parentQuestID": "ismg6860_u05_q06",
+  "articleID": "u05_ntp_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,28 @@
+{
+  "questID": "ismg6860_u01_q29",
+  "cityIndex": 4196,
+  "questIconID": "quest_icon_ping_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q29_t01",
+    "ismg6860_u01_q29_t02",
+    "ismg6860_u01_q29_t03",
+    "ismg6860_u01_q29_t04",
+    "ismg6860_u01_q29_t05"
+  ],
+  "requiredQuestID": "ismg6860_u01_q28",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Echo Recon",
+      "questDescription": "Aisha Karim asks you to investigate an ICMP sweep on Sentinel Global's ARGUS-LABNET. Start with an authorized topology trace, then use the packet evidence to distinguish reachability from access, consider a possible follow-on activity, and recommend scoped defenses.",
+      "questCompleteText": "<b>Aisha:</b> The capture supports ICMP reachability probing, not account or data access. Your report recommends scoped filtering and monitoring; the source's identity and intent remain unconfirmed.",
+      "questCharacterID": "u01_aisha_karim",
+      "appScenarioID": ""
+    }
+  ]
+}

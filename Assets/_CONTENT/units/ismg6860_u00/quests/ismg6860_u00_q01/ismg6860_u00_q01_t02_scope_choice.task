@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "It automatically encrypts all of the collected evidence.",
+        "It defines what evidence collection is allowed.",
+        "It makes every public system safe to test.",
+        "It replaces the need to document findings."
+      ],
+      "correctAnswer": 1,
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> Good. The authorization note is not decoration. It decides which actions belong inside the case and which actions would become unauthorized testing.",
+      "taskInstructions": "",
+      "taskQuestion": "Why does written authorization matter?",
+      "taskCompleteText": "<b>Ed:</b> Correct. Scope is the difference between useful security work and uncontrolled behavior."
+    }
+  ],
+  "taskID": "ismg6860_u00_q01_t02_scope_choice",
+  "parentQuestID": "ismg6860_u00_q01",
+  "articleID": "u00_authorization_scope",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

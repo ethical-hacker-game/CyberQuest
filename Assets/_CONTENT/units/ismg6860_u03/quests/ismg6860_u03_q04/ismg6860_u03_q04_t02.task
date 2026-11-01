@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Record the account identifier before interpreting the profile. A display name can be copied, but the handle identifies this specific account.",
+      "taskInstructions": "Type the handle exactly as shown on the profile, including <b>@</b> and the hyphen.",
+      "taskQuestion": "What is the impersonator's account handle?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: @HarborviewHelpDesk-Assist.",
+      "correctAnswers": [
+        "@HarborviewHelpDesk-Assist"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q04_t02",
+  "parentQuestID": "ismg6860_u03_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

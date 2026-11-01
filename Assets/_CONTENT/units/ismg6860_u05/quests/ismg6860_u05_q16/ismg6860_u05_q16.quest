@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u05_q16",
+  "cityIndex": 7372,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q16_t01",
+    "ismg6860_u05_q16_t02_trace",
+    "ismg6860_u05_q16_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Enumeration Pen Testing",
+      "questDescription": "Dana Osei needs the evidence synthesized without turning adjacent findings into invented attack hops. Separate the verified Unix session from supporting disclosures and untested configurations.",
+      "questCompleteText": "<b>Dana Osei:</b> The verified activity is a svc_bridgeworks session on the historian from 198.51.100.77. The account state, service disclosures, and IKE configuration remain related findings, not a proven multi-hop route.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Enumeration Pen Testing",
+      "questDescription": "Reyes Calloway wants the difference between observed activity and speculative reach made explicit. Map only the session path the evidence supports.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The external-source session on the historian is verified. DNS, IKE, SNMP, and directory evidence add context without proving traversal between those systems.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Enumeration Pen Testing",
+      "questDescription": "Priya Nandan wants one defensible summary that preserves uncertainty. Show the observed session and keep every untested connection labeled as such.",
+      "questCompleteText": "<b>Priya Nandan:</b> The account activity is documented without claiming a confirmed tunnel, compromise, or data access.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

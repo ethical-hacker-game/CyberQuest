@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> The setup page and backup directory remained public after deployment. Supplied logs also show an outside host probing both paths.\n\nFelix has been asking Northbridge vendors for information, while Imani Vale from CivicWatch wants the findings disclosed. We need to decide how to protect the evidence and who should receive it.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Mara Voss:</b> Review the options carefully. Our next action will determine how the evidence is handled."
+    }
+  ],
+  "taskID": "ismg6860_u04_q05_t05_bridge",
+  "parentQuestID": "ismg6860_u04_q05",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

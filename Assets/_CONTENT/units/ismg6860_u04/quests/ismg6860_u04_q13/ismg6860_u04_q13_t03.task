@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Open NB-FIN-07 and identify its only Critical security issue.",
+      "taskInstructions": "In the <b>Security Issues</b> table, compare the Severity and Finding columns.",
+      "taskQuestion": "What is the main host-based issue?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Three Critical security updates are missing from NB-FIN-07.",
+      "answers": [
+        "Missing critical patches",
+        "Weak service permissions",
+        "Minimum length 8 with no account lockout",
+        "NightlyExport runs as svc-web"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Open NB-FIN-07 and find the issue carrying the Critical severity badge.",
+      "taskInstructions": "In the <b>Security Issues</b> table, compare the Severity and Finding columns.",
+      "taskQuestion": "What is the main host-based issue?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Missing Critical patches create the strongest immediate opening on this host.",
+      "answers": [
+        "Missing critical patches",
+        "Weak service permissions",
+        "Minimum length 8 with no account lockout",
+        "NightlyExport runs as svc-web"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Open NB-FIN-07 and identify the finding with the highest severity.",
+      "taskInstructions": "In the <b>Security Issues</b> table, compare the Severity and Finding columns.",
+      "taskQuestion": "What is the main host-based issue?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Missing Critical patches are the most urgent issue on the finance endpoint.",
+      "answers": [
+        "Missing critical patches",
+        "Weak service permissions",
+        "Minimum length 8 with no account lockout",
+        "NightlyExport runs as svc-web"
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q13_t03",
+  "parentQuestID": "ismg6860_u04_q13",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

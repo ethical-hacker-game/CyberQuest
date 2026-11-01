@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Welcome, {player}. Northbridge's services portal lost a batch of assistance applications last week. With the audit approaching, I need to know where our systems are vulnerable before more residents are affected.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Mara Voss:</b> Start with the document exchange. We have a permission listing ready for review."
+    }
+  ],
+  "taskID": "ismg6860_u04_q01_t00_intro",
+  "parentQuestID": "ismg6860_u04_q01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

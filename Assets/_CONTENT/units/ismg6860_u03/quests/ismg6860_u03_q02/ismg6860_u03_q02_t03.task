@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Now identify the unsafe request. Focus on what the message asks staff to do, not on who received it.",
+      "taskInstructions": "Compare the page's domain and revalidation request with the guidance in <b>Text and Voice Phishing</b>.",
+      "taskQuestion": "Which detail makes this text a smishing lure?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The text pushes staff outside the official app and domain to revalidate badge access.",
+      "answers": [
+        "It arrives during a busy badge-support window.",
+        "It sends badge revalidation outside the official app.",
+        "It uses a short sender label instead of a full name.",
+        "It mentions Harborview staff and badge access."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u03_q02_t03",
+  "parentQuestID": "ismg6860_u03_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

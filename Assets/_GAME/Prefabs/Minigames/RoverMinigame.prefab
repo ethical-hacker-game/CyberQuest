@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9110000000000001001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9110000000000001002}
+  - component: {fileID: 9110000000000001003}
+  - component: {fileID: 9110000000000001004}
+  m_Layer: 0
+  m_Name: RoverMinigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9110000000000001002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9110000000000001001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9110000000000001003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9110000000000001001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7a0e0001c42c8a90f31d5b6e7c9001, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name: Data Rover
+  minigameType: 111
+  instructionsLabel: Recover the evidence - slip past the patrol sweeps
+  resultOnTimeout: 0
+  standardDuration: 75
+  minigameUIPrefab: {fileID: 9120000000000001003, guid: da7a0e0011c42c8a90f31d5b6e7c9011, type: 3}
+  descriptionImage: {fileID: 0}
+  descriptionHeader: Data Rover - Evidence Expedition
+  description: 'You pilot a recovery rover dropped into a hostile facility. Scattered
+    across the arena are DATA SHARDS - the evidence you came to recover. Security
+    bots sweep the floor on fixed patrol loops, each projecting an amber vision cone
+    that cannot see through walls. Touching a bot or its cone costs 1 integrity and
+    briefly scrambles your cloak. The patrols never change their routes - watch a
+    loop, learn its timing window, then move. Drive with WASD or the arrow keys and
+    collect every shard before the mission clock runs out. Lose all integrity or
+    run out of time and the mission fails - patience beats speed.'
+  roverIntegrity: 3
+  roverSpeed: 2.9
+  roverAcceleration: 14
+  invulnerabilitySeconds: 1.5
+  shardCount: 8
+  layoutIndex: -1
+  shardLabel: DATA SHARD
+  patrolLabel: PATROL BOT
+  patrolSpeed: 1.4
+  visionRange: 2.6
+  visionHalfAngle: 34
+  pointsPerShard: 120
+  timeBonusPerSecond: 12
+  detectionPenalty: 90
+--- !u!114 &9110000000000001004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9110000000000001001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7a0e0007c42c8a90f31d5b6e7c9007, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  cellSize: 1.5
+  wallHeight: 0.85
+  roverY: 0.35
+  roverHalfWidth: 0.42
+  yawSmoothing: 12
+  bankPerYawRate: 0.05
+  maxBankAngle: 14
+  bankSmoothing: 10
+  botY: 0.5
+  bobAmplitude: 0.07
+  shardPickupRadius: 0.9
+  contactRadius: 0.85
+  coneRayCount: 22
+  coneY: 0.06
+  roverColor: {r: 0.13, g: 0.96, b: 0.88, a: 1}
+  shardColor: {r: 0.21, g: 0.88, b: 1, a: 1}
+  patrolColor: {r: 1, g: 0.3, b: 0.26, a: 1}
+  coneColor: {r: 1, g: 0.72, b: 0.2, a: 1}
+  coneAlpha: 0.22
+  coneAlertColor: {r: 1, g: 0.25, b: 0.35, a: 1}
+  wallColor: {r: 0.1, g: 0.16, b: 0.3, a: 1}
+  floorColor: {r: 0.03, g: 0.055, b: 0.1, a: 1}
+  gridLineColor: {r: 0.08, g: 0.35, b: 0.45, a: 1}
+  startZoneColor: {r: 0.24, g: 1, b: 0.53, a: 1}
+  warnColor: {r: 1, g: 0.35, b: 0.6, a: 1}
+  backgroundColor: {r: 0.024, g: 0.043, b: 0.078, a: 1}
+  emissionIntensity: 1.5
+  logEvents: 0

@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": false,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Jamal Rivers:</b> Susie and Juan both use multifactor authentication, and the available account records show no takeover indicators. Their public UWork profiles expose NorthTec addresses that reveal a consistent naming pattern.",
+      "taskInstructions": "Answer from the evidence about public address exposure.",
+      "taskQuestion": "Must an attacker compromise an account to learn or infer employee email addresses?",
+      "taskCompleteText": "<b>Jamal Rivers:</b> Correct. Public profiles can reveal individual addresses and predictable formats without any account being compromised."
+    }
+  ],
+  "taskID": "ismg6860_u01_q11_t03",
+  "parentQuestID": "ismg6860_u01_q11",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

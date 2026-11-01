@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Take the entire production environment offline until investigations finish.",
+        "Isolate affected hosts and subnets, preserve logs, and start scope assessment.",
+        "Immediately notify customers and regulators before containment.",
+        "Begin organisation-wide mandatory security training now."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Piotr Novak:</b> We need to limit further loss while preserving the records required to determine scope. A company-wide shutdown could destroy context and disrupt unaffected systems, while notification decisions depend on facts we are still collecting.",
+      "taskInstructions": "Choose the immediate action that balances containment, evidence preservation, and scope assessment.",
+      "taskQuestion": "Which immediate containment action should we start?",
+      "taskCompleteText": "<b>Piotr Novak:</b> Targeted isolation can limit further exposure while preserving logs and allowing the response team to map affected assets before expanding containment."
+    }
+  ],
+  "taskID": "ismg6860_u01_q13_t02",
+  "parentQuestID": "ismg6860_u01_q13",
+  "articleID": "u01_incident_response",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

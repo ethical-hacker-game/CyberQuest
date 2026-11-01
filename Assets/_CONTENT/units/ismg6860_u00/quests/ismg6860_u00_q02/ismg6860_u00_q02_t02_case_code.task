@@ -1,0 +1,23 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "NS-1047",
+        "NS1047",
+        "case NS-1047"
+      ],
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> A page can look ordinary and still carry evidence. The status panel shows a code tied to the diagnostic warning, and that code is how we will connect later findings to the same record.",
+      "taskInstructions": "Type the case code shown beside the diagnostic warning. Include the dash as printed.",
+      "taskQuestion": "What case code appears on the status page?",
+      "taskCompleteText": "<b>Ed:</b> Correct. NS-1047 connects this notice to the evidence we collect next."
+    }
+  ],
+  "taskID": "ismg6860_u00_q02_t02_case_code",
+  "parentQuestID": "ismg6860_u00_q02",
+  "articleID": "u00_evidence_reasoning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

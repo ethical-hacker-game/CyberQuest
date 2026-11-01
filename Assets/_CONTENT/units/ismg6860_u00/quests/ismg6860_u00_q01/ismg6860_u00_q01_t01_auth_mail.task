@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u00_q01_t01_scope",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> Before we touch a target, the case needs a written line we will not cross. Your inbox has my authorization note: the target, the allowed actions, and the limits of this review.",
+      "taskInstructions": "",
+      "taskQuestion": "Open Ed's authorization email.",
+      "taskCompleteText": "<b>Ed:</b> Good. We have written permission to gather evidence, with a clear boundary around the work."
+    }
+  ],
+  "taskID": "ismg6860_u00_q01_t01_auth_mail",
+  "parentQuestID": "ismg6860_u00_q01",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u00_q01_t01_scope"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

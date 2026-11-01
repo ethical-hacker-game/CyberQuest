@@ -1,0 +1,11 @@
+{
+  "articleID": "u01_safe_investigation_environments",
+  "videoURL": null,
+  "title": "Safe Investigation Environments",
+  "content": "A safe investigation environment separates untrusted content and risky research from everyday accounts, files, and systems. It may be a dedicated virtual machine, sandbox, disposable browser profile, or organization-managed analysis workstation. Isolation reduces the consequences of a mistake, but it does not make every action anonymous, legal, or harmless.\n\nUse a clean environment with current patches, minimal privileges, no personal accounts, and no shared clipboard or folders unless they are required. Keep sensitive evidence in approved encrypted storage rather than on the analysis desktop. Take snapshots or use disposable instances when permitted so the environment can be restored. Route traffic only through organization-approved controls and logging. Privacy tools can reduce some tracking, but browser fingerprints, account logins, downloaded files, network providers, and user behavior can still reveal identity.\n\n<b>Observe without escalating</b>\nWhen reviewing suspicious sites, forums, messages, or files, avoid logging in, posting, downloading unnecessary content, enabling active scripts, or contacting participants. Record URLs, timestamps, visible identifiers, and screenshots when allowed. Do not execute downloaded programs or move them to the normal environment. If the material suggests immediate danger, illegal content, or an active compromise, stop and use the designated escalation channel.\n\nBefore starting, confirm scope, retention rules, and who can receive the evidence. Afterward, export only the required report and verified evidence, scan transferred files, revoke temporary credentials, and destroy or reset the workspace according to policy. Separation is effective when it is combined with disciplined behavior and clear authorization.",
+  "links": [
+    "normal environment",
+    "sandboxed laptop",
+    "sandbox environment"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "correctAnswer": false,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> I have our VPN documentation open in front of me. Two site-to-site tunnels, both to logistics partners, both reviewed and signed off last year. That is the entire list, and I am staring at the peer identity in your handshake output while I read it.",
+      "taskInstructions": "Compare the <b>ID=</b> value in the earlier ike-scan output with Dana's documented VPN inventory in this task.",
+      "taskQuestion": "True or false: the discovered ISAKMP gateway matches a documented Halloway VPN tunnel.",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. bridgeworks-site does not match either documented peer. The configuration requires ownership review."
+    },
+    {
+      "correctAnswer": false,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Hold that peer identity up against what the company believes it runs. Dana can produce the paperwork: two tunnels, both to logistics partners, both signed. The distance between what an organisation documents and what it actually operates is where everything useful lives.",
+      "taskInstructions": "Compare the <b>ID=</b> value in the earlier ike-scan output with Dana's documented VPN inventory in this task.",
+      "taskQuestion": "True or false: the discovered ISAKMP gateway matches a documented Halloway VPN tunnel.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. bridgeworks-site is absent from the current inventory. That makes it unaccounted for, not automatically usable."
+    },
+    {
+      "correctAnswer": false,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Dana's paperwork lists two tunnels, both to logistics partners, both reviewed last year. Somebody put their name to those two. What I want in the record is whether anyone ever put their name to the one that just answered you.",
+      "taskInstructions": "Compare the <b>ID=</b> value in the earlier ike-scan output with Dana's documented VPN inventory in this task.",
+      "taskQuestion": "True or false: the discovered ISAKMP gateway matches a documented Halloway VPN tunnel.",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. bridgeworks-site is not one of the two documented peers. Record the discrepancy without inventing an approval history."
+    }
+  ],
+  "taskID": "ismg6860_u05_q11_t02",
+  "parentQuestID": "ismg6860_u05_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "TrueFalse"
+}

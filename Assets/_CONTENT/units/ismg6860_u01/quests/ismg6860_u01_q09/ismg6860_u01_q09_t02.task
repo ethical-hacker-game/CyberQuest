@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "app_scenario_finished",
+      "actionTag": null,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> Now trace the imported header. Compare the end of the hop table with the From IP in the report, but remember that a relay endpoint does not prove who wrote the message.",
+      "taskInstructions": "Open <b>My Trace Reports</b>. In the trace window, select the populated <b>Email headers</b> field to continue the guided trace. Wait for the report to finish, compare the <b>End</b> row with the reported <b>From IP</b>, then select the completed report to finish.",
+      "taskQuestion": "Trace the imported header and review the route endpoint.",
+      "taskCompleteText": "<b>Samira:</b> The report ends at <b>52.103.51.79</b>, matching the displayed From IP. Record it as the observed route endpoint, not as confirmed sender identity or physical location."
+    }
+  ],
+  "taskID": "ismg6860_u01_q09_t02",
+  "parentQuestID": "ismg6860_u01_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

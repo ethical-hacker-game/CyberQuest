@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Placement and familiar branding may create trust, but the stronger finding is what the QR route asks visitors to do.",
+      "taskInstructions": "Compare the decoded destination and landing page with Harborview's normal badge workflow.",
+      "taskQuestion": "Which clue best supports the quishing finding?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The QR route sends visitors to an external login outside the legitimate badge workflow.",
+      "answers": [
+        "The sticker is placed where rushed staff will notice it.",
+        "The landing page borrows Harborview badge language.",
+        "The QR route leaves the real badge workflow for a login.",
+        "The printed code looks like a normal registration aid."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The sticker's placement creates opportunity, but the external login route is what creates leverage over a visitor's credentials.",
+      "taskInstructions": "Compare the decoded destination and landing page with Harborview's normal badge workflow.",
+      "taskQuestion": "Which detail makes the sticker dangerous?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The QR code is delivery; the external badge login is the credential lure.",
+      "answers": [
+        "The sticker is placed where rushed staff will notice it.",
+        "The landing page borrows Harborview badge language.",
+        "The printed code looks like a normal registration aid.",
+        "The QR route leaves the real badge workflow for a login."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Build the warning around the specific behavior that puts visitors' credentials at risk, not around the sticker's appearance.",
+      "taskInstructions": "Compare the decoded destination and landing page with Harborview's normal badge workflow.",
+      "taskQuestion": "Which clue best supports the quishing finding?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The warning should state that the QR route leads to an external badge login.",
+      "answers": [
+        "The QR route leaves the real badge workflow for a login.",
+        "The sticker is placed where rushed staff will notice it.",
+        "The landing page borrows Harborview badge language.",
+        "The printed code looks like a normal registration aid."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u03_q07_t03",
+  "parentQuestID": "ismg6860_u03_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

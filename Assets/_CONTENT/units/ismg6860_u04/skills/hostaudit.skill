@@ -1,0 +1,9 @@
+{
+  "skillID": "hostaudit",
+  "skillName": "Host Audit Agent",
+  "skillDescription": "The local-view component for host assessment. Reads patch state, services, local policy, and scheduled tasks from authorized endpoints, covering what an external scan cannot observe.",
+  "price": 3000,
+  "order": 50,
+  "requireTask": true,
+  "lockInDemo": false
+}

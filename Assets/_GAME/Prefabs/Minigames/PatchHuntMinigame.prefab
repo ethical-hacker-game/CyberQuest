@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9101000000000001001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9101000000000001002}
+  - component: {fileID: 9101000000000001003}
+  - component: {fileID: 9101000000000001004}
+  m_Layer: 0
+  m_Name: PatchHuntMinigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9101000000000001002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9101000000000001001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9101000000000001003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9101000000000001001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba7c4a001c42d8a90f31d5b6e7c90001, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name: Patch Hunt
+  minigameType: 101
+  instructionsLabel: Patch the breaches - do not touch the honeypot decoys
+  resultOnTimeout: 1
+  standardDuration: 60
+  minigameUIPrefab: {fileID: 9201000000000001003, guid: ba7c4a011c42d8a90f31d5b6e7c90011, type: 3}
+  descriptionImage: {fileID: 0}
+  descriptionHeader: Patch Hunt - Triage the Server Room
+  description: 'A neon server room is under attack. Red BREACH eruptions burst from
+    the racks, each with a shrinking timer ring - aim with the mouse and click every
+    breach before its ring closes. Each breach that slips through costs 1 integrity;
+    at zero the racks go dark and the run is lost. Green HONEYPOT decoys look almost
+    identical to breaches: clicking one costs points and resets your combo, so look
+    at what you are clicking before you act. Chain clean patches to build a combo
+    multiplier and survive until the end of the shift. Triage before action - that
+    is the whole job of incident response.'
+  gridColumns: 4
+  gridRows: 3
+  integrity: 3
+  spawnInterval: 1.7
+  minSpawnInterval: 0.75
+  spawnRampSeconds: 40
+  breachLifetime: 2.6
+  minBreachLifetime: 1.2
+  honeypotChance: 0.25
+  maxSimultaneous: 3
+  pointsPerPatch: 100
+  speedBonusMax: 60
+  missPenalty: 40
+  honeypotPenalty: 120
+  breachLabel: BREACH
+  honeypotLabel: HONEYPOT
+--- !u!114 &9101000000000001004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9101000000000001001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba7c4a007c42d8a90f31d5b6e7c90007, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  rackSpacingX: 2.2
+  rackSpacingZ: 2.7
+  rackWidth: 1.2
+  rackHeight: 1.55
+  rackDepth: 0.95
+  cameraPitch: 54
+  cameraYaw: 27
+  cameraOrthoSize: 5.1
+  cameraDistance: 30
+  growTime: 0.35
+  despawnTime: 0.18
+  targetScale: 0.8
+  targetHoverOffset: 0.5
+  aimRadius: 0.7
+  minAimRadius: 0.45
+  ringMaxRadius: 0.9
+  ringMinRadius: 0.15
+  ringWidth: 0.05
+  ringSegments: 40
+  breachColor: {r: 1, g: 0.24, b: 0.35, a: 1}
+  honeypotColor: {r: 0.24, g: 1, b: 0.53, a: 1}
+  ringColor: {r: 1, g: 0.82, b: 0.29, a: 1}
+  rackColor: {r: 0.07, g: 0.12, b: 0.2, a: 1}
+  ledColor: {r: 0.13, g: 0.96, b: 0.88, a: 1}
+  patchFlashColor: {r: 0.13, g: 0.96, b: 0.88, a: 1}
+  warnColor: {r: 1, g: 0.35, b: 0.6, a: 1}
+  floorColor: {r: 0.03, g: 0.055, b: 0.1, a: 1}
+  frameColor: {r: 0.08, g: 0.35, b: 0.45, a: 1}
+  backgroundColor: {r: 0.024, g: 0.043, b: 0.078, a: 1}
+  emissionIntensity: 1.5
+  logSpawns: 0

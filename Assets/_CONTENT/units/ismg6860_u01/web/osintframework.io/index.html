@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OSINT Framework (osintframework.io)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="../cq-bridge.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <h1>OSINT Framework</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div id="app" class="app" aria-label="OSINT mind map"></div>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="d3.min.js"></script>
+  <script src="mindmap-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

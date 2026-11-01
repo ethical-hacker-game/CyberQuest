@@ -1,0 +1,122 @@
+{
+  "variants": [
+    {
+      "minigameType": "StrengthForge",
+      "minigameHeaderText": "Northbridge Credential Hardening",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "strengthForgeSettings": {
+        "rounds": [
+          {
+            "label": "Staff Portal Account",
+            "description": "Create a memorable replacement for an online account protected by throttling but exposed to dictionary and hybrid guessing.",
+            "dictionaryAttack": true,
+            "hybridAttack": true,
+            "bruteForceAttack": false,
+            "guessesPerSecond": 1000,
+            "requiredCrackSeconds": 2592000,
+            "maxTokens": 5,
+            "memorabilityBudget": 9
+          },
+          {
+            "label": "Privileged Service Account",
+            "description": "Build a stronger credential for a privileged service whose recovered hash could face fast offline guessing.",
+            "dictionaryAttack": true,
+            "hybridAttack": true,
+            "bruteForceAttack": true,
+            "guessesPerSecond": 10000000,
+            "requiredCrackSeconds": 31536000,
+            "maxTokens": 6,
+            "memorabilityBudget": 11
+          }
+        ]
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Recommendations are easy to write and hard to live with. Northbridge has two very different problems here: a staff portal where guessing is throttled to a crawl, and a privileged service whose recovered hash could be ground through offline at speeds the portal will never see.\n\nOne complexity rule for both is how organizations end up with sticky notes on monitors. I want two replacements, each sized to the threat it will actually meet.",
+      "taskInstructions": "A round clears only when every attack meter for that account survives the required time, inside its token slot and memorability limits. Rare, unusual words buy far more resistance per memorability point than leet spellings, digit suffixes, or breach-dump favorites.",
+      "taskQuestion": "Forge the replacement credentials.",
+      "taskCompleteText": "You produced separate credentials for online and offline risk instead of applying one vague complexity rule. The result is both defensible and usable."
+    },
+    {
+      "minigameType": "StrengthForge",
+      "minigameHeaderText": "Northbridge Credential Hardening",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "strengthForgeSettings": {
+        "rounds": [
+          {
+            "label": "Staff Portal Account",
+            "description": "Create a memorable replacement for an online account protected by throttling but exposed to dictionary and hybrid guessing.",
+            "dictionaryAttack": true,
+            "hybridAttack": true,
+            "bruteForceAttack": false,
+            "guessesPerSecond": 1000,
+            "requiredCrackSeconds": 2592000,
+            "maxTokens": 5,
+            "memorabilityBudget": 9
+          },
+          {
+            "label": "Privileged Service Account",
+            "description": "Build a stronger credential for a privileged service whose recovered hash could face fast offline guessing.",
+            "dictionaryAttack": true,
+            "hybridAttack": true,
+            "bruteForceAttack": true,
+            "guessesPerSecond": 10000000,
+            "requiredCrackSeconds": 31536000,
+            "maxTokens": 6,
+            "memorabilityBudget": 11
+          }
+        ]
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A throttled login and a stolen hash are not the same game, and people who treat them the same lose one of them. On the portal, a patient guesser gets a slow trickle of tries and still has to be lucky. With the hash, patience is irrelevant, because the machine simply grinds.\n\nBuild each replacement for the specific thing coming at it. I have sat on the other side of that grind, and I can tell you which mistakes make it short work.",
+      "taskInstructions": "A round clears only when every attack meter for that account survives the required time, inside its token slot and memorability limits. Rare, unusual words buy far more resistance per memorability point than leet spellings, digit suffixes, or breach-dump favorites.",
+      "taskQuestion": "Forge the replacement credentials.",
+      "taskCompleteText": "You hardened both credentials against their relevant attack models. Generic complexity theater has been replaced with measurable resistance."
+    },
+    {
+      "minigameType": "StrengthForge",
+      "minigameHeaderText": "Northbridge Credential Hardening",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "strengthForgeSettings": {
+        "rounds": [
+          {
+            "label": "Staff Portal Account",
+            "description": "Create a memorable replacement for an online account protected by throttling but exposed to dictionary and hybrid guessing.",
+            "dictionaryAttack": true,
+            "hybridAttack": true,
+            "bruteForceAttack": false,
+            "guessesPerSecond": 1000,
+            "requiredCrackSeconds": 2592000,
+            "maxTokens": 5,
+            "memorabilityBudget": 9
+          },
+          {
+            "label": "Privileged Service Account",
+            "description": "Build a stronger credential for a privileged service whose recovered hash could face fast offline guessing.",
+            "dictionaryAttack": true,
+            "hybridAttack": true,
+            "bruteForceAttack": true,
+            "guessesPerSecond": 10000000,
+            "requiredCrackSeconds": 31536000,
+            "maxTokens": 6,
+            "memorabilityBudget": 11
+          }
+        ]
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Whatever you write here, a receptionist has to use it forty times a week. Remediation that ignores that gets quietly worked around, and then everyone blames the staff for the workaround instead of the rule that caused it.\n\nSo the portal credential has to be something a human can carry, and the heavier burden belongs on the service account, where no human has to remember anything at all.",
+      "taskInstructions": "A round clears only when every attack meter for that account survives the required time, inside its token slot and memorability limits. Rare, unusual words buy far more resistance per memorability point than leet spellings, digit suffixes, or breach-dump favorites.",
+      "taskQuestion": "Forge the replacement credentials.",
+      "taskCompleteText": "You matched each replacement to the threat it faces and kept the staff credential practical. Security improves when the control works for the people expected to use it."
+    }
+  ],
+  "taskID": "ismg6860_u04_q17_t02_strength_forge",
+  "parentQuestID": "ismg6860_u04_q17",
+  "articleID": "u04_credential_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

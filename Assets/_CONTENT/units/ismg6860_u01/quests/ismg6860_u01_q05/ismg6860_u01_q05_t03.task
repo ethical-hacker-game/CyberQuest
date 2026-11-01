@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Verify the record, remove it with the registrar, secure the registrar account, enable a change lock and alerts, then plan DNSSEC validation.",
+        "Delete the entire DNS zone immediately and rebuild every record without preserving the current response.",
+        "Leave the DNS records unchanged and monitor only the public website for additional outages.",
+        "Publish the complete DNS response online and ask an external forum to decide which records to remove."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> BikeForge confirmed that duck451.net is not authorized. We need to preserve the evidence, remove the bad delegation safely, secure the account that controls the zone, and add controls that make future changes easier to prevent and detect.",
+      "taskInstructions": "Choose the response that addresses the current record, registrar access, change monitoring, and DNS integrity without destroying evidence or unrelated configuration.",
+      "taskQuestion": "Which remediation should you recommend?",
+      "taskCompleteText": "<b>Samira:</b> That plan verifies and removes the unapproved record, secures registrar access, adds change controls, and introduces DNSSEC with proper validation. I’ll give BikeForge the documented remediation sequence."
+    }
+  ],
+  "taskID": "ismg6860_u01_q05_t03",
+  "parentQuestID": "ismg6860_u01_q05",
+  "articleID": "u01_dns_intelligence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,11 @@
+{
+  "articleID": "u03_reverse_social_engineering",
+  "videoURL": null,
+  "title": "Reverse Social Engineering",
+  "content": "Reverse social engineering is an attack in which the attacker makes the target seek help from the attacker. Instead of beginning with a direct request, the attacker creates, predicts, or draws attention to a problem and then appears as the person best able to solve it. The target initiates or welcomes the contact, which can make the helper seem trustworthy.\n\n<b>Problem, contact, rescue</b>\n\nA typical sequence has three parts. First, the target experiences a disruption such as an error, lockout, warning, or service failure. Second, a convenient support identity becomes visible through a search result, message, pop-up, profile, or referral. Third, the supposed helper asks for credentials, authentication codes, remote access, software installation, payment, or an exception to normal procedure. The rescue is the mechanism of compromise.\n\nNot every support contact after a problem is malicious. The warning sign is that the helper's identity and authority cannot be verified independently, especially when the helper pressures the target to act through the same channel that introduced the problem. A polished support page or knowledge of the error does not prove legitimacy; the attacker may have caused or observed it.\n\n<b>Break the sequence</b>\n\nUse the organization's known support route from a trusted directory, application, or previously verified bookmark. Describe the problem without sharing passwords or one-time codes. Do not install remote-control software or approve a login unless the verified process explicitly requires it. Preserve the error, suspicious support identity, contact route, requested action, and timing. Reporting both the disruption and the offered rescue helps responders connect events that might otherwise appear unrelated.",
+  "links": [
+    "fake support channel",
+    "fake support chat",
+    "manufactures the mistake"
+  ]
+}

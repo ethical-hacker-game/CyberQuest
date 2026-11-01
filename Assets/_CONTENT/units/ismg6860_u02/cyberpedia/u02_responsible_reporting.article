@@ -1,0 +1,13 @@
+{
+  "articleID": "u02_responsible_reporting",
+  "videoURL": null,
+  "title": "Responsible Security Reporting and Redaction",
+  "content": "Responsible security reporting turns technical evidence into action while limiting avoidable harm. The audience determines the necessary detail. An authorized incident owner may need exact assets, timestamps, ports, packet evidence, confidence, and reproduction conditions. A public advisory usually needs the impact, affected service category, response status, and remediation progress without a live route map or sensitive identifiers.\n\n<b>Preserve truth at the source</b>\n\nKeep an unaltered technical record with clear observations, interpretation, uncertainty, and collection context. Redaction should create a separate shareable version; it should not rewrite the source evidence to protect schedules, reputations, or a preferred narrative. Remove details that would enable abuse or expose unrelated people, such as precise addresses, credentials, internal topology, personal data, and unnecessary payload content. Mark omissions so readers do not mistake a summary for the complete record.\n\nSend the detailed finding through the approved reporting channel. Identify the asset owner, explain business impact without exaggeration, recommend practical controls, and define a way to verify the fix. When wider disclosure is justified, coordinate a reasonable remediation window where possible and reassess what details remain dangerous before publication. Emergency risk may require faster escalation through appropriate authorities, not impulsive public release.\n\nA useful report distinguishes a verified weakness from a suspected one and a vulnerable condition from proven exploitation. It also protects chain of custody and access to sensitive artifacts.\n\nRedaction is not concealment when it preserves the core truth and the audience can still understand the risk and response. The goal is accountable remediation without creating a second security incident through the report itself.",
+  "links": [
+    "redacted advisory",
+    "public communication",
+    "authorized incident owner",
+    "redacted truth",
+    "redacted accountability timeline"
+  ]
+}

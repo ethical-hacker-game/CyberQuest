@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u03_q01_t01_intake",
+  "parentTaskID": "ismg6860_u03_q01_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Blue Lantern intake: read this before you touch anything",
+      "shortSummary": "Asha sends the first Harborview reports and asks you to identify what connects them.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nHarborview Expo opens in eighteen hours. Four reports arrived before sunrise:\n- An SMS from HV-Badge says staff must revalidate their LanternPass badges.\n- A caller claims to be mobile support.\n- A cloned help desk profile is answering staff.\n- A QR sticker appeared near West Gate registration.\n\nEach report contains the marker BL-LANTERN-9. Treat it as a lead connecting the reports, preserve the original evidence, and never test a lure with real credentials. The staff being targeted are not at fault.\n\nAsha",
+      "attachements": []
+    }
+  ]
+}

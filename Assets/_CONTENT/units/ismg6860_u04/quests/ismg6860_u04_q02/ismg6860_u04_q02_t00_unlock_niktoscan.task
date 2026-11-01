@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "niktoscan",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Next, check the public portal's web server. Enable Web Server Scan to inspect its HTTP responses and exposed paths.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Web Server Scan</b>.",
+      "taskQuestion": "Unlock Web Server Scan.",
+      "taskCompleteText": "<b>Mara Voss:</b> The scanner is ready. Start with the approved portal."
+    }
+  ],
+  "taskID": "ismg6860_u04_q02_t00_unlock_niktoscan",
+  "parentQuestID": "ismg6860_u04_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

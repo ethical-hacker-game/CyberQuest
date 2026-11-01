@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Friendly conversation alone is not evidence of a scam. Choose the sequence that connects the accumulated trust to a workplace-access request.",
+      "taskInstructions": "Compare the dated messages in the VolunteerConnect archive.",
+      "taskQuestion": "Which clue best supports the finding?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The conversation builds rapport before requesting badge and entrance information.",
+      "answers": [
+        "The profile looks friendly and asks about volunteer life.",
+        "The relationship is built first, then badge access appears.",
+        "The conversation is organized across several messages.",
+        "The inbox timeline shows the same sender over days."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Choose the timeline feature that turns ordinary rapport into operationally useful access information.",
+      "taskInstructions": "Compare the dated messages in the VolunteerConnect archive.",
+      "taskQuestion": "Which detail reveals the long game?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The request arrives only after repeated low-pressure contact has established trust.",
+      "answers": [
+        "The profile looks friendly and asks about volunteer life.",
+        "The conversation is organized across several messages.",
+        "The relationship is built first, then badge access appears.",
+        "The inbox timeline shows the same sender over days."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Choose the evidence that explains the manipulation without treating the recipient's trust as a personal failure.",
+      "taskInstructions": "Compare the dated messages in the VolunteerConnect archive.",
+      "taskQuestion": "Which clue most clearly marks this as a scam?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The access request uses trust that was cultivated through earlier conversation.",
+      "answers": [
+        "The profile looks friendly and asks about volunteer life.",
+        "The conversation is organized across several messages.",
+        "The inbox timeline shows the same sender over days.",
+        "The relationship is built first, then badge access appears."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u03_q20_t03",
+  "parentQuestID": "ismg6860_u03_q20",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

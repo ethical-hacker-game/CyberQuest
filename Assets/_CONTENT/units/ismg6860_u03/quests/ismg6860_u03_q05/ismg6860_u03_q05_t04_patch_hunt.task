@@ -1,0 +1,68 @@
+{
+  "variants": [
+    {
+      "minigameType": "PatchHunt",
+      "minigameHeaderText": "LanternPass Package Triage",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "patchHuntSettings": {
+        "packetIntegrity": 4,
+        "spawnInterval": 1.6,
+        "breachLifetime": 2.1,
+        "honeypotChance": 0.25,
+        "breachLabel": "MALICIOUS BUILD",
+        "honeypotLabel": "VERIFIED PACKAGE"
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The feed pushes repackaged builds past you mixed in with records that are perfectly legitimate. Tear down a clean one and you have told staff their working app is poison, which costs us the trust we need for the next warning. Precision here is the entire job.",
+      "taskInstructions": "Click each <b>MALICIOUS BUILD</b> before its ring closes and leave <b>VERIFIED PACKAGE</b> targets alone. Four builds slipping past ends the run.",
+      "taskQuestion": "Triage the LanternPass packages.",
+      "taskCompleteText": "<b>Asha Moreno:</b> You removed the malicious builds without treating every package as guilty. Verification kept the response precise."
+    },
+    {
+      "minigameType": "PatchHunt",
+      "minigameHeaderText": "LanternPass Package Triage",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "patchHuntSettings": {
+        "packetIntegrity": 4,
+        "spawnInterval": 1.6,
+        "breachLifetime": 2.1,
+        "honeypotChance": 0.25,
+        "breachLabel": "MALICIOUS BUILD",
+        "honeypotLabel": "VERIFIED PACKAGE"
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The copy hides in the feed because panic makes defenders swat at anything that moves. Watch what happens when the records arrive faster than you can compare them: that gap between reflex and verification is where an operation like this actually lives.",
+      "taskInstructions": "Click each <b>MALICIOUS BUILD</b> before its ring closes and leave <b>VERIFIED PACKAGE</b> targets alone. Four builds slipping past ends the run.",
+      "taskQuestion": "Triage the LanternPass packages.",
+      "taskCompleteText": "<b>Felix Rane:</b> Clean triage. The labels mattered more than reflex."
+    },
+    {
+      "minigameType": "PatchHunt",
+      "minigameHeaderText": "LanternPass Package Triage",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "patchHuntSettings": {
+        "packetIntegrity": 4,
+        "spawnInterval": 1.6,
+        "breachLifetime": 2.1,
+        "honeypotChance": 0.25,
+        "breachLabel": "MALICIOUS BUILD",
+        "honeypotLabel": "VERIFIED PACKAGE"
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Staff will act on whatever we publish, so the list has to be exact. Condemn one clean build and the next real warning gets shrugged off by everybody who remembers. People deserve better than fear thrown with a wide net.",
+      "taskInstructions": "Click each <b>MALICIOUS BUILD</b> before its ring closes and leave <b>VERIFIED PACKAGE</b> targets alone. Four builds slipping past ends the run.",
+      "taskQuestion": "Triage the LanternPass packages.",
+      "taskCompleteText": "<b>Imani Vale:</b> That result is specific enough to protect people without turning uncertainty into fear."
+    }
+  ],
+  "taskID": "ismg6860_u03_q05_t04_patch_hunt",
+  "parentQuestID": "ismg6860_u03_q05",
+  "articleID": "u03_social_patterns",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

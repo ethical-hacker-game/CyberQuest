@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "scanprofiles",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Before you scan, pair the approved target with the right flags and timing. Scan Profiles gives you a repeatable framework for checking that command before launch pressure turns a typo into a scope violation.",
+      "taskInstructions": "Open the Lab panel and spend 1,800 credits to unlock Scan Profiles.",
+      "taskQuestion": "Unlock Scan Profiles in the Lab panel.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Scan Profiles is ready. Use its framework to verify the target and flags before each scan."
+    }
+  ],
+  "taskID": "ismg6860_u02_q05_t00_unlock_scanprofiles",
+  "parentQuestID": "ismg6860_u02_q05",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "FS-00-417",
+        "FS00417",
+        "case FS-00-417"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> Operations will lose time if the ticket and the packet do not share the same identifier. Another person has to connect the records without guessing.",
+      "taskInstructions": "Type the identifier exactly as written, including both dashes.",
+      "taskQuestion": "What final case ID appears in the evidence packet?",
+      "taskCompleteText": "<b>Michele:</b> Correct. FS-00-417 ties the ticket, browser evidence, terminal note, scanner report, and packet gate summary together."
+    },
+    {
+      "correctAnswers": [
+        "FS-00-417",
+        "FS00417",
+        "case FS-00-417"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> Risk messages fall apart when the record trail is vague. The evidence has to be checkable without exposing extra detail.",
+      "taskInstructions": "Type the identifier exactly as written, including both dashes.",
+      "taskQuestion": "What final case ID appears in the evidence packet?",
+      "taskCompleteText": "<b>Ana:</b> Correct. FS-00-417 anchors the brief to a verifiable record."
+    }
+  ],
+  "taskID": "ismg6860_u00_q07_t02_case_id",
+  "parentQuestID": "ismg6860_u00_q07",
+  "articleID": "u00_security_handoff",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

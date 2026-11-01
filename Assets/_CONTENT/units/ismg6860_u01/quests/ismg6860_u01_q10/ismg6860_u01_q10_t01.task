@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "app_scenario_finished",
+      "actionTag": "",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> The academy has authorized one active discovery check against its sandbox target. This probe can tell us whether the address responds, but it will not test ports or identify services.",
+      "taskInstructions": "In Zenmap, type <b>nmap -sn -PR</b> into the highlighted command field, then type <b>185.254.57.124</b> into the highlighted target field. Select <b>Scan</b>, review the Nmap Output, then select the completed result to finish.",
+      "taskQuestion": "Run the approved host-discovery check and review its result.",
+      "taskCompleteText": "<b>Samira:</b> The output reports one scanned address and one host up. Preserve the command and result together; they show reachability during this check, not an inventory of open ports."
+    }
+  ],
+  "taskID": "ismg6860_u01_q10_t01",
+  "parentQuestID": "ismg6860_u01_q10",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

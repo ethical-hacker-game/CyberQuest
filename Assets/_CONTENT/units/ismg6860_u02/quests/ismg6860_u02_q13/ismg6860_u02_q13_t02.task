@@ -1,0 +1,209 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Convert the finding into least-privilege policy at the boundary. Preserve required operations traffic while using default deny to support <b>internal visibility</b> and segmentation.",
+      "taskInstructions": "Allow the SOC console on TCP <b>443</b>, the IDS sensor on UDP <b>514</b>, and the ticketing health check on TCP <b>443</b>. The default policy is deny and the first matching rule wins, so leave ECHO-73 at <b>10.42.18.73</b> and public source <b>198.51.100.44</b> with no matching allow rule.",
+      "taskQuestion": "Build the GateSentry ruleset.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> The rules allow the three required flows and leave the unapproved SMB and RDP requests blocked by default.",
+      "minigameType": "FirewallRuleset",
+      "minigameHeaderText": "ECHO-73 GateSentry Policy",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "firewallSettings": {
+        "traffic": [
+          {
+            "label": "SOC console to GateSentry HTTPS",
+            "sourceIp": "10.42.18.20",
+            "port": 443,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The authorized SOC console needs encrypted access to the control plane."
+          },
+          {
+            "label": "IDS sensor sending alerts",
+            "sourceIp": "10.42.18.30",
+            "port": 514,
+            "protocol": "UDP",
+            "shouldAllow": true,
+            "rationale": "The approved sensor must deliver alert telemetry."
+          },
+          {
+            "label": "Ticketing application health check",
+            "sourceIp": "10.42.18.40",
+            "port": 443,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The documented ticketing health check is required service traffic."
+          },
+          {
+            "label": "Vendor node requesting SMB",
+            "sourceIp": "10.42.18.73",
+            "port": 445,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "ECHO-73 has no approved SMB path into ticketing."
+          },
+          {
+            "label": "Public source requesting RDP",
+            "sourceIp": "198.51.100.44",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "Management access must never be exposed to an untrusted public source."
+          },
+          {
+            "label": "Vendor node requesting RDP",
+            "sourceIp": "10.42.18.73",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "The vendor node is outside the approved management path."
+          }
+        ],
+        "ruleBudget": 4,
+        "overrideDefaultPolicy": true,
+        "defaultPolicy": "Deny"
+      }
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> Make the boundary express the traffic policy instead of relying on assumptions. Allow only the named operational flows, and use default deny to reinforce <b>internal visibility</b> and segmentation.",
+      "taskInstructions": "Allow the SOC console on TCP <b>443</b>, the IDS sensor on UDP <b>514</b>, and the ticketing health check on TCP <b>443</b>. The default policy is deny and the first matching rule wins, so leave ECHO-73 at <b>10.42.18.73</b> and public source <b>198.51.100.44</b> with no matching allow rule.",
+      "taskQuestion": "Build the GateSentry ruleset.",
+      "taskCompleteText": "<b>Kade Mercer:</b> The first-match rules preserve required traffic without granting ECHO-73 or the public source an unapproved path.",
+      "minigameType": "FirewallRuleset",
+      "minigameHeaderText": "ECHO-73 GateSentry Policy",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "firewallSettings": {
+        "traffic": [
+          {
+            "label": "SOC console to GateSentry HTTPS",
+            "sourceIp": "10.42.18.20",
+            "port": 443,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The authorized SOC console needs encrypted access to the control plane."
+          },
+          {
+            "label": "IDS sensor sending alerts",
+            "sourceIp": "10.42.18.30",
+            "port": 514,
+            "protocol": "UDP",
+            "shouldAllow": true,
+            "rationale": "The approved sensor must deliver alert telemetry."
+          },
+          {
+            "label": "Ticketing application health check",
+            "sourceIp": "10.42.18.40",
+            "port": 443,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The documented ticketing health check is required service traffic."
+          },
+          {
+            "label": "Vendor node requesting SMB",
+            "sourceIp": "10.42.18.73",
+            "port": 445,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "ECHO-73 has no approved SMB path into ticketing."
+          },
+          {
+            "label": "Public source requesting RDP",
+            "sourceIp": "198.51.100.44",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "Management access must never be exposed to an untrusted public source."
+          },
+          {
+            "label": "Vendor node requesting RDP",
+            "sourceIp": "10.42.18.73",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "The vendor node is outside the approved management path."
+          }
+        ],
+        "ruleBudget": 4,
+        "overrideDefaultPolicy": true,
+        "defaultPolicy": "Deny"
+      }
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> Turn the recommendation into a policy that operations can implement. Keep the named services available while default deny supports <b>internal visibility</b> and blocks unapproved paths.",
+      "taskInstructions": "Allow the SOC console on TCP <b>443</b>, the IDS sensor on UDP <b>514</b>, and the ticketing health check on TCP <b>443</b>. The default policy is deny and the first matching rule wins, so leave ECHO-73 at <b>10.42.18.73</b> and public source <b>198.51.100.44</b> with no matching allow rule.",
+      "taskQuestion": "Build the GateSentry ruleset.",
+      "taskCompleteText": "<b>Lena Ortiz:</b> The policy keeps required services available and blocks the three unapproved requests by default.",
+      "minigameType": "FirewallRuleset",
+      "minigameHeaderText": "ECHO-73 GateSentry Policy",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "firewallSettings": {
+        "traffic": [
+          {
+            "label": "SOC console to GateSentry HTTPS",
+            "sourceIp": "10.42.18.20",
+            "port": 443,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The authorized SOC console needs encrypted access to the control plane."
+          },
+          {
+            "label": "IDS sensor sending alerts",
+            "sourceIp": "10.42.18.30",
+            "port": 514,
+            "protocol": "UDP",
+            "shouldAllow": true,
+            "rationale": "The approved sensor must deliver alert telemetry."
+          },
+          {
+            "label": "Ticketing application health check",
+            "sourceIp": "10.42.18.40",
+            "port": 443,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The documented ticketing health check is required service traffic."
+          },
+          {
+            "label": "Vendor node requesting SMB",
+            "sourceIp": "10.42.18.73",
+            "port": 445,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "ECHO-73 has no approved SMB path into ticketing."
+          },
+          {
+            "label": "Public source requesting RDP",
+            "sourceIp": "198.51.100.44",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "Management access must never be exposed to an untrusted public source."
+          },
+          {
+            "label": "Vendor node requesting RDP",
+            "sourceIp": "10.42.18.73",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "The vendor node is outside the approved management path."
+          }
+        ],
+        "ruleBudget": 4,
+        "overrideDefaultPolicy": true,
+        "defaultPolicy": "Deny"
+      }
+    }
+  ],
+  "taskID": "ismg6860_u02_q13_t02",
+  "parentQuestID": "ismg6860_u02_q13",
+  "articleID": "u02_monitoring_placement",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

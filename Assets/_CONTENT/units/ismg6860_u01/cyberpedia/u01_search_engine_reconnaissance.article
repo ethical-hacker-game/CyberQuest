@@ -1,0 +1,10 @@
+{
+  "articleID": "u01_search_engine_reconnaissance",
+  "videoURL": null,
+  "title": "Search Engine Reconnaissance",
+  "content": "Search engine reconnaissance uses ordinary search results and advanced query operators to locate information that an organization has exposed publicly. It is often called Google Hacking or Google Dorking, although the method can apply to other search engines. Operators can narrow results by domain, file type, page title, URL text, or words that appear near one another.\n\nThe technique is useful for finding forgotten documents, public backups, exposed directory listings, copied credentials, development pages, and references in third-party sites or code repositories. A result is a lead, not proof that the current server still exposes the content. Search indexes can be stale, snippets can preserve removed text, and cached or mirrored copies may come from another host. Analysts should open only material allowed by the engagement and record the result URL, query, collection time, and relevant context.\n\n<b>Defensive use</b>\nOrganizations should search for their own domains, sensitive file patterns, internal terminology, and accidental credential exposure. When a finding is confirmed, remove the data from the source, invalidate any exposed secrets, review logs, and request index or cache removal where appropriate. Prevent recurrence with deployment checks, secret scanning, correct access controls, and clear publication workflows.\n\nSearch operators do not bypass authorization. A publicly indexed path can still contain personal, confidential, or unlawfully disclosed data. Do not attempt logins, download unnecessary datasets, or redistribute a discovery. Report the minimum evidence needed for the owner to verify and remediate it.",
+  "links": [
+    "Google Hacking",
+    "Google Dorking"
+  ]
+}

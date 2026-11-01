@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The portal runs the same fully-patched CMS version as the main site.",
+        "The portal has been fully patched and exposes no additional information.",
+        "The portal requires authentication before revealing any user information.",
+        "REST API user enumeration exposes the author usernames bw_tech1 and bw_tech2."
+      ],
+      "correctAnswer": 3,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> One last thing on the web side before I write any of this down. That portal is a content management system, and if it sits on the same platform as our main site then it has its own opinions about what counts as public. I would rather hear it from you than from whoever else has already been through it.",
+      "taskInstructions": "Run <b>wpscan --url https://hallowayprecision.com/support-legacy/ --enumerate u</b> in the terminal and inspect the identified users.",
+      "taskQuestion": "What does the scan reveal about the legacy portal?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The REST API exposes bw_tech1 and bw_tech2 as author usernames. The scan does not test whether either account can authenticate."
+    },
+    {
+      "answers": [
+        "The portal runs the same fully-patched CMS version as the main site.",
+        "The portal has been fully patched and exposes no additional information.",
+        "The portal requires authentication before revealing any user information.",
+        "REST API user enumeration exposes the author usernames bw_tech1 and bw_tech2."
+      ],
+      "correctAnswer": 3,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> A content management system is a talkative thing by default, and an install nobody has touched since the vendor folded will never have been quietened down. Whatever that portal still hands to anyone who asks is worth more to me than the directory was, because it is public and nobody has to explain how I came by it.",
+      "taskInstructions": "Run <b>wpscan --url https://hallowayprecision.com/support-legacy/ --enumerate u</b> in the terminal and inspect the identified users.",
+      "taskQuestion": "What does the scan reveal about the legacy portal?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The portal exposes two author usernames. Their login validity remains unknown."
+    },
+    {
+      "answers": [
+        "The portal runs the same fully-patched CMS version as the main site.",
+        "The portal has been fully patched and exposes no additional information.",
+        "The portal requires authentication before revealing any user information.",
+        "REST API user enumeration exposes the author usernames bw_tech1 and bw_tech2."
+      ],
+      "correctAnswer": 3,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Before any of this goes in the report I want the whole picture of what that portal is still publishing to anyone who asks for it. It was configured by people who are no longer around to be asked what they left exposed. Whatever it hands out, it has been handing out for years.",
+      "taskInstructions": "Run <b>wpscan --url https://hallowayprecision.com/support-legacy/ --enumerate u</b> in the terminal and inspect the identified users.",
+      "taskQuestion": "What does the scan reveal about the legacy portal?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The public API exposes two author usernames. It does not identify the people behind them or prove current access."
+    }
+  ],
+  "taskID": "ismg6860_u05_q14_t04",
+  "parentQuestID": "ismg6860_u05_q14",
+  "articleID": "u05_web_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

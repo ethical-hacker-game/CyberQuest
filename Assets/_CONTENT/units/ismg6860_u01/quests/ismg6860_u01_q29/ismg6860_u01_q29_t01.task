@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "minigameType": "NetworkTrace",
+      "minigameHeaderText": "ARGUS-LABNET",
+      "durationOverride": 0,
+      "difficulty": "Default",
+      "networkSettings": {
+        "reconMovesToWin": 6
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Aisha:</b> Sentinel Global authorized a short topology-trace exercise across ARGUS-LABNET. Follow the connected nodes while protecting the trace's integrity; then we will review the separate packet capture as evidence.",
+      "taskInstructions": "Review the <b>ping scan</b> guidance. Complete six recon moves, avoiding active red zones so the trace retains its integrity.",
+      "taskQuestion": "Complete the authorized topology trace.",
+      "taskCompleteText": "<b>Aisha:</b> The authorized topology trace is complete. It familiarizes you with the network map; the packet capture, not this exercise, is our evidence of the reported traffic."
+    }
+  ],
+  "taskID": "ismg6860_u01_q29_t01",
+  "parentQuestID": "ismg6860_u01_q29",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

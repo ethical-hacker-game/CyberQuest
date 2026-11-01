@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Public Crawl Demo | webscrape.io</title>
+	<style>
+		:root {
+			color-scheme: light dark;
+			--bg: #0f172a;
+			--panel: #1e293b;
+			--panel-light: #e2e8f0;
+			--text: #f8fafc;
+			--muted: #94a3b8;
+			--accent: #38bdf8;
+			--accent-dark: #0284c7;
+			--border: #334155;
+			--success: #22c55e;
+		}
+
+		@media (prefers-color-scheme: light) {
+			:root {
+				--bg: #f8fafc;
+				--panel: #ffffff;
+				--panel-light: #ffffff;
+				--text: #0f172a;
+				--muted: #475569;
+				--border: #cbd5f5;
+			}
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: "Segoe UI", "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			background: var(--bg);
+			color: var(--text);
+			line-height: 1.5;
+			min-height: 100vh;
+		}
+
+		a {
+			color: var(--accent);
+		}
+
+		button {
+			font: inherit;
+		}
+
+		.page-shell {
+			max-width: 1100px;
+			margin: 0 auto;
+			padding: 2rem 1.5rem 3rem;
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+
+		.site-header {
+			background: var(--panel);
+			border: 1px solid var(--border);
+			border-radius: 0.75rem;
+			padding: 1.5rem;
+			box-shadow: 0 10px 30px rgba(15, 23, 42, 0.35);
+		}
+
+		.host-header {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 0.75rem;
+		}
+
+		.host-badge {
+			background: rgba(56, 189, 248, 0.15);
+			border: 1px solid var(--accent);
+			color: var(--accent);
+			padding: 0.35rem 0.65rem;
+			border-radius: 999px;
+			font-size: 0.95rem;
+			letter-spacing: 0.02em;
+		}
+
+		.link-button {
+			background: none;
+			border: none;
+			color: var(--accent);
+			padding: 0;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.host-description {
+			margin: 0.75rem 0 0;
+			color: var(--muted);
+		}
+
+		.card {
+			background: var(--panel);
+			border: 1px solid var(--border);
+			border-radius: 0.75rem;
+			padding: 1.5rem;
+			box-shadow: 0 10px 30px rgba(15, 23, 42, 0.25);
+		}
+
+		.search-form {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		label {
+			font-weight: 600;
+		}
+
+		.field-row {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6rem;
+		}
+
+		.field-row input[type="text"] {
+			padding: 0.85rem 1rem;
+			border-radius: 0.5rem;
+			border: 1px solid var(--border);
+			background: rgba(15, 23, 42, 0.35);
+			color: var(--text);
+			font-size: 1rem;
+		}
+
+		.field-row input:focus {
+			outline: 2px solid var(--accent);
+			outline-offset: 2px;
+		}
+
+		.button-row {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.75rem;
+		}
+
+		.btn {
+			border: none;
+			border-radius: 0.5rem;
+			padding: 0.75rem 1.5rem;
+			cursor: pointer;
+			font-weight: 600;
+			transition: transform 120ms ease;
+		}
+
+		.btn:disabled {
+			opacity: 0.6;
+			cursor: not-allowed;
+		}
+
+		.btn-primary {
+			background: var(--accent);
+			color: #0f172a;
+		}
+
+		.btn-primary:active {
+			transform: scale(0.98);
+		}
+
+		.btn-secondary {
+			background: rgba(148, 163, 184, 0.15);
+			color: var(--text);
+			border: 1px solid var(--border);
+		}
+
+		.status-banner {
+			border-radius: 0.75rem;
+			padding: 1.25rem 1.5rem;
+			background: rgba(56, 189, 248, 0.08);
+			border: 1px dashed rgba(56, 189, 248, 0.6);
+			min-height: 110px;
+			display: flex;
+			flex-direction: column;
+			gap: 0.75rem;
+		}
+
+		.status-banner__heading {
+			margin: 0;
+			font-size: 1.25rem;
+		}
+
+		.status-banner__hint {
+			color: var(--muted);
+			margin: 0;
+		}
+
+		.progress-bar {
+			width: 100%;
+			background: rgba(148, 163, 184, 0.2);
+			border-radius: 999px;
+			height: 0.65rem;
+			overflow: hidden;
+		}
+
+		.progress-bar-fill {
+			height: 100%;
+			width: 0;
+			background: var(--accent);
+			transition: width 180ms linear;
+		}
+
+		.result-count {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: var(--success);
+		}
+
+		.dual-pane {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			gap: 1rem;
+		}
+
+		.pane {
+			border: 1px solid var(--border);
+			border-radius: 0.75rem;
+			background: var(--panel);
+			display: flex;
+			flex-direction: column;
+			min-height: 320px;
+		}
+
+		.pane-header {
+			display: flex;
+			border-bottom: 1px solid var(--border);
+		}
+
+		.tab-btn {
+			flex: 1;
+			background: none;
+			border: none;
+			padding: 0.75rem;
+			color: var(--muted);
+			font-weight: 600;
+			cursor: pointer;
+		}
+
+		.tab-btn[aria-selected="true"] {
+			color: var(--text);
+			background: rgba(148, 163, 184, 0.08);
+		}
+
+		.pane-content {
+			padding: 1rem 1.25rem 1.5rem;
+			flex: 1;
+			overflow: auto;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			font-size: 0.95rem;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 0.5rem 0.35rem;
+			border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+		}
+
+		th {
+			font-size: 0.85rem;
+			color: var(--muted);
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+		}
+
+		.show-more {
+			margin-top: 1rem;
+		}
+
+		.raw-log {
+			font-family: "Cascadia Code", Consolas, monospace;
+			font-size: 0.9rem;
+			background: rgba(15, 23, 42, 0.45);
+			border-radius: 0.5rem;
+			padding: 0.75rem;
+			list-style: none;
+			margin: 0;
+		}
+
+		.raw-log li + li {
+			margin-top: 0.45rem;
+		}
+
+		.footer {
+			border-top: 1px solid var(--border);
+			padding-top: 1rem;
+			font-size: 0.85rem;
+			color: var(--muted);
+		}
+
+		.footer .educational-hint {
+			margin: 0 0 0.35rem;
+		}
+
+		.footer .contact-note {
+			margin: 0;
+		}
+
+		.educational-hint[hidden] {
+			display: none;
+		}
+
+		dialog, .overlay {
+			border: none;
+			border-radius: 0.75rem;
+			padding: 0;
+		}
+
+		.modal-inner {
+			padding: 1.5rem;
+			background: var(--panel);
+			color: var(--text);
+			border-radius: inherit;
+			border: 1px solid var(--border);
+			min-width: 280px;
+			max-width: 400px;
+		}
+
+		.modal-inner h2 {
+			margin-top: 0;
+		}
+
+		.modal-actions {
+			margin-top: 1.25rem;
+			display: flex;
+			gap: 0.5rem;
+			flex-wrap: wrap;
+		}
+
+		.overlay[open]::backdrop,
+		dialog::backdrop {
+			background: rgba(15, 23, 42, 0.65);
+		}
+
+		.robots-body {
+			font-family: "Cascadia Code", Consolas, monospace;
+			background: rgba(15, 23, 42, 0.6);
+			padding: 1rem;
+			border-radius: 0.5rem;
+			white-space: pre-line;
+		}
+
+		.acknowledge-btn {
+			margin-top: 0.75rem;
+			align-self: flex-start;
+		}
+
+		@media (max-width: 720px) {
+			.button-row {
+				flex-direction: column;
+			}
+
+			.site-header, .card {
+				padding: 1.1rem;
+			}
+		}
+	</style>
+  <script src="../../cq-bridge.js"></script>
+</head>
+<body>
+	<div class="page-shell">
+		<header class="site-header" role="banner">
+			<div class="host-header">
+				<span class="host-badge" aria-label="Fictional host name">demo.charisse.io</span>
+				<button class="link-button" id="robotsLink" type="button" aria-haspopup="dialog">View robots.txt</button>
+			</div>
+			<p class="host-description">This is a fictional, read-only demo of a public crawler.</p>
+		</header>
+
+		<section class="card" aria-labelledby="crawlFormLabel">
+			<form class="search-form" id="crawlForm">
+				<div class="field-row">
+					<label id="crawlFormLabel" for="seedInput">Search seed (name or keyword)</label>
+					<input id="seedInput" name="seed" type="text" value="Charisse Morgangood" aria-describedby="seedHelp" required pattern="[A-Za-z\s-]+" />
+					<small id="seedHelp" style="color: var(--muted);">Letters, spaces, and hyphens only. No data leaves this page.</small>
+				</div>
+				<div class="button-row">
+					<button id="searchButton" class="btn btn-primary" type="submit" aria-live="off">Search</button>
+					<button id="whyButton" class="btn btn-secondary" type="button">Why run this?</button>
+				</div>
+			</form>
+		</section>
+
+		<section class="status-banner" aria-live="polite">
+			<div class="status-initial" id="statusEmpty">
+				<p class="status-banner__hint">Enter a name and press Search to run a simulated public crawl.</p>
+			</div>
+			<div class="status-progress" id="statusRunning" hidden>
+				<p class="status-banner__heading" id="progressHeading">Simulated crawl in progress…</p>
+				<div class="progress-bar" aria-hidden="true">
+					<div class="progress-bar-fill" id="progressFill"></div>
+				</div>
+				<p class="status-banner__hint" id="progressDetail">Initializing demo engine…</p>
+			</div>
+			<div class="status-result" id="statusResult" hidden>
+				<p class="status-banner__heading" id="resultDescriptor">Results ready</p>
+				<div class="result-count" id="resultCount" aria-live="assertive">0</div>
+				<button class="btn btn-secondary acknowledge-btn" id="acknowledgeBtn" type="button">Continue</button>
+			</div>
+		</section>
+
+		<div class="pane-header" role="tablist">
+			<button class="tab-btn" role="tab" aria-selected="true" id="tabResults" aria-controls="resultsPane">Sample Results</button>
+			<button class="tab-btn" role="tab" aria-selected="false" id="tabLog" aria-controls="logPane">Raw Log</button>
+		</div>
+		<section class="dual-pane">
+			<div class="pane" id="resultsPane" role="tabpanel" aria-labelledby="tabResults">
+				<div class="pane-content">
+					<table aria-label="Sample results table">
+						<thead>
+							<tr>
+								<th scope="col">URL</th>
+								<th scope="col">Title</th>
+								<th scope="col">Date</th>
+								<th scope="col">Host</th>
+							</tr>
+						</thead>
+						<tbody id="resultsTableBody"></tbody>
+					</table>
+					<button class="btn btn-secondary show-more" id="showMoreBtn" type="button">Show more (demo)</button>
+				</div>
+			</div>
+			<div class="pane" id="logPane" role="tabpanel" aria-labelledby="tabLog" hidden>
+				<div class="pane-content">
+					<ul class="raw-log" id="rawLog" aria-live="polite" aria-label="Raw crawl log"></ul>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<p class="educational-hint" id="educationalHint" hidden>Note: crawlers list publicly reachable resources only. Use access controls, content removal, and indexing directives together to reduce exposure.</p>
+			<p class="contact-note">Demo only: all data fictional.</p>
+		</footer>
+	</div>
+
+	<dialog id="whyModal" aria-labelledby="whyTitle">
+		<div class="modal-inner">
+			<h2 id="whyTitle">Why run this?</h2>
+			<p>Running the demo crawl shows how a public indexer might enumerate filenames that are already accessible. The experience highlights why robots.txt is advisory and how transparency can guide content owners.</p>
+			<p style="margin: 0; color: var(--muted);">Ready to see the simulated crawl? Run the demo and inspect the sample results.</p>
+			<div class="modal-actions">
+				<button class="btn btn-primary" id="modalRunBtn" type="button">Run the demo crawl</button>
+				<button class="btn btn-secondary" data-close-modal type="button">Close</button>
+			</div>
+		</div>
+	</dialog>
+
+	<dialog id="robotsModal" class="overlay" aria-labelledby="robotsTitle">
+		<div class="modal-inner">
+			<h2 id="robotsTitle">demo.charisse.io robots.txt</h2>
+			<div class="robots-body" role="document">
+				# Fictional demo robots.txt
+				User-agent: *
+				Disallow: /private/
+				Disallow: /admin/
+				# Note: robots.txt is advisory. It helps well-behaved crawlers avoid certain paths.
+                
+				This robots.txt is fictional and for demonstration only. robots.txt is advisory and does not enforce access control.
+			</div>
+			<div class="modal-actions">
+				<button class="btn btn-secondary" data-close-modal type="button">Close</button>
+			</div>
+		</div>
+	</dialog>
+
+	<script>
+		(function () {
+			const canonicalSeed = "Charisse Morgangood";
+			const host = "demo.charisse.io";
+			const enableTelemetry = false; // Flip to true to log telemetry events in the console.
+
+			const canonicalRows = [
+				{ url: "/public/resume.pdf", title: "Resume", date: "2021-07-03", host },
+				{ url: "/images/profile-photo.jpg", title: "Profile photo", date: "2020-11-12", host },
+				{ url: "/blog/2021/privacy-observations.html", title: "Blog post", date: "2021-02-18", host },
+				{ url: "/speaking/2020-cyber-summit/slides.pdf", title: "Slides", date: "2020-10-05", host },
+				{ url: "/data/export/user-publication-list.csv", title: "CSV export", date: "2019-06-21", host },
+				{ url: "/media/press-kit/profile.zip", title: "Press kit", date: "2022-09-14", host },
+				{ url: "/blog/2020/context-aware-security.html", title: "Blog post", date: "2020-03-08", host },
+				{ url: "/talks/2019/privacy-basics/outline.txt", title: "Talk outline", date: "2019-11-02", host },
+				{ url: "/notes/2022/community-reading-list.pdf", title: "Reading list", date: "2022-06-27", host },
+				{ url: "/podcasts/guest-appearance.mp3", title: "Podcast audio", date: "2023-01-17", host },
+				{ url: "/projects/charisse-rag-demo/index.html", title: "Project page", date: "2023-11-04", host },
+				{ url: "/timeline/2018-highlights.json", title: "Highlights", date: "2018-12-30", host },
+				{ url: "/docs/public-report-2022.pdf", title: "Public report", date: "2022-04-09", host },
+				{ url: "/photos/event-gallery-2021.tar", title: "Event gallery", date: "2021-08-20", host },
+				{ url: "/datasets/open-context-set.csv", title: "Dataset", date: "2019-01-15", host }
+			];
+
+			const genericRows = [
+				{ url: "/gallery/profile-card.png", title: "Profile card", date: "2023-05-05", host: "demo.charisse.io" },
+				{ url: "/files/public-summary.pdf", title: "Public summary", date: "2022-10-19", host: "demo.charisse.io" },
+				{ url: "/posts/2020/insight.html", title: "Post", date: "2020-07-01", host: "demo.charisse.io" },
+				{ url: "/assets/media-kit.zip", title: "Media kit", date: "2019-04-11", host: "demo.charisse.io" },
+				{ url: "/press/2021/talking-points.docx", title: "Talking points", date: "2021-03-29", host: "demo.charisse.io" },
+				{ url: "/reports/insights-2022.pdf", title: "Insights", date: "2022-02-18", host: "demo.charisse.io" },
+				{ url: "/stories/field-notes.md", title: "Field notes", date: "2020-11-09", host: "demo.charisse.io" },
+				{ url: "/downloads/sample-release-form.pdf", title: "Release form", date: "2019-06-23", host: "demo.charisse.io" },
+				{ url: "/briefings/charisse-demo-slide.pdf", title: "Briefing deck", date: "2021-05-18", host: "demo.charisse.io" },
+				{ url: "/audio/interview-snippet.wav", title: "Interview snippet", date: "2018-12-02", host: "demo.charisse.io" },
+				{ url: "/media/event-overview-one-sheet.pdf", title: "Overview", date: "2023-02-01", host: "demo.charisse.io" },
+				{ url: "/context/speakers-list.csv", title: "Speakers list", date: "2019-10-14", host: "demo.charisse.io" },
+				{ url: "/clips/press-release-clip.txt", title: "Press release", date: "2020-02-24", host: "demo.charisse.io" },
+				{ url: "/kb/public-guide.html", title: "Guide", date: "2021-08-07", host: "demo.charisse.io" },
+				{ url: "/data/reference-export.csv", title: "Reference export", date: "2018-04-19", host: "demo.charisse.io" }
+			];
+
+			const logTemplates = {
+				canonical: [
+					() => `Starting simulated crawl for seed: ${canonicalSeed}`,
+					() => "Referencing advisory robots.txt at demo.charisse.io/robots.txt",
+					() => "Crawling: demo.charisse.io …",
+					() => "Discovered: /public/resume.pdf",
+					() => "Discovered: /images/profile-photo.jpg",
+					() => "Discovered: /blog/2021/privacy-observations.html",
+					() => "Discovered: /speaking/2020-cyber-summit/slides.pdf",
+					() => "Discovered: /data/export/user-publication-list.csv",
+					() => "Crawl complete: scanned 75 public entries"
+				],
+				generic: (
+					seed => [
+						() => `Starting simulated crawl for seed: ${seed}`,
+						() => "Checking advisory robots.txt directives…",
+						() => "Crawling: demo.charisse.io …",
+						() => "Discovered: /gallery/profile-card.png",
+						() => "Discovered: /files/public-summary.pdf",
+						() => "Discovered: /posts/2020/insight.html",
+						() => "Crawl complete: scanned 12 public entries"
+					]
+				)
+			};
+
+			const form = document.getElementById("crawlForm");
+			const seedInput = document.getElementById("seedInput");
+			const searchButton = document.getElementById("searchButton");
+			const whyButton = document.getElementById("whyButton");
+			const showMoreBtn = document.getElementById("showMoreBtn");
+			const resultsTableBody = document.getElementById("resultsTableBody");
+			const educationalHint = document.getElementById("educationalHint");
+			const statusEmpty = document.getElementById("statusEmpty");
+			const statusRunning = document.getElementById("statusRunning");
+			const statusResult = document.getElementById("statusResult");
+			const progressFill = document.getElementById("progressFill");
+			const progressDetail = document.getElementById("progressDetail");
+			const resultCount = document.getElementById("resultCount");
+			const resultDescriptor = document.getElementById("resultDescriptor");
+			const acknowledgeBtn = document.getElementById("acknowledgeBtn");
+			const rawLog = document.getElementById("rawLog");
+			const tabResults = document.getElementById("tabResults");
+			const tabLog = document.getElementById("tabLog");
+			const resultsPane = document.getElementById("resultsPane");
+			const logPane = document.getElementById("logPane");
+			const whyModal = document.getElementById("whyModal");
+			const robotsModal = document.getElementById("robotsModal");
+			const modalRunBtn = document.getElementById("modalRunBtn");
+			const robotsLink = document.getElementById("robotsLink");
+
+			let currentRows = canonicalRows;
+			let resultCountValue = 0;
+			let showAllRows = false;
+			let crawlTimer = null;
+			let logIndex = 0;
+
+			renderTable(canonicalRows, 5);
+			resetLog();
+
+			form.addEventListener("submit", (event) => {
+				event.preventDefault();
+				const seedValue = seedInput.value.trim();
+				if (!seedValue) {
+					seedInput.focus();
+					return;
+				}
+
+				if (!/^[A-Za-z\s-]+$/.test(seedValue)) {
+					progressDetail.textContent = "Only letters, spaces, and hyphens are supported in this demo.";
+					progressDetail.style.color = "#f87171";
+					return;
+				}
+
+				startCrawl(seedValue);
+			});
+
+			whyButton.addEventListener("click", () => whyModal.showModal());
+			modalRunBtn.addEventListener("click", () => {
+				whyModal.close();
+				form.requestSubmit();
+			});
+
+			robotsLink.addEventListener("click", () => {
+				robotsModal.showModal();
+				recordTelemetry("robotsOpened", {});
+			});
+
+			document.querySelectorAll("[data-close-modal]").forEach(btn => {
+				btn.addEventListener("click", (e) => {
+					const dialog = e.target.closest("dialog");
+					dialog?.close();
+				});
+			});
+
+			showMoreBtn.addEventListener("click", () => {
+				showAllRows = !showAllRows;
+				const visibleCount = showAllRows ? currentRows.length : 5;
+				renderTable(currentRows, visibleCount);
+				showMoreBtn.textContent = showAllRows ? "Show fewer" : "Show more (demo)";
+			});
+
+			acknowledgeBtn.addEventListener("click", () => {
+				acknowledgeBtn.textContent = "Acknowledged";
+				acknowledgeBtn.disabled = true;
+				recordTelemetry("resultAcknowledged", { value: resultCountValue });
+			});
+
+			tabResults.addEventListener("click", () => switchTab("results"));
+			tabLog.addEventListener("click", () => {
+				switchTab("log");
+				recordTelemetry("rawLogOpened", {});
+			});
+
+			function switchTab(target) {
+				const isResults = target === "results";
+				tabResults.setAttribute("aria-selected", isResults);
+				tabLog.setAttribute("aria-selected", !isResults);
+				resultsPane.hidden = !isResults;
+				logPane.hidden = isResults;
+			}
+
+			function startCrawl(seed) {
+				clearExistingTimer();
+				showAllRows = false;
+				acknowledgeBtn.textContent = "Continue";
+				acknowledgeBtn.disabled = false;
+				searchButton.disabled = true;
+				seedInput.disabled = true;
+				statusEmpty.hidden = true;
+				statusRunning.hidden = false;
+				statusResult.hidden = true;
+				educationalHint.hidden = true;
+				progressFill.style.width = "0%";
+				progressDetail.style.color = "var(--muted)";
+				progressDetail.textContent = "Initializing demo engine…";
+				resetLog();
+
+				const isCanonical = seed === canonicalSeed;
+				const targetDuration = 6000 + Math.random() * 2000;
+				const logSchedule = getLogSchedule(seed, isCanonical);
+				logIndex = 0;
+
+				const dataset = isCanonical ? canonicalRows : genericRows;
+				currentRows = dataset;
+				resultCountValue = isCanonical ? 75 : 12;
+				renderTable(dataset, 5);
+				showMoreBtn.textContent = "Show more (demo)";
+
+				const startTime = performance.now();
+				crawlTimer = setInterval(() => {
+					const elapsed = performance.now() - startTime;
+					const progress = Math.min(elapsed / targetDuration, 1);
+					updateProgress(progress, logSchedule);
+					if (progress >= 1) {
+						clearExistingTimer();
+						finishCrawl(seed);
+					}
+				}, 120);
+
+				recordTelemetry("crawlStarted", { seed });
+			}
+
+			function updateProgress(progress, logSchedule) {
+				progressFill.style.width = `${(progress * 100).toFixed(1)}%`;
+				progressDetail.textContent = "Simulated crawl in progress…";
+				while (logIndex < logSchedule.length && progress >= logSchedule[logIndex].threshold) {
+					appendLog(logSchedule[logIndex].text);
+					logIndex += 1;
+				}
+			}
+
+			function finishCrawl(seed) {
+				statusRunning.hidden = true;
+				statusResult.hidden = false;
+				resultCount.textContent = `${resultCountValue} results found`;
+				resultDescriptor.textContent = seed === canonicalSeed ? "Canonical demo results" : "Demo results";
+				educationalHint.hidden = false;
+				searchButton.disabled = false;
+				seedInput.disabled = false;
+				seedInput.focus();
+				appendLog(`Result banner ready: ${resultCountValue} results found`);
+				recordTelemetry("crawlCompleted", { seed, count: resultCountValue });
+			}
+
+			function renderTable(rows, visibleCount) {
+				const fragment = document.createDocumentFragment();
+				rows.slice(0, visibleCount).forEach(row => {
+					const tr = document.createElement("tr");
+					tr.innerHTML = `
+						<td>${row.url}</td>
+						<td>${row.title}</td>
+						<td>${row.date}</td>
+						<td>${row.host}</td>
+					`;
+					fragment.appendChild(tr);
+				});
+				resultsTableBody.innerHTML = "";
+				resultsTableBody.appendChild(fragment);
+			}
+
+			function getLogSchedule(seed, isCanonical) {
+				const templates = isCanonical ? logTemplates.canonical : logTemplates.generic(seed);
+				return templates.map((fn, idx) => ({
+					threshold: (idx + 1) / templates.length,
+					text: fn()
+				}));
+			}
+
+			function appendLog(text) {
+				const li = document.createElement("li");
+				li.textContent = text;
+				rawLog.appendChild(li);
+				rawLog.scrollTop = rawLog.scrollHeight;
+			}
+
+			function resetLog() {
+				rawLog.innerHTML = "";
+				appendLog("Raw log ready. Run the demo to stream crawl messages.");
+			}
+
+			function clearExistingTimer() {
+				if (crawlTimer) {
+					clearInterval(crawlTimer);
+					crawlTimer = null;
+				}
+			}
+
+			function recordTelemetry(event, payload) {
+				if (!enableTelemetry) {
+					return;
+				}
+				const entry = {
+					event,
+					timestamp: new Date().toISOString(),
+					...payload
+				};
+				console.info("[demo telemetry]", entry);
+			}
+		})();
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u03_q12_t01_warranty_script",
+  "parentTaskID": "ismg6860_u03_q12_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Warranty desk call script",
+      "shortSummary": "A fake warranty call pressures Riley to confirm device and account details.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Riley flagged this caller and preserved the script. Review the claimed consequence and requested information.\n\nCall script excerpt:\nYour phone warranty will be void before the expo shift unless you confirm the account holder and recovery details. Harborview cannot restore badge access if the warranty record is locked.\n\nAsha",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Warranty desk call script",
+      "shortSummary": "A fake warranty call pressures Riley to confirm device and account details.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Review how the caller combines a threatened loss, a deadline, and a demand for information.\n\nCall script excerpt:\nYour phone warranty will be void before the expo shift unless you confirm the account holder and recovery details. Harborview cannot restore badge access if the warranty record is locked.\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Warranty desk call script",
+      "shortSummary": "A fake warranty call pressures Riley to confirm device and account details.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Riley received this shortly before a shift. Preserve the caller's exact words so the warning can explain the pressure without blaming the target.\n\nCall script excerpt:\nYour phone warranty will be void before the expo shift unless you confirm the account holder and recovery details. Harborview cannot restore badge access if the warranty record is locked.\n\nImani",
+      "attachements": []
+    }
+  ]
+}

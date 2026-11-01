@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "exports/ops_archive_view.jpg",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Taylor:</b> The first image confirms a public exposure, but we still need to understand its scope. Check whether Cyber Search has indexed another NexaCore image without guessing unlinked directory paths.",
+      "taskInstructions": "Return to <b>Cyber Search</b> and search for <b>NexaCore filetype:jpg</b>. Open the result for the additional NexaCore export.",
+      "taskQuestion": "Open the NexaCore page hosting the additional export image.",
+      "taskCompleteText": "<b>Taylor:</b> The second image shows payment references, amounts, project codes, and notes about routing and approval anomalies. Those entries require investigation, but the screenshot alone does not establish misconduct or identify who published it."
+    }
+  ],
+  "taskID": "ismg6860_u01_q03_t02",
+  "parentQuestID": "ismg6860_u01_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

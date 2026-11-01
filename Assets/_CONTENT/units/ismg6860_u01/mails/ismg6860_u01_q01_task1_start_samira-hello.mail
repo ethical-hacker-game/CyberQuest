@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u01_q01_task1_start_samira-hello",
+  "parentTaskID": "ismg6860_u01_q01_task1",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Samira Linton <samira.linton@cyberworld.edu>",
+      "subject": "Cyber Kill Chain Overview",
+      "shortSummary": "A concise guide to the seven stages of the Cyber Kill Chain.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Hi {player},\r\n\r\nThe Cyber Kill Chain divides an intrusion into seven stages:\r\n\r\n1. <b>Reconnaissance</b>: Gather information about a target.\r\n2. <b>Weaponization</b>: Prepare a malicious payload.\r\n3. <b>Delivery</b>: Send the payload to the target.\r\n4. <b>Exploitation</b>: Trigger a vulnerability to gain access.\r\n5. <b>Installation</b>: Establish a foothold on a system.\r\n6. <b>Command and Control</b>: Create a channel for remote control.\r\n7. <b>Actions on Objectives</b>: Pursue the attacker’s goal, such as theft or disruption.\r\n\r\nDefenders use this model to recognize activity and interrupt an attack as early as possible.\r\n\r\nSamira",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "variants": [
+    {
+      "minigameType": "CamBlindRoute",
+      "minigameHeaderText": "Restricted Wing Blind Route",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "cameraDeckSettings": {
+        "facilityId": "restricted_research_lab",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Restricted Wing",
+        "targetLabel": "VISITOR DESTINATION",
+        "decoyLabel": "SAFE HOLD POINT",
+        "route": {
+          "sweepSpeedMultiplier": 1.0,
+          "playerSpeedMultiplier": 1.0
+        }
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The call summary does not confirm entry. Use this authorized route replay to test what an unverified visitor could reach if staff followed the request.",
+      "taskInstructions": "Left-click to move and right-click or press <b>Space</b> to stop. Use the <b>SAFE HOLD POINT</b> between camera sweeps and reach the <b>VISITOR DESTINATION</b>; detection resets the route.",
+      "taskQuestion": "Reach the visitor destination without being seen.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The replay identifies where staff should stop, verify, and escalate an unbadged visitor."
+    },
+    {
+      "minigameType": "CamBlindRoute",
+      "minigameHeaderText": "Restricted Wing Blind Route",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "cameraDeckSettings": {
+        "facilityId": "restricted_research_lab",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Restricted Wing",
+        "targetLabel": "VISITOR DESTINATION",
+        "decoyLabel": "SAFE HOLD POINT",
+        "route": {
+          "sweepSpeedMultiplier": 1.0,
+          "playerSpeedMultiplier": 1.0
+        }
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Access is unconfirmed. Replay the restricted-wing route to measure the potential value of the exception the caller requested.",
+      "taskInstructions": "Left-click to move and right-click or press <b>Space</b> to stop. Use the <b>SAFE HOLD POINT</b> between camera sweeps and reach the <b>VISITOR DESTINATION</b>; detection resets the route.",
+      "taskQuestion": "Reach the visitor destination without being seen.",
+      "taskCompleteText": "<b>Felix Rane:</b> The replay maps the route at risk without treating the requested exception as a completed breach."
+    },
+    {
+      "minigameType": "CamBlindRoute",
+      "minigameHeaderText": "Restricted Wing Blind Route",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "cameraDeckSettings": {
+        "facilityId": "restricted_research_lab",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Restricted Wing",
+        "targetLabel": "VISITOR DESTINATION",
+        "decoyLabel": "SAFE HOLD POINT",
+        "route": {
+          "sweepSpeedMultiplier": 1.0,
+          "playerSpeedMultiplier": 1.0
+        }
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Keep the staff member anonymous and replay the route as a process test. Identify where a clear escalation rule could stop an unverified visitor safely.",
+      "taskInstructions": "Left-click to move and right-click or press <b>Space</b> to stop. Use the <b>SAFE HOLD POINT</b> between camera sweeps and reach the <b>VISITOR DESTINATION</b>; detection resets the route.",
+      "taskQuestion": "Reach the visitor destination without being seen.",
+      "taskCompleteText": "<b>Imani Vale:</b> The replay supports a visible verification procedure without exposing or blaming the staff member."
+    }
+  ],
+  "taskID": "ismg6860_u03_q18_t04_camera_route",
+  "parentQuestID": "ismg6860_u03_q18",
+  "articleID": "u03_physical_social_engineering",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

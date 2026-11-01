@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Review the internal report for a management service reachable more broadly than its purpose requires.",
+      "taskInstructions": "Read <link=\"u04_admin_service_segmentation\"><u>admin-service segmentation</u></link>. Run <b>openvas report northbridge-internal</b> and review the Results table.",
+      "taskQuestion": "Which service exposure is unexpected?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. RDP on TCP/3389 should be limited to approved administration paths.",
+      "answers": [
+        "A printer using its own normal internal print queue.",
+        "RDP exposed openly on an administration subnet.",
+        "A website hosting a routine public contact form.",
+        "A disabled, unused legacy test account left in place."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Find the management service whose network reach creates a useful path toward the administration segment.",
+      "taskInstructions": "Read <link=\"u04_admin_service_segmentation\"><u>admin-service segmentation</u></link>. Run <b>openvas report northbridge-internal</b> and review the Results table.",
+      "taskQuestion": "Which service exposure is unexpected?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Broad RDP reach turns one internal foothold into a management path.",
+      "answers": [
+        "A printer using its own normal internal print queue.",
+        "RDP exposed openly on an administration subnet.",
+        "A website hosting a routine public contact form.",
+        "A disabled, unused legacy test account left in place."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Identify the management service whose reach should be limited to approved administrators.",
+      "taskInstructions": "Read <link=\"u04_admin_service_segmentation\"><u>admin-service segmentation</u></link>. Run <b>openvas report northbridge-internal</b> and review the Results table.",
+      "taskQuestion": "Which service exposure is unexpected?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Restricting RDP reduces the chance that one compromised workstation reaches administrative systems.",
+      "answers": [
+        "A printer using its own normal internal print queue.",
+        "RDP exposed openly on an administration subnet.",
+        "A website hosting a routine public contact form.",
+        "A disabled, unused legacy test account left in place."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q14_t01",
+  "parentQuestID": "ismg6860_u04_q14",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

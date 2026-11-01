@@ -1,0 +1,74 @@
+{
+  "unitID": "ismg6860_u05",
+  "placeholder": false,
+  "order": 5,
+  "unitName": "5. Enumeration",
+  "unitDescription": "This unit teaches enumeration as the disciplined step between scanning and analysis. Players query live services at Halloway Precision Manufacturing to extract names, shares, users, directory entries, mail routing, DNS records, RPC endpoints, and tunnel configuration, then turn scattered protocol evidence into one defensible finding about a vendor account nobody ever decommissioned.",
+  "defaultPlayerName": "Alex",
+  "unitEntryMessage": "Welcome back, {player}. Cordata Security Partners has placed you on the Halloway Precision Manufacturing engagement. After a vendor laptop touched the plant network, Halloway needs an accurate inventory of what is actually running before anyone changes a firewall rule. Dana Osei has authorized read-only enumeration across the plant. Query the services, keep the evidence clean, and find out what is really still connected.",
+  "questIds": [
+    "ismg6860_u05_q01",
+    "ismg6860_u05_q02",
+    "ismg6860_u05_q03",
+    "ismg6860_u05_d01",
+    "ismg6860_u05_q04",
+    "ismg6860_u05_q05",
+    "ismg6860_u05_q06",
+    "ismg6860_u05_q07",
+    "ismg6860_u05_d02",
+    "ismg6860_u05_q08",
+    "ismg6860_u05_q09",
+    "ismg6860_u05_q10",
+    "ismg6860_u05_q11",
+    "ismg6860_u05_q12",
+    "ismg6860_u05_q13",
+    "ismg6860_u05_q14",
+    "ismg6860_u05_d03",
+    "ismg6860_u05_q15",
+    "ismg6860_u05_q16",
+    "ismg6860_u05_last_quest"
+  ],
+  "questsAreaSize": {
+    "x": 8000.0,
+    "y": 900.0
+  },
+  "questTreeOffset": 100.0,
+  "appIDs": [
+    "mibbrowser",
+    "netscantoolspro",
+    "zenmap",
+    "wireshark"
+  ],
+  "personas": [
+    {
+      "personaID": "whitehat",
+      "personaName": "Whitehat Hacker",
+      "personaDescription": "A whitehat hacker enumerates only what the authorization covers, records evidence that survives review, and turns protocol findings into remediation the client can act on.",
+      "messagePlayerJoinedHeader": "Whitehat Path Chosen",
+      "messagePlayerJoined": "You are keeping the enumeration disciplined: query what the scope allows, change nothing, and give Halloway findings they can actually fix.",
+      "messagePlayerUnloyalHeader": "Whitehat Discipline Challenged",
+      "messagePlayerUnloyal": "That choice moved away from authorized enumeration practice. Regain trust by staying read-only, documenting cleanly, and pointing at remediation.",
+      "personaPictureID": "persona_white"
+    },
+    {
+      "personaID": "blackhat",
+      "personaName": "Blackhat Hacker",
+      "personaDescription": "A blackhat hacker reads enumeration output as an access map, values the account nobody is watching, and treats a client's blind spot as inventory.",
+      "messagePlayerJoinedHeader": "Blackhat Path Chosen",
+      "messagePlayerJoined": "You are reading the enumeration like an attacker: every share, every stale account, every open tunnel is something Halloway does not know it still owns.",
+      "messagePlayerUnloyalHeader": "Blackhat Instincts Checked",
+      "messagePlayerUnloyal": "That choice closed the gap instead of keeping it open. The blackhat path values quiet access over the client's peace of mind.",
+      "personaPictureID": "persona_black"
+    },
+    {
+      "personaID": "hacktivist",
+      "personaName": "Hacktivist",
+      "personaDescription": "A hacktivist measures enumeration findings by who gets hurt if they stay hidden, and pushes for disclosure when an institution would rather quietly patch and move on.",
+      "messagePlayerJoinedHeader": "Hacktivist Path Chosen",
+      "messagePlayerJoined": "You are framing the enumeration around consequence: the people on that plant floor share a network with systems nobody has managed in years.",
+      "messagePlayerUnloyalHeader": "Hacktivist Purpose Challenged",
+      "messagePlayerUnloyal": "That choice served the engagement more than the people inside it. Keep who is exposed at the center if you want the hacktivist path.",
+      "personaPictureID": "persona_hacktivist"
+    }
+  ]
+}

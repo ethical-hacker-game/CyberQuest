@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the DNS answer returned to affected mobile clients before interpreting why it differs from the approved baseline.",
+      "taskInstructions": "Reopen <b>Mail</b>, read the resolver evidence, and type the IPv4 address listed for <b>Affected mobile clients</b>.",
+      "taskQuestion": "What DNS answer did the affected mobile clients receive?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: 198.51.100.73. It differs from the baseline and both independent resolver answers.",
+      "correctAnswers": ["198.51.100.73"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the answer observed on affected clients. The comparison, not a label such as fake, establishes the discrepancy.",
+      "taskInstructions": "Reopen <b>Mail</b>, read the resolver evidence, and type the IPv4 address listed for <b>Affected mobile clients</b>.",
+      "taskQuestion": "What DNS answer did the affected mobile clients receive?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: 198.51.100.73. The independent sources return a different address.",
+      "correctAnswers": ["198.51.100.73"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Record the affected clients' observed DNS answer so the warning can cite the discrepancy rather than repeat a vague claim.",
+      "taskInstructions": "Reopen <b>Mail</b>, read the resolver evidence, and type the IPv4 address listed for <b>Affected mobile clients</b>.",
+      "taskQuestion": "What DNS answer did the affected mobile clients receive?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: 198.51.100.73. The warning can compare it with the verified baseline.",
+      "correctAnswers": ["198.51.100.73"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q21_t02",
+  "parentQuestID": "ismg6860_u03_q21",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

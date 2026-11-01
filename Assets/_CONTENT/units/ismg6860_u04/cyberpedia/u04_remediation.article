@@ -1,0 +1,12 @@
+{
+  "articleID": "u04_remediation",
+  "videoURL": null,
+  "title": "Remediation Prioritization",
+  "content": "<b>Remediation turns verified findings into changes that reduce risk and can be tested afterward.</b>\n\nA useful recommendation identifies the affected condition, the required change, the responsible owner, and the evidence that will show the change worked. Advice such as improve security or apply best practices is too vague to schedule or verify. Prefer specific outcomes: remove an unnecessary public route, restrict a service to an approved segment, correct a permission, update a supported component, rotate exposed credentials, or add monitoring for a defined event.\n\nPrioritize by expected risk reduction, not by the order in which findings were discovered. Consider:\n\n- verified exposure and realistic exploitability;\n- impact on critical services, sensitive data, and users;\n- whether the finding enables other steps in an attack path;\n- the number of affected assets and the time an exposure has existed;\n- available compensating controls;\n- implementation effort, dependencies, and operational risk.\n\nUrgent work often has two layers. <b>Containment</b> reduces immediate exposure, for example by disabling a route or restricting access. <b>Permanent correction</b> removes the root cause through configuration, patching, code changes, architecture, or policy. Containment is not closure unless the organization explicitly accepts the remaining risk.\n\nEach remediation item should have an owner, target date, measurable acceptance criteria, and a safe rollback plan where appropriate. Coordinate changes that may disrupt production, and preserve evidence needed for incident review. After implementation, retest the original observation using the same safe evidence standard. Also check that the fix did not move the exposure elsewhere or break a required service.\n\nClose a finding only when the corrective outcome is verified or the remaining risk is formally accepted. This makes remediation a measurable risk-reduction cycle rather than a list of good intentions.",
+  "links": [
+    "remediation category",
+    "remediation should happen first",
+    "remediation recommendation",
+    "emergency remediation priority"
+  ]
+}

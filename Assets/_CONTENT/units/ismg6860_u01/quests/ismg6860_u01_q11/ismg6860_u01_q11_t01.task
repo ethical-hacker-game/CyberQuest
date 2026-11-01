@@ -1,0 +1,27 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Preserve and report the message through SecOps, then warn staff through an approved channel.",
+        "Ask employees to forward the message to one another so everyone can compare it.",
+        "Open the message link in a normal browser to see where it leads.",
+        "Dismiss the message as ordinary spam and move on."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Jamal Rivers:</b> Susie forwarded a UWork notification that came from <b>uw0rk.com</b>, using a zero where the legitimate name would use the letter o. Several employees report similar messages. We need to protect staff without destroying the evidence or interacting with the suspicious link.",
+      "taskInstructions": "Review the forwarded message, then choose the safest initial response.",
+      "taskQuestion": "What should NorthTec do first?",
+      "taskCompleteText": "<b>Jamal Rivers:</b> Correct. SecOps will preserve the original reports, track related copies, and issue a verified advisory telling staff not to open the link."
+    }
+  ],
+  "taskID": "ismg6860_u01_q11_t01",
+  "parentQuestID": "ismg6860_u01_q11",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [
+    "ismg6860_u01_q11_t01_start_forwarded_suspicious"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

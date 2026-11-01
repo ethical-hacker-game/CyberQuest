@@ -1,0 +1,26 @@
+{
+  "correctAnswers": [],
+  "variants": [
+    {
+      "correctAnswers": [
+        "user account",
+        "username",
+        "user name",
+        "account names",
+        "employee accounts"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> NorthTec authorized a public-source review. Start by checking whether a search index exposes internal account information; do not attempt to sign in or interact with NorthTec’s systems.",
+      "taskInstructions": "Open the browser, use <b>Cyber Search</b> to search for <b>allinanchor: NorthTec Username Passwords</b>, and open the NorthTec internal reference list. Type the kind of information exposed there.",
+      "taskQuestion": "What kind of internal information is exposed?",
+      "taskCompleteText": "<b>Samira:</b> The page exposes NorthTec usernames and account roles. That information can support targeting, but it does not by itself prove that passwords are exposed."
+    }
+  ],
+  "taskID": "ismg6860_u01_q02_t01",
+  "parentQuestID": "ismg6860_u01_q02",
+  "articleID": "u01_search_engine_reconnaissance",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The registry is reachable at 10.30.14.52, but its returned stub advertises a loopback endpoint that requires separate validation.",
+        "The registry is rejecting the connection and returning a placeholder address instead.",
+        "The service has been moved to another host and the registry entry is simply stale.",
+        "The mismatch is normal RMI behaviour and carries no security relevance at all."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Before that name goes into a finding, I want a second implementation to agree with the first one. A registry does not only give up what it publishes; it also says where it believes that service lives. There is something in the address it handed you that I would rather have confirmed than argued about later.",
+      "taskInstructions": "Run <b>barmie 10.30.14.52</b> in the terminal; its object listing prints the endpoint the registry hands out.",
+      "taskQuestion": "What can you conclude from the registry address and the endpoint advertised in its returned stub?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The registry answered at 10.30.14.52, while the stub advertises 127.0.1.1:41855. That mismatch is a configuration clue, not proof of remote object access."
+    },
+    {
+      "answers": [
+        "The registry is reachable at 10.30.14.52, but its returned stub advertises a loopback endpoint that requires separate validation.",
+        "The registry is rejecting the connection and returning a placeholder address instead.",
+        "The service has been moved to another host and the registry entry is simply stale.",
+        "The mismatch is normal RMI behaviour and carries no security relevance at all."
+      ],
+      "correctAnswer": 0,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> A registry never hands you just a name. It also tells you where it thinks the service is reachable, and what it advertises is not always what answered you. That gap is the part worth reading twice.",
+      "taskInstructions": "Run <b>barmie 10.30.14.52</b> in the terminal; its object listing prints the endpoint the registry hands out.",
+      "taskQuestion": "What can you conclude from the registry address and the endpoint advertised in its returned stub?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The registry and advertised object endpoint are different observations. Do not turn that mismatch into unverified access."
+    },
+    {
+      "answers": [
+        "The registry is reachable at 10.30.14.52, but its returned stub advertises a loopback endpoint that requires separate validation.",
+        "The registry is rejecting the connection and returning a placeholder address instead.",
+        "The service has been moved to another host and the registry entry is simply stale.",
+        "The mismatch is normal RMI behaviour and carries no security relevance at all."
+      ],
+      "correctAnswer": 0,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> I want the address it publishes as well, not only the name. Whatever that registry is willing to tell a stranger belongs in the record, because it says something about how this box was configured and how long ago somebody stopped caring.",
+      "taskInstructions": "Run <b>barmie 10.30.14.52</b> in the terminal; its object listing prints the endpoint the registry hands out.",
+      "taskQuestion": "What can you conclude from the registry address and the endpoint advertised in its returned stub?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. We can report the reachable registry and loopback endpoint exactly; object invocation remains untested."
+    }
+  ],
+  "taskID": "ismg6860_u05_q10_t02",
+  "parentQuestID": "ismg6860_u05_q10",
+  "articleID": "u05_rpc_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,12 @@
+{
+  "articleID": "u03_human_triggers",
+  "videoURL": null,
+  "title": "Human Vulnerability Triggers",
+  "content": "Human vulnerability triggers are emotions and social needs that can narrow attention and make a risky action feel reasonable. They are not personal defects. Attackers design messages for busy, tired, helpful people and create situations in which pausing feels costly. Recognizing the pressure makes it easier to separate the feeling from the decision.\n\n<b>Four common triggers</b>\n\n<b>Curiosity</b> promises missing information: an unexpected photo, private document, surprising result, or unexplained alert. The safest response is to verify why the content exists before opening it.\n\n<b>Fear</b> threatens a loss such as a locked account, expired benefit, damaged device, or disciplinary problem. Fear can make the attacker's proposed solution feel like the only option. Confirm the problem through an independent source.\n\n<b>Urgency</b> uses countdowns, deadlines, repeated reminders, or claims that immediate action is required. A false clock prevents normal verification. Stop, identify the claimed deadline, and ask whether the established process would really demand action this way.\n\n<b>Belonging and reward</b> offer access to a group, relationship, event, prize, or shared opportunity. They may also imply that refusing will disappoint a team or authority figure. Check the request without relying on the social promise attached to it.\n\nSeveral triggers often appear together. A fake prize can combine curiosity, reward, scarcity, and urgency; an impersonated manager can combine authority, fear, and belonging. The presence of emotion does not prove a message is malicious, but strong pressure plus a request to bypass verification is a serious warning sign.\n\n<b>Design defenses, not blame</b>\n\nEffective warnings lower panic and provide one clear next step. Organizations should make verification and reporting quick, reward early reports, and never shame someone for being targeted. Simulation data should be used to improve processes and education, not to rank or punish individuals. A short pause, an independent check, and a safe reporting path remove much of an attacker's advantage.",
+  "links": [
+    "curiosity",
+    "fear",
+    "urgency",
+    "need to belong"
+  ]
+}

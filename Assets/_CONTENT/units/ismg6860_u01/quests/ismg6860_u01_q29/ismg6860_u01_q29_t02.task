@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "To confirm successful logins on the target systems.",
+        "To show that files were transferred to the probe source.",
+        "To identify addresses that answered reachability probes.",
+        "To establish that a denial-of-service disrupted the lab."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Aisha:</b> Compare the request-and-reply pairs in this ARGUS-LABNET edge-capture excerpt (14:03 UTC):<br><b>14:03:01</b> 198.51.100.42 → 10.40.8.11 ICMP Echo Request; 10.40.8.11 → 198.51.100.42 ICMP Echo Reply<br><b>14:03:02</b> 198.51.100.42 → 10.40.8.12 ICMP Echo Request; 10.40.8.12 → 198.51.100.42 ICMP Echo Reply<br><b>14:03:03</b> 198.51.100.42 → 10.40.8.13 ICMP Echo Request; 10.40.8.13 → 198.51.100.42 ICMP Echo Reply",
+      "taskInstructions": "Apply the <b>ping scan</b> guidance to the recorded request-and-reply pattern.",
+      "taskQuestion": "What does this capture most directly establish?",
+      "taskCompleteText": "<b>Aisha:</b> The listed hosts answered ICMP reachability probes at that time. A missing reply elsewhere would not by itself prove a host was offline."
+    }
+  ],
+  "taskID": "ismg6860_u01_q29_t02",
+  "parentQuestID": "ismg6860_u01_q29",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

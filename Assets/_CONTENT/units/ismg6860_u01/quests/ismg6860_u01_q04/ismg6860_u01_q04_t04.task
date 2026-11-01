@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Reset every employee password without evidence that company accounts were compromised.",
+        "Delete every personal profile connected to the CEO and prohibit future social media use.",
+        "Review public exposure, tighten contact privacy, and clearly verify official company accounts.",
+        "Ask every publication to remove all references to the CEO and his professional contacts."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>George Wilkerson:</b> The report and Eli’s profile show how easily someone can verify a real association. I want to reduce that exposure and make authentic DataSequence communications easier to recognize without demanding that employees or friends disappear from public life.",
+      "taskInstructions": "Choose the proportionate first response to public-information-assisted impersonation. Base it on the evidence found, not on an unproven account compromise.",
+      "taskQuestion": "What would you advise we do first?",
+      "taskCompleteText": "<b>George Wilkerson:</b> That response addresses the observed exposure: review public details, tighten privacy where appropriate, and give audiences a clear way to identify official DataSequence accounts and announcements."
+    }
+  ],
+  "taskID": "ismg6860_u01_q04_t04",
+  "parentQuestID": "ismg6860_u01_q04",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

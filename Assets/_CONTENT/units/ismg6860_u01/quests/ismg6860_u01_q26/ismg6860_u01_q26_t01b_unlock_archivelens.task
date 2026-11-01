@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "archivelens",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Kent:</b> The live page no longer shows the older draft. GoalPost approved a paid Archive Lens license for this investigation; unlock it in the Lab panel so we can inspect dated public captures.",
+      "taskInstructions": "",
+      "taskQuestion": "Unlock the Archive Lens in the Lab panel.",
+      "taskCompleteText": "<b>Mara Kent:</b> Archive Lens is ready. Search the archive for GoalPost and inspect the dated captures; they can show what was captured, not who viewed it."
+    }
+  ],
+  "taskID": "ismg6860_u01_q26_t01b_unlock_archivelens",
+  "parentQuestID": "ismg6860_u01_q26",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

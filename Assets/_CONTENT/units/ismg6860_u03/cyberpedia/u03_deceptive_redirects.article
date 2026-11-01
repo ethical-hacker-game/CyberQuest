@@ -1,0 +1,12 @@
+{
+  "articleID": "u03_deceptive_redirects",
+  "videoURL": null,
+  "title": "Deceptive Redirects and Scareware",
+  "content": "A deceptive redirect sends a person to an unexpected destination even though the address, bookmark, or link appears familiar. In pharming, name-resolution or device settings are manipulated so a trusted domain resolves to an attacker-controlled system. Unlike ordinary phishing, the visible name may be correct, so recognizing the message alone is not always enough.\n\n<b>How redirection can happen</b>\n\nThe change may affect DNS settings on a device or router, a local hosts file, a compromised network service, or another part of the path that translates a name into an address. Warning signs include an unexpected certificate alert, a familiar site with unusual behavior, repeated redirects, a changed login flow, or different results across trusted networks and devices. Do not bypass a certificate warning or enter credentials to test the page.\n\nScareware uses alarming claims about infections, expired protection, or damaged devices to provoke an installation, payment, or support call. Hoax messages may amplify the panic and persuade recipients to forward the warning. Loud pop-ups and chain messages can also distract from a quieter compromise such as altered name resolution. Treat every finding separately: a dramatic message is not proof of malware, and removing a pop-up does not prove the underlying route is safe.\n\n<b>Respond safely</b>\n\nStop entering sensitive information and record the displayed URL, time, network, certificate warning, and observed destination if approved tools expose it. Disconnect an affected device when policy requires, use a known-clean device and network for urgent account actions, and report the event to the appropriate response team. Do not change DNS settings or erase evidence unless the incident process directs you to do so.\n\nDefenders should compare results through trusted resolvers, inspect approved logs, and verify certificates and configuration. Users need a simple instruction: stop, do not install or pay, and contact support through a known route.",
+  "links": [
+    "pharming",
+    "scareware",
+    "DNS anomaly",
+    "familiar URL"
+  ]
+}

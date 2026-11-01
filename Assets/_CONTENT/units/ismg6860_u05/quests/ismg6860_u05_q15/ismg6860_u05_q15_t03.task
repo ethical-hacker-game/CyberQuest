@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Upgrade every SNMP agent in the plant to version 3 across all devices.",
+        "Rebuild the historian server from clean media during the next scheduled maintenance window.",
+        "Disable svc_bridgeworks, immediately revoking the enabled non-expiring account with recent activity.",
+        "Restrict DNS zone transfers to the authorized secondary nameservers only."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Realistically I get one thing through change control before the weekend. Everything else waits for a window, a vendor conversation, or a board that meets fortnightly.\n\nSo I have to choose, and I would rather choose the right one than the one that is easiest to write up. Tell me where the whole list turns.",
+      "taskInstructions": "Select the immediate, low-disruption action that addresses the confirmed active vendor identity. Treat protocol and configuration findings as separate remediation work.",
+      "taskQuestion": "Which single immediate action most directly reduces the confirmed account risk?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. Disable svc_bridgeworks first because it is enabled, non-expiring, and linked to recent activity. This does not remediate the separate service exposures."
+    },
+    {
+      "answers": [
+        "Upgrade every SNMP agent in the plant to version 3 across all devices.",
+        "Rebuild the historian server from clean media during the next scheduled maintenance window.",
+        "Disable svc_bridgeworks, immediately revoking the enabled non-expiring account with recent activity.",
+        "Restrict DNS zone transfers to the authorized secondary nameservers only."
+      ],
+      "correctAnswer": 2,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Clients never do the whole list. They do one item, feel better, and let the rest age in a ticket queue until somebody like me comes past.\n\nSo it is worth knowing which door closes first. That tells you exactly how much of what you found is still standing next month.",
+      "taskInstructions": "Select the immediate, low-disruption action that addresses the confirmed active vendor identity. Treat protocol and configuration findings as separate remediation work.",
+      "taskQuestion": "Which single immediate action most directly reduces the confirmed account risk?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. Disabling the account revokes the confirmed identity first; the IKE responder and other disclosures remain separate findings."
+    },
+    {
+      "answers": [
+        "Upgrade every SNMP agent in the plant to version 3 across all devices.",
+        "Rebuild the historian server from clean media during the next scheduled maintenance window.",
+        "Disable svc_bridgeworks, immediately revoking the enabled non-expiring account with recent activity.",
+        "Restrict DNS zone transfers to the authorized secondary nameservers only."
+      ],
+      "correctAnswer": 2,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Halloway will act on one item and call the finding addressed. That is not cynicism, it is every remediation programme I have ever watched from the floor.\n\nSo I need to know which one actually reduces the exposure, because that is the one I hold them to. The rest they can schedule.",
+      "taskInstructions": "Select the immediate, low-disruption action that addresses the confirmed active vendor identity. Treat protocol and configuration findings as separate remediation work.",
+      "taskQuestion": "Which single immediate action most directly reduces the confirmed account risk?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. Disable the active vendor account now, then track the remaining controls independently."
+    }
+  ],
+  "taskID": "ismg6860_u05_q15_t03",
+  "parentQuestID": "ismg6860_u05_q15",
+  "articleID": "u05_countermeasures",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

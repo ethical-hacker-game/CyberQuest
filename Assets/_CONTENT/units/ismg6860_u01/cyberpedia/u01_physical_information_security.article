@@ -1,0 +1,11 @@
+{
+  "articleID": "u01_physical_information_security",
+  "videoURL": null,
+  "title": "Physical Information Security",
+  "content": "Physical information security protects sensitive data from being observed, copied, or recovered in the real world. Attackers do not always need malware. Shoulder surfing can reveal a screen, password, keypad code, badge, or document through direct observation or a camera. Dumpster diving can recover printed records, labels, storage media, and discarded equipment. Casual conversation and visible access routines can add the context needed to misuse a small observation.\n\n<b>Recognize exposure</b>\nRisk increases in shared workspaces, public transport, cafes, reception areas, and disposal points. High-value information includes credentials, customer or financial data, network diagrams, employee details, project names, and access patterns. One fragment may seem harmless, but combining it with public information or social engineering can enable impersonation and targeted access.\n\nUse screen positioning and privacy filters where appropriate, shield keypad entry, lock the screen when stepping away, keep badges and documents controlled, and avoid discussing sensitive work where others can listen. Verify unexpected requests instead of revealing details to a friendly stranger. For disposal, use locked collection containers, approved shredding or destruction, media sanitization, documented pickup, and vendor oversight. Ordinary trash and recycling are not secure storage.\n\nTraining should be supported by practical controls and a clear reporting process. If exposure is observed, do not confront or pursue a suspected person. Record what was seen, protect the affected material, notify security, and rotate exposed credentials when necessary. The goal is to reduce opportunity while preserving safety, privacy, and useful evidence.",
+  "links": [
+    "dumpster-diving",
+    "shoulder surfing",
+    "plain observation"
+  ]
+}

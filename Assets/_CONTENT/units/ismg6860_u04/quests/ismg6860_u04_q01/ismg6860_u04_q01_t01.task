@@ -1,0 +1,27 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> I sent you the approved scope. Check what it allows before you inspect the document exchange.",
+      "taskInstructions": "Open the email <b>Authorized Vulnerability Assessment Scope</b> in Mail.",
+      "taskQuestion": "Which action is covered by this authorization?",
+      "taskCompleteText": "<b>Mara Voss:</b> Yes. Reviewing the supplied listing is authorized; changing permissions requires separate approval.",
+      "answers": [
+        "Change the service account permissions to test a fix.",
+        "Review the supplied document exchange permission listing.",
+        "Download configuration files to check for passwords.",
+        "Scan a related host that is absent from the approved scope."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q01_t01",
+  "parentQuestID": "ismg6860_u04_q01",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u04_q01_t01_scope"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

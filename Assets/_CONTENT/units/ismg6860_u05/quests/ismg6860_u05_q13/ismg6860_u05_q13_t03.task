@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "One: only the directory provides activity evidence.",
+        "Two: the directory timestamp and Unix session record show activity.",
+        "Three: the directory, SMTP recipient check, and Unix session all log activity.",
+        "Four: every enumeration source records a successful login."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Separate evidence of account existence from evidence of activity before we summarize the finding.",
+      "taskInstructions": "Compare the earlier LDAP timestamp, SMTP recipient result, and Unix session record. Count only sources that provide time-based activity evidence.",
+      "taskQuestion": "How many reviewed sources provide time-based evidence that the account was active?",
+      "taskCompleteText": "<b>Dana Osei:</b> Two. LDAP records the login timestamp and Unix reports the session; SMTP only confirms a valid recipient."
+    },
+    {
+      "answers": [
+        "One: only the directory provides activity evidence.",
+        "Two: the directory timestamp and Unix session record show activity.",
+        "Three: the directory, SMTP recipient check, and Unix session all log activity.",
+        "Four: every enumeration source records a successful login."
+      ],
+      "correctAnswer": 1,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Do not inflate the count by treating an SMTP recipient check as a login record. Count the actual activity telemetry.",
+      "taskInstructions": "Compare the earlier LDAP timestamp, SMTP recipient result, and Unix session record. Count only sources that provide time-based activity evidence.",
+      "taskQuestion": "How many reviewed sources provide time-based evidence that the account was active?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Two. Directory and Unix telemetry support activity; SMTP supports existence only."
+    },
+    {
+      "answers": [
+        "One: only the directory provides activity evidence.",
+        "Two: the directory timestamp and Unix session record show activity.",
+        "Three: the directory, SMTP recipient check, and Unix session all log activity.",
+        "Four: every enumeration source records a successful login."
+      ],
+      "correctAnswer": 1,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The committee needs an accurate source count. Distinguish a valid mailbox recipient from a timestamped activity record.",
+      "taskInstructions": "Compare the earlier LDAP timestamp, SMTP recipient result, and Unix session record. Count only sources that provide time-based activity evidence.",
+      "taskQuestion": "How many reviewed sources provide time-based evidence that the account was active?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Two sources show activity. The SMTP result is still relevant, but it proves only that the recipient exists."
+    }
+  ],
+  "taskID": "ismg6860_u05_q13_t03",
+  "parentQuestID": "ismg6860_u05_q13",
+  "articleID": "u05_unix_user_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

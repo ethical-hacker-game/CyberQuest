@@ -1,0 +1,27 @@
+{
+  "questID": "ismg6860_u01_q13",
+  "cityIndex": 3126,
+  "questIconID": "quest_icon_packetsniffing_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q13_t01",
+    "ismg6860_u01_q13_t04_data_rover",
+    "ismg6860_u01_q13_t02",
+    "ismg6860_u01_q13_t03"
+  ],
+  "requiredQuestID": "ismg6860_u01_q12",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Fall Launch Leak",
+      "questDescription": "ByteSystems detected unusual outbound traffic before its fall product launch, but the affected data and scope are not yet confirmed. Help Piotr prioritize evidence-led triage, recover six captured evidence fragments, choose proportionate containment, and route an extortion demand through the authorized response process.",
+      "questCompleteText": "<b>Piotr Novak:</b> You kept the response grounded in verified scope, preserved the captured evidence, recommended targeted containment, and escalated the extortion demand without negotiating independently. ByteSystems now has a defensible basis for impact assessment and notification decisions.",
+      "questCharacterID": "u01_piotr_novak",
+      "appScenarioID": ""
+    }
+  ]
+}

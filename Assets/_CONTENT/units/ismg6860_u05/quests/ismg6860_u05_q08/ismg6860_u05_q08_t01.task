@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The transfer succeeded and returned ten records from the zone.",
+        "The server refused AXFR because the client was not an authorized secondary.",
+        "The request timed out before the server returned any DNS records.",
+        "The server returned only its SOA record and withheld the rest of the zone."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> A zone transfer is meant to be a private handover between a primary nameserver and the secondaries it trusts. Ours has been serving that zone since before I started here, and I have never once seen the allow-list on it.\n\nIf a machine that has no business on that list can pull the entire zone, that is a finding on its own, before we look at a single record of what came back.",
+      "taskInstructions": "Run <b>dig axfr hallowayprecision.com</b> and inspect the returned records and XFR size line.",
+      "taskQuestion": "What was the result of the zone transfer attempt?",
+      "taskCompleteText": "<b>Dana Osei:</b> The transfer succeeded and returned ten records to a client that is not an authorized secondary. Restrict AXFR before reviewing individual records."
+    },
+    {
+      "answers": [
+        "The transfer succeeded and returned ten records from the zone.",
+        "The server refused AXFR because the client was not an authorized secondary.",
+        "The request timed out before the server returned any DNS records.",
+        "The server returned only its SOA record and withheld the rest of the zone."
+      ],
+      "correctAnswer": 0,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> A permissive zone transfer can disclose the current contents of a DNS zone in one request: hostnames, mail routing, and forgotten records still present today.",
+      "taskInstructions": "Run <b>dig axfr hallowayprecision.com</b> and inspect the returned records and XFR size line.",
+      "taskQuestion": "What was the result of the zone transfer attempt?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The unauthorized transfer returned ten records. That is a complete current inventory of the zone, not its historical contents."
+    },
+    {
+      "answers": [
+        "The transfer succeeded and returned ten records from the zone.",
+        "The server refused AXFR because the client was not an authorized secondary.",
+        "The request timed out before the server returned any DNS records.",
+        "The server returned only its SOA record and withheld the rest of the zone."
+      ],
+      "correctAnswer": 0,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> I do not care what Halloway's policy says about who may copy that zone. Policies are what people show auditors.\n\nI care what their nameserver actually does when a machine it has never met asks for the whole list, because whatever comes back has been available to anyone who thought to ask for it.",
+      "taskInstructions": "Run <b>dig axfr hallowayprecision.com</b> and inspect the returned records and XFR size line.",
+      "taskQuestion": "What was the result of the zone transfer attempt?",
+      "taskCompleteText": "<b>Priya Nandan:</b> The unauthorized transfer returned ten records. The disclosure is proven without assuming what any endpoint permits."
+    }
+  ],
+  "taskID": "ismg6860_u05_q08_t01",
+  "parentQuestID": "ismg6860_u05_q08",
+  "articleID": "u05_dns_zone_transfer",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

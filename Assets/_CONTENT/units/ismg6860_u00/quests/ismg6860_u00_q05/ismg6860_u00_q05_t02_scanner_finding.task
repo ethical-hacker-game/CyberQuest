@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "directory indexing",
+        "directory indexing enabled",
+        "indexing enabled"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> The report lists several lines, but the Medium-severity entry is our first priority. Start the ticket with the condition it names so the owner knows what to check.",
+      "taskInstructions": "Type the finding title from the row marked <b>Medium</b> in the scanner report.",
+      "taskQuestion": "What is the primary scanner finding?",
+      "taskCompleteText": "<b>Michele:</b> Correct. Directory Indexing Enabled is precise enough for a ticket owner to reproduce."
+    },
+    {
+      "correctAnswers": [
+        "directory indexing",
+        "directory indexing enabled",
+        "indexing enabled"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> The report lists several lines, but only one is the primary issue we can explain without drama. The risk brief has to start with evidence, not fear.",
+      "taskInstructions": "Type the finding title from the row marked <b>Medium</b> in the scanner report.",
+      "taskQuestion": "What is the primary scanner finding?",
+      "taskCompleteText": "<b>Ana:</b> Correct. Directory Indexing Enabled is clear and defensible."
+    }
+  ],
+  "taskID": "ismg6860_u00_q05_t02_scanner_finding",
+  "parentQuestID": "ismg6860_u00_q05",
+  "articleID": "u00_scanner_results",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

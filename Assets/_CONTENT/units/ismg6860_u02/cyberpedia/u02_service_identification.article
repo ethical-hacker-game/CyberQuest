@@ -1,0 +1,13 @@
+{
+  "articleID": "u02_service_identification",
+  "videoURL": null,
+  "title": "Service Identification and Banner Evidence",
+  "content": "Service identification asks what application appears to be listening on a network port. A port number is only an initial clue. Common conventions associate ports with protocols, but administrators can move a service, place a proxy in front of it, or expose a different application on a familiar port.\n\nVersion-detection tools send limited probes and compare the responses with known signatures. A banner may reveal a product name, protocol, build number, or device role. Preserve the exact observation, including the address, port, transport protocol, time, tool settings, and returned text. Another analyst should be able to reproduce or challenge the conclusion.\n\nA banner is not proof that the claimed product is genuine. It can be customized, stale, incomplete, or intentionally deceptive. It is also not a vulnerability by itself. A finding becomes meaningful when the observed service is compared with asset ownership, expected function, network zone, supported versions, configuration, and exposure. An old-looking version string may justify further authorized verification, but it does not prove exploitability.\n\n<b>From inventory to risk</b>\n\nAsk whether the service is required, whether it is reachable from the correct sources, and whether a safer management path exists. A legitimate maintenance interface can still be an unnecessary service in a public-facing zone. Prefer reducing exposure, restricting access, disabling unused listeners, and confirming vendor support over making dramatic claims from a single label.\n\nGood reporting separates three layers: the direct observation, the analyst's supported interpretation, and the remaining uncertainty. That distinction keeps service evidence accurate and actionable.",
+  "links": [
+    "service identification",
+    "banners are evidence",
+    "diagnostics banner",
+    "unnecessary service",
+    "host summary"
+  ]
+}

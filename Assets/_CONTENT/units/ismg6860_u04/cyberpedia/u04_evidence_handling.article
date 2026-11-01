@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_evidence_handling",
+  "videoURL": null,
+  "title": "Handling Sensitive Assessment Evidence",
+  "content": "Security evidence may contain internal paths, personal data, credentials, or details that enable abuse. Collect only what the assessment needs, preserve an authoritative copy in approved storage, restrict access, and share redacted findings through authorized channels. Do not keep undisclosed personal copies. If leadership suppresses a risk to the public, use protected reporting or disclosure procedures that minimize harm and preserve evidence integrity; publishing raw sensitive material can expose the people the report is meant to protect.",
+  "links": [
+    "handling sensitive evidence"
+  ]
+}

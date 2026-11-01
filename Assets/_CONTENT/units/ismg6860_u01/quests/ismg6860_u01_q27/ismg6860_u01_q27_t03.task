@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The hostname is securefund-login.com, not securefund.com.",
+        "The page displays SecureFund's logo and brand colors.",
+        "The form asks for an email address and password.",
+        "The page loads more slowly than the company homepage."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Marcus:</b> The reported imitation login page uses SecureFund branding, but its address is <b>https://securefund-login.com/account</b>. The published company domain is <b>securefund.com</b>.",
+      "taskInstructions": "Compare the registered hostname with the published domain. Review the linked article on <b>phishing pages</b> if needed.",
+      "taskQuestion": "Which visible detail is the clearest warning sign?",
+      "taskCompleteText": "<b>Marcus:</b> The hostname differs from SecureFund's published domain. Branding can be copied, so record the URL and do not submit credentials."
+    }
+  ],
+  "taskID": "ismg6860_u01_q27_t03",
+  "parentQuestID": "ismg6860_u01_q27",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

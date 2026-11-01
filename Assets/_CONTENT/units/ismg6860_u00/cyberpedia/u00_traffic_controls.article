@@ -1,0 +1,11 @@
+{
+  "articleID": "u00_traffic_controls",
+  "videoURL": null,
+  "title": "Traffic Controls and Service Availability",
+  "content": "Network traffic controls decide which connections are allowed, blocked, limited, or inspected. Firewalls, access control lists, web gateways, rate limits, and detection systems apply rules at different points. Their purpose is to reduce harmful traffic while preserving the legitimate activity the service exists to support.\n\nA rule should be based on evidence and a clear policy: source and destination, protocol, port or application, identity when available, direction, and expected behavior. Broadly blocking everything may stop a probe, but it can also interrupt users, monitoring, software updates, authentication, or emergency operations. A professional control balances risk reduction with availability.\n\nStart with least privilege: allow only the access that is needed, deny or constrain unexpected access, and keep exceptions narrow. Consider false positives, where legitimate traffic is blocked, and false negatives, where harmful traffic is allowed. Test changes in a controlled way, define a rollback path, and monitor both security alerts and service health after deployment.\n\nSuspicious probes are not all identical. Repeated login failures, directory enumeration, unexpected administration requests, and unusual downloads may require different controls. Blocking one address may provide temporary relief, while authentication improvements, segmentation, patching, or rate limiting may address the underlying risk more effectively.\n\nThe packet gate exercise represents this decision process in simplified form. In real environments, record why each rule exists, who approved it, when it expires or must be reviewed, and how success will be measured. A good traffic control is specific, observable, reversible when necessary, and verified to protect the system without turning protection into an outage.",
+  "links": [
+    "packet gate minigame",
+    "suspicious probes"
+  ]
+}
+

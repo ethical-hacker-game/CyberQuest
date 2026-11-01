@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> The page uses Harborview branding, but the address tells us who actually hosts it. Record the domain before we assess the request.",
+      "taskInstructions": "Read the browser's address bar and type only the registered domain, without <b>https://</b> or the page path.",
+      "taskQuestion": "Which domain hosts the badge-revalidation page?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. lanternpass-alerts.com is not an official Harborview domain.",
+      "correctAnswers": ["lanternpass-alerts.com"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q02_t02",
+  "parentQuestID": "ismg6860_u03_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

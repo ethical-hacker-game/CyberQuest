@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "exports/Q4NexList.jpg",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Taylor:</b> NexaCore recorded off-hours access to an internal file named <b>Q4NexList</b>, our Q4 client list. We need to determine whether an image of that file is publicly indexed before security and legal assess the exposure.",
+      "taskInstructions": "Open the browser and use <b>Cyber Search</b> to search for <b>Q4NexList filetype:jpg</b>. Open the NexaCore result that hosts the image.",
+      "taskQuestion": "Open the NexaCore page hosting Q4NexList.jpg.",
+      "taskCompleteText": "<b>Taylor:</b> You confirmed that Q4NexList.jpg is publicly reachable. It shows client names, masked contacts, deal sizes, and statuses; the page establishes exposure, but not who accessed or published the file."
+    }
+  ],
+  "taskID": "ismg6860_u01_q03_t01",
+  "parentQuestID": "ismg6860_u01_q03",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u01_q03_t01_start_samira-imagesearch"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Owen Kepler:</b> {player}. Owen Kepler. I am the external audit advisor Northbridge has to satisfy, which makes me the person you least want to surprise.\n\nI have read your evidence, and it is tidy. You separated what you observed from what you concluded, and you did not dress a setup page up as a breach; that is rarer than it should be. Assessment types are next, internal against external, host, network, application, and I will be watching how you draw those lines. Keep drawing them the way you have been, and I will stand behind this file when it reaches the board.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Owen Kepler:</b> Carry on, assessor. Keep every conclusion tied to evidence."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Dr. Owen Kepler:</b> {player}. Owen Kepler, external audit advisor. I certify whether an assessment can be trusted, so I will be direct: I read everything, and I notice when evidence drifts somewhere it was not authorized to go.\n\nNothing in your file is wrong yet. But I have reviewed enough engagements to recognize the moment an assessor starts treating findings as opportunities rather than facts, and the next phase, internal and external, host, network, application, is usually where that shows itself. I will be watching the boundaries very closely.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Owen Kepler:</b> Continue the assessment. I will be checking every boundary."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Dr. Owen Kepler:</b> {player}. Owen Kepler, external audit advisor. My job is to certify that what Northbridge reports can be trusted, by its leadership and eventually by the public.\n\nI am not unsympathetic to the pressure you are under to make this loud; I have watched institutions bury findings until people were harmed. But evidence rushed into the open is evidence I cannot certify, and uncertified evidence is the easiest thing in the world to dismiss. The next phase tests how cleanly you separate assessment types, and doing that properly is what makes a finding impossible to wave away.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Owen Kepler:</b> Build evidence that can withstand public and technical review."
+    }
+  ],
+  "taskID": "ismg6860_u04_d4_dialogue",
+  "parentQuestID": "ismg6860_u04_d4",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

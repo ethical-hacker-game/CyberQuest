@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The report needs an evidence-based finding, not an assumption about Riley or the viewer. Identify the details the post actually exposes.",
+      "taskInstructions": "Use the visible details and Metadata Reader panel on Riley's VolunteerLoop post.",
+      "taskQuestion": "Which clue best supports the finding?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. Location, time, badge color, and route together support the exposure finding.",
+      "answers": [
+        "The photo receives comments from nearby volunteers.",
+        "The caption makes the setup work look harmless.",
+        "The image quality makes small badge details readable.",
+        "The post exposes location, time, badge color, and route."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Reconnaissance value comes from specific observed details. Identify which option combines the useful information visible in the post and its metadata.",
+      "taskInstructions": "Use the visible details and Metadata Reader panel on Riley's VolunteerLoop post.",
+      "taskQuestion": "Which detail makes the photo valuable to an attacker?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Location, time, badge color, and route create practical reconnaissance value.",
+      "answers": [
+        "The post exposes location, time, badge color, and route.",
+        "The photo receives comments from nearby volunteers.",
+        "The caption makes the setup work look harmless.",
+        "The image quality makes small badge details readable."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Keep the finding focused on the exposed information rather than blaming Riley. Identify the details the post makes available.",
+      "taskInstructions": "Use the visible details and Metadata Reader panel on Riley's VolunteerLoop post.",
+      "taskQuestion": "Which clue most clearly marks the post as an exposure?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The finding names the exposed details without assigning blame to Riley.",
+      "answers": [
+        "The photo receives comments from nearby volunteers.",
+        "The post exposes location, time, badge color, and route.",
+        "The caption makes the setup work look harmless.",
+        "The image quality makes small badge details readable."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u03_q14_t03",
+  "parentQuestID": "ismg6860_u03_q14",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "protocolprober",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> The historian exposed a BridgeWorks share. Now we need to determine what the switch stack exposes through SNMP. Protocol Prober can walk its Management Information Base instead of guessing individual object identifiers.",
+      "taskInstructions": "Open the Lab panel and review the Protocol Prober capability and cost.",
+      "taskQuestion": "Unlock the Protocol Prober in the Lab panel.",
+      "taskCompleteText": "<b>Dana Osei:</b> Protocol Prober is ready. Enumerate only the read-only data covered by our authorization."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "protocolprober",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> A file share describes one host; a managed switch can describe the network around it. Protocol Prober walks the Management Information Base and turns that topology into an inventory.",
+      "taskInstructions": "Open the Lab panel and review the Protocol Prober capability and cost.",
+      "taskQuestion": "Unlock the Protocol Prober in the Lab panel.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Protocol Prober is ready. Find the small part of the management tree that carries real value."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "protocolprober",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The switch stack carries plant-floor traffic. A precise Management Information Base walk gives us object identifiers and values that can survive technical review.",
+      "taskInstructions": "Open the Lab panel and review the Protocol Prober capability and cost.",
+      "taskQuestion": "Unlock the Protocol Prober in the Lab panel.",
+      "taskCompleteText": "<b>Priya Nandan:</b> Protocol Prober is ready. Document exactly what the switch exposes."
+    }
+  ],
+  "taskID": "ismg6860_u05_q04_t00_unlock_protocolprober",
+  "parentQuestID": "ismg6860_u05_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

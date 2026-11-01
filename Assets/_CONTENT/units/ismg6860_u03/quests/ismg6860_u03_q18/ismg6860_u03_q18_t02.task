@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the title the caller claimed before assessing how it affected the request.",
+      "taskInstructions": "Reopen <b>Mail</b>, read <b>Badge voice call summary</b>, and type the caller's claimed role.",
+      "taskQuestion": "What role did the caller claim to hold?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: executive assistant. The title was a claim, not verified authorization.",
+      "correctAnswers": ["executive assistant", "exec assistant"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the claimed role precisely; the title is the part of the pretext meant to carry authority.",
+      "taskInstructions": "Reopen <b>Mail</b>, read <b>Badge voice call summary</b>, and type the caller's claimed role.",
+      "taskQuestion": "What role did the caller claim to hold?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: executive assistant. Plausible authority still requires independent verification.",
+      "correctAnswers": ["executive assistant", "exec assistant"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Record the caller's exact claimed role so the warning can distinguish a spoken title from authorization.",
+      "taskInstructions": "Reopen <b>Mail</b>, read <b>Badge voice call summary</b>, and type the caller's claimed role.",
+      "taskQuestion": "What role did the caller claim to hold?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: executive assistant. A claimed title alone does not authorize entry.",
+      "correctAnswers": ["executive assistant", "exec assistant"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q18_t02",
+  "parentQuestID": "ismg6860_u03_q18",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_GAME/Scenes/GameScenes/MenuScene.unity
+    guid: dda4f3f7be2cf4d4db0025316bfa9a3c
+  - enabled: 0
+    path: Assets/_GAME/Scenes/GameScenes/MenuScene_Demo.unity
+    guid: 50f06e18b298da342b08a54bdbf3fa0d
+  - enabled: 0
+    path: Assets/_GAME/Scenes/GameScenes/GlobeScene.unity
+    guid: b507c553179d99c4e835fc641052cf3d
+  - enabled: 0
+    path: Assets/_GAME/Scenes/GameScenes/GlobeScene_vGreen.unity
+    guid: 3ffbf09cf5b012a4b80896fe402f38f4
+  - enabled: 1
+    path: Assets/_GAME/Scenes/GameScenes/GlobeScene_vNeon.unity
+    guid: 7e13018b2ae8dfb49915e37a6b21b32d
+  - enabled: 1
+    path: Assets/_GAME/Scenes/ExtensionScenes/DevContentEditorScene.unity
+    guid: f791c42e018d95f439855a2f991ee33f
+  - enabled: 0
+    path: Assets/_GAME/Scenes/DevelopmentScenes/DevMinigameTests.unity
+    guid: 45447b971f4e9444d8cad574a69f63f4
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

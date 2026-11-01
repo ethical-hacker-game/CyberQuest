@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> The aggregate report shows that <b>urgency</b> produced the highest response rate in this exercise. We can use that finding now to simplify staff guidance, reserve it for a controlled follow-up that tests our safeguards, or publish the aggregate pattern to press for better support. Each option serves a different priority while keeping credentials and participant identities out of scope.",
+      "taskInstructions": "Choose the authorized use of the aggregate trigger results.",
+      "taskQuestion": "How should Harborview use the trigger finding?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded. The selected use preserves the report's privacy boundary and establishes what happens next."
+    }
+  ],
+  "taskID": "ismg6860_u03_d03_decision",
+  "parentQuestID": "ismg6860_u03_d03",
+  "articleID": "u03_human_triggers",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision",
+  "decisions": [
+    {
+      "decisionText": "Use the finding now to reduce deadline pressure and give staff one safe reporting path.",
+      "personaIndex": 0,
+      "personaValueChange": 15
+    },
+    {
+      "decisionText": "Run a controlled follow-up using urgency lures to test whether the new safeguards work.",
+      "personaIndex": 1,
+      "personaValueChange": 15
+    },
+    {
+      "decisionText": "Publish the aggregate finding to support public warnings and better volunteer support.",
+      "personaIndex": 2,
+      "personaValueChange": 15
+    }
+  ]
+}

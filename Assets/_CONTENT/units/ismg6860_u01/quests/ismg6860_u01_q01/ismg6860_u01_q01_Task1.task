@@ -1,0 +1,27 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Reconnaissance",
+        "Weaponization",
+        "Delivery",
+        "Command and Control"
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> I sent you a short overview of the cyber kill chain. Use it to identify the stage focused on gathering information about a target before an attack moves forward.",
+      "taskInstructions": "Open the email from Samira, review the stage descriptions, and select the stage focused on gathering target information.",
+      "taskQuestion": "Which stage of the Cyber Kill Chain focuses on gathering information about a target?",
+      "taskCompleteText": "<b>Samira:</b> Correct. <b>Reconnaissance</b> is the information-gathering stage. Recognizing it helps defenders reduce exposure before an intrusion advances."
+    }
+  ],
+  "taskID": "ismg6860_u01_q01_task1",
+  "parentQuestID": "ismg6860_u01_q01",
+  "articleID": "u01_attack_lifecycle",
+  "mailsOnStart": [
+    "ismg6860_u01_q01_task1_start_samira-hello"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

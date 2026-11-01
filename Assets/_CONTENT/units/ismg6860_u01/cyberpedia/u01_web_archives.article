@@ -1,0 +1,12 @@
+{
+  "articleID": "u01_web_archives",
+  "videoURL": null,
+  "title": "Web Archives and Historical Exposure",
+  "content": "A web archive stores snapshots of publicly reachable pages and related resources so earlier versions can be viewed after a site changes. The Wayback Machine is a prominent example. A single URL may have many captures from different dates, while some resources may be missing because they were blocked, required authentication, depended on scripts, or were never collected.\n\nArchives are valuable for incident timelines, change verification, and understanding past public exposure. They can also preserve documents, drafts, directories, or personal data that the live site later removed. Finding an archived page does not show who viewed or misused it, and a capture date does not always equal the original publication time. Record the archived URL, original URL, capture timestamp, and relevant visible content, then corroborate conclusions with server, deployment, or editorial records.\n\n<b>Responding to sensitive captures</b>\nFirst remove or restrict the source content and any duplicate public copies. Rotate exposed credentials or secrets and assess whether notification is required. The authorized owner can then follow the archive provider's current exclusion or removal process, supplying only the evidence and authority requested. Removal policies differ and a request may not eliminate copies held by search engines, other archives, caches, or individuals.\n\nPrevention depends on access control and publication discipline, not on deleting a live page later. Keep drafts behind authentication, separate preview and production systems, exclude backup artifacts from deployments, review public routes, and monitor for unexpected exposure. Crawler directives may influence cooperative archiving, but sensitive material should never rely on those directives as its only protection.",
+  "links": [
+    "Wayback Machine",
+    "public web archive",
+    "historical snapshots",
+    "archived snapshots"
+  ]
+}

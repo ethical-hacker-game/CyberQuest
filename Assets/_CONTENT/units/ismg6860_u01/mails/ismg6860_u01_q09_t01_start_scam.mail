@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u01_q09_t01_start_scam",
+  "parentTaskID": "ismg6860_u01_q09_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Security Team <notice@alerts-security.com>",
+      "subject": "Important Notice - Immediate Action Required",
+      "shortSummary": "An unsolicited account-security warning that uses urgency and a prominent link to pressure the recipient into acting.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Dear User,\r\n\r\nWe have detected unusual activity linked to your account. To prevent potential data loss and secure your files, immediate action is required. Click the link below to update your security settings and prevent data compromise.\r\n\r\n<u><b>Secure Your Account</b></u>\n\r\nFailure to act may result in restricted access to your files and potential exposure to unauthorized entities. \r\n\r\nTo ensure your safety, contact our support team if you have any questions.\r\n\r\nBest regards,  \r\nSecurity Team",
+      "attachements": []
+    }
+  ]
+}

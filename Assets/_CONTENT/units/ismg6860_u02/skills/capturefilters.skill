@@ -1,0 +1,9 @@
+{
+  "skillID": "capturefilters",
+  "skillName": "Capture Filters",
+  "skillDescription": "A training framework for choosing precise packet-capture filters and preserving a focused flow without unrelated traffic.",
+  "price": 2500,
+  "order": 40,
+  "requireTask": true,
+  "lockInDemo": false
+}

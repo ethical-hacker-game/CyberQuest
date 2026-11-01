@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Identify the file-share control that appears only from the internal viewpoint.",
+      "taskInstructions": "Run <b>nessus compare internal</b>. In the Vulnerabilities table, compare each finding's name and host.",
+      "taskQuestion": "Which file-share signing finding appears only internally?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. SMB Signing Not Required affects file-share-02 and is not reachable from the external surface.",
+      "answers": [
+        "Apache Struts 2.x Multiple RCE Advisories on portal-app-01",
+        "Portal App Server Can Reach Internal SMB Share on portal-app-01",
+        "SMB Signing Not Required on file-share-02",
+        "SMB Service Detection on file-share-02"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Identify the file-share signing weakness visible from inside the network.",
+      "taskInstructions": "Run <b>nessus compare internal</b>. In the Vulnerabilities table, compare each finding's name and host.",
+      "taskQuestion": "Which file-share signing finding appears only internally?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. SMB Signing Not Required is reported on the internal file share.",
+      "answers": [
+        "Apache Struts 2.x Multiple RCE Advisories on portal-app-01",
+        "Portal App Server Can Reach Internal SMB Share on portal-app-01",
+        "SMB Signing Not Required on file-share-02",
+        "SMB Service Detection on file-share-02"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Identify the file-share signing weakness that the public scan could not observe.",
+      "taskInstructions": "Run <b>nessus compare internal</b>. In the Vulnerabilities table, compare each finding's name and host.",
+      "taskQuestion": "Which file-share signing finding appears only internally?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. SMB Signing Not Required is an internal finding on file-share-02.",
+      "answers": [
+        "Apache Struts 2.x Multiple RCE Advisories on portal-app-01",
+        "Portal App Server Can Reach Internal SMB Share on portal-app-01",
+        "SMB Signing Not Required on file-share-02",
+        "SMB Service Detection on file-share-02"
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q11_t02",
+  "parentQuestID": "ismg6860_u04_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

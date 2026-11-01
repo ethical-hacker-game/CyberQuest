@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Artwork and prize language are weak evidence. Focus on the information this unrelated giveaway requires players to enter on its own domain.",
+      "taskInstructions": "Review the entry requirement on the Lucky Squad Drop page.",
+      "taskQuestion": "Which finding most strongly supports treating the giveaway as a credential lure?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. An unrelated giveaway asking for LanternPass credentials on its own domain should be blocked and reported.",
+      "answers": [
+        "The event uses avatars and a leaderboard to draw attention.",
+        "The prize language fits a casual mobile game community.",
+        "The page names the expo often enough to feel relevant.",
+        "Entry requires LanternPass credentials on the giveaway domain."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Ignore the crates and countdown. Identify what the page requires a player to surrender before entering.",
+      "taskInstructions": "Review the entry requirement on the Lucky Squad Drop page.",
+      "taskQuestion": "Which finding most strongly supports treating the giveaway as a credential lure?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The page trades a chance at a prize for LanternPass credentials entered outside Harborview.",
+      "answers": [
+        "Entry requires LanternPass credentials on the giveaway domain.",
+        "The event uses avatars and a leaderboard to draw attention.",
+        "The prize language fits a casual mobile game community.",
+        "The page names the expo often enough to feel relevant."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The players are being targeted, not careless. Choose the concrete entry requirement that the warning should tell them to avoid.",
+      "taskInstructions": "Review the entry requirement on the Lucky Squad Drop page.",
+      "taskQuestion": "Which finding most strongly supports treating the giveaway as a credential lure?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Players should never enter LanternPass credentials on an unrelated giveaway domain.",
+      "answers": [
+        "The event uses avatars and a leaderboard to draw attention.",
+        "Entry requires LanternPass credentials on the giveaway domain.",
+        "The prize language fits a casual mobile game community.",
+        "The page names the expo often enough to feel relevant."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u03_q10_t03",
+  "parentQuestID": "ismg6860_u03_q10",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_scope_expansion",
+  "videoURL": null,
+  "title": "Expanding an Assessment Scope",
+  "content": "When a verified finding raises a new impact question, define the proposed target, method, test data, monitoring, stop conditions, and rollback plan before requesting <b>written authorization</b>. Approval should identify exactly which new actions are permitted. Do not treat unanswered impact as confirmed, and do not continue quietly beyond scope. If an organization suppresses a verified risk affecting the public, use protected reporting or disclosure channels while minimizing sensitive detail and preserving evidence integrity.",
+  "links": [
+    "expanding an assessment scope"
+  ]
+}

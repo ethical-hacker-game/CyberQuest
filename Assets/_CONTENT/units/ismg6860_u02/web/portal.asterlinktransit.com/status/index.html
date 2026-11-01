@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asterlink Transit: System Status</title>
+  <script src="../../cq-bridge.js"></script>
+  <style>
+    :root{
+      --navy:#0f2340;--navy2:#16335c;--ink:#1b2430;--muted:#5d6b7c;--line:#e3e8ef;
+      --bg:#eef2f7;--amber:#f2a30a;--ok:#2f9e63;--okbg:#e9f7ef;--warn:#c77b12;--warnbg:#fdf3e2;--card:#fff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+    a{color:#1c5fb0;text-decoration:none}
+    .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+    /* header */
+    header{background:linear-gradient(180deg,var(--navy),var(--navy2));color:#fff}
+    .top{display:flex;align-items:center;gap:14px;padding:16px 0}
+    .logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;letter-spacing:.3px}
+    .logo .mk{width:30px;height:30px;border-radius:7px;background:var(--amber);position:relative;flex:0 0 30px}
+    .logo .mk:before{content:"";position:absolute;left:7px;top:13px;width:16px;height:4px;background:var(--navy);box-shadow:0 5px 0 var(--navy)}
+    .logo small{display:block;font-weight:500;font-size:11px;color:#bcd0ec;letter-spacing:1.5px;text-transform:uppercase}
+    .top nav{margin-left:auto;display:flex;gap:20px;font-size:14px}
+    .top nav a{color:#cdddf2;font-weight:600}
+    .top nav a:hover{color:#fff}
+    .hero{padding:6px 0 26px}
+    .hero h1{margin:0 0 4px;font-size:22px;font-weight:600}
+    .hero p{margin:0;color:#b9cbe4;font-size:14px}
+    /* overall banner */
+    .banner{background:var(--okbg);border:1px solid #bfe6cf;border-left:5px solid var(--ok);border-radius:8px;
+      display:flex;align-items:center;gap:12px;padding:16px 18px;margin:22px 0}
+    .banner .big{font-size:18px;font-weight:700;color:#1d6b41}
+    .banner .sub{color:#3d7a57;font-size:13px}
+    .banner .dotok{width:14px;height:14px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px #cdeedd}
+    .banner .upd{margin-left:auto;font-size:12.5px;color:#4c8a67;text-align:right}
+    /* components */
+    .card{background:var(--card);border:1px solid var(--line);border-radius:9px;box-shadow:0 1px 2px rgba(20,40,70,.04);margin:18px 0}
+    .card h2{margin:0;padding:15px 18px;font-size:14px;border-bottom:1px solid var(--line);color:#33465c;letter-spacing:.2px}
+    .comp{display:flex;align-items:center;padding:14px 18px;border-bottom:1px solid #eef1f5}
+    .comp:last-child{border-bottom:none}
+    .comp .name{font-weight:600}
+    .comp .name small{display:block;font-weight:400;color:var(--muted);font-size:12.5px;margin-top:1px}
+    .pill{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;padding:5px 11px;border-radius:20px}
+    .pill.ok{color:#1d6b41;background:var(--okbg);border:1px solid #bfe6cf}
+    .pill.warn{color:#93590a;background:var(--warnbg);border:1px solid #ecd39a}
+    .pill .d{width:8px;height:8px;border-radius:50%}
+    .pill.ok .d{background:var(--ok)} .pill.warn .d{background:var(--amber)}
+    /* uptime bars */
+    .bars{display:flex;gap:2px;margin:6px 18px 0;height:26px}
+    .bars i{flex:1;background:#39b06e;border-radius:2px;opacity:.85}
+    .bars i.m{background:var(--amber)}
+    .baraxis{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;padding:4px 18px 14px}
+    /* incidents */
+    .inc{padding:14px 18px;border-bottom:1px solid #eef1f5}
+    .inc:last-child{border-bottom:none}
+    .inc .h{display:flex;align-items:baseline;gap:10px}
+    .inc .h b{font-size:14px}
+    .inc .tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#93590a;background:var(--warnbg);border:1px solid #ecd39a;border-radius:4px;padding:1px 7px}
+    .inc .when{margin-left:auto;color:var(--muted);font-size:12px}
+    .inc p{margin:7px 0 0;color:#455468;font-size:13.5px}
+    .inc .step{color:var(--muted);font-size:12.5px;margin-top:6px}
+    .inc .step b{color:#33465c}
+    footer{color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);margin-top:30px;background:#fff}
+    footer .wrap{display:flex;flex-wrap:wrap;gap:6px 22px;padding:18px 22px}
+    footer .sp{margin-left:auto}
+    @media(max-width:680px){.top nav{display:none}.banner .upd{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="top">
+        <div class="logo"><span class="mk"></span><span>Asterlink Transit<small>Metro Authority</small></span></div>
+        <nav><a href="#components">Status</a><a href="#uptime">Uptime</a><a href="#history">Incident History</a><a href="#subscribe">Subscribe</a></nav>
+      </div>
+      <div class="hero">
+        <h1>Service Status</h1>
+        <p>Live operational status for Asterlink Transit rider systems and the night-service launch.</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="banner">
+      <span class="dotok"></span>
+      <div>
+        <div class="big">Core rider systems operational</div>
+        <div class="sub">Night-service launch is in controlled pre-release validation.</div>
+      </div>
+      <div class="upd">Last updated<br><span data-updated>just now</span></div>
+    </div>
+
+    <section class="card" id="components">
+      <h2>Components</h2>
+      <div class="comp"><div class="name">Ticketing validation <small>Fare validation service · rider payments</small></div><span class="pill ok"><span class="d"></span>Operational</span></div>
+      <div class="comp"><div class="name">Station signage <small>Platform &amp; concourse displays</small></div><span class="pill ok"><span class="d"></span>Operational</span></div>
+      <div class="comp"><div class="name">Platform status boards <small>Arrival / departure boards</small></div><span class="pill ok"><span class="d"></span>Operational</span></div>
+      <div class="comp"><div class="name">Public status portal <small>This page</small></div><span class="pill ok"><span class="d"></span>Operational</span></div>
+      <div class="comp"><div class="name">Night-service launch <small>New overnight ticketing network</small></div><span class="pill warn"><span class="d"></span>Pre-release validation</span></div>
+    </section>
+
+    <section class="card" id="uptime">
+      <h2>90-day uptime: Ticketing validation</h2>
+      <div class="bars">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><i></i>
+      </div>
+      <div class="baraxis"><span>90 days ago</span><span>99.98% uptime</span><span>today</span></div>
+    </section>
+
+    <section class="card" id="history">
+      <h2>Incident &amp; maintenance history</h2>
+      <div class="inc">
+        <div class="h"><span class="tag">Scheduled</span><b>Night-service launch validation window</b><span class="when">In progress</span></div>
+        <p>A controlled validation window is running ahead of the overnight ticketing launch. Ticketing validation and station signage are required to remain online for riders throughout the window.</p>
+        <div class="step"><b>Update: </b> Pre-launch checks continuing on the new overnight network. No rider-facing impact expected.</div>
+      </div>
+      <div class="inc">
+        <div class="h"><span class="tag" style="color:#1d6b41;background:var(--okbg);border-color:#bfe6cf">Resolved</span><b>Signage refresh on Line 2 platforms</b><span class="when">3 days ago</span></div>
+        <p>Scheduled firmware refresh on Line 2 platform displays completed without rider impact.</p>
+      </div>
+      <div class="inc">
+        <div class="h"><span class="tag" style="color:#1d6b41;background:var(--okbg);border-color:#bfe6cf">Resolved</span><b>Status portal maintenance</b><span class="when">2 weeks ago</span></div>
+        <p>Routine maintenance on the public status portal. Service restored, no further action required.</p>
+      </div>
+    </section>
+
+    <section class="card" id="subscribe">
+      <h2>Subscribe to updates</h2>
+      <div class="comp"><div class="name">Get notified about incidents and maintenance<small>Email updates for riders and operators</small></div>
+        <span class="pill ok" style="cursor:default">Manage alerts</span></div>
+    </section>
+  </div>
+
+  <footer><div class="wrap">
+    <span>© Asterlink Transit Metro Authority</span>
+    <span>Rider services</span><span>Accessibility</span><span>Contact operations</span>
+    <span class="sp">Powered by Asterlink Status</span>
+  </div></footer>
+
+  <script>
+    // Progressive enhancement: live "last updated" ticker. Page is fully readable without JS.
+    (function(){
+      var el=document.querySelector('[data-updated]'); if(!el) return;
+      var t=0;
+      function tick(){ t+=1; el.textContent = t<60 ? t+' sec ago' : Math.floor(t/60)+' min ago'; }
+      el.textContent='0 sec ago'; setInterval(tick,1000);
+    })();
+  </script>
+</body>
+</html>

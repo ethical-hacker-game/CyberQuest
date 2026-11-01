@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_active_passive_assessment",
+  "videoURL": null,
+  "title": "Active and Passive Assessment",
+  "content": "A <b>passive assessment</b> reviews existing evidence such as exported logs, configuration records, diagrams, and owner interviews without sending assessment traffic to the target. An <b>active assessment</b> interacts with the target through scans, authenticated checks, or test requests. Active methods can provide current evidence but may add load or trigger unsafe behavior. For a fragile service, begin with passive evidence, schedule the least intensive active checks outside critical periods, obtain owner approval, monitor availability, define stop conditions, and increase intensity only when the remaining question justifies the risk.",
+  "links": [
+    "active and passive assessment"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "skillID": "metareader",
+  "skillName": "Metadata Reader",
+  "skillDescription": "An embedded-metadata extractor for images and documents. Reads location, timestamp, and device fields out of a file without altering it, showing what a published file gives away beyond its visible content.",
+  "price": 3000,
+  "order": 30,
+  "requireTask": true,
+  "lockInDemo": false
+}

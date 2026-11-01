@@ -1,0 +1,11 @@
+{
+  "articleID": "u05_ldap_directory",
+  "videoURL": null,
+  "title": "LDAP and Directory Disclosure",
+  "content": "<b>A directory service answers structured questions about identities and organizational objects. The security question is who may ask.</b>\n\nLDAP clients query a hierarchical directory tree. Each entry has a <b>distinguished name</b> that records its location, such as an account inside organizational units and a domain. A DN proves that the directory contains the identity; it does not prove which systems or resources the account may access.\n\nIf an <b>anonymous bind</b> is permitted, an unauthenticated client may be able to enumerate account names, organizational units, and selected attributes. Account-control flags can show whether an identity is enabled, locked, or configured with a non-expiring password. Authentication timestamps indicate recent use but do not identify the person or process responsible.\n\nA plain LDAP session on TCP 389 is unencrypted unless STARTTLS is negotiated. LDAPS or STARTTLS protects the exchange, while access controls and anonymous-bind restrictions determine which queries the server will answer.",
+  "links": [
+    "anonymous bind",
+    "distinguished name",
+    "LDAP"
+  ]
+}

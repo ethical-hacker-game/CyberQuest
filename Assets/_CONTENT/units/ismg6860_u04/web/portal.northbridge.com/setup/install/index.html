@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northbridge Portal Setup Wizard</title>
+  <style>
+    :root{--ink:#18202a;--muted:#5b6572;--line:#d8dee7;--blue:#184f8c;--green:#2f6f5e;--paper:#f6f8fb;--warn:#8a4b12}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#eef2f6;line-height:1.5}
+    header{background:#173f6b;color:white;border-bottom:5px solid #e0b13d}
+    .topbar{display:flex;justify-content:space-between;gap:24px;max-width:1120px;margin:auto;padding:10px 24px;font-size:13px;opacity:.9}
+    .brand{max-width:1120px;margin:auto;padding:28px 24px 24px}
+    .brand h1{margin:0;font-size:34px;letter-spacing:0}
+    .brand p{margin:6px 0 0;color:#d8e6f5}
+    nav{background:white;border-bottom:1px solid var(--line)}
+    nav .inner{max-width:1120px;margin:auto;display:flex;gap:4px;padding:0 24px}
+    nav a{color:#24415f;text-decoration:none;padding:14px 16px;font-weight:700;font-size:14px}
+    nav a.active{background:#eaf1f8;color:#123a62}
+    main{max-width:1120px;margin:28px auto;padding:0 24px 48px}
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:24px}
+    .panel{background:white;border:1px solid var(--line);border-radius:6px;padding:22px}
+    .panel h2,.panel h3{margin-top:0}
+    .muted{color:var(--muted)}
+    .notice{border-left:4px solid var(--warn);background:#fff8ec;padding:12px 14px;margin:16px 0}
+    .button{display:inline-block;background:var(--blue);color:white;text-decoration:none;border-radius:4px;padding:10px 14px;font-weight:700}
+    table{width:100%;border-collapse:collapse;background:white}
+    th,td{text-align:left;border-bottom:1px solid var(--line);padding:10px 8px;font-size:14px}
+    th{color:#34465b;background:#f2f5f9}
+    code{background:#edf1f5;border:1px solid #dce3eb;border-radius:4px;padding:2px 5px}
+    footer{border-top:1px solid var(--line);background:white;color:var(--muted);font-size:13px;padding:18px 24px;text-align:center}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.brand h1{font-size:26px}nav .inner{overflow:auto}.topbar{display:block}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar"><span>Northbridge Civic Services</span><span>Service status: normal operations</span></div>
+    <div class="brand"><h1>Northbridge Portal Setup Wizard</h1><p>Public services, records, permits, and resident support for Northbridge County.</p></div>
+  </header>
+  <nav><div class="inner"><a class="" href="../../../portal.northbridge.com/">Home</a><a class="" href="../../../portal.northbridge.com/services/search.html">Services</a><a class="" href="#departments">Departments</a><a class="" href="#notices">Public Notices</a><a class="active" href="#help">Help</a></div></nav>
+  <main>
+  <section class="grid">
+    <div class="panel">
+      <h2>Portal Setup Wizard</h2>
+      <p>This deployment utility prepares a Northbridge Civic Services portal instance for first use. It checks database connectivity, storage paths, background jobs, and administrative account provisioning.</p>
+      <div class="notice"><strong>Maintenance mode:</strong> setup should be completed only by authorized Digital Services administrators during approved deployment windows.</div>
+      <form>
+        <label>Database profile<br><input value="nb-civic-prod" disabled></label><br><br>
+        <label>Storage root<br><input value="/srv/northbridge/portal" disabled></label><br><br>
+        <label>Initial administrator<br><input value="pending configuration" disabled></label><br><br>
+        <button type="button" disabled>Continue setup</button>
+      </form>
+    </div>
+    <aside class="panel">
+      <h3>Deployment Checklist</h3>
+      <ol>
+        <li>Confirm maintenance window.</li>
+        <li>Validate database profile.</li>
+        <li>Confirm storage permissions.</li>
+        <li>Disable setup utility after deployment.</li>
+      </ol>
+      <p class="muted">Build 4.8.12 | Installer module loaded</p>
+    </aside>
+  </section>
+</main>
+  <footer>Northbridge Civic Services Portal | Public information site | For urgent assistance call 311</footer>
+  <script src="../../../cq-bridge.js"></script>
+</body>
+</html>

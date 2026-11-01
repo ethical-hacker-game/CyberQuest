@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "minigameType": "DataRover",
+      "minigameHeaderText": "BRIDGEWORKS$ Share Listing Recovery",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "dataRoverSettings": {
+        "packetIntegrity": 3,
+        "shardCount": 6,
+        "patrolSpeedMultiplier": 0.95,
+        "layoutIndex": 1,
+        "shardLabel": "SHARE ENTRY",
+        "patrolLabel": "SESSION MONITOR"
+      },
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> Recover only the directory listing. Our monitoring counts SMB sessions per source address, so repeated connections can trigger an incident response and interrupt the authorized query.",
+      "taskInstructions": "Collect all six SHARE ENTRY pickups before the clock expires. A SESSION MONITOR cannot see through walls, and a third brush with a patrol or its vision cone ends the run.",
+      "taskQuestion": "Recover the share listing without tripping the session monitor.",
+      "taskCompleteText": "<b>Dana Osei:</b> The directory listing is recovered without exceeding the session threshold. It contains BridgeWorks configuration alongside Halloway drawings and a backup archive.\n\nhistorian.conf\ntag_map_v4.csv\nsite_survey_2024.pdf\ndrawings/\n  HPM-4471-turbine-seal.step\n  HPM-4488-manifold.step\nbackup/nightly_export.tar"
+    }
+  ],
+  "taskID": "ismg6860_u05_q03_t02_data_rover",
+  "parentQuestID": "ismg6860_u05_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

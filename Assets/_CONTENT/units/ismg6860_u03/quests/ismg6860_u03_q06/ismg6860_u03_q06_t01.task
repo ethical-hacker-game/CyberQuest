@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Dev Patel's carrier fraud desk flagged a <b>recovery attempt</b> involving Riley's number. Review the carrier's evidence carefully; Riley is a colleague, not merely an incident record.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Fwd: carrier fraud note: Riley Cho</b>.",
+      "taskQuestion": "Open Dev Patel's carrier fraud note.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The request failed verification, but the record shows that Riley's number was targeted.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q06_t01_carrier_fraud"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Dev Patel's fraud desk logged a <b>recovery attempt</b> against Riley's line. Control of the number could redirect calls and SMS authentication codes, so record exactly what the carrier observed.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Fwd: carrier fraud note: Riley Cho</b>.",
+      "taskQuestion": "Open Dev Patel's carrier fraud note.",
+      "taskCompleteText": "<b>Felix Rane:</b> The request failed, but it reveals which account-recovery route the operator tested.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q06_t01_carrier_fraud"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Dev Patel pulled a <b>recovery attempt</b> involving Riley's number from the carrier fraud queue. Review the record so Riley can receive a precise warning without exposing private account details.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Fwd: carrier fraud note: Riley Cho</b>.",
+      "taskQuestion": "Open Dev Patel's carrier fraud note.",
+      "taskCompleteText": "<b>Imani Vale:</b> The failed request is documented. Riley deserves a direct warning through a trusted channel.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q06_t01_carrier_fraud"
+    }
+  ],
+  "taskID": "ismg6860_u03_q06_t01",
+  "parentQuestID": "ismg6860_u03_q06",
+  "articleID": "u03_sim_swap_and_account_recovery",
+  "mailsOnStart": [
+    "ismg6860_u03_q06_t01_carrier_fraud"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

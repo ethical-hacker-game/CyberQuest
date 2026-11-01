@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The internal comparison identifies a specific connection from the portal tier. Find the relationship that could let a public-service weakness reach an internal system.",
+      "taskInstructions": "Run <b>nessus compare internal</b> in the terminal to open the internal comparison results.",
+      "taskQuestion": "Which relationship creates internal movement risk?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The scan confirms that the portal app server can reach the internal SMB share.",
+      "answers": [
+        "The public homepage includes a standard privacy policy link.",
+        "The portal app server can reach an internal SMB file share.",
+        "The application server's internal system clock is set correctly.",
+        "The internal audit office communicates using ordinary email."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A finding becomes more useful when its host can reach another system. Identify the confirmed relationship that creates movement value.",
+      "taskInstructions": "Run <b>nessus compare internal</b> in the terminal to open the internal comparison results.",
+      "taskQuestion": "Which relationship creates internal movement risk?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. TCP/445 reachability from the portal app server to the internal share creates the pivot risk.",
+      "answers": [
+        "The public homepage includes a standard privacy policy link.",
+        "The portal app server can reach an internal SMB file share.",
+        "The application server's internal system clock is set correctly.",
+        "The internal audit office communicates using ordinary email."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Separate tickets can hide a risky connection between a public service and an internal host. Identify the relationship the scan actually confirms.",
+      "taskInstructions": "Run <b>nessus compare internal</b> in the terminal to open the internal comparison results.",
+      "taskQuestion": "Which relationship creates internal movement risk?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The portal app server can reach file-share-02 over SMB, so the boundary needs review.",
+      "answers": [
+        "The public homepage includes a standard privacy policy link.",
+        "The portal app server can reach an internal SMB file share.",
+        "The application server's internal system clock is set correctly.",
+        "The internal audit office communicates using ordinary email."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q19_t01",
+  "parentQuestID": "ismg6860_u04_q19",
+  "articleID": "u04_portal_smb_path",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

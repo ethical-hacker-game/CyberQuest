@@ -1,0 +1,27 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> A firewall is more than a box on the diagram. It is the policy boundary that should prevent vendor maintenance traffic from reaching ticketing without an approved reason.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the firewall's role in this launch network?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. The firewall should enforce the intended separation between the three zones.",
+      "answers": [
+        "It exposes every private DMZ and ticketing address to the public internet.",
+        "It guarantees that every host will answer a ping sweep.",
+        "It enforces separation between DMZ, ticketing, and vendor maintenance.",
+        "It removes any need to collect scan evidence before launch."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u02_q03_t03",
+  "parentQuestID": "ismg6860_u02_q03",
+  "articleID": "u02_network_segmentation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [
+    "ismg6860_u02_d01_scope_pressure"
+  ],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

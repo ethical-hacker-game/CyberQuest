@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Staff received a badge-lockout threat from <b>HV-Badge</b>. Its shortened <b>SMS link</b> hides the destination, so inspect it without entering any badge details.",
+      "taskInstructions": "Run <b>lantern preview sms</b> in the terminal. Open the reported URL in the browser.",
+      "taskQuestion": "Open the smishing landing page staff were sent to.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The page imitates LanternPass, but its address is outside Harborview's services. Preserve that difference.",
+      "correctAnswer": "lanternpass-alerts.com/alerts/revalidate.html"
+    }
+  ],
+  "taskID": "ismg6860_u03_q02_t01",
+  "parentQuestID": "ismg6860_u03_q02",
+  "articleID": "u03_message_and_call_phishing",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

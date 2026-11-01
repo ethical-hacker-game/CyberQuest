@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "sitemirror",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Kateryna Bondarenko:</b> I have authorized a limited public-site mirror. The Offline Mirror lets us review collected pages locally, but the initial crawl still sends requests to the live site, so stay within the agreed target and rate.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Offline Mirror</b> for this review.",
+      "taskQuestion": "Unlock the Offline Mirror in the Lab panel.",
+      "taskCompleteText": "<b>Kateryna Bondarenko:</b> Offline Mirror is unlocked. Use it only for the approved GreenNet address."
+    }
+  ],
+  "taskID": "ismg6860_u01_q15_t00_unlock_sitemirror",
+  "parentQuestID": "ismg6860_u01_q15",
+  "articleID": "u01_web_crawling_and_mirroring",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

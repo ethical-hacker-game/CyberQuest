@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "decisionText": "Report the exposed contact data privately to ShadowTech or its registrar through an approved channel, sharing only the evidence needed for remediation.",
+      "personaIndex": 0,
+      "personaValueChange": 5
+    },
+    {
+      "decisionText": "Use Riley’s contact data to demand payment in exchange for keeping the record quiet.",
+      "personaIndex": 1,
+      "personaValueChange": 5
+    },
+    {
+      "decisionText": "Publish a redacted advisory about registrant privacy exposure without republishing Riley’s personal contact details.",
+      "personaIndex": 2,
+      "personaValueChange": 5
+    }
+  ],
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Samira:</b> The WHOIS record publicly lists Riley Calder, ShadowTech Projects, and a direct contact address. It does not establish Riley’s current role, control of the domain, or consent to wider redistribution. We need to choose how to handle the privacy exposure without claiming more than the record proves.",
+      "taskInstructions": "Choose between private remediation, personal exploitation, and a redacted public-interest warning. Consider consent, data minimization, attribution limits, and possible harm to Riley.",
+      "taskQuestion": "How will you handle the exposed registrant data?",
+      "taskCompleteText": "<b>Samira:</b> Your decision has been recorded. Public availability does not remove privacy obligations or turn a registration entry into proof of ownership, control, or wrongdoing."
+    }
+  ],
+  "taskID": "ismg6860_u01_d03_decision",
+  "parentQuestID": "ismg6860_u01_d03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision"
+}

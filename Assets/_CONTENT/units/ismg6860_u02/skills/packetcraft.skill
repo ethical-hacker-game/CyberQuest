@@ -1,0 +1,9 @@
+{
+  "skillID": "packetcraft",
+  "skillName": "Probe Kit",
+  "skillDescription": "A training framework for choosing controlled packet flags and interpreting firewall responses without treating probes as an evasion technique.",
+  "price": 3000,
+  "order": 50,
+  "requireTask": true,
+  "lockInDemo": false
+}

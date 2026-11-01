@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NetLookup: Domain &amp; Host Lookup</title>
+  <meta name="description" content="In-game domain and host lookup simulator. Paste an email address or domain to see parsed host, registrant, and discovered subdomains." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="../cq-bridge.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#result">Skip to result</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand" aria-label="NetLookup">
+        <span class="brand-name">NetLookup</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="hero" aria-label="NetLookup lookup simulator">
+      <div class="hero-copy">
+        <h1>NetLookup: Domain &amp; Host Lookup</h1>
+        <p class="lede">Paste an email address or domain to see parsed host, registrant, and discovered subdomains.</p>
+
+        <form id="lookupForm" class="lookup" novalidate>
+          <label class="field">
+            <span class="label">Paste email address or domain</span>
+            <span class="sr-only" id="inputHelp">This tool returns canned results for training only.</span>
+            <input
+              id="lookupInput"
+              name="query"
+              type="text"
+              inputmode="text"
+              autocomplete="off"
+              autocapitalize="none"
+              spellcheck="false"
+              aria-label="Paste email address or domain"
+              aria-describedby="inputHelp"
+              placeholder="e.g., summittrust.com"
+              required
+            />
+          </label>
+
+          <button id="lookupButton" type="submit">Lookup</button>
+        </form>
+
+        <p class="samples" aria-label="Sample inputs">
+          <span class="samples-label">Samples:</span>
+          <button class="sample-btn" type="button" data-sample="notifications@summit-trust.secure-mail.com">notifications@summit-trust.secure-mail.com</button>
+          <button class="sample-btn" type="button" data-sample="summittrust.com">summittrust.com</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="result-section" aria-label="Lookup result">
+      <div class="result-header">
+        <h2 class="result-title">Result</h2>
+      </div>
+
+      <div
+        id="result"
+        class="result"
+        tabindex="-1"
+        role="region"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <p class="result-empty">Enter a value and select Lookup.</p>
+      </div>
+
+      <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>Data for training use only.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

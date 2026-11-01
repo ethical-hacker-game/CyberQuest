@@ -1,0 +1,14 @@
+{
+  "articleID": "u04_configuration_exposure",
+  "videoURL": null,
+  "title": "Configuration and Deployment Exposure",
+  "content": "<b>Configuration exposure occurs when operational files, deployment tools, or administrative artifacts are accessible to accounts or networks that do not need them.</b> The exposed material may be readable data, an interactive interface, or a clue that reveals how a system is built.\n\nCommon examples include broadly readable configuration files, backup archives placed under a public web root, directory listings, installation or setup interfaces left enabled, debug files, logs, source maps, and environment files. These artifacts may reveal internal paths, service names, database locations, account identifiers, secrets, or old copies of data. Even when no password is visible, the information can reduce the effort required to plan another step.\n\nTreat an exposed artifact as evidence, not permission to explore it. Record the location, access level, response, file metadata, and minimum visible context. Avoid downloading sensitive archives, submitting setup forms, executing scripts, or opening unrelated records unless the authorization explicitly permits it. If a secret may have been exposed, assume it could have been copied and coordinate rotation; removing the public file alone does not restore trust in the secret.\n\nRemediation should remove the artifact from the exposed location and correct the process that placed it there. Restrict file permissions to the service account and administrators that require access. Disable unused installers and debug routes. Turn off directory listing unless there is a documented need. Keep backups and configuration outside public content roots, and block them from deployment packages.\n\nPrevention belongs in the delivery pipeline: maintain an approved file inventory, scan builds for secrets and backup extensions, separate development and production configuration, apply secure permission baselines, and test the deployed external surface after every release. A clean deployment is not only one without vulnerable code; it is one that publishes only the resources the service is meant to expose.",
+  "links": [
+    "file permissions",
+    "readable config file",
+    "deployment leftovers",
+    "setup route",
+    "directory listings",
+    "public backup directory"
+  ]
+}

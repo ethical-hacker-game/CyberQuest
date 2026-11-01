@@ -1,0 +1,31 @@
+{
+  "variants": [
+    {
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u00_q08_t01_final_note",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> The final note is in your inbox. It records the repair recommendation and verification the service owner needs to act on.",
+      "taskInstructions": "",
+      "taskQuestion": "Open the final note.",
+      "taskCompleteText": "<b>Michele:</b> First Signal is complete. Your evidence is ready for the service owner to reproduce the issue, make the fix, and verify it."
+    },
+    {
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u00_q08_t01_final_note",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> The final note is in your inbox. It records the risk brief and the response we are asking the service owner to provide.",
+      "taskInstructions": "",
+      "taskQuestion": "Open the final note.",
+      "taskCompleteText": "<b>Ana:</b> First Signal is complete. Your brief explains the exposure, protects sensitive details, and gives the service owner a clear request for action."
+    }
+  ],
+  "taskID": "ismg6860_u00_q08_t01_final_mail",
+  "parentQuestID": "ismg6860_u00_q08",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u00_q08_t01_final_note"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

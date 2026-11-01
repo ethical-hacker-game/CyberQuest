@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The critical finding needs defensible evidence, but our authorization does not permit a payload against the live portal. Choose the least invasive validation method.",
+      "taskInstructions": "Read <link=\"u04_struts_rce_response\"><u>responding to the Struts RCE finding</u></link>, then select the authorized validation method.",
+      "taskQuestion": "How should RCE risk be validated here?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Version, exposure, and advisory evidence support the finding without executing a payload.",
+      "answers": [
+        "Confirm the affected version, the exposure, and the vendor advisory without running exploit payloads.",
+        "Run a fully working exploit payload just to prove that remote command execution is possible.",
+        "Upload a functioning web shell onto the server in order to collect clear proof of impact.",
+        "Change live production files directly so that the client can more clearly see the impact."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A live target and a published advisory make a payload tempting, but executing one would cross the authorized boundary. Choose evidence that establishes exposure without creating an incident.",
+      "taskInstructions": "Read <link=\"u04_struts_rce_response\"><u>responding to the Struts RCE finding</u></link>, then select the authorized validation method.",
+      "taskQuestion": "How should RCE risk be validated here?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Confirming the version and exposure is enough; a working shell is neither required nor authorized.",
+      "answers": [
+        "Confirm the affected version, the exposure, and the vendor advisory without running exploit payloads.",
+        "Run a fully working exploit payload just to prove that remote command execution is possible.",
+        "Upload a functioning web shell onto the server in order to collect clear proof of impact.",
+        "Change live production files directly so that the client can more clearly see the impact."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Proving impact must not endanger the residents who use this portal. Choose evidence that makes the finding clear without executing code or changing production data.",
+      "taskInstructions": "Read <link=\"u04_struts_rce_response\"><u>responding to the Struts RCE finding</u></link>, then select the authorized validation method.",
+      "taskQuestion": "How should RCE risk be validated here?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Safe evidence keeps the focus on the vulnerable component and protects portal users.",
+      "answers": [
+        "Confirm the affected version, the exposure, and the vendor advisory without running exploit payloads.",
+        "Run a fully working exploit payload just to prove that remote command execution is possible.",
+        "Upload a functioning web shell onto the server in order to collect clear proof of impact.",
+        "Change live production files directly so that the client can more clearly see the impact."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q18_t02",
+  "parentQuestID": "ismg6860_u04_q18",
+  "articleID": "u04_struts_rce_response",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

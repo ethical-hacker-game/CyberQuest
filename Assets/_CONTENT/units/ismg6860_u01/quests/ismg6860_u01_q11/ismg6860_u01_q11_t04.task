@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The messages prove that NorthTec's internal directory was breached.",
+        "The sender is a known advanced persistent threat group.",
+        "The evidence supports targeted phishing informed by public reconnaissance; the actor remains unknown.",
+        "The look-alike domain proves that every UWork account was compromised."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Jamal Rivers:</b> We have a look-alike domain, messages sent to several employees, and public profiles that expose recipient details. Those facts support a campaign hypothesis, but they do not identify the operator or prove an internal breach.",
+      "taskInstructions": "Choose the assessment that separates the supported behavior from unsupported attribution.",
+      "taskQuestion": "What conclusion best fits the evidence?",
+      "taskCompleteText": "<b>Jamal Rivers:</b> Agreed. Public reconnaissance plausibly informed targeted phishing, while the actor, access level, and broader objective remain unconfirmed."
+    }
+  ],
+  "taskID": "ismg6860_u01_q11_t04",
+  "parentQuestID": "ismg6860_u01_q11",
+  "articleID": "u01_attack_lifecycle",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

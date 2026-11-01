@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "A targeted port scan to identify exposed services.",
+        "A password reset across every lab account.",
+        "A file transfer from all responding hosts.",
+        "A firmware replacement on the network devices."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Aisha:</b> Reachability replies can help an operator choose which systems to examine, but this capture shows no follow-on activity. A targeted service scan is one possibility defenders can monitor for, not a prediction about this source.",
+      "taskInstructions": "Review the linked <b>visible ports</b> guidance, then select a plausible follow-on activity without treating it as confirmed.",
+      "taskQuestion": "Which follow-on activity should defenders consider monitoring for?",
+      "taskCompleteText": "<b>Aisha:</b> A targeted port scan could reveal reachable services. We will monitor for it as a possibility, not report it as something this capture proves."
+    }
+  ],
+  "taskID": "ismg6860_u01_q29_t04",
+  "parentQuestID": "ismg6860_u01_q29",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

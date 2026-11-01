@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u05_d02",
+  "cityIndex": 7229,
+  "questIconID": "",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u05_d02_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Decision: Off-Hours Authentication",
+      "questDescription": "The enabled svc_bridgeworks directory account recorded a recent authentication at 02:41, outside Halloway's shifts from 06:00 to 22:00. Decide how to escalate one confirmed event without claiming a pattern the evidence does not yet show.",
+      "questCompleteText": "<b>Dana Osei:</b> Your response is recorded. We have one confirmed off-hours authentication; who or what used the account still requires investigation.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    }
+  ]
+}

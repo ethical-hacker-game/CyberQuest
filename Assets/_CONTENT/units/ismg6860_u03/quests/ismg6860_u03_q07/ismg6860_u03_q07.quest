@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u03_q07",
+  "cityIndex": 5137,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q07_t01",
+    "ismg6860_u03_q07_t02",
+    "ismg6860_u03_q07_t04_camera_audit",
+    "ismg6860_u03_q07_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Sticker On The Door",
+      "questDescription": "Decode the West Gate QR sticker, document its external login page, and audit likely placement routes.",
+      "questCompleteText": "<b>Asha Moreno:</b> The external badge-login route is documented, and physical security has a focused entrance-coverage audit.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Sticker On The Door",
+      "questDescription": "Decode the West Gate QR sticker, identify the credential lure behind it, and map the exposed placement routes.",
+      "questCompleteText": "<b>Felix Rane:</b> The hidden destination and repeatable placement route are both documented.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Sticker On The Door",
+      "questDescription": "Document the QR destination, prepare a precise visitor warning, and audit the entrance routes where another sticker could appear.",
+      "questCompleteText": "<b>Imani Vale:</b> Visitors can now be warned with the exact domain, and the entrance coverage addresses repeat placement.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

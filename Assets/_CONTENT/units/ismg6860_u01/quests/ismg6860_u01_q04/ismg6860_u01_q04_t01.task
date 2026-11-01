@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Interview employees close to him about who may have impersonated them.",
+        "Start by reviewing recent news articles and coverage about the CEO.",
+        "Call his friends and family for information.",
+        "Investigate rival companies with a motive to impersonate the CEO."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>George Wilkerson:</b> A fraudulent social account impersonated me and published a false company announcement. The market reacted before DataSequence issued a correction. Begin with public evidence and avoid intrusive contact with employees, friends, or family.",
+      "taskInstructions": "Select the least intrusive first step that could produce a documented lead about the public information surrounding the incident.",
+      "taskQuestion": "Where would you recommend we begin the investigation?",
+      "taskCompleteText": "<b>George Wilkerson:</b> Recent news coverage is a proportionate starting point. It may reveal public names and claims we can verify without contacting people close to me."
+    }
+  ],
+  "taskID": "ismg6860_u01_q04_t01",
+  "parentQuestID": "ismg6860_u01_q04",
+  "articleID": "u01_osint_fundamentals",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

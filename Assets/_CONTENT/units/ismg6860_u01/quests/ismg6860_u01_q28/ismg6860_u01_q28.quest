@@ -1,0 +1,27 @@
+{
+  "questID": "ismg6860_u01_q28",
+  "cityIndex": 3127,
+  "questIconID": "quest_icon_shouldersurfing_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q28_t01",
+    "ismg6860_u01_q28_t02",
+    "ismg6860_u01_q28_t03",
+    "ismg6860_u01_q28_t04_camera_route"
+  ],
+  "requiredQuestID": "ismg6860_u01_q27",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Shoulder Watch",
+      "questDescription": "At an approved café and office walkthrough, Milo asks you to assess what a nearby observer could learn from exposed screens and visible access routines. Identify practical ways to reduce that exposure.",
+      "questCompleteText": "<b>Milo Navarro:</b> You identified how a nearby observer could expose data and completed the authorized route assessment. We can now recommend practical controls without overstating what the exercise proves.",
+      "questCharacterID": "u01_milo_navarro",
+      "appScenarioID": ""
+    }
+  ]
+}

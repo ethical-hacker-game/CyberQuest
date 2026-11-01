@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Deploy cross-cut shredders, secure collection bins, and a documented disposal workflow with spot audits.",
+        "Run a single awareness session for staff and assume behavior will improve.",
+        "Focus only on improving digital document access controls and ignore physical disposal.",
+        "Do nothing and quietly monitor to exploit future discoveries personally."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Riley:</b> The camera sweep found exposure risks, and our disposal route is still worth checking. Leadership needs a practical control for paper records that does not depend on perfect staff behavior.",
+      "taskInstructions": "Choose a layered disposal control, then keep investigating the origin of the forum post separately.",
+      "taskQuestion": "Which remediation should I recommend?",
+      "taskCompleteText": "<b>Riley:</b> Secure collection bins, documented handling, shredding, and spot audits reduce the chance of paper records escaping through disposal. We will verify the forum leak's origin through the incident investigation."
+    }
+  ],
+  "taskID": "ismg6860_u01_q14_t03",
+  "parentQuestID": "ismg6860_u01_q14",
+  "articleID": "u01_physical_information_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

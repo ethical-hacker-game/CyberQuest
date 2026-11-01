@@ -1,0 +1,9 @@
+{
+  "skillID": "safevalidate",
+  "skillName": "Validation Kit",
+  "skillDescription": "A read-only confirmation toolset. Checks status codes, headers, and banners without initializing, resetting, or writing anything, keeping verification inside the assessment rather than causing an incident.",
+  "price": 2500,
+  "order": 30,
+  "requireTask": true,
+  "lockInDemo": false
+}

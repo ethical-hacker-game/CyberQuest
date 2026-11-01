@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Use the short tracking ID shown under the setup finding title. The dotted value beside it is the scanner plugin OID.",
+      "taskInstructions": "In the Results table, find <b>Exposed Setup / Install Interface</b> and select its short NB- tracking ID.",
+      "taskQuestion": "Which tracking ID belongs to the exposed setup interface?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. NB-VA-SETUP-01 identifies this finding throughout review and remediation.",
+      "answers": [
+        "NB-VA-DIR-02",
+        "NB-VA-HDR-03",
+        "NB-VA-SSH-04",
+        "NB-VA-SETUP-01"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Use the short tracking ID shown under the setup finding title. The dotted value beside it is only the scanner plugin OID.",
+      "taskInstructions": "In the Results table, find <b>Exposed Setup / Install Interface</b> and select its short NB- tracking ID.",
+      "taskQuestion": "Which tracking ID belongs to the exposed setup interface?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. NB-VA-SETUP-01 is the record tied to this opening.",
+      "answers": [
+        "NB-VA-DIR-02",
+        "NB-VA-HDR-03",
+        "NB-VA-SSH-04",
+        "NB-VA-SETUP-01"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Use the short tracking ID shown under the setup finding title. The dotted value beside it is the scanner plugin OID.",
+      "taskInstructions": "In the Results table, find <b>Exposed Setup / Install Interface</b> and select its short NB- tracking ID.",
+      "taskQuestion": "Which tracking ID belongs to the exposed setup interface?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. NB-VA-SETUP-01 keeps the public claim tied to a specific finding.",
+      "answers": [
+        "NB-VA-DIR-02",
+        "NB-VA-HDR-03",
+        "NB-VA-SSH-04",
+        "NB-VA-SETUP-01"
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q06_t02",
+  "parentQuestID": "ismg6860_u04_q06",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

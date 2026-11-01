@@ -1,0 +1,27 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "reports/tutorial",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> Ed handed me your notes. We need one scanner view, but not a wall of alarms. I care about the item an operations owner can reproduce, not every warning the tool can invent.",
+      "taskInstructions": "Run <b>openvas tutorial-report</b> in the terminal; it opens in the browser.",
+      "taskQuestion": "Open the First Signal scanner report.",
+      "taskCompleteText": "<b>Michele:</b> The report is open. Find the condition the service owner needs to reproduce and fix."
+    },
+    {
+      "correctAnswer": "reports/tutorial",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> Ed handed me your notes. We need one scanner view, but not a panic page. I care about what can be explained safely, not a dramatic dump of every alert.",
+      "taskInstructions": "Run <b>openvas tutorial-report</b> in the terminal; it opens in the browser.",
+      "taskQuestion": "Open the First Signal scanner report.",
+      "taskCompleteText": "<b>Ana:</b> The report is open. Find the evidence we can use to explain the exposure without overstating it."
+    }
+  ],
+  "taskID": "ismg6860_u00_q05_t01_open_scanner",
+  "parentQuestID": "ismg6860_u00_q05",
+  "articleID": "u00_scanner_results",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

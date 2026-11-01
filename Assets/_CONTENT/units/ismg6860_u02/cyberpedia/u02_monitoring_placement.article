@@ -1,0 +1,12 @@
+{
+  "articleID": "u02_monitoring_placement",
+  "videoURL": null,
+  "title": "Monitoring Placement and Scan Detection",
+  "content": "Security monitoring can only analyze traffic and events visible to its sensors. A firewall or intrusion-detection system at the internet edge may detect public scanning while missing traffic that moves between internal, vendor, or management zones. Monitoring placement therefore matters as much as the alert rule.\n\nStart with important traffic paths and trust boundaries. Identify where connections enter, leave, and cross between zones. Place network sensors, firewall logging, endpoint telemetry, or flow records where they can observe those transitions. Centralize the resulting data with synchronized time so analysts can connect a scan, a policy decision, and a destination response.\n\n<b>Detection is context, not failure</b>\n\nAn alert during an authorized assessment shows that a control observed something. Coordinate with the security operations team so expected test traffic can be distinguished from unrelated activity without disabling useful detection. Record which source, target, technique, and time caused the alert. If a noisy edge probe is detected but a meaningful internal route is not, the difference may reveal a visibility gap.\n\nNo single sensor provides complete coverage. Encrypted traffic, asymmetric routing, cloud paths, unmanaged switches, log filtering, and missing IPv6 support can create blind spots. Validate monitoring with safe, approved test cases and compare sensor results with packet captures and endpoint logs.\n\nGood recommendations tie evidence to placement: improve visibility at a specific boundary, log the relevant allowed traffic, tune an alert with known context, or remove an unnecessary route. The objective is dependable detection and response, not hiding assessment traffic or generating the largest number of alerts.",
+  "links": [
+    "scan activity",
+    "visibility placement",
+    "monitoring gap",
+    "internal visibility"
+  ]
+}

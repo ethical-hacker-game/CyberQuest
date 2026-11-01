@@ -1,0 +1,12 @@
+{
+  "articleID": "u02_authorized_scanning",
+  "videoURL": null,
+  "title": "Authorized Network Scanning",
+  "content": "Authorized network scanning is the controlled examination of systems and services for a defined defensive purpose. Permission is not a vague approval to explore. It is a set of boundaries that makes the work legal, safe, and useful.\n\n<b>What a scan authorization should define</b>\n\nA good authorization identifies the target assets or CIDR ranges, the source system, the allowed time window, permitted techniques, prohibited actions, operational contacts, and a stop condition. These details form the rules of engagement. A nearby address, an interesting service, or an informal request does not automatically expand them. If the investigation needs to move beyond the approved boundary, pause and obtain written approval from someone who has authority over the additional assets.\n\n<b>Why scope matters</b>\n\nScanning can create traffic, trigger alerts, consume resources, or expose sensitive topology. Even a technically correct command can disrupt an important service or collect information the tester was not permitted to access. Scope discipline also protects the evidence: reviewers can trust findings when they know where, when, and how the observations were made.\n\nBefore starting, translate the authorization into an explicit target list and exclusions. Confirm that the scan originates from the approved host, record the start time and tool settings, and keep an operational contact available. During the scan, watch for unexpected impact and stop if the agreed condition is reached. Document out-of-scope discoveries without investigating them further.\n\nThe purpose of authorized scanning is not maximum coverage. It is to answer an agreed security question with the minimum activity needed to produce reliable, defensible evidence.",
+  "links": [
+    "narrow scan window",
+    "written authorization",
+    "scope discipline",
+    "approved CIDR"
+  ]
+}

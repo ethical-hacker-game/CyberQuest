@@ -1,0 +1,31 @@
+{
+  "questID": "ismg6860_u00_q06",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_packet_gate",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u00_q06_t01_packet_gate"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Packet Gate",
+      "questDescription": "Michele asks {player} to tune traffic handling without breaking normal service traffic.",
+      "questCompleteText": "Packet Gate complete. The allowed traffic still supports operations while suspicious probes are blocked.",
+      "questCharacterID": "u00_michele",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Packet Gate",
+      "questDescription": "Ana asks {player} to protect the portal without making the system unusable for people who depend on it.",
+      "questCompleteText": "Packet Gate complete. The risky traffic is blocked without cutting off legitimate users.",
+      "questCharacterID": "u00_ana",
+      "appScenarioID": ""
+    }
+  ]
+}

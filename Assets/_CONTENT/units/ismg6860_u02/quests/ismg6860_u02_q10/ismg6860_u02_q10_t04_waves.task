@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "minigameType": "Waves",
+      "minigameHeaderText": "Quiet Target Response Lab",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "wavesSettings": {
+        "tolerance": 0.14
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Scan states can depend on small differences in observed responses. Practice comparing signal shapes by matching each reference wave without treating the exercise as packet evidence from ECHO-73.",
+      "taskInstructions": "Use the height, width, and shift sliders to drive each wave's sync readout to 100 percent; the following trace unlocks only after the current one locks in.",
+      "taskQuestion": "Match the quiet-target response patterns.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> You matched the reference patterns. The actual UDP finding still depends on the scan and packet capture."
+    },
+    {
+      "minigameType": "Waves",
+      "minigameHeaderText": "Quiet Target Response Lab",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "wavesSettings": {
+        "tolerance": 0.14
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> Scan states require careful comparison when responses are limited. Match the reference waves by shape, width, and shift, but keep the exercise separate from the case evidence.",
+      "taskInstructions": "Use the height, width, and shift sliders to drive each wave's sync readout to 100 percent; the following trace unlocks only after the current one locks in.",
+      "taskQuestion": "Match the quiet-target response patterns.",
+      "taskCompleteText": "<b>Kade Mercer:</b> The reference waves match. Use the real scan and capture when you update the map."
+    },
+    {
+      "minigameType": "Waves",
+      "minigameHeaderText": "Quiet Target Response Lab",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "wavesSettings": {
+        "tolerance": 0.14
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> Scan states must be compared carefully before they become public claims. Match the reference waves as practice, then rely on the actual scan and capture for the report.",
+      "taskInstructions": "Use the height, width, and shift sliders to drive each wave's sync readout to 100 percent; the following trace unlocks only after the current one locks in.",
+      "taskQuestion": "Match the quiet-target response patterns.",
+      "taskCompleteText": "<b>Lena Ortiz:</b> The reference patterns match. The report must still cite the real UDP and ICMP observations."
+    }
+  ],
+  "taskID": "ismg6860_u02_q10_t04_waves",
+  "parentQuestID": "ismg6860_u02_q10",
+  "articleID": "u02_scan_states",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

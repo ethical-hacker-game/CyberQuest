@@ -1,0 +1,11 @@
+{
+  "articleID": "u05_smtp_enumeration",
+  "videoURL": null,
+  "title": "SMTP Verbs and User Verification",
+  "content": "<b>SMTP reply codes describe what the server accepted at the current stage; they do not prove final delivery or readership.</b>\n\n- <b>VRFY</b> asks the server to verify a user. A 252 reply explicitly declines to verify, even if the server says it will attempt delivery.\n- <b>MAIL FROM</b> starts a mail transaction and identifies the envelope sender.\n- <b>RCPT TO</b> proposes an envelope recipient after MAIL FROM. A 250 reply means the server accepted that recipient at this stage; a 550 reply rejects it.\n\nComparing a target address with a clearly invalid control can reveal whether the server distinguishes accepted recipients. Catch-all domains, relays, aliases, and later delivery failures can still produce a 250 response, so do not describe it as proof of a local mailbox or completed delivery.\n\nWithout STARTTLS, SMTP commands, addresses, and replies travel as readable text. Defenses include disabling unnecessary VRFY and EXPN support, reducing recipient-enumeration differences where operationally appropriate, enforcing STARTTLS where required, preventing open relay, and rate-limiting repeated probes.",
+  "links": [
+    "VRFY",
+    "RCPT TO",
+    "open relay"
+  ]
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>r4nd0n3xq • HiddenForum</title>
+    <base href="./">
+    <script>
+        (function enforceTrailingSlash() {
+            var folderName = '/r4nd0n3xq.onion';
+            var path = window.location.pathname;
+            if (path.endsWith(folderName)) {
+                var normalized = path + '/';
+                var suffix = (window.location.search || '') + (window.location.hash || '');
+                window.location.replace(normalized + suffix);
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="assets/css/forum.css">
+  <script src="../cq-bridge.js"></script>
+</head>
+<body>
+    <div class="site-shell">
+        <header class="header">
+            <div class="title-block">
+                <a class="site-title" href="index.html">r4nd0n3xq</a>
+                <span>HiddenForum</span>
+            </div>
+        </header>
+
+        <div class="announcement">Site maintenance scheduled. Archived content may be reorganized.</div>
+
+        <div class="layout">
+            <section class="center-block">
+                <h2 class="section-title">Pinned threads</h2>
+                <div class="thread-card">
+                    <div class="pinned-label">Pinned</div>
+                    <a href="vault-archive.html" class="thread-title">Vault-Archive</a>
+                    <div class="path-hint">/Vault-Archive</div>
+                    <p>A central ledger for public entries. Chronological posts with repeating naming pattern. Read-only.</p>
+                    <p class="meta">by mod_ash</p>
+                </div>
+                <div class="thread-card">
+                    <div class="pinned-label">Pinned</div>
+                    <a href="#" class="disabled thread-title">Listings: Trusted vendors</a>
+                    <p>Top vendor list and brief notes.</p>
+                    <p class="meta">by staff</p>
+                </div>
+                <ul class="threads-list">
+                    <li>Listings: Trusted vendors</li>
+                    <li>General chatter</li>
+                    <li>Snapshot: 2025-07-12</li>
+                </ul>
+            </section>
+
+            <section class="column">
+                <h2 class="section-title">Categories</h2>
+                <div class="category-card">
+                    <h3>Announcements</h3>
+                    <p>Operational notices and system memos.</p>
+                </div>
+                <div class="category-card">
+                    <h3>Listings</h3>
+                    <p>Static vendor references. No replies.</p>
+                </div>
+                <div class="category-card highlight">
+                    <h3><a href="vault-archive.html" class="category-link">Vault-Archive</a></h3>
+                    <p>Ledger mirror. Read-only. Pinned for visibility.</p>
+                    <a href="vault-archive.html" class="category-button">Enter vault</a>
+                </div>
+                <div class="category-card">
+                    <h3>Off-topic</h3>
+                    <p>Low-signal chatter archived periodically.</p>
+                </div>
+            </section>
+
+            <aside class="column">
+                <h2 class="section-title">Utility</h2>
+                <input class="sidebar-input" type="search" placeholder="Search disabled" disabled aria-disabled="true">
+                <h3 class="section-title">Recent activity</h3>
+                <ul class="recent-list">
+                    <li>Vault-Archive updated 2025-07-18</li>
+                    <li>Listings refreshed 2025-07-15</li>
+                    <li>General chatter 2025-07-12</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

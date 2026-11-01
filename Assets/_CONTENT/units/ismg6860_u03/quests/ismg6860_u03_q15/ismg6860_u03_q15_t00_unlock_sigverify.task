@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "sigverify",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Two installers use the same name and artwork. Signature Verifier creates a <b>build comparison</b> of package identifiers, publishers, hashes, and signing certificates without running either file.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Signature Verifier</b>.",
+      "taskQuestion": "Unlock Signature Verifier.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Signature Verifier is ready to compare the installers without executing them."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "sigverify",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Matching artwork does not establish matching provenance. Signature Verifier creates a <b>build comparison</b> of the identity and signing fields that are harder to imitate consistently.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Signature Verifier</b>.",
+      "taskQuestion": "Unlock Signature Verifier.",
+      "taskCompleteText": "<b>Felix Rane:</b> Signature Verifier is ready to show where the two builds diverge."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "sigverify",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A warning should cite verifiable differences instead of asking staff to judge appearances. Signature Verifier produces a <b>build comparison</b> from package and signing data.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Signature Verifier</b>.",
+      "taskQuestion": "Unlock Signature Verifier.",
+      "taskCompleteText": "<b>Imani Vale:</b> Signature Verifier is ready to document checkable differences."
+    }
+  ],
+  "taskID": "ismg6860_u03_q15_t00_unlock_sigverify",
+  "parentQuestID": "ismg6860_u03_q15",
+  "articleID": "u03_malicious_app_provenance",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

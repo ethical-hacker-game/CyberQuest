@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Scan output only makes sense when you know what should be separated. Asterlink has three zones with different trust levels, and ECHO-73 has not yet been placed with confidence.",
+      "taskInstructions": "Open <b>Zenmap</b> and view the Asterlink topology.",
+      "taskQuestion": "Open the topology stage.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> The topology shows the DMZ, ticketing VLAN, and vendor maintenance segment as separate zones.",
+      "actionType": "app_stage_changed",
+      "actionTag": "topology_zones"
+    }
+  ],
+  "taskID": "ismg6860_u02_q03_t01",
+  "parentQuestID": "ismg6860_u02_q03",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u02_q03_t01_zone_diagram"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

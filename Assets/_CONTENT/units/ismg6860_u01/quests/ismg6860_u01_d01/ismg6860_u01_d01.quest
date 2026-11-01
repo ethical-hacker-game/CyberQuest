@@ -1,0 +1,24 @@
+{
+  "questID": "ismg6860_u01_d01",
+  "cityIndex": 2705,
+  "questIconID": "sample_decision_icon_2",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u01_d01_decision"
+  ],
+  "requiredQuestID": "ismg6860_u01_q03",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "",
+      "questName": "Internal Exports Decision",
+      "questDescription": "The exposed NexaCore images contain client details, payment references, project codes, and notes describing anomalies. Decide how to handle this sensitive evidence without treating the screenshots as proof of wrongdoing.",
+      "questCompleteText": "<b>Samira:</b> You chose how to handle the NexaCore evidence. The decision is recorded, while the source material remains subject to verification and careful handling.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": ""
+    }
+  ]
+}

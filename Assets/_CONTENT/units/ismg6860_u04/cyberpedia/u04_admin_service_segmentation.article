@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_admin_service_segmentation",
+  "videoURL": null,
+  "title": "Segmenting Administrative Services",
+  "content": "Administrative services such as <b>RDP on TCP/3389</b> should be reachable only from approved management hosts, such as a hardened jump host. General staff, contractor, and public networks should not reach them. Use explicit allow rules for required management and monitoring flows, then apply a default-deny policy to unmatched traffic. This limits lateral movement if an ordinary internal device is compromised.",
+  "links": [
+    "admin-service segmentation"
+  ]
+}

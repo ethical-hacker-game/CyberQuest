@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> We have enough evidence to act, but we do not yet see the whole campaign. A coordinated staff warning protects likely targets while preserving the investigation. Quiet observation may reveal more of the network but leaves staff exposed. An immediate public warning reaches more people but bypasses the coordinated response.\n\nFelix favors observation. Imani wants a public warning now. I want a <b>safe way to report</b> what we know and give staff specific indicators. Choose the priority that should guide our first response.",
+      "taskInstructions": "Review each response and its immediate tradeoff, then choose one.",
+      "taskQuestion": "How do you handle the first response?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Your response is recorded. The perspective aligned with that choice will guide the next stage of the investigation."
+    }
+  ],
+  "taskID": "ismg6860_u03_d01_decision",
+  "parentQuestID": "ismg6860_u03_d01",
+  "articleID": "u03_safe_reporting",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision",
+  "decisions": [
+    {
+      "decisionText": "Coordinate the response: preserve and report the evidence, then warn staff with specific indicators.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Withhold the warning and quietly follow the fake accounts, accepting continued staff exposure to map their reach.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Publish a redacted warning now, reaching volunteers and visitors before the coordinated response is ready.",
+      "personaIndex": 2,
+      "personaValueChange": 10
+    }
+  ]
+}

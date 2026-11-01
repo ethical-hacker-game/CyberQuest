@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acunetix / Reflected XSS: citizen-search</title>
+  <style>
+    :root{--ink:#1f2733;--muted:#6b7686;--line:#e4e8ee;--bg:#f4f6f9;--rail:#16213a;--rail-h:#22335b;--accent:#16b378;
+      --crit:#b3203a;--high:#e35d2b;--med:#f0a800;--low:#2b86c5;--info:#8a96a6}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);font-size:14px}
+    .shell{display:flex;min-height:100vh}
+    .rail{width:212px;background:var(--rail);color:#c7d2e6;flex-shrink:0;padding-top:16px}
+    .rail .brand{display:flex;align-items:center;gap:10px;padding:6px 20px 18px;font-weight:800;font-size:18px;color:#fff}
+    .rail .brand .mark{width:26px;height:26px;border-radius:6px;background:linear-gradient(135deg,#16b378,#0b8f9c);display:flex;align-items:center;justify-content:center;color:#06231b;font-weight:900}
+    .rail a{display:flex;align-items:center;gap:10px;padding:11px 20px;color:#a9b6cd;text-decoration:none;font-weight:600;font-size:13.5px}
+    .rail a.active{background:var(--rail-h);color:#fff;box-shadow:inset 3px 0 0 var(--accent)}
+    .rail a .ico{width:16px;text-align:center;opacity:.85}
+    .body{flex:1;display:flex;flex-direction:column}
+    .top{height:52px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 26px;gap:14px}
+    .top .t{font-weight:700;font-size:15px}
+    .top .spacer{flex:1}
+    .top .user{color:var(--muted);font-size:13px}
+    .main{padding:24px 28px 60px;max-width:1000px}
+    .crumbs{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .crumbs a{color:var(--accent);text-decoration:none}
+    .vhead{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+    .vhead h1{margin:0;font-size:22px}
+    .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;color:#fff;background:var(--med);border-radius:3px;padding:4px 9px}
+    .conf{font-size:11px;font-weight:700;color:#fff;background:#2fa36b;border-radius:10px;padding:3px 10px}
+    .affected{color:var(--accent);font-weight:600;margin:4px 0 20px;word-break:break-all}
+    .card{background:#fff;border:1px solid var(--line);border-radius:8px;margin-bottom:18px}
+    .card .h{padding:13px 18px;border-bottom:1px solid var(--line);font-weight:700;font-size:12px;letter-spacing:.5px;text-transform:uppercase;color:#56636f}
+    .card .c{padding:16px 18px;line-height:1.6}
+    .card .c p{margin:0 0 10px}
+    .classify{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+    .classify div{padding:14px 16px;border-right:1px solid var(--line)}
+    .classify div:last-child{border-right:none}
+    .classify b{display:block;font-size:11px;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+    pre{background:#16213a;color:#cfe0f2;border-radius:6px;padding:14px 16px;font-family:Consolas,"Courier New",monospace;font-size:12.5px;line-height:1.6;overflow:auto;white-space:pre-wrap;margin:0}
+    .hl{color:#ffd166;font-weight:700}
+    code{background:#eef1f5;border:1px solid #dde3ea;border-radius:4px;padding:1px 5px;font-family:Consolas,monospace}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <div class="brand"><span class="mark">A</span>acunetix</div>
+      <a href="../../192.168.20.10;3443/"><span class="ico">&#9632;</span>Dashboard</a>
+      <a href="../../192.168.20.10;3443/"><span class="ico">&#9678;</span>Targets</a>
+      <a href="../../192.168.20.10;3443/"><span class="ico">&#9655;</span>Scans</a>
+      <a class="active" href="../../192.168.20.10;3443/vulnerabilities/reflected-xss.html"><span class="ico">&#9888;</span>Vulnerabilities</a>
+      <a href="../../192.168.20.10;3443/"><span class="ico">&#9636;</span>Reports</a>
+      <a href="../../192.168.20.10;3443/"><span class="ico">&#9881;</span>Settings</a>
+    </aside>
+
+    <div class="body">
+      <div class="top">
+        <span class="t">Vulnerability</span>
+        <span class="spacer"></span>
+        <span class="user">analyst@assessment</span>
+      </div>
+
+      <main class="main">
+        <div class="crumbs"><a href="../../192.168.20.10;3443/">Scan Result</a> &rsaquo; Vulnerabilities &rsaquo; Cross-Site Scripting (Reflected)</div>
+        <div class="vhead"><span class="tag">Medium</span><h1>Cross-Site Scripting (Reflected)</h1><span class="conf">Confirmed</span></div>
+        <div class="affected">https://portal.northbridge.com/services/search?q=&lt;input&gt;</div>
+
+        <div class="card">
+          <div class="classify">
+            <div><b>CVSS 3.1</b>6.1</div>
+            <div><b>CWE</b>CWE-79</div>
+            <div><b>OWASP</b>A03:2021 Injection</div>
+            <div><b>Affected Feature</b>citizen-search</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="h">Description</div>
+          <div class="c">
+            <p>The <b>citizen-search</b> feature reflects the value of the <code>q</code> request parameter back into the response without sufficient output encoding. A crafted value in the query string is returned inside the page and interpreted by the browser.</p>
+            <p>Reflected cross-site scripting lets an attacker run script in the context of a resident's session when that resident follows a prepared link, which can lead to session or data exposure on a public-facing civic service.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="h">Proof: HTTP Request / Response</div>
+          <div class="c" style="padding:0">
+            <pre>GET /services/search?q=<span class="hl">test&lt;script&gt;cqxss()&lt;/script&gt;</span> HTTP/1.1
+Host: portal.northbridge.com
+
+--- response (excerpt) ---
+&lt;h3&gt;Results for "<span class="hl">test&lt;script&gt;cqxss()&lt;/script&gt;</span>"&lt;/h3&gt;
+
+The injected value was returned unencoded inside the results heading.</pre>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="h">Recommendation</div>
+          <div class="c">
+            <p>Apply context-aware output encoding when reflecting user input into HTML, and validate / sanitize input on the search endpoint.</p>
+            <p><b>Remediation owner:</b> application development team.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="../../cq-bridge.js"></script>
+</body>
+</html>

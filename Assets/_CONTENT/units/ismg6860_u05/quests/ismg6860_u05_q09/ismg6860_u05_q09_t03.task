@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Because rpcinfo cannot display the protocol or port for registered programs.",
+        "Because the second tool is required to authenticate before the export is visible.",
+        "Because Metasploit scans a considerably wider port range than rpcinfo is ever capable of reaching.",
+        "Because an independent implementation confirming the same result makes the finding defensible."
+      ],
+      "correctAnswer": 3,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> I am about to put this in front of the people who sign the checks, and their first move will be to ask whether the utility was simply wrong.\n\nOne utility's word does not survive that room. Two separate pieces of software, written by different people, arriving at the same answer does.",
+      "taskInstructions": "Run <b>msfconsole sunrpc</b> in the terminal and check its listing against what rpcinfo returned.",
+      "taskQuestion": "Why confirm the portmapper finding with a second tool?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. A separate implementation returned the same program, port, and protocol mapping."
+    },
+    {
+      "answers": [
+        "Because rpcinfo cannot display the protocol or port for registered programs.",
+        "Because the second tool is required to authenticate before the export is visible.",
+        "Because Metasploit scans a considerably wider port range than rpcinfo is ever capable of reaching.",
+        "Because an independent implementation confirming the same result makes the finding defensible."
+      ],
+      "correctAnswer": 3,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> One tool is a rumour. Two tools that do not share a line of code agreeing with each other is a fact, and facts are what people pay for.\n\nI have watched buyers walk away from perfectly good intelligence because it rested on a single scanner's opinion. I do not lose sales that way any more.",
+      "taskInstructions": "Run <b>msfconsole sunrpc</b> in the terminal and check its listing against what rpcinfo returned.",
+      "taskQuestion": "Why confirm the portmapper finding with a second tool?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. Matching results from separate implementations make the service map more reliable."
+    },
+    {
+      "answers": [
+        "Because rpcinfo cannot display the protocol or port for registered programs.",
+        "Because the second tool is required to authenticate before the export is visible.",
+        "Because Metasploit scans a considerably wider port range than rpcinfo is ever capable of reaching.",
+        "Because an independent implementation confirming the same result makes the finding defensible."
+      ],
+      "correctAnswer": 3,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Halloway's people are going to try to argue this away, and their opening move will be to blame the tool rather than the export.\n\nSo it has to hold up twice, from two pieces of software that have nothing to do with each other, before it goes anywhere near a meeting room.",
+      "taskInstructions": "Run <b>msfconsole sunrpc</b> in the terminal and check its listing against what rpcinfo returned.",
+      "taskQuestion": "Why confirm the portmapper finding with a second tool?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The second implementation confirms the same exposed RPC program table."
+    }
+  ],
+  "taskID": "ismg6860_u05_q09_t03",
+  "parentQuestID": "ismg6860_u05_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

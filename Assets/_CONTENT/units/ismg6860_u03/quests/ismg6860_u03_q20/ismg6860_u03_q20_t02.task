@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the profile name used throughout the conversation so matching reports can reference the same indicator.",
+      "taskInstructions": "On the VolunteerConnect archive, read <b>Profile Review</b> and type the profile name.",
+      "taskQuestion": "What name does the relationship-lure profile use?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: Jordan Hale. No matching Harborview record was found for that name.",
+      "correctAnswers": [
+        "Jordan Hale"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the profile name used across the timeline. It is a reusable indicator even if the operator changes the conversation.",
+      "taskInstructions": "On the VolunteerConnect archive, read <b>Profile Review</b> and type the profile name.",
+      "taskQuestion": "What name does the relationship-lure profile use?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: Jordan Hale. The name does not match a Harborview volunteer, vendor, or staff record.",
+      "correctAnswers": [
+        "Jordan Hale"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Record the profile name precisely so the warning provides a concrete indicator without exposing the person who received the messages.",
+      "taskInstructions": "On the VolunteerConnect archive, read <b>Profile Review</b> and type the profile name.",
+      "taskQuestion": "What name does the relationship-lure profile use?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: Jordan Hale. The warning can name the profile while protecting the recipient.",
+      "correctAnswers": [
+        "Jordan Hale"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q20_t02",
+  "parentQuestID": "ismg6860_u03_q20",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

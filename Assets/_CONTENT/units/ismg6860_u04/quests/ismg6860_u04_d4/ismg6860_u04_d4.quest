@@ -1,0 +1,39 @@
+{
+    "questID":  "ismg6860_u04_d4",
+    "cityIndex":  7278,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_d4_dialogue"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "External Audit Check-In",
+                         "questDescription":  "Dr. Owen Kepler reviews how {player} has separated verified evidence from untested conclusions before the assessment-types phase.",
+                         "questCompleteText":  "The external audit advisor accepts the evidence standard used so far and expects it to continue.",
+                         "questCharacterID":  "u04_owen_kepler",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "External Audit Check-In",
+                         "questDescription":  "Dr. Owen Kepler reviews how {player} has separated verified evidence from untested conclusions before the assessment-types phase.",
+                         "questCompleteText":  "The external audit advisor will scrutinize authorization and evidence boundaries during the next phase.",
+                         "questCharacterID":  "u04_owen_kepler",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "External Audit Check-In",
+                         "questDescription":  "Dr. Owen Kepler reviews how {player} has separated verified evidence from untested conclusions before the assessment-types phase.",
+                         "questCompleteText":  "The external audit advisor requires evidence that remains credible under public and technical review.",
+                         "questCharacterID":  "u04_owen_kepler",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

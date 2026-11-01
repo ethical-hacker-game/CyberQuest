@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The technical assessment is complete. You kept the work within scope and separated confirmed evidence from assumptions, which gives Northbridge a report it can act on and defend.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Mara Voss:</b> The review message is ready. Open it when you are ready."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> You mapped the conditions and stated their limits instead of turning them into a story of confirmed compromise. That discipline makes the report harder to dismiss and harder to misuse.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> The review message is waiting. It records the conditions, the uncertainty, and the actions Northbridge accepted."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> You kept the public impact visible without overstating the evidence. The review matters because it turns that record into accountable remediation and a follow-up check.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> The review message is ready. The next measure of success is whether the promised changes are verified."
+    }
+  ],
+  "taskID": "ismg6860_u04_last_quest_t00_voice",
+  "parentQuestID": "ismg6860_u04_last_quest",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

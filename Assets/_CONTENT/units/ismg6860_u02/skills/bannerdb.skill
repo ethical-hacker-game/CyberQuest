@@ -1,0 +1,9 @@
+{
+  "skillID": "bannerdb",
+  "skillName": "Service Fingerprints",
+  "skillDescription": "A training framework for recording service banners and separating direct observations from product, version, and risk conclusions.",
+  "price": 2000,
+  "order": 30,
+  "requireTask": true,
+  "lockInDemo": false
+}

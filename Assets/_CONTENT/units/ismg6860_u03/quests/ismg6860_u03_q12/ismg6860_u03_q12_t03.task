@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A legitimate support call can discuss a warranty. Identify the combination of a fabricated loss and unsafe request that exposes this pretext.",
+      "taskInstructions": "Use the exact threat and requested information in the preserved call script.",
+      "taskQuestion": "Which finding most strongly supports treating the call as a pretext scam?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The caller invents warranty loss to pressure Riley into disclosing account and recovery details.",
+      "answers": [
+        "The caller references a real phone-support scenario.",
+        "The script invents warranty loss to demand account details.",
+        "The tone stays polite while the pressure keeps rising.",
+        "The call mentions the device model and support desk."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The polite tone is irrelevant. Choose the fabricated consequence used to make disclosure feel necessary.",
+      "taskInstructions": "Use the exact threat and requested information in the preserved call script.",
+      "taskQuestion": "Which finding most strongly supports treating the call as a pretext scam?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The invented warranty loss creates pressure for the account and recovery details.",
+      "answers": [
+        "The caller references a real phone-support scenario.",
+        "The tone stays polite while the pressure keeps rising.",
+        "The script invents warranty loss to demand account details.",
+        "The call mentions the device model and support desk."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Build the warning around the verifiable combination of false consequence and requested information, not around assumptions about Riley.",
+      "taskInstructions": "Use the exact threat and requested information in the preserved call script.",
+      "taskQuestion": "Which finding most strongly supports treating the call as a pretext scam?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The caller threatens warranty loss to extract account and recovery details.",
+      "answers": [
+        "The caller references a real phone-support scenario.",
+        "The tone stays polite while the pressure keeps rising.",
+        "The call mentions the device model and support desk.",
+        "The script invents warranty loss to demand account details."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u03_q12_t03",
+  "parentQuestID": "ismg6860_u03_q12",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

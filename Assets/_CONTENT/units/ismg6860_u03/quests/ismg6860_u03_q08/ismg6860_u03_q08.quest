@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u03_q08",
+  "cityIndex": 5138,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q08_t01",
+    "ismg6860_u03_q08_t02",
+    "ismg6860_u03_q08_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Proximity Share In The Lobby",
+      "questDescription": "Review an unsolicited proximity-share log and identify the configuration profile disguised as a floor-plan update.",
+      "questCompleteText": "<b>Asha Moreno:</b> The sender and configuration profile are documented. Staff should decline and report this share.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Proximity Share In The Lobby",
+      "questDescription": "Review the lobby proximity-share log and identify the device profile hidden behind a routine update name.",
+      "questCompleteText": "<b>Felix Rane:</b> The plausible sender name and configuration-profile payload are both documented.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Proximity Share In The Lobby",
+      "questDescription": "Collect the sender and filename indicators visitors need to recognize an unsolicited lobby share.",
+      "questCompleteText": "<b>Imani Vale:</b> The visitor warning can now name both the sender device and offered configuration profile.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Helpful language and familiar branding do not establish identity. Choose the profile evidence that can be verified and cited in a report.",
+      "taskInstructions": "Review the profile's handle, join date, and account status.",
+      "taskQuestion": "What best proves this profile is an impersonator?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The new handle is not Harborview's verified account, regardless of how convincing the profile sounds.",
+      "answers": [
+        "The profile uses Harborview wording and responds quickly.",
+        "The avatar and banner resemble Harborview branding.",
+        "The posts use confident, official-sounding language.",
+        "The new handle is not Harborview's verified account."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u03_q04_t03",
+  "parentQuestID": "ismg6860_u03_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

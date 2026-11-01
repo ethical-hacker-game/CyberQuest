@@ -1,0 +1,36 @@
+[
+  {
+    "queries": [
+      "training northstar",
+      "northstar status",
+      "training northstar status",
+      "portal status",
+      "ns-1047"
+    ],
+    "results": [
+      {
+        "title": "Training Northstar Service Portal",
+        "description": "Service availability, diagnostic notices, and maintenance updates from Training Northstar operations.",
+        "interactive": true,
+        "url": "https://portal.trainingnorthstar.com/status/",
+        "realUrl": "/portal.trainingnorthstar.com/status/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "directory indexing",
+      "web exposure",
+      "first signal"
+    ],
+    "results": [
+      {
+        "title": "First Signal Investigation Notes",
+        "description": "First Signal investigation records are restricted to the authorized review team and are not published in this index.",
+        "interactive": false,
+        "url": "",
+        "realUrl": ""
+      }
+    ]
+  }
+]

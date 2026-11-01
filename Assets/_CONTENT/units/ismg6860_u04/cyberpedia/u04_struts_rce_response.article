@@ -1,0 +1,10 @@
+{
+  "articleID": "u04_struts_rce_response",
+  "videoURL": null,
+  "title": "Responding to the Struts RCE Finding",
+  "content": "<b>The critical scan entry identifies Apache Struts on the portal tier as a remote code execution risk, but it does not prove that code execution has occurred.</b> Validate the finding by confirming the component version, exposure, and relevant vendor advisory without running a payload on the live service. Reduce reachability immediately, patch or mitigate the affected component, preserve logs and volatile memory if compromise is suspected, monitor for indicators, and rescan to verify the correction.",
+  "links": [
+    "responding to the Struts RCE finding",
+    "the Struts RCE response guidance"
+  ]
+}

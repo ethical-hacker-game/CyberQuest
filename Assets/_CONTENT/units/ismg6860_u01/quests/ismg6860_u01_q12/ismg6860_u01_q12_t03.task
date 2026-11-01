@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Post a public question in the main thread asking for introductions.",
+        "Send a private message asking the top vendor for proof of legitimacy.",
+        "Observe silently and record only case-relevant visible details in approved notes.",
+        "Create a new account and attempt to impersonate an active member."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Shade:</b> The visible forum structure is enough for this task. Posting, messaging, or impersonating a member would create unnecessary contact and exceed the passive review scope.",
+      "taskInstructions": "Choose the least intrusive collection approach permitted by the case.",
+      "taskQuestion": "How should you review the forum?",
+      "taskCompleteText": "<b>Shade:</b> Correct. Passive observation minimizes contact and limits collection to details relevant to the case; it does not guarantee anonymity."
+    }
+  ],
+  "taskID": "ismg6860_u01_q12_t03",
+  "parentQuestID": "ismg6860_u01_q12",
+  "articleID": "u01_safe_investigation_environments",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

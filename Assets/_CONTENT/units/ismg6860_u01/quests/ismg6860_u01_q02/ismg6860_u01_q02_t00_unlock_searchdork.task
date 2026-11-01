@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "searchdork",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> Search operators narrow public results by details such as anchor text, file type, or domain. Unlock the operator pack so we can begin NorthTec’s authorized external review.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Search Operators</b>.",
+      "taskQuestion": "Unlock Search Operators in the Lab panel.",
+      "taskCompleteText": "<b>Samira:</b> Search Operators are ready. We can now narrow Cyber Search results without interacting with NorthTec’s systems."
+    }
+  ],
+  "taskID": "ismg6860_u01_q02_t00_unlock_searchdork",
+  "parentQuestID": "ismg6860_u01_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

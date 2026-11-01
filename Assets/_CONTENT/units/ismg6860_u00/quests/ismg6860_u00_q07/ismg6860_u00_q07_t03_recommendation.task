@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Keep monitoring the finding and decide what to do later.",
+        "Disable directory indexing, move exposed files out of the web root, and rescan.",
+        "Publish the full exposed file path publicly so that anyone can check it for themselves.",
+        "Ignore the finding because no login was actually bypassed."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> I need something I can hand to the system owner. It should name the fix, preserve the service, and include a verification step.",
+      "taskInstructions": "",
+      "taskQuestion": "Which recommendation is strongest?",
+      "taskCompleteText": "<b>Michele:</b> Correct. The recommendation gives operations a fix and a way to confirm it worked."
+    },
+    {
+      "answers": [
+        "Keep monitoring the finding and decide what to do later.",
+        "Publish the full exposed file path publicly so that anyone can check it for themselves.",
+        "Disable directory indexing, move exposed files out of the web root, and rescan.",
+        "Ignore the finding because no login was actually bypassed."
+      ],
+      "correctAnswer": 2,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> I need something I can explain without making the exposure worse. It should reduce risk and avoid spreading sensitive paths.",
+      "taskInstructions": "",
+      "taskQuestion": "Which recommendation is strongest?",
+      "taskCompleteText": "<b>Ana:</b> Correct. The recommendation reduces exposure without broadcasting a live route."
+    }
+  ],
+  "taskID": "ismg6860_u00_q07_t03_recommendation",
+  "parentQuestID": "ismg6860_u00_q07",
+  "articleID": "u00_security_handoff",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

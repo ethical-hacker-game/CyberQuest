@@ -1,0 +1,25 @@
+{
+  "correctAnswers": [],
+  "variants": [
+    {
+      "correctAnswers": [
+        "duck451",
+        "duck451.net"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> BikeForge is investigating intermittent connection failures and security warnings. DNS is one possible cause, so compare the domain’s published name servers with the approved list in my email before drawing conclusions.",
+      "taskInstructions": "Open the terminal and run <b>dig NS BikeForgeGames.com</b>. Compare the <b>ANSWER SECTION</b> with BikeForge’s approved name servers, then type the unexpected hostname.",
+      "taskQuestion": "Which published name server is not on BikeForge’s approved list?",
+      "taskCompleteText": "<b>Samira:</b> You identified <b>duck451.net</b> as the unapproved name server. We now have a specific record to verify with BikeForge and its registrar."
+    }
+  ],
+  "taskID": "ismg6860_u01_q05_t01",
+  "parentQuestID": "ismg6860_u01_q05",
+  "articleID": "u01_dns_intelligence",
+  "mailsOnStart": [
+    "ismg6860_u01_q05_t01_start_samira-dig"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

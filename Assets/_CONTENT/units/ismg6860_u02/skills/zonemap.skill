@@ -1,0 +1,9 @@
+{
+  "skillID": "zonemap",
+  "skillName": "Zone Map",
+  "skillDescription": "A training framework for organizing observed hosts by their intended network zone and checking whether a path crosses a trust boundary.",
+  "price": 1200,
+  "order": 10,
+  "requireTask": true,
+  "lockInDemo": false
+}

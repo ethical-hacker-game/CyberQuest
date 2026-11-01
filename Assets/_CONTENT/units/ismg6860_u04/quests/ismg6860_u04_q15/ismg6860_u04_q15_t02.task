@@ -1,0 +1,57 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Record the affected feature so developers can reproduce the behavior in the correct function.",
+      "taskInstructions": "Run <b>acunetix scan citizen-portal</b> if the report is closed. Open <b>Cross-Site Scripting (Reflected)</b> and read the <b>Affected Feature</b> field.",
+      "taskQuestion": "Which feature is affected?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The citizen-search feature reflects the q parameter without sufficient output encoding.",
+      "correctAnswers": [
+        "citizen-search",
+        "citizen search",
+        "citizensearch",
+        "search",
+        "service search",
+        "services search"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Identify the feature name that turns the general XSS class into a reproducible finding.",
+      "taskInstructions": "Run <b>acunetix scan citizen-portal</b> if the report is closed. Open <b>Cross-Site Scripting (Reflected)</b> and read the <b>Affected Feature</b> field.",
+      "taskQuestion": "Which feature is affected?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. citizen-search is the affected public function.",
+      "correctAnswers": [
+        "citizen-search",
+        "citizen search",
+        "citizensearch",
+        "search",
+        "service search",
+        "services search"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Identify the resident-facing function affected by the confirmed XSS finding.",
+      "taskInstructions": "Run <b>acunetix scan citizen-portal</b> if the report is closed. Open <b>Cross-Site Scripting (Reflected)</b> and read the <b>Affected Feature</b> field.",
+      "taskQuestion": "Which feature is affected?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The finding belongs to the citizen-search feature.",
+      "correctAnswers": [
+        "citizen-search",
+        "citizen search",
+        "citizensearch",
+        "search",
+        "service search",
+        "services search"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u04_q15_t02",
+  "parentQuestID": "ismg6860_u04_q15",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input",
+  "correctAnswers": []
+}

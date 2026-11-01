@@ -1,0 +1,13 @@
+{
+  "articleID": "u01_network_mapping_and_scanning",
+  "videoURL": null,
+  "title": "Network Mapping and Scanning",
+  "content": "Network mapping identifies reachable hosts, paths, and exposed services so an authorized analyst can understand an attack surface. Host discovery may use ICMP, ARP, TCP, UDP, or other probes. A ping scan sends traffic and is therefore active reconnaissance, even when it is low interaction. It can reveal which addresses respond, but silence does not prove a host is offline because firewalls, rate limits, or host settings may suppress replies.\n\nTraceroute-style tools estimate the path to a destination by observing where packets expire. Intermediate hops can reveal routers or providers, but paths may change, be asymmetric, use private addresses, or hide responses. DNS names and geolocation can add context but remain clues rather than proof of ownership or physical location.\n\nPort scanning tests which network services are reachable. An open port means a service accepted or responded to a probe; it does not by itself prove a vulnerability. Analysts should compare results with the approved asset inventory, identify unnecessary exposure, verify service versions safely, and prioritize externally reachable or sensitive systems.\n\n<b>Defensive practice</b>\nScan only approved ranges with agreed timing and intensity. Preserve tool settings and raw results so changes can be compared over time. Reduce exposure through service removal, binding to internal interfaces, access controls, segmentation, patching, and monitoring. ICMP filtering can limit simple discovery, but indiscriminate blocking can disrupt diagnostics and network functions. Apply protocol-specific policy based on operational need instead of assuming all ICMP traffic is harmful.",
+  "links": [
+    "network trace",
+    "visible ports",
+    "traceroute",
+    "ping scan",
+    "reachability probes"
+  ]
+}

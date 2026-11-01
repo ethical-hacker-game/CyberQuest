@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_reflected_xss",
+  "videoURL": null,
+  "title": "Reflected XSS Remediation",
+  "content": "<b>Reflected cross-site scripting</b> occurs when request input is returned in a page and interpreted as active browser content. The primary fix belongs to the application team: apply context-aware output encoding where the value is rendered, use safe templates, and regression-test the affected endpoint. Input validation and Content Security Policy can add protection, but they do not replace correct output handling. A confirmed reflection does not by itself prove session theft, data access, or a path into internal systems; those impacts require separate evidence and authorization.",
+  "links": [
+    "reflected XSS remediation"
+  ]
+}

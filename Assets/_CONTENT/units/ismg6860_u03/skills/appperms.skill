@@ -1,0 +1,9 @@
+{
+  "skillID": "appperms",
+  "skillName": "Permission Inspector",
+  "skillDescription": "A reader for application listings. Extracts the requested permissions, the declared package name, and the publisher directly from a listing, so an app can be assessed without installing it on anyone's device.",
+  "price": 2000,
+  "order": 20,
+  "requireTask": true,
+  "lockInDemo": false
+}

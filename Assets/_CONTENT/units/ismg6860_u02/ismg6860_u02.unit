@@ -1,0 +1,72 @@
+{
+  "unitID": "ismg6860_u02",
+  "placeholder": false,
+  "order": 2,
+  "unitName": "2. Scanning Networks",
+  "unitDescription": "This unit teaches network scanning as a controlled, evidence-driven extension of reconnaissance. Players work inside an authorized Asterlink Transit scan window, interpret host discovery, ports, banners, packet behavior, IPv4 and IPv6 exposure, firewall responses, and final remediation evidence without exploiting the target.",
+  "defaultPlayerName": "Alex",
+  "unitEntryMessage": "Welcome back, {player}. Asterlink Transit is hours from launching a night-service ticketing and station-signage network. Dr. Mira Sen has authorized a narrow scan window. Your job is to build an accurate map, explain ECHO-73, and keep the scan useful without crossing scope.",
+  "questIds": [
+    "ismg6860_u02_q01",
+    "ismg6860_u02_q02",
+    "ismg6860_u02_q03",
+    "ismg6860_u02_d01",
+    "ismg6860_u02_q04",
+    "ismg6860_u02_q05",
+    "ismg6860_u02_q06",
+    "ismg6860_u02_d02",
+    "ismg6860_u02_q07",
+    "ismg6860_u02_q08",
+    "ismg6860_u02_q09",
+    "ismg6860_u02_d03",
+    "ismg6860_u02_q10",
+    "ismg6860_u02_q11",
+    "ismg6860_u02_q12",
+    "ismg6860_u02_q13",
+    "ismg6860_u02_d04",
+    "ismg6860_u02_q14",
+    "ismg6860_u02_q15"
+  ],
+  "questsAreaSize": {
+    "x": 7600.0,
+    "y": 900.0
+  },
+  "questTreeOffset": 100.0,
+  "appIDs": [
+    "zenmap",
+    "wireshark",
+    "netscantoolspro"
+  ],
+  "personas": [
+    {
+      "personaID": "whitehat",
+      "personaName": "Whitehat Hacker",
+      "personaDescription": "A whitehat hacker keeps scanning authorized, interprets evidence defensibly, and turns findings into practical remediation.",
+      "messagePlayerJoinedHeader": "Whitehat Path Chosen",
+      "messagePlayerJoined": "You are keeping the scan disciplined: stay inside scope, preserve evidence, and help Asterlink fix the exposure before launch.",
+      "messagePlayerUnloyalHeader": "Whitehat Discipline Challenged",
+      "messagePlayerUnloyal": "That choice moved away from authorized scanning practice. Regain trust by focusing on scope, evidence quality, and remediation.",
+      "personaPictureID": "persona_white"
+    },
+    {
+      "personaID": "blackhat",
+      "personaName": "Blackhat Hacker",
+      "personaDescription": "A blackhat hacker treats scan maps as leverage and values hidden access intelligence over authorization or harm reduction.",
+      "messagePlayerJoinedHeader": "Blackhat Path Chosen",
+      "messagePlayerJoined": "You are looking at the scan map like an attacker: every route, service, and banner can become leverage if you keep it private.",
+      "messagePlayerUnloyalHeader": "Blackhat Instincts Checked",
+      "messagePlayerUnloyal": "That choice protected the client instead of exploiting the opening. The blackhat path values leverage over trust.",
+      "personaPictureID": "persona_black"
+    },
+    {
+      "personaID": "hacktivist",
+      "personaName": "Hacktivist",
+      "personaDescription": "A hacktivist uses scanning evidence to pressure institutions, expose negligence, and protect communities with careful redaction.",
+      "messagePlayerJoinedHeader": "Hacktivist Path Chosen",
+      "messagePlayerJoined": "You are framing the scan around public impact: riders deserve accountability when vendor access can touch civic systems.",
+      "messagePlayerUnloyalHeader": "Hacktivist Purpose Challenged",
+      "messagePlayerUnloyal": "That choice served process more than pressure. Keep public consequence at the center if you want the hacktivist path.",
+      "personaPictureID": "persona_hacktivist"
+    }
+  ]
+}

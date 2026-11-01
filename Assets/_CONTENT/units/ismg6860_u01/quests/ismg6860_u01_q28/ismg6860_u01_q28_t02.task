@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Login credentials shown on a screen or keyboard.",
+        "Payment details entered or displayed in public.",
+        "Private messages visible on an unattended screen.",
+        "All three: credentials, payment data, and message content."
+      ],
+      "correctAnswer": 3,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Milo Navarro:</b> From the public seating, I can see a visitor entering account details, a payment form left open, and an employee's email on a screen facing the room. Each example exposes a different kind of information.",
+      "taskInstructions": "Use the <b>shoulder surfing</b> guidance to assess which examples a nearby observer could exploit.",
+      "taskQuestion": "Which information could be exposed by these clear sight lines?",
+      "taskCompleteText": "<b>Milo Navarro:</b> All three can be exposed. The risk depends on what is visible and how long the screen or keyboard remains in view."
+    }
+  ],
+  "taskID": "ismg6860_u01_q28_t02",
+  "parentQuestID": "ismg6860_u01_q28",
+  "articleID": "u01_physical_information_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

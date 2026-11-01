@@ -1,0 +1,9 @@
+{
+  "skillID": "sitemirror",
+  "skillName": "Offline Mirror",
+  "skillDescription": "A site copier for authorized public pages. It saves reachable content for later local review, while the initial crawl still sends requests to the live site and may miss unlinked or restricted files.",
+  "price": 4500,
+  "order": 40,
+  "requireTask": true,
+  "lockInDemo": false
+}

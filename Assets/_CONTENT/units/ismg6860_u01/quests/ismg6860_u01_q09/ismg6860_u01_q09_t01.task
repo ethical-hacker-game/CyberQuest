@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "actionType": "mail_source_copied",
+      "actionTag": "ismg6860_u01_q09_t01_start_scam",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> The urgent warning and generic sender name are phishing indicators, but they do not reveal the route. Preserve the raw source so we can inspect the header without following the message link.",
+      "taskInstructions": "Open the suspicious message, switch to its raw source view, then use <b>Import Source</b> to load the header into EmailTrackerPro. Do not open the link in the message.",
+      "taskQuestion": "Preserve and import the raw message source.",
+      "taskCompleteText": "<b>Samira:</b> The raw source is preserved in EmailTrackerPro. We can inspect its routing data without interacting with the suspicious link."
+    }
+  ],
+  "taskID": "ismg6860_u01_q09_t01",
+  "parentQuestID": "ismg6860_u01_q09",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [
+    "ismg6860_u01_q09_t01_start_scam"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

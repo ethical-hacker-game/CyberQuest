@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Compare what is reachable from the internet with what an authorized scanner can observe inside Northbridge's network.",
+      "taskInstructions": "Read <link=\"u04_internal_external_view\"><u>internal and external assessment views</u></link>. Run <b>openvas report northbridge-internal</b> and review the banner and Results table.",
+      "taskQuestion": "What changes between internal and external assessment?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The internal viewpoint adds hosts and services that do not answer directly from the internet.",
+      "answers": [
+        "The external view includes the public portal; the internal view also reaches the application server and SMB file share.",
+        "The internal view replaces technical evidence with employee interviews only.",
+        "The external view includes all internal hosts, while the internal view is limited to the homepage.",
+        "The two views differ only in report formatting and must contain identical findings."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Compare the public attack surface with the additional hosts and trust paths visible from inside the network.",
+      "taskInstructions": "Read <link=\"u04_internal_external_view\"><u>internal and external assessment views</u></link>. Run <b>openvas report northbridge-internal</b> and review the banner and Results table.",
+      "taskQuestion": "What changes between internal and external assessment?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Internal access reveals services and paths hidden from the public viewpoint.",
+      "answers": [
+        "The external view includes the public portal; the internal view also reaches the application server and SMB file share.",
+        "The internal view replaces technical evidence with employee interviews only.",
+        "The external view includes all internal hosts, while the internal view is limited to the homepage.",
+        "The two views differ only in report formatting and must contain identical findings."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Compare the public scan with the internal systems and services that support the resident-facing portal.",
+      "taskInstructions": "Read <link=\"u04_internal_external_view\"><u>internal and external assessment views</u></link>. Run <b>openvas report northbridge-internal</b> and review the banner and Results table.",
+      "taskQuestion": "What changes between internal and external assessment?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. An external report alone cannot describe the risks inside the network.",
+      "answers": [
+        "The external view includes the public portal; the internal view also reaches the application server and SMB file share.",
+        "The internal view replaces technical evidence with employee interviews only.",
+        "The external view includes all internal hosts, while the internal view is limited to the homepage.",
+        "The two views differ only in report formatting and must contain identical findings."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q11_t01",
+  "parentQuestID": "ismg6860_u04_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

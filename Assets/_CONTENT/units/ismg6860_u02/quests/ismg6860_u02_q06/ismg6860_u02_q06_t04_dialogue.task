@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The banner is evidence, not public relations copy. Ilya will want it softened before launch, Kade would treat it as a target profile, and Lena will want a version the public can understand safely. Whatever kind of record you are building, it gets settled now, while it is still yours to write.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Decide how you will preserve and communicate the banner evidence."
+    }
+  ],
+  "taskID": "ismg6860_u02_q06_t04_dialogue",
+  "parentQuestID": "ismg6860_u02_q06",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

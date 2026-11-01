@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The <b>photo's metadata</b> identifies a specific access point. Record that observed location before comparing it with earlier evidence.",
+      "taskInstructions": "On Riley's VolunteerLoop post, read the <b>Metadata Reader</b> panel and type the location after the dash.",
+      "taskQuestion": "What staging location does the photo's metadata expose?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: West Gate. It matches the location in earlier preserved evidence.",
+      "correctAnswers": [
+        "West Gate"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The <b>photo's metadata</b> names an access point that can be compared with earlier evidence. Record the file's value first.",
+      "taskInstructions": "On Riley's VolunteerLoop post, read the <b>Metadata Reader</b> panel and type the location after the dash.",
+      "taskQuestion": "What location does the photo's metadata expose?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: West Gate. Repetition across independent evidence makes the location relevant.",
+      "correctAnswers": [
+        "West Gate"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The <b>photo's metadata</b> may identify where volunteers and visitors will gather. Record the exposed location precisely.",
+      "taskInstructions": "On Riley's VolunteerLoop post, read the <b>Metadata Reader</b> panel and type the location after the dash.",
+      "taskQuestion": "What location does the photo's metadata expose?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: West Gate. The response can now address the exposed location specifically.",
+      "correctAnswers": [
+        "West Gate"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q14_t02",
+  "parentQuestID": "ismg6860_u03_q14",
+  "articleID": "u03_personal_information_exposure",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Shield graphics and security language are not evidence of affiliation. Choose the verifiable mismatch that requires us to stop installation and confirm the app independently.",
+      "taskInstructions": "Compare the listing's official Harborview claim with its declared publisher.",
+      "taskQuestion": "Which finding most strongly justifies stopping installation pending verification?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The publisher does not match the claimed Harborview affiliation, so staff should not install the VPN until it is independently verified.",
+      "answers": [
+        "The listing uses shield imagery and safety language.",
+        "The app description mentions Wi-Fi at the expo.",
+        "The publisher is not connected to Harborview.",
+        "The download page says the tool protects staff."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Separate the security pitch from the provenance check. Choose the mismatch a reviewer can verify directly on the listing.",
+      "taskInstructions": "Compare the listing's official Harborview claim with its declared publisher.",
+      "taskQuestion": "Which finding most strongly justifies stopping installation pending verification?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The declared publisher does not support the app's claimed Harborview affiliation.",
+      "answers": [
+        "The listing uses shield imagery and safety language.",
+        "The app description mentions Wi-Fi at the expo.",
+        "The download page says the tool protects staff.",
+        "The publisher is not connected to Harborview."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The warning should rest on a mismatch visitors can verify themselves, not on the shield icon or our suspicions about unseen behavior.",
+      "taskInstructions": "Compare the listing's official Harborview claim with its declared publisher.",
+      "taskQuestion": "Which finding most strongly justifies stopping installation pending verification?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The publisher does not match the claimed Harborview affiliation, which is a clear reason not to install it.",
+      "answers": [
+        "The publisher is not connected to Harborview.",
+        "The listing uses shield imagery and safety language.",
+        "The app description mentions Wi-Fi at the expo.",
+        "The download page says the tool protects staff."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u03_q11_t03",
+  "parentQuestID": "ismg6860_u03_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

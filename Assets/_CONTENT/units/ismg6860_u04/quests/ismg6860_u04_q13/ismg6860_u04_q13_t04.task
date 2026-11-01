@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Select a remediation sequence that addresses the Critical patch gap and produces closure evidence.",
+      "taskInstructions": "Use <link=\"u04_remediation_planning\"><u>remediation planning</u></link> and the findings shown for NB-FIN-07.",
+      "taskQuestion": "What should Northbridge do first?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Patch the host through controlled change, enforce its baseline, and run a targeted host retest.",
+      "answers": [
+        "Add monitoring but leave all missing Critical updates unresolved.",
+        "Move NB-FIN-07 to a different subnet and close the patch finding.",
+        "Document a patch exception without identifying compensating controls or an expiry date.",
+        "Patch NB-FIN-07 through controlled change, enforce the approved baseline, and run a targeted host retest."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Choose the sequence that removes the Critical patch gap and proves the host no longer presents the same opening.",
+      "taskInstructions": "Use <link=\"u04_remediation_planning\"><u>remediation planning</u></link> and the findings shown for NB-FIN-07.",
+      "taskQuestion": "What should Northbridge do first?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. A controlled patch and targeted retest remove the verified opening rather than relocating it.",
+      "answers": [
+        "Add monitoring but leave all missing Critical updates unresolved.",
+        "Move NB-FIN-07 to a different subnet and close the patch finding.",
+        "Document a patch exception without identifying compensating controls or an expiry date.",
+        "Patch NB-FIN-07 through controlled change, enforce the approved baseline, and run a targeted host retest."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Choose a fix with a measurable outcome for the neglected finance endpoint.",
+      "taskInstructions": "Use <link=\"u04_remediation_planning\"><u>remediation planning</u></link> and the findings shown for NB-FIN-07.",
+      "taskQuestion": "What should Northbridge do first?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The targeted retest provides evidence that the patch gap is closed.",
+      "answers": [
+        "Add monitoring but leave all missing Critical updates unresolved.",
+        "Move NB-FIN-07 to a different subnet and close the patch finding.",
+        "Document a patch exception without identifying compensating controls or an expiry date.",
+        "Patch NB-FIN-07 through controlled change, enforce the approved baseline, and run a targeted host retest."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q13_t04",
+  "parentQuestID": "ismg6860_u04_q13",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

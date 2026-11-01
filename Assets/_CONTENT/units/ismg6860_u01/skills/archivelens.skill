@@ -1,0 +1,9 @@
+{
+  "skillID": "archivelens",
+  "skillName": "Archive Lens",
+  "skillDescription": "A snapshot reader for public web archives. Loads historical captures of a page, so material that was deleted from a live site can still be reviewed and its exposure window established.",
+  "price": 6000,
+  "order": 60,
+  "requireTask": true,
+  "lockInDemo": false
+}

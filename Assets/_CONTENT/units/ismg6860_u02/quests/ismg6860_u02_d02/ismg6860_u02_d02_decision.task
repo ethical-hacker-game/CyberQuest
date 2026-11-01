@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The banner is not proof of a vulnerability, but Ilya's preferred wording would replace an exact observation with an unsupported conclusion. The authorized incident owner needs an accurate source record. Decide who else should receive the evidence and how much detail they need.",
+      "taskInstructions": "",
+      "taskQuestion": "How do you handle the banner evidence?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Your handling decision is clear. Accuracy, access, and disclosure now carry different consequences."
+    }
+  ],
+  "taskID": "ismg6860_u02_d02_decision",
+  "parentQuestID": "ismg6860_u02_d02",
+  "articleID": "u02_responsible_reporting",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision",
+  "decisions": [
+    {
+      "decisionText": "Preserve the exact banner in the authorized report with context and uncertainty.",
+      "personaIndex": 0,
+      "personaValueChange": 15
+    },
+    {
+      "decisionText": "Keep the exact banner in a private target profile and withhold it from the launch review.",
+      "personaIndex": 1,
+      "personaValueChange": 15
+    },
+    {
+      "decisionText": "Preserve the source record, then prepare a redacted public accountability timeline.",
+      "personaIndex": 2,
+      "personaValueChange": 15
+    }
+  ]
+}

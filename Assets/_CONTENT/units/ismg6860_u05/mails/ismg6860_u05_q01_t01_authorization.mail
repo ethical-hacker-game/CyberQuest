@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u05_q01_t01_authorization",
+  "parentTaskID": "ismg6860_u05_q01_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Dana Osei <dana.osei@hallowayprecision.com>",
+      "subject": "Authorized Enumeration Engagement - Scope and Boundaries",
+      "shortSummary": "Halloway has approved a read-only enumeration pass across the plant segment.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nI am Dana Osei, IT Operations Manager at Halloway Precision Manufacturing. This message is your authorization for the engagement Cordata is running for us this week. Please keep it to hand.\n\nBACKGROUND\nTwo weeks ago a vendor laptop was connected to our plant VLAN for roughly forty minutes during a phishing incident. We found no evidence of compromise. We also found that we cannot produce an accurate inventory of what is running on that segment, which is the actual problem.\n\nAPPROVED SCOPE\n- Plant segment 10.30.14.0/24 and the voice segment 10.30.16.0/24\n- Halloway public web presence at hallowayprecision.com\n- Read-only enumeration of responding services: names, shares, accounts, directory entries, mail routing, DNS records, RPC endpoints, and tunnel configuration\n\nEXPLICITLY NOT AUTHORIZED\n- Any operation that changes state on a Halloway system\n- Password guessing, credential replay, or any attempt to authenticate as a discovered account\n- Reading, exporting, or modifying production historian data\n- Denial of service testing of any kind. Plant 2 is running two shifts.\n\nPRACTICAL NOTES\nOur monitoring counts SMB sessions per source address. A tool that opens a session per directory will generate an alert and somebody on nights will disconnect the host you are querying. Please pace accordingly.\n\nIf you find something that looks like it needs immediate action, call me before you act on it. My mobile is in the Cordata engagement record.\n\nDana Osei\nIT Operations Manager\nHalloway Precision Manufacturing",
+      "attachements": []
+    }
+  ]
+}

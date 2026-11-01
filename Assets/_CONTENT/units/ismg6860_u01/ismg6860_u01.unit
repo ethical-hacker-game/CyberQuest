@@ -1,0 +1,84 @@
+{
+  "unitID": "ismg6860_u01",
+  "placeholder": false,
+  "order": 1,
+  "unitName": "1. Footprinting and Reconnaissance",
+  "unitDescription": "Footprinting is the first stage of ethical hacking. It focuses on collecting information about a target individual or organization. It helps penetration testers understand the target’s environment and evaluate its security posture. Using both passive and active reconnaissance, penetration testers identify key details such as domains, IP ranges, public-facing services, connected systems, and organizational information (including employee roles and contact points). When performed systematically, footprinting produces a practical “security profile” that guides the rest of the security assessment.\r\n\nThis unit will provide an introduction to footprinting concepts and the methodology used to conduct reconnaissance. You will gain experience with common footprinting tools and countermeasures used to reduce exposure. Through a series of quests, you will apply these skills and practice the steps an ethical hacker follows to assess a target’s security.\r",
+  "defaultPlayerName": "Alex",
+  "unitEntryMessage": "Welcome to <b>CyberQuest</b>.\n\nYou are {player}, a freelance cybersecurity specialist. In this scenario, Samira, a trusted acquaintance, will introduce you to the world of <b>ethical hacking</b> and guide you through your first challenges.\r\n\nYour mission is to learn how to investigate and defend systems legally and responsibly, using terminal-based tools while learning core concepts related to reconnaissance.",
+  "questIds": [
+    "ismg6860_u01_q01",
+    "ismg6860_u01_q02",
+    "ismg6860_u01_q03",
+    "ismg6860_u01_d01",
+    "ismg6860_u01_q04",
+    "ismg6860_u01_q05",
+    "ismg6860_u01_q06",
+    "ismg6860_u01_q07",
+    "ismg6860_u01_d02",
+    "ismg6860_u01_q08",
+    "ismg6860_u01_d03",
+    "ismg6860_u01_q09",
+    "ismg6860_u01_q10",
+    "ismg6860_u01_q11",
+    "ismg6860_u01_q12",
+    "ismg6860_u01_q13",
+    "ismg6860_u01_q14",
+    "ismg6860_u01_q15",
+    "ismg6860_u01_q16",
+    "ismg6860_u01_q18",
+    "ismg6860_u01_q19",
+    "ismg6860_u01_q20",
+    "ismg6860_u01_q21",
+    "ismg6860_u01_q22",
+    "ismg6860_u01_q23",
+    "ismg6860_u01_q24",
+    "ismg6860_u01_q25",
+    "ismg6860_u01_q26",
+    "ismg6860_u01_q27",
+    "ismg6860_u01_q28",
+    "ismg6860_u01_q29"
+  ],
+  "questsAreaSize": {
+    "x": 6250.0,
+    "y": 850.0
+  },
+  "questTreeOffset": 100.0,
+  "appIDs": [
+    "emailtrackerpro",
+    "zenmap",
+    "winhttrack"
+  ],
+  "personas": [
+    {
+      "personaID": "whitehat",
+      "personaName": "Whitehat Hacker",
+      "personaDescription": "A <b>whitehat hacker</b> is an ethical security specialist who searches for vulnerabilities to <b>protect systems and people</b>, not to exploit them. They test defenses with permission (or under clear, responsible rules), carefully document what they find, and report it so it can be fixed: often following <b>responsible disclosure</b>. The goal is prevention: reduce harm, strengthen trust, and improve security without stealing data or causing damage.",
+      "messagePlayerJoinedHeader": "Whitehat Path Chosen",
+      "messagePlayerJoined": "You’re committing to ethical hacking: <b>minimize harm</b>, respect consent and boundaries, and focus on <b>reporting and fixing</b> weaknesses. You’ll gain more trust from defenders and institutions, but you’ll have less room for shortcuts.",
+      "messagePlayerUnloyalHeader": "Whitehat Code Broken",
+      "messagePlayerUnloyal": "That choice crossed the line from protection into exploitation. Your <b>credibility drops</b>, and “trusted access” may be harder to earn. If you want to remain Whitehat, you’ll need to <b>repair the damage</b> and return to responsible methods.",
+      "personaPictureID": "persona_white"
+    },
+    {
+      "personaID": "blackhat",
+      "personaName": "Blackhat Hacker",
+      "personaDescription": "A <b>blackhat hacker</b> breaks into systems <b>without permission</b> for personal gain, leverage, or chaos. They treat security as an obstacle and information as currency: using access to steal, manipulate, extort, or quietly control outcomes. In this persona, <b>results matter more than rules</b>: you move fast, cover your tracks, and take opportunities before someone else does.",
+      "messagePlayerJoinedHeader": "Blackhat Path Chosen",
+      "messagePlayerJoined": "You’re embracing the outlaw approach: take what you can, give nothing for free, and let consequences fall on everyone else. You may gain quick power and new underworld options, but trust will be fragile, and enemies will be easier to make than friends.",
+      "messagePlayerUnloyalHeader": "Blackhat Instincts Falter",
+      "messagePlayerUnloyal": "That was softer than your usual move. In this world, hesitation reads like weakness, and people watching you may start to doubt your edge. If you want to keep the Blackhat reputation, you’ll need to prove you still play to win.",
+      "personaPictureID": "persona_black"
+    },
+    {
+      "personaID": "hacktivist",
+      "personaName": "Hacktivist",
+      "personaDescription": "A <b>hacktivist</b> uses hacking as a form of <b>political activism</b>: to expose wrongdoing, disrupt abusive systems, or amplify causes that feel ignored. They’re driven less by money and more by <b>impact</b>: making a statement, shifting public attention, or forcing accountability. In this persona, you choose targets for what they represent, weigh collateral damage against the message, and treat information as a tool for change.",
+      "messagePlayerJoinedHeader": "Hacktivist Path Chosen",
+      "messagePlayerJoined": "You’re stepping into activism: hit power where it hurts, expose what’s hidden, and fight for a cause bigger than yourself. You’ll earn allies among communities and movements, but you’ll also draw heat from institutions that don’t want to be challenged.",
+      "messagePlayerUnloyalHeader": "The Cause Slips",
+      "messagePlayerUnloyal": "That choice didn’t serve the message: it served <b>you</b>. People who believed in your cause may question your motives, and your network may pull back. If you want to stay Hacktivist, you’ll need to realign your actions with what you claim to stand for.",
+      "personaPictureID": "persona_hacktivist"
+    }
+  ]
+}

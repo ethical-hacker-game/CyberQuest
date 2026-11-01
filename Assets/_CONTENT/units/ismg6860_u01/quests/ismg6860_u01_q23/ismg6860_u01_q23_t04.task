@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Report the phishing site and monitor related public infrastructure.",
+        "Force every employee to change passwords on a fixed schedule.",
+        "Remove all company job postings from every public site.",
+        "Block all incoming traffic to the company network."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Etienne:</b> The capture shows a look-alike phishing site, but it does not prove anyone accessed Arcadia's network. We can still act on the public infrastructure and watch for related activity.",
+      "taskInstructions": "Use the guidance on <b>public records and registries</b> to choose a proportionate first response to the confirmed public finding.",
+      "taskQuestion": "What should Arcadia do next?",
+      "taskCompleteText": "<b>Etienne:</b> Report the phishing site to its registrar and host, preserve the capture, and monitor for related domains. Coordinate any takedown request through the appropriate channels."
+    }
+  ],
+  "taskID": "ismg6860_u01_q23_t04",
+  "parentQuestID": "ismg6860_u01_q23",
+  "articleID": "u01_osint_fundamentals",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

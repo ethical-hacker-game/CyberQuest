@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LanternPass Build Comparison</title>
+  <style>
+    :root { --ink:#1f2933; --muted:#5b6675; --line:#d6dde6; --panel:#ffffff; --bg:#eef3f7; --accent:#235a87; --warn:#8a4b12; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
+    header { background:#173f5f; color:white; padding:28px 32px; border-bottom:4px solid #f2b84b; }
+    header h1 { margin:0; font-size:30px; letter-spacing:0; }
+    header p { margin:6px 0 0; color:#dceaf4; }
+    main { max-width:1100px; margin:28px auto; padding:0 24px 42px; }
+    section { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:18px 20px; margin:0 0 16px; }
+    h2 { margin:0 0 8px; font-size:20px; color:#173f5f; }
+    p { margin:0; }
+    code { background:#eef2f6; border:1px solid #d9e1ea; border-radius:4px; padding:2px 5px; }
+    .summary { margin-bottom:16px; color:var(--muted); }
+    .comparison { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    dl { display:grid; grid-template-columns:135px 1fr; gap:9px 12px; margin:12px 0 0; }
+    dt { font-weight:700; color:#34495e; }
+    dd { margin:0; overflow-wrap:anywhere; }
+    .trusted { border-top:5px solid #39764a; }
+    .warning { border-top:5px solid var(--warn); }
+    @media (max-width:760px) { .comparison { grid-template-columns:1fr; } dl { grid-template-columns:1fr; gap:2px; } dd { margin-bottom:8px; } }
+    footer { text-align:center; color:var(--muted); padding:20px; font-size:13px; }
+  </style>
+</head>
+<body>
+  <header><h1>Harborview AppCheck</h1><p>LanternPass build comparison</p></header>
+  <main>
+    <section>
+      <h2>Signature Verifier Results</h2>
+      <p class="summary">Static comparison completed without installing or executing either package. The builds use the same display name and artwork.</p>
+      <div class="comparison">
+        <section class="trusted">
+          <h2>Trusted Build</h2>
+          <dl>
+            <dt>Display name</dt><dd>LanternPass</dd>
+            <dt>Version</dt><dd>4.8.1</dd>
+            <dt>Package ID</dt><dd><code>com.harborview.lanternpass</code></dd>
+            <dt>Signing publisher</dt><dd>Harborview Civic Technology</dd>
+            <dt>Certificate</dt><dd><code>HVCT-7A:91:4C:2E</code></dd>
+            <dt>SHA-256</dt><dd><code>9d1f7b35e5c8a276...4a02c119</code></dd>
+          </dl>
+        </section>
+        <section class="warning">
+          <h2>Repackaged Build</h2>
+          <dl>
+            <dt>Display name</dt><dd>LanternPass</dd>
+            <dt>Version</dt><dd>4.8.2</dd>
+            <dt>Package ID</dt><dd><code>com.bluelantern.lanternpass</code></dd>
+            <dt>Signing publisher</dt><dd>Blue Lantern Mobile Services</dd>
+            <dt>Certificate</dt><dd><code>BLMS-31:F0:88:D7</code></dd>
+            <dt>SHA-256</dt><dd><code>b7f4d9140a63ce21...8e77a602</code></dd>
+          </dl>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer>Harborview Expo · Application integrity service</footer>
+  <script src="../../cq-bridge.js"></script>
+</body>
+</html>

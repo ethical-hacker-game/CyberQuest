@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Staff have been messaging a profile that claims to be Harborview support. Inspect only its public details; do not send it a message or disclose incident information.",
+      "taskInstructions": "Open the browser, search <b>harborview help desk assist</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the cloned help desk profile.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Profile captured. Its public handle, account age, and verification status are available for review.",
+      "correctAnswer": "harborview-helpdesk.com/helpdesk"
+    }
+  ],
+  "taskID": "ismg6860_u03_q04_t01",
+  "parentQuestID": "ismg6860_u03_q04",
+  "articleID": "u03_social_patterns",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "portal.trainingnorthstar.com/status",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> Training Northstar publishes service updates on its public status page. Find the page and check the diagnostic notice. We may read what is published, but that does not give us permission to probe hidden routes or change settings.",
+      "taskInstructions": "Open Cyber Search in the browser and search for <b>Training Northstar status</b>. Open the result named <b>Training Northstar Service Portal</b>.",
+      "taskQuestion": "Find the Training Northstar status page through Cyber Search and open it.",
+      "taskCompleteText": "<b>Ed:</b> You reached the public status page and stayed inside the read-only boundary."
+    }
+  ],
+  "taskID": "ismg6860_u00_q02_t01_open_portal",
+  "parentQuestID": "ismg6860_u00_q02",
+  "articleID": "u00_authorization_scope",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

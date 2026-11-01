@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Shut down NorthTec's network until the sender is identified.",
+        "Change the employee email format and take no other action.",
+        "Ban employees from using professional networking sites.",
+        "Preserve reports, block confirmed indicators, strengthen mail controls, and train staff to report suspicious messages."
+      ],
+      "correctAnswer": 3,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Jamal Rivers:</b> We need a response proportionate to the confirmed phishing evidence. It should protect employees, improve detection, and preserve material for investigation without claiming we know the sender or disrupting unrelated systems.",
+      "taskInstructions": "Choose the layered response that addresses the observed messages and supports continued investigation.",
+      "taskQuestion": "What should NorthTec do next?",
+      "taskCompleteText": "<b>Jamal Rivers:</b> That plan contains the confirmed indicators, improves prevention and reporting, and keeps the evidence available for correlation with future activity."
+    }
+  ],
+  "taskID": "ismg6860_u01_q11_t05",
+  "parentQuestID": "ismg6860_u01_q11",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

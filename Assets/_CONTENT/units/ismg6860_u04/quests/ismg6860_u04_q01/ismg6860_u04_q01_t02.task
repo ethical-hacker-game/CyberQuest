@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> The document exchange stores both public information and private service settings. Check whether each file's access matches its purpose.",
+      "taskInstructions": "Read <link=\"u04_file_permissions\"><u>file permissions</u></link>, then run <b>permcheck northbridge-docs</b> in the terminal. Compare the file purposes with the owner, group, and other permissions.",
+      "taskQuestion": "Which file lets accounts outside its owner and group read private service settings?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The final r-- in web.config grants read access to other accounts. That conflicts with its private purpose; the public notice is intended to be readable.",
+      "answers": [
+        "service.log",
+        "public-notice.txt",
+        "web.config",
+        "backup.conf"
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q01_t02",
+  "parentQuestID": "ismg6860_u04_q01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

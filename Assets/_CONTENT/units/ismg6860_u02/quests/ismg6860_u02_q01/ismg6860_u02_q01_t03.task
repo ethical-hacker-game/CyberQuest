@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Scanning is reconnaissance with packets. Scope discipline keeps it focused on an approved question and produces evidence operations can trust.",
+      "taskInstructions": "Use the authorization email to identify the approved purpose.",
+      "taskQuestion": "What is the approved purpose of this scan window?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. Build a controlled evidence map inside the approved range, then let that evidence guide defensive action.",
+      "answers": [
+        "Find every reachable system on the wider vendor network.",
+        "Build a controlled evidence map inside the approved range.",
+        "Exploit ECHO-73 quietly before the launch window opens.",
+        "Generate as much traffic as possible to stress the network."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u02_q01_t03",
+  "parentQuestID": "ismg6860_u02_q01",
+  "articleID": "u02_authorized_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

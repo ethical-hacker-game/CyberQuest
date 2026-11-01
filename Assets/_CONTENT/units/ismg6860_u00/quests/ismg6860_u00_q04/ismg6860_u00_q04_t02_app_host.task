@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "185.254.57.124"
+      ],
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> Check the target address in Zenmap before we attach this result to the case. It should match the address we recorded from DNS.",
+      "taskInstructions": "Read the <b>Target</b> field at the top of Zenmap. Type the IPv4 address shown there.",
+      "taskQuestion": "What IP address is in the Zenmap Target field?",
+      "taskCompleteText": "<b>Ed:</b> Correct. 185.254.57.124 matches our DNS record, so we can keep both observations under the same case."
+    }
+  ],
+  "taskID": "ismg6860_u00_q04_t02_app_host",
+  "parentQuestID": "ismg6860_u00_q04",
+  "articleID": "u00_evidence_reasoning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

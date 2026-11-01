@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> An archived <b>fake support chat</b> appeared immediately after Riley encountered an account error. Examine the timing, identity, and requested action without assuming the chat caused the error.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Asha Moreno:</b> Treat the disruption and offered rescue as connected evidence while keeping causation unproven."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> This <b>fake support chat</b> appears when Riley already needs help. That timing makes the helper convenient, but the transcript still has to establish what was requested and what remains unknown.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> Convenience creates trust, but it does not prove the helper caused the original problem."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The archived <b>fake support chat</b> reached Riley during an account problem. Document how the helper used that moment without blaming Riley or claiming more than the transcript proves.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> The warning should explain the pressure and provide an independently verified support route."
+    }
+  ],
+  "taskID": "ismg6860_u03_q19_t00_voice",
+  "parentQuestID": "ismg6860_u03_q19",
+  "articleID": "u03_reverse_social_engineering",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

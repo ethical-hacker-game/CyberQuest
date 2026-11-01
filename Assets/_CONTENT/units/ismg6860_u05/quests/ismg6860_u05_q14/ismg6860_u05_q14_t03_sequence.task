@@ -1,0 +1,101 @@
+{
+  "variants": [
+    {
+      "minigameType": "SequenceOrder",
+      "minigameHeaderText": "BridgeWorks Portal Timeline",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "orderSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Vendor Access Lifecycle",
+            "recommendedDifficulty": "Normal",
+            "headline": "Order the support portal events from commissioning to the most recent capture.",
+            "items": [
+              "Historian commissioned and support portal opened to BridgeWorks technicians",
+              "Second BridgeWorks technician account added to the portal",
+              "BridgeWorks files for dissolution and posts a final invoice notice",
+              "Portal marked read-only pending an internal migration",
+              "Contact page removed and the portal delisted from the sitemap",
+              "Final capture shows the portal still live with both author profiles listed"
+            ],
+            "lesson": "Legacy content and author metadata persist unless somebody owns their removal."
+          }
+        ],
+        "checksAllowed": 3
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> The portal kept an archive of its own snapshots, and every capture carries a date. They are filed by capture number rather than chronologically, so the order on the page means nothing.\n\nOnce the events sit in sequence I have a timeline for legal instead of an assertion, and a timeline is the only thing that will move this.",
+      "taskInstructions": "Every slot has to be filled before CHECK ORDER will grade the board. Correct positions lock in place, wrong ones drop back to the pool, and the third failed check locks the console out.",
+      "taskQuestion": "Reconstruct the BridgeWorks portal timeline.",
+      "taskCompleteText": "<b>Dana Osei:</b> The timeline shows the portal and both author profiles remained published after the dissolution notice. It does not establish authentication status."
+    },
+    {
+      "minigameType": "SequenceOrder",
+      "minigameHeaderText": "BridgeWorks Portal Timeline",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "orderSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Vendor Access Lifecycle",
+            "recommendedDifficulty": "Normal",
+            "headline": "Order the support portal events from commissioning to the most recent capture.",
+            "items": [
+              "Historian commissioned and support portal opened to BridgeWorks technicians",
+              "Second BridgeWorks technician account added to the portal",
+              "BridgeWorks files for dissolution and posts a final invoice notice",
+              "Portal marked read-only pending an internal migration",
+              "Contact page removed and the portal delisted from the sitemap",
+              "Final capture shows the portal still live with both author profiles listed"
+            ],
+            "lesson": "Legacy content and author metadata persist unless somebody owns their removal."
+          }
+        ],
+        "checksAllowed": 3
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Every snapshot in that archive is dated, and the archive is filed by capture number, so the page will not do the work for you. Lay the events out in the order they actually happened and you can see the exact moment this stopped being anybody's job. That moment is the finding.",
+      "taskInstructions": "Every slot has to be filled before CHECK ORDER will grade the board. Correct positions lock in place, wrong ones drop back to the pool, and the third failed check locks the console out.",
+      "taskQuestion": "Reconstruct the BridgeWorks portal timeline.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The dated captures prove continued publication after dissolution, not that either username still authenticates."
+    },
+    {
+      "minigameType": "SequenceOrder",
+      "minigameHeaderText": "BridgeWorks Portal Timeline",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "orderSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Vendor Access Lifecycle",
+            "recommendedDifficulty": "Normal",
+            "headline": "Order the support portal events from commissioning to the most recent capture.",
+            "items": [
+              "Historian commissioned and support portal opened to BridgeWorks technicians",
+              "Second BridgeWorks technician account added to the portal",
+              "BridgeWorks files for dissolution and posts a final invoice notice",
+              "Portal marked read-only pending an internal migration",
+              "Contact page removed and the portal delisted from the sitemap",
+              "Final capture shows the portal still live with both author profiles listed"
+            ],
+            "lesson": "Legacy content and author metadata persist unless somebody owns their removal."
+          }
+        ],
+        "checksAllowed": 3
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The archive dates every snapshot, though it lists them by capture number, which is not the order anything happened in. Sequence matters more than any single page here: an oversight is one moment, but a documented failure to act is a chain of them, and this chain runs for years.",
+      "taskInstructions": "Every slot has to be filled before CHECK ORDER will grade the board. Correct positions lock in place, wrong ones drop back to the pool, and the third failed check locks the console out.",
+      "taskQuestion": "Reconstruct the BridgeWorks portal timeline.",
+      "taskCompleteText": "<b>Priya Nandan:</b> The archive documents years of continued publication after dissolution. Account access remains untested."
+    }
+  ],
+  "taskID": "ismg6860_u05_q14_t03_sequence",
+  "parentQuestID": "ismg6860_u05_q14",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

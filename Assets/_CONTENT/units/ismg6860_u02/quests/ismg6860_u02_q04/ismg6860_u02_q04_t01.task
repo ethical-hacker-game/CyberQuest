@@ -1,0 +1,55 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> This discovery pass asks a limited question: which hosts respond inside the approved range? Compare the result with the expected inventory before drawing a conclusion.",
+      "taskInstructions": "Run <b>nmap -sn 10.42.18.0/24</b> in the terminal and compare the returned addresses against the inventory in the discovery notes.",
+      "taskQuestion": "Which host label appears unexpectedly in the approved range?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. ECHO-73 responded inside the approved range but does not appear in the expected inventory.",
+      "correctAnswers": [
+        "ECHO-73",
+        "echo73",
+        "echo 73",
+        "echo_73",
+        "10.42.18.73"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> A discovery pass becomes interesting when its responses do not match the official inventory. Find the label attached to the extra host before anyone explains it away.",
+      "taskInstructions": "Run <b>nmap -sn 10.42.18.0/24</b> in the terminal and compare the returned addresses against the inventory in the discovery notes.",
+      "taskQuestion": "Which host label appears unexpectedly in the approved range?",
+      "taskCompleteText": "<b>Kade Mercer:</b> ECHO-73 is the response the official inventory did not account for.",
+      "correctAnswers": [
+        "ECHO-73",
+        "echo73",
+        "echo 73",
+        "echo_73",
+        "10.42.18.73"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> This discovery pass can establish whether the approved range contains a response missing from the expected inventory. Find its label so the city has a specific discrepancy to explain.",
+      "taskInstructions": "Run <b>nmap -sn 10.42.18.0/24</b> in the terminal and compare the returned addresses against the inventory in the discovery notes.",
+      "taskQuestion": "Which host label appears unexpectedly in the approved range?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> ECHO-73 is the undocumented response the city now has to explain.",
+      "correctAnswers": [
+        "ECHO-73",
+        "echo73",
+        "echo 73",
+        "echo_73",
+        "10.42.18.73"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u02_q04_t01",
+  "parentQuestID": "ismg6860_u02_q04",
+  "articleID": "u02_host_discovery",
+  "mailsOnStart": [
+    "ismg6860_u02_q04_t01_discovery_notes"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

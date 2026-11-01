@@ -1,0 +1,50 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The vendor knowledge base describes ECHO-series nodes as maintenance devices, and the CivicWatch draft uses a more specific <b>host summary</b>. Use the source wording instead of inventing a label from the observed route.",
+      "taskInstructions": "Reopen <b>vendor.railgatesystems.com/support/echo-73-diagnostics</b> or the CivicWatch draft, then type the short phrase that identifies ECHO-73's role.",
+      "taskQuestion": "What kind of device is ECHO-73?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Vendor diagnostics appliance is the source-supported description.",
+      "correctAnswers": [
+        "vendor diagnostics appliance",
+        "diagnostics appliance",
+        "vendor maintenance device",
+        "maintenance device"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> Reach gives the map value, but it does not change the device's role. Use the vendor documentation and the CivicWatch <b>host summary</b> to name ECHO-73 without turning an observed connection into an invented product category.",
+      "taskInstructions": "Reopen <b>vendor.railgatesystems.com/support/echo-73-diagnostics</b> or the CivicWatch draft, then type the short phrase that identifies ECHO-73's role.",
+      "taskQuestion": "What kind of device is ECHO-73?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Vendor diagnostics appliance names the device; the ticketing flow explains why it matters.",
+      "correctAnswers": [
+        "vendor diagnostics appliance",
+        "diagnostics appliance",
+        "vendor maintenance device",
+        "maintenance device"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> A public description should name the device accurately without exposing a route. The CivicWatch <b>host summary</b> uses the same role established by the vendor documentation.",
+      "taskInstructions": "Reopen <b>vendor.railgatesystems.com/support/echo-73-diagnostics</b> or the CivicWatch draft, then type the short phrase that identifies ECHO-73's role.",
+      "taskQuestion": "What kind of device is ECHO-73?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Vendor diagnostics appliance is accurate without disclosing the live route.",
+      "correctAnswers": [
+        "vendor diagnostics appliance",
+        "diagnostics appliance",
+        "vendor maintenance device",
+        "maintenance device"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u02_q14_t01",
+  "parentQuestID": "ismg6860_u02_q14",
+  "articleID": "u02_service_identification",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

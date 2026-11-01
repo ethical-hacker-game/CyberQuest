@@ -1,0 +1,46 @@
+{
+  "unitID": "ismg6860_u03",
+  "places": [
+    {
+      "cityIndex": 5110,
+      "action": "ShowNotificationWindow",
+      "labelText": "Harborview Expo Center",
+      "extraText": "Launch site for LanternPass and the first Blue Lantern reports.",
+      "poiIconID": "u03_expo",
+      "devNote": "Opening location for Unit 03."
+    },
+    {
+      "cityIndex": 5124,
+      "action": "ShowNotificationWindow",
+      "labelText": "Carrier Fraud Desk",
+      "extraText": "SIM-swap recovery attempt connected to Riley Cho's phone number.",
+      "poiIconID": "u03_alert",
+      "devNote": "SIM swap context."
+    },
+    {
+      "cityIndex": 5142,
+      "action": "ShowNotificationWindow",
+      "labelText": "West Gate Registration",
+      "extraText": "QR sticker, proximity share, and tailgating evidence converge here.",
+      "poiIconID": "u03_alert",
+      "devNote": "Physical access context."
+    },
+    {
+      "cityIndex": 5164,
+      "action": "ShowNotificationWindow",
+      "labelText": "Volunteer Chat Hub",
+      "extraText": "Group-chat spam and relationship-building lures spread through volunteer channels.",
+      "poiIconID": "u03_channel",
+      "devNote": "Computer-based social engineering context."
+    },
+    {
+      "cityIndex": 5180,
+      "action": "ShowNotificationWindow",
+      "labelText": "Incident Debrief",
+      "extraText": "Final SET, Gophish, and OhPhish evidence review.",
+      "poiIconID": "u03_channel",
+      "devNote": "Final debrief context."
+    }
+  ],
+  "lines": []
+}

@@ -1,0 +1,226 @@
+{
+  "appID": "emailtrackerpro",
+  "scenarioID": "emailtrackerpro_quest_9_1",
+  "header": "eMailTrackerPro",
+  "extension": "png",
+  "size": {
+    "x": 800,
+    "y": 600
+  },
+  "margin": {
+    "x": 7.0,
+    "y": 40.0,
+    "z": 10.0,
+    "w": 40.0
+  },
+  "stages": [
+    {
+      "stageID": "stage6",
+      "customHeader": "eMailTrackerPro",
+      "frames": [
+        {
+          "imageName": "frame_0096",
+          "delayMs": 1100
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage7",
+          "linkPoistion": {
+            "x": 73.0,
+            "y": 68.0
+          },
+          "linkSize": {
+            "x": 60.0,
+            "y": 70.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage7",
+      "customHeader": "eMailTrackerPro",
+      "frames": [
+        {
+          "imageName": "frame_0123",
+          "delayMs": 900
+        },
+        {
+          "imageName": "frame_0125",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0126",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0127",
+          "delayMs": 600
+        },
+        {
+          "imageName": "frame_0129",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0145",
+          "delayMs": 100
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage8",
+          "linkPoistion": {
+            "x": 155.0,
+            "y": 377.0
+          },
+          "linkSize": {
+            "x": 566.0,
+            "y": 150.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage8",
+      "customHeader": "eMailTrackerPro",
+      "frames": [
+        {
+          "imageName": "frame_0367",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0368",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0369",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0370",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0371",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0372",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0373",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0374",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0375",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0376",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0377",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0378",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0379",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0380",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0381",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0382",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0383",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0384",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0385",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0386",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0387",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0388",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0389",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0390",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0391",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0392",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0393",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0394",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0395",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0396",
+          "delayMs": 900
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "exit",
+          "linkPoistion": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "linkSize": {
+            "x": 800.0,
+            "y": 600.0
+          }
+        }
+      ]
+    }
+  ]
+}

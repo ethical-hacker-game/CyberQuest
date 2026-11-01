@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found</title>
+  <style>
+    :root {
+      --bg: #05070d;
+      --panel: rgba(10, 16, 28, 0.72);
+      --cyan: #38e6ff;
+      --magenta: #ff3df0;
+      --text: #d6e6f2;
+      --muted: #6f8198;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; margin: 0; }
+
+    body {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1100px 600px at 50% -10%, rgba(56, 230, 255, 0.10), transparent 60%),
+        radial-gradient(900px 600px at 50% 120%, rgba(255, 61, 240, 0.10), transparent 60%),
+        var(--bg);
+      overflow: hidden;
+    }
+
+    /* faint moving scanlines for the terminal feel */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.025) 0px,
+        rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      mix-blend-mode: overlay;
+    }
+
+    .card {
+      position: relative;
+      width: min(680px, 100%);
+      padding: 48px 44px 40px;
+      text-align: center;
+      background: var(--panel);
+      border: 1px solid rgba(56, 230, 255, 0.25);
+      border-radius: 14px;
+      box-shadow:
+        0 0 0 1px rgba(56, 230, 255, 0.05),
+        0 24px 70px rgba(0, 0, 0, 0.55),
+        inset 0 0 60px rgba(56, 230, 255, 0.04);
+      backdrop-filter: blur(2px);
+    }
+
+    .code {
+      margin: 0;
+      font-size: clamp(86px, 20vw, 150px);
+      font-weight: 800;
+      line-height: 0.9;
+      letter-spacing: 6px;
+      color: var(--cyan);
+      text-shadow:
+        0 0 14px rgba(56, 230, 255, 0.65),
+        0 0 42px rgba(56, 230, 255, 0.35),
+        3px 0 0 rgba(255, 61, 240, 0.55),
+        -3px 0 0 rgba(56, 230, 255, 0.45);
+      animation: flicker 4.5s infinite steps(60);
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 55%, 57%, 100% { opacity: 1; }
+      20%, 56% { opacity: 0.82; }
+    }
+
+    h1 {
+      margin: 14px 0 6px;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    p.lead {
+      margin: 0 auto 22px;
+      max-width: 46ch;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .target {
+      display: inline-block;
+      max-width: 100%;
+      margin: 0 auto 28px;
+      padding: 9px 16px;
+      font-family: "Consolas", "SF Mono", Menlo, monospace;
+      font-size: 14px;
+      color: var(--magenta);
+      word-break: break-all;
+      background: rgba(255, 61, 240, 0.07);
+      border: 1px solid rgba(255, 61, 240, 0.3);
+      border-radius: 8px;
+      text-shadow: 0 0 10px rgba(255, 61, 240, 0.4);
+    }
+
+    .actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    a.btn {
+      display: inline-block;
+      padding: 12px 26px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--cyan);
+      border: 1px solid rgba(56, 230, 255, 0.55);
+      border-radius: 8px;
+      background: rgba(56, 230, 255, 0.06);
+      transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+    }
+
+    a.btn:hover {
+      color: #03121a;
+      background: var(--cyan);
+      box-shadow: 0 0 22px rgba(56, 230, 255, 0.55);
+      transform: translateY(-1px);
+    }
+
+    .hint {
+      margin: 26px 0 0;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: rgba(111, 129, 152, 0.7);
+    }
+  </style>
+  <script src="../cq-bridge.js"></script>
+</head>
+<body>
+  <main class="card">
+    <p class="code">404</p>
+    <h1>Site Not Found</h1>
+    <p class="lead">We couldn't reach the address you requested. The site may not exist, or the link may be broken.</p>
+    <div class="target" data-target hidden></div>
+    <div class="actions">
+      <a class="btn" href="../cybersearch.com/index.html">Back to Cyber Search</a>
+    </div>
+    <p class="hint">Check the address for typos and try again.</p>
+  </main>
+
+  <script>
+    // The game passes the address the player tried to open in the URL fragment
+    // (#u=...), so we can show it without it ever hitting the content host.
+    (function () {
+      const params = new URLSearchParams(location.hash.replace(/^#/, ''));
+      const requested = params.get('u');
+      const target = document.querySelector('[data-target]');
+      if (requested && target) {
+        target.textContent = requested;
+        target.hidden = false;
+      }
+    })();
+  </script>
+</body>
+</html>

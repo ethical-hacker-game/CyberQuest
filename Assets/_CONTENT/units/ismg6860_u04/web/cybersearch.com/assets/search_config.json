@@ -1,0 +1,51 @@
+[
+  {
+    "queries": [
+      "northbridge",
+      "citizen services",
+      "northbridge portal",
+      "resident services",
+      "northbridge backups",
+      "public backup directory"
+    ],
+    "results": [
+      {
+        "title": "Northbridge Citizen Services",
+        "description": "Public services, records, permits, resident support, and service announcements for Northbridge County.",
+        "interactive": true,
+        "url": "https://portal.northbridge.com",
+        "realUrl": "/portal.northbridge.com/index.html"
+      },
+      {
+        "title": "Northbridge Service Search",
+        "description": "Search the public civic services index for permit forms, service pages, and related resident resources.",
+        "interactive": true,
+        "url": "https://portal.northbridge.com/services/search.html",
+        "realUrl": "/portal.northbridge.com/services/search.html"
+      },
+      {
+        "title": "Public Backup Directory",
+        "description": "Directory listing for public backup files exposed through the Northbridge portal.",
+        "interactive": true,
+        "url": "https://portal.northbridge.com/public/backups",
+        "realUrl": "/portal.northbridge.com/public/backups/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "northbridge setup",
+      "northbridge installer",
+      "portal setup"
+    ],
+    "results": [
+      {
+        "title": "Northbridge Portal Setup Wizard",
+        "description": "Deployment utility for initial Northbridge portal configuration.",
+        "interactive": true,
+        "url": "https://portal.northbridge.com/setup/install/",
+        "realUrl": "/portal.northbridge.com/setup/install/index.html"
+      }
+    ]
+  }
+]

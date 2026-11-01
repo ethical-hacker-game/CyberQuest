@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_setup_validation",
+  "videoURL": null,
+  "title": "Exposed Setup: Read-Only Validation",
+  "content": "A <b>setup interface</b> prepares an application for first use and may configure databases, storage, or administrator accounts. For a read-only assessment, record its URL, heading, and visible fields without submitting forms or trying credentials. A reachable page confirms that the interface is exposed; it does not prove that its controls work or that anyone has changed settings. Recommend removing the installer after deployment or restricting it to authorized maintenance access. Testing state changes requires separate permission.",
+  "links": [
+    "read-only setup validation"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": false,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Marcus:</b> The preserved message shows <b>From: Payroll &lt;payroll@securefund-alerts.com&gt;</b>. SecureFund's published mail domain is <b>securefund.com</b>; the sender uses a different domain.",
+      "taskInstructions": "Review <b>impersonation</b> guidance before judging what this header establishes.",
+      "taskQuestion": "Does this From address prove the message came from SecureFund's published mail domain?",
+      "taskCompleteText": "<b>Marcus:</b> No. The address uses a different domain, which is an impersonation indicator; the From field alone does not establish who sent the message."
+    }
+  ],
+  "taskID": "ismg6860_u01_q27_t02",
+  "parentQuestID": "ismg6860_u01_q27",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u05_q11",
+  "cityIndex": 7287,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q11_t01",
+    "ismg6860_u05_q11_t02",
+    "ismg6860_u05_q11_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "IPsec Enumeration",
+      "questDescription": "Dana Osei needs the plant-edge IKE exposure documented. Identify the responding service, compare its peer identity with the VPN inventory, and record the offered transform set.",
+      "questCompleteText": "<b>Dana Osei:</b> The plant edge exposes an IKE configuration labeled bridgeworks-site that is absent from the current VPN inventory and offers 3DES. Tunnel establishment remains untested.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "IPsec Enumeration",
+      "questDescription": "Reyes Calloway wants the plant-edge IKE configuration mapped precisely. Read the exposed identity and transform proposal without mistaking a responder for a working tunnel.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The responder disclosed bridgeworks-site and a 3DES proposal. That is useful configuration metadata, not verified tunnel access.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "IPsec Enumeration",
+      "questDescription": "Priya Nandan wants the undocumented BridgeWorks identity recorded without calling it an open tunnel. Establish exactly what the IKE responder reveals.",
+      "questCompleteText": "<b>Priya Nandan:</b> The plant edge disclosed an undocumented BridgeWorks peer identity and legacy transform proposal. Whether a tunnel can be established is still unknown.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Reply and offer partial payment before involving legal counsel.",
+        "Ask the sender for additional stolen data as proof and continue the conversation personally.",
+        "Preserve the demand, continue containment, and escalate decisions to authorized leadership, legal counsel, and required external partners."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Piotr Novak:</b> The CEO received a demand for three million dollars in exchange for withholding alleged fall-launch material. The claim is relevant evidence, but it does not independently prove what the sender possesses. No analyst should negotiate or promise payment without the authorized response group.",
+      "taskInstructions": "Choose the response that preserves evidence and keeps extortion decisions with the appropriate organizational and legal authorities.",
+      "taskQuestion": "How should ByteSystems respond to extortion?",
+      "taskCompleteText": "<b>Piotr Novak:</b> Correct. We will preserve the demand, maintain containment and recovery work, and coordinate any communication, reporting, or payment decision through authorized leadership and counsel."
+    }
+  ],
+  "taskID": "ismg6860_u01_q13_t03",
+  "parentQuestID": "ismg6860_u01_q13",
+  "articleID": "u01_incident_response",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

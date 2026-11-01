@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u00_q09",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_lab",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u00_q09_t00_dialogue",
+    "ismg6860_u00_q09_t01_unlock",
+    "ismg6860_u00_q09_t02_why"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Field Kit",
+      "questDescription": "Ed asks {player} to equip the Case Journal so confirmed observations stay attached to the case and can be checked at handoff.",
+      "questCompleteText": "Field Kit complete. {player} equipped the Case Journal from the Lab panel and understands why professional evidence work never relies on memory.",
+      "questCharacterID": "u00_ed",
+      "appScenarioID": ""
+    }
+  ]
+}

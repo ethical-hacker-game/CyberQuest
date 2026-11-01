@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The disabled controls are a technical observation. The authorization defines which additional tests we may perform. Keep those two limits separate.",
+      "taskInstructions": "Read <link=\"u04_feasibility_evidence\"><u>feasibility evidence</u></link>, then choose the statement that distinguishes evidence from scope.",
+      "taskQuestion": "Why can we not claim that the setup wizard can reconfigure the portal?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Current evidence does not show a working state change, and proving one would require separate authorization.",
+      "answers": [
+        "The page is public, so every visible control must be assumed functional.",
+        "The observed controls are disabled and no form was submitted; an active state-changing test also requires separate authorization.",
+        "The scanner assigned a High rating, which proves successful reconfiguration.",
+        "The page title alone proves that an administrator account can be created."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The page is reachable, but its observed controls are disabled. Testing whether another request can change state would be a new action outside the current evidence.",
+      "taskInstructions": "Read <link=\"u04_feasibility_evidence\"><u>feasibility evidence</u></link>, then choose the statement that distinguishes evidence from scope.",
+      "taskQuestion": "Why can we not claim that the setup wizard can reconfigure the portal?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. There is no demonstrated state-changing path, and testing one requires separate authorization.",
+      "answers": [
+        "The page is public, so every visible control must be assumed functional.",
+        "The observed controls are disabled and no form was submitted; an active state-changing test also requires separate authorization.",
+        "The scanner assigned a High rating, which proves successful reconfiguration.",
+        "The page title alone proves that an administrator account can be created."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Public reachability deserves remediation, but disabled controls and an unsubmitted form do not prove reconfiguration capability.",
+      "taskInstructions": "Read <link=\"u04_feasibility_evidence\"><u>feasibility evidence</u></link>, then choose the statement that distinguishes evidence from scope.",
+      "taskQuestion": "Why can we not claim that the setup wizard can reconfigure the portal?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The claim stays limited to verified exposure until a separately authorized test establishes more.",
+      "answers": [
+        "The page is public, so every visible control must be assumed functional.",
+        "The observed controls are disabled and no form was submitted; an active state-changing test also requires separate authorization.",
+        "The scanner assigned a High rating, which proves successful reconfiguration.",
+        "The page title alone proves that an administrator account can be created."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q09_t02",
+  "parentQuestID": "ismg6860_u04_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

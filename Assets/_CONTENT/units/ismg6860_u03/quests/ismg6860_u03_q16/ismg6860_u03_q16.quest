@@ -1,0 +1,43 @@
+{
+  "questID": "ismg6860_u03_q16",
+  "cityIndex": 5146,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q16_t00_voice",
+    "ismg6860_u03_q16_t00b_unlock_awareconsole",
+    "ismg6860_u03_q16_t01",
+    "ismg6860_u03_q16_t02",
+    "ismg6860_u03_q16_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Four Levers",
+      "questDescription": "Review aggregate OhPhish exercise results, identify the strongest emotional trigger, and connect it to a practical defense.",
+      "questCompleteText": "<b>Asha Moreno:</b> The leading trigger is documented, and the response can focus on slowing pressured decisions.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Four Levers",
+      "questDescription": "Analyze aggregate response rates to see which emotional trigger produced the strongest result in the awareness exercise.",
+      "questCompleteText": "<b>Felix Rane:</b> The ranking shows which pressure worked best and where a defensive pause matters most.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Four Levers",
+      "questDescription": "Use privacy-preserving exercise results to explain which pressure affected staff most without exposing individuals.",
+      "questCompleteText": "<b>Imani Vale:</b> The warning can cite the aggregate pattern without blaming or identifying participants.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

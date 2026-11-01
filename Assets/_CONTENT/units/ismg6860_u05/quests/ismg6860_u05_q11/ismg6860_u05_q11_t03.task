@@ -1,0 +1,59 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "3des",
+        "enc=3des",
+        "triple des",
+        "3-des",
+        "is 3des",
+        "offers 3des",
+        "3des encryption"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> The response includes the transform proposal the gateway is willing to negotiate. Record its encryption algorithm for review.",
+      "taskInstructions": "Reopen the terminal output from <b>ike-scan --aggressive 10.30.14.254</b>. Read the Enc value on the <b>SA=</b> line.",
+      "taskQuestion": "Which encryption algorithm does the ISAKMP handshake offer?",
+      "taskCompleteText": "<b>Dana Osei:</b> 3DES is the offered encryption algorithm. Its continued availability requires cryptographic and configuration review."
+    },
+    {
+      "correctAnswers": [
+        "3des",
+        "enc=3des",
+        "triple des",
+        "3-des",
+        "is 3des",
+        "offers 3des",
+        "3des encryption"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> The transform proposal reveals what the responder is willing to negotiate. Read the encryption field without guessing when it was configured.",
+      "taskInstructions": "Reopen the terminal output from <b>ike-scan --aggressive 10.30.14.254</b>. Read the Enc value on the <b>SA=</b> line.",
+      "taskQuestion": "Which encryption algorithm does the ISAKMP handshake offer?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> 3DES is offered. That is verified negotiation metadata; configuration age and monitoring are not."
+    },
+    {
+      "correctAnswers": [
+        "3des",
+        "enc=3des",
+        "triple des",
+        "3-des",
+        "is 3des",
+        "offers 3des",
+        "3des encryption"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Record the transform proposal exactly. It supports a concrete cryptographic finding without pretending to reveal the configuration's history.",
+      "taskInstructions": "Reopen the terminal output from <b>ike-scan --aggressive 10.30.14.254</b>. Read the Enc value on the <b>SA=</b> line.",
+      "taskQuestion": "Which encryption algorithm does the ISAKMP handshake offer?",
+      "taskCompleteText": "<b>Priya Nandan:</b> 3DES is the observed algorithm. The response proves what is offered, not how long it has been configured."
+    }
+  ],
+  "taskID": "ismg6860_u05_q11_t03",
+  "parentQuestID": "ismg6860_u05_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

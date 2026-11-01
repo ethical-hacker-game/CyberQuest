@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Now the requests for exceptions begin. Ilya Voss wants the vendor block included, and Lena Ortiz wants the camera exclusions explained. Both concerns deserve an answer, but neither changes the written authorization.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Decide how you will respond without confusing pressure with permission."
+    }
+  ],
+  "taskID": "ismg6860_u02_q03_t04_dialogue",
+  "parentQuestID": "ismg6860_u02_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

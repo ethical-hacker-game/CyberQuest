@@ -1,0 +1,55 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> GateSentry detected the edge scan, but its coverage view marks the vendor-to-ticketing path as blind. Which change adds <b>internal visibility</b> where the evidence shows it is missing?",
+      "taskInstructions": "",
+      "taskQuestion": "Which placement change best matches the evidence?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. Add visibility and segmentation at the uncovered ticketing boundary.",
+      "answers": [
+        "Add internal visibility and segmentation at the ticketing boundary.",
+        "Disable all firewall and IDS logging until after the launch window opens.",
+        "Move ECHO-73 into the ticketing VLAN with no filtering at all.",
+        "Treat every filtered port as already remediated and safely closed."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> The edge sensor saw the scan, while GateSentry marks the internal ticketing path as blind. Choose the placement change that adds <b>internal visibility</b> at that exact boundary.",
+      "taskInstructions": "",
+      "taskQuestion": "Which placement change best matches the evidence?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Correct. The missing control belongs at the ticketing boundary, not at an already observed edge.",
+      "answers": [
+        "Add internal visibility and segmentation at the ticketing boundary.",
+        "Disable all firewall and IDS logging until after the launch window opens.",
+        "Move ECHO-73 into the ticketing VLAN with no filtering at all.",
+        "Treat every filtered port as already remediated and safely closed."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> GateSentry shows edge alerts but no sensor between vendor maintenance and ticketing. Choose the recommendation that creates <b>internal visibility</b> at the verified gap.",
+      "taskInstructions": "",
+      "taskQuestion": "Which placement change best matches the evidence?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Correct. The recommendation now identifies both the uncovered boundary and the required control.",
+      "answers": [
+        "Add internal visibility and segmentation at the ticketing boundary.",
+        "Disable all firewall and IDS logging until after the launch window opens.",
+        "Move ECHO-73 into the ticketing VLAN with no filtering at all.",
+        "Treat every filtered port as already remediated and safely closed."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u02_q13_t03",
+  "parentQuestID": "ismg6860_u02_q13",
+  "articleID": "u02_monitoring_placement",
+  "mailsOnStart": [],
+  "mailsOnEnd": [
+    "ismg6860_u02_d04_report_posture"
+  ],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

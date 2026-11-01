@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q15",
+  "cityIndex": 4298,
+  "questIconID": "quest_icon_websitemirroring_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q15_t00_unlock_sitemirror",
+    "ismg6860_u01_q15_t01",
+    "ismg6860_u01_q15_t02"
+  ],
+  "requiredQuestID": "ismg6860_u01_q14",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Site Mirror Audit",
+      "questDescription": "Kateryna Bondarenko authorizes a controlled mirror of GreenNet's public website. Complete the guided WinHTTrack run, then identify which type of finding would require urgent handling if it appeared in the collected pages. The completed run alone does not establish that sensitive files were exposed.",
+      "questCompleteText": "<b>Kateryna Bondarenko:</b> The guided mirror run finished. You identified the kind of backup that would require immediate review and credential rotation if found; the run has not established that GreenNet published one.",
+      "questCharacterID": "u01_kateryna_bondarenko",
+      "appScenarioID": "winhttrack_quest_15_1"
+    }
+  ]
+}

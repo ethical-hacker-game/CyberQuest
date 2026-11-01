@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q22",
+  "cityIndex": 221,
+  "questIconID": "quest_icon_corporateespionage_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q22_t01",
+    "ismg6860_u01_q22_t02",
+    "ismg6860_u01_q22_t03"
+  ],
+  "requiredQuestID": "ismg6860_u01_q21",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Silent Recon",
+      "questDescription": "<b>Samira:</b> DigitDesigns reported unusual requests from an internal address. Preserve the relevant records, review a short log sample, and decide what further evidence is needed before describing this as a persistent threat.",
+      "questCompleteText": "<b>Samira:</b> You preserved the evidence, recognized requests consistent with reconnaissance, and identified what we still need to establish persistence. The sample alone does not confirm espionage or an APT.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": ""
+    }
+  ]
+}

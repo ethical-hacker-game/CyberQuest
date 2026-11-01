@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "A routine health check from an internal service.",
+        "Low-volume reconnaissance-like requests; source and intent are unverified.",
+        "Confirmed persistent access with stolen company data.",
+        "A high-volume denial-of-service from an external host."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> Here is the flagged request sample. It came from one internal address over a short interval; the account owner and purpose have not been verified.\n\n<b>01:12</b> 10.24.8.19 GET /robots.txt 200\n<b>01:18</b> 10.24.8.19 GET /admin/ 403\n<b>01:31</b> 10.24.8.19 GET /staff-directory 200\n<b>01:46</b> 10.24.8.19 GET /backup/ 404",
+      "taskInstructions": "Read the request paths and response codes, then compare the pattern with the Cyberpedia guidance on <b>targeted intrusion</b>.",
+      "taskQuestion": "What conclusion is best supported by this sample?",
+      "taskCompleteText": "<b>Samira:</b> The low-volume requests are consistent with reconnaissance. We have not established who sent them, why, or whether access persisted."
+    }
+  ],
+  "taskID": "ismg6860_u01_q22_t02",
+  "parentQuestID": "ismg6860_u01_q22",
+  "articleID": "u01_persistent_threats",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

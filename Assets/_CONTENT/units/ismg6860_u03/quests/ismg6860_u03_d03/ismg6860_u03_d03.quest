@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u03_d03",
+  "cityIndex": 5160,
+  "questIconID": "u03_decision",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u03_d03_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Use The Pressure Decision",
+      "questDescription": "Choose how Harborview should use aggregate trigger results: improve immediate guidance, run a controlled follow-up, or support public accountability.",
+      "questCompleteText": "<b>Asha Moreno:</b> The trigger data now has a defined purpose and a clear boundary.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    }
+  ]
+}

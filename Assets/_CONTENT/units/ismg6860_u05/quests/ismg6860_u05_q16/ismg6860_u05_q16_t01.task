@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The SNMP community string crossing the network in cleartext on the core stack.",
+        "The 02:41 directory timestamp corroborated by a Unix session from 198.51.100.77.",
+        "The permissive DNS zone transfer that discloses the full published record set.",
+        "The unlinked legacy support portal still reachable on the public web server."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Eleven findings is not a report, it is a list, and a list is the easiest thing in the world for a board to work through slowly. I need them connected into one thing a person can hold in their head.\n\nSo before we draw anything, I want to know where the weight sits. Not the finding that is hardest to explain, the one that changes what this engagement is.",
+      "taskInstructions": "Compare the four findings by evidence strength. Select the one that records account activity rather than configuration or metadata exposure.",
+      "taskQuestion": "Which finding most changes the risk assessment?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The matching timestamp and Unix session establish account activity. They do not identify the operator or prove malicious actions."
+    },
+    {
+      "answers": [
+        "The SNMP community string crossing the network in cleartext on the core stack.",
+        "The 02:41 directory timestamp corroborated by a Unix session from 198.51.100.77.",
+        "The permissive DNS zone transfer that discloses the full published record set.",
+        "The unlinked legacy support portal still reachable on the public web server."
+      ],
+      "correctAnswer": 1,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Eleven findings, and most of them are merely embarrassing. A cleartext community string and a chatty directory make a client look untidy; they do not make anyone move.\n\nOne of these is a different kind of object entirely, and I want to know whether you can see which. That instinct is worth more to me than the document it goes in.",
+      "taskInstructions": "Compare the four findings by evidence strength. Select the one that records account activity rather than configuration or metadata exposure.",
+      "taskQuestion": "Which finding most changes the risk assessment?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. Two telemetry sources support the same activity event; operator, intent, and actions remain unknown."
+    },
+    {
+      "answers": [
+        "The SNMP community string crossing the network in cleartext on the core stack.",
+        "The 02:41 directory timestamp corroborated by a Unix session from 198.51.100.77.",
+        "The permissive DNS zone transfer that discloses the full published record set.",
+        "The unlinked legacy support portal still reachable on the public web server."
+      ],
+      "correctAnswer": 1,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Halloway's people will read this looking for the sentence they can reframe, and they will find one if we let eleven findings sit at the same weight.\n\nOne of them is not a configuration problem at all, which is why it is the one they will work hardest to describe as something else.",
+      "taskInstructions": "Compare the four findings by evidence strength. Select the one that records account activity rather than configuration or metadata exposure.",
+      "taskQuestion": "Which finding most changes the risk assessment?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The activity event is stronger than a configuration disclosure, but it still does not prove who acted or what they did."
+    }
+  ],
+  "taskID": "ismg6860_u05_q16_t01",
+  "parentQuestID": "ismg6860_u05_q16",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

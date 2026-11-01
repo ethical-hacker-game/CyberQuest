@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "zonemap",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Before you inspect the topology, learn how to organize hosts by zone and recognize a path that crosses a trust boundary. The Zone Map framework will give us a consistent way to read the diagram and later scan results.",
+      "taskInstructions": "Open the Lab panel and spend 1,200 credits to unlock Zone Map.",
+      "taskQuestion": "Unlock the Zone Map in the Lab panel.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Zone Map is ready. Apply that framework to Asterlink's three network zones."
+    }
+  ],
+  "taskID": "ismg6860_u02_q03_t00_unlock_zonemap",
+  "parentQuestID": "ismg6860_u02_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

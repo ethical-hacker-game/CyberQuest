@@ -1,0 +1,83 @@
+{
+  "variants": [
+    {
+      "minigameType": "CamCleanDeskSweep",
+      "minigameHeaderText": "Post-Tailgating Exposure Sweep",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "cameraDeckSettings": {
+        "facilityId": "night_ops_office",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Operations Office",
+        "targetLabel": "VISITOR-EXPOSED ITEM",
+        "decoyLabel": "COMPLIANT CONTEXT",
+        "sweep": {
+          "violationCount": 6,
+          "decoyCount": 4,
+          "switchDelaySeconds": -1
+        }
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The note does not confirm entry, so use a contingency review: if the request had succeeded, identify which office items would have been exposed to a visitor.",
+      "taskInstructions": "Review ten markers and report the six visitor-exposed items. Four describe compliant work in context; three false reports end the sweep.",
+      "taskQuestion": "Inspect the office for visitor-visible exposure.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The contingency review identifies fixable exposure without claiming the visitor entered."
+    },
+    {
+      "minigameType": "CamCleanDeskSweep",
+      "minigameHeaderText": "Post-Tailgating Exposure Sweep",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "cameraDeckSettings": {
+        "facilityId": "night_ops_office",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Operations Office",
+        "targetLabel": "VISITOR-EXPOSED ITEM",
+        "decoyLabel": "COMPLIANT CONTEXT",
+        "sweep": {
+          "violationCount": 6,
+          "decoyCount": 4,
+          "switchDelaySeconds": -1
+        }
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Entry is unconfirmed. Treat this as a value-at-risk exercise and identify what a visitor could access if the same pretext succeeded later.",
+      "taskInstructions": "Review ten markers and report the six visitor-exposed items. Four describe compliant work in context; three false reports end the sweep.",
+      "taskQuestion": "Inspect the office for visitor-visible exposure.",
+      "taskCompleteText": "<b>Felix Rane:</b> The exposed items are documented as potential value, not evidence of a completed breach."
+    },
+    {
+      "minigameType": "CamCleanDeskSweep",
+      "minigameHeaderText": "Post-Tailgating Exposure Sweep",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "cameraDeckSettings": {
+        "facilityId": "night_ops_office",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Operations Office",
+        "targetLabel": "VISITOR-EXPOSED ITEM",
+        "decoyLabel": "COMPLIANT CONTEXT",
+        "sweep": {
+          "violationCount": 6,
+          "decoyCount": 4,
+          "switchDelaySeconds": -1
+        }
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Whether or not entry occurred, Harborview can reduce what any future visitor could see. Identify the process and workspace exposure that the institution can fix.",
+      "taskInstructions": "Review ten markers and report the six visitor-exposed items. Four describe compliant work in context; three false reports end the sweep.",
+      "taskQuestion": "Inspect the office for visitor-visible exposure.",
+      "taskCompleteText": "<b>Imani Vale:</b> The report points to fixable exposure without blaming the volunteer or inventing a breach."
+    }
+  ],
+  "taskID": "ismg6860_u03_q17_t04_clean_desk",
+  "parentQuestID": "ismg6860_u03_q17",
+  "articleID": "u03_physical_social_engineering",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

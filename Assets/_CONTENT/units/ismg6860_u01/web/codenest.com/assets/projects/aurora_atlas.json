@@ -1,0 +1,17 @@
+{
+  "id": "aurora-atlas",
+  "name": "Aurora Atlas",
+  "user": "nightlight",
+  "description": "Visualizer for aurora activity paired with guided astrophotography tips.",
+  "isPublic": true,
+  "files": [
+    {
+      "name": "README.md",
+      "content": "# Aurora Atlas\nPlan stargazing sessions with curated camera settings per location."
+    },
+    {
+      "name": "routes.geojson",
+      "content": "{\n  \"type\": \"FeatureCollection\",\n  \"features\": []\n}"
+    }
+  ]
+}

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Social Loop | Eli Masters Profile</title>
+		<style>
+			:root {
+				color-scheme: light dark;
+				--bg: #0b121a;
+				--bg-soft: #111a24;
+				--bg-card: #16212f;
+				--bg-card-alt: #1c2938;
+				--border: rgba(255, 255, 255, 0.08);
+				--text: #f4f6fb;
+				--text-muted: #9fb4cc;
+				--accent: #4af0b5;
+				--accent-soft: rgba(74, 240, 181, 0.15);
+				--warning: #ffb347;
+				font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+					'Segoe UI', sans-serif;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			.sr-only {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				overflow: hidden;
+				clip: rect(0, 0, 0, 0);
+				white-space: nowrap;
+				border: 0;
+			}
+
+			body {
+				margin: 0;
+				min-height: 100vh;
+				background: radial-gradient(circle at top, #172236, #090f16 65%);
+				color: var(--text);
+			}
+
+			.app-shell {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 32px 20px 80px;
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+			}
+
+			header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 18px 24px;
+				background: rgba(17, 26, 36, 0.65);
+				border: 1px solid var(--border);
+				border-radius: 20px;
+				backdrop-filter: blur(14px);
+			}
+
+			.brand {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+
+			.brand-icon {
+				width: 44px;
+				height: 44px;
+				border-radius: 16px;
+				background: linear-gradient(135deg, #4af0b5, #1fb7ff);
+				display: grid;
+				place-items: center;
+				font-weight: 700;
+				color: #04141c;
+			}
+
+			.brand h1 {
+				font-size: 1.1rem;
+				margin: 0;
+			}
+
+			nav {
+				display: flex;
+				gap: 16px;
+				color: var(--text-muted);
+			}
+
+			nav a {
+				color: inherit;
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.cta {
+				display: flex;
+				gap: 12px;
+			}
+
+			.cta button {
+				border: none;
+				border-radius: 14px;
+				padding: 10px 18px;
+				font-weight: 600;
+				cursor: pointer;
+			}
+
+			.cta .outline {
+				background: transparent;
+				color: var(--text);
+				border: 1px solid var(--border);
+			}
+
+			.cta .primary {
+				background: var(--accent);
+				color: #0a171f;
+			}
+
+			.profile-hero {
+				position: relative;
+				overflow: hidden;
+				border-radius: 28px;
+				border: 1px solid var(--border);
+				padding: 32px;
+				background: linear-gradient(145deg, #122032, #09131d);
+			}
+
+			.hero-grid {
+				display: grid;
+				grid-template-columns: 180px 1fr 220px;
+				gap: 32px;
+				align-items: center;
+			}
+
+			.avatar {
+				width: 170px;
+				height: 170px;
+				border-radius: 40px;
+				background: url('profile.png') center/cover, #0f1722;
+				cursor: pointer;
+				background-size: cover;
+				background-position: center;
+				display: inline-block;
+				padding: 0;
+				background-color: #0f1722;
+				border: none;
+				box-shadow: 0 0 0 3px var(--accent);
+				appearance: none;
+			}
+
+			.media-thumb {
+				border: none;
+				background: transparent;
+				padding: 0;
+				cursor: pointer;
+				appearance: none;
+			}
+
+			.media-thumb:focus-visible,
+			.avatar:focus-visible {
+				outline: 3px solid rgba(74, 240, 181, 0.5);
+				outline-offset: 4px;
+			}
+
+			.hero-meta h2 {
+				margin: 0;
+				font-size: 2.2rem;
+			}
+
+			.hero-meta p {
+				margin: 8px 0 0;
+				color: var(--text-muted);
+				line-height: 1.5;
+			}
+
+			.hero-tags {
+				margin-top: 16px;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+			}
+
+			.hero-tags span {
+				padding: 6px 12px;
+				border-radius: 999px;
+				background: var(--accent-soft);
+				color: var(--accent);
+				font-size: 0.85rem;
+			}
+
+			.pulse {
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				padding: 20px;
+				border-radius: 18px;
+				background: var(--bg-card);
+				border: 1px solid var(--border);
+			}
+
+			.lightbox {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: rgba(2, 6, 13, 0.75);
+				backdrop-filter: blur(6px);
+				padding: 20px;
+				visibility: hidden;
+				opacity: 0;
+				transition: opacity 0.2s ease;
+				z-index: 1000;
+			}
+
+			.lightbox.open {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			.lightbox-content {
+				max-width: min(90vw, 640px);
+				background: #0d1621;
+				border-radius: 18px;
+				border: 1px solid var(--border);
+				padding: 18px;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+			}
+
+			.lightbox-content img {
+				width: 100%;
+				height: auto;
+				border-radius: 12px;
+			}
+
+			.lightbox-close {
+				align-self: flex-end;
+				background: none;
+				border: none;
+				color: var(--text);
+				font-size: 1.4rem;
+				cursor: pointer;
+			}
+
+			.lightbox-caption {
+				margin: 0;
+				color: var(--text-muted);
+			}
+
+			.pulse small {
+				color: var(--text-muted);
+				letter-spacing: 0.08em;
+			}
+
+			.pulse strong {
+				font-size: 1.4rem;
+			}
+
+			.stats-grid {
+				display: grid;
+				grid-template-columns: repeat(4, minmax(0, 1fr));
+				gap: 18px;
+			}
+
+			.stat-card {
+				padding: 18px;
+				border-radius: 18px;
+				border: 1px solid var(--border);
+				background: var(--bg-card);
+			}
+
+			.stat-card span {
+				font-size: 0.8rem;
+				color: var(--text-muted);
+			}
+
+			.stat-card strong {
+				display: block;
+				margin-top: 8px;
+				font-size: 1.8rem;
+			}
+
+			.panels {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 18px;
+			}
+
+			.panel {
+				padding: 20px;
+				border-radius: 22px;
+				border: 1px solid var(--border);
+				background: var(--bg-card-alt);
+			}
+
+			.panel h3 {
+				margin-top: 0;
+			}
+
+			.list {
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				margin: 0;
+				padding-left: 18px;
+				color: var(--text-muted);
+			}
+
+			.content-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 20px;
+			}
+
+			.card {
+				border-radius: 22px;
+				border: 1px solid var(--border);
+				background: var(--bg-card);
+				padding: 22px;
+			}
+
+			.card h3 {
+				margin-top: 0;
+			}
+
+			.activity-item {
+				border-radius: 16px;
+				border: 1px solid var(--border);
+				padding: 14px 16px;
+				margin-bottom: 14px;
+				background: rgba(10, 18, 28, 0.7);
+			}
+
+			.activity-item.media {
+				display: flex;
+				gap: 16px;
+				align-items: center;
+			}
+
+			.activity-item.media img {
+				width: 120px;
+				height: 120px;
+				object-fit: cover;
+				border-radius: 12px;
+				flex-shrink: 0;
+			}
+
+			.activity-item.media .activity-body {
+				padding: 0;
+			}
+
+			.activity-item:last-child {
+				margin-bottom: 0;
+			}
+
+			.activity-item strong {
+				display: block;
+			}
+
+			.activity-item span {
+				color: var(--text-muted);
+				font-size: 0.85rem;
+			}
+
+			.connections {
+				display: flex;
+				flex-direction: column;
+				gap: 14px;
+			}
+
+			.connection {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 10px 0;
+				border-bottom: 1px solid var(--border);
+			}
+
+			.connection:last-child {
+				border-bottom: none;
+			}
+
+			.connection strong {
+				font-size: 0.95rem;
+			}
+
+			.connection span {
+				color: var(--text-muted);
+				font-size: 0.85rem;
+			}
+
+			.connection button {
+				border-radius: 999px;
+				border: none;
+				padding: 6px 14px;
+				background: var(--accent-soft);
+				color: var(--accent);
+				font-weight: 600;
+			}
+
+			.contact-grid {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 14px;
+			}
+
+			.contact-card {
+				padding: 14px;
+				border-radius: 16px;
+				border: 1px solid var(--border);
+				background: rgba(22, 33, 47, 0.75);
+			}
+
+			.badge {
+				display: inline-flex;
+				align-items: center;
+				gap: 6px;
+				padding: 4px 12px;
+				border-radius: 999px;
+				background: rgba(255, 179, 71, 0.18);
+				color: var(--warning);
+				font-size: 0.78rem;
+				font-weight: 600;
+			}
+
+			footer {
+				margin-top: 12px;
+				text-align: center;
+				color: var(--text-muted);
+				font-size: 0.85rem;
+			}
+
+			@media (max-width: 980px) {
+				header,
+				.hero-grid,
+				.stats-grid,
+				.panels,
+				.content-grid,
+				.contact-grid {
+					grid-template-columns: 1fr;
+					flex-direction: column;
+					gap: 16px;
+				}
+
+				.hero-grid,
+				.stats-grid,
+				.panels,
+				.content-grid,
+				.contact-grid {
+					display: flex;
+					flex-direction: column;
+				}
+
+				.avatar {
+					width: 130px;
+					height: 130px;
+				}
+			}
+		</style>
+	  <script src="../../../cq-bridge.js"></script>
+</head>
+	<body>
+		<div class="app-shell">
+			<header>
+				<div class="brand">
+					<div class="brand-icon">SL</div>
+					<div>
+						<h1>Social Loop</h1>
+						<small>Community Intelligence Platform</small>
+					</div>
+				</div>
+				<nav>
+					<a href="#">Overview</a>
+					<a href="#">Network</a>
+					<a href="#">Events</a>
+					<a href="#">Labs</a>
+				</nav>
+				<div class="cta">
+					<button class="outline">Insights</button>
+					<button class="primary">New Update</button>
+				</div>
+			</header>
+
+			<section class="profile-hero">
+				<div class="hero-grid">
+					<button
+						type="button"
+						class="avatar lightbox-trigger"
+						data-image="profile.png"
+						data-caption="Eli Masters &mdash; Social Loop profile portrait"
+					>
+						<span class="sr-only">Show larger portrait of Eli Masters</span>
+					</button>
+					<div class="hero-meta">
+						<h2>Eli Masters</h2>
+						<p>Community and partnerships strategist | Building hybrid live experiences at Social Loop.</p>
+						<div class="hero-tags">
+							<span>#communityops</span>
+							<span>#liveevents</span>
+							<span>#mixedreality</span>
+							<span>#creatorfund</span>
+						</div>
+					</div>
+					<aside class="pulse">
+						<small>Activity Status</small>
+						<strong>Live now</strong>
+						<p>Eli is hosting an AMA on micro-communities (4:00 PM CET).</p>
+					</aside>
+				</div>
+			</section>
+
+			<section class="panels">
+				<article class="panel">
+					<h3>About Eli</h3>
+					<p>
+						New York-based community leader connecting creators, brands, and NGOs in curated, private cohorts.
+						Former co-architect of Pulse Collective's experimental events program, now leading Social Loop Labs initiatives.
+					</p>
+					<ul class="list">
+						<li>Preferred formats: hyperlocal pods, VR audio salons, asynchronous masterminds.</li>
+						<li>Focus areas: CCaaS, onboarding architecture, experiential monetization.</li>
+						<li>Currently partnering with lifestyle, femtech, wellbeing, and civic brands.</li>
+					</ul>
+				</article>
+			</section>
+
+			<section class="content-grid">
+				<article class="card">
+					<h3>Latest Activity</h3>
+					<div class="activity-item">
+						<strong>Panel: Hybrid Communities 2026</strong>
+						<span>Live stream &middot; 29 Nov &middot; 2.1K attendees</span>
+						<p>Eli moderated a conversation with XR Collective and Urban Commons leads.</p>
+					</div>
+					<div class="activity-item media">
+						<button
+							type="button"
+							class="media-thumb lightbox-trigger"
+							data-image="conference.png"
+							data-caption="DataSequence leadership summit session in Berlin"
+						>
+							<img src="conference.png" alt="Conference stage with DataSequence logo behind Eli Masters" />
+						</button>
+						<div class="activity-body">
+							<strong>Keynote: DataSequence Live</strong>
+							<span>Summit highlight &middot; 18 Oct</span>
+							<p>Eli unveiled the DataSequence partnership playbook for community-led analytics programs and moderated the founders' roundtable.</p>
+						</div>
+					</div>
+					<div class="activity-item media">
+						<button
+							type="button"
+							class="media-thumb lightbox-trigger"
+							data-image="vacations.png"
+							data-caption="Field planning retreat on Mallorca, September 2025"
+						>
+							<img src="vacations.png" alt="Retreat planning session overlooking a coastal landscape" />
+						</button>
+						<div class="activity-body">
+							<strong>Photo Drop: Retreat Reset</strong>
+							<span>Field note &middot; 06 Sep</span>
+							<p>Captured during the Mallorca offsite where Eli mapped the 2026 community residency calendar.</p>
+						</div>
+					</div>
+					<div class="activity-item">
+						<strong>Report: Micro-Communities as a Revenue Channel</strong>
+						<span>Publication &middot; 14 Aug</span>
+						<p>New briefing deck outlining seven community archetypes and their KPIs.</p>
+					</div>
+					<div class="activity-item media">
+						<button
+							type="button"
+							class="media-thumb lightbox-trigger"
+							data-image="4thjuly.png"
+							data-caption="Fourth of July rooftop celebration with George Wilkerson"
+						>
+							<img src="4thjuly.png" alt="Fourth of July rooftop party with Eli Masters and George Wilkerson" />
+						</button>
+						<div class="activity-body">
+							<strong>Community Snapshot: Fourth of July</strong>
+							<span>Community note &middot; 04 Jul</span>
+							<p>Shared a rooftop session with my friend George Wilkerson, capturing how Social Loop pods hold space even during holiday downtime.</p>
+						</div>
+					</div>
+					<div class="activity-item">
+						<strong>Mentorship Workshop</strong>
+						<span>1:1 sessions &middot; 05 May</span>
+						<p>Six-session track supporting operators of wellness cowork studios.</p>
+					</div>
+					<div class="activity-item">
+						<strong>Newsletter "Loops & Layers"</strong>
+						<span>Bulletin &middot; 17 Jan</span>
+						<p>Design guidance for bridging online and offline community spaces.</p>
+					</div>
+				</article>
+
+			</section>
+
+			<section class="content-grid">
+				<article class="card">
+					<h3>Featured Projects</h3>
+					<div class="activity-item">
+						<strong>Pulse Residency</strong>
+						<span>12-week program &middot; Launching Jan 2026</span>
+						<p>Accelerator supporting community curators in wellbeing and creator economy spaces.</p>
+					</div>
+					<div class="activity-item">
+						<strong>XR Community Atlas</strong>
+						<span>Data platform &middot; v2.1</span>
+						<p>Mapping immersive initiatives across 34 cities with API access for Social Loop Labs partners.</p>
+					</div>
+					<div class="activity-item">
+						<strong>Social Loop Token Grants</strong>
+						<span>Pool 120K &middot; applications through 15 Dec</span>
+						<p>Micro-grant track funding community operations with a DAO-light governance layer.</p>
+					</div>
+				</article>
+				<aside class="card">
+					<h3>Contact & Availability</h3>
+					<div class="contact-grid">
+						<div class="contact-card">
+							<small>Email</small>
+							<strong>eli@socialloop.com</strong>
+						</div>
+						<div class="contact-card">
+							<small>Preferred channel</small>
+							<strong>In-app DM</strong>
+						</div>
+						<div class="contact-card">
+							<small>Next open slot</small>
+							<strong>3 Dec &middot; 3:00 PM</strong>
+						</div>
+						<div class="contact-card">
+							<small>Languages</small>
+							<strong>EN / ES</strong>
+						</div>
+					</div>
+					<p style="color: var(--text-muted); margin-top: 18px;">
+						Submit partnership ideas through Social Loop Labs or nominate an event for co-moderation.
+					</p>
+				</aside>
+			</section>
+
+				<footer>
+					Social Loop &middot; Executive profile &middot; Last updated: 28 November 2025
+				</footer>
+		</div>
+			<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+				<div class="lightbox-content">
+					<button class="lightbox-close" type="button" aria-label="Close image">&times;</button>
+					<img src="" alt="Expanded view" />
+					<p class="lightbox-caption"></p>
+				</div>
+			</div>
+			<script>
+				(() => {
+					const lightbox = document.getElementById('lightbox');
+					if (!lightbox) return;
+					const lightboxImg = lightbox.querySelector('img');
+					const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+					const closeBtn = lightbox.querySelector('.lightbox-close');
+
+					const openLightbox = (src, caption) => {
+						lightboxImg.src = src;
+						lightboxImg.alt = caption || 'Expanded view';
+						lightboxCaption.textContent = caption || '';
+						lightbox.classList.add('open');
+						lightbox.setAttribute('aria-hidden', 'false');
+					};
+
+					const closeLightbox = () => {
+						lightbox.classList.remove('open');
+						lightbox.setAttribute('aria-hidden', 'true');
+					};
+
+					document.addEventListener('click', (event) => {
+						const trigger = event.target.closest('.lightbox-trigger');
+						if (!trigger) return;
+						const src = trigger.getAttribute('data-image');
+						if (!src) return;
+						const caption = trigger.getAttribute('data-caption') || '';
+						event.preventDefault();
+						openLightbox(src, caption);
+					});
+
+					closeBtn?.addEventListener('click', closeLightbox);
+					lightbox.addEventListener('click', (event) => {
+						if (event.target === lightbox) {
+							closeLightbox();
+						}
+					});
+					document.addEventListener('keyup', (event) => {
+						if (event.key === 'Escape') {
+							closeLightbox();
+						}
+					});
+				})();
+			</script>
+	</body>
+</html>

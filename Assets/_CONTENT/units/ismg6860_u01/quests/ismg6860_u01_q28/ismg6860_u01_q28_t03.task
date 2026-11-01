@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Malware, password spraying, and remote code execution.",
+        "Scanning wireless networks and probing public web services.",
+        "Reading public records and checking domain registrations.",
+        "Eavesdropping, casual questions, and watching badge or keypad entry."
+      ],
+      "correctAnswer": 3,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Milo Navarro:</b> A nearby observer could also overhear a conversation, ask casual questions, or watch someone enter a badge or keypad code. Those clues can add context, but they do not by themselves prove account access.",
+      "taskInstructions": "Review the linked <b>shoulder surfing</b> guidance and distinguish nearby observation from unrelated remote techniques.",
+      "taskQuestion": "Which behaviors could add context to a physical observation?",
+      "taskCompleteText": "<b>Milo Navarro:</b> Eavesdropping, casual questions, and watching access-code entry can add context. Treat them as observations, not proof of compromise."
+    }
+  ],
+  "taskID": "ismg6860_u01_q28_t03",
+  "parentQuestID": "ismg6860_u01_q28",
+  "articleID": "u01_physical_information_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

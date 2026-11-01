@@ -1,0 +1,43 @@
+{
+    "questID":  "ismg6860_u04_q06",
+    "cityIndex":  7202,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q06_t00_voice",
+                    "ismg6860_u04_q06_t00b_unlock_scannerconsole",
+                    "ismg6860_u04_q06_t01",
+                    "ismg6860_u04_q06_t02",
+                    "ismg6860_u04_q06_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "Analysis: Identification",
+                         "questDescription":  "Mara Voss frames this step for {player}. Move from scattered observations to candidate vulnerability identification.",
+                         "questCompleteText":  "Analysis: Identification complete. The exposed setup interface is named and logged as a real candidate, cleanly separated from the cosmetic noise.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "Analysis: Identification",
+                         "questDescription":  "Felix Rane frames this step for {player}. Move from scattered observations to candidate vulnerability identification.",
+                         "questCompleteText":  "Analysis: Identification complete. Felix lingers on that exposed setup interface; to him, a named weakness is the first marker on a map.",
+                         "questCharacterID":  "u04_felix_rane",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "Analysis: Identification",
+                         "questDescription":  "Imani Vale frames this step for {player}. Move from scattered observations to candidate vulnerability identification.",
+                         "questCompleteText":  "Analysis: Identification complete. Imani notes the exposed setup interface sits on a portal residents depend on, so naming it is the first act of accountability.",
+                         "questCharacterID":  "u04_imani_vale",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

@@ -1,0 +1,12 @@
+{
+  "articleID": "u05_unix_user_enumeration",
+  "videoURL": null,
+  "title": "Unix User Enumeration and Corroboration",
+  "content": "<b>Unix session services can expose account and login metadata to reachable clients.</b>\n\nSeveral long-standing utilities report session information:\n\n- <b>finger</b> can return a user's login name, terminal, idle time, login time, and source host.\n- <b>rusers</b> lists users reported as logged into a remote machine.\n- <b>rwho</b> reports sessions announced by hosts running the rwho service.\n\nAvailability and authentication behavior depend on service configuration and network reachability. Their assessment value is <b>corroboration</b>: agreement between a directory login timestamp and a Unix session record strengthens the activity finding. It may still represent the same event observed by two telemetry systems, not two separate logins.\n\nKeep evidence types distinct. An SMTP recipient check can confirm that an address is accepted, but it does not provide a login timestamp. A current session snapshot can identify an outlier, but it cannot establish recurrence, intent, or whether a person or automated process created the session.",
+  "links": [
+    "finger",
+    "rusers",
+    "rwho",
+    "corroboration"
+  ]
+}

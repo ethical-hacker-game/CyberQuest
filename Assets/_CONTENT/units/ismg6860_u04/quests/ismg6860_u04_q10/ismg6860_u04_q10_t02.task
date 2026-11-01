@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Prioritize the verified public conditions that provide direct access to administrative interfaces or files.",
+      "taskInstructions": "Use exposure, evidence confidence, likely impact, and speed of containment.",
+      "taskQuestion": "Which remediation should be prioritized?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Restrict the setup route and backup listing first because both are verified and publicly reachable.",
+      "answers": [
+        "Investigate the unconfirmed internal OpenSSH banner before containing public exposures.",
+        "Add framing protection to the homepage before restricting administrative material.",
+        "Begin a full application rewrite before applying temporary access restrictions.",
+        "Restrict the setup route and remove public access to the backup listing first."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The public, verified administrative exposures provide the clearest opportunity. Decide what closes first.",
+      "taskInstructions": "Use exposure, evidence confidence, likely impact, and speed of containment.",
+      "taskQuestion": "Which remediation should be prioritized?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Restricting both public paths removes the most immediate opportunities.",
+      "answers": [
+        "Investigate the unconfirmed internal OpenSSH banner before containing public exposures.",
+        "Add framing protection to the homepage before restricting administrative material.",
+        "Begin a full application rewrite before applying temporary access restrictions.",
+        "Restrict the setup route and remove public access to the backup listing first."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Prioritize the verified public paths that can expose administrative functions or material.",
+      "taskInstructions": "Use exposure, evidence confidence, likely impact, and speed of containment.",
+      "taskQuestion": "Which remediation should be prioritized?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Immediate access restrictions reduce risk while permanent cleanup is scheduled.",
+      "answers": [
+        "Investigate the unconfirmed internal OpenSSH banner before containing public exposures.",
+        "Add framing protection to the homepage before restricting administrative material.",
+        "Begin a full application rewrite before applying temporary access restrictions.",
+        "Restrict the setup route and remove public access to the backup listing first."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q10_t02",
+  "parentQuestID": "ismg6860_u04_q10",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

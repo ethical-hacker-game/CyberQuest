@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> A calm tone and accurate event details do not prove the caller's identity. Identify the request that crosses the authentication boundary.",
+      "taskInstructions": "Compare Riley's transcript with <b>Text and Voice Phishing</b> in Cyberpedia.",
+      "taskQuestion": "Which line in the call is the clear vishing tell?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. Legitimate support should never ask Riley to disclose a one-time authentication code.",
+      "answers": [
+        "The caller mentions accurate details about the event.",
+        "The caller speaks politely and claims to be support.",
+        "The caller asks Riley to read back a one-time code.",
+        "The caller says mobile badge access may be disabled."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u03_q03_t03",
+  "parentQuestID": "ismg6860_u03_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

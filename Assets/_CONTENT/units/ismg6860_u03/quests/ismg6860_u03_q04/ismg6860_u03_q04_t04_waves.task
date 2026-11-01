@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "minigameType": "Waves",
+      "minigameHeaderText": "Borrowed Voice Signal Check",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "wavesSettings": {
+        "tolerance": 0.08
+      },
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Before analysts compare call recordings, calibrate the waveform controls against a known reference. A match confirms the tool is aligned; it does not identify a speaker or prove who placed a call.",
+      "taskInstructions": "Adjust height, width, and shift until each wave reaches <b>100%</b>. Solving one wave unlocks the next.",
+      "taskQuestion": "Calibrate all waveform controls to the reference.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Calibration complete. We can compare recordings consistently, but any identity claim still requires independent evidence."
+    }
+  ],
+  "taskID": "ismg6860_u03_q04_t04_waves",
+  "parentQuestID": "ismg6860_u03_q04",
+  "articleID": "u03_social_patterns",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

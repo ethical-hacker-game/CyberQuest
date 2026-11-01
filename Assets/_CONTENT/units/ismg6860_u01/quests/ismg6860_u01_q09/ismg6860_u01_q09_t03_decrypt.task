@@ -1,0 +1,42 @@
+{
+  "variants": [
+    {
+      "minigameType": "DecryptIntercept",
+      "minigameHeaderText": "Header Analysis Note",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "decryptSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Routing Evidence Reminder",
+            "recommendedDifficulty": "Easy",
+            "plaintext": "HEADER HOPS SHOW ROUTE NOT AUTHORSHIP",
+            "steps": [
+              {
+                "type": "Caesar",
+                "caesarShift": 2
+              },
+              {
+                "type": "Base64",
+                "caesarShift": 3
+              }
+            ]
+          }
+        ],
+        "wrongAttemptsAllowed": 4
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> Before we interpret the trace, decode this training note. Reversible encoding can obscure text, but it does not provide the protection of encryption.",
+      "taskInstructions": "Use the analysis readout to identify the current encoding. Remove the outermost layer first, then continue inward. A wrong tool or Caesar shift costs one of four attempts.",
+      "taskQuestion": "Decode the header-analysis reminder.",
+      "taskCompleteText": "<b>Samira:</b> Correct: header hops describe a recorded route, not authorship. Keep that evidence boundary in mind during the trace."
+    }
+  ],
+  "taskID": "ismg6860_u01_q09_t03_decrypt",
+  "parentQuestID": "ismg6860_u01_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

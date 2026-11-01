@@ -1,0 +1,39 @@
+{
+  "questID": "ismg6860_u02_q13",
+  "cityIndex": 5003,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q13_t01",
+    "ismg6860_u02_q13_t02",
+    "ismg6860_u02_q13_t03",
+    "ismg6860_u02_q13_t04_dialogue"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Controls Watching You",
+      "questDescription": "Help Mira compare the scan evidence with GateSentry coverage and propose a specific control improvement.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> The evidence now supports a specific recommendation for visibility and segmentation at the ticketing boundary.",
+      "questCharacterID": "u02_mira_sen"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Controls Watching You",
+      "questDescription": "Help Kade identify which traffic GateSentry observed and which internal path remained outside its view.",
+      "questCompleteText": "<b>Kade Mercer:</b> The control map now shows where detection works and where the internal path needs another boundary.",
+      "questCharacterID": "u02_kade_mercer"
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Controls Watching You",
+      "questDescription": "Help Lena turn the verified monitoring gap into a precise, defensible recommendation.",
+      "questCompleteText": "<b>Lena Ortiz:</b> The report can now name the uncovered boundary and the control needed there without overstating the evidence.",
+      "questCharacterID": "u02_lena_ortiz"
+    }
+  ]
+}

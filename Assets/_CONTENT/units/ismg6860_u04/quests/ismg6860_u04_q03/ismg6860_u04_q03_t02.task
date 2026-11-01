@@ -1,0 +1,31 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Northbridge attached internal scan evidence to the portal report. Identify the SSH service on <b>ops-jump-03</b>; it is separate from the public web server.",
+      "taskInstructions": "Run <b>nessus verify portal</b> in the terminal to open the saved report. Select <b>OpenSSH &lt; 7.4 Service Detection (internal host)</b> and read its <b>Service</b> line.",
+      "taskQuestion": "Which SSH product and version does the report list for ops-jump-03?",
+      "taskCompleteText": "<b>Mara Voss:</b> The report lists OpenSSH 7.2. Record it as a version finding pending confirmation of the installed package and security fixes.",
+      "correctAnswers": [
+        "OpenSSH 7.2",
+        "OpenSSH",
+        "Open SSH",
+        "Open SSH 7.2",
+        "OpenSSH_7.2",
+        "OpenSSH-7.2",
+        "OpenSSH version 7.2",
+        "OpenSSH v7.2",
+        "7.2",
+        "SSH 7.2"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u04_q03_t02",
+  "parentQuestID": "ismg6860_u04_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input",
+  "correctAnswers": []
+}

@@ -1,0 +1,25 @@
+{
+  "mailID": "ismg6860_u00_q08_t01_final_note",
+  "parentTaskID": "ismg6860_u00_q08_t01_final_mail",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Michele Ricci <michele.ricci@cyberquest.academy>",
+      "subject": "First Signal complete",
+      "shortSummary": "Michele confirms that the evidence chain is ready for operations.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nFirst Signal is complete. Your Whitehat approach gives the service owner a record they can act on.\n\nCase FS-00-417 connects the authorization, status notice NS-1047, DNS answer, Zenmap target, scanner finding, and packet-gate control.\n\nThe next action is clear: the owner should disable directory indexing, move exposed files outside the web root, and rescan to verify the repair. The evidence supports that request; it does not yet prove the repair is done.\n\nI will use your packet for the operations handoff. Keep the original observations together so the result can be checked.\n\nMichele",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Ana Reyes <ana.reyes@cyberquest.academy>",
+      "subject": "First Signal complete",
+      "shortSummary": "Ana confirms that the evidence chain is ready for risk communication.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nFirst Signal is complete. Your Hacktivist approach puts the people affected at the center of the response.\n\nCase FS-00-417 connects the authorization, status notice NS-1047, DNS answer, Zenmap target, scanner finding, and packet-gate control.\n\nThe brief asks the service owner to disable directory indexing, move exposed files outside the web root, and verify the repair. We are requesting an accountable response, not claiming the repair has already happened.\n\nI will use your brief to explain the impact and request a clear update. Sensitive paths remain within the authorized team; the message should protect people, not create another exposure.\n\nAna",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> An OS fingerprint is an inference from network behavior, not an inventory record. Preserve the scanner's confidence level so the report states the result as strongly as the evidence allows.",
+      "taskInstructions": "Run <b>nmap -O 10.42.18.73</b> in the terminal and read the OS details line, including the confidence percentage it reports.",
+      "taskQuestion": "How should the reported Embedded Linux result be recorded?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. Record Embedded Linux as an 87%-confidence hint that still needs corroboration.",
+      "answers": [
+        "As firm proof of a confirmed, exploitable path.",
+        "As justification to scan outside the approved scope.",
+        "As an 87%-confidence hint needing corroboration.",
+        "As irrelevant detail once some ports are open."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> An OS fingerprint can sharpen a private map, but it remains a confidence-rated inference. Keep the scanner's percentage attached to the profile instead of turning a guess into certainty.",
+      "taskInstructions": "Run <b>nmap -O 10.42.18.73</b> in the terminal and read the OS details line, including the confidence percentage it reports.",
+      "taskQuestion": "How should the reported Embedded Linux result be recorded?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Embedded Linux at 87% confidence sharpens the profile without pretending the identity is settled.",
+      "answers": [
+        "As firm proof of a confirmed, exploitable path.",
+        "As justification to scan outside the approved scope.",
+        "As an 87%-confidence hint needing corroboration.",
+        "As irrelevant detail once some ports are open."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> An OS fingerprint could be quoted in a public brief, so its confidence level must remain visible. Probability is not proof, and overstating the result would weaken the entire finding.",
+      "taskInstructions": "Run <b>nmap -O 10.42.18.73</b> in the terminal and read the OS details line, including the confidence percentage it reports.",
+      "taskQuestion": "How should the reported Embedded Linux result be recorded?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Calling it an 87%-confidence hint keeps the public wording honest.",
+      "answers": [
+        "As firm proof of a confirmed, exploitable path.",
+        "As justification to scan outside the approved scope.",
+        "As an 87%-confidence hint needing corroboration.",
+        "As irrelevant detail once some ports are open."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u02_q08_t01",
+  "parentQuestID": "ismg6860_u02_q08",
+  "articleID": "u02_fingerprinting",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

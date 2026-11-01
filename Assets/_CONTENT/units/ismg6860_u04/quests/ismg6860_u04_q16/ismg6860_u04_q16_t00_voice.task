@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> We will model exploitation pathways without executing them. Keep confirmed conditions, required assumptions, and predicted impact clearly separated.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Mara Voss:</b> Start with the confirmed weak service permissions on NB-FIN-07."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Pathway analysis connects confirmed conditions and assumptions into a model. Do not confuse a plausible transition with one that was tested.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> Begin with the weak service permissions confirmed on NB-FIN-07."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Show how a confirmed condition could increase impact, but label every untested transition as a hypothesis. Clear limits make the risk harder to dismiss.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> Start with the confirmed service-permission weakness on NB-FIN-07."
+    }
+  ],
+  "taskID": "ismg6860_u04_q16_t00_voice",
+  "parentQuestID": "ismg6860_u04_q16",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

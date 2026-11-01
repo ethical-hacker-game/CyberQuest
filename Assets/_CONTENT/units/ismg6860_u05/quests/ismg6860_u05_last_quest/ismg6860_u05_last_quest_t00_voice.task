@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Colm Fairweather:</b> I read the Halloway package twice. You kept the strongest claim where the evidence supports it: an enabled vendor-labeled account with recent historian activity, surrounded by separate disclosure and configuration findings.\n\nYou also stayed inside read-only scope. That combination is what makes the report defensible.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Colm Fairweather:</b> Good work. Take Monday."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Colm Fairweather:</b> The Halloway package is readable and properly evidenced, but the maintenance-trunk section is framed as housekeeping. That emphasis does not match the stronger internal concern documented elsewhere.\n\nI will sign the official report, but the difference is visible.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Colm Fairweather:</b> The official report is signed. Take Monday."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Colm Fairweather:</b> Halloway disabled the account inside four hours and accelerated the configuration review. They also asked how the safety committee received our findings before their directors and before Dana could coordinate the response.\n\nThe remediation moved faster, but the delivery bypassed the client contact who authorized our work.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Colm Fairweather:</b> The technical work stands. We still have to answer for how it was delivered. Take Monday."
+    }
+  ],
+  "taskID": "ismg6860_u05_last_quest_t00_voice",
+  "parentQuestID": "ismg6860_u05_last_quest",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The directory's organizational-unit structure.",
+        "The passwords stored for accounts in each department.",
+        "The switch interfaces assigned to each department.",
+        "The firewall rules protecting each organizational unit."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> The anonymous bind answered a query about one account. Check what organizational information the controller returns when the same client requests organizational-unit entries.",
+      "taskInstructions": "Run <b>ldapsearch -b base</b> and see what the same unauthenticated query returns with no filter applied.",
+      "taskQuestion": "What else did the anonymous bind expose besides the target account?",
+      "taskCompleteText": "<b>Dana Osei:</b> The anonymous bind returned five organizational units. That directory disclosure is a separate finding from the svc_bridgeworks record."
+    },
+    {
+      "answers": [
+        "The directory's organizational-unit structure.",
+        "The passwords stored for accounts in each department.",
+        "The switch interfaces assigned to each department.",
+        "The firewall rules protecting each organizational unit."
+      ],
+      "correctAnswer": 0,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> The anonymous bind answered the account query. Now request the organizational-unit entries and record only what the directory actually returns.",
+      "taskInstructions": "Run <b>ldapsearch -b base</b> and see what the same unauthenticated query returns with no filter applied.",
+      "taskQuestion": "What else did the anonymous bind expose besides the target account?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The query returned five organizational units without credentials. That structure is useful reconnaissance, even without user or privilege data."
+    },
+    {
+      "answers": [
+        "The directory's organizational-unit structure.",
+        "The passwords stored for accounts in each department.",
+        "The switch interfaces assigned to each department.",
+        "The firewall rules protecting each organizational unit."
+      ],
+      "correctAnswer": 0,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The controller answered one anonymous account query. Request the organizational-unit entries so the disclosure finding states exactly how much internal structure is visible.",
+      "taskInstructions": "Run <b>ldapsearch -b base</b> and see what the same unauthenticated query returns with no filter applied.",
+      "taskQuestion": "What else did the anonymous bind expose besides the target account?",
+      "taskCompleteText": "<b>Priya Nandan:</b> The anonymous query returned five organizational units. That is a precise, reviewable disclosure of Halloway's internal structure."
+    }
+  ],
+  "taskID": "ismg6860_u05_q05_t03",
+  "parentQuestID": "ismg6860_u05_q05",
+  "articleID": "u05_ldap_directory",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

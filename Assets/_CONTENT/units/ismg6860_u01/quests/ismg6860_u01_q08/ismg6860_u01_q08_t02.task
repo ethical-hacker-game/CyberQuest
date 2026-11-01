@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": true,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Taylor:</b> The record includes a person’s name and contact details, and it may change after the owner or registrar updates it. Before deciding who should receive the finding, preserve only the evidence needed to document what the lookup showed.",
+      "taskInstructions": "Open the Cyberpedia link for <b>registrant</b> and use the Domain Registration Intelligence guidance to evaluate the statement.",
+      "taskQuestion": "Should you record the query target, source, lookup time, and relevant fields before making a disclosure decision?",
+      "taskCompleteText": "<b>Taylor:</b> Yes. Preserve the minimum relevant evidence first, then decide how to report it without contacting or accusing the named person based on the WHOIS record alone."
+    }
+  ],
+  "taskID": "ismg6860_u01_q08_t02",
+  "parentQuestID": "ismg6860_u01_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

@@ -1,0 +1,13 @@
+{
+  "articleID": "u05_snmp_versions",
+  "videoURL": null,
+  "title": "SNMP Versions and Community String Exposure",
+  "content": "<b>SNMPv1 and SNMPv2c send their shared community string without encryption.</b>\n\nAn SNMP agent exposes device data in a <b>Management Information Base</b>. Numeric <b>object identifiers</b> address values such as system identity, interface state, and routing information. A MIB walk queries a branch of that tree in sequence.\n\n- <b>SNMPv1 and SNMPv2c</b> use community strings as shared credentials. Device configuration determines whether a string permits read-only or read-write operations. The conventional defaults are public and private, but custom strings remain visible to anyone who captures the traffic.\n- <b>SNMPv3</b> supports named users, authentication, and optional privacy. Use the authPriv security level when both authentication and encrypted payloads are required.\n\nA non-default community string reduces simple guessing, but it does not protect observed SNMPv1 or SNMPv2c traffic. Prefer SNMPv3 authPriv, restrict management access to approved hosts, and rotate any exposed shared strings.",
+  "links": [
+    "community string",
+    "Management Information Base",
+    "object identifier",
+    "SNMPv3",
+    "MIB"
+  ]
+}

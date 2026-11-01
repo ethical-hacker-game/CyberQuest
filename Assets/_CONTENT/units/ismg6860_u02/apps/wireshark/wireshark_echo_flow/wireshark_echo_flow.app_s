@@ -1,0 +1,42 @@
+{
+  "appID": "wireshark",
+  "scenarioID": "wireshark_echo_flow",
+  "header": "Wireshark - ECHO-73 Capture",
+  "extension": "png",
+  "size": {
+    "x": 900,
+    "y": 620
+  },
+  "margin": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "stages": [
+    {
+      "stageID": "echo_ticketing_flow",
+      "customHeader": "Wireshark - ECHO-73 flow",
+      "frames": [
+        {
+          "imageName": "frame_0000",
+          "delayMs": 900
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "exit",
+          "linkPoistion": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "linkSize": {
+            "x": 900.0,
+            "y": 620.0
+          }
+        }
+      ]
+    }
+  ]
+}

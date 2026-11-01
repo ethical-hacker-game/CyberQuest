@@ -1,0 +1,11 @@
+{
+  "articleID": "u05_dns_zone_transfer",
+  "videoURL": null,
+  "title": "DNS Zone Transfers as an Enumeration Vector",
+  "content": "<b>A zone transfer is a legitimate replication mechanism that becomes disclosure when offered to an unauthorized client.</b>\n\nSecondary nameservers request a full copy of a zone from the primary through <b>AXFR</b>. A successful transfer can reveal the zone's current hostnames, addresses, mail routing, and other published records in one response. It does not provide historical records that are no longer present.\n\nCompare returned addresses with the organization's documented allocations. A record outside those ranges is a lead that requires ownership and service validation. The DNS record alone does not prove who controls the endpoint, what service is running, or whether it can reach internal systems.\n\nRestrict transfers to authorized secondary nameservers, keep private names out of public zones, and regularly review records that point to third-party or retired infrastructure.",
+  "links": [
+    "zone transfer",
+    "AXFR",
+    "nameserver"
+  ]
+}

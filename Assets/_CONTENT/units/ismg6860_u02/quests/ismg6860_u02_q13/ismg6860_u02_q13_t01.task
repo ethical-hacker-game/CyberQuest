@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> FW-2871 records what its sensor can observe, not every flow in the network. Open its console and compare the detected scan with the <b>monitoring gap</b> at the ticketing boundary.",
+      "taskInstructions": "Run <b>gatesentry</b> in the terminal; it launches the console interface in your browser.",
+      "taskQuestion": "Open the GateSentry console (FW-2871).",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> The console shows edge scan alerts and no internal sensor at the ticketing boundary.",
+      "correctAnswer": "10.42.18.1:8443"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> A firewall sees the traffic that crosses its own boundary. Open GateSentry and locate the <b>monitoring gap</b> between vendor maintenance and ticketing.",
+      "taskInstructions": "Run <b>gatesentry</b> in the terminal; it launches the console interface in your browser.",
+      "taskQuestion": "Open the GateSentry console (FW-2871).",
+      "taskCompleteText": "<b>Kade Mercer:</b> FW-2871 saw the edge scan, while the internal ticketing path remained outside its sensor coverage.",
+      "correctAnswer": "10.42.18.1:8443"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> The packet capture established the vendor-to-ticketing session. Open GateSentry to determine whether its sensor coverage confirms a <b>monitoring gap</b> on that boundary.",
+      "taskInstructions": "Run <b>gatesentry</b> in the terminal; it launches the console interface in your browser.",
+      "taskQuestion": "Open the GateSentry console (FW-2871).",
+      "taskCompleteText": "<b>Lena Ortiz:</b> The console confirms that the internal ticketing boundary has no sensor coverage.",
+      "correctAnswer": "10.42.18.1:8443"
+    }
+  ],
+  "taskID": "ismg6860_u02_q13_t01",
+  "parentQuestID": "ismg6860_u02_q13",
+  "articleID": "u02_monitoring_placement",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Check which HTTP methods the portal accepts. Each should have a reason to be enabled.",
+      "taskInstructions": "Read <link=\"u04_http_methods\"><u>HTTP methods</u></link>, then run <b>nikto -h https://portal.northbridge.com</b> in the terminal. Compare the reported methods with their purposes.",
+      "taskQuestion": "Which reported method echoes the request for diagnostics and should be disabled when not needed?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. TRACE echoes the request. Ask the server team to disable it unless there is an approved diagnostic need; its presence alone does not prove a breach.",
+      "answers": [
+        "GET",
+        "TRACE",
+        "POST",
+        "HEAD"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q02_t02",
+  "parentQuestID": "ismg6860_u04_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

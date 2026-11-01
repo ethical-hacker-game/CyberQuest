@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Choose a recommendation with concrete changes and acceptance criteria for both verified exposures.",
+      "taskInstructions": "A strong recommendation names the change, responsible outcome, and targeted retest.",
+      "taskQuestion": "Which recommendation is strongest?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The recommendation removes both exposures and defines how closure will be verified.",
+      "answers": [
+        "Add monitoring for both routes but leave their public access unchanged.",
+        "Remove or restrict the setup route, disable directory indexing, move backups outside the public web root, and run targeted external retests.",
+        "Rename the backup archive and remove the setup page from search results.",
+        "Close both findings after operations confirms that changes are planned."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Choose the recommendation that actually removes both public paths and proves they stayed closed.",
+      "taskInstructions": "A strong recommendation names the change, responsible outcome, and targeted retest.",
+      "taskQuestion": "Which recommendation is strongest?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. These changes remove the observed access instead of hiding it.",
+      "answers": [
+        "Add monitoring for both routes but leave their public access unchanged.",
+        "Remove or restrict the setup route, disable directory indexing, move backups outside the public web root, and run targeted external retests.",
+        "Rename the backup archive and remove the setup page from search results.",
+        "Close both findings after operations confirms that changes are planned."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Choose a recommendation whose completion can be checked against the original public observations.",
+      "taskInstructions": "A strong recommendation names the change, responsible outcome, and targeted retest.",
+      "taskQuestion": "Which recommendation is strongest?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Targeted retests provide measurable evidence that both public exposures are closed.",
+      "answers": [
+        "Add monitoring for both routes but leave their public access unchanged.",
+        "Remove or restrict the setup route, disable directory indexing, move backups outside the public web root, and run targeted external retests.",
+        "Rename the backup archive and remove the setup page from search results.",
+        "Close both findings after operations confirms that changes are planned."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q10_t03",
+  "parentQuestID": "ismg6860_u04_q10",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

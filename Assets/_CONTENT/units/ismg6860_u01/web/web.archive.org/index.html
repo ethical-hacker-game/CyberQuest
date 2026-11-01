@@ -1,0 +1,1222 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="color-scheme" content="light" />
+	<title>Wayback Machine: Archive Viewer</title>
+	<style>
+		:root {
+			--wb-bg: #f6f7f9;
+			--wb-surface: #ffffff;
+			--wb-border: #d9dde3;
+			--wb-text: #1f2937;
+			--wb-muted: #6b7280;
+			--wb-accent: #2f6fdb;
+			--wb-accent-2: #1b4fa3;
+			--wb-sensitive: #c56a00;
+			--wb-sensitive-bg: #fff3e5;
+			--wb-focus: #111827;
+			--wb-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+			--wb-radius: 10px;
+			--wb-radius-sm: 8px;
+			--wb-font: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+		}
+
+		* { box-sizing: border-box; }
+		html, body { height: 100%; }
+		body {
+			margin: 0;
+			font-family: var(--wb-font);
+			color: var(--wb-text);
+			background: var(--wb-bg);
+		}
+
+		.wb-app { min-height: 100%; display: flex; flex-direction: column; }
+
+		.wb-header {
+			display: grid;
+			grid-template-columns: 1fr minmax(360px, 2fr) 1fr;
+			gap: 12px;
+			align-items: center;
+			padding: 12px 16px;
+			background: var(--wb-surface);
+			border-bottom: 1px solid var(--wb-border);
+			position: sticky;
+			top: 0;
+			z-index: 10;
+		}
+
+		.wb-brand { display: flex; align-items: center; gap: 12px; min-width: 280px; }
+		.wb-logo {
+			width: 44px;
+			height: 44px;
+			border-radius: 10px;
+			display: grid;
+			place-items: center;
+			background: #eef2ff;
+			border: 1px solid #dbeafe;
+			color: #1e3a8a;
+			font-weight: 700;
+			letter-spacing: 0.2px;
+			user-select: none;
+		}
+		.wb-brand h1 { font-size: 16px; margin: 0; line-height: 1.2; }
+		.wb-brand .wb-sub { font-size: 12px; color: var(--wb-muted); margin-top: 2px; }
+
+		.wb-search {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			justify-content: center;
+		}
+		.wb-search .wb-searchbox {
+			width: 100%;
+			max-width: 720px;
+			display: grid;
+			grid-template-columns: 1fr auto;
+			border: 1px solid var(--wb-border);
+			border-radius: 999px;
+			overflow: hidden;
+			background: var(--wb-surface);
+			box-shadow: 0 1px 0 rgba(15, 23, 42, 0.02);
+		}
+		.wb-search input {
+			appearance: none;
+			border: 0;
+			padding: 12px 14px;
+			font-size: 14px;
+			outline: none;
+			min-width: 0;
+		}
+		.wb-search button {
+			border: 0;
+			background: var(--wb-accent);
+			color: white;
+			padding: 0 14px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+		}
+		.wb-search button:hover { background: var(--wb-accent-2); }
+
+		.wb-header-actions { display: flex; justify-content: flex-end; gap: 8px; }
+		.wb-icon-btn {
+			width: 40px;
+			height: 40px;
+			border-radius: 999px;
+			border: 1px solid var(--wb-border);
+			background: var(--wb-surface);
+			cursor: pointer;
+			display: grid;
+			place-items: center;
+			color: var(--wb-text);
+		}
+		.wb-icon-btn:hover { background: #f9fafb; }
+
+		.wb-main {
+			display: grid;
+			grid-template-columns: 320px 1fr;
+			gap: 14px;
+			padding: 14px 16px;
+			align-items: start;
+			max-width: 1200px;
+			width: 100%;
+			margin: 0 auto;
+			flex: 1;
+		}
+
+		.wb-panel {
+			background: var(--wb-surface);
+			border: 1px solid var(--wb-border);
+			border-radius: var(--wb-radius);
+			box-shadow: var(--wb-shadow);
+		}
+
+		.wb-sidebar { padding: 12px; }
+		.wb-sidebar h2 { margin: 0 0 10px 0; font-size: 13px; color: var(--wb-muted); font-weight: 600; }
+
+		.wb-year-list { display: flex; flex-direction: column; gap: 8px; }
+		.wb-year {
+			border: 1px solid var(--wb-border);
+			border-radius: var(--wb-radius-sm);
+			overflow: hidden;
+		}
+		.wb-year > button {
+			width: 100%;
+			text-align: left;
+			padding: 10px 10px;
+			border: 0;
+			background: transparent;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+			font-weight: 700;
+			color: var(--wb-text);
+		}
+		.wb-year > button:hover { background: #f9fafb; }
+		.wb-year-meta { font-size: 12px; color: var(--wb-muted); font-weight: 600; }
+		.wb-year-body { border-top: 1px solid var(--wb-border); padding: 10px; display: none; }
+		.wb-year[aria-expanded="true"] .wb-year-body { display: block; }
+
+		.wb-month-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 8px;
+		}
+		.wb-month-btn {
+			width: 100%;
+			border: 1px solid var(--wb-border);
+			background: var(--wb-surface);
+			border-radius: 10px;
+			padding: 8px 8px;
+			cursor: pointer;
+			text-align: left;
+			display: grid;
+			grid-template-columns: 1fr auto;
+			align-items: center;
+			gap: 8px;
+			min-height: 44px;
+		}
+		.wb-month-btn[disabled] {
+			opacity: 0.55;
+			cursor: not-allowed;
+			background: #fbfcfe;
+		}
+		.wb-month-title { font-weight: 700; font-size: 12px; }
+		.wb-month-count { font-size: 12px; color: var(--wb-muted); font-weight: 700; }
+		.wb-pill {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			padding: 2px 8px;
+			border-radius: 999px;
+			border: 1px solid var(--wb-border);
+			font-size: 12px;
+			color: var(--wb-muted);
+			background: #fafafa;
+			white-space: nowrap;
+		}
+		.wb-dot {
+			width: 8px;
+			height: 8px;
+			border-radius: 999px;
+			background: var(--wb-border);
+			display: inline-block;
+		}
+		.wb-dot--has { background: var(--wb-accent); }
+		.wb-dot--sensitive { background: var(--wb-sensitive); }
+
+		.wb-content { padding: 12px; display: grid; gap: 12px; }
+		.wb-content h2 { margin: 0; font-size: 14px; }
+		.wb-kicker { font-size: 12px; color: var(--wb-muted); margin-top: -2px; }
+
+		.wb-timeline {
+			padding: 10px;
+			border: 1px solid var(--wb-border);
+			border-radius: var(--wb-radius);
+			background: #fbfcfe;
+		}
+
+		.wb-timeline-header {
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			gap: 12px;
+			margin-bottom: 8px;
+		}
+		.wb-timeline-title { font-weight: 800; font-size: 13px; }
+		.wb-timeline-sub { font-size: 12px; color: var(--wb-muted); }
+
+		.wb-snap-list {
+			display: grid;
+			gap: 8px;
+		}
+
+		.wb-snap-btn {
+			width: 100%;
+			border: 1px solid var(--wb-border);
+			background: var(--wb-surface);
+			border-radius: 12px;
+			padding: 10px;
+			cursor: pointer;
+			text-align: left;
+			display: grid;
+			grid-template-columns: 1fr auto;
+			gap: 10px;
+			align-items: start;
+		}
+		.wb-snap-btn:hover { background: #f9fafb; }
+		.wb-snap-main { display: grid; gap: 4px; }
+		.wb-snap-ts { font-weight: 800; font-size: 12px; }
+		.wb-snap-path { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 12px; color: var(--wb-text); }
+		.wb-tag {
+			display: inline-flex;
+			align-items: center;
+			padding: 2px 8px;
+			border-radius: 999px;
+			font-size: 11px;
+			font-weight: 800;
+			border: 1px solid var(--wb-border);
+			background: #f8fafc;
+			color: var(--wb-muted);
+			height: fit-content;
+		}
+		.wb-tag--sensitive { border-color: rgba(197, 106, 0, 0.35); color: #8a4a00; background: var(--wb-sensitive-bg); }
+		.wb-tag--removal { border-color: rgba(47, 111, 219, 0.3); color: var(--wb-accent-2); background: #eff6ff; }
+
+		.wb-viewer {
+			border: 1px solid var(--wb-border);
+			border-radius: var(--wb-radius);
+			overflow: hidden;
+			background: var(--wb-surface);
+		}
+		.wb-banner {
+			display: none;
+			padding: 10px 12px;
+			background: var(--wb-sensitive-bg);
+			border-bottom: 1px solid rgba(197, 106, 0, 0.35);
+			color: #7a3f00;
+			font-size: 13px;
+			font-weight: 700;
+		}
+		.wb-banner[data-visible="true"] { display: block; }
+		.wb-viewer-top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+			padding: 10px 12px;
+			border-bottom: 1px solid var(--wb-border);
+			background: #fbfcfe;
+		}
+		.wb-viewer-meta { display: grid; gap: 4px; }
+		.wb-viewer-url { font-weight: 900; font-size: 12px; }
+		.wb-viewer-ts { font-size: 12px; color: var(--wb-muted); }
+		.wb-viewer-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+		.wb-btn {
+			border: 1px solid var(--wb-border);
+			background: var(--wb-surface);
+			border-radius: 999px;
+			padding: 9px 12px;
+			cursor: pointer;
+			font-weight: 800;
+			font-size: 12px;
+			color: var(--wb-text);
+		}
+		.wb-btn:hover { background: #f9fafb; }
+		.wb-btn--primary { background: var(--wb-accent); border-color: var(--wb-accent); color: white; }
+		.wb-btn--primary:hover { background: var(--wb-accent-2); border-color: var(--wb-accent-2); }
+		.wb-btn--danger { border-color: rgba(197, 106, 0, 0.35); background: var(--wb-sensitive-bg); color: #7a3f00; }
+		.wb-btn[aria-pressed="true"] { background: #111827; border-color: #111827; color: #fff; }
+
+		.wb-frame {
+			padding: 14px;
+			min-height: 220px;
+		}
+		.wb-frame-inner {
+			border: 1px solid var(--wb-border);
+			border-radius: 12px;
+			padding: 12px;
+			background: #fff;
+			min-height: 180px;
+			outline: none;
+		}
+		.wb-frame-inner :where(h1,h2,h3) { margin-top: 0.6em; }
+		.wb-frame-inner a { color: var(--wb-accent-2); text-decoration: underline; }
+
+		.wb-highlight {
+			background: #fff3b0;
+			border-radius: 4px;
+			padding: 0 3px;
+			box-shadow: inset 0 0 0 1px rgba(197, 106, 0, 0.25);
+		}
+
+		.wb-row {
+			display: flex;
+			gap: 10px;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.wb-muted { color: var(--wb-muted); font-size: 12px; }
+
+		.wb-flagged {
+			padding: 10px;
+			border: 1px solid var(--wb-border);
+			border-radius: var(--wb-radius);
+			background: #fbfcfe;
+		}
+		.wb-flagged h3 { margin: 0 0 8px 0; font-size: 13px; }
+		.wb-flagged ul { margin: 0; padding-left: 18px; }
+		.wb-flagged li { margin: 6px 0; }
+		.wb-linklike {
+			border: 0;
+			background: transparent;
+			color: var(--wb-accent-2);
+			text-decoration: underline;
+			cursor: pointer;
+			padding: 0;
+			font: inherit;
+		}
+
+		.wb-help-panel {
+			position: fixed;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: min(420px, 92vw);
+			background: var(--wb-surface);
+			border-left: 1px solid var(--wb-border);
+			box-shadow: var(--wb-shadow);
+			transform: translateX(110%);
+			transition: transform 160ms ease;
+			z-index: 40;
+			display: grid;
+			grid-template-rows: auto 1fr;
+		}
+		.wb-help-panel[data-open="true"] { transform: translateX(0); }
+		.wb-help-head { padding: 12px; border-bottom: 1px solid var(--wb-border); display: flex; align-items: center; justify-content: space-between; }
+		.wb-help-body { padding: 12px; color: var(--wb-text); }
+		.wb-help-body p { margin-top: 0; color: var(--wb-muted); }
+
+		.wb-overlay {
+			position: fixed;
+			inset: 0;
+			background: rgba(15, 23, 42, 0.35);
+			display: none;
+			z-index: 50;
+			padding: 18px;
+		}
+		.wb-overlay[data-open="true"] { display: grid; place-items: center; }
+
+		.wb-modal {
+			width: min(560px, 96vw);
+			background: var(--wb-surface);
+			border: 1px solid var(--wb-border);
+			border-radius: 14px;
+			box-shadow: var(--wb-shadow);
+			overflow: hidden;
+		}
+		.wb-modal header {
+			padding: 12px 14px;
+			border-bottom: 1px solid var(--wb-border);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+		}
+		.wb-modal header h3 { margin: 0; font-size: 14px; }
+		.wb-modal .wb-modal-body { padding: 12px 14px; display: grid; gap: 10px; }
+		.wb-field { display: grid; gap: 6px; }
+		.wb-field label { font-size: 12px; color: var(--wb-muted); font-weight: 700; }
+		.wb-field input, .wb-field textarea {
+			width: 100%;
+			border: 1px solid var(--wb-border);
+			border-radius: 10px;
+			padding: 10px;
+			font: inherit;
+			font-size: 13px;
+		}
+		.wb-field textarea { min-height: 90px; resize: vertical; }
+		.wb-modal footer { padding: 12px 14px; border-top: 1px solid var(--wb-border); display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
+
+		.wb-toast {
+			position: fixed;
+			left: 50%;
+			top: 14px;
+			transform: translateX(-50%);
+			width: min(720px, 92vw);
+			z-index: 60;
+			display: none;
+		}
+		.wb-toast[data-open="true"] { display: block; }
+		.wb-toast-inner {
+			background: var(--wb-surface);
+			border: 1px solid var(--wb-border);
+			border-radius: 14px;
+			box-shadow: var(--wb-shadow);
+			padding: 10px 12px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+		}
+		.wb-toast-msg { font-weight: 800; font-size: 13px; }
+		.wb-toast-sub { font-size: 12px; color: var(--wb-muted); margin-top: 2px; }
+
+		.wb-focusable:focus,
+		button:focus,
+		input:focus,
+		textarea:focus {
+			outline: 3px solid rgba(17, 24, 39, 0.18);
+			outline-offset: 2px;
+		}
+
+		.wb-empty {
+			padding: 12px;
+			border: 1px dashed var(--wb-border);
+			border-radius: var(--wb-radius);
+			background: #fbfcfe;
+			color: var(--wb-muted);
+			font-size: 13px;
+		}
+
+		.wb-debug { display: none; }
+		.wb-debug[data-enabled="true"] {
+			display: block;
+			position: fixed;
+			left: 10px;
+			bottom: 10px;
+			width: min(540px, calc(100vw - 20px));
+			background: var(--wb-surface);
+			border: 1px solid var(--wb-border);
+			border-radius: 12px;
+			box-shadow: var(--wb-shadow);
+			z-index: 80;
+			overflow: hidden;
+		}
+		.wb-debug header { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 10px; border-bottom: 1px solid var(--wb-border); }
+		.wb-debug header strong { font-size: 12px; }
+		.wb-debug pre { margin: 0; padding: 10px; max-height: 200px; overflow: auto; font-size: 11px; background: #0b1220; color: #dbeafe; }
+
+		@media (max-width: 900px) {
+			.wb-header { grid-template-columns: 1fr; gap: 10px; }
+			.wb-header-actions { justify-content: flex-start; }
+			.wb-main { grid-template-columns: 1fr; }
+			.wb-brand { min-width: 0; }
+		}
+	</style>
+  <script src="../cq-bridge.js"></script>
+</head>
+
+<body>
+	<div class="wb-app" id="app">
+		<header class="wb-header wb-header" role="banner">
+			<div class="wb-brand wb-brand" aria-label="Wayback header branding">
+				<div class="wb-logo wb-logo" data-asset="LOGO-WAYBACK-CLONE" aria-hidden="true">LOGO</div>
+				<div>
+					<h1>Wayback Machine: Archive Viewer</h1>
+					<div class="wb-sub">Local archive interface</div>
+				</div>
+			</div>
+
+			<div class="wb-search wb-search" role="search">
+				<form class="wb-searchbox" id="searchForm" aria-label="Archive search">
+					<input
+						id="domainInput"
+						type="text"
+						inputmode="url"
+						autocomplete="off"
+						spellcheck="false"
+						aria-label="Search domain"
+						placeholder="Enter a domain (restricted to www.goalpost.net)"
+						value="www.goalpost.net"
+					/>
+					<button type="submit" class="wb-focusable" aria-label="Search archive">🔍</button>
+				</form>
+			</div>
+
+			<div class="wb-header-actions wb-header-actions">
+				<button id="helpBtn" class="wb-icon-btn wb-icon-btn" aria-label="Help" aria-expanded="false" aria-controls="helpPanel">?</button>
+			</div>
+		</header>
+
+		<main class="wb-main wb-main" role="main">
+			<aside class="wb-panel wb-sidebar wb-sidebar" aria-label="Capture calendar" id="calendarPanel">
+				<h2>Capture calendar (2021 to 2024)</h2>
+				<div class="wb-empty" id="calendarEmpty" role="status">
+					Press Enter in the search bar to load local captures for <strong>www.goalpost.net</strong>.
+				</div>
+				<div class="wb-year-list" id="yearList" aria-label="Year selector" style="display:none"></div>
+			</aside>
+
+			<section class="wb-panel wb-content wb-content" aria-label="Timeline and snapshot viewer">
+				<div>
+					<h2 id="timelineHeading">Timeline</h2>
+					<div class="wb-kicker" id="timelineKicker">Select a month to view captures.</div>
+				</div>
+
+				<section class="wb-timeline wb-timeline" aria-label="Snapshot timeline" id="timelinePanel">
+					<div class="wb-timeline-header">
+						<div>
+							<div class="wb-timeline-title" id="timelineTitle">No month selected</div>
+							<div class="wb-timeline-sub" id="timelineSub">: </div>
+						</div>
+					</div>
+
+					<div class="wb-snap-list" id="snapList" aria-label="Snapshot list">
+						<div class="wb-empty">No snapshots loaded.</div>
+					</div>
+				</section>
+
+				<section class="wb-viewer wb-viewer" aria-label="Snapshot viewer" id="viewerPanel">
+					<div class="wb-viewer-top">
+						<div class="wb-viewer-meta">
+							<div class="wb-viewer-url" id="viewerUrl">: </div>
+							<div class="wb-viewer-ts" id="viewerTs">Select a snapshot to view it.</div>
+						</div>
+					</div>
+					<div class="wb-frame">
+						<div class="wb-frame-inner wb-focusable" id="viewerFrame" tabindex="0" aria-label="Archived page content">
+							<div class="wb-empty">Open a snapshot from the timeline.</div>
+						</div>
+						<div class="wb-muted" id="viewerBadgeRow" style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap;"></div>
+					</div>
+				</section>
+			</section>
+		</main>
+
+		<aside class="wb-help-panel wb-help-panel" id="helpPanel" data-open="false" aria-label="Help panel">
+			<div class="wb-help-head">
+				<strong>Help</strong>
+				<button class="wb-icon-btn" id="helpCloseBtn" aria-label="Close help">✕</button>
+			</div>
+			<div class="wb-help-body">
+				<p id="helpText">Use this archive to inspect historical captures of www.goalpost.net (2021 to 2024).</p>
+			</div>
+		</aside>
+
+		<div class="wb-toast wb-toast" id="toast" role="status" aria-live="polite" data-open="false">
+			<div class="wb-toast-inner">
+				<div>
+					<div class="wb-toast-msg" id="toastMsg">: </div>
+					<div class="wb-toast-sub" id="toastSub" style="display:none"></div>
+				</div>
+				<button class="wb-btn" id="toastDismissBtn" aria-label="Dismiss message">Dismiss</button>
+			</div>
+		</div>
+
+		<div class="wb-overlay" id="modalOverlay" data-open="false" aria-label="Modal overlay" role="dialog" aria-modal="true">
+			<div class="wb-modal" id="modal" role="document">
+				<header>
+					<h3 id="modalTitle">: </h3>
+					<button class="wb-icon-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+				</header>
+				<div class="wb-modal-body" id="modalBody"></div>
+				<footer id="modalFooter"></footer>
+			</div>
+		</div>
+
+		<section class="wb-debug" id="debugPane" data-enabled="false" aria-label="Debug console">
+			<header>
+				<strong>Debug events (hidden in production)</strong>
+				<button class="wb-btn" id="debugToggleBtn" aria-label="Collapse debug">Collapse</button>
+			</header>
+			<pre id="debugLog" aria-label="Emitted events log"></pre>
+		</section>
+	</div>
+
+	<script>
+		"use strict";
+
+		// ---------------------------------------------------------------------
+		// Localizable strings
+		// ---------------------------------------------------------------------
+		const STR = {
+			restrictedToastTitle: "This interface is restricted to www.goalpost.net for this investigation. Please use that domain.",
+			restrictedModalTitle: "Restricted domain",
+			restrictedModalBody: "This archive interface is restricted to www.goalpost.net for this investigation.",
+			helpText: "Use this archive to inspect historical captures of www.goalpost.net (2021 to 2024).",
+			noSnapshots: "No snapshots loaded.",
+			viewerEmpty: "Open a snapshot from the timeline.",
+		};
+
+		// ---------------------------------------------------------------------
+		// Embedded snapshot dataset (restricted to www.goalpost.net, 2021 to 2024)
+		// ---------------------------------------------------------------------
+		const snapshotData = [
+			{
+				ts: "2021-03-15T10:21:34Z",
+				displayUrl: "https://www.goalpost.net/",
+				path: "/",
+				sensitive: false,
+				html: "<!-- homepage 2021 --><header><h1>GoalPost</h1><p><strong>Independent sports reporting.</strong></p><nav><a href='#'>Top</a> · <a href='#'>Local</a> · <a href='#'>Features</a> · <a href='#'>Opinion</a></nav><hr /></header><main><section><h2>Today’s Headlines</h2><ul><li><strong>City derby ends 1: 1</strong>: late equalizer shocks the crowd.</li><li><strong>Rookies to watch</strong>: scouts list five breakout prospects.</li><li><strong>Training notes</strong>: coach hints at a lineup change.</li></ul></section><section><h2>From the newsroom</h2><p>Welcome to GoalPost. Our archive captures may contain older layouts and incomplete pages.</p></section></main><footer><hr /><small>© GoalPost (archived capture: 2021)</small></footer>"
+			},
+			{
+				ts: "2021-06-02T08:45:10Z",
+				displayUrl: "https://www.goalpost.net/drafts/editorial/angle-42",
+				path: "/drafts/editorial/angle-42",
+				sensitive: true,
+				html: "<header><h1>GoalPost: Newsroom</h1><p><strong>UNPUBLISHED DRAFT</strong></p><nav><a href='#'>Drafts</a> · <a href='#'>Assignments</a> · <a href='#'>Copy Desk</a></nav><hr /></header><article><h2>UNPUBLISHED DRAFT: Angle 42</h2><p><em>EDITORIAL NOTES:</em> Do not publish yet: sources pending.</p><p><strong>DRAFT</strong> lead: A timeline of the match-fixing allegations is still incomplete.</p><ul><li>Confirm the second source (off-record).</li><li>Verify travel receipts with accounting.</li><li>Replace placeholder names before publication.</li></ul><aside><h3>INTERNAL PREVIEW</h3><p class='note'>Internal: confirm quotes before publishing. Remove staff-only sections.</p><p class='note'>EDITORIAL NOTES: legal review required before any public release.</p></aside></article><footer><hr /><small>Staff-only workspace (archived)</small></footer>"
+			},
+			{
+				ts: "2022-11-11T14:02:05Z",
+				displayUrl: "https://www.goalpost.net/previews/holiday-issue",
+				path: "/previews/holiday-issue",
+				sensitive: true,
+				html: "<header><h1>GoalPost: Previews</h1><p><strong>INTERNAL PREVIEW</strong></p><hr /></header><main><h2>Holiday Issue (Layout Preview)</h2><p>This is a preview page for staff only.</p><section><h3>Front Page Draft Blocks</h3><ol><li><strong>DRAFT</strong> feature: ‘The Winter Cup’s quiet revolution’</li><li>Photo package: stadium renovations (pending permissions)</li><li>Editorial column: ‘A season of second chances’</li></ol></section><aside><p><em>EDITORIAL NOTES:</em> Do not share outside the newsroom. Replace placeholder imagery before publish.</p></aside><footer><hr /><small>Archive capture: internal tooling snapshot</small></footer></main>"
+			},
+			{
+				ts: "2023-05-20T09:00:00Z",
+				displayUrl: "https://www.goalpost.net/articles/preview-investigation",
+				path: "/articles/preview-investigation",
+				sensitive: true,
+				html: "<header><h1>GoalPost: Investigations</h1><p><strong>DRAFT: Investigation Draft</strong></p><nav><a href='#'>Leads</a> · <a href='#'>Sources</a> · <a href='#'>Documents</a></nav><hr /></header><article><p><em>EDITORIAL NOTES:</em> Lead paragraphs and annotations visible. Remove before publication.</p><h2>Working title: ‘The Quiet Deal’</h2><p><strong>DRAFT</strong>: This story is not cleared for release. Names and dates are placeholders.</p><blockquote>INTERNAL PREVIEW: Do not distribute. Cross-check claims with the document bundle.</blockquote><h3>Open questions</h3><ul><li>Who approved the late-night contract addendum?</li><li>Which committee received the first report?</li><li>Confirm timeline with travel logs.</li></ul></article><footer><hr /><small>GoalPost internal preview (archived)</small></footer>"
+			},
+			{
+				ts: "2024-02-07T18:30:55Z",
+				displayUrl: "https://www.goalpost.net/",
+				path: "/",
+				sensitive: false,
+				html: "<header><h1>GoalPost</h1><p><strong>Home (2024 layout)</strong></p><nav><a href='#'>Top</a> · <a href='#'>Teams</a> · <a href='#'>Scores</a> · <a href='#'>Investigations</a></nav><hr /></header><main><section><h2>Top stories</h2><article><h3>Season review: the numbers behind the surge</h3><p>Data-driven analysis and match reports from across the league.</p></article><article><h3>Community spotlight</h3><p>Grassroots clubs and local tournaments.</p></article></section><section><h2>Live</h2><p>Scoreboard modules and modern layout elements appear in later captures.</p></section></main><footer><hr /><small>© GoalPost (archived capture: 2024)</small></footer>"
+			}
+		];
+
+		// ---------------------------------------------------------------------
+		// Utilities
+		// ---------------------------------------------------------------------
+		const DOMAIN = "www.goalpost.net";
+		const YEARS = [2021, 2022, 2023, 2024];
+		const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; // display
+
+		function normalizeDomain(input) {
+			const raw = String(input ?? "").trim().toLowerCase();
+			if (!raw) return "";
+			// Normalize common pasted variants without broadening allowed domains.
+			return raw
+				.replace(/^https?:\/\//, "")
+				.replace(/\/+$/, "")
+				.split("/")[0];
+		}
+
+		function formatTs(iso) {
+			const d = new Date(iso);
+			const pad = (n) => String(n).padStart(2, "0");
+			const yyyy = d.getUTCFullYear();
+			const mm = pad(d.getUTCMonth() + 1);
+			const dd = pad(d.getUTCDate());
+			const hh = pad(d.getUTCHours());
+			const mi = pad(d.getUTCMinutes());
+			const ss = pad(d.getUTCSeconds());
+			return `${yyyy}-${mm}-${dd} ${hh}:${mi}:${ss}`;
+		}
+
+		function monthKeyFromIso(iso) {
+			const d = new Date(iso);
+			const y = d.getUTCFullYear();
+			const m = String(d.getUTCMonth() + 1).padStart(2, "0");
+			return `${y}-${m}`;
+		}
+
+		function escapeHtml(str) {
+			return String(str)
+				.replace(/&/g, "&amp;")
+				.replace(/</g, "&lt;")
+				.replace(/>/g, "&gt;")
+				.replace(/\"/g, "&quot;")
+				.replace(/'/g, "&#039;");
+		}
+
+		function emitGameEvent(type, data) {
+			const payload = { type, data };
+			try { window.postMessage(payload, "*"); } catch { /* ignore */ }
+			try { window.GameEvents?.emit?.(type, data); } catch { /* ignore */ }
+			logDebug(payload);
+		}
+
+		function makeRefId() {
+			const n = Math.floor(Math.random() * 10000);
+			return `WA-REF-${String(n).padStart(4, "0")}`;
+		}
+
+		function isDebugEnabled() {
+			const qs = new URLSearchParams(location.search);
+			if (qs.get("debug") === "1") return true;
+			if (localStorage.getItem("wbDebug") === "1") return true;
+			return false;
+		}
+
+		function getSearchQueryDomain() {
+			const qs = new URLSearchParams(location.search);
+			return (qs.get("q") ?? qs.get("domain") ?? "").trim();
+		}
+
+		function setSearchQueryDomain(domainLike) {
+			const normalized = normalizeDomain(domainLike);
+			const qs = new URLSearchParams(location.search);
+			if (normalized) {
+				qs.set("q", normalized);
+				qs.delete("domain");
+			} else {
+				qs.delete("q");
+				qs.delete("domain");
+			}
+
+			let next = location.pathname;
+			const query = qs.toString();
+			if (query) next += `?${query}`;
+			if (location.hash) next += location.hash;
+			try { history.replaceState(null, "", next); } catch { /* ignore */ }
+		}
+
+		function getViewQueryState() {
+			const qs = new URLSearchParams(location.search);
+			const year = (qs.get("year") ?? "").trim();
+			const month = (qs.get("month") ?? "").trim();
+			const ts = (qs.get("ts") ?? "").trim();
+			return {
+				year: /^\d{4}$/.test(year) ? year : "",
+				month: /^\d{4}-\d{2}$/.test(month) ? month : "",
+				ts,
+			};
+		}
+
+		function setViewQueryState({ year, month, ts }) {
+			const qs = new URLSearchParams(location.search);
+			if (year) qs.set("year", String(year)); else qs.delete("year");
+			if (month) qs.set("month", String(month)); else qs.delete("month");
+			if (ts) qs.set("ts", String(ts)); else qs.delete("ts");
+
+			let next = location.pathname;
+			const query = qs.toString();
+			if (query) next += `?${query}`;
+			if (location.hash) next += location.hash;
+			try { history.replaceState(null, "", next); } catch { /* ignore */ }
+		}
+
+		// ---------------------------------------------------------------------
+		// DOM
+		// ---------------------------------------------------------------------
+		const els = {
+			searchForm: document.getElementById("searchForm"),
+			domainInput: document.getElementById("domainInput"),
+			calendarEmpty: document.getElementById("calendarEmpty"),
+			yearList: document.getElementById("yearList"),
+			snapList: document.getElementById("snapList"),
+			timelineTitle: document.getElementById("timelineTitle"),
+			timelineSub: document.getElementById("timelineSub"),
+			timelineKicker: document.getElementById("timelineKicker"),
+			viewerUrl: document.getElementById("viewerUrl"),
+			viewerTs: document.getElementById("viewerTs"),
+			viewerFrame: document.getElementById("viewerFrame"),
+			viewerBadgeRow: document.getElementById("viewerBadgeRow"),
+			helpBtn: document.getElementById("helpBtn"),
+			helpPanel: document.getElementById("helpPanel"),
+			helpCloseBtn: document.getElementById("helpCloseBtn"),
+			helpText: document.getElementById("helpText"),
+			toast: document.getElementById("toast"),
+			toastMsg: document.getElementById("toastMsg"),
+			toastSub: document.getElementById("toastSub"),
+			toastDismissBtn: document.getElementById("toastDismissBtn"),
+			modalOverlay: document.getElementById("modalOverlay"),
+			modalTitle: document.getElementById("modalTitle"),
+			modalBody: document.getElementById("modalBody"),
+			modalFooter: document.getElementById("modalFooter"),
+			modalCloseBtn: document.getElementById("modalCloseBtn"),
+			debugPane: document.getElementById("debugPane"),
+			debugLog: document.getElementById("debugLog"),
+			debugToggleBtn: document.getElementById("debugToggleBtn"),
+		};
+
+		els.helpText.textContent = STR.helpText;
+
+		// ---------------------------------------------------------------------
+		// State
+		// ---------------------------------------------------------------------
+		const state = {
+			loaded: false,
+			selectedYear: null,
+			selectedMonth: null, // "YYYY-MM"
+			selectedSnapshotTs: null,
+			datasetByMonth: new Map(), // monthKey -> snapshots
+		};
+
+		function rebuildIndex() {
+			state.datasetByMonth.clear();
+			const sorted = [...snapshotData].sort((a, b) => new Date(a.ts) - new Date(b.ts));
+			for (const s of sorted) {
+				const key = monthKeyFromIso(s.ts);
+				if (!state.datasetByMonth.has(key)) state.datasetByMonth.set(key, []);
+				state.datasetByMonth.get(key).push(s);
+			}
+		}
+
+		// ---------------------------------------------------------------------
+		// UI helpers
+		// ---------------------------------------------------------------------
+		function showToast(title, sub = "") {
+			els.toastMsg.textContent = title;
+			if (sub) {
+				els.toastSub.style.display = "block";
+				els.toastSub.textContent = sub;
+			} else {
+				els.toastSub.style.display = "none";
+				els.toastSub.textContent = "";
+			}
+			els.toast.dataset.open = "true";
+			els.toastDismissBtn.focus();
+		}
+
+		function hideToast() {
+			els.toast.dataset.open = "false";
+		}
+
+		function openModal({ title, bodyHtml, footerButtons }) {
+			els.modalTitle.textContent = title;
+			els.modalBody.innerHTML = bodyHtml;
+			els.modalFooter.innerHTML = "";
+			for (const btn of footerButtons ?? []) {
+				els.modalFooter.appendChild(btn);
+			}
+			els.modalOverlay.dataset.open = "true";
+			els.modalCloseBtn.focus();
+		}
+
+		function closeModal() {
+			els.modalOverlay.dataset.open = "false";
+			els.modalTitle.textContent = ": ";
+			els.modalBody.innerHTML = "";
+			els.modalFooter.innerHTML = "";
+		}
+
+		function setHelpOpen(open) {
+			els.helpPanel.dataset.open = open ? "true" : "false";
+			els.helpBtn.setAttribute("aria-expanded", open ? "true" : "false");
+			if (open) els.helpCloseBtn.focus();
+		}
+
+		function clearLoadedUi() {
+			els.yearList.style.display = "none";
+			els.calendarEmpty.style.display = "block";
+			els.snapList.innerHTML = `<div class="wb-empty">${escapeHtml(STR.noSnapshots)}</div>`;
+			els.timelineTitle.textContent = "No month selected";
+			els.timelineSub.textContent = ": ";
+			els.timelineKicker.textContent = "Select a month to view captures.";
+			setSelectedSnapshot(null);
+		}
+
+		function setSelectedSnapshot(ts) {
+			state.selectedSnapshotTs = ts;
+			if (ts) {
+				const mk = monthKeyFromIso(ts);
+				const y = mk.split("-")[0];
+				setViewQueryState({ year: y, month: mk, ts });
+			} else {
+				setViewQueryState({ year: state.selectedYear ? String(state.selectedYear) : "", month: state.selectedMonth ?? "", ts: "" });
+			}
+			els.viewerBadgeRow.innerHTML = "";
+			if (!ts) {
+				els.viewerUrl.textContent = ": ";
+				els.viewerTs.textContent = "Select a snapshot to view it.";
+				els.viewerFrame.innerHTML = `<div class="wb-empty">${escapeHtml(STR.viewerEmpty)}</div>`;
+				return;
+			}
+
+			const snap = snapshotData.find(s => s.ts === ts);
+			els.viewerUrl.textContent = snap?.displayUrl ?? ": ";
+			els.viewerTs.textContent = snap ? `Captured: ${formatTs(snap.ts)} UTC` : ": ";
+
+			const sanitized = sanitizeSnapshotHtml(snap?.html ?? "");
+			els.viewerFrame.innerHTML = sanitized;
+
+			emitGameEvent("archive.snapshotViewed", { ts: snap.ts, path: snap.path, sensitive: !!snap.sensitive });
+		}
+
+		// ---------------------------------------------------------------------
+		// Sanitization & safe rendering (no external scripts)
+		// ---------------------------------------------------------------------
+		function sanitizeSnapshotHtml(html) {
+			const parser = new DOMParser();
+			const doc = parser.parseFromString(String(html ?? ""), "text/html");
+
+			// Remove dangerous / external-capable nodes
+			doc.querySelectorAll("script, iframe, object, embed").forEach(n => n.remove());
+			doc.querySelectorAll("link[rel='stylesheet'], link[rel='preload'], link[rel='prefetch']").forEach(n => n.remove());
+			doc.querySelectorAll("meta[http-equiv]").forEach(n => n.remove());
+
+			// Remove inline event handlers and prevent navigation
+			doc.querySelectorAll("*").forEach(el => {
+				for (const attr of [...el.attributes]) {
+					if (/^on/i.test(attr.name)) el.removeAttribute(attr.name);
+				}
+			});
+
+			doc.querySelectorAll("a").forEach(a => {
+				a.setAttribute("href", "#");
+				a.setAttribute("role", "link");
+				a.addEventListener?.("click", (e) => e.preventDefault());
+			});
+
+			// Remove potentially external loading attributes
+			doc.querySelectorAll("img, video, audio, source").forEach(el => {
+				if (el.hasAttribute("src")) {
+					const src = String(el.getAttribute("src") || "");
+					if (/^(https?:)?\/\//i.test(src)) el.removeAttribute("src");
+				}
+			});
+
+			return doc.body.innerHTML;
+		}
+
+		// ---------------------------------------------------------------------
+		// Calendar + timeline rendering
+		// ---------------------------------------------------------------------
+		function getMonthStats(year, monthIndex0) {
+			const key = `${year}-${String(monthIndex0 + 1).padStart(2, "0")}`;
+			const snaps = state.datasetByMonth.get(key) ?? [];
+			const count = snaps.length;
+			const anySensitive = snaps.some(s => s.sensitive);
+			return { key, count, anySensitive };
+		}
+
+		function renderCalendar() {
+			els.yearList.innerHTML = "";
+			for (const y of YEARS) {
+				const yearSnaps = snapshotData.filter(s => new Date(s.ts).getUTCFullYear() === y);
+				const yearCount = yearSnaps.length;
+				const yearSensitive = yearSnaps.some(s => s.sensitive);
+
+				const wrapper = document.createElement("div");
+				wrapper.className = "wb-year";
+				wrapper.setAttribute("data-year", String(y));
+				wrapper.setAttribute("aria-expanded", "false");
+
+				const btn = document.createElement("button");
+				btn.type = "button";
+				btn.setAttribute("aria-label", `Select year ${y}`);
+				btn.innerHTML = `
+					<span>${y}</span>
+					<span class="wb-year-meta">
+						<span class="wb-dot ${yearSensitive ? "wb-dot--sensitive" : (yearCount ? "wb-dot--has" : "")}" aria-hidden="true"></span>
+						${yearCount} capture${yearCount === 1 ? "" : "s"}
+					</span>
+				`;
+
+				const body = document.createElement("div");
+				body.className = "wb-year-body";
+				body.setAttribute("aria-label", `Months for ${y}`);
+
+				const grid = document.createElement("div");
+				grid.className = "wb-month-grid";
+				grid.setAttribute("role", "grid");
+				grid.setAttribute("aria-label", `Months grid for ${y}`);
+
+				for (let m = 0; m < 12; m++) {
+					const { key, count, anySensitive } = getMonthStats(y, m);
+					const mb = document.createElement("button");
+					mb.type = "button";
+					mb.className = "wb-month-btn";
+					mb.disabled = count === 0;
+					mb.setAttribute("aria-label", `${MONTHS[m]} ${y}${count ? `, ${count} capture${count === 1 ? "" : "s"}` : ", no captures"}`);
+					mb.innerHTML = `
+						<div>
+							<div class="wb-month-title">${MONTHS[m]}</div>
+							<div class="wb-muted" style="margin-top:2px; display:flex; align-items:center; gap:6px;">
+								<span class="wb-dot ${anySensitive ? "wb-dot--sensitive" : (count ? "wb-dot--has" : "")}" aria-hidden="true"></span>
+								<span>${count ? (anySensitive ? "captures + sensitive" : "captures") : "no captures"}</span>
+							</div>
+						</div>
+						<div class="wb-month-count">${count ? String(count) : ""}</div>
+					`;
+					mb.addEventListener("click", () => {
+						selectMonth(key);
+					});
+					grid.appendChild(mb);
+				}
+
+				body.appendChild(grid);
+				wrapper.appendChild(btn);
+				wrapper.appendChild(body);
+				els.yearList.appendChild(wrapper);
+
+				btn.addEventListener("click", () => {
+					const isExpanded = wrapper.getAttribute("aria-expanded") === "true";
+					// Collapse others
+					els.yearList.querySelectorAll(".wb-year").forEach(yEl => {
+						yEl.setAttribute("aria-expanded", "false");
+					});
+					wrapper.setAttribute("aria-expanded", isExpanded ? "false" : "true");
+					state.selectedYear = y;
+					if (state.selectedMonth && !String(state.selectedMonth).startsWith(`${y}-`)) {
+						state.selectedMonth = null;
+						setSelectedSnapshot(null);
+						setViewQueryState({ year: String(y), month: "", ts: "" });
+					} else {
+						setViewQueryState({ year: String(y), month: state.selectedMonth ?? "", ts: state.selectedSnapshotTs ?? "" });
+					}
+				});
+			}
+		}
+
+		function selectMonth(monthKey, preferredTs = null) {
+			state.selectedMonth = monthKey;
+			state.selectedYear = Number(monthKey.split("-")[0]);
+			setViewQueryState({ year: String(state.selectedYear), month: monthKey, ts: "" });
+			const snaps = (state.datasetByMonth.get(monthKey) ?? []).slice().sort((a, b) => new Date(a.ts) - new Date(b.ts));
+
+			const [y, m] = monthKey.split("-");
+			const label = `${MONTHS[Number(m) - 1]} ${y}`;
+			els.timelineTitle.textContent = label;
+			els.timelineSub.textContent = `${snaps.length} capture${snaps.length === 1 ? "" : "s"}`;
+			els.timelineKicker.textContent = "Click a capture to open the archived page.";
+
+			if (!snaps.length) {
+				els.snapList.innerHTML = `<div class="wb-empty">No captures for this month.</div>`;
+				setSelectedSnapshot(null);
+				return;
+			}
+
+			els.snapList.innerHTML = "";
+			for (const snap of snaps) {
+				const btn = document.createElement("button");
+				btn.type = "button";
+				btn.className = "wb-snap-btn";
+				btn.setAttribute("aria-label", `Open snapshot ${formatTs(snap.ts)} ${snap.path}`);
+
+				const rightBadges = document.createElement("div");
+				rightBadges.style.display = "grid";
+				rightBadges.style.gap = "6px";
+				rightBadges.style.justifyItems = "end";
+
+				if (snap.sensitive) {
+					const tag = document.createElement("span");
+					tag.className = "wb-tag wb-tag--sensitive";
+					tag.textContent = "SENSITIVE";
+					rightBadges.appendChild(tag);
+				}
+
+
+				btn.innerHTML = `
+					<div class="wb-snap-main">
+						<div class="wb-snap-ts">${escapeHtml(formatTs(snap.ts))}</div>
+						<div class="wb-snap-path">${escapeHtml(snap.path)}</div>
+					</div>
+				`;
+				btn.appendChild(rightBadges);
+				btn.addEventListener("click", () => {
+					setSelectedSnapshot(snap.ts);
+				});
+				els.snapList.appendChild(btn);
+			}
+
+			// Default to first snapshot in list for convenience
+			const initialTs = preferredTs && snaps.some(s => s.ts === preferredTs) ? preferredTs : snaps[0].ts;
+			setSelectedSnapshot(initialTs);
+		}
+
+		// ---------------------------------------------------------------------
+		// Debug logging
+		// ---------------------------------------------------------------------
+		function logDebug(payload) {
+			if (els.debugPane.dataset.enabled !== "true") return;
+			const line = `${new Date().toISOString()}  ${payload.type}  ${JSON.stringify(payload.data)}\n`;
+			els.debugLog.textContent = (els.debugLog.textContent + line).slice(-12000);
+			els.debugLog.scrollTop = els.debugLog.scrollHeight;
+		}
+
+		function initDebugPane() {
+			const enabled = isDebugEnabled();
+			els.debugPane.dataset.enabled = enabled ? "true" : "false";
+			if (!enabled) return;
+
+			let collapsed = false;
+			els.debugToggleBtn.addEventListener("click", () => {
+				collapsed = !collapsed;
+				els.debugToggleBtn.textContent = collapsed ? "Expand" : "Collapse";
+				els.debugLog.style.display = collapsed ? "none" : "block";
+			});
+		}
+
+		// ---------------------------------------------------------------------
+		// Search / domain validation
+		// ---------------------------------------------------------------------
+		function loadArchiveForDomain(inputDomain, view = {}) {
+			const normalized = normalizeDomain(inputDomain);
+			if (!normalized) {
+				els.domainInput.value = DOMAIN;
+				return loadArchiveForDomain(DOMAIN, view);
+			}
+
+			if (normalized !== DOMAIN) {
+				clearLoadedUi();
+				showToast(STR.restrictedToastTitle);
+				return;
+			}
+
+			if (!state.loaded) {
+				rebuildIndex();
+				renderCalendar();
+				state.loaded = true;
+
+				els.calendarEmpty.style.display = "none";
+				els.yearList.style.display = "flex";
+
+				emitGameEvent("archive.loaded", { domain: DOMAIN, years: YEARS.slice() });
+			}
+
+			// Expand a year (prefer URL param if valid)
+			const requestedYear = Number(view?.year);
+			const hasYear = (y) => snapshotData.some(s => new Date(s.ts).getUTCFullYear() === y);
+			const targetYear = (Number.isFinite(requestedYear) && YEARS.includes(requestedYear) && hasYear(requestedYear))
+				? requestedYear
+				: (YEARS.find(hasYear) ?? YEARS[0]);
+
+			const yearEl = els.yearList.querySelector(`.wb-year[data-year="${targetYear}"]`);
+			if (yearEl) {
+				els.yearList.querySelectorAll(".wb-year").forEach(yEl => yEl.setAttribute("aria-expanded", "false"));
+				yearEl.setAttribute("aria-expanded", "true");
+			}
+			state.selectedYear = targetYear;
+			setViewQueryState({ year: String(targetYear), month: state.selectedMonth ?? (view?.month ?? ""), ts: view?.ts ?? "" });
+
+			// Select a month (prefer ts -> month, then month param, else earliest)
+			const fromTsMonth = view?.ts ? monthKeyFromIso(view.ts) : "";
+			const requestedMonth = String(view?.month ?? "").trim();
+			const candidate = (fromTsMonth && state.datasetByMonth.has(fromTsMonth))
+				? fromTsMonth
+				: (requestedMonth && state.datasetByMonth.has(requestedMonth) ? requestedMonth : "");
+			const earliest = [...state.datasetByMonth.keys()].sort()[0];
+			const targetMonth = candidate || earliest;
+			if (targetMonth) selectMonth(targetMonth, view?.ts || null);
+		}
+
+		// ---------------------------------------------------------------------
+		// Event wiring
+		// ---------------------------------------------------------------------
+		els.searchForm.addEventListener("submit", (e) => {
+			e.preventDefault();
+			setSearchQueryDomain(els.domainInput.value);
+			setViewQueryState({ year: "", month: "", ts: "" });
+			loadArchiveForDomain(els.domainInput.value);
+		});
+
+		els.toastDismissBtn.addEventListener("click", hideToast);
+		els.modalCloseBtn.addEventListener("click", closeModal);
+		els.modalOverlay.addEventListener("click", (e) => {
+			if (e.target === els.modalOverlay) closeModal();
+		});
+
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "Escape") {
+				if (els.modalOverlay.dataset.open === "true") closeModal();
+				if (els.toast.dataset.open === "true") hideToast();
+				if (els.helpPanel.dataset.open === "true") setHelpOpen(false);
+			}
+		});
+
+		els.helpBtn.addEventListener("click", () => setHelpOpen(true));
+		els.helpCloseBtn.addEventListener("click", () => setHelpOpen(false));
+
+		// Prevent navigation even if snapshots include links
+		document.addEventListener("click", (e) => {
+			const a = e.target?.closest?.("a");
+			if (!a) return;
+			e.preventDefault();
+		});
+
+		// ---------------------------------------------------------------------
+		// Init
+		// ---------------------------------------------------------------------
+		initDebugPane();
+		const initialQueryDomain = getSearchQueryDomain();
+		const initialView = getViewQueryState();
+		els.domainInput.value = initialQueryDomain || DOMAIN;
+		clearLoadedUi();
+		if (initialQueryDomain) loadArchiveForDomain(initialQueryDomain, initialView);
+	</script>
+</body>
+</html>

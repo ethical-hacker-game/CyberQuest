@@ -1,0 +1,23 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Nothing on this engagement moves before the paperwork does. Tomas has also sent the operational constraints. A scan that disrupts ticketing before launch is a failure, even if the command was technically correct.",
+      "taskInstructions": "",
+      "taskQuestion": "Open Mira's authorization email.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Good. The approved range, time window, and prohibited actions are now clear.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u02_q01_t02_authorization"
+    }
+  ],
+  "taskID": "ismg6860_u02_q01_t02",
+  "parentQuestID": "ismg6860_u02_q01",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u02_q01_t02_authorization",
+    "ismg6860_u02_q01_t02_launch_pressure"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

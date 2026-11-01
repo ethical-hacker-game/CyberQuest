@@ -1,0 +1,75 @@
+{
+  "unitID": "ismg6860_u04",
+  "placeholder": false,
+  "order": 4,
+  "unitName": "4. Vulnerability Analysis",
+  "unitDescription": "This unit teaches vulnerability analysis through a controlled assessment of Northbridge Civic Services. Players identify common misconfigurations, verify findings, evaluate risk and feasibility, compare assessment types, and reason about exploitation pathways while staying inside an authorized security engagement.",
+  "defaultPlayerName": "Alex",
+  "unitEntryMessage": "Welcome back, {player}. Northbridge Civic Services has authorized a controlled vulnerability assessment before an external audit. Mara Voss, the client-side security program manager, will guide the opening phase. Your job is to verify evidence, understand risk, and keep the assessment useful without crossing the line into unauthorized exploitation.",
+  "questIds": [
+    "ismg6860_u04_q01",
+    "ismg6860_u04_q02",
+    "ismg6860_u04_q03",
+    "ismg6860_u04_q04",
+    "ismg6860_u04_q05",
+    "ismg6860_u04_d01",
+    "ismg6860_u04_q06",
+    "ismg6860_u04_q07",
+    "ismg6860_u04_q08",
+    "ismg6860_u04_q09",
+    "ismg6860_u04_q10",
+    "ismg6860_u04_d4",
+    "ismg6860_u04_q11",
+    "ismg6860_u04_q12",
+    "ismg6860_u04_q13",
+    "ismg6860_u04_q14",
+    "ismg6860_u04_q15",
+    "ismg6860_u04_d02",
+    "ismg6860_u04_q16",
+    "ismg6860_u04_q17",
+    "ismg6860_u04_q18",
+    "ismg6860_u04_q19",
+    "ismg6860_u04_q20",
+    "ismg6860_u04_last_quest"
+  ],
+  "questsAreaSize": {
+    "x": 9300.0,
+    "y": 900.0
+  },
+  "questTreeOffset": 100.0,
+  "appIDs": [
+    "languard"
+  ],
+  "personas": [
+    {
+      "personaID": "whitehat",
+      "personaName": "Whitehat Hacker",
+      "personaDescription": "A whitehat hacker works with authorization, protects affected people, documents evidence carefully, and focuses on remediation instead of exploitation.",
+      "messagePlayerJoinedHeader": "Whitehat Path Chosen",
+      "messagePlayerJoined": "You are keeping the assessment disciplined: stay inside scope, preserve evidence, and help Northbridge fix verified weaknesses.",
+      "messagePlayerUnloyalHeader": "Whitehat Discipline Challenged",
+      "messagePlayerUnloyal": "That choice moved away from responsible assessment practice. Regain trust by focusing on authorization, evidence quality, and remediation.",
+      "personaPictureID": "persona_white"
+    },
+    {
+      "personaID": "blackhat",
+      "personaName": "Blackhat Hacker",
+      "personaDescription": "A blackhat hacker treats vulnerabilities as leverage, looks for access expansion, and values personal advantage over authorization or harm reduction.",
+      "messagePlayerJoinedHeader": "Blackhat Path Chosen",
+      "messagePlayerJoined": "You are looking at the assessment like an attacker: every verified weakness is leverage, every exposed path is a possible foothold.",
+      "messagePlayerUnloyalHeader": "Blackhat Instincts Checked",
+      "messagePlayerUnloyal": "That choice protected the client instead of exploiting the opening. If you want the blackhat path, you will need to prioritize leverage over trust.",
+      "personaPictureID": "persona_black"
+    },
+    {
+      "personaID": "hacktivist",
+      "personaName": "Hacktivist",
+      "personaDescription": "A hacktivist uses security findings to pressure institutions, expose negligence, and protect communities when formal channels appear too slow.",
+      "messagePlayerJoinedHeader": "Hacktivist Path Chosen",
+      "messagePlayerJoined": "You are framing the assessment around public impact: if leadership delays, the people affected by these systems still deserve accountability.",
+      "messagePlayerUnloyalHeader": "Hacktivist Purpose Challenged",
+      "messagePlayerUnloyal": "That choice served process more than pressure. If you want the hacktivist path, keep the public consequences at the center of your decisions.",
+      "personaPictureID": "persona_hacktivist"
+    }
+  ]
+}

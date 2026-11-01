@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Convert the verified setup and backup exposures into work the operations team can own and test.",
+      "taskInstructions": "Read <link=\"u04_remediation_planning\"><u>remediation planning</u></link>, then identify the primary type of change.",
+      "taskQuestion": "Which remediation category fits these findings?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Server configuration and access controls can remove both public exposures.",
+      "answers": [
+        "Configuration change and access-control hardening.",
+        "A complete rewrite of the citizen-services application.",
+        "Additional monitoring with both public routes left unchanged.",
+        "Formal risk acceptance with no corrective action."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Identify the changes that would actually close the setup route and backup listing.",
+      "taskInstructions": "Read <link=\"u04_remediation_planning\"><u>remediation planning</u></link>, then identify the primary type of change.",
+      "taskQuestion": "Which remediation category fits these findings?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Configuration and access-control changes remove the openings directly.",
+      "answers": [
+        "Configuration change and access-control hardening.",
+        "A complete rewrite of the citizen-services application.",
+        "Additional monitoring with both public routes left unchanged.",
+        "Formal risk acceptance with no corrective action."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Translate the public exposures into corrective work with a clear owner and outcome.",
+      "taskInstructions": "Read <link=\"u04_remediation_planning\"><u>remediation planning</u></link>, then identify the primary type of change.",
+      "taskQuestion": "Which remediation category fits these findings?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Configuration and access-control changes can remove the exposure without waiting for a redesign.",
+      "answers": [
+        "Configuration change and access-control hardening.",
+        "A complete rewrite of the citizen-services application.",
+        "Additional monitoring with both public routes left unchanged.",
+        "Formal risk acceptance with no corrective action."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q10_t01",
+  "parentQuestID": "ismg6860_u04_q10",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

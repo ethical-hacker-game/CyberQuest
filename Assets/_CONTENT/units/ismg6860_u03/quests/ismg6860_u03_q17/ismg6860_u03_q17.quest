@@ -1,0 +1,43 @@
+{
+  "questID": "ismg6860_u03_q17",
+  "cityIndex": 5147,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q17_t00_voice",
+    "ismg6860_u03_q17_t01",
+    "ismg6860_u03_q17_t02",
+    "ismg6860_u03_q17_t03",
+    "ismg6860_u03_q17_t04_clean_desk"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "The Helpful Stranger",
+      "questDescription": "Review Theo Kwan's note about an unbadged visitor requesting entry at West Gate and assess the exposure if that pretext succeeded.",
+      "questCompleteText": "<b>Asha Moreno:</b> The suspected pretexting attempt and the visitor-visible office exposure are documented without claiming entry occurred.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "The Helpful Stranger",
+      "questDescription": "Analyze how a vendor shirt, boxes, and an urgent delivery story could pressure a volunteer to bypass an entry check.",
+      "questCompleteText": "<b>Felix Rane:</b> The pretext and its potential value are separated from any unsupported claim of successful entry.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "The Helpful Stranger",
+      "questDescription": "Document the pressure placed on a West Gate volunteer and identify process improvements without assigning blame.",
+      "questCompleteText": "<b>Imani Vale:</b> The response focuses on safer entry procedures and fixable exposure rather than blaming the volunteer.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

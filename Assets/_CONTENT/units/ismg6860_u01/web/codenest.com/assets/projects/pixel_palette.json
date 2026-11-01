@@ -1,0 +1,17 @@
+{
+  "id": "pixel-palette",
+  "name": "Pixel Palette",
+  "user": "uxmuse",
+  "description": "Collaborative color library synchronized with real-time brand feedback.",
+  "isPublic": true,
+  "files": [
+    {
+      "name": "README.md",
+      "content": "# Pixel Palette\nDesign teams can remix colors and vote on palettes instantly."
+    },
+    {
+      "name": "palette.json",
+      "content": "{\n  \"primary\": \"#f72585\",\n  \"secondary\": \"#480ca8\"\n}"
+    }
+  ]
+}

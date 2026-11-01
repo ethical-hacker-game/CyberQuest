@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u04_q06_t00_contact",
+  "parentTaskID": "ismg6860_u04_q06_t00_voice",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Mara Voss <mara.voss@northbridge.com>",
+      "subject": "We do this by the book",
+      "shortSummary": "Mara confirms the authorized channel and warns the evidence has to survive scrutiny.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nThank you for keeping this inside the authorized channel. I know it is the slower path, and I know leadership would have preferred a private, quiet version of these findings. You did not give them one.\n\nThat means the bar is now higher, not lower. Everything we report from here gets read by legal, argued by operations, and weighed by the external advisor. So we document like every line will be challenged, because it will be.\n\nOne more thing: the scan logs still show that outside host probing the same routes we are looking at. We are not the only ones interested. Stay precise, stay in scope, and let the evidence do the arguing.\n\nMara",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Since you kept a copy",
+      "shortSummary": "Felix introduces himself directly and frames the verified evidence as leverage.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nYou do not know me yet, but I know how to read people, and I read you the moment you decided that evidence was worth holding onto.\n\nFelix Rane. I follow municipal systems for a living, because cities are honest in one way: they never change fast enough. What you have is not just a list of misconfigurations. It is the beginning of a path, and a verified path is the only thing in this business that is actually worth money.\n\nI am not asking you to burn anyone. I am asking you to keep your eyes open as you move through the analysis. When you see how these findings connect, remember that you saw it first, and that matters.\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Do not let them bury this",
+      "shortSummary": "Imani reaches out, framing the findings around the residents who depend on the portal.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nI heard you kept a disclosure option open instead of handing everything to leadership to file away. That tells me you understand what is actually at stake here.\n\nI am Imani Vale, CivicWatch. After the ransomware that hit the towns nearby, I watched residents lose access to records and assistance while officials called it an internal IT matter. The portal you are assessing handles the same kind of services for the same kind of people.\n\nProve your findings carefully. I mean that. Sloppy evidence is the easiest thing in the world to dismiss. But while you prove them, keep asking the question the audit will try to skip: if Northbridge decides this is minor, who actually carries the risk?\n\nImani",
+      "attachements": []
+    }
+  ]
+}

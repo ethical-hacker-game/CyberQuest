@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "decisionText": "Escalate to Dana now, preserve the logs, and coordinate containment before disabling the account.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Withhold the finding and continue observing the account so the access remains available.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Notify plant-floor safety leadership in parallel with Dana because the account touches historian infrastructure.",
+      "personaIndex": 2,
+      "personaValueChange": 10
+    }
+  ],
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> The directory records svc_bridgeworks authenticating at 02:41 on July 24. Halloway's shifts run from 06:00 to 22:00, and the account is still enabled with a non-expiring password.\n\nThat proves one recent off-hours authentication. It does not yet tell us whether a person, service, or scheduled process used the account, and it does not establish a repeating pattern.",
+      "taskInstructions": "Choose how to escalate and contain the confirmed event while preserving the evidence.",
+      "taskQuestion": "How do you respond to the off-hours authentication?",
+      "taskCompleteText": "<b>Dana Osei:</b> Your choice is recorded. The account remains evidence, and the next step determines who is involved in the response."
+    }
+  ],
+  "taskID": "ismg6860_u05_d02_decision",
+  "parentQuestID": "ismg6860_u05_d02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision"
+}

@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The evidence is ready for handoff. Decide whether the full record goes to the <b>authorized incident owner</b>, remains private for leverage, or becomes a redacted advisory after a short remediation window.",
+      "taskInstructions": "Review the Draft handoff posture mail and choose how the verified evidence should be handled.",
+      "taskQuestion": "Which reporting posture do you choose?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Your choice establishes who receives the technical details and whether a public version follows the remediation window."
+    }
+  ],
+  "taskID": "ismg6860_u02_d04_decision",
+  "parentQuestID": "ismg6860_u02_d04",
+  "articleID": "u02_responsible_reporting",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision",
+  "decisions": [
+    {
+      "decisionText": "Deliver a full technical report to the authorized incident owner.",
+      "personaIndex": 0,
+      "personaValueChange": 20
+    },
+    {
+      "decisionText": "Keep a private copy of the route and service map for leverage.",
+      "personaIndex": 1,
+      "personaValueChange": 20
+    },
+    {
+      "decisionText": "Publish a redacted advisory after giving the city a short fix window.",
+      "personaIndex": 2,
+      "personaValueChange": 20
+    }
+  ]
+}

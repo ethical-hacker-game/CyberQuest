@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": true,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> The account list is a lead, not proof of a password leak. Check the related public code result to determine whether the exposure includes actual credentials.",
+      "taskInstructions": "Return to the <b>Cyber Search</b> results for <b>allinanchor: NorthTec Username Passwords</b>, open the CodeNest result, and inspect <b>leaked_credentials.csv</b> before answering.",
+      "taskQuestion": "Because the public repository exposes employee email addresses and passwords, should NorthTec treat every listed password as compromised and reset it immediately?",
+      "taskCompleteText": "<b>Samira:</b> Correct. Every listed password must be treated as compromised. NorthTec should reset the affected credentials, invalidate active sessions, review access logs, and remove the exposed data from the repository and its history."
+    }
+  ],
+  "taskID": "ismg6860_u01_q02_t02",
+  "parentQuestID": "ismg6860_u01_q02",
+  "articleID": "u01_credential_exposure",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

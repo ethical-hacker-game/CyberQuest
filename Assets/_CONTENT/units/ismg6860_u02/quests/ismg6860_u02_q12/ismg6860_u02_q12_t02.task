@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The <b>router advertisement</b> and discovery evidence show an IPv6 path that the IPv4 pass could not observe. They do not expand our authorization. The report should distinguish the verified finding from the need to confirm future scope across both address families.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the defensible lesson from the IPv6 finding?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. Assessment plans should explicitly address both paths for assets that are approved for testing.",
+      "answers": [
+        "IPv6 addresses should always be treated as out of assessment scope.",
+        "IPv6 deployment makes network segmentation unnecessary.",
+        "Assessment plans should explicitly check both IPv4 and IPv6 exposure for approved assets.",
+        "An IPv4 scan automatically covers all IPv6 exposure too."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> The <b>router advertisement</b> helps explain the IPv6 address, but it is evidence, not permission. Record the second address family and make the next assessment confirm that its approved scope and controls cover both paths.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the defensible lesson from the IPv6 finding?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Correct. Put both address families in the plan, then test only what the authorization approves.",
+      "answers": [
+        "IPv6 addresses should always be treated as out of assessment scope.",
+        "IPv6 deployment makes network segmentation unnecessary.",
+        "Assessment plans should explicitly check both IPv4 and IPv6 exposure for approved assets.",
+        "An IPv4 scan automatically covers all IPv6 exposure too."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> The <b>router advertisement</b> and host response prove that IPv6 belongs in the asset record. They do not prove how complete Asterlink's monitoring is, so frame the recommendation around explicit coverage rather than an unsupported accusation.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the defensible lesson from the IPv6 finding?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Correct. Require assessment plans to name both address families and keep every test inside approved scope.",
+      "answers": [
+        "IPv6 addresses should always be treated as out of assessment scope.",
+        "IPv6 deployment makes network segmentation unnecessary.",
+        "Assessment plans should explicitly check both IPv4 and IPv6 exposure for approved assets.",
+        "An IPv4 scan automatically covers all IPv6 exposure too."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u02_q12_t02",
+  "parentQuestID": "ismg6860_u02_q12",
+  "articleID": "u02_dual_stack_visibility",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

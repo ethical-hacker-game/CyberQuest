@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The observed vendor-to-ticketing flow, exposed diagnostics service, and missing internal sensor all point to a specific <b>segmentation</b> recommendation. Choose the action that addresses each verified condition without extending the assessment scope.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the strongest safe recommendation?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. Isolation, restricted vendor access, and boundary monitoring address the verified conditions.",
+      "answers": [
+        "Isolate ECHO-73, restrict vendor access, and monitor the ticketing boundary.",
+        "Disable TCP/8080 but leave the existing vendor route unchanged.",
+        "Add more perimeter alerts but leave the ticketing boundary uncovered.",
+        "Move ECHO-73 into the ticketing VLAN to simplify monitoring."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> The route loses its value when defenders isolate the host, restrict vendor access, and watch the crossing. Choose the <b>segmentation</b> recommendation that closes every verified gap instead of shifting only one symptom.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the strongest safe recommendation?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Correct. That removes the useful path instead of leaving another version of it open.",
+      "answers": [
+        "Disable TCP/8080 but leave the existing vendor route unchanged.",
+        "Add more perimeter alerts but leave the ticketing boundary uncovered.",
+        "Isolate ECHO-73, restrict vendor access, and monitor the ticketing boundary.",
+        "Move ECHO-73 into the ticketing VLAN to simplify monitoring."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> A measurable <b>segmentation</b> recommendation should isolate the vendor path, restrict access, and add monitoring where coverage is missing. Choose the option that addresses all three conditions.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the strongest safe recommendation?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Correct. Each part of that recommendation can be implemented and verified during follow-up.",
+      "answers": [
+        "Disable TCP/8080 but leave the existing vendor route unchanged.",
+        "Add more perimeter alerts but leave the ticketing boundary uncovered.",
+        "Move ECHO-73 into the ticketing VLAN to simplify monitoring.",
+        "Isolate ECHO-73, restrict vendor access, and monitor the ticketing boundary."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u02_q14_t02",
+  "parentQuestID": "ismg6860_u02_q14",
+  "articleID": "u02_network_segmentation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

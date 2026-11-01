@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "They reused details from employees' public social profiles.",
+        "They guessed an employee's password before sending any email.",
+        "They collected the details from local television reports.",
+        "They inferred the details from SecureFund's office location."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Marcus:</b> The reported email says, <i>\"Join the Project Cedar review at 9:00 Thursday.\"</i> The employee's public WorkLink profile lists Project Cedar and weekly Thursday reviews at 9:00. That overlap is a lead, not proof of who sent the email.",
+      "taskInstructions": "Review <b>spearphish</b> guidance, then identify the collection source supported by this overlap.",
+      "taskQuestion": "Which source best explains the project detail?",
+      "taskCompleteText": "<b>Marcus:</b> Public profile details are a plausible source for targeted context. We will record the match as a lead, not attribution."
+    }
+  ],
+  "taskID": "ismg6860_u01_q27_t01",
+  "parentQuestID": "ismg6860_u01_q27",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

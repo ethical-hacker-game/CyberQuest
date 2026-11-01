@@ -1,0 +1,27 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Good service identification preserves the most specific reproducible observation without turning it into an unsupported risk claim. Keep the product, version, protocol, and port together.",
+      "taskInstructions": "",
+      "taskQuestion": "Which observation should be preserved exactly in the report?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. RailGate Diagnostics 3.4.7 on TCP/8080 is specific, reproducible, and appropriately narrow.",
+      "answers": [
+        "RailGate Diagnostics 3.4.7 on TCP/8080.",
+        "The jump host still has a populated route table.",
+        "The portal uses a private address behind NAT.",
+        "ICMP replies exist across the approved range."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u02_q06_t03",
+  "parentQuestID": "ismg6860_u02_q06",
+  "articleID": "u02_service_identification",
+  "mailsOnStart": [],
+  "mailsOnEnd": [
+    "ismg6860_u02_d02_banner_pressure"
+  ],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

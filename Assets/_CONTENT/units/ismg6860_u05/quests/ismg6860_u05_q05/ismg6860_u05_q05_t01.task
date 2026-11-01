@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "CN=svc_bridgeworks,OU=Service Accounts,OU=BridgeWorks,DC=hallowayprecision,DC=com"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Determine whether svc_bridgeworks exists only on the historian or also in Halloway's directory. A directory entry expands the remediation scope, but it does not reveal the account's permissions by itself.",
+      "taskInstructions": "Run <b>ldapsearch svc_bridgeworks</b> against 10.30.14.10 and type the complete dn value.",
+      "taskQuestion": "What is the account's distinguished name?",
+      "taskCompleteText": "<b>Dana Osei:</b> The full DN places svc_bridgeworks in Halloway's Service Accounts and BridgeWorks organizational units. It is a directory account, but we still need its state and permissions."
+    },
+    {
+      "correctAnswers": [
+        "CN=svc_bridgeworks,OU=Service Accounts,OU=BridgeWorks,DC=hallowayprecision,DC=com"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> First establish whether svc_bridgeworks appears only on the historian or also in Halloway's directory. A directory identity is valuable evidence, but its DN alone does not prove what it can access.",
+      "taskInstructions": "Run <b>ldapsearch svc_bridgeworks</b> against 10.30.14.10 and type the complete dn value.",
+      "taskQuestion": "What is the account's distinguished name?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The DN places the identity in Halloway's directory under a dedicated BridgeWorks OU. Record the identity now; evaluate its privileges separately."
+    },
+    {
+      "correctAnswers": [
+        "CN=svc_bridgeworks,OU=Service Accounts,OU=BridgeWorks,DC=hallowayprecision,DC=com"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Establish whether the historian's service identity also exists in Halloway's directory. That connection deserves review, but the directory entry alone does not prove network reach or system privileges.",
+      "taskInstructions": "Run <b>ldapsearch svc_bridgeworks</b> against 10.30.14.10 and type the complete dn value.",
+      "taskQuestion": "What is the account's distinguished name?",
+      "taskCompleteText": "<b>Priya Nandan:</b> The DN places svc_bridgeworks in Halloway's directory under a dedicated BridgeWorks OU. Document that fact without claiming access the query did not test."
+    }
+  ],
+  "taskID": "ismg6860_u05_q05_t01",
+  "parentQuestID": "ismg6860_u05_q05",
+  "articleID": "u05_ldap_directory",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

@@ -1,0 +1,44 @@
+{
+  "variants": [
+    {
+      "minigameType": "NetworkDistance",
+      "minigameHeaderText": "Network Path Exercise",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Before interpreting any <b>both address families</b> finding, practice separating observed evidence from a topology model. This routing exercise tests node selection, distance awareness, and integrity management; it does not measure ECHO-73's real IPv6 path.",
+      "taskInstructions": "Hop from node to node toward the green target zone; the distance bar fills as you close in. Red attack zones drain your data integrity while they sit on your position, and the run fails outright if that bar empties.",
+      "taskQuestion": "Reach the target while preserving data integrity.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Exercise complete. Keep its routing lesson separate from the nmap and tcpdump evidence in the case record."
+    },
+    {
+      "minigameType": "NetworkDistance",
+      "minigameHeaderText": "Network Path Exercise",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> A diagram and an observed route are not the same thing, especially across <b>both address families</b>. Use this abstract routing exercise to practice closing on a target while hostile zones threaten data integrity; do not treat it as evidence about ECHO-73.",
+      "taskInstructions": "Hop from node to node toward the green target zone; the distance bar fills as you close in. Red attack zones drain your data integrity while they sit on your position, and the run fails outright if that bar empties.",
+      "taskQuestion": "Reach the target while preserving data integrity.",
+      "taskCompleteText": "<b>Kade Mercer:</b> Exercise complete. The route you navigated demonstrates the method, not the vendor host's actual topology."
+    },
+    {
+      "minigameType": "NetworkDistance",
+      "minigameHeaderText": "Network Path Exercise",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> Claims about reachability across <b>both address families</b> need evidence, not an illustrative map. Complete this abstract routing exercise to practice distance and integrity decisions, while keeping its result out of the factual record for ECHO-73.",
+      "taskInstructions": "Hop from node to node toward the green target zone; the distance bar fills as you close in. Red attack zones drain your data integrity while they sit on your position, and the run fails outright if that bar empties.",
+      "taskQuestion": "Reach the target while preserving data integrity.",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Exercise complete. The case record still rests on the verified host response and packet capture, not this abstract route."
+    }
+  ],
+  "taskID": "ismg6860_u02_q12_t03_network_distance",
+  "parentQuestID": "ismg6860_u02_q12",
+  "articleID": "u02_dual_stack_visibility",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

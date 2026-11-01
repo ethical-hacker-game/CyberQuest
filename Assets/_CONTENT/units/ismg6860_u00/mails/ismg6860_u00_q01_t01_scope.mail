@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u00_q01_t01_scope",
+  "parentTaskID": "ismg6860_u00_q01_t01_auth_mail",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Ed Mercer <ed.mercer@cyberquest.academy>",
+      "subject": "First Signal scope note",
+      "shortSummary": "Read-only authorization for the First Signal case.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nTraining Northstar has authorized the First Signal evidence review.\n\nAuthorized targets and records:\n- Training Northstar public status page\n- DNS record for trainingnorthstar.com\n- The approved Zenmap host check for 185.254.57.124\n- The existing First Signal scanner report\n\nAllowed actions:\n- Read the public status page and case correspondence\n- Run the provided DNS lookup and approved host check\n- Review the existing scanner results\n- Record the requested evidence in the case journal\n- Configure the designated packet gate to block suspicious traffic while preserving legitimate service requests\n\nLimits:\n- Do not guess hidden admin routes or run additional scans\n- Do not submit forms or change the portal configuration\n- Do not retrieve exposed files or share sensitive paths outside the authorized team\n\nThe packet gate is the only authorized control change. The service owner must approve and perform any portal repair. Public visibility does not expand this scope.\n\nEd",
+      "attachements": []
+    }
+  ]
+}

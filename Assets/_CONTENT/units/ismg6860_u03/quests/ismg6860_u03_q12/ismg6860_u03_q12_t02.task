@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the invented problem used to make the caller's demand sound necessary.",
+      "taskInstructions": "Reopen the call script in <b>Mail</b> and type the one-word pretext.",
+      "taskQuestion": "What pretext does the caller use to apply pressure?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: warranty. The caller uses its supposed loss to pressure Riley for account details.",
+      "correctAnswers": ["warranty"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the ordinary-sounding problem at the center of the call. The deadline and demand are built around it.",
+      "taskInstructions": "Reopen the call script in <b>Mail</b> and type the one-word pretext.",
+      "taskQuestion": "What pretext does the caller use?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: warranty. The caller attaches a false deadline to a familiar support concern.",
+      "correctAnswers": ["warranty"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Record the exact pretext so staff can recognize it during a call instead of receiving only a vague scam warning.",
+      "taskInstructions": "Reopen the call script in <b>Mail</b> and type the one-word pretext.",
+      "taskQuestion": "What pretext does the caller use?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: warranty. Name the false loss and the safe verification route in the warning.",
+      "correctAnswers": ["warranty"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q12_t02",
+  "parentQuestID": "ismg6860_u03_q12",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

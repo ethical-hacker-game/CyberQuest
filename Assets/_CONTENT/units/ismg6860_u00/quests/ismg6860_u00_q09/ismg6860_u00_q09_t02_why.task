@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "It automatically fixes any misconfiguration it records.",
+        "It keeps confirmed evidence tied to the case so the handoff team can act on it.",
+        "It grants permission to test any system that shows up in the log.",
+        "It hides your activity from the system owner."
+      ],
+      "correctAnswer": 1,
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> Before we move on, be clear about what this tool is for. A journal is not magic, and it does not change what you are allowed to do. It only makes sure the work you already did is not lost.",
+      "taskInstructions": "",
+      "taskQuestion": "Why does the Case Journal matter?",
+      "taskCompleteText": "<b>Ed:</b> Correct. The Journal preserves evidence for the handoff. It never fixes systems for you and it never widens your scope."
+    }
+  ],
+  "taskID": "ismg6860_u00_q09_t02_why",
+  "parentQuestID": "ismg6860_u00_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

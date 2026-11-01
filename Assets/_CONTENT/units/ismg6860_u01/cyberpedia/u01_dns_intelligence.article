@@ -1,0 +1,12 @@
+{
+  "articleID": "u01_dns_intelligence",
+  "videoURL": null,
+  "title": "DNS Intelligence",
+  "content": "The Domain Name System translates names into network information. DNS records can reveal public infrastructure without requiring access to an organization's internal network. Common records include A and AAAA addresses, CNAME aliases, MX mail hosts, NS authoritative name servers, and TXT policy or verification data.\n\n<b>Reading results carefully</b>\nAn authoritative server publishes data for a DNS zone; a recursive resolver may answer from its cache. Tools such as dig can display response flags and authority sections, while nslookup can perform forward name-to-address and reverse address-to-name queries. Passive DNS services add historical observations gathered by third parties. Results can help group related hosts, identify changes, and build an external inventory, but they are not proof of ownership or compromise. Cloud hosting, content delivery networks, shared mail providers, stale records, and incomplete reverse DNS can all mislead attribution.\n\nUnexpected name servers, new subdomains, or unusual address changes deserve verification against approved configuration and registrar records. Preserve the query, time, resolver, and complete response before changing anything. Coordinate with the domain owner and registrar; removing a record prematurely can interrupt legitimate service or destroy useful evidence.\n\n<b>Reducing DNS risk</b>\nUse strong registrar authentication, limited administrative roles, change alerts, registry or registrar locks where appropriate, and routine review of zone records. DNSSEC can authenticate signed DNS data and help detect tampering in resolution, but it does not hide records, secure the registrar account, or correct a malicious authorized change. Good DNS defense combines record integrity, account security, monitoring, and a tested recovery process.",
+  "links": [
+    "DNS configuration",
+    "DNS footprint",
+    "passive DNS",
+    "forward and reverse mappings"
+  ]
+}

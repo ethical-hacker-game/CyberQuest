@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u02_q15",
+  "cityIndex": 5006,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q15_t03_sequence_order",
+    "ismg6860_u02_q15_t01",
+    "ismg6860_u02_q15_t02"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Final Map",
+      "questDescription": "Reconstruct the assessment workflow, review Mira's final report, and close the authorized scan window.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> Asterlink has a defensible record and specific controls for isolating ECHO-73 before launch.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Final Map",
+      "questDescription": "Reconstruct the evidence chain, review Kade's retained map, and account for the risk created by its detail.",
+      "questCompleteText": "<b>Kade Mercer:</b> The map is complete, and so is the responsibility that comes with retaining it.",
+      "questCharacterID": "u02_kade_mercer",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Final Map",
+      "questDescription": "Reconstruct the evidence chain, review Lena's redacted summary, and preserve a safe basis for public follow-up.",
+      "questCompleteText": "<b>Lena Ortiz:</b> The city has a fix window, and the public version can demand accountability without exposing the live route.",
+      "questCharacterID": "u02_lena_ortiz",
+      "appScenarioID": ""
+    }
+  ]
+}

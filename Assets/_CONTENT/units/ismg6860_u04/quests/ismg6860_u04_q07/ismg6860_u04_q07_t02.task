@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Compare the Output block with the page itself. A supported verification record must keep the URL, response, and page identity consistent.",
+      "taskInstructions": "In the report, read the setup finding's <b>URL</b>, <b>HTTP status</b>, and <b>Page title</b>. Open the reported URL in the Web Browser if you need to confirm the visible heading.",
+      "taskQuestion": "Which evidence set matches both the report and the page?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The public setup route returned 200 OK and identified itself as the Northbridge Portal Setup Wizard.",
+      "answers": [
+        "At /setup/install/, a 200 OK response shows the Northbridge Portal Setup Wizard.",
+        "At /setup/install/, a 403 Forbidden response shows the Northbridge Staff Login.",
+        "At /public/backups/, a 200 OK response shows the Northbridge Portal Setup Wizard.",
+        "At /setup/install/, a 301 Redirect response leads to Citizen Service Search."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Match the exact route, response, and page identity. A useful record cannot mix details from different findings.",
+      "taskInstructions": "In the report, read the setup finding's <b>URL</b>, <b>HTTP status</b>, and <b>Page title</b>. Open the reported URL in the Web Browser if you need to confirm the visible heading.",
+      "taskQuestion": "Which evidence set matches both the report and the page?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The public setup route returned 200 OK and identified itself as the Northbridge Portal Setup Wizard.",
+      "answers": [
+        "At /setup/install/, a 200 OK response shows the Northbridge Portal Setup Wizard.",
+        "At /setup/install/, a 403 Forbidden response shows the Northbridge Staff Login.",
+        "At /public/backups/, a 200 OK response shows the Northbridge Portal Setup Wizard.",
+        "At /setup/install/, a 301 Redirect response leads to Citizen Service Search."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Match the route, response, and visible identity exactly. That keeps the claim precise and reviewable.",
+      "taskInstructions": "In the report, read the setup finding's <b>URL</b>, <b>HTTP status</b>, and <b>Page title</b>. Open the reported URL in the Web Browser if you need to confirm the visible heading.",
+      "taskQuestion": "Which evidence set matches both the report and the page?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The public setup route returned 200 OK and identified itself as the Northbridge Portal Setup Wizard.",
+      "answers": [
+        "At /setup/install/, a 200 OK response shows the Northbridge Portal Setup Wizard.",
+        "At /setup/install/, a 403 Forbidden response shows the Northbridge Staff Login.",
+        "At /public/backups/, a 200 OK response shows the Northbridge Portal Setup Wizard.",
+        "At /setup/install/, a 301 Redirect response leads to Citizen Service Search."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q07_t02",
+  "parentQuestID": "ismg6860_u04_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

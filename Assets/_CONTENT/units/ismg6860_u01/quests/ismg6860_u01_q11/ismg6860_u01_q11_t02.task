@@ -1,0 +1,24 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Probe the sender's infrastructure before the domain disappears.",
+        "Interview recipients and compare the targeting details with their public UWork profiles.",
+        "Reset every employee account before checking whether any account was affected."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Jamal Rivers:</b> The look-alike domain explains the impersonation, but not how the sender selected recipients. Before assuming an internal breach, compare what the messages use with information the recipients publish openly.",
+      "taskInstructions": "Choose the next evidence-gathering step that stays within NorthTec's authority and avoids unnecessary account disruption.",
+      "taskQuestion": "How should you investigate the targeting?",
+      "taskCompleteText": "<b>Jamal Rivers:</b> Interviews and public-profile comparisons can show whether exposed names, roles, and address patterns explain the targeting without assuming account compromise."
+    }
+  ],
+  "taskID": "ismg6860_u01_q11_t02",
+  "parentQuestID": "ismg6860_u01_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

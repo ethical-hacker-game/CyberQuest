@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Identify the confirmed host condition that could increase the privileges of an assumed low-privilege foothold.",
+      "taskInstructions": "Run <b>languard audit services</b>. Compare the Finding and Impact lines for NB-FIN-07.",
+      "taskQuestion": "Which finding supports privilege escalation risk?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Non-admin write access to a local service can create a privilege-escalation condition.",
+      "answers": [
+        "Weak local service permissions on host NB-FIN-07.",
+        "Missing X-Frame-Options on the public portal homepage.",
+        "SMB signing not required on file-share-02.",
+        "The public backup directory exposed under the portal."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Find the local host condition that could let limited access gain stronger privileges.",
+      "taskInstructions": "Run <b>languard audit services</b>. Compare the Finding and Impact lines for NB-FIN-07.",
+      "taskQuestion": "Which finding supports privilege escalation risk?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. A service writable by non-admin accounts creates the escalation opportunity.",
+      "answers": [
+        "Weak local service permissions on host NB-FIN-07.",
+        "Missing X-Frame-Options on the public portal homepage.",
+        "SMB signing not required on file-share-02.",
+        "The public backup directory exposed under the portal."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Identify the host condition that could increase the impact of an initial low-privilege compromise.",
+      "taskInstructions": "Run <b>languard audit services</b>. Compare the Finding and Impact lines for NB-FIN-07.",
+      "taskQuestion": "Which finding supports privilege escalation risk?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Weak service permissions can let a limited compromise affect more of the host.",
+      "answers": [
+        "Weak local service permissions on host NB-FIN-07.",
+        "Missing X-Frame-Options on the public portal homepage.",
+        "SMB signing not required on file-share-02.",
+        "The public backup directory exposed under the portal."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q16_t01",
+  "parentQuestID": "ismg6860_u04_q16",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

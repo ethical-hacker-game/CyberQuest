@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "Brian Simpson"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Kwame:</b> Compare public-footprint results for five TechNova staff: Aisha Okafor, Tunde Adetokunbo, Mei Lin, Diego Alvarez, and Brian Simpson. I want the person whose result adds personal context beyond a work role, so we can discuss the exposure privately.",
+      "taskInstructions": "In the command shell, run <b>sherlock \"Full Name\"</b> for each listed person, for example <b>sherlock \"Aisha Okafor\"</b>. Compare the results, then type the full name of the person whose result includes family or personal-blog material.",
+      "taskQuestion": "Which listed person's result contains the most personal context?",
+      "taskCompleteText": "<b>Kwame:</b> Brian Simpson's result lists family photos and a personal blog as well as his CEO profile. The listings are a reason to assess exposure, not proof that the material is current or has been misused."
+    }
+  ],
+  "taskID": "ismg6860_u01_q19_t01",
+  "parentQuestID": "ismg6860_u01_q19",
+  "articleID": "u01_osint_fundamentals",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

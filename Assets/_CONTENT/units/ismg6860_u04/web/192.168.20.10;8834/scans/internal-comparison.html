@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nessus / Northbridge: Internal Comparison</title>
+  <style>
+    :root{--ink:#1b2733;--muted:#67737f;--line:#e1e6ec;--bg:#f3f5f8;--accent:#19b3a6;
+      --crit:#7a1126;--high:#d63b2f;--med:#e08a00;--low:#3f9142;--info:#2476c4}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);font-size:14px}
+    .topbar{display:flex;align-items:center;gap:22px;background:#0a1a2f;color:#fff;padding:0 22px;height:54px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.5px;font-size:18px}
+    .logo .mark{width:22px;height:22px;border-radius:50%;background:conic-gradient(from 180deg,#19b3a6,#1aa0e6,#19b3a6);box-shadow:0 0 0 3px rgba(25,179,166,.25)}
+    .topbar nav{display:flex;gap:4px;height:100%}
+    .topbar nav a{color:#cfe0ee;text-decoration:none;padding:0 16px;display:flex;align-items:center;font-weight:600;border-bottom:3px solid transparent}
+    .topbar nav a.active{color:#fff;border-bottom-color:var(--accent)}
+    .topbar .spacer{flex:1}
+    .topbar .user{font-size:13px;color:#9fb3c6}
+    .main{max-width:1080px;margin:0 auto;padding:22px 26px 60px}
+    .crumbs{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .crumbs a{color:var(--accent);text-decoration:none}
+    h1{margin:2px 0 4px;font-size:23px;font-weight:600}
+    .meta{display:flex;gap:26px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-bottom:16px}
+    .meta b{color:#2c3a47;font-weight:600}
+    .tabs{display:flex;gap:2px;border-bottom:1px solid var(--line);margin-bottom:18px}
+    .tabs a{padding:10px 16px;text-decoration:none;color:#56646f;font-weight:600;border-bottom:3px solid transparent}
+    .tabs a.active{color:#0d6f66;border-bottom-color:var(--accent)}
+    .card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:20px}
+    .card>h3{margin:0;padding:13px 18px;border-bottom:1px solid var(--line);font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:#56646f;background:#fafbfc}
+    table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);font-size:13.5px;vertical-align:middle}
+    th{background:#fafbfc;color:#56646f;font-weight:600;font-size:11px;letter-spacing:.6px;text-transform:uppercase}
+    tr:last-child td{border-bottom:none}
+    .sev{display:inline-block;min-width:64px;text-align:center;color:#fff;font-weight:700;font-size:11px;letter-spacing:.4px;padding:4px 8px;border-radius:3px;text-transform:uppercase}
+    .s-crit{background:var(--crit)}.s-high{background:var(--high)}.s-med{background:var(--med)}.s-low{background:var(--low)}.s-info{background:var(--info)}
+    .vname{font-weight:700;color:#15334f;text-decoration:none}
+    .vname:hover{color:var(--accent)}
+    .kv{display:grid;grid-template-columns:170px 1fr;gap:8px 18px;font-size:13.5px;padding:16px 18px}
+    .kv div:nth-child(odd){color:var(--muted);font-weight:600}
+    .sect{padding:0 18px 18px}
+    .sect h4{margin:18px 0 6px;font-size:13px;letter-spacing:.4px;text-transform:uppercase;color:#56646f}
+    .sect p{margin:0 0 8px;line-height:1.55}
+    .cmp{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:5px;overflow:hidden;margin:6px 0 4px}
+    .cmp>div{padding:11px 14px;font-size:13px}
+    .cmp .h{font-weight:700;color:#56646f;background:#fafbfc;font-size:11px;letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--line)}
+    .cmp .ext{border-right:1px solid var(--line)}
+    pre{background:#0e1c2b;color:#d6e6f2;border-radius:5px;padding:14px 16px;font-family:Consolas,"Courier New",monospace;font-size:12.5px;line-height:1.55;overflow:auto;white-space:pre-wrap}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo"><span class="mark"></span>Nessus</div>
+    <nav><a class="active" href="../../192.168.20.10;8834/">Scans</a><a href="../../192.168.20.10;8834/">Settings</a></nav>
+    <div class="spacer"></div>
+    <div class="user">analyst@assessment &nbsp;|&nbsp; Professional</div>
+  </div>
+
+  <main class="main">
+    <div class="crumbs"><a href="../../192.168.20.10;8834/">My Scans</a> &rsaquo; Northbridge: Internal Comparison</div>
+    <h1>Northbridge &mdash; Internal Comparison</h1>
+    <div class="meta">
+      <span><b>Scope:</b> internal segment vs. external surface</span>
+      <span><b>Status:</b> Completed</span>
+      <span><b>Hosts:</b> portal-app-01, file-share-02, ops-jump-03</span>
+    </div>
+
+    <div class="tabs">
+      <a href="../../192.168.20.10;8834/scans/internal-comparison.html">Hosts</a>
+      <a class="active" href="../../192.168.20.10;8834/scans/internal-comparison.html">Vulnerabilities</a>
+      <a href="../../192.168.20.10;8834/scans/internal-comparison.html">History</a>
+    </div>
+
+    <div class="card">
+      <h3>Vulnerabilities &mdash; internal comparison</h3>
+      <table>
+        <thead><tr><th style="width:110px">Severity</th><th>Name</th><th style="width:160px">Host</th><th style="width:80px">Count</th></tr></thead>
+        <tbody>
+          <tr><td><span class="sev s-crit">Critical</span></td><td><a class="vname" href="#struts">Apache Struts 2.x Multiple RCE Advisories</a></td><td>portal-app-01</td><td>1</td></tr>
+          <tr><td><span class="sev s-high">High</span></td><td><a class="vname" href="#path">Portal App Server Can Reach Internal SMB Share</a></td><td>portal-app-01</td><td>1</td></tr>
+          <tr><td><span class="sev s-med">Medium</span></td><td><a class="vname" href="#smb">SMB Signing Not Required</a></td><td>file-share-02</td><td>1</td></tr>
+          <tr><td><span class="sev s-info">Info</span></td><td><a class="vname" href="#path">SMB Service Detection</a></td><td>file-share-02</td><td>1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card detail" id="struts">
+      <div class="kv">
+        <div>Plugin&nbsp;Name</div><div><b>Apache Struts 2.x Multiple Remote Code Execution Advisories</b></div>
+        <div>Severity</div><div><span class="sev s-crit">Critical</span></div>
+        <div>Component</div><div>Apache Struts 2.x &mdash; portal application server (internal management interface)</div>
+        <div>Risk (CVSS v3.1)</div><div>9.8 (AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)</div>
+      </div>
+      <div class="sect">
+        <h4>External vs. Internal View</h4>
+        <div class="cmp">
+          <div class="h ext">External surface</div><div class="h">Internal segment</div>
+          <div class="ext">Management interface not directly reachable from the internet.</div>
+          <div>Reachable from the portal app server, which is itself exposed to public traffic.</div>
+        </div>
+        <h4>Description</h4>
+        <p>The detected Struts branch matches published remote code execution advisories. The management interface is not exposed externally, but it sits one hop behind a public-facing application server, so the public surface and the internal weakness are connected.</p>
+        <h4>Solution</h4>
+        <p>Upgrade Apache Struts to a fixed release, restrict the management interface to maintenance hosts, and monitor for exploitation attempts against the app server.</p>
+        <h4>Output</h4>
+        <pre>Component : Apache Struts 2.x (portal-app-01, internal mgmt interface)
+Advisory  : version matches published remote code execution (RCE) advisories
+Evidence  : version banner and advisory match recorded from the scanner.
+            No exploit payload was sent.</pre>
+      </div>
+    </div>
+
+    <div class="card detail" id="path">
+      <div class="kv">
+        <div>Plugin&nbsp;Name</div><div><b>Portal App Server Can Reach Internal SMB Share</b></div>
+        <div>Severity</div><div><span class="sev s-high">High</span></div>
+        <div>Path</div><div>portal-app-01 &rarr; file-share-02 (TCP/445)</div>
+      </div>
+      <div class="sect">
+        <h4>Description</h4>
+        <p>A network path exists from the public-facing portal application server to the internal SMB file share. A weakness on the public tier could be used as a stepping stone toward internal storage.</p>
+        <h4>Solution</h4>
+        <p>Restrict SMB access, enforce signing, and segment the application server away from the internal file share.</p>
+      </div>
+    </div>
+
+    <div class="card detail" id="smb">
+      <div class="kv">
+        <div>Plugin&nbsp;Name</div><div><b>SMB Signing Not Required</b></div>
+        <div>Severity</div><div><span class="sev s-med">Medium</span></div>
+        <div>Host</div><div>file-share-02</div>
+      </div>
+      <div class="sect">
+        <h4>External vs. Internal View</h4>
+        <div class="cmp">
+          <div class="h ext">External surface</div><div class="h">Internal segment</div>
+          <div class="ext">SMB not reachable.</div>
+          <div>SMB signing disabled on file-share-02.</div>
+        </div>
+        <h4>Solution</h4>
+        <p>Enforce SMB signing on the file share and restrict which hosts may reach TCP/445.</p>
+      </div>
+    </div>
+  </main>
+  <script src="../../cq-bridge.js"></script>
+</body>
+</html>

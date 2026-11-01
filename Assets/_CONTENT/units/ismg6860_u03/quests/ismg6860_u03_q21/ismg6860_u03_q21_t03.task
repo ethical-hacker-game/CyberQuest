@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Choose the observation that directly establishes inconsistent name resolution on affected clients.",
+      "taskInstructions": "Compare the hostname, approved baseline, independent resolver answers, and affected-client answer in the mail.",
+      "taskQuestion": "Which clue best supports the DNS anomaly finding?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. Affected clients return an address that disagrees with the baseline and independent resolvers.",
+      "answers": [
+        "Affected clients return a DNS answer that differs from three trusted comparison values.",
+        "The summary presents all three reported findings in consistent labeled fields.",
+        "The forwarded warning uses urgency and asks volunteers to redistribute it.",
+        "The scareware prompt recommends an unfamiliar cleaner for the reported problem."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Choose the measurable resolver discrepancy rather than inferring coordination from the other reports.",
+      "taskInstructions": "Compare the hostname, approved baseline, independent resolver answers, and affected-client answer in the mail.",
+      "taskQuestion": "Which detail establishes the DNS anomaly?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The affected-client answer diverges from all three trusted comparison values.",
+      "answers": [
+        "The summary presents all three reported findings in consistent labeled fields.",
+        "Affected clients return a DNS answer that differs from three trusted comparison values.",
+        "The forwarded warning uses urgency and asks volunteers to redistribute it.",
+        "The scareware prompt recommends an unfamiliar cleaner for the reported problem."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Choose the comparison that supports a precise public warning without blaming users or overstating the other reports.",
+      "taskInstructions": "Compare the hostname, approved baseline, independent resolver answers, and affected-client answer in the mail.",
+      "taskQuestion": "Which clue most clearly establishes the DNS discrepancy?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The verified resolver disagreement supports a calm, specific warning.",
+      "answers": [
+        "The summary presents all three reported findings in consistent labeled fields.",
+        "The forwarded warning uses urgency and asks volunteers to redistribute it.",
+        "Affected clients return a DNS answer that differs from three trusted comparison values.",
+        "The scareware prompt recommends an unfamiliar cleaner for the reported problem."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u03_q21_t03",
+  "parentQuestID": "ismg6860_u03_q21",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

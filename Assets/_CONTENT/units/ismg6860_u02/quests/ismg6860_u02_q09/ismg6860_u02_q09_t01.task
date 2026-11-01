@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Service identification gives us the observed ports and banners, but expected placement determines whether they require action. Open the host summary before comparing it with RailGate's guidance.",
+      "taskInstructions": "The summary is in the <b>NetScanTools Pro</b> app, under the ECHO-73 host view.",
+      "taskQuestion": "Open the ECHO-73 service summary.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> The service summary is open. Now compare the observed console with the vendor's placement guidance.",
+      "actionType": "app_stage_changed",
+      "actionTag": "service_summary"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> Service identification compresses the host into ports, states, and banners. Open the summary and find the observation that makes this profile useful.",
+      "taskInstructions": "The summary is in the <b>NetScanTools Pro</b> app, under the ECHO-73 host view.",
+      "taskQuestion": "Open the ECHO-73 service summary.",
+      "taskCompleteText": "<b>Kade Mercer:</b> The profile is open. Now compare its diagnostics console with the vendor's own rules.",
+      "actionType": "app_stage_changed",
+      "actionTag": "service_summary"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> Service identification gives us a checkable record of what ECHO-73 exposes to the approved jump host. Open the summary before deciding whether the vendor's placement guidance was followed.",
+      "taskInstructions": "The summary is in the <b>NetScanTools Pro</b> app, under the ECHO-73 host view.",
+      "taskQuestion": "Open the ECHO-73 service summary.",
+      "taskCompleteText": "<b>Lena Ortiz:</b> The observed services are clear. The vendor's own guidance will tell us how to frame them.",
+      "actionType": "app_stage_changed",
+      "actionTag": "service_summary"
+    }
+  ],
+  "taskID": "ismg6860_u02_q09_t01",
+  "parentQuestID": "ismg6860_u02_q09",
+  "articleID": "u02_service_identification",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

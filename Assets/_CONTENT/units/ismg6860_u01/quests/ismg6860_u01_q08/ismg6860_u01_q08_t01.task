@@ -1,0 +1,23 @@
+{
+  "correctAnswers": [],
+  "variants": [
+    {
+      "correctAnswers": [
+        "Riley Calder",
+        "Calder, Riley"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Taylor:</b> NexaCore authorized a public registration-record review of shadowtech.com. Identify the named registrant, but remember that a WHOIS entry does not prove who operates the site or controls the domain today.",
+      "taskInstructions": "Open the browser, use <b>Cyber Search</b> to search for <b>whois</b>, and open Whois.io. Look up <b>shadowtech.com</b>, then type the full <b>Registrant Name</b> exactly as shown.",
+      "taskQuestion": "Who is the registrant?",
+      "taskCompleteText": "<b>Taylor:</b> The record lists <b>Riley Calder</b> as the registrant. That is a public registration observation, not proof that Riley currently operates the site or performed any activity involving the domain."
+    }
+  ],
+  "taskID": "ismg6860_u01_q08_t01",
+  "parentQuestID": "ismg6860_u01_q08",
+  "articleID": "u01_domain_registration_intelligence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> One listed archive is named as an administrative backup. Identify it without opening or downloading it.",
+      "taskInstructions": "Read <link=\"u04_directory_listing\"><u>directory listing exposure</u></link>. Check the browser page or run <b>nikto -h https://portal.northbridge.com/public/backups/</b>, then enter the archive name.",
+      "taskQuestion": "Which file is the sensitive exposure?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The name and public location justify investigation and removal, but they do not reveal the archive's contents.",
+      "correctAnswers": [
+        "admin-backup.zip",
+        "admin backup",
+        "admin backup zip",
+        "admin-backup",
+        "adminbackup",
+        "backup zip",
+        "administrative backup"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u04_q05_t03",
+  "parentQuestID": "ismg6860_u04_q05",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input",
+  "correctAnswers": []
+}

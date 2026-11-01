@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q05",
+  "cityIndex": 3148,
+  "questIconID": "quest_icon_gamedev_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q05_t01",
+    "ismg6860_u01_q05_t02",
+    "ismg6860_u01_q05_t03"
+  ],
+  "requiredQuestID": "ismg6860_u01_q04",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "DNS Investigation",
+      "questDescription": "BikeForge has asked for help investigating intermittent connection failures and security warnings. Inspect its published name servers, distinguish a potential DNS risk from a confirmed incident, and prepare a safe remediation sequence for the verified unauthorized record.",
+      "questCompleteText": "<b>Samira:</b> You identified the unapproved name server, described its potential impact without overstating the evidence, and prepared a remediation sequence covering removal, registrar security, monitoring, and DNS integrity.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": ""
+    }
+  ]
+}

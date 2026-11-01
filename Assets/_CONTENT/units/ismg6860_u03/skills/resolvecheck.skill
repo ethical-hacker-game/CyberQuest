@@ -1,0 +1,9 @@
+{
+  "skillID": "resolvecheck",
+  "skillName": "Resolver Check",
+  "skillDescription": "A name-resolution comparison tool. Queries the same hostname against several independent resolvers and highlights where the answers disagree, which is how a redirected name is proven instead of assumed.",
+  "price": 3500,
+  "order": 60,
+  "requireTask": true,
+  "lockInDemo": false
+}

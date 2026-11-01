@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The debrief package separates confirmed marker-linked artifacts, related findings with open attribution, protective actions, and ethical exercise records.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Blue Lantern debrief: evidence status</b>.",
+      "taskQuestion": "Open the Blue Lantern debrief package.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The debrief states what is confirmed, what remains open, and which protections are assigned.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q22_t02_final_report"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The final package preserves useful patterns and resolver data without manufacturing a single attribution for every report.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Blue Lantern debrief: evidence status</b>.",
+      "taskQuestion": "Open the Blue Lantern debrief package.",
+      "taskCompleteText": "<b>Felix Rane:</b> The filed version keeps both the measured findings and the unresolved links visible.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q22_t02_final_report"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The debrief includes a public-summary boundary: specific indicators and safe actions stay; identities, live lures, and internal routes stay out.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Blue Lantern debrief: evidence status</b>.",
+      "taskQuestion": "Open the Blue Lantern debrief package.",
+      "taskCompleteText": "<b>Imani Vale:</b> The package supports accountability without exposing volunteers or operational details.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q22_t02_final_report"
+    }
+  ],
+  "taskID": "ismg6860_u03_q22_t02",
+  "parentQuestID": "ismg6860_u03_q22",
+  "articleID": "u03_safe_reporting",
+  "mailsOnStart": [
+    "ismg6860_u03_q22_t02_final_report"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

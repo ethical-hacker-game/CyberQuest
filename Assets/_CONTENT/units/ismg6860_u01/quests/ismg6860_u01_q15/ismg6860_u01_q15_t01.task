@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "app_scenario_finished",
+      "actionTag": null,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Kateryna Bondarenko:</b> Run the approved mirror of GreenNet's public site and keep the project name and target URL with the result. The finished screen confirms the guided run, while a separate review would be needed to assess any downloaded content.",
+      "taskInstructions": "In WinHTTrack, create the project <b>GreenNetCopy</b>, enter <b>https://www.greennet.org.uk</b> as the Web Address, follow the guided steps, and wait for the mirroring-finished screen.",
+      "taskQuestion": "Complete the approved GreenNet mirror run.",
+      "taskCompleteText": "<b>Kateryna Bondarenko:</b> WinHTTrack reached its mirroring-finished screen for GreenNetCopy. That confirms the run ended, not that any particular file or secret was collected."
+    }
+  ],
+  "taskID": "ismg6860_u01_q15_t01",
+  "parentQuestID": "ismg6860_u01_q15",
+  "articleID": "u01_web_crawling_and_mirroring",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

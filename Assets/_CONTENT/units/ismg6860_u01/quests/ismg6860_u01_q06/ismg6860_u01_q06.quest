@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u01_q06",
+  "cityIndex": 3694,
+  "questIconID": "quest_icon_webspidering_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q06_t01",
+    "ismg6860_u01_q06_t02"
+  ],
+  "requiredQuestID": "ismg6860_u01_q05",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Web Spidering",
+      "questDescription": "Journalist Charisse Morgangood has authorized a controlled crawl using her name. Review the reported public entries, interpret the count carefully, and recommend controls that protect sensitive content instead of relying on indexing directives alone.",
+      "questCompleteText": "<b>Charisse:</b> You reported the crawl count without treating every result as sensitive or conclusive. Your recommendation protects the content itself through removal or authorization while reserving robots.txt for cooperative index management.",
+      "questCharacterID": "u01_charisse_morgangood",
+      "appScenarioID": ""
+    }
+  ]
+}

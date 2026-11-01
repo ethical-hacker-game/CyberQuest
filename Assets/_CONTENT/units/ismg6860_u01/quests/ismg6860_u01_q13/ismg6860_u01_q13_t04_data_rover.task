@@ -1,0 +1,30 @@
+{
+  "variants": [
+    {
+      "minigameType": "DataRover",
+      "minigameHeaderText": "Fall Launch Evidence Vault",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "dataRoverSettings": {
+        "packetIntegrity": 3,
+        "shardCount": 6,
+        "patrolSpeedMultiplier": 1.0,
+        "layoutIndex": 1,
+        "shardLabel": "LEAK ARTIFACT",
+        "patrolLabel": "EXTORTION WATCHER"
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Piotr Novak:</b> The captured outbound set is divided into six evidence fragments in our recovery workspace. Collect the complete set while avoiding the repeating watcher routes so the package remains available for review.",
+      "taskInstructions": "Collect all six <b>LEAK ARTIFACT</b> fragments. Contact with an <b>EXTORTION WATCHER</b> or its vision cone removes one of three integrity points; the third detection ends the run.",
+      "taskQuestion": "Recover all six captured evidence fragments.",
+      "taskCompleteText": "<b>Piotr Novak:</b> The six-fragment evidence set is recovered and ready for scoped forensic review."
+    }
+  ],
+  "taskID": "ismg6860_u01_q13_t04_data_rover",
+  "parentQuestID": "ismg6860_u01_q13",
+  "articleID": "u01_incident_response",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

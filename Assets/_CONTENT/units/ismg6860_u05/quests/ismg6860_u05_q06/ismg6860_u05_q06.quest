@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u05_q06",
+  "cityIndex": 7202,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q06_t01",
+    "ismg6860_u05_q06_t02",
+    "ismg6860_u05_q06_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "NTP Enumeration",
+      "questDescription": "Dana Osei needs a reliable timeline. Identify the historian's selected NTP peer and measure its clock offset before recommending a time-policy correction.",
+      "questCompleteText": "<b>Dana Osei:</b> FORGE-HIST01 selects an external BridgeWorks time source and currently differs from the plant standard by about 184 seconds. Both findings need remediation, but the query does not prove what caused the offset.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "NTP Enumeration",
+      "questDescription": "Reyes Calloway knows inconsistent timestamps weaken a shared incident timeline. Identify the historian's upstream peer and quantify the difference from Halloway's standard.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The historian selects an external BridgeWorks peer and reports an offset of about 184 seconds. The evidence shows poor time governance, not who caused it.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "NTP Enumeration",
+      "questDescription": "Priya Nandan wants plant records placed on a defensible timeline. Identify the historian's time source and document its measured offset from Halloway's standard.",
+      "questCompleteText": "<b>Priya Nandan:</b> The historian selects an external BridgeWorks peer and differs from the plant standard by about 184 seconds. Investigators can account for the measured offset, but Halloway must correct the configuration.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "theHarvester",
+        "harvester"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> We also need a tool lead for public subdomain and contact references. The directory lists one under Domains / IP; selecting it does not collect any data by itself.",
+      "taskInstructions": "Return to <b>OSINT Framework</b>, expand <b>Domains / IP</b>, and find the entry described as collecting public-source subdomain and email references. Type its tool name.",
+      "taskQuestion": "Which listed tool fits that public-source collection task?",
+      "taskCompleteText": "<b>Samira:</b> The directory lists theHarvester for that purpose. Any result would still need scope, source, timestamp, and corroboration before reporting."
+    }
+  ],
+  "taskID": "ismg6860_u01_q18_t03",
+  "parentQuestID": "ismg6860_u01_q18",
+  "articleID": "u01_osint_fundamentals",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

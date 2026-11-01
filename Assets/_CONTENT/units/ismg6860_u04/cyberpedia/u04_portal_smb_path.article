@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_portal_smb_path",
+  "videoURL": null,
+  "title": "Portal App Server to Internal SMB Path",
+  "content": "<b>The scan confirms that portal-app-01 can reach file-share-02 over TCP/445.</b> This reachability can make a weakness on the public application tier more consequential, but it does not prove that the share was accessed or that any data was exposed. Remediate the confirmed relationship by segmenting the portal tier, limiting SMB access to required sources and identities, enforcing least privilege, and verifying that the unnecessary path is blocked.",
+  "links": [
+    "the confirmed portal-to-SMB path"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Preserve relevant logs and system state before changes.",
+        "Shut down the entire company network immediately.",
+        "Delete the flagged account to stop further requests.",
+        "Publicly accuse a competitor of corporate espionage."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> DigitDesigns reported unusual requests from an internal address. Before anyone changes accounts or systems, preserve the records needed to establish what happened.",
+      "taskInstructions": "Review the evidence-first guidance in <b>Incident Response and Evidence</b>.",
+      "taskQuestion": "What should the response team do first?",
+      "taskCompleteText": "<b>Samira:</b> Preserve the relevant logs and system state, then investigate and plan proportionate containment with the system owners."
+    }
+  ],
+  "taskID": "ismg6860_u01_q22_t01",
+  "parentQuestID": "ismg6860_u01_q22",
+  "articleID": "u01_incident_response",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

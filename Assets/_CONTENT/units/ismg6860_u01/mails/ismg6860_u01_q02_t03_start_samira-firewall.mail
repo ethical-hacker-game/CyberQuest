@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u01_q02_t03_start_samira-firewall",
+  "parentTaskID": "ismg6860_u01_q02_t03",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Samira Linton <samira.linton@cyberworld.edu>",
+      "subject": "NorthTec Traffic Classification",
+      "shortSummary": "Approved business traffic to allow and reconnaissance probes to block.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Hi {player},\r\n\r\nUse this approved classification for the NorthTec Main Server.\r\n\r\n<b>Allow routine business traffic:</b>\r\n- HTTPS Page Load\r\n- DNS Lookup\r\n- Authenticated User Login\r\n- System Update Check\r\n- Security Gateway Check\r\n- Checkout Request\r\n- Payment Request\r\n- Digitally Signed Email\r\n\r\n<b>Block reconnaissance probes:</b>\r\n- Port Scan\r\n- Host Sweep\r\n- DNS Enumeration\r\n- Directory Enumeration\r\n- Banner Grab\r\n- Vulnerability Scan Probe\r\n- Ping Scan\r\n- Robots.txt Probe\r\n- HTTP Method Probe\r\n\r\nThis classification applies to the current audit scope; production firewall changes require NorthTec’s normal review and testing process.\r\n\r\nSamira",
+      "attachements": []
+    }
+  ]
+}

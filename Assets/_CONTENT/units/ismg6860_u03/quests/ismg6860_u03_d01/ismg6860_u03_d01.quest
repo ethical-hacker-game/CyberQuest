@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u03_d01",
+  "cityIndex": 5120,
+  "questIconID": "u03_decision",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u03_d01_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "First Response Decision",
+      "questDescription": "Choose whether the first response prioritizes coordinated protection, quiet observation, or immediate public warning.",
+      "questCompleteText": "<b>Asha Moreno:</b> The first response is set. Your choice now determines which perspective guides the investigation.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    }
+  ]
+}

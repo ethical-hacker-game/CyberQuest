@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80" role="img" aria-label="Summit Trust Bank">
+  <title>Summit Trust Bank</title>
+  <rect width="320" height="80" fill="white"/>
+  <g transform="translate(14,14)">
+    <path d="M10 44 L34 18 L48 34 L62 12 L84 44 Z" fill="#0b3a66"/>
+    <path d="M10 44 H84" stroke="#d8a657" stroke-width="4"/>
+  </g>
+  <text x="110" y="38" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif" font-size="22" font-weight="700" fill="#0b3a66">Summit Trust Bank</text>
+  <text x="110" y="60" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif" font-size="12" font-weight="600" fill="#6b7885">Personal &amp; Business Banking</text>
+</svg>

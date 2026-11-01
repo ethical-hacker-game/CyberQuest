@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u03_q17_t01_door_note",
+  "parentTaskID": "ismg6860_u03_q17_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Door-camera note: West Gate",
+      "shortSummary": "Theo reports an unbadged visitor requesting entry at West Gate.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Theo Kwan sent this observation from physical security for review.\n\nDoor-camera note (T. Kwan):\nA person wearing a vendor shirt carried boxes toward West Gate and asked a volunteer to hold the staff door. The person had no visible badge and claimed an urgent delivery for the LanternPass desk. The camera note does not establish whether entry occurred.\n\nAsha",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Door-camera note: West Gate",
+      "shortSummary": "Theo reports an unbadged visitor requesting entry at West Gate.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Theo Kwan sent the observed details from the West Gate camera.\n\nDoor-camera note (T. Kwan):\nA person wearing a vendor shirt carried boxes toward West Gate and asked a volunteer to hold the staff door. The person had no visible badge and claimed an urgent delivery for the LanternPass desk. The camera note does not establish whether entry occurred.\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Door-camera note: West Gate",
+      "shortSummary": "Theo reports an unbadged visitor requesting entry at West Gate.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Theo Kwan sent this observation from West Gate. Review the request without assigning blame to the volunteer.\n\nDoor-camera note (T. Kwan):\nA person wearing a vendor shirt carried boxes toward West Gate and asked a volunteer to hold the staff door. The person had no visible badge and claimed an urgent delivery for the LanternPass desk. The camera note does not establish whether entry occurred.\n\nImani",
+      "attachements": []
+    }
+  ]
+}

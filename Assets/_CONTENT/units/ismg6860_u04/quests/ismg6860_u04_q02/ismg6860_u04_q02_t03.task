@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> The scan also reports a missing X-Frame-Options header. Decide what belongs in our assessment before assigning a severity.",
+      "taskInstructions": "Read <link=\"u04_framing_protection\"><u>framing protection</u></link>. The scan output does not include a Content-Security-Policy value or a browser framing test.",
+      "taskQuestion": "What is the best next step for this header finding?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Check existing protection and the affected pages before rating the risk. A missing header is a lead, not a complete finding.",
+      "answers": [
+        "Mark it critical because a missing header proves account takeover.",
+        "Dismiss it because only software version findings matter.",
+        "Check for CSP frame-ancestors and assess whether sensitive pages can be framed.",
+        "Recommend X-Frame-Options as the only possible framing protection."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q02_t03",
+  "parentQuestID": "ismg6860_u04_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

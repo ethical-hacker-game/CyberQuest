@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the identifier repeated across the confirmed marker-linked artifacts. It supports linkage among those artifacts but does not resolve attribution for every related finding.",
+      "taskInstructions": "Reopen the debrief in <b>Mail</b> and type the marker exactly as printed, including dashes.",
+      "taskQuestion": "What marker repeats across the confirmed campaign artifacts?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: BL-LANTERN-9. It links the marked artifacts while the report keeps other attribution open.",
+      "correctAnswers": [
+        "BL-LANTERN-9"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the repeated identifier as a connection among marked artifacts, not proof that one operator produced every event in the file.",
+      "taskInstructions": "Reopen the debrief in <b>Mail</b> and type the marker exactly as printed, including dashes.",
+      "taskQuestion": "What marker repeats across the confirmed campaign artifacts?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: BL-LANTERN-9. Strong linkage is still not universal attribution.",
+      "correctAnswers": [
+        "BL-LANTERN-9"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Record the marker repeated across confirmed artifacts so the public summary can name a specific indicator without overstating unresolved events.",
+      "taskInstructions": "Reopen the debrief in <b>Mail</b> and type the marker exactly as printed, including dashes.",
+      "taskQuestion": "What marker repeats across the confirmed campaign artifacts?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: BL-LANTERN-9. The public warning can use it while labeling other connections as unconfirmed.",
+      "correctAnswers": [
+        "BL-LANTERN-9"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q22_t03",
+  "parentQuestID": "ismg6860_u03_q22",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

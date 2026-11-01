@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The <b>package identifier</b> distinguishes the repackaged installer from the trusted Harborview build. Record the observed value for the bulletin.",
+      "taskInstructions": "On the AppCheck comparison, find <b>Repackaged Build</b> and type its full package ID.",
+      "taskQuestion": "What package ID does the repackaged build use?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: com.bluelantern.lanternpass.",
+      "correctAnswers": ["com.bluelantern.lanternpass", "bluelantern.lanternpass"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The <b>package identifier</b> is one concrete point where the repackaged build differs from the trusted installer. Record its value exactly.",
+      "taskInstructions": "On the AppCheck comparison, find <b>Repackaged Build</b> and type its full package ID.",
+      "taskQuestion": "What package ID does the repackaged build use?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: com.bluelantern.lanternpass.",
+      "correctAnswers": ["com.bluelantern.lanternpass", "bluelantern.lanternpass"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A useful warning should name the repackaged build's exact <b>package identifier</b> rather than relying on a general caution.",
+      "taskInstructions": "On the AppCheck comparison, find <b>Repackaged Build</b> and type its full package ID.",
+      "taskQuestion": "What package ID does the repackaged build use?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: com.bluelantern.lanternpass. The warning can cite a specific indicator.",
+      "correctAnswers": ["com.bluelantern.lanternpass", "bluelantern.lanternpass"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q15_t02",
+  "parentQuestID": "ismg6860_u03_q15",
+  "articleID": "u03_malicious_app_provenance",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

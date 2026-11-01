@@ -1,0 +1,8 @@
+# Payloads are ordinary Git files; Git LFS is not required.
+
+# Keep portable setup payloads and their hash catalogue stable across checkouts.
+/Tools/** text eol=lf
+/README.md text eol=lf
+/DEPENDENCIES.md text eol=lf
+/THIRD_PARTY_NOTICES.md text eol=lf
+/Licenses/** text eol=lf

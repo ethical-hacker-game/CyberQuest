@@ -1,0 +1,50 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "02:41",
+        "0241",
+        "at 02:41",
+        "02:41 am"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> The directory records a 02:41 login timestamp. Check the historian's Unix session data as a separate telemetry source.",
+      "taskInstructions": "Run <b>finger svc_bridgeworks@10.30.14.52</b> in the terminal. Read the time on the <b>On since</b> line.",
+      "taskQuestion": "What login time does finger report for the account?",
+      "taskCompleteText": "<b>Dana Osei:</b> 02:41. The Unix session time matches the directory timestamp; the mail result established existence, not activity."
+    },
+    {
+      "correctAnswers": [
+        "02:41",
+        "0241",
+        "at 02:41",
+        "02:41 am"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> The directory timestamp is one observation. Query the historian's session record and compare the time before deciding the account is active there.",
+      "taskInstructions": "Run <b>finger svc_bridgeworks@10.30.14.52</b> in the terminal. Read the time on the <b>On since</b> line.",
+      "taskQuestion": "What login time does finger report for the account?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> 02:41 matches the directory timestamp. Two telemetry sources now support the same activity event."
+    },
+    {
+      "correctAnswers": [
+        "02:41",
+        "0241",
+        "at 02:41",
+        "02:41 am"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Compare the directory timestamp with the historian's own session record. Agreement strengthens the finding, but each source must still be described accurately.",
+      "taskInstructions": "Run <b>finger svc_bridgeworks@10.30.14.52</b> in the terminal. Read the time on the <b>On since</b> line.",
+      "taskQuestion": "What login time does finger report for the account?",
+      "taskCompleteText": "<b>Priya Nandan:</b> 02:41 appears in both the directory and Unix session evidence. SMTP did not provide a login time."
+    }
+  ],
+  "taskID": "ismg6860_u05_q13_t01",
+  "parentQuestID": "ismg6860_u05_q13",
+  "articleID": "u05_unix_user_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

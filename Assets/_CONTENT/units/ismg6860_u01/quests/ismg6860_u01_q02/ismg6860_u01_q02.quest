@@ -1,0 +1,27 @@
+{
+  "questID": "ismg6860_u01_q02",
+  "cityIndex": 3690,
+  "questIconID": "quest_icon_googlehacking_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q02_t00_unlock_searchdork",
+    "ismg6860_u01_q02_t01",
+    "ismg6860_u01_q02_t02",
+    "ismg6860_u01_q02_t03"
+  ],
+  "requiredQuestID": "ismg6860_u01_q01",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Search Engine Hacking",
+      "questDescription": "Use Cyber Search to conduct NorthTec’s authorized public-source review. Identify exposed account information, verify whether passwords are present, and classify routine traffic and reconnaissance probes for the audit report.",
+      "questCompleteText": "<b>Samira:</b> You distinguished exposed account details from confirmed password exposure, chose an appropriate credential response, and classified NorthTec’s perimeter traffic. The findings are ready for the audit report.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": ""
+    }
+  ]
+}

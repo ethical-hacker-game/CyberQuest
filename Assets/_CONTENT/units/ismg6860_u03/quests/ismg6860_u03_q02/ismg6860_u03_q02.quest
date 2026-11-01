@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u03_q02",
+  "cityIndex": 5112,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q02_t00_unlock_linkpreview",
+    "ismg6860_u03_q02_t01",
+    "ismg6860_u03_q02_t02",
+    "ismg6860_u03_q02_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Text With A Hook",
+      "questDescription": "Safely inspect the badge-revalidation text, record its destination, and identify the unsafe request.",
+      "questCompleteText": "<b>Asha Moreno:</b> First lure documented: an external domain pushing staff to revalidate badges outside the official app.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    }
+  ]
+}

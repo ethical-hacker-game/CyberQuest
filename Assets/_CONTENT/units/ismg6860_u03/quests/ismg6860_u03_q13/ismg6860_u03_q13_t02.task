@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The batch repeats an identifier already present in earlier evidence. Record it as a connection that still requires corroboration.",
+      "taskInstructions": "Reopen the batch summary in <b>Mail</b> and type the repeated marker, including its dashes and digit.",
+      "taskQuestion": "What marker repeats across the spam batch?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: BL-LANTERN-9. The shared marker links the batch to the investigation without proving authorship by itself.",
+      "correctAnswers": [
+        "BL-LANTERN-9"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The batch repeats an identifier from earlier evidence. Record the connection without turning one shared string into final attribution.",
+      "taskInstructions": "Reopen the batch summary in <b>Mail</b> and type the repeated marker, including its dashes and digit.",
+      "taskQuestion": "What marker repeats across the spam batch?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: BL-LANTERN-9. Useful linkage, not conclusive attribution.",
+      "correctAnswers": [
+        "BL-LANTERN-9"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A useful warning can name the repeated identifier while remaining honest that a shared marker is one connection, not complete attribution.",
+      "taskInstructions": "Reopen the batch summary in <b>Mail</b> and type the repeated marker, including its dashes and digit.",
+      "taskQuestion": "What marker repeats across the spam batch?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: BL-LANTERN-9. Describe it as a campaign connection under investigation.",
+      "correctAnswers": [
+        "BL-LANTERN-9"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q13_t02",
+  "parentQuestID": "ismg6860_u03_q13",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

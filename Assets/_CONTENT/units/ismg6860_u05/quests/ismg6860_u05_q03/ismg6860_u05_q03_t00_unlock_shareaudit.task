@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "shareauditor",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> We need a tool that can enumerate the host's SMB shares and local accounts without credentials. Share Auditor performs those read-only null-session queries and includes hidden shares in its results.",
+      "taskInstructions": "Open the Lab panel and review the Share Auditor capability and cost.",
+      "taskQuestion": "Unlock the Share Auditor in the Lab panel.",
+      "taskCompleteText": "<b>Dana Osei:</b> Share Auditor is ready. Determine what FORGE-HIST01 exposes without credentials."
+    }
+  ],
+  "taskID": "ismg6860_u05_q03_t00_unlock_shareaudit",
+  "parentQuestID": "ismg6860_u05_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

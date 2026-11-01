@@ -1,0 +1,13 @@
+{
+  "articleID": "u05_netbios_smb",
+  "videoURL": null,
+  "title": "NetBIOS Names and SMB Exposure",
+  "content": "<b>A NetBIOS name table reports the names and service roles registered by a host.</b>\n\nA NetBIOS name uses fifteen characters for the name and a final <b>suffix code</b> for the service that registered it. Common entries include:\n\n- <b>&lt;00&gt;</b> identifies the workstation service.\n- <b>&lt;20&gt;</b> identifies the file server service.\n- <b>&lt;1B&gt;</b> identifies the domain master browser.\n- A <b>GROUP</b> entry identifies a domain or workgroup rather than a host.\n\nSMB can run directly on TCP 445 or over NetBIOS services on ports 137, 138, and 139. Some SMB configurations permit <b>null authentication</b>, which uses an empty user name and password. If a host allows it, a caller may be able to list shares or local accounts without valid credentials.\n\nA share name ending in <b>$</b> is hidden from casual browsing, but the suffix does not grant or restrict access. Permissions still determine whether a caller can reach it.",
+  "links": [
+    "NetBIOS",
+    "suffix code",
+    "null authentication",
+    "hidden share",
+    "SMB"
+  ]
+}

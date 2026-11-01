@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_http_methods",
+  "videoURL": null,
+  "title": "HTTP Methods: Routine Requests and Diagnostics",
+  "content": "<b>GET</b> requests a resource, <b>HEAD</b> requests its headers without the response body, and <b>POST</b> submits data for processing. <b>TRACE</b> is a diagnostic method that echoes the received request. Disable TRACE when it has no approved operational use to reduce unnecessary functionality. Seeing a method in scan output is evidence to review, not proof that an attacker has exploited it.",
+  "links": [
+    "HTTP methods"
+  ]
+}

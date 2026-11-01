@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Packet evidence becomes reproducible when the report records the observed endpoints and direction. Verify the destination shown for ECHO-73.",
+      "taskInstructions": "Run <b>tcpdump host 10.42.18.73</b> in the terminal and give the destination as a dotted-quad IPv4 address.",
+      "taskQuestion": "Which ticketing host appears as the destination?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. The capture records traffic from ECHO-73 to 10.42.22.41 on the ticketing VLAN.",
+      "correctAnswers": [
+        "10.42.22.41"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> Packet evidence is valuable when it names both ends of the observed route. Verify the ticketing destination instead of relying on the summary.",
+      "taskInstructions": "Run <b>tcpdump host 10.42.18.73</b> in the terminal and give the destination as a dotted-quad IPv4 address.",
+      "taskQuestion": "Which ticketing host appears as the destination?",
+      "taskCompleteText": "<b>Kade Mercer:</b> 10.42.22.41 is the destination that gives the observed route its value.",
+      "correctAnswers": [
+        "10.42.22.41"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> Packet evidence should include the endpoint needed to verify the finding without exposing unrelated traffic. Record the ticketing destination.",
+      "taskInstructions": "Run <b>tcpdump host 10.42.18.73</b> in the terminal and give the destination as a dotted-quad IPv4 address.",
+      "taskQuestion": "Which ticketing host appears as the destination?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> 10.42.22.41 identifies the ticketing destination without adding unrelated rider data.",
+      "correctAnswers": [
+        "10.42.22.41"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u02_q07_t02",
+  "parentQuestID": "ismg6860_u02_q07",
+  "articleID": "u02_packet_evidence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

@@ -1,0 +1,11 @@
+{
+  "articleID": "u02_host_discovery",
+  "videoURL": null,
+  "title": "Host Discovery and ICMP Limits",
+  "content": "Host discovery asks which systems appear reachable inside an authorized target range. It is usually an early mapping step, not final proof that every responding address is important or every silent address is absent.\n\nA discovery scan may use ICMP echo requests, TCP probes, address-resolution traffic on a local network, or a combination of methods. Each method observes a different behavior. A host can ignore ping while still accepting application connections. A firewall can block or rewrite ICMP responses. Rate limiting, packet loss, routing, or a temporarily sleeping device can also create silence. Conversely, an intermediate device may answer on behalf of another system.\n\nThis is why one probe type can produce false negatives or misleading confidence. Treat a reply as evidence that something responded at that time. Treat silence as an unresolved observation, not a declaration that no host exists. Where the authorization permits it, compare multiple low-impact discovery methods and inspect packet captures to understand which request was sent and which response returned.\n\n<b>Build a defensible host list</b>\n\nRecord the scan source, target range, time, method, and response. Compare results with the expected asset inventory, but do not assume the inventory is complete. An unexpected address should be documented and validated carefully before being labeled unauthorized or hostile. Likewise, an expected system that does not respond may require confirmation through an approved service check or operational owner.\n\nHost discovery creates a working map. Later service checks, ownership records, and network context turn that map into a reliable finding.",
+  "links": [
+    "discovery pass",
+    "ICMP tells part of the story",
+    "quiet ping"
+  ]
+}

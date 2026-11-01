@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The audit review is in your inbox. It records the accepted remediation plan, the remaining uncertainty, and the follow-up validation window.",
+      "taskInstructions": "",
+      "taskQuestion": "Open the final review message.",
+      "taskCompleteText": "<b>Mara Voss:</b> Unit 04 is complete. Northbridge accepted the evidence-based findings and approved follow-up validation.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u04_last_quest_t01_review"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The report is closed. Its value is that it documents observed conditions, plausible connections, and remediation priorities without claiming a compromise that the evidence did not establish.",
+      "taskInstructions": "",
+      "taskQuestion": "Open the final review message.",
+      "taskCompleteText": "<b>Felix Rane:</b> Unit 04 is complete. The review shows why precise evidence and narrow claims matter under pressure.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u04_last_quest_t01_review"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The review links the evidence to a remediation commitment. It does not erase prior risk, so the follow-up validation is part of the outcome, not a formality.",
+      "taskInstructions": "",
+      "taskQuestion": "Open the final review message.",
+      "taskCompleteText": "<b>Imani Vale:</b> Unit 04 is complete. The outcome now depends on verified remediation and accountable follow-up.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u04_last_quest_t01_review"
+    }
+  ],
+  "taskID": "ismg6860_u04_last_quest_t01",
+  "parentQuestID": "ismg6860_u04_last_quest",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u04_last_quest_t01_review"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "vault-archive",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Shade:</b> The pinned archive is the relevant thread. Its visible entry titles use a repeatable structure that can be documented without opening accounts, downloading files, or contacting anyone.",
+      "taskInstructions": "Open <b>Vault-Archive</b> from the pinned threads. Review the visible titles, which follow the pattern <b>VLT-YYYYMMDD-NNN</b>.",
+      "taskQuestion": "Open the Vault-Archive thread.",
+      "taskCompleteText": "<b>Shade:</b> The archive page shows eight visible entries using the VLT-date-sequence format. Record the page, observation time, and pattern without inferring what the entries contain beyond their displayed text."
+    }
+  ],
+  "taskID": "ismg6860_u01_q12_t04",
+  "parentQuestID": "ismg6860_u01_q12",
+  "articleID": "u01_safe_investigation_environments",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

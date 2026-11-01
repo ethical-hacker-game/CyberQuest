@@ -1,0 +1,80 @@
+{
+  "variants": [
+    {
+      "minigameType": "CamBlindSpotAudit",
+      "minigameHeaderText": "Harborview Entrance Coverage",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "cameraDeckSettings": {
+        "facilityId": "archive_depot",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Entrance",
+        "targetLabel": "QR STICKER ROUTE",
+        "decoyLabel": "COVERED APPROACH",
+        "audit": {
+          "cameraBudget": 3,
+          "passingRating": 75
+        }
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Removing this sticker does not prevent another one from appearing. Audit the likely placement routes so physical security can improve entrance coverage without assuming what the existing cameras captured.",
+      "taskInstructions": "Install up to three cameras from the mount grid below the floor plan and rotate each one onto a likely approach, then <b>RUN AUDIT</b>. A rating of 75 or higher passes.",
+      "taskQuestion": "Close the entrance coverage gaps.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The likely sticker-placement routes now meet the coverage target. Share the audit with physical security."
+    },
+    {
+      "minigameType": "CamBlindSpotAudit",
+      "minigameHeaderText": "Harborview Entrance Coverage",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "cameraDeckSettings": {
+        "facilityId": "archive_depot",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Entrance",
+        "targetLabel": "QR STICKER ROUTE",
+        "decoyLabel": "COVERED APPROACH",
+        "audit": {
+          "cameraBudget": 3,
+          "passingRating": 75
+        }
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A removable sticker makes the entrance a repeatable delivery point. Audit the likely approaches and reduce the uncovered routes without claiming we know how this sticker was placed.",
+      "taskInstructions": "Install up to three cameras from the mount grid below the floor plan and rotate each one onto a likely approach, then <b>RUN AUDIT</b>. A rating of 75 or higher passes.",
+      "taskQuestion": "Close the entrance coverage gaps.",
+      "taskCompleteText": "<b>Felix Rane:</b> Better coverage. The easiest placement routes now carry more risk for the operator."
+    },
+    {
+      "minigameType": "CamBlindSpotAudit",
+      "minigameHeaderText": "Harborview Entrance Coverage",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "cameraDeckSettings": {
+        "facilityId": "archive_depot",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Entrance",
+        "targetLabel": "QR STICKER ROUTE",
+        "decoyLabel": "COVERED APPROACH",
+        "audit": {
+          "cameraBudget": 3,
+          "passingRating": 75
+        }
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Visitors need more than a removed sticker. Audit the likely placement routes and show that entrance coverage addresses the risk rather than merely adding cameras.",
+      "taskInstructions": "Install up to three cameras from the mount grid below the floor plan and rotate each one onto a likely approach, then <b>RUN AUDIT</b>. A rating of 75 or higher passes.",
+      "taskQuestion": "Close the entrance coverage gaps.",
+      "taskCompleteText": "<b>Imani Vale:</b> The audit now covers the likely approaches instead of adding cameras for appearance alone."
+    }
+  ],
+  "taskID": "ismg6860_u03_q07_t04_camera_audit",
+  "parentQuestID": "ismg6860_u03_q07",
+  "articleID": "u03_mobile_lures",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

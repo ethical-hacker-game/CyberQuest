@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A high-volume <b>prize-spam batch</b> is mixed into the message logs. Review the measured volume, sender count, template, and marker before deciding how it relates to the campaign.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Prize spam batch</b>.",
+      "taskQuestion": "Open the prize spam batch summary.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The batch data is preserved. Now record the repeated marker and identify what makes volume part of the method.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q13_t01_prize_spam"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> This <b>prize-spam batch</b> uses one template across many senders. Read the measured scale before judging how the arithmetic works.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Prize spam batch</b>.",
+      "taskQuestion": "Open the prize spam batch summary.",
+      "taskCompleteText": "<b>Felix Rane:</b> The batch records scale, sender rotation, and a repeated marker. Those facts are enough for analysis.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q13_t01_prize_spam"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A large <b>prize-spam batch</b> can exhaust recipients and bury legitimate warnings. Review the batch data so our response describes the scale accurately.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Prize spam batch</b>.",
+      "taskQuestion": "Open the prize spam batch summary.",
+      "taskCompleteText": "<b>Imani Vale:</b> The volume and rotating senders are documented. The warning can now describe the pattern without exaggerating it.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q13_t01_prize_spam"
+    }
+  ],
+  "taskID": "ismg6860_u03_q13_t01",
+  "parentQuestID": "ismg6860_u03_q13",
+  "articleID": "u03_reward_and_volume_scams",
+  "mailsOnStart": [
+    "ismg6860_u03_q13_t01_prize_spam"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

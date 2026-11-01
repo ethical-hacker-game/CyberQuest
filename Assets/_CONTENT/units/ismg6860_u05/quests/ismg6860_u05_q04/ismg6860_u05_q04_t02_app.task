@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "app_stage_changed",
+      "actionTag": "iftable",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> The system group is a summary. What I actually need is per-port truth: which interfaces are up, what each one is called, and how long each of them has been that way.\n\nThe MIB Browser gives you the tree rather than a flat dump, and on a stack this old the tree is where the surprises live.",
+      "taskInstructions": "Open MIB Browser, select ifTable, and compare the interface aliases, states, and reported uptime.",
+      "taskQuestion": "Walk the ifTable in the MIB Browser.",
+      "taskCompleteText": "<b>Dana Osei:</b> The table shows an up/up 802.1Q trunk named bw-maint. Its state has persisted across the switch's current 731-day uptime."
+    },
+    {
+      "actionType": "app_stage_changed",
+      "actionTag": "iftable",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> The system group is the brochure. The interface table is the floor plan.\n\nPort aliases, link states, uptimes. That is where a device stops describing itself and starts describing the network around it, and that is the part with resale value.",
+      "taskInstructions": "Open MIB Browser, select ifTable, and compare the interface aliases, states, and reported uptime.",
+      "taskQuestion": "Walk the ifTable in the MIB Browser.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The table shows an up/up 802.1Q trunk named bw-maint. Long-lived infrastructure is more useful than a transient session."
+    },
+    {
+      "actionType": "app_stage_changed",
+      "actionTag": "iftable",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> A contact name proves neglect. It does not prove reach, and neglect on its own has never moved a regulator.\n\nThe interface table will tell me which ports carry plant traffic and which ones carry something that has no business being on that floor at all.",
+      "taskInstructions": "Open MIB Browser, select ifTable, and compare the interface aliases, states, and reported uptime.",
+      "taskQuestion": "Walk the ifTable in the MIB Browser.",
+      "taskCompleteText": "<b>Priya Nandan:</b> The table shows an up/up 802.1Q trunk named bw-maint, present throughout the switch's current 731-day uptime."
+    }
+  ],
+  "taskID": "ismg6860_u05_q04_t02_app",
+  "parentQuestID": "ismg6860_u05_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

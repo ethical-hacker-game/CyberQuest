@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u00_d01",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_decision",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u00_d01_decision"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Choose The Handoff",
+      "questDescription": "Ed asks {player} to choose a purpose for the evidence: a verified repair as a Whitehat Hacker, or a call for accountability as a Hacktivist.",
+      "questCompleteText": "Choose The Handoff complete. {player} has chosen how to put the evidence to work.",
+      "questCharacterID": "u00_ed",
+      "appScenarioID": ""
+    }
+  ]
+}

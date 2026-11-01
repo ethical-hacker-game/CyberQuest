@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "remote.hallowayprecision.com"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Four years here, and I can account for every name on that list but one. The mail host, the web host, the VPN endpoint, our own nameserver, all of them where I expect them and all of them on address space we pay for.\n\nThen there is one more, sitting in the middle of our records, pointing at something I have never signed off on.",
+      "taskInstructions": "Answer with the whole hostname as the record writes it, dots and all.",
+      "taskQuestion": "Which hostname resolves outside Halloway's documented address allocation?",
+      "taskCompleteText": "<b>Dana Osei:</b> remote.hallowayprecision.com resolves to 198.51.100.77, outside Halloway's documented allocation. Record it for ownership and service validation."
+    },
+    {
+      "correctAnswers": [
+        "remote.hallowayprecision.com"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Most of that zone is what any manufacturer publishes and none of it is worth my time. One record is different: a name wearing Halloway's label that answers for a machine Halloway never racked.\n\nEntries like that outlive the contracts that created them, which is precisely why I look for them.",
+      "taskInstructions": "Answer with the whole hostname as the record writes it, dots and all.",
+      "taskQuestion": "Which hostname resolves outside Halloway's documented address allocation?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> remote.hallowayprecision.com points to 198.51.100.77 outside Halloway's documented allocation. Determine who controls it before assigning value."
+    },
+    {
+      "correctAnswers": [
+        "remote.hallowayprecision.com"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Every name on that list says Halloway. The addresses underneath them do not all agree, and the gap between the two is the entire story.\n\nOne of those records quietly sends anyone who follows it somewhere that is not this building, and it does so under Halloway's own name.",
+      "taskInstructions": "Answer with the whole hostname as the record writes it, dots and all.",
+      "taskQuestion": "Which hostname resolves outside Halloway's documented address allocation?",
+      "taskCompleteText": "<b>Priya Nandan:</b> remote.hallowayprecision.com points outside Halloway's documented allocation. That is the verified discrepancy; endpoint access remains untested."
+    }
+  ],
+  "taskID": "ismg6860_u05_q08_t02",
+  "parentQuestID": "ismg6860_u05_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

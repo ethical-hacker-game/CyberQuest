@@ -1,0 +1,24 @@
+{
+  "questID": "ismg6860_u01_d02",
+  "cityIndex": 6632,
+  "questIconID": "sample_decision_icon_2",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u01_d02_decision"
+  ],
+  "requiredQuestID": "ismg6860_u01_q07",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "",
+      "questName": "Handle Findings",
+      "questDescription": "The DataSequence report correlates public DNS records into a useful external inventory. Decide whether to return it privately to the client, exploit it for personal profit, or publish it to apply public pressure.",
+      "questCompleteText": "<b>Samira:</b> You chose how to distribute DataSequence’s DNS inventory. The decision is recorded without changing the evidentiary limits of the underlying public records.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": ""
+    }
+  ]
+}

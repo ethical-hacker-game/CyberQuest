@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Power off all HVAC equipment until the next audit.",
+        "Restrict unnecessary public access with facilities, preserving required controls.",
+        "Publish the host address and banners as a warning.",
+        "Leave access unchanged until the full inventory is complete."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Arjun Rao:</b> The index suggests the HVAC controller is publicly reachable. Any change needs the facilities team's approval so we reduce exposure without interrupting building controls.",
+      "taskInstructions": "Review the recommended ways to <b>reduce risk</b> for exposed devices, then choose a coordinated containment step.",
+      "taskQuestion": "What is the safest immediate response?",
+      "taskCompleteText": "<b>Arjun Rao:</b> Coordinate with facilities to restrict unnecessary public access while preserving required controls. Record the approved change and verify the service afterward."
+    }
+  ],
+  "taskID": "ismg6860_u01_q24_t03",
+  "parentQuestID": "ismg6860_u01_q24",
+  "articleID": "u01_device_search_engines",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

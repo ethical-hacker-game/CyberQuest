@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u02_q04",
+  "cityIndex": 4992,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q04_t00_dialogue",
+    "ismg6860_u02_q04_t01",
+    "ismg6860_u02_q04_t03_sonar",
+    "ismg6860_u02_q04_t02"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Pulse Check",
+      "questDescription": "Run a focused discovery pass and compare the responses with Asterlink's expected inventory.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> ECHO-73 is an undocumented response, but ICMP alone does not tell us everything the host exposes.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Pulse Check",
+      "questDescription": "Use the discovery pass to find the response missing from Asterlink's official inventory.",
+      "questCompleteText": "<b>Kade Mercer:</b> ECHO-73 is missing from the official map. A quiet ping would not make it disappear.",
+      "questCharacterID": "u02_kade_mercer",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Pulse Check",
+      "questDescription": "Build clean evidence about the undocumented response without leaving the approved range.",
+      "questCompleteText": "<b>Lena Ortiz:</b> ECHO-73 is now a documented discrepancy, and a silent ping would not settle the risk question.",
+      "questCharacterID": "u02_lena_ortiz",
+      "appScenarioID": ""
+    }
+  ]
+}

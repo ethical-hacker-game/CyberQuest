@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> The intake places all four early reports side by side. Read it before deciding whether they are related.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Blue Lantern intake: read this before you touch anything</b>.",
+      "taskQuestion": "Open Asha's Blue Lantern intake email.",
+      "taskCompleteText": "<b>Asha Moreno:</b> You now have the four reports and the shared campaign marker in one place.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q01_t01_intake"
+    }
+  ],
+  "taskID": "ismg6860_u03_q01_t01",
+  "parentQuestID": "ismg6860_u03_q01",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u03_q01_t01_intake"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

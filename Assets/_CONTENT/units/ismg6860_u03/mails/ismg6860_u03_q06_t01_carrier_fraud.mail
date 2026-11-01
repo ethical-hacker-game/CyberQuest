@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u03_q06_t01_carrier_fraud",
+  "parentTaskID": "ismg6860_u03_q06_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Fwd: carrier fraud note: Riley Cho",
+      "shortSummary": "Dev Patel flags suspicious carrier account-recovery activity involving Riley.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Dev Patel at the carrier flagged this and sent it over. Preserve the record so we can notify Riley through a trusted channel.\n\nFraud review excerpt (D. Patel):\nTarget: Riley Cho\nAttempt type: SIM swap and PIN reset\nTime: 07:42\nMarker in callback note: BL-LANTERN-9\nOutcome: Request failed verification\n\nAsha",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Fwd: carrier fraud note: Riley Cho",
+      "shortSummary": "Dev Patel flags suspicious carrier account-recovery activity involving Riley.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Dev Patel's fraud desk caught this request. Read the carrier's record and note the recovery route being tested.\n\nFraud review excerpt (D. Patel):\nTarget: Riley Cho\nAttempt type: SIM swap and PIN reset\nTime: 07:42\nMarker in callback note: BL-LANTERN-9\nOutcome: Request failed verification\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Fwd: carrier fraud note: Riley Cho",
+      "shortSummary": "Dev Patel flags suspicious carrier account-recovery activity involving Riley.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Dev Patel pulled this from the carrier fraud queue. Preserve the record so Riley can receive a private warning with specific protective steps.\n\nFraud review excerpt (D. Patel):\nTarget: Riley Cho\nAttempt type: SIM swap and PIN reset\nTime: 07:42\nMarker in callback note: BL-LANTERN-9\nOutcome: Request failed verification\n\nImani",
+      "attachements": []
+    }
+  ]
+}

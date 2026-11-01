@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u02_d03",
+  "cityIndex": 4999,
+  "questIconID": "u02_decision",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u02_d03_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Quiet Or Clean",
+      "questDescription": "Choose how to respond after the firewall records the authorized scan activity in its edge logs.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> The alert remains part of the evidence record, and your response now defines how we approach the remaining checks.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    }
+  ]
+}

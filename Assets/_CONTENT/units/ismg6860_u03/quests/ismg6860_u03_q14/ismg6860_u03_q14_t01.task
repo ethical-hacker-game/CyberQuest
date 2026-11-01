@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Riley's public setup post may expose operational details beyond the visible photo. Review the post and its Metadata Reader results without interacting with it.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>riley setup photo</b>, then open the VolunteerLoop result.",
+      "taskQuestion": "Open Riley's setup photo post.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The post and extracted metadata are available for review.",
+      "correctAnswer": "volunteerloop.net/riley-setup-photo"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Riley's public setup post may combine visible details with embedded metadata. Inspect both layers before judging its reconnaissance value.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>riley setup photo</b>, then open the VolunteerLoop result.",
+      "taskQuestion": "Open Riley's setup photo post.",
+      "taskCompleteText": "<b>Felix Rane:</b> The visible post and embedded fields are ready for analysis.",
+      "correctAnswer": "volunteerloop.net/riley-setup-photo"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Riley's intent is not the issue; the question is what the public post reveals. Review the visible details and extracted metadata.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>riley setup photo</b>, then open the VolunteerLoop result.",
+      "taskQuestion": "Open Riley's setup photo post.",
+      "taskCompleteText": "<b>Imani Vale:</b> The post is open, so the exposure can be documented without blaming Riley.",
+      "correctAnswer": "volunteerloop.net/riley-setup-photo"
+    }
+  ],
+  "taskID": "ismg6860_u03_q14_t01",
+  "parentQuestID": "ismg6860_u03_q14",
+  "articleID": "u03_personal_information_exposure",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

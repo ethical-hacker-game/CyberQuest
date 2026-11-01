@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "<00> identifies the workstation service.",
+        "<20> identifies the file server service.",
+        "<1B> identifies the domain master browser.",
+        "<03> identifies the messenger service."
+      ],
+      "correctAnswer": 1,
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> FORGE-HIST01 answers NetBIOS name queries. Each registered name includes a suffix code that identifies the service using it.",
+      "taskInstructions": "Run <b>nbtstat -A 10.30.14.52</b> in the terminal and read the name table it returns.",
+      "taskQuestion": "Which registered entry identifies the file server service?",
+      "taskCompleteText": "<b>Dana Osei:</b> The <20> suffix identifies the file server service. FORGE-HIST01 is advertising a file-sharing role that needs further review."
+    }
+  ],
+  "taskID": "ismg6860_u05_q02_t01",
+  "parentQuestID": "ismg6860_u05_q02",
+  "articleID": "u05_netbios_smb",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

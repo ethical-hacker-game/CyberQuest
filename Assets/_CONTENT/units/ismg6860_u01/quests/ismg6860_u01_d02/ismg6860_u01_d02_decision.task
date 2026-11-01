@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "decisionText": "Deliver the documented DNS findings privately to George and DataSequence for inventory review and remediation.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Package the DNS inventory and sell it to an outside buyer for personal profit.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Publish the complete DNS inventory publicly to pressure DataSequence into reviewing its exposure.",
+      "personaIndex": 2,
+      "personaValueChange": 10
+    }
+  ],
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Samira:</b> The passive DNS report organizes public records into a useful client inventory. Public availability does not remove our obligations to DataSequence, and the generated network trace was a learning exercise rather than verified company topology. We need to decide who receives the documented findings.",
+      "taskInstructions": "Choose how to distribute the DNS inventory. Consider the client’s authorization, the value added by correlating public records, and the harm that wider disclosure could create.",
+      "taskQuestion": "How will you handle DataSequence’s DNS findings?",
+      "taskCompleteText": "<b>Samira:</b> Your distribution decision has been recorded. The report remains an inventory of public DNS observations, not proof of compromise or a verified internal network map."
+    }
+  ],
+  "taskID": "ismg6860_u01_d02_decision",
+  "parentQuestID": "ismg6860_u01_d02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision"
+}

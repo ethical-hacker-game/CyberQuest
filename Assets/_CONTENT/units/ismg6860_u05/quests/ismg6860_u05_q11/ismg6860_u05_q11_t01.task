@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "UDP 4500, used for IPsec NAT traversal.",
+        "UDP 500, used by IKE and ISAKMP negotiation.",
+        "UDP 1701, commonly associated with L2TP.",
+        "TCP 1723, commonly associated with PPTP."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Check whether the plant edge exposes an IKE responder before we draw conclusions about any tunnel behind it.",
+      "taskInstructions": "Run <b>ike-scan --aggressive 10.30.14.254</b> in the terminal and inspect the response.",
+      "taskQuestion": "What UDP port does the ISAKMP service respond on?",
+      "taskCompleteText": "<b>Dana Osei:</b> UDP 500 answered with an IKE proposal. That confirms a configured responder, not an established tunnel."
+    },
+    {
+      "answers": [
+        "UDP 4500, used for IPsec NAT traversal.",
+        "UDP 500, used by IKE and ISAKMP negotiation.",
+        "UDP 1701, commonly associated with L2TP.",
+        "TCP 1723, commonly associated with PPTP."
+      ],
+      "correctAnswer": 1,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Query the plant edge and establish whether an IKE responder exposes negotiation metadata. Do not call it working access until a tunnel is actually tested.",
+      "taskInstructions": "Run <b>ike-scan --aggressive 10.30.14.254</b> in the terminal and inspect the response.",
+      "taskQuestion": "What UDP port does the ISAKMP service respond on?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> UDP 500 returned an IKE proposal. The responder is verified; tunnel access is not."
+    },
+    {
+      "answers": [
+        "UDP 4500, used for IPsec NAT traversal.",
+        "UDP 500, used by IKE and ISAKMP negotiation.",
+        "UDP 1701, commonly associated with L2TP.",
+        "TCP 1723, commonly associated with PPTP."
+      ],
+      "correctAnswer": 1,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Establish what the plant edge exposes before describing it as a live path into the network.",
+      "taskInstructions": "Run <b>ike-scan --aggressive 10.30.14.254</b> in the terminal and inspect the response.",
+      "taskQuestion": "What UDP port does the ISAKMP service respond on?",
+      "taskCompleteText": "<b>Priya Nandan:</b> UDP 500 exposes an IKE responder. The scan does not prove that anyone has used a tunnel into the plant."
+    }
+  ],
+  "taskID": "ismg6860_u05_q11_t01",
+  "parentQuestID": "ismg6860_u05_q11",
+  "articleID": "u05_ipsec_voip",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Segmentation is not only a diagram. Every route through connected devices can approach another trust boundary, so trace the topology carefully and preserve the integrity of the evidence.",
+      "taskInstructions": "Move through connected nodes and secure enough devices to complete the network exercise without losing integrity.",
+      "taskQuestion": "Trace the network topology.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Good. You followed the connected topology while keeping the evidence intact.",
+      "minigameType": "NetworkDevices",
+      "minigameHeaderText": "Asterlink Zone Map"
+    }
+  ],
+  "taskID": "ismg6860_u02_q03_t02",
+  "parentQuestID": "ismg6860_u02_q03",
+  "articleID": "u02_network_segmentation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

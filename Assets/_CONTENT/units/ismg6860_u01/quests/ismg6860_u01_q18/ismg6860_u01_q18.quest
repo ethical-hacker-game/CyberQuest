@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q18",
+  "cityIndex": 4404,
+  "questIconID": "quest_icon_osint_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q18_t01",
+    "ismg6860_u01_q18_t02",
+    "ismg6860_u01_q18_t03"
+  ],
+  "requiredQuestID": "ismg6860_u01_q16",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "OSINT Recon",
+      "questDescription": "Samira asks you to plan the opening reconnaissance for Neon Vault within its bug-bounty scope. Choose a public-source starting point, then use the OSINT Framework directory to identify tools for file metadata and public domain or contact discovery. Selecting a tool does not mean you have run it or confirmed a finding.",
+      "questCompleteText": "<b>Samira:</b> You chose a scoped public-source start and identified ExifTool and theHarvester in the framework. Those are tool leads for an authorized investigation; no Neon Vault exposure has been confirmed here.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": ""
+    }
+  ]
+}

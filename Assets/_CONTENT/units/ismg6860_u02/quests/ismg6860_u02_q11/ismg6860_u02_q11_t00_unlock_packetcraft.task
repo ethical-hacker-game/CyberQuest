@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "packetcraft",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Custom packet flags can answer narrow firewall questions, but they can also create noise or misleading conclusions. Probe Kit gives you a framework for choosing a controlled probe and recording only what its response supports.",
+      "taskInstructions": "Open the Lab panel and spend 3,000 credits to unlock Probe Kit.",
+      "taskQuestion": "Unlock the Probe Kit in the Lab panel.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Probe Kit is ready. Use the framework to keep each probe narrow and each conclusion evidence-based."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "packetcraft",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> Custom flags reveal how a boundary responds, but careless probes create noise and bad assumptions. Probe Kit gives you a framework for selecting the right question and reading the reply narrowly.",
+      "taskInstructions": "Open the Lab panel and spend 3,000 credits to unlock Probe Kit.",
+      "taskQuestion": "Unlock the Probe Kit in the Lab panel.",
+      "taskCompleteText": "<b>Kade Mercer:</b> Probe Kit is ready. Keep the probes narrow and the map honest."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "packetcraft",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> Custom probes belong in a controlled validation, not in a public evasion recipe. Probe Kit gives you a framework for choosing the test and reporting the result without operationalizing misuse.",
+      "taskInstructions": "Open the Lab panel and spend 3,000 credits to unlock Probe Kit.",
+      "taskQuestion": "Unlock the Probe Kit in the Lab panel.",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Probe Kit is ready. Keep the checks controlled and the write-up focused on defensive interpretation."
+    }
+  ],
+  "taskID": "ismg6860_u02_q11_t00_unlock_packetcraft",
+  "parentQuestID": "ismg6860_u02_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

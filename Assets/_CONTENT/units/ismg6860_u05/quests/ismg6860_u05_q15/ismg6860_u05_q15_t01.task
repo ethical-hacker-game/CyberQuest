@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Upgrade to SNMPv3 with authPriv, which authenticates messages and encrypts their payloads.",
+        "Change the community string again to a longer randomly generated value.",
+        "Restrict SNMP to read-only access and leave the version unchanged.",
+        "Move the SNMP service to a non-standard port to avoid automated scans."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Start the remediation plan with the SNMPv2c cleartext exposure. Choose the control that adds both authentication and privacy rather than merely changing the shared string.",
+      "taskInstructions": "Use the SNMP guidance in Cyberpedia and select the control that protects both authentication data and payload content.",
+      "taskQuestion": "What is the correct countermeasure for the SNMP exposure?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. SNMPv3 authPriv provides message authentication and payload encryption. Deployment still requires its own change window."
+    },
+    {
+      "answers": [
+        "Upgrade to SNMPv3 with authPriv, which authenticates messages and encrypts their payloads.",
+        "Change the community string again to a longer randomly generated value.",
+        "Restrict SNMP to read-only access and leave the version unchanged.",
+        "Move the SNMP service to a non-standard port to avoid automated scans."
+      ],
+      "correctAnswer": 0,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Write the hardening list properly. One countermeasure per finding, no more, and no editorial. A client who fixes the obvious things stops looking for the rest, and that suits both of us.\n\n<b>SNMP</b> is the first row. Put something vague there and Dana's change board turns it into a discussion, which costs me nothing and costs you the credibility you are going to want later.",
+      "taskInstructions": "Use the SNMP guidance in Cyberpedia and select the control that protects both authentication data and payload content.",
+      "taskQuestion": "What is the correct countermeasure for the SNMP exposure?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. SNMPv3 authPriv protects message integrity and confidentiality; changing a v2c community string preserves the cleartext protocol weakness."
+    },
+    {
+      "answers": [
+        "Upgrade to SNMPv3 with authPriv, which authenticates messages and encrypts their payloads.",
+        "Change the community string again to a longer randomly generated value.",
+        "Restrict SNMP to read-only access and leave the version unchanged.",
+        "Move the SNMP service to a non-standard port to avoid automated scans."
+      ],
+      "correctAnswer": 0,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The recommendations are the only part of this report anybody can be held to, so each one has to be specific enough that delay becomes a visible choice rather than an oversight.\n\n<b>SNMP</b> is the first row, and nobody on that plant floor will ever read it. They will only ever see whether the thing that was leaking is still leaking a year from now.",
+      "taskInstructions": "Use the SNMP guidance in Cyberpedia and select the control that protects both authentication data and payload content.",
+      "taskQuestion": "What is the correct countermeasure for the SNMP exposure?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. SNMPv3 authPriv is the specific target configuration; its implementation date can now be tracked."
+    }
+  ],
+  "taskID": "ismg6860_u05_q15_t01",
+  "parentQuestID": "ismg6860_u05_q15",
+  "articleID": "u05_countermeasures",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

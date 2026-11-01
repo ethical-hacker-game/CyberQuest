@@ -1,0 +1,42 @@
+{
+  "appID": "netscantoolspro",
+  "scenarioID": "netscan_halloway_nbt",
+  "header": "NetScanTools Pro - FORGE-HIST01",
+  "extension": "png",
+  "size": {
+    "x": 900,
+    "y": 620
+  },
+  "margin": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "stages": [
+    {
+      "stageID": "nametable",
+      "customHeader": "NetScanTools Pro - NetBIOS name table",
+      "frames": [
+        {
+          "imageName": "frame_0000",
+          "delayMs": 900
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "exit",
+          "linkPoistion": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "linkSize": {
+            "x": 900.0,
+            "y": 620.0
+          }
+        }
+      ]
+    }
+  ]
+}

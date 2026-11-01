@@ -1,0 +1,14 @@
+{
+  "articleID": "u02_scan_states",
+  "videoURL": null,
+  "title": "Interpreting TCP and UDP Scan States",
+  "content": "A port scan state summarizes what a scanner observed. It is not a moral judgment, a guaranteed service identity, or proof of a vulnerability. Correct interpretation starts with the transport protocol and the packets exchanged.\n\n<b>TCP observations</b>\n\nTCP establishes connections with a handshake. In a controlled SYN scan, a SYN/ACK normally indicates that a listener accepted the opening request, so the port is reported as open. A reset commonly indicates that the host is reachable but no service accepts that connection, so the port is closed. No reply, an ICMP policy error, or interference from a security control may lead to a filtered result. The scanner cannot always tell whether the host, a firewall, or the network path caused the missing response.\n\nAlternative TCP probes test different control behavior and can be ambiguous by design. For example, silence after a FIN probe does not prove a port is open. Operating-system behavior and firewall rules both affect the result. Record the probe type and keep the conclusion narrow.\n\n<b>UDP observations</b>\n\nUDP has no connection handshake. Many legitimate UDP services remain silent unless they receive a valid application request. An ICMP port-unreachable response supports a closed result, while an application reply supports an open result. Silence may be reported as open|filtered because the scanner cannot distinguish a listening service from dropped traffic. Retries and packet capture can improve confidence, but they do not remove every ambiguity.\n\nScan states are evidence categories. Confirm important findings with another permitted observation, preserve packet-level context, and report uncertainty explicitly. Reliable analysis explains what produced the label and what remains unknown.",
+  "links": [
+    "scan states",
+    "port unreachable",
+    "SYN/ACK",
+    "ACK behavior",
+    "UDP silence",
+    "FIN silence"
+  ]
+}

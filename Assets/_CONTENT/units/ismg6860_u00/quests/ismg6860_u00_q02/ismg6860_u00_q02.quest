@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u00_q02",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_browser",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u00_q02_t01_open_portal",
+    "ismg6860_u00_q02_t02_case_code",
+    "ismg6860_u00_q02_t03_scope_boundary"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "The Public Surface",
+      "questDescription": "Ed sends {player} to the public Training Northstar status page and teaches the difference between viewing public evidence and assuming deeper permission.",
+      "questCompleteText": "The Public Surface complete. {player} found the page, extracted the case code, and kept the testing boundary clear.",
+      "questCharacterID": "u00_ed",
+      "appScenarioID": ""
+    }
+  ]
+}

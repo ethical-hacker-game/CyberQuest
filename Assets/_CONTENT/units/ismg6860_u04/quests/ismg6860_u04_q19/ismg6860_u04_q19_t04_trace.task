@@ -1,0 +1,212 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "minigameType": "TraceIntruder",
+      "minigameHeaderText": "Portal to SMB Containment",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "traceSettings": {
+        "nodes": [
+          {
+            "id": "web-portal",
+            "label": "WEB-PORTAL",
+            "role": "Entry",
+            "detail": "Public interface that routes requests to the application server",
+            "position": { "x": 0.08, "y": 0.55 }
+          },
+          {
+            "id": "portal-app-01",
+            "label": "PORTAL-APP-01",
+            "role": "Pivot",
+            "detail": "Public-tier application server included in the internal comparison",
+            "position": { "x": 0.42, "y": 0.68 }
+          },
+          {
+            "id": "file-share-02",
+            "label": "FILE-SHARE-02",
+            "role": "Target",
+            "detail": "Internal SMB host reachable from portal-app-01 over TCP/445",
+            "position": { "x": 0.86, "y": 0.58 }
+          },
+          {
+            "id": "monitoring",
+            "label": "MONITORING",
+            "role": "Decoy",
+            "detail": "Telemetry endpoint without an interactive management route",
+            "position": { "x": 0.53, "y": 0.2 }
+          }
+        ],
+        "links": [
+          {
+            "fromId": "web-portal",
+            "toId": "portal-app-01",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario context: the public portal routes requests to its application server.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "portal-app-01",
+            "toId": "file-share-02",
+            "attackerCanTraverse": true,
+            "evidence": "Confirmed by scan: portal-app-01 can reach file-share-02 over TCP/445.",
+            "isContainmentPoint": true
+          },
+          {
+            "fromId": "portal-app-01",
+            "toId": "monitoring",
+            "attackerCanTraverse": false,
+            "evidence": "Scenario control: the endpoint accepts telemetry without an interactive route.",
+            "isContainmentPoint": false
+          }
+        ],
+        "attackerStepEvery": 4
+      },
+      "taskMessage": "<b>Mara Voss:</b> Map the confirmed portal-to-SMB relationship and cut the unnecessary connection. The exercise models possible movement; it does not claim the share was accessed.",
+      "taskInstructions": "Trace from the public portal to file-share-02, inspect the evidence labels, and cut the confirmed TCP/445 connection after reaching the target. Hops, backtracks, and incorrect cuts advance the intruder.",
+      "taskQuestion": "Trace and contain the confirmed SMB path.",
+      "taskCompleteText": "<b>Mara Voss:</b> The confirmed TCP/445 route is mapped and interrupted without overstating its impact."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "minigameType": "TraceIntruder",
+      "minigameHeaderText": "Portal to SMB Containment",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "traceSettings": {
+        "nodes": [
+          {
+            "id": "web-portal",
+            "label": "WEB-PORTAL",
+            "role": "Entry",
+            "detail": "Public interface that routes requests to the application server",
+            "position": { "x": 0.08, "y": 0.55 }
+          },
+          {
+            "id": "portal-app-01",
+            "label": "PORTAL-APP-01",
+            "role": "Pivot",
+            "detail": "Public-tier application server included in the internal comparison",
+            "position": { "x": 0.42, "y": 0.68 }
+          },
+          {
+            "id": "file-share-02",
+            "label": "FILE-SHARE-02",
+            "role": "Target",
+            "detail": "Internal SMB host reachable from portal-app-01 over TCP/445",
+            "position": { "x": 0.86, "y": 0.58 }
+          },
+          {
+            "id": "monitoring",
+            "label": "MONITORING",
+            "role": "Decoy",
+            "detail": "Telemetry endpoint without an interactive management route",
+            "position": { "x": 0.53, "y": 0.2 }
+          }
+        ],
+        "links": [
+          {
+            "fromId": "web-portal",
+            "toId": "portal-app-01",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario context: the public portal routes requests to its application server.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "portal-app-01",
+            "toId": "file-share-02",
+            "attackerCanTraverse": true,
+            "evidence": "Confirmed by scan: portal-app-01 can reach file-share-02 over TCP/445.",
+            "isContainmentPoint": true
+          },
+          {
+            "fromId": "portal-app-01",
+            "toId": "monitoring",
+            "attackerCanTraverse": false,
+            "evidence": "Scenario control: the endpoint accepts telemetry without an interactive route.",
+            "isContainmentPoint": false
+          }
+        ],
+        "attackerStepEvery": 4
+      },
+      "taskMessage": "<b>Felix Rane:</b> The scan proves one useful route: portal-app-01 can reach file-share-02 over TCP/445. Trace that relationship without inventing additional access.",
+      "taskInstructions": "Trace from the public portal to file-share-02, inspect the evidence labels, and cut the confirmed TCP/445 connection after reaching the target. Hops, backtracks, and incorrect cuts advance the intruder.",
+      "taskQuestion": "Trace and contain the confirmed SMB path.",
+      "taskCompleteText": "<b>Felix Rane:</b> The TCP/445 route is severed. No unsupported hosts or data access were needed to show its value."
+    },
+    {
+      "persona": "Hacktivist",
+      "minigameType": "TraceIntruder",
+      "minigameHeaderText": "Portal to SMB Containment",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "traceSettings": {
+        "nodes": [
+          {
+            "id": "web-portal",
+            "label": "WEB-PORTAL",
+            "role": "Entry",
+            "detail": "Public interface that routes requests to the application server",
+            "position": { "x": 0.08, "y": 0.55 }
+          },
+          {
+            "id": "portal-app-01",
+            "label": "PORTAL-APP-01",
+            "role": "Pivot",
+            "detail": "Public-tier application server included in the internal comparison",
+            "position": { "x": 0.42, "y": 0.68 }
+          },
+          {
+            "id": "file-share-02",
+            "label": "FILE-SHARE-02",
+            "role": "Target",
+            "detail": "Internal SMB host reachable from portal-app-01 over TCP/445",
+            "position": { "x": 0.86, "y": 0.58 }
+          },
+          {
+            "id": "monitoring",
+            "label": "MONITORING",
+            "role": "Decoy",
+            "detail": "Telemetry endpoint without an interactive management route",
+            "position": { "x": 0.53, "y": 0.2 }
+          }
+        ],
+        "links": [
+          {
+            "fromId": "web-portal",
+            "toId": "portal-app-01",
+            "attackerCanTraverse": true,
+            "evidence": "Scenario context: the public portal routes requests to its application server.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "portal-app-01",
+            "toId": "file-share-02",
+            "attackerCanTraverse": true,
+            "evidence": "Confirmed by scan: portal-app-01 can reach file-share-02 over TCP/445.",
+            "isContainmentPoint": true
+          },
+          {
+            "fromId": "portal-app-01",
+            "toId": "monitoring",
+            "attackerCanTraverse": false,
+            "evidence": "Scenario control: the endpoint accepts telemetry without an interactive route.",
+            "isContainmentPoint": false
+          }
+        ],
+        "attackerStepEvery": 4
+      },
+      "taskMessage": "<b>Imani Vale:</b> Show the exact route Northbridge must remove: portal-app-01 to file-share-02 over TCP/445. Keep the claim limited to confirmed reachability.",
+      "taskInstructions": "Trace from the public portal to file-share-02, inspect the evidence labels, and cut the confirmed TCP/445 connection after reaching the target. Hops, backtracks, and incorrect cuts advance the intruder.",
+      "taskQuestion": "Trace and contain the confirmed SMB path.",
+      "taskCompleteText": "<b>Imani Vale:</b> The unnecessary SMB route is visible and interrupted, with the evidence boundary preserved."
+    }
+  ],
+  "taskID": "ismg6860_u04_q19_t04_trace",
+  "parentQuestID": "ismg6860_u04_q19",
+  "articleID": "u04_portal_smb_path",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

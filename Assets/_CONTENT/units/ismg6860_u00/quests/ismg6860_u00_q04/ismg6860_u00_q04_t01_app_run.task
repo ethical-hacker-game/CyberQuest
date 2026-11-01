@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "app_stage_changed",
+      "actionTag": "stage4",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> The DNS lookup gave us an address. Now use Zenmap to check the host covered by our authorization. Read the target and command carefully before running it; the result belongs in the same case record.",
+      "taskInstructions": "In Zenmap, type <b>nmap -sn -PR</b> into the highlighted command field, then type <b>185.254.57.124</b> into the highlighted target field. Select <b>Scan</b> and review the result.",
+      "taskQuestion": "Run the approved host check in Zenmap and view its result.",
+      "taskCompleteText": "<b>Ed:</b> You reached the final result stage in Zenmap. The app window now contains a host value we can use as evidence."
+    }
+  ],
+  "taskID": "ismg6860_u00_q04_t01_app_run",
+  "parentQuestID": "ismg6860_u00_q04",
+  "articleID": "u00_authorized_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

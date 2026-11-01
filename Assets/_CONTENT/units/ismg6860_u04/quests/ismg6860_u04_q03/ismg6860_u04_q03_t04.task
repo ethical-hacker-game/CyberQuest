@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Now check who can reach ops-jump-03. Internal exposure still matters, but it is different from direct internet access.",
+      "taskInstructions": "Run <b>nessus verify portal</b> again if needed. In <b>OpenSSH &lt; 7.4 Service Detection (internal host)</b>, read the <b>Reachability</b> line.",
+      "taskQuestion": "From which network is the reported SSH service reachable?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The supplied evidence limits reachability to the internal operations network. Include that boundary when assessing risk.",
+      "answers": [
+        "The public internet.",
+        "The internal operations network only.",
+        "The public guest Wi-Fi only.",
+        "No network; the service is offline."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q03_t04",
+  "parentQuestID": "ismg6860_u04_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

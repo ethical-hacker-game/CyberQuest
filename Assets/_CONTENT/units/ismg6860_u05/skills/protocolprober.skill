@@ -1,0 +1,9 @@
+{
+  "skillID": "protocolprober",
+  "skillName": "Protocol Prober",
+  "skillDescription": "Walks SNMP management information bases and queries directory, time, and mail services for the configuration they volunteer. Turns a responding port into a readable description of the device behind it.",
+  "price": 2200,
+  "order": 20,
+  "requireTask": true,
+  "lockInDemo": false
+}

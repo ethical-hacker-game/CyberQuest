@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> One report entry has low evidence confidence and no confirmed reachability. Keep it separate from verified findings.",
+      "taskInstructions": "Use <link=\"u04_candidate_verification\"><u>candidate and verified findings</u></link> and the QoD and location shown in the report.",
+      "taskQuestion": "Which item needs more verification?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The outdated service banner remains a candidate until its version and reachability are verified.",
+      "answers": [
+        "A setup route that has already been confirmed as publicly exposed to users.",
+        "A possible outdated service that has not been checked for reachability.",
+        "A public directory listing that has already been manually verified by hand.",
+        "An HTTP response header captured and recorded during the scan."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> One report entry has low evidence confidence and no confirmed reachability. Treat it as a lead until it can be verified.",
+      "taskInstructions": "Use <link=\"u04_candidate_verification\"><u>candidate and verified findings</u></link> and the QoD and location shown in the report.",
+      "taskQuestion": "Which item needs more verification?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The outdated service banner is still a lead, not a confirmed path.",
+      "answers": [
+        "A setup route that has already been confirmed as publicly exposed to users.",
+        "A possible outdated service that has not been checked for reachability.",
+        "A public directory listing that has already been manually verified by hand.",
+        "An HTTP response header captured and recorded during the scan."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> One report entry has low evidence confidence and no confirmed reachability. A public claim should identify it as unverified.",
+      "taskInstructions": "Use <link=\"u04_candidate_verification\"><u>candidate and verified findings</u></link> and the QoD and location shown in the report.",
+      "taskQuestion": "Which item needs more verification?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The outdated service banner needs verification before it supports a public claim.",
+      "answers": [
+        "A setup route that has already been confirmed as publicly exposed to users.",
+        "A possible outdated service that has not been checked for reachability.",
+        "A public directory listing that has already been manually verified by hand.",
+        "An HTTP response header captured and recorded during the scan."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q06_t03",
+  "parentQuestID": "ismg6860_u04_q06",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

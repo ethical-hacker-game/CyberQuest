@@ -1,0 +1,73 @@
+{
+  "variants": [
+    {
+      "minigameType": "SequenceOrder",
+      "minigameHeaderText": "First Signal Workflow",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "orderSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Authorized Evidence Chain",
+            "recommendedDifficulty": "Easy",
+            "headline": "Order the First Signal workflow from authorization to case closure.",
+            "items": [
+              "Confirm the authorized scope",
+              "Inspect the public surface",
+              "Run the approved command",
+              "Record the evidence",
+              "Review the scan result",
+              "Apply the defensive control",
+              "Close and hand off the case"
+            ],
+            "lesson": "Reliable investigations preserve scope, evidence, interpretation, and handoff in that order."
+          }
+        ],
+        "checksAllowed": 4
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> Before the final note, rebuild the sequence you just followed. Order is what turns an authorized observation into evidence another team can trust.\n\nReview the First Signal workflow in Cyberpedia before you begin; it walks through all seven steps in order.",
+      "taskInstructions": "Arrange the seven steps from first to last, then check your order. Start with authorization and finish with the case handoff. Use the linked First Signal workflow if you need a reminder.",
+      "taskQuestion": "Reconstruct the First Signal workflow.",
+      "taskCompleteText": "<b>Michele:</b> Good. Tools change, but that evidence chain should stay intact."
+    },
+    {
+      "minigameType": "SequenceOrder",
+      "minigameHeaderText": "First Signal Workflow",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "orderSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Authorized Evidence Chain",
+            "recommendedDifficulty": "Easy",
+            "headline": "Order the First Signal workflow from authorization to case closure.",
+            "items": [
+              "Confirm the authorized scope",
+              "Inspect the public surface",
+              "Run the approved command",
+              "Record the evidence",
+              "Review the scan result",
+              "Apply the defensive control",
+              "Close and hand off the case"
+            ],
+            "lesson": "Reliable investigations preserve scope, evidence, interpretation, and handoff in that order."
+          }
+        ],
+        "checksAllowed": 4
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> Before the final handoff, put the work in order. A clear sequence keeps evidence useful without turning a small finding into unnecessary harm.\n\nReview the First Signal workflow in Cyberpedia before you begin; it walks through all seven steps in order.",
+      "taskInstructions": "Arrange the seven steps from first to last, then check your order. Start with authorization and finish with the case handoff. Use the linked First Signal workflow if you need a reminder.",
+      "taskQuestion": "Reconstruct the First Signal workflow.",
+      "taskCompleteText": "<b>Ana:</b> That sequence protects both the evidence and the people affected by it."
+    }
+  ],
+  "taskID": "ismg6860_u00_q08_t02_sequence_order",
+  "parentQuestID": "ismg6860_u00_q08",
+  "articleID": "u00_security_handoff",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u05_q05",
+  "cityIndex": 7185,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q05_t01",
+    "ismg6860_u05_q05_t02",
+    "ismg6860_u05_q05_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "LDAP Enumeration",
+      "questDescription": "Dana Osei needs to know whether svc_bridgeworks exists only on the historian or also in Halloway's directory. Query its record and document the account state without assuming privileges the result does not show.",
+      "questCompleteText": "<b>Dana Osei:</b> svc_bridgeworks is an enabled directory account with a non-expiring password and recent off-hours authentication. Its actual permissions still require separate review.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "LDAP Enumeration",
+      "questDescription": "Reyes Calloway wants to know whether the account appears only on the historian or also in Halloway's directory. Query the record before assigning value to privileges that have not been observed.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The enabled directory account shows recent use and a password that never expires. Its permissions remain unknown, but the identity is active evidence.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "LDAP Enumeration",
+      "questDescription": "Priya Nandan wants the directory exposure documented precisely. Query the account record and determine what organizational information an anonymous bind reveals.",
+      "questCompleteText": "<b>Priya Nandan:</b> The anonymous query exposed an enabled directory account and Halloway's organizational-unit structure. That is enough for a defensible disclosure finding without inventing account privileges.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

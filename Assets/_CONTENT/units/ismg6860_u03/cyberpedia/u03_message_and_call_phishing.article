@@ -1,0 +1,10 @@
+{
+  "articleID": "u03_message_and_call_phishing",
+  "videoURL": null,
+  "title": "Text and Voice Phishing",
+  "content": "Text and voice phishing use mobile communication to impersonate a trusted person or service and push the recipient toward an unsafe action. Phishing by text message is commonly called smishing; phishing by voice call is called vishing. Both can appear as part of the same campaign.\n\n<b>Recognize the request, not the tone</b>\n\nA phishing text may warn about an account lock, delivery, payment, badge, or security problem and provide a link for immediate confirmation. The displayed sender name can be spoofed, and a link can imitate the expected brand while leading to another domain. A voice caller may know personal or workplace details, sound professional, and claim to represent support. Confidence and accurate context are not proof of identity.\n\nAuthentication secrets are a critical boundary. Legitimate support personnel should not ask someone to read back a password, recovery token, push-approval number, or one-time authentication code. Those values prove possession of an account or device; sharing them can let another person complete a login or reset.\n\n<b>Verify independently</b>\n\nDo not reply, call the supplied number, or open the supplied link to investigate. Contact the organization through a known website, application, directory, or previously verified phone number. Explain the claimed problem without repeating secrets. If the request is legitimate, the organization should be able to handle it through its normal process.\n\nPreserve the message, sender information, phone number, voicemail or transcript, time, link destination, and requested action. Report the attempt through the approved channel. If a code or credential was disclosed, contact the response team immediately and follow the account-recovery process from a trusted device.",
+  "links": [
+    "SMS links",
+    "support agent"
+  ]
+}

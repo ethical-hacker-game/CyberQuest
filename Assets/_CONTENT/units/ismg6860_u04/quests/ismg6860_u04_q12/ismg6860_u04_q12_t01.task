@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The legacy records service supports month-end billing and has a history of instability. First, distinguish observation from direct interaction.",
+      "taskInstructions": "Read <link=\"u04_active_passive_assessment\"><u>active and passive assessment</u></link>, then identify the action that sends requests to the target.",
+      "taskQuestion": "Which activity is active?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. An authenticated scan actively queries the target and may affect a fragile service.",
+      "answers": [
+        "Reviewing logs that the system has already collected.",
+        "Launching an authenticated vulnerability scan.",
+        "Reading an approved internal network architecture diagram.",
+        "Interviewing a system owner about the fragile host."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The records service is fragile. Separate methods that observe existing evidence from those that send requests to the host.",
+      "taskInstructions": "Read <link=\"u04_active_passive_assessment\"><u>active and passive assessment</u></link>, then identify the action that sends requests to the target.",
+      "taskQuestion": "Which activity is active?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. An authenticated scan is active and visible to the target.",
+      "answers": [
+        "Reviewing logs that the system has already collected.",
+        "Launching an authenticated vulnerability scan.",
+        "Reading an approved internal network architecture diagram.",
+        "Interviewing a system owner about the fragile host."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The fragile records service supports residents during month-end billing. Identify which method directly interacts with it.",
+      "taskInstructions": "Read <link=\"u04_active_passive_assessment\"><u>active and passive assessment</u></link>, then identify the action that sends requests to the target.",
+      "taskQuestion": "Which activity is active?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Authenticated scanning is active and must account for service availability.",
+      "answers": [
+        "Reviewing logs that the system has already collected.",
+        "Launching an authenticated vulnerability scan.",
+        "Reading an approved internal network architecture diagram.",
+        "Interviewing a system owner about the fragile host."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q12_t01",
+  "parentQuestID": "ismg6860_u04_q12",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

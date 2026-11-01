@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Review the preserved conversation in order and keep the private correspondence read-only.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>persona inbox</b>, then open the VolunteerConnect message archive.",
+      "taskQuestion": "Open the Persona Inbox message timeline.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The archive shows ordinary rapport followed by a badge and entrance request.",
+      "correctAnswer": "volunteerconnect.net/persona-inbox"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Read the full timeline and identify when harmless conversation changes into a request with access value.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>persona inbox</b>, then open the VolunteerConnect message archive.",
+      "taskQuestion": "Open the Persona Inbox message timeline.",
+      "taskCompleteText": "<b>Felix Rane:</b> The transition from rapport to access request is visible in sequence.",
+      "correctAnswer": "volunteerconnect.net/persona-inbox"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Review the preserved messages as evidence of manipulation, not as a reason to blame the person who trusted them.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>persona inbox</b>, then open the VolunteerConnect message archive.",
+      "taskQuestion": "Open the Persona Inbox message timeline.",
+      "taskCompleteText": "<b>Imani Vale:</b> The archive supports a warning that explains the manipulation without shaming its target.",
+      "correctAnswer": "volunteerconnect.net/persona-inbox"
+    }
+  ],
+  "taskID": "ismg6860_u03_q20_t01",
+  "parentQuestID": "ismg6860_u03_q20",
+  "articleID": "u03_relationship_scams",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

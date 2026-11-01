@@ -1,0 +1,42 @@
+{
+    "questID":  "ismg6860_u04_q14",
+    "cityIndex":  7338,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q14_t01",
+                    "ismg6860_u04_q14_t02",
+                    "ismg6860_u04_q14_t03",
+                    "ismg6860_u04_q14_t04_segment"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "Assessment Types: Network-Based",
+                         "questDescription":  "Mara Voss frames this step for {player}. Review reachable services and identify unexpected internal attack surface.",
+                         "questCompleteText":  "Assessment Types: Network-Based complete. Exposed RDP on the admin subnet is flagged for segmentation, because internal is not the same as trusted.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "Assessment Types: Network-Based",
+                         "questDescription":  "Felix Rane frames this step for {player}. Review reachable services and identify unexpected internal attack surface.",
+                         "questCompleteText":  "Assessment Types: Network-Based complete. Felix reads broad RDP reach as a multiplier; one foothold and management access spreads.",
+                         "questCharacterID":  "u04_felix_rane",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "Assessment Types: Network-Based",
+                         "questDescription":  "Imani Vale frames this step for {player}. Review reachable services and identify unexpected internal attack surface.",
+                         "questCompleteText":  "Assessment Types: Network-Based complete. Imani notes that flat internal networks are how a single mistake becomes a city-wide outage.",
+                         "questCharacterID":  "u04_imani_vale",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

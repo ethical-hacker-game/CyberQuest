@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "A public web server with no operational device evidence.",
+        "An HVAC controller / RTU for building management.",
+        "A consumer Wi-Fi router used by office guests.",
+        "A file server hosting BoxCom's employee documents."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Arjun Rao:</b> Inspect the public result carefully. The device classification, service banners, and ports should agree before we report the finding.",
+      "taskInstructions": "Review the Cyberpedia guidance on <b>service banners</b>. Open Cyber Search and search for <b>shodan boxcom</b>. Open <b>Shodan: Device Indexer</b>, enter <b>BoxCom</b>, then select <b>View banners &amp; ports</b>.",
+      "taskQuestion": "Which device type does the result identify?",
+      "taskCompleteText": "<b>Arjun Rao:</b> The result identifies an HVAC controller / RTU used in building management. Its public reachability warrants review with BoxCom's facilities team; the index result is not a complete live asset inventory."
+    }
+  ],
+  "taskID": "ismg6860_u01_q24_t02",
+  "parentQuestID": "ismg6860_u01_q24",
+  "articleID": "u01_device_search_engines",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

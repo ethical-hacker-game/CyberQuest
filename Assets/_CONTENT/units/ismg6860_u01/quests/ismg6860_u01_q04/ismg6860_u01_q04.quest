@@ -1,0 +1,27 @@
+{
+  "questID": "ismg6860_u01_q04",
+  "cityIndex": 6154,
+  "questIconID": "quest_icon_socialmedia_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q04_t01",
+    "ismg6860_u01_q04_t02",
+    "ismg6860_u01_q04_t03",
+    "ismg6860_u01_q04_t04"
+  ],
+  "requiredQuestID": "ismg6860_u01_d01",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Impersonation Trail",
+      "questDescription": "DataSequence CEO George Wilkerson has asked you to examine the public information surrounding a social media impersonation incident. Use Cyber Search to corroborate a named association, distinguish discoverable facts from assumptions about the impersonator, and recommend a proportionate response.",
+      "questCompleteText": "<b>George Wilkerson:</b> You confirmed that my friendship with Eli Masters was publicly discoverable without claiming that a particular source caused the incident. Your recommendations focus on reducing unnecessary exposure and making official DataSequence communications easier to verify.",
+      "questCharacterID": "u01_george_wilkerson",
+      "appScenarioID": ""
+    }
+  ]
+}

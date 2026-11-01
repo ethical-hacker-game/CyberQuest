@@ -1,0 +1,42 @@
+{
+    "questID":  "ismg6860_u04_q18",
+    "cityIndex":  7406,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q18_t01",
+                    "ismg6860_u04_q18_t04_decrypt",
+                    "ismg6860_u04_q18_t02",
+                    "ismg6860_u04_q18_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "Exploitation Pathways: Remote Code Execution",
+                         "questDescription":  "Mara Voss frames this step for {player}. Prioritize RCE risk while keeping validation safe.",
+                         "questCompleteText":  "Exploitation Pathways: Remote Code Execution complete. The Apache Struts RCE risk is captured with urgency and zero proof-of-exploit, exactly how leadership needs to hear it.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "Exploitation Pathways: Remote Code Execution",
+                         "questDescription":  "Felix Rane frames this step for {player}. Prioritize RCE risk while keeping validation safe.",
+                         "questCompleteText":  "Exploitation Pathways: Remote Code Execution complete. Felix dwells on the Struts box; a verified RCE candidate is the most valuable line in the file.",
+                         "questCharacterID":  "u04_felix_rane",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "Exploitation Pathways: Remote Code Execution",
+                         "questDescription":  "Imani Vale frames this step for {player}. Prioritize RCE risk while keeping validation safe.",
+                         "questCompleteText":  "Exploitation Pathways: Remote Code Execution complete. Imani treats the Struts RCE as the clearest argument that delay is the real danger here.",
+                         "questCharacterID":  "u04_imani_vale",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

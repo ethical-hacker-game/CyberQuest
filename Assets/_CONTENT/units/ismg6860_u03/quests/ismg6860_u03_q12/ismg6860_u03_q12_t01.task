@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Riley preserved a warranty-desk script. Read how the caller combines <b>fear</b> of losing coverage with a demand for account details.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Warranty desk call script</b>.",
+      "taskQuestion": "Open the warranty desk call script.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The script threatens warranty and badge loss unless Riley confirms account and recovery details.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q12_t01_warranty_script"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> This script uses <b>fear</b> of a warranty loss and an immediate deadline to make its request feel routine. Read the exact demand.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Warranty desk call script</b>.",
+      "taskQuestion": "Open the warranty desk call script.",
+      "taskCompleteText": "<b>Felix Rane:</b> The invented loss creates the pressure; the requested account and recovery details are the objective.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q12_t01_warranty_script"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The caller uses <b>fear</b> and shift pressure against an overloaded staff member. Read the script without treating Riley as the problem.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Warranty desk call script</b>.",
+      "taskQuestion": "Open the warranty desk call script.",
+      "taskCompleteText": "<b>Imani Vale:</b> The warning should name the invented warranty loss and provide an independent verification route.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q12_t01_warranty_script"
+    }
+  ],
+  "taskID": "ismg6860_u03_q12_t01",
+  "parentQuestID": "ismg6860_u03_q12",
+  "articleID": "u03_human_triggers",
+  "mailsOnStart": [
+    "ismg6860_u03_q12_t01_warranty_script"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

@@ -1,0 +1,47 @@
+{
+  "variants": [
+    {
+      "minigameType": "Connections",
+      "minigameHeaderText": "NorthTec Main Server",
+      "durationOverride": 0,
+      "difficulty": "Default",
+      "connectionsSettings": {
+        "positiveConnections": [
+          "HTTPS Page Load",
+          "DNS Lookup",
+          "Authenticated User Login",
+          "System Update Check",
+          "Security Gateway Check",
+          "Checkout Request",
+          "Payment Request",
+          "Digitally Signed Email"
+        ],
+        "negativeConnections": [
+          "Port Scan",
+          "Host Sweep",
+          "DNS Enumeration",
+          "Directory Enumeration",
+          "Banner Grab",
+          "Vulnerability Scan Probe",
+          "Ping Scan",
+          "Robots.txt Probe",
+          "HTTP Method Probe"
+        ]
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> Credential response addresses the leak, while traffic controls can reduce unnecessary reconnaissance against NorthTec’s perimeter. Use the approved checklist to distinguish routine business traffic from probing activity.",
+      "taskInstructions": "Read Samira’s email, then configure the <b>NorthTec Main Server</b>: allow the listed business traffic and block every listed reconnaissance probe.",
+      "taskQuestion": "Configure the firewall for NorthTec.",
+      "taskCompleteText": "<b>Samira:</b> You allowed routine business traffic and blocked the reconnaissance probes in the checklist. I’ll include this traffic classification and the credential-response actions in NorthTec’s audit report."
+    }
+  ],
+  "taskID": "ismg6860_u01_q02_t03",
+  "parentQuestID": "ismg6860_u01_q02",
+  "articleID": null,
+  "mailsOnStart": [
+    "ismg6860_u01_q02_t03_start_samira-firewall"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

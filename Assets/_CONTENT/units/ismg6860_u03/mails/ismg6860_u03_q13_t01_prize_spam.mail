@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u03_q13_t01_prize_spam",
+  "parentTaskID": "ismg6860_u03_q13_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Prize spam batch",
+      "shortSummary": "Asha forwards measured data from a high-volume prize-message batch.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Pulled a representative batch from the message logs for review.\n\nSMS batch summary:\nMessages observed: 846\nDistinct sender IDs: 37\nRepeated template: Claim your expo prize before badges close.\nRepeated marker: BL-LANTERN-9\n\nAsha",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Prize spam batch",
+      "shortSummary": "Felix forwards measured data from a high-volume prize-message batch.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Read the scale, sender rotation, repeated template, and marker before drawing conclusions.\n\nSMS batch summary:\nMessages observed: 846\nDistinct sender IDs: 37\nRepeated template: Claim your expo prize before badges close.\nRepeated marker: BL-LANTERN-9\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Prize spam batch",
+      "shortSummary": "Imani forwards measured data from a high-volume prize-message batch.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Use the measured batch data so the warning describes the scale without exaggeration.\n\nSMS batch summary:\nMessages observed: 846\nDistinct sender IDs: 37\nRepeated template: Claim your expo prize before badges close.\nRepeated marker: BL-LANTERN-9\n\nImani",
+      "attachements": []
+    }
+  ]
+}

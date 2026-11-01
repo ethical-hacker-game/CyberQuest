@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> The city wants an awareness response. <b>Gophish and OhPhish</b> can support an approved exercise that measures recognition and reporting without collecting credentials.\n\nFelix proposes an unauthorized private clone that identifies who complies. Imani proposes publishing redacted lure screenshots immediately, reaching volunteers sooner but bypassing message review and coordination. Choose the boundary for this response.",
+      "taskInstructions": "Review each approach and its immediate tradeoff, then choose one.",
+      "taskQuestion": "How should the awareness response proceed?",
+      "taskCompleteText": "<b>Asha Moreno:</b> The awareness boundary is recorded. The perspective aligned with your choice will guide the next stage."
+    }
+  ],
+  "taskID": "ismg6860_u03_d02_decision",
+  "parentQuestID": "ismg6860_u03_d02",
+  "articleID": "u03_awareness_testing",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision",
+  "decisions": [
+    {
+      "decisionText": "Run an approved simulation that measures recognition and reporting without collecting credentials.",
+      "personaIndex": 0,
+      "personaValueChange": 15
+    },
+    {
+      "decisionText": "Run an unauthorized private clone that records which individual staff members comply.",
+      "personaIndex": 1,
+      "personaValueChange": 15
+    },
+    {
+      "decisionText": "Publish redacted lure screenshots now, reaching volunteers sooner but bypassing coordinated message review.",
+      "personaIndex": 2,
+      "personaValueChange": 15
+    }
+  ]
+}

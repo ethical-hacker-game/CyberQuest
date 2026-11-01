@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The owner reports prior instability during month-end close. Choose the action most likely to add load or trigger unsafe behavior.",
+      "taskInstructions": "Use the disruption guidance in <link=\"u04_active_passive_assessment\"><u>active and passive assessment</u></link>.",
+      "taskQuestion": "Which action has the highest disruption risk?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. A high-intensity plugin scan creates the greatest load and interaction risk.",
+      "answers": [
+        "Reading a prior change ticket for the legacy records service.",
+        "Reviewing already-exported logs from the legacy records host.",
+        "High-intensity plugin scan against the legacy records service.",
+        "Rechecking the approved scope letter written for this engagement."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The owner reports that this host becomes unstable under load. Identify the noisiest action in the plan.",
+      "taskInstructions": "Use the disruption guidance in <link=\"u04_active_passive_assessment\"><u>active and passive assessment</u></link>.",
+      "taskQuestion": "Which action has the highest disruption risk?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The high-intensity scan creates the greatest chance of disruption and detection.",
+      "answers": [
+        "Reading a prior change ticket for the legacy records service.",
+        "Reviewing already-exported logs from the legacy records host.",
+        "High-intensity plugin scan against the legacy records service.",
+        "Rechecking the approved scope letter written for this engagement."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The records service has failed under load before. Identify the action with the highest availability risk.",
+      "taskInstructions": "Use the disruption guidance in <link=\"u04_active_passive_assessment\"><u>active and passive assessment</u></link>.",
+      "taskQuestion": "Which action has the highest disruption risk?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. A high-intensity scan could disrupt the service residents need.",
+      "answers": [
+        "Reading a prior change ticket for the legacy records service.",
+        "Reviewing already-exported logs from the legacy records host.",
+        "High-intensity plugin scan against the legacy records service.",
+        "Rechecking the approved scope letter written for this engagement."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q12_t02",
+  "parentQuestID": "ismg6860_u04_q12",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

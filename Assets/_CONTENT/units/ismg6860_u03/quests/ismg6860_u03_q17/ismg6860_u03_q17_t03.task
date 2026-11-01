@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Carrying boxes and using a busy entrance are not enough to establish an attack. Choose the observed combination that supports a suspected pretexting attempt.",
+      "taskInstructions": "Use Theo's door-camera note and distinguish the access request from ordinary visitor behavior.",
+      "taskQuestion": "Which clue best supports suspected pretexting?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. An unbadged visitor used an urgent delivery claim to request entry; the note does not confirm access.",
+      "answers": [
+        "No badge is shown while a delivery pretext asks for entry.",
+        "The person carries boxes and chooses a busy entrance.",
+        "The doorway camera catches the exchange at the reader.",
+        "The visitor blends into normal vendor movement."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The costume alone proves little. Choose the observed maneuver that tested the staff-door control.",
+      "taskInstructions": "Use Theo's door-camera note and distinguish the access request from ordinary visitor behavior.",
+      "taskQuestion": "Which detail supports a suspected access attempt?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The delivery claim sought an exception for an unbadged visitor, though the outcome is unknown.",
+      "answers": [
+        "The person carries boxes and chooses a busy entrance.",
+        "No badge is shown while a delivery pretext asks for entry.",
+        "The doorway camera catches the exchange at the reader.",
+        "The visitor blends into normal vendor movement."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Keep the finding on the request and the control it tested, not on the volunteer's character. Choose the strongest observed indicator.",
+      "taskInstructions": "Use Theo's door-camera note and distinguish the access request from ordinary visitor behavior.",
+      "taskQuestion": "Which clue most clearly supports suspected pretexting?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The unbadged access request supports a process response without blaming the volunteer.",
+      "answers": [
+        "The person carries boxes and chooses a busy entrance.",
+        "The doorway camera catches the exchange at the reader.",
+        "No badge is shown while a delivery pretext asks for entry.",
+        "The visitor blends into normal vendor movement."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u03_q17_t03",
+  "parentQuestID": "ismg6860_u03_q17",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

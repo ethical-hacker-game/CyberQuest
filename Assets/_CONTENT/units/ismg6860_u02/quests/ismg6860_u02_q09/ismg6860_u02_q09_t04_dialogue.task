@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The firewall has logged our scan activity. Detection is useful context, not failure, but any additional checks now require coordination with the SOC.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Decide how the alert should change the next scan pass."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> The scan activity is visible in the edge logs, although the rate stayed below the block threshold. Decide whether that warning changes how far you push the map.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Kade Mercer:</b> Choose how you respond now that the edge can see the probes."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> The edge alert does not tell us whether internal monitoring saw the earlier vendor-to-ticketing flow. That possible monitoring gap belongs in the questions we ask, not in the facts we claim.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Decide how to raise the visibility question without overstating what the alert proves."
+    }
+  ],
+  "taskID": "ismg6860_u02_q09_t04_dialogue",
+  "parentQuestID": "ismg6860_u02_q09",
+  "articleID": "u02_monitoring_placement",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

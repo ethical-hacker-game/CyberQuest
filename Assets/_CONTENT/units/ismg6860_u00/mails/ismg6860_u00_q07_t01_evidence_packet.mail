@@ -1,0 +1,25 @@
+{
+  "mailID": "ismg6860_u00_q07_t01_evidence_packet",
+  "parentTaskID": "ismg6860_u00_q07_t01_evidence_mail",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Michele Ricci <michele.ricci@cyberquest.academy>",
+      "subject": "Evidence packet: FS-00-417",
+      "shortSummary": "Operations handoff for the First Signal portal finding.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nEvidence packet: FS-00-417\nSource case: NS-1047\nAffected service: Training Northstar public status area\nPrimary finding: Directory Indexing Enabled\nSupporting evidence:\n- Public page observed in browser\n- DNS record confirmed with terminal evidence\n- Zenmap host value recorded\n- Scanner report opened in the webtool\n- Packet gate configured without blocking normal traffic\n\nOperations recommendation:\nDisable directory indexing, move exposed files out of the web root, and rescan the affected path after the change.\n\nKeep the case ID exact. It is how the system owner connects the ticket to the evidence chain.\n\nMichele",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Ana Reyes <ana.reyes@cyberquest.academy>",
+      "subject": "Evidence packet: FS-00-417",
+      "shortSummary": "Risk handoff for the First Signal portal finding.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nEvidence packet: FS-00-417\nSource case: NS-1047\nAffected service: Training Northstar public status area\nPrimary finding: Directory Indexing Enabled\nSupporting evidence:\n- Public page observed in browser\n- DNS record confirmed with terminal evidence\n- Zenmap host value recorded\n- Scanner report opened in the webtool\n- Packet gate configured without blocking normal traffic\n\nRisk recommendation:\nDisable directory indexing, move exposed files out of the web root, and rescan before sharing details beyond the authorized team.\n\nKeep the case ID exact. It lets people verify the issue without spreading sensitive paths.\n\nAna",
+      "attachements": []
+    }
+  ]
+}

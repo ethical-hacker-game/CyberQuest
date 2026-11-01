@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Block known crawler names while leaving the sensitive files publicly accessible.",
+        "List sensitive paths in robots.txt and rely on every crawler to follow the directive.",
+        "Remove sensitive files from public hosting or require authorization, using crawler directives only to manage legitimate indexing.",
+        "Require multifactor authentication for staff while leaving the exposed public files unchanged."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Charisse:</b> Readers will want a practical response to public exposure. I need a recommendation that prevents unauthorized access to sensitive files, not one that merely asks cooperative crawlers to ignore them.",
+      "taskInstructions": "Use the Web Crawling and Site Mirroring article to choose the control that protects the content itself while keeping robots.txt in its proper, limited role.",
+      "taskQuestion": "Which response most effectively prevents sensitive data from remaining exposed to crawlers?",
+      "taskCompleteText": "<b>Charisse:</b> Correct. Sensitive files should be removed from public hosting or protected by authorization. robots.txt can guide cooperative indexing, but it is not an access control."
+    }
+  ],
+  "taskID": "ismg6860_u01_q06_t02",
+  "parentQuestID": "ismg6860_u01_q06",
+  "articleID": "u01_web_crawling_and_mirroring",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

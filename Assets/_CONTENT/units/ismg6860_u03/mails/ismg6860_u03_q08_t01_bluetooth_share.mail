@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u03_q08_t01_bluetooth_share",
+  "parentTaskID": "ismg6860_u03_q08_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Lobby proximity share: do not install",
+      "shortSummary": "An unsolicited Bluetooth share appears near the registration lobby.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Security recorded this in the West Gate lobby. Preserve the log and do not accept or install the offered file.\n\nMobile share log:\nSender device: Lantern Support Kiosk\nOffered file: Expo_FloorPlan_Update.mobileconfig\nLocation: West Gate lobby\nMarker: BL-LANTERN-9\n\nAsha",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Lobby proximity share: do not install",
+      "shortSummary": "An unsolicited Bluetooth share appears near the registration lobby.",
+      "date": "0001-01-01T00:00:00",
+      "body": "A device in the lobby is offering this file to nearby phones. Read the log without accepting the share.\n\nMobile share log:\nSender device: Lantern Support Kiosk\nOffered file: Expo_FloorPlan_Update.mobileconfig\nLocation: West Gate lobby\nMarker: BL-LANTERN-9\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Lobby proximity share: do not install",
+      "shortSummary": "An unsolicited Bluetooth share appears near the registration lobby.",
+      "date": "0001-01-01T00:00:00",
+      "body": "This share appeared in the lobby where visitors will gather tomorrow. Preserve the sender and filename so we can issue a precise warning.\n\nMobile share log:\nSender device: Lantern Support Kiosk\nOffered file: Expo_FloorPlan_Update.mobileconfig\nLocation: West Gate lobby\nMarker: BL-LANTERN-9\n\nImani",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "extensions",
+        "extension range",
+        "list of extensions",
+        "2001-2048"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Now put it in terms I can hand to the person who owns that system. Not what is theoretically possible against a phone network, and not what it might lead to someday. What is sitting there in the open, in plain language, on one line.",
+      "taskInstructions": "Reopen the earlier nmap output and read the <b>sip-enum-users</b> section. Type the exposed item or its exact range.",
+      "taskQuestion": "What does SIP enumeration primarily expose on this gateway?",
+      "taskCompleteText": "<b>Dana Osei:</b> The scan returned the extension range 2001-2048. It did not associate those numbers with employee names."
+    },
+    {
+      "correctAnswers": [
+        "extensions",
+        "extension range",
+        "list of extensions",
+        "2001-2048"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> So what actually falls out of a pass like that? Be specific, because the specific thing is the thing with value. Vague findings are how people talk themselves out of fixing anything.",
+      "taskInstructions": "Reopen the earlier nmap output and read the <b>sip-enum-users</b> section. Type the exposed item or its exact range.",
+      "taskQuestion": "What does SIP enumeration primarily expose on this gateway?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The concrete disclosure is the 2001-2048 extension range, not a named staff directory."
+    },
+    {
+      "correctAnswers": [
+        "extensions",
+        "extension range",
+        "list of extensions",
+        "2001-2048"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The safety committee will not act on the word exposure. They act on a concrete noun they can picture, something they recognise from their own shift. I need this one written as narrowly as it can honestly be written.",
+      "taskInstructions": "Reopen the earlier nmap output and read the <b>sip-enum-users</b> section. Type the exposed item or its exact range.",
+      "taskQuestion": "What does SIP enumeration primarily expose on this gateway?",
+      "taskCompleteText": "<b>Priya Nandan:</b> The gateway disclosed extensions 2001-2048. Record the range without attaching identities the evidence does not contain."
+    }
+  ],
+  "taskID": "ismg6860_u05_q12_t02",
+  "parentQuestID": "ismg6860_u05_q12",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

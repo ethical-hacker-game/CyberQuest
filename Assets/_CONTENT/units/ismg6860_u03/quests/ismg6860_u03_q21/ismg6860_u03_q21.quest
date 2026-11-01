@@ -1,0 +1,43 @@
+{
+  "questID": "ismg6860_u03_q21",
+  "cityIndex": 5151,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q21_t00_unlock_resolvecheck",
+    "ismg6860_u03_q21_t01",
+    "ismg6860_u03_q21_t02",
+    "ismg6860_u03_q21_t04_network_trace",
+    "ismg6860_u03_q21_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Crooked Road",
+      "questDescription": "Assess a forwarded warning, a scareware prompt, and inconsistent DNS answers as separate findings before identifying the verified network anomaly.",
+      "questCompleteText": "<b>Asha Moreno:</b> The DNS discrepancy is documented without treating the hoax and scareware as proven parts of the same operation.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Crooked Road",
+      "questDescription": "Compare resolver responses and separate a measurable routing discrepancy from two attention-grabbing but independently assessed findings.",
+      "questCompleteText": "<b>Felix Rane:</b> The inconsistent DNS answer stands on measured evidence rather than assumptions about the surrounding noise.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Crooked Road",
+      "questDescription": "Document a forwarded warning, a scareware prompt, and a DNS discrepancy without blaming volunteers who repeated the warning.",
+      "questCompleteText": "<b>Imani Vale:</b> The warning can address each finding calmly and direct volunteers to one verified source of truth.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

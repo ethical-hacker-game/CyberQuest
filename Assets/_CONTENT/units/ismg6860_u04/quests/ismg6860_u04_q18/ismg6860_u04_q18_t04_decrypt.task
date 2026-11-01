@@ -1,0 +1,116 @@
+{
+  "variants": [
+    {
+      "minigameType": "DecryptIntercept",
+      "minigameHeaderText": "Encoded RCE Response Order",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "decryptSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Containment Instruction",
+            "recommendedDifficulty": "Normal",
+            "plaintext": "PRESERVE LOGS AND CAPTURE MEMORY",
+            "steps": [
+              {
+                "type": "Atbash",
+                "caesarShift": 3
+              },
+              {
+                "type": "Reverse",
+                "caesarShift": 3
+              },
+              {
+                "type": "Hex",
+                "caesarShift": 3
+              }
+            ]
+          }
+        ],
+        "wrongAttemptsAllowed": 3
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The legacy operations relay wrapped an RCE response order in reversible encodings. Recover the exact instruction before the response team acts on it.",
+      "taskInstructions": "Peel one encoding at a time, always the outermost layer first; the analysis readout names the signature of the current text for free. Three wrong decodes lock the intercept.",
+      "taskQuestion": "Decode the RCE response instruction.",
+      "taskCompleteText": "<b>Mara Voss:</b> You recovered the exact instruction: preserve logs and capture memory. Both actions protect volatile incident evidence."
+    },
+    {
+      "minigameType": "DecryptIntercept",
+      "minigameHeaderText": "Encoded RCE Response Order",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "decryptSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Containment Instruction",
+            "recommendedDifficulty": "Normal",
+            "plaintext": "PRESERVE LOGS AND CAPTURE MEMORY",
+            "steps": [
+              {
+                "type": "Atbash",
+                "caesarShift": 3
+              },
+              {
+                "type": "Reverse",
+                "caesarShift": 3
+              },
+              {
+                "type": "Hex",
+                "caesarShift": 3
+              }
+            ]
+          }
+        ],
+        "wrongAttemptsAllowed": 3
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Northbridge's emergency relay uses reversible encoding as if it were encryption. Decode the order and keep the distinction between formatting and protection clear.",
+      "taskInstructions": "Peel one encoding at a time, always the outermost layer first; the analysis readout names the signature of the current text for free. Three wrong decodes lock the intercept.",
+      "taskQuestion": "Decode the RCE response instruction.",
+      "taskCompleteText": "<b>Felix Rane:</b> You decoded the exact order: preserve logs and capture memory. Reversible encoding did not protect the message."
+    },
+    {
+      "minigameType": "DecryptIntercept",
+      "minigameHeaderText": "Encoded RCE Response Order",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "decryptSettings": {
+        "scenarios": [
+          {
+            "scenarioName": "Containment Instruction",
+            "recommendedDifficulty": "Normal",
+            "plaintext": "PRESERVE LOGS AND CAPTURE MEMORY",
+            "steps": [
+              {
+                "type": "Atbash",
+                "caesarShift": 3
+              },
+              {
+                "type": "Reverse",
+                "caesarShift": 3
+              },
+              {
+                "type": "Hex",
+                "caesarShift": 3
+              }
+            ]
+          }
+        ],
+        "wrongAttemptsAllowed": 3
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The response team sent an urgent instruction through a relay protected only by reversible encoding. Recover the order so volatile evidence is preserved.",
+      "taskInstructions": "Peel one encoding at a time, always the outermost layer first; the analysis readout names the signature of the current text for free. Three wrong decodes lock the intercept.",
+      "taskQuestion": "Decode the RCE response instruction.",
+      "taskCompleteText": "<b>Imani Vale:</b> You recovered the exact order: preserve logs and capture memory. The response team can now protect the evidence."
+    }
+  ],
+  "taskID": "ismg6860_u04_q18_t04_decrypt",
+  "parentQuestID": "ismg6860_u04_q18",
+  "articleID": "u04_struts_rce_response",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

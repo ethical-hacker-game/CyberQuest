@@ -1,0 +1,40 @@
+{
+    "questID":  "ismg6860_u04_last_quest",
+    "cityIndex":  7460,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_last_quest_t00_voice",
+                    "ismg6860_u04_last_quest_t01"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "Audit Review",
+                         "questDescription":  "Review the evidence-based outcome and the approved follow-up validation plan.",
+                         "questCompleteText":  "Audit Review complete. Northbridge accepted the findings and committed to verified remediation.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "Audit Review",
+                         "questDescription":  "Review how precise evidence and stated uncertainty shaped the final outcome.",
+                         "questCompleteText":  "Audit Review complete. The final record distinguishes observations, plausible risk, and remediation work.",
+                         "questCharacterID":  "u04_felix_rane",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "Audit Review",
+                         "questDescription":  "Review the remediation commitment and the accountability created by follow-up validation.",
+                         "questCompleteText":  "Audit Review complete. The outcome depends on verified changes and accountable follow-up.",
+                         "questCharacterID":  "u04_imani_vale",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

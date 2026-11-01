@@ -1,0 +1,28 @@
+{
+  "variants": [
+    {
+      "minigameType": "PacketRush",
+      "minigameHeaderText": "Traceroute Relay Run",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "runnerSettings": {
+        "packetIntegrity": 4,
+        "speedMultiplier": 0.85,
+        "spawnInterval": 1.4,
+        "hazardChance": 0.55
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> Now practice route selection in Packet Rush. This exercise uses moving hazards; it does not replay the traceroute or reveal additional hop addresses.",
+      "taskInstructions": "Move between the three lanes to avoid hazards. Keep packet integrity above zero until the delivery window ends.",
+      "taskQuestion": "Deliver the packet with integrity remaining.",
+      "taskCompleteText": "<b>Samira:</b> You kept the packet intact through the delivery window. The exercise reinforces route choices, but adds no evidence to the trace."
+    }
+  ],
+  "taskID": "ismg6860_u01_q21_t03_packet_rush",
+  "parentQuestID": "ismg6860_u01_q21",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

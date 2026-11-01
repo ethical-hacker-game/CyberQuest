@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_remediation_planning",
+  "videoURL": null,
+  "title": "Planning a Verifiable Remediation",
+  "content": "A useful remediation states the affected condition, the required change, the owner, and the evidence needed for closure. Use <b>containment</b> to reduce immediate exposure, then address the root cause. Prioritize verified, public, high-impact paths before lower-confidence or lower-impact findings. Closure requires a targeted retest of the original observation: planned work, monitoring, renaming, or hiding a link does not remove public access.",
+  "links": [
+    "remediation planning"
+  ]
+}

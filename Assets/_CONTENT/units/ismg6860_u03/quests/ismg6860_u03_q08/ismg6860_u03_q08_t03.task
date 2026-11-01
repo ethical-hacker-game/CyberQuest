@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The sender name and timing create trust, but the file type determines what accepting the share could change on a device.",
+      "taskInstructions": "Compare the offered filename with the configuration-profile guidance in <b>Mobile Delivery Lures</b>.",
+      "taskQuestion": "Which finding most strongly justifies declining the share?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. An unsolicited configuration profile can change sensitive device settings and should not be installed.",
+      "answers": [
+        "The sender device appears nearby in the lobby traffic.",
+        "The share is a device profile, not a floor-plan file.",
+        "The shared file uses a name that sounds operational.",
+        "The request arrives while staff move between desks."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The plausible device name is packaging. The file extension reveals a profile capable of changing sensitive device settings.",
+      "taskInstructions": "Compare the offered filename with the configuration-profile guidance in <b>Mobile Delivery Lures</b>.",
+      "taskQuestion": "Which finding most strongly justifies declining the share?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The payload is a configuration profile, not a floor-plan document.",
+      "answers": [
+        "The sender device appears nearby in the lobby traffic.",
+        "The shared file uses a name that sounds operational.",
+        "The share is a device profile, not a floor-plan file.",
+        "The request arrives while staff move between desks."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The warning needs a verifiable reason to decline the share. Focus on the file type rather than the sender's name or the time it appeared.",
+      "taskInstructions": "Compare the offered filename with the configuration-profile guidance in <b>Mobile Delivery Lures</b>.",
+      "taskQuestion": "Which finding most strongly justifies declining the share?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. An unsolicited configuration profile can alter sensitive settings, so visitors should decline and report it.",
+      "answers": [
+        "The sender device appears nearby in the lobby traffic.",
+        "The shared file uses a name that sounds operational.",
+        "The request arrives while staff move between desks.",
+        "The share is a device profile, not a floor-plan file."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u03_q08_t03",
+  "parentQuestID": "ismg6860_u03_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

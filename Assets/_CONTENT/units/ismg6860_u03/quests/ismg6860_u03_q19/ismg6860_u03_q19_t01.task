@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Review the captured transcript in order: account error, support contact, then a request for a one-time code. The archive is read-only.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>fake support chat</b>, then open the LanternPass chat archive.",
+      "taskQuestion": "Open the archived LanternPass support chat.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The archive preserves the error, support identity, and code request without proving who caused the error.",
+      "correctAnswer": "lantern-supportdesk.com/fake-support"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Read the archived sequence and identify how the helper uses the existing problem to make a sensitive request seem useful.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>fake support chat</b>, then open the LanternPass chat archive.",
+      "taskQuestion": "Open the archived LanternPass support chat.",
+      "taskCompleteText": "<b>Felix Rane:</b> The transcript shows opportunistic rescue and a code request, not proof of who created the error.",
+      "correctAnswer": "lantern-supportdesk.com/fake-support"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Read the archive from Riley's perspective: an account problem followed by convenient help that asks for an authentication secret.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>fake support chat</b>, then open the LanternPass chat archive.",
+      "taskQuestion": "Open the archived LanternPass support chat.",
+      "taskCompleteText": "<b>Imani Vale:</b> The archive shows why people need a safe support route during stressful account failures.",
+      "correctAnswer": "lantern-supportdesk.com/fake-support"
+    }
+  ],
+  "taskID": "ismg6860_u03_q19_t01",
+  "parentQuestID": "ismg6860_u03_q19",
+  "articleID": "u03_reverse_social_engineering",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

@@ -1,0 +1,90 @@
+{
+  "appID": "mibbrowser",
+  "scenarioID": "mibbrowser_halloway_walk",
+  "header": "iReasoning MIB Browser - 10.30.14.1",
+  "extension": "png",
+  "size": {
+    "x": 900,
+    "y": 620
+  },
+  "margin": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "stages": [
+    {
+      "stageID": "home",
+      "customHeader": "iReasoning MIB Browser - system group",
+      "frames": [
+        {
+          "imageName": "home_0000",
+          "delayMs": 700
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "iftable",
+          "linkPoistion": {
+            "x": 0.0,
+            "y": 272.0
+          },
+          "linkSize": {
+            "x": 300.0,
+            "y": 32.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "iftable",
+      "customHeader": "iReasoning MIB Browser - ifTable",
+      "frames": [
+        {
+          "imageName": "iftable_0000",
+          "delayMs": 700
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "detail",
+          "linkPoistion": {
+            "x": 300.0,
+            "y": 268.0
+          },
+          "linkSize": {
+            "x": 600.0,
+            "y": 30.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "detail",
+      "customHeader": "iReasoning MIB Browser - ifEntry.24",
+      "frames": [
+        {
+          "imageName": "detail_0000",
+          "delayMs": 700
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "exit",
+          "linkPoistion": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "linkSize": {
+            "x": 900.0,
+            "y": 620.0
+          }
+        }
+      ]
+    }
+  ]
+}

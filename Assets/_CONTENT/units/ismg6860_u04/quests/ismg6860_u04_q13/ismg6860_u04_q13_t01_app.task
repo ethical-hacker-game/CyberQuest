@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The completed LanGuard audit contains three authorized Northbridge endpoints. Open its results dashboard.",
+      "taskInstructions": "Open <b>GFI LanGuard</b> from Apps and enter the Northbridge scan results.",
+      "taskQuestion": "Open the GFI LanGuard scan results.",
+      "taskCompleteText": "<b>Mara Voss:</b> The endpoint dashboard is open. Compare each host's vulnerability level and headline issue.",
+      "actionType": "app_stage_changed",
+      "actionTag": "dashboard"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The completed LanGuard audit compares three internal endpoints. Open the results and find the weakest host.",
+      "taskInstructions": "Open <b>GFI LanGuard</b> from Apps and enter the Northbridge scan results.",
+      "taskQuestion": "Open the GFI LanGuard scan results.",
+      "taskCompleteText": "<b>Felix Rane:</b> The dashboard is open. Compare the three hosts and their headline findings.",
+      "actionType": "app_stage_changed",
+      "actionTag": "dashboard"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The completed LanGuard audit shows the patch and policy state of three internal endpoints. Open the results.",
+      "taskInstructions": "Open <b>GFI LanGuard</b> from Apps and enter the Northbridge scan results.",
+      "taskQuestion": "Open the GFI LanGuard scan results.",
+      "taskCompleteText": "<b>Imani Vale:</b> The dashboard is open. Identify which host requires the most urgent attention.",
+      "actionType": "app_stage_changed",
+      "actionTag": "dashboard"
+    }
+  ],
+  "taskID": "ismg6860_u04_q13_t01_app",
+  "parentQuestID": "ismg6860_u04_q13",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

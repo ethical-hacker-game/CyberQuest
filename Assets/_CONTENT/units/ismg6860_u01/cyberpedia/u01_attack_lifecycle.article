@@ -1,0 +1,10 @@
+{
+  "articleID": "u01_attack_lifecycle",
+  "videoURL": null,
+  "title": "Attack Lifecycles and Reconnaissance",
+  "content": "An attack lifecycle is a model that divides an intrusion into stages so defenders can recognize what an adversary is doing and interrupt the operation early. The Cyber Kill Chain is one well-known example. Its original seven stages are reconnaissance, weaponization, delivery, exploitation, installation, command and control, and actions on objectives. Other frameworks organize activity differently, so stage names should be treated as analytical tools rather than an exact script every attacker follows.\n\n<b>Why reconnaissance matters</b>\nDuring reconnaissance, an adversary gathers information about people, domains, systems, suppliers, and exposed services. Some collection uses public sources and does not contact the target. Other techniques send probes or interact with target infrastructure. The resulting information helps an attacker select targets and make later activity more convincing or efficient.\n\n<b>Using the model defensively</b>\nDefenders can connect observations from different sources: unusual domain registrations, repeated network probes, targeted messages, or new outbound connections. A single signal may be harmless, but several related signals can reveal progression through a campaign. Controls should interrupt multiple stages: reduce unnecessary public exposure, monitor authentication and network activity, harden externally reachable services, filter malicious content, and prepare containment procedures.\n\nThe lifecycle does not prove intent by itself. Analysts should record evidence, test alternative explanations, and describe confidence honestly. Its value is in asking what may have happened before an observation, what could happen next, and where a defensive action can break the chain.",
+  "links": [
+    "cyber kill chain",
+    "reconnaissance hypothesis"
+  ]
+}

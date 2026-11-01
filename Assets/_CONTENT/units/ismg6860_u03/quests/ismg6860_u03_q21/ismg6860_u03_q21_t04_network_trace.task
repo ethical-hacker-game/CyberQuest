@@ -1,0 +1,56 @@
+{
+  "variants": [
+    {
+      "minigameType": "NetworkTrace",
+      "minigameHeaderText": "Pharming Resolution Trace",
+      "durationOverride": 0,
+      "difficulty": "Hard",
+      "networkSettings": {
+        "devicesToHack": 0,
+        "reconMovesToWin": 4
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Practice tracing an altered resolution path while preserving data integrity. The mail establishes the real discrepancy; this model reinforces the investigation process.",
+      "taskInstructions": "Hold a link to a neighboring node until it locks. Complete four hops while avoiding red interference; contact with an active node drains integrity and an empty meter ends the run.",
+      "taskQuestion": "Trace the altered resolution path.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The modeled trace is complete, and the evidence remains the verified resolver comparison."
+    },
+    {
+      "minigameType": "NetworkTrace",
+      "minigameHeaderText": "Pharming Resolution Trace",
+      "durationOverride": 0,
+      "difficulty": "Hard",
+      "networkSettings": {
+        "devicesToHack": 0,
+        "reconMovesToWin": 4
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Model the trace process for an altered resolution path. Keep the exercise separate from the mail's measured values and from assumptions about the other reports.",
+      "taskInstructions": "Hold a link to a neighboring node until it locks. Complete four hops while avoiding red interference; contact with an active node drains integrity and an empty meter ends the run.",
+      "taskQuestion": "Trace the altered resolution path.",
+      "taskCompleteText": "<b>Felix Rane:</b> The trace model is complete without turning the exercise into additional incident evidence."
+    },
+    {
+      "minigameType": "NetworkTrace",
+      "minigameHeaderText": "Pharming Resolution Trace",
+      "durationOverride": 0,
+      "difficulty": "Hard",
+      "networkSettings": {
+        "devicesToHack": 0,
+        "reconMovesToWin": 4
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Practice the trace process used to investigate resolution changes. The public warning should still cite the real resolver comparison, not this modeled route.",
+      "taskInstructions": "Hold a link to a neighboring node until it locks. Complete four hops while avoiding red interference; contact with an active node drains integrity and an empty meter ends the run.",
+      "taskQuestion": "Trace the altered resolution path.",
+      "taskCompleteText": "<b>Imani Vale:</b> The modeled trace reinforces the process while the verified DNS values support the warning."
+    }
+  ],
+  "taskID": "ismg6860_u03_q21_t04_network_trace",
+  "parentQuestID": "ismg6860_u03_q21",
+  "articleID": "u03_deceptive_redirects",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

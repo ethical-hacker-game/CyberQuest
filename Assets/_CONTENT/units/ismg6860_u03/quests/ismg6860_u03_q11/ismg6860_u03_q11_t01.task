@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The <b>VPN's listing</b> claims official protection for expo Wi-Fi. Inspect its publisher and requested access without installing it.",
+      "taskInstructions": "Open the browser, search <b>harbor shield vpn</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the Fake VPN application evidence page.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Listing captured. Now compare the claimed Harborview affiliation with the declared publisher.",
+      "correctAnswer": "harborshieldvpn.com/harbor-shield-vpn"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The <b>VPN's listing</b> uses shields and security language to claim Harborview trust. Ignore the pitch and inspect who publishes it.",
+      "taskInstructions": "Open the browser, search <b>harbor shield vpn</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the Fake VPN application evidence page.",
+      "taskCompleteText": "<b>Felix Rane:</b> Listing captured. The publisher is the first useful provenance check.",
+      "correctAnswer": "harborshieldvpn.com/harbor-shield-vpn"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Visitors are being directed to this <b>VPN's listing</b> for 'official' expo Wi-Fi protection. Verify the publisher so the warning can name the mismatch precisely.",
+      "taskInstructions": "Open the browser, search <b>harbor shield vpn</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the Fake VPN application evidence page.",
+      "taskCompleteText": "<b>Imani Vale:</b> Listing captured. We can assess the affiliation claim without alleging behavior the listing does not prove.",
+      "correctAnswer": "harborshieldvpn.com/harbor-shield-vpn"
+    }
+  ],
+  "taskID": "ismg6860_u03_q11_t01",
+  "parentQuestID": "ismg6860_u03_q11",
+  "articleID": "u03_malicious_app_provenance",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

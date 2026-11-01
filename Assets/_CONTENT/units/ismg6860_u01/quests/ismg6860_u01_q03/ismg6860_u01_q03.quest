@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u01_q03",
+  "cityIndex": 3133,
+  "questIconID": "quest_icon_searchengines_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q03_t01",
+    "ismg6860_u01_q03_t02"
+  ],
+  "requiredQuestID": "ismg6860_u01_q02",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Q4NexList Leak",
+      "questDescription": "NexaCore has asked you to investigate whether images from an internal client export are publicly indexed. Use Cyber Search to locate the known filename, broaden the search to assess the exposure, and record only what the images support.",
+      "questCompleteText": "<b>Taylor:</b> You confirmed that two NexaCore exports are publicly reachable and documented the visible client, payment, and project information without overstating what it proves. The evidence is ready for the handling decision.",
+      "questCharacterID": "u01_taylor_chen",
+      "appScenarioID": ""
+    }
+  ]
+}

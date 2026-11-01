@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u03_q18_t01_badge_call",
+  "parentTaskID": "ismg6860_u03_q18_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Badge voice call summary",
+      "shortSummary": "The badge desk records a caller requesting an exception for an unverified visitor.",
+      "date": "0001-01-01T00:00:00",
+      "body": "The security desk forwarded this call summary for review.\n\nCall summary:\nCaller claimed to be an executive assistant and said a visitor needed immediate access. The caller asked staff to let the visitor piggyback through the staff entrance while the badge issue was 'fixed later'. The summary does not record whether staff followed the request.\n\nAsha",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Badge voice call summary",
+      "shortSummary": "The badge desk records a caller requesting an exception for an unverified visitor.",
+      "date": "0001-01-01T00:00:00",
+      "body": "The badge desk preserved the caller's claim and requested exception.\n\nCall summary:\nCaller claimed to be an executive assistant and said a visitor needed immediate access. The caller asked staff to let the visitor piggyback through the staff entrance while the badge issue was 'fixed later'. The summary does not record whether staff followed the request.\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Badge voice call summary",
+      "shortSummary": "The badge desk records a caller requesting an exception for an unverified visitor.",
+      "date": "0001-01-01T00:00:00",
+      "body": "The badge desk preserved the request without identifying the staff member who received it.\n\nCall summary:\nCaller claimed to be an executive assistant and said a visitor needed immediate access. The caller asked staff to let the visitor piggyback through the staff entrance while the badge issue was 'fixed later'. The summary does not record whether staff followed the request.\n\nImani",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "questID": "ismg6860_u01_q12",
+  "cityIndex": 6610,
+  "questIconID": "quest_icon_darkweb_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q12_t01",
+    "ismg6860_u01_q12_t02",
+    "ismg6860_u01_q12_t03",
+    "ismg6860_u01_q12_t04"
+  ],
+  "requiredQuestID": "ismg6860_u01_q11",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Shade's Hidden Forum Review",
+      "questDescription": "Shade directs {player} to review an authorized in-world hidden forum from an isolated investigation client. Unlock the client, open the supplied address, choose a non-interactive collection approach, and locate the pinned archive while remembering that isolation reduces risk but does not guarantee anonymity.",
+      "questCompleteText": "<b>Shade:</b> You kept the review passive, reached the supplied forum, and located its pinned archive without contacting participants. The isolated client reduced exposure, but disciplined behavior and clear scope provided the real protection.",
+      "questCharacterID": "u01_shade",
+      "appScenarioID": ""
+    }
+  ]
+}

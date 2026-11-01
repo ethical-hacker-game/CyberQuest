@@ -1,0 +1,31 @@
+{
+  "variants": [
+    {
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u00_q07_t01_evidence_packet",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> I sent the evidence packet to your inbox. It is short on purpose: a good first ticket should be reproducible, not impressive.",
+      "taskInstructions": "",
+      "taskQuestion": "Open the evidence packet.",
+      "taskCompleteText": "<b>Michele:</b> The packet is ready. Check its case ID before we agree on the repair recommendation."
+    },
+    {
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u00_q07_t01_evidence_packet",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> I sent the evidence packet to your inbox. It is short on purpose: a good risk brief should be clear, not sensational.",
+      "taskInstructions": "",
+      "taskQuestion": "Open the evidence packet.",
+      "taskCompleteText": "<b>Ana:</b> The packet is ready. Check its case ID so the brief stays tied to a verifiable record."
+    }
+  ],
+  "taskID": "ismg6860_u00_q07_t01_evidence_mail",
+  "parentQuestID": "ismg6860_u00_q07",
+  "articleID": "u00_security_handoff",
+  "mailsOnStart": [
+    "ismg6860_u00_q07_t01_evidence_packet"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

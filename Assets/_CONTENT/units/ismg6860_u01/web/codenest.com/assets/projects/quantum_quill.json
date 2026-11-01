@@ -1,0 +1,17 @@
+{
+  "id": "quantum-quill",
+  "name": "Quantum Quill",
+  "user": "scribeai",
+  "description": "AI-assisted documentation engine that adapts to developer tone.",
+  "isPublic": true,
+  "files": [
+    {
+      "name": "README.md",
+      "content": "# Quantum Quill\nTransforms dry release notes into playful stories without losing detail."
+    },
+    {
+      "name": "docs.yaml",
+      "content": "metadata:\n  voice: curious\n  depth: detailed"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "articleID": "u03_reward_and_volume_scams",
+  "videoURL": null,
+  "title": "Reward Lures and High-Volume Scams",
+  "content": "Reward lures promise a prize, exclusive item, refund, discount, or limited opportunity in exchange for an action that benefits the attacker. The requested action may be connecting an account, entering credentials, installing an application, paying a small fee, or sharing the offer with other people.\n\n<b>Excitement replaces verification</b>\n\nGiveaways often combine desire with scarcity and urgency: only a few prizes remain, a countdown is running, or immediate entry is required. Familiar branding and community language can make the offer feel socially validated. A legitimate promotion should have verifiable rules, an identifiable organizer, a known domain, and a clear explanation of what information is required. Winning should not require surrendering unrelated account access or authentication secrets.\n\n<b>Volume changes the economics</b>\n\nHigh-volume spam does not need to convince most recipients. Reusing one template across many senders costs little, so a very small response rate can still be profitable. Repetition also creates noise that can hide real security messages and exhaust recipients until one prompt is accepted. Chain messages add another multiplier by persuading trusted contacts to redistribute the lure.\n\nDo not use the promotion's link or account-connection flow to verify it. Check the organizer through an independent website or official application. Preserve the message, sender, destination, promotion terms, campaign markers, and requested permissions or data. Report the batch rather than treating every copy as an isolated event. Warnings should name specific indicators and the safe official route without repeating a live malicious link or blaming recipients who responded.",
+  "links": [
+    "giveaway page",
+    "prize-spam batch"
+  ]
+}

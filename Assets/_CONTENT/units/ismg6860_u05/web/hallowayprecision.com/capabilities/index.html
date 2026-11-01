@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capabilities &mdash; Halloway Precision Manufacturing</title>
+  <style>
+    :root{--ink:#1a1d21;--muted:#606a75;--line:#d5dae0;--steel:#2b4257;--amber:#c8811a}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:#eceff2;line-height:1.55}
+    header{background:var(--steel);color:#fff;border-bottom:4px solid var(--amber)}
+    .topbar{display:flex;justify-content:space-between;gap:24px;max-width:1140px;margin:auto;padding:9px 24px;font-size:12.5px;color:#c3d2df}
+    .brand{max-width:1140px;margin:auto;padding:26px 24px 22px;display:flex;align-items:center;gap:18px}
+    .mark{width:46px;height:46px;flex:none;border:3px solid var(--amber);border-radius:3px;position:relative}
+    .mark::after{content:"";position:absolute;inset:8px;background:var(--amber);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+    .brand h1{margin:0;font-size:30px;letter-spacing:.4px}
+    .brand p{margin:4px 0 0;color:#c3d2df;font-size:14px}
+    nav{background:#fff;border-bottom:1px solid var(--line)}
+    nav .inner{max-width:1140px;margin:auto;display:flex;gap:2px;padding:0 24px}
+    nav a{color:#2c4257;text-decoration:none;padding:13px 16px;font-weight:600;font-size:14px}
+    nav a.active{background:#e9eef3;color:#1b2c3c}
+    main{max-width:1140px;margin:26px auto;padding:0 24px 48px}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:5px;padding:22px;margin-bottom:24px}
+    .panel h2,.panel h3{margin-top:0;color:#1f3346}
+    .muted{color:var(--muted)}
+    table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;border-bottom:1px solid var(--line);padding:9px 8px;font-size:14px}
+    th{color:#34465b;background:#f1f4f7}
+    footer{border-top:1px solid var(--line);background:#fff;color:var(--muted);font-size:13px;padding:20px 24px;text-align:center}
+    @media(max-width:760px){.brand h1{font-size:23px}nav .inner{overflow:auto}.topbar{display:block}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar"><span>ISO 9001:2015 &middot; AS9100D certified</span><span>Plant 2 &middot; Rockford, Illinois</span></div>
+    <div class="brand">
+      <div class="mark" aria-hidden="true"></div>
+      <div>
+        <h1>Halloway Precision Manufacturing</h1>
+        <p>Close-tolerance machined components for aerospace and automotive suppliers.</p>
+      </div>
+    </div>
+  </header>
+  <nav><div class="inner">
+    <a href="../index.html">Home</a>
+    <a class="active" href="index.html">Capabilities</a>
+    <a href="../quality/index.html">Quality</a>
+    <a href="../contact/index.html">Contact</a>
+  </div></nav>
+  <main>
+    <div class="panel">
+      <h2>Machining</h2>
+      <p>Two plants run twenty-eight CNC machining centres across milling, turning, and grinding. Programming is done in-house against customer models, and first-article inspection is completed before any production release.</p>
+      <table>
+        <thead><tr><th>Cell</th><th>Machines</th><th>Envelope</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>5-axis milling</td><td>9</td><td>630 mm cube</td><td>Simultaneous 5-axis, thermal compensation</td></tr>
+          <tr><td>3-axis milling</td><td>7</td><td>1000 &times; 510 mm</td><td>High-volume fixture plates</td></tr>
+          <tr><td>Swiss turning</td><td>8</td><td>2 &ndash; 32 mm dia.</td><td>Bar-fed, lights-out capable</td></tr>
+          <tr><td>Centreless grinding</td><td>4</td><td>1 &ndash; 80 mm dia.</td><td>Through-feed and in-feed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <h2>Process control and traceability</h2>
+      <p>Machine telemetry, tool life, and in-process gauging data are collected continuously by our process historian and retained for the life of each programme. Lot traceability runs from certified raw stock through heat treat, finishing, and final inspection.</p>
+      <p class="muted">Historian and manufacturing-execution integration was originally commissioned by an external systems integrator. Data retention and reporting are maintained by Halloway IT Operations.</p>
+    </div>
+    <div class="panel">
+      <h2>Materials</h2>
+      <p>Nickel superalloys (Inconel 625/718, Waspaloy), titanium (Ti-6Al-4V, Ti-6-2-4-2), stainless (303, 316, 17-4 PH, 15-5 PH), hardened tool steels, aluminium (7075, 6061), and engineering plastics including PEEK and Torlon.</p>
+    </div>
+  </main>
+  <footer>&copy; 2026 Halloway Precision Manufacturing &middot; 4400 Kishwaukee Street, Rockford, IL 61109</footer>
+  <script src="../../cq-bridge.js"></script>
+</body>
+</html>

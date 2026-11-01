@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the decoded destination exactly enough to distinguish it from Harborview's real badge workflow.",
+      "taskInstructions": "Type the domain and path shown by the decoder. The <b>https://</b> prefix is optional.",
+      "taskQuestion": "What URL does the QR sticker resolve to?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: harbor-badge-verify.com/revalidate, an external lookalike domain.",
+      "correctAnswers": ["harbor-badge-verify.com/revalidate"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the decoded route. Its carefully chosen lookalike domain is more useful than the wording printed on the sticker.",
+      "taskInstructions": "Type the domain and path shown by the decoder. The <b>https://</b> prefix is optional.",
+      "taskQuestion": "What URL does the QR sticker resolve to?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: harbor-badge-verify.com/revalidate, an external lookalike domain.",
+      "correctAnswers": ["harbor-badge-verify.com/revalidate"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A useful warning should name the exact destination so visitors can recognize and avoid it.",
+      "taskInstructions": "Type the domain and path shown by the decoder. The <b>https://</b> prefix is optional.",
+      "taskQuestion": "What URL does the QR sticker resolve to?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: harbor-badge-verify.com/revalidate. Put that indicator on the entrance warning.",
+      "correctAnswers": ["harbor-badge-verify.com/revalidate"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q07_t02",
+  "parentQuestID": "ismg6860_u03_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

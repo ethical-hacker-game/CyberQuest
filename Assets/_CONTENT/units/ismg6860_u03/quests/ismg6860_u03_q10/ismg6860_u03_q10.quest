@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u03_q10",
+  "cityIndex": 5140,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q10_t01",
+    "ismg6860_u03_q10_t02",
+    "ismg6860_u03_q10_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Lucky Squad Drop",
+      "questDescription": "Inspect a mobile-game giveaway that requests LanternPass credentials and carries a familiar campaign marker.",
+      "questCompleteText": "<b>Asha Moreno:</b> The external credential request is documented, and the shared marker is recorded as a campaign lead.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Lucky Squad Drop",
+      "questDescription": "Inspect how a game-community giveaway exchanges a chance at a prize for LanternPass credentials.",
+      "questCompleteText": "<b>Felix Rane:</b> The external credential request and reused campaign marker are both documented.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Lucky Squad Drop",
+      "questDescription": "Collect the credential-request and marker evidence needed to warn the game community without blaming players.",
+      "questCompleteText": "<b>Imani Vale:</b> The warning can now name the external credential request and the marker connecting it to the investigation.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

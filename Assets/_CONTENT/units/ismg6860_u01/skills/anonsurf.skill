@@ -1,0 +1,9 @@
+{
+  "skillID": "anonsurf",
+  "skillName": "AnonSurf",
+  "skillDescription": "An isolated in-world browsing client for authorized hidden-service research. It separates case activity from everyday accounts and files, reducing exposure without guaranteeing anonymity or safety.",
+  "price": 5000,
+  "order": 30,
+  "requireTask": true,
+  "lockInDemo": false
+}

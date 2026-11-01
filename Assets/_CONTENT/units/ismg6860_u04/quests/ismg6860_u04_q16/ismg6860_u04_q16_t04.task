@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Choose the remediation that removes the confirmed local escalation condition and reduces unnecessary privilege.",
+      "taskInstructions": "Use the service-permission guidance in <link=\"u04_privilege_escalation_condition\"><u>privilege-escalation conditions</u></link>.",
+      "taskQuestion": "What is the best remediation?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Restricting service modification and removing unnecessary admin rights reduces escalation risk.",
+      "answers": [
+        "Publish the vulnerable service path publicly in the name of transparency.",
+        "Disable automatic patching entirely just to avoid any unexpected reboots.",
+        "Ignore the finding entirely unless full exploitation is first clearly proven.",
+        "Harden the weak service permissions and remove any unnecessary local admin rights."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Identify the change that removes the writable-service opening instead of merely monitoring it.",
+      "taskInstructions": "Use the service-permission guidance in <link=\"u04_privilege_escalation_condition\"><u>privilege-escalation conditions</u></link>.",
+      "taskQuestion": "What is the best remediation?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Corrected permissions and least privilege break the modeled escalation route.",
+      "answers": [
+        "Publish the vulnerable service path publicly in the name of transparency.",
+        "Disable automatic patching entirely just to avoid any unexpected reboots.",
+        "Ignore the finding entirely unless full exploitation is first clearly proven.",
+        "Harden the weak service permissions and remove any unnecessary local admin rights."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Select the concrete change that prevents non-admin users from modifying the service and reduces excessive local privilege.",
+      "taskInstructions": "Use the service-permission guidance in <link=\"u04_privilege_escalation_condition\"><u>privilege-escalation conditions</u></link>.",
+      "taskQuestion": "What is the best remediation?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Fixing permissions reduces the impact of a future low-privilege compromise.",
+      "answers": [
+        "Publish the vulnerable service path publicly in the name of transparency.",
+        "Disable automatic patching entirely just to avoid any unexpected reboots.",
+        "Ignore the finding entirely unless full exploitation is first clearly proven.",
+        "Harden the weak service permissions and remove any unnecessary local admin rights."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q16_t04",
+  "parentQuestID": "ismg6860_u04_q16",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

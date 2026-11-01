@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Internal workstations are not automatically trusted administration sources.",
+      "taskInstructions": "Use <link=\"u04_admin_service_segmentation\"><u>admin-service segmentation</u></link>.",
+      "taskQuestion": "True or false: RDP should be reachable from every internal subnet.",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. RDP should be limited to approved management hosts and blocked from general subnets.",
+      "correctAnswer": false
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Broad internal RDP reach turns an ordinary workstation foothold into a management path.",
+      "taskInstructions": "Use <link=\"u04_admin_service_segmentation\"><u>admin-service segmentation</u></link>.",
+      "taskQuestion": "True or false: RDP should be reachable from every internal subnet.",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Approved jump hosts should be the only RDP sources.",
+      "correctAnswer": false
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A compromised staff or contractor device should not inherit access to administrative services.",
+      "taskInstructions": "Use <link=\"u04_admin_service_segmentation\"><u>admin-service segmentation</u></link>.",
+      "taskQuestion": "True or false: RDP should be reachable from every internal subnet.",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Segmentation limits how far one compromised device can reach.",
+      "correctAnswer": false
+    }
+  ],
+  "taskID": "ismg6860_u04_q14_t03",
+  "parentQuestID": "ismg6860_u04_q14",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "TrueFalse"
+}

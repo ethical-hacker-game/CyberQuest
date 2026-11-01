@@ -1,0 +1,9 @@
+{
+  "skillID": "whoislens",
+  "skillName": "WHOIS Lens",
+  "skillDescription": "Training for reading registration records in context. Helps you identify registrant, registrar, date, status, and name-server fields and document what a domain lookup exposes.",
+  "price": 3000,
+  "order": 20,
+  "requireTask": true,
+  "lockInDemo": false
+}

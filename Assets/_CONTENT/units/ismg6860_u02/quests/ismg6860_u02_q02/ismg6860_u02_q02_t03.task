@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The public status portal shows which rider services must remain online during our work. Open it before we send any scan traffic.",
+      "taskInstructions": "Enter <b>portal.asterlinktransit.com/status</b> in the browser address bar.",
+      "taskQuestion": "Open the Asterlink Transit status portal.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Ticketing, signage, and platform status boards must remain available throughout the scan window.",
+      "correctAnswer": "portal.asterlinktransit.com/status"
+    }
+  ],
+  "taskID": "ismg6860_u02_q02_t03",
+  "parentQuestID": "ismg6860_u02_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

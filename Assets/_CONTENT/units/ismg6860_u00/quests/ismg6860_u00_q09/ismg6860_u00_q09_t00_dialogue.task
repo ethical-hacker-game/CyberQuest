@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> We have a case code from the portal and an address from DNS. Those details need to stay together when someone else picks up the investigation.\n\nEquip the Case Journal before we continue. It keeps confirmed evidence with the case, where the next person can check it.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Ed:</b> The Case Journal is available in the Lab. Add it to your kit so we can keep a reliable record."
+    }
+  ],
+  "taskID": "ismg6860_u00_q09_t00_dialogue",
+  "parentQuestID": "ismg6860_u00_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

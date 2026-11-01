@@ -1,0 +1,47 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "support-legacy",
+        "/support-legacy/",
+        "support legacy"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Nothing on the visible pages helps, which is roughly what I expected. The navigation is the part somebody maintains.\n\nUnlinking a page is not the same as removing it, so if anything from the BridgeWorks era is still on that server it is still being served. It simply is not in any menu.",
+      "taskInstructions": "Run <b>dirb https://hallowayprecision.com/</b> in the terminal and compare the returned directories with the site's visible navigation.",
+      "taskQuestion": "Which unlinked directory does the content scan find?",
+      "taskCompleteText": "<b>Dana Osei:</b> /support-legacy/ returns content but is absent from the visible navigation you reviewed."
+    },
+    {
+      "correctAnswers": [
+        "support-legacy",
+        "/support-legacy/",
+        "support legacy"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> The navigation tells you what they maintain. What I want is what they stopped maintaining. Content discovery does not care about menus: it asks the server directly, and a server will keep answering for a path long after the last person who knew about it walked out.",
+      "taskInstructions": "Run <b>dirb https://hallowayprecision.com/</b> in the terminal and compare the returned directories with the site's visible navigation.",
+      "taskQuestion": "Which unlinked directory does the content scan find?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> /support-legacy/ is still served despite being absent from the visible navigation."
+    },
+    {
+      "correctAnswers": [
+        "support-legacy",
+        "/support-legacy/",
+        "support legacy"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Whatever is still online but delisted is exactly what nobody made a decision about. Somebody took it out of the menu, called that closing it down, and it has been serving ever since. That gap between what they think is gone and what is actually still there is the story.",
+      "taskInstructions": "Run <b>dirb https://hallowayprecision.com/</b> in the terminal and compare the returned directories with the site's visible navigation.",
+      "taskQuestion": "Which unlinked directory does the content scan find?",
+      "taskCompleteText": "<b>Priya Nandan:</b> /support-legacy/ is the verified unlinked path. Its contents now need precise review."
+    }
+  ],
+  "taskID": "ismg6860_u05_q14_t02",
+  "parentQuestID": "ismg6860_u05_q14",
+  "articleID": "u05_web_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

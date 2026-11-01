@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "decisionText": "Request written authorization for a defined, monitored impact test.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Continue beyond the approved scope without notifying Northbridge.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Prepare a protected disclosure if Northbridge suppresses or delays the verified finding.",
+      "personaIndex": 2,
+      "personaValueChange": 10
+    }
+  ],
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Reflected XSS in citizen-search is confirmed. Session access, resident-data exposure, and any connection to internal systems are not. Testing those effects would require new actions beyond the current scope.",
+      "taskInstructions": "Read <link=\"u04_scope_expansion\"><u>expanding an assessment scope</u></link>, then decide how to handle the untested impact.",
+      "taskQuestion": "How do you handle the scope pressure?",
+      "taskCompleteText": "<b>Mara Voss:</b> Understood. The next phase will proceed according to your decision."
+    }
+  ],
+  "taskID": "ismg6860_u04_d02_decision",
+  "parentQuestID": "ismg6860_u04_d02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision"
+}

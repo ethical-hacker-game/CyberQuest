@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u05_q08",
+  "cityIndex": 7236,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q08_t00_unlock_zonetransferkit",
+    "ismg6860_u05_q08_t01",
+    "ismg6860_u05_q08_t02",
+    "ismg6860_u05_q08_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "DNS Enumeration",
+      "questDescription": "Dana Osei needs Halloway's published DNS footprint documented. Test whether the nameserver permits an unauthorized zone transfer and flag records outside the known address allocation for review.",
+      "questCompleteText": "<b>Dana Osei:</b> The unauthorized zone transfer returned the full current zone, including remote.hallowayprecision.com at 198.51.100.77 outside Halloway's documented allocation. Ownership and service exposure still require verification.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "DNS Enumeration",
+      "questDescription": "Reyes Calloway calls a permissive zone transfer cheap reconnaissance. One query can expose the current hostnames, mail routing, and addresses in Halloway's zone.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The full current zone is exposed, including a remote hostname outside Halloway's documented allocation. That record is a lead, not proof of who controls the endpoint.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "DNS Enumeration",
+      "questDescription": "Priya Nandan wants the published footprint documented precisely. Test the zone transfer and identify any record that resolves outside Halloway's known allocation.",
+      "questCompleteText": "<b>Priya Nandan:</b> Halloway's nameserver disclosed the current zone and a remote record outside its documented allocation. The endpoint must be investigated before anyone claims active access.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

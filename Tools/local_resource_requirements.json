@@ -1,0 +1,789 @@
+{
+  "purpose": "Local licensed resource recreation/input requirements; contains no texture, font, vendor source or scene payload.",
+  "acceptance": "Only the declared file identities are accepted. A newly recreated variant needs a reviewed new catalogue identity; do not bypass hashes.",
+  "resources": [
+    {
+      "package": "beam",
+      "target": "Assets/Beam - Complete Fluent UI/Fonts/Rajdhani-Light SDF Glow.asset",
+      "guid": "3c1ee8e53d510ce4fa88393afebdaa71",
+      "expected": {
+        "hash": "0ae95c4ff6c04a882e6c552dfa5b38d194927523c9e8b7d6f498140e3f39366f",
+        "hash_mode": "utf8-lf",
+        "bytes": 591625
+      },
+      "font": {
+        "source_font_guids": [
+          "8d1bd003b1fb64f4b85afabd88c97335"
+        ],
+        "unicode_codepoints": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          196,
+          197,
+          199,
+          214,
+          220,
+          228,
+          229,
+          231,
+          246,
+          252,
+          286,
+          287,
+          304,
+          305,
+          350,
+          351,
+          8203,
+          8230
+        ],
+        "settings": {
+          "m_AtlasWidth": [
+            "512"
+          ],
+          "m_AtlasHeight": [
+            "512"
+          ],
+          "m_AtlasPadding": [
+            "5"
+          ],
+          "m_AtlasRenderMode": [
+            "4165"
+          ],
+          "m_AtlasPopulationMode": [
+            "0"
+          ],
+          "m_PointSize": [
+            "77"
+          ]
+        },
+        "material_overrides": [
+          "- _OutlineTex:",
+          "- _FaceDilate: 0",
+          "- _GlowInner: 0",
+          "- _GlowOffset: 1",
+          "- _GlowOuter: 1",
+          "- _GlowPower: 0.069",
+          "- _OutlineSoftness: 0",
+          "- _OutlineUVSpeedX: 0",
+          "- _OutlineUVSpeedY: 0",
+          "- _OutlineWidth: 0",
+          "- _GlowColor: {r: 0.21176471, g: 0.54901963, b: 0.7058824, a: 0.5019608}",
+          "- _OutlineColor: {r: 0, g: 0, b: 0, a: 1}"
+        ]
+      }
+    },
+    {
+      "package": "beam",
+      "target": "Assets/Beam - Complete Fluent UI/Fonts/Rajdhani-Light SDF Glow.asset.meta",
+      "guid": "3c1ee8e53d510ce4fa88393afebdaa71",
+      "expected": {
+        "hash": "125151045546e07f2344b1e05bd0a4ed2b28ac82d5b9ae89261869606b1e6e7a",
+        "hash_mode": "utf8-lf",
+        "bytes": 197
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "beam",
+      "target": "Assets/Beam - Complete Fluent UI/Fonts/Rajdhani-Light SDF.asset",
+      "guid": "a4412f15afcccfd4591f5f064f5004b4",
+      "expected": {
+        "hash": "44b64bd5356198301111f7e46748cdeba0471aa3a0ed223cf7f528d7ad9c17b1",
+        "hash_mode": "utf8-lf",
+        "bytes": 591603
+      },
+      "font": {
+        "source_font_guids": [
+          "8d1bd003b1fb64f4b85afabd88c97335"
+        ],
+        "unicode_codepoints": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          196,
+          197,
+          199,
+          214,
+          220,
+          228,
+          229,
+          231,
+          246,
+          252,
+          286,
+          287,
+          304,
+          305,
+          350,
+          351,
+          8203,
+          8230
+        ],
+        "settings": {
+          "m_AtlasWidth": [
+            "512"
+          ],
+          "m_AtlasHeight": [
+            "512"
+          ],
+          "m_AtlasPadding": [
+            "5"
+          ],
+          "m_AtlasRenderMode": [
+            "4165"
+          ],
+          "m_AtlasPopulationMode": [
+            "0"
+          ],
+          "m_PointSize": [
+            "77"
+          ]
+        },
+        "material_overrides": [
+          "- _OutlineTex:",
+          "- _FaceDilate: 0",
+          "- _GlowInner: 0",
+          "- _GlowOffset: 1",
+          "- _GlowOuter: 1",
+          "- _GlowPower: 0.069",
+          "- _OutlineSoftness: 0",
+          "- _OutlineUVSpeedX: 0",
+          "- _OutlineUVSpeedY: 0",
+          "- _OutlineWidth: 0",
+          "- _GlowColor: {r: 0.21026166, g: 0.5477852, b: 0.7075472, a: 0.5}",
+          "- _OutlineColor: {r: 0, g: 0, b: 0, a: 1}"
+        ]
+      }
+    },
+    {
+      "package": "beam",
+      "target": "Assets/Beam - Complete Fluent UI/Presets/AchievementsPresentation.asset",
+      "guid": "133b6d70e0aaec34f92e02153d883f1c",
+      "expected": {
+        "hash": "2f377a248d6374aee25e2991e72e8d7c8803a6404f60a204e7226fe0d1a5428f",
+        "hash_mode": "utf8-lf",
+        "bytes": 24311
+      },
+      "resource_type": "Configured ScriptableObject; restore from the local configured resource with matching script/GUID bindings."
+    },
+    {
+      "package": "beam",
+      "target": "Assets/Beam - Complete Fluent UI/Presets/AchievementsPresentation.asset.meta",
+      "guid": "133b6d70e0aaec34f92e02153d883f1c",
+      "expected": {
+        "hash": "287707a3c6017cd1444e4a62fc31e4e06d24ee576af147a659f188846cff7a27",
+        "hash_mode": "utf8-lf",
+        "bytes": 197
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "beam",
+      "target": "Assets/_ASSETS/Beam - Complete Fluent UI/Textures/Shadows/Gradient/Vertical Gradient Shadow Rotated.png",
+      "guid": "b72930fb7c3f17e4fa1c9920b645ccda",
+      "expected": {
+        "hash": "d0728fc70be533219d70a5d3a970fbd9f2a754311ae46b6c0ba40440ca819a01",
+        "hash_mode": "bytes",
+        "bytes": 534579
+      },
+      "image": {
+        "width": 2048,
+        "height": 1024,
+        "mode": "RGBA"
+      }
+    },
+    {
+      "package": "beam",
+      "target": "Assets/_ASSETS/Beam - Complete Fluent UI/Textures/Shadows/Gradient/Vertical Gradient Shadow Rotated.png.meta",
+      "guid": "b72930fb7c3f17e4fa1c9920b645ccda",
+      "expected": {
+        "hash": "f4f71da377b3ff7151c6420a9df7be3cf2e28368e9830f6aa58e437ebdd3132f",
+        "hash_mode": "utf8-lf",
+        "bytes": 2881
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "charts",
+      "target": "Assets/Chart And Graph/Prefabs/Text/_Icon.prefab",
+      "guid": "7125d78453f9f804681e3749d3f11ba2",
+      "expected": {
+        "hash": "7e6a07bfbcf8f175e9ff766a69f998b2142cad2fd43dfac086243cf360aef964",
+        "hash_mode": "utf8-lf",
+        "bytes": 9093
+      },
+      "resource_type": "Configured chart icon prefab; preserve local hierarchy and image/script bindings."
+    },
+    {
+      "package": "charts",
+      "target": "Assets/Chart And Graph/Prefabs/Text/_Icon.prefab.meta",
+      "guid": "7125d78453f9f804681e3749d3f11ba2",
+      "expected": {
+        "hash": "d0d5923d27524fb2722011d6478d20ae4ae2061e9d26649dd6d2fc002a1254f6",
+        "hash_mode": "utf8-lf",
+        "bytes": 189
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "charts",
+      "target": "Assets/_ASSETS/Chart And Graph/Tutorials/Large Data Graph/LargeDataFeed.cs",
+      "guid": "858eac91acdb9154ea539c6c801e5624",
+      "expected": {
+        "hash": "c1c02f1be7ddc40f5fdb4f076d4c71991ffca67c0ed81248a8810ff799e2f8f5",
+        "hash_mode": "utf8-lf",
+        "bytes": 12329
+      },
+      "resource_type": "Locally configured package file; use the exact declared file identity."
+    },
+    {
+      "package": "charts",
+      "target": "Assets/_ASSETS/Chart And Graph/Tutorials/Misc/CustomAxisDivisions/MonthWeekDayYear.cs",
+      "guid": "dfed5cd626b38c644b9571ce46639998",
+      "expected": {
+        "hash": "a01984d8a17938e9f02f5d9449510995af1c5308ee1216f6b5166fb6efa7127f",
+        "hash_mode": "utf8-lf",
+        "bytes": 5992
+      },
+      "resource_type": "Locally configured package file; use the exact declared file identity."
+    },
+    {
+      "package": "charts",
+      "target": "Assets/_ASSETS/Chart And Graph/Tutorials/StackedGraph/StackedGraphManager.cs",
+      "guid": "6b8aeb1ab592de245a470cee8d4cc343",
+      "expected": {
+        "hash": "b01463254a23b2fd03aa02839d97228c3017fd2f844bc8be434de37188f1f590",
+        "hash_mode": "utf8-lf",
+        "bytes": 8089
+      },
+      "resource_type": "Locally configured package file; use the exact declared file identity."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map.meta",
+      "guid": "cd783e1253b21c1418f257dd5058d480",
+      "expected": {
+        "hash": "b25ff5f62aeb6ecc8de8dee8baa95fb0dbf2678e8ce7a0de74edc83910120ef4",
+        "hash_mode": "utf8-lf",
+        "bytes": 172
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/EarthForMap.png",
+      "guid": "bb14ac7a1e1ef574fae6c8ec34c6e962",
+      "expected": {
+        "hash": "3c832c1886267e94ebe581084247358d8395e15254d433d3d34a3da0cd775c96",
+        "hash_mode": "bytes",
+        "bytes": 6653407
+      },
+      "image": {
+        "width": 8192,
+        "height": 4096,
+        "mode": "RGBA"
+      }
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/EarthForMap.png.meta",
+      "guid": "bb14ac7a1e1ef574fae6c8ec34c6e962",
+      "expected": {
+        "hash": "50a1b301f5d226bcdc3be3108f04e1182d78e7271a8574801a740dd96bcd372a",
+        "hash_mode": "utf8-lf",
+        "bytes": 3303
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/EarthForMap_NoAntarctica.png",
+      "guid": "5d243f14ffe8a774c9c5a02731dd39e1",
+      "expected": {
+        "hash": "7c189fa436e4f82ad902065c035eab82abf19abb12c0d378c0c29decac6acde2",
+        "hash_mode": "bytes",
+        "bytes": 6048695
+      },
+      "image": {
+        "width": 8192,
+        "height": 4096,
+        "mode": "RGBA"
+      }
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/EarthForMap_NoAntarctica.png.meta",
+      "guid": "5d243f14ffe8a774c9c5a02731dd39e1",
+      "expected": {
+        "hash": "9e57a2a63c32f096d705390d6390c733d14071eba474df441b7b6aa77d71e45e",
+        "hash_mode": "utf8-lf",
+        "bytes": 3303
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg2K.jpeg",
+      "guid": "192278a24186f9642b7689eb42c16530",
+      "expected": {
+        "hash": "9ba4025e89436779789cff572fa946acacb4d174cea3c85ecac0ffb4972878ce",
+        "hash_mode": "bytes",
+        "bytes": 1225425
+      },
+      "image": {
+        "width": 1920,
+        "height": 960,
+        "mode": "RGB"
+      }
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg2K.jpeg.meta",
+      "guid": "192278a24186f9642b7689eb42c16530",
+      "expected": {
+        "hash": "a645ebffca0e1ad6caf157abd7f92963650df59da11bba1f1e45731ebd6a0ea3",
+        "hash_mode": "utf8-lf",
+        "bytes": 3335
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg4K.jpeg",
+      "guid": "dc2781413cc9b9645b7a6e264cf6e125",
+      "expected": {
+        "hash": "4700f67416e12168d7189d9d3678020ce7e02e114483c215eec74195b8e9afbb",
+        "hash_mode": "bytes",
+        "bytes": 3207539
+      },
+      "image": {
+        "width": 3840,
+        "height": 1920,
+        "mode": "RGB"
+      }
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg4K.jpeg.meta",
+      "guid": "dc2781413cc9b9645b7a6e264cf6e125",
+      "expected": {
+        "hash": "bcb08e6149e10e703af7464b8aabdca5e4ed371bb406ba3b38791bf2c1ec131a",
+        "hash_mode": "utf8-lf",
+        "bytes": 3335
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg4K_lowGrid.jpeg",
+      "guid": "d424f0ceb7228d545947ea56cbc6b4f0",
+      "expected": {
+        "hash": "8825003aeff758683edcbc36dfae58ceb43c11713a0e76ce99640a1eeb0af162",
+        "hash_mode": "bytes",
+        "bytes": 3196863
+      },
+      "image": {
+        "width": 3840,
+        "height": 1920,
+        "mode": "RGB"
+      }
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg4K_lowGrid.jpeg.meta",
+      "guid": "d424f0ceb7228d545947ea56cbc6b4f0",
+      "expected": {
+        "hash": "cefeab26b1ae6011dcc87e7451ed32e863d5d7fc2001e689e085f8038778b460",
+        "hash_mode": "utf8-lf",
+        "bytes": 3335
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg4K_noGrid.jpeg",
+      "guid": "578c2544a4e93ea4d87455b694a6b882",
+      "expected": {
+        "hash": "e46014f5299224a0e117271352a2b41bbeda86c6cfbad9a8d2e1dab0e21863c0",
+        "hash_mode": "bytes",
+        "bytes": 2624214
+      },
+      "image": {
+        "width": 3840,
+        "height": 1920,
+        "mode": "RGB"
+      }
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg4K_noGrid.jpeg.meta",
+      "guid": "578c2544a4e93ea4d87455b694a6b882",
+      "expected": {
+        "hash": "f41db8d99393ec4d03c5abe3df80881b7eaf06151368bb005d0abb570c0175d1",
+        "hash_mode": "utf8-lf",
+        "bytes": 3335
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg4K_white.jpeg",
+      "guid": "462d6b606ab5e8c42becacd5b664127d",
+      "expected": {
+        "hash": "fb385a949388b8a1f5f8eedebcca840012c7d24ba7ea7456f86cfcebac5b5127",
+        "hash_mode": "bytes",
+        "bytes": 2635545
+      },
+      "image": {
+        "width": 3840,
+        "height": 1920,
+        "mode": "RGB"
+      }
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg4K_white.jpeg.meta",
+      "guid": "462d6b606ab5e8c42becacd5b664127d",
+      "expected": {
+        "hash": "072fa70f65f0cdf97423a14cb1e3cbb7f8a38090cc99acc5e872b50e03ff16d6",
+        "hash_mode": "utf8-lf",
+        "bytes": 3335
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg8K.jpeg",
+      "guid": "ba865d0ba8ce6b14d8c2b088dbaf29aa",
+      "expected": {
+        "hash": "b391414025defea66dad9abe0ae3fab37ce589b155065329317cf640b5d01b72",
+        "hash_mode": "bytes",
+        "bytes": 9385261
+      },
+      "image": {
+        "width": 7680,
+        "height": 3840,
+        "mode": "RGB"
+      }
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/Textures/Map/MapBg8K.jpeg.meta",
+      "guid": "ba865d0ba8ce6b14d8c2b088dbaf29aa",
+      "expected": {
+        "hash": "5a99e06161bd0607b69b82a460d328a160561e5f33cbe4203fa7bdaa9bcd62ee",
+        "hash_mode": "utf8-lf",
+        "bytes": 3335
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/WorldPoliticalMapGlobeEdition/Demos/06 City Travel/Resources/Airplane/AirplaneOriginal.fbx.meta",
+      "guid": "3c199ab14d0234bbd9c6c31b8e0592e1",
+      "expected": {
+        "hash": "ffe5b8af1edf62ad6af7cf5d84dac2916f58c1a8ffff10e35dc1a0250fab0978",
+        "hash_mode": "utf8-lf",
+        "bytes": 4973
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/WorldPoliticalMapGlobeEdition/Demos/06 City Travel/Resources/Airplane/Materials/AirplaneMat.mat.meta",
+      "guid": "bd87e36bf0515449cb0d2f2342b9a790",
+      "expected": {
+        "hash": "9e931b7ccb7dcd4731658d22021052faab2cc09cc9ae9b7cb3c1ba3745758e76",
+        "hash_mode": "utf8-lf",
+        "bytes": 450
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/WorldPoliticalMapGlobeEdition/Demos/11 Fog of War/Resources/Tower/Materials/mage_tower_uv.mat.meta",
+      "guid": "f8fd3bacc0fcc42e1aa241bde6e10e83",
+      "expected": {
+        "hash": "fdb3ad00a54eadf39a810bdeb68c9dcdc6403db7bbc0969db3fcc844babd2591",
+        "hash_mode": "utf8-lf",
+        "bytes": 441
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "globe",
+      "target": "Assets/_ASSETS/WorldPoliticalMapGlobeEdition/Demos/11 Fog of War/Resources/Tower/towerObj.fbx.meta",
+      "guid": "5aaae7a682a564d2697ba694469a6984",
+      "expected": {
+        "hash": "24cb8a0da6e17b3d9daab1d74cf40e3ee169644192706dce5552198a24511956",
+        "hash_mode": "utf8-lf",
+        "bytes": 2079
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "icons",
+      "target": "Assets/_ASSETS/Simple Vector Icons/128px/UI_Icon_ArrowRightDouble.png",
+      "guid": "2255bc7c5eee5ef43aef8779b672489c",
+      "expected": {
+        "hash": "fb46ff10b196167ac783a9116891c8da588565e78144e764a5afef77d14f8564",
+        "hash_mode": "bytes",
+        "bytes": 7292
+      },
+      "image": {
+        "width": 128,
+        "height": 128,
+        "mode": "RGBA"
+      }
+    },
+    {
+      "package": "icons",
+      "target": "Assets/_ASSETS/Simple Vector Icons/128px/UI_Icon_ArrowRightDouble.png.meta",
+      "guid": "2255bc7c5eee5ef43aef8779b672489c",
+      "expected": {
+        "hash": "146c1142e5b66057411caafefa56ee378f8f0e3654ee7b3af14df389204325b4",
+        "hash_mode": "utf8-lf",
+        "bytes": 3087
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "icons",
+      "target": "Assets/_ASSETS/Simple Vector Icons/128px/UI_Icon_JumpDownArrows.png",
+      "guid": "2dcda2d5c1296204e93e53db897de387",
+      "expected": {
+        "hash": "174e5ba5eb756c5542173784bc2ea08d13b88667a248f217c014c4da395d4a58",
+        "hash_mode": "bytes",
+        "bytes": 7301
+      },
+      "image": {
+        "width": 128,
+        "height": 128,
+        "mode": "RGBA"
+      }
+    },
+    {
+      "package": "icons",
+      "target": "Assets/_ASSETS/Simple Vector Icons/128px/UI_Icon_JumpDownArrows.png.meta",
+      "guid": "2dcda2d5c1296204e93e53db897de387",
+      "expected": {
+        "hash": "19d8dc5fba31d8c43eda5b3eb21562b5117c339d370393ba64f1e01812599467",
+        "hash_mode": "utf8-lf",
+        "bytes": 2809
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    },
+    {
+      "package": "icons",
+      "target": "Assets/_ASSETS/Simple Vector Icons/128px/UI_Icon_Trophy_Shape.png",
+      "guid": "3331ce5f06437c541ade7176f1a5ebdc",
+      "expected": {
+        "hash": "af0b2051158de803ae9f59b43d34eb326b9db058206c11b6d89ecebee408cc0f",
+        "hash_mode": "bytes",
+        "bytes": 5986
+      },
+      "image": {
+        "width": 128,
+        "height": 128,
+        "mode": "RGBA"
+      }
+    },
+    {
+      "package": "icons",
+      "target": "Assets/_ASSETS/Simple Vector Icons/128px/UI_Icon_Trophy_Shape.png.meta",
+      "guid": "3331ce5f06437c541ade7176f1a5ebdc",
+      "expected": {
+        "hash": "ca78d63b18e7f09dfd77fe662ed7e40ee646c3f556a000b0ac680b06e08cb40f",
+        "hash_mode": "utf8-lf",
+        "bytes": 3087
+      },
+      "resource_type": "Unity metadata/importer settings; keep with its matching asset and preserve the declared GUID."
+    }
+  ]
+}

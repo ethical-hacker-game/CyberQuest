@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Ilya wants the vendor block included without delay. Lena wants the camera exclusions challenged before launch. Both concerns may be valid, but neither changes our written authorization. Choose the position you are prepared to defend.",
+      "taskInstructions": "",
+      "taskQuestion": "How do you respond to the pressure?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> I have your decision. The way you handle this pressure will shape who trusts your findings later."
+    }
+  ],
+  "taskID": "ismg6860_u02_d01_decision",
+  "parentQuestID": "ismg6860_u02_d01",
+  "articleID": "u02_authorized_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision",
+  "decisions": [
+    {
+      "decisionText": "Keep the approved CIDR as the only scan target and request written expansion.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Tell Ilya that vendor ownership is enough permission to include the block privately.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Document the camera exclusion and demand a revised public-interest scope.",
+      "personaIndex": 2,
+      "personaValueChange": 10
+    }
+  ]
+}

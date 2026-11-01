@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The authorized awareness exercise measured aggregate response rates for <b>urgency</b>, fear, belonging, and curiosity. Use the pattern to improve defenses, not to label participants.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Asha Moreno:</b> Start with the aggregate results and keep individual participants out of the analysis."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The authorized exercise ranked <b>urgency</b>, fear, belonging, and curiosity by aggregate response rate. Read the measured pattern instead of relying on anecdotes.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> The aggregate ranking is the useful part; individual names are not."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The authorized exercise measured aggregate responses to <b>urgency</b>, fear, belonging, and curiosity. We can use that pattern without exposing or blaming any participant.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> Use the aggregate pattern to support the warning while protecting participants."
+    }
+  ],
+  "taskID": "ismg6860_u03_q16_t00_voice",
+  "parentQuestID": "ismg6860_u03_q16",
+  "articleID": "u03_human_triggers",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u02_d02_banner_pressure",
+  "parentTaskID": "ismg6860_u02_q06_t03",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Ilya Voss <ilya.voss@railgatesystems.com>",
+      "subject": "Banner wording before launch",
+      "shortSummary": "Ilya asks to soften the ECHO-73 banner finding before the launch review.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Mira,\n\nThe RailGate Diagnostics 3.4.7 banner looks worse than it is. Please do not put the full build string in the launch packet. If people see an old build number, they will assume vulnerability before we explain context.\n\nSay it is a standard diagnostics node and we will update the wording after launch.\n\nIlya",
+      "attachements": []
+    }
+  ]
+}

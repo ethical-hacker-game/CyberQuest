@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u02_q11",
+  "cityIndex": 5001,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q11_t00_unlock_packetcraft",
+    "ismg6860_u02_q11_t01",
+    "ismg6860_u02_q11_t02",
+    "ismg6860_u02_q11_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Custom Signals",
+      "questDescription": "Use controlled ACK, FIN, and fragmentation probes to interpret firewall responses without overstating them.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> The ACK probe was filtered, the FIN result remains ambiguous, and the fragmented probe was dropped and logged.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Custom Signals",
+      "questDescription": "Use custom packet flags to sharpen the map while keeping every conclusion tied to the response.",
+      "questCompleteText": "<b>Kade Mercer:</b> ACK filtering, FIN ambiguity, and the logged fragment drop now define how the boundary responds.",
+      "questCharacterID": "u02_kade_mercer",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Custom Signals",
+      "questDescription": "Document defensive packet responses without turning the report into an evasion guide.",
+      "questCompleteText": "<b>Lena Ortiz:</b> The record explains ACK filtering, FIN uncertainty, and the fragment drop without operationalizing misuse.",
+      "questCharacterID": "u02_lena_ortiz",
+      "appScenarioID": ""
+    }
+  ]
+}

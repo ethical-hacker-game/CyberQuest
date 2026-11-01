@@ -1,0 +1,12 @@
+{
+  "articleID": "u04_host_assessment",
+  "videoURL": null,
+  "title": "Host-Based Assessment and Patch Management",
+  "content": "<b>A host-based assessment examines the security state of an individual endpoint or server from information available on that system.</b> It complements network and application testing by showing what is installed, configured, permitted, and scheduled locally.\n\nUseful evidence includes operating-system and software versions, missing security updates, local services, file and registry permissions, account policy, security controls, logs, startup entries, and scheduled tasks. The result should be tied to a stable asset identity and collection time. A hostname or dashboard color is not enough: record the affected component, observed condition, evidence source, and why it matters for that host's role.\n\nPatch risk is more than a count of missing updates. Prioritize by the severity and age of the issue, whether the vulnerable component is enabled or reachable, known preconditions, asset criticality, available mitigations, and the consequence of failure. A finance workstation, public server, and isolated test machine may need different schedules even when the same update is absent. Unsupported software deserves special attention because future fixes may not exist.\n\nHost hardening also addresses conditions that patches do not fix. Apply least privilege to services and tasks, remove unused software, restrict administrative tools, enforce approved security baselines, protect credentials, and enable useful endpoint logging. Changes should be tested against operational requirements rather than applied blindly to fragile systems.\n\nA measurable remediation cycle is <b>inventory, prioritize, change, verify</b>. Establish the approved baseline, deploy updates or configuration changes through controlled tooling, record failures and exceptions, then rescan or inspect the original condition. An installed update is not proof of closure if the vulnerable service remains active, a restart is pending, or the same weak permission persists. Close the finding only when the expected host state has been verified.",
+  "links": [
+    "host-based",
+    "host posture",
+    "patch risk",
+    "scheduled tasks"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "185.254.57.124",
+        "185.254.57.124."
+      ],
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> Terminal output is not a story by itself. It is one piece of evidence. A short DNS lookup will give us an address we can attach to the same case without expanding scope.",
+      "taskInstructions": "Run <b>dig trainingnorthstar.com</b> in the terminal and read the answer section.",
+      "taskQuestion": "What IPv4 address did the DNS lookup return?",
+      "taskCompleteText": "<b>Ed:</b> Correct. The DNS record points to 185.254.57.124. Keep that address with the case notes."
+    }
+  ],
+  "taskID": "ismg6860_u00_q03_t01_dns_answer",
+  "parentQuestID": "ismg6860_u00_q03",
+  "articleID": "u00_dns_basics",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

@@ -1,0 +1,11 @@
+{
+  "articleID": "u05_countermeasures",
+  "videoURL": null,
+  "title": "Enumeration Countermeasures by Service",
+  "content": "<b>Enumeration findings need controls matched to the evidence and the service.</b>\n\n- <b>SMB and NetBIOS:</b> disable legacy protocols where they are not required, restrict anonymous access, and limit 137-139 and 445 at segment boundaries.\n- <b>SNMP:</b> use SNMPv3 with authentication and privacy (<b>authPriv</b>). If v2c must temporarily remain, restrict it by source; changing the community string alone preserves cleartext exposure.\n- <b>LDAP:</b> disable anonymous bind and require LDAPS or STARTTLS where supported.\n- <b>NTP:</b> use approved managed sources and monitor offset and drift.\n- <b>SMTP:</b> reduce recipient enumeration by normalizing responses, disabling unnecessary VRFY or EXPN behavior, and applying rate limits.\n- <b>DNS:</b> restrict zone transfers to authorized secondaries and review records pointing outside documented allocations.\n- <b>RPC, NFS, and RMI:</b> restrict registries by source, limit exports to required clients, and remove unused published services.\n- <b>VoIP:</b> restrict management and enumeration reachability and remove unnecessary metadata exposure.\n- <b>Legacy web content:</b> remove obsolete applications rather than only unlinking them, patch retained software, and disable unnecessary author enumeration.\n- <b>Vendor and service accounts:</b> disable identities with no current owner or authorization, especially when recent activity is confirmed; do not assume this remediates unrelated protocol exposure.\n- <b>IKE and IPsec:</b> maintain an approved peer inventory, review unaccounted identities and legacy proposals, and remove a configuration only after confirming it is not required.\n\nDefault deny reduces unnecessary reachability, with narrowly documented exceptions for required flows. Prioritize immediate, low-disruption revocation of a confirmed account risk while tracking protocol and configuration work separately.",
+  "links": [
+    "countermeasure",
+    "default deny",
+    "hardening"
+  ]
+}

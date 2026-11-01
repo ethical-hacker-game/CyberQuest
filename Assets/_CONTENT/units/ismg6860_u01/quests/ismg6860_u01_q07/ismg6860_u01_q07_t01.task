@@ -1,0 +1,23 @@
+{
+  "correctAnswers": [],
+  "variants": [
+    {
+      "correctAnswers": [
+        "ns2.external-ns.net",
+        "external-ns.net"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>George:</b> Leadership wants an external inventory of DataSequence’s public DNS relationships. Start with passive data and identify the authoritative server hosted outside the datasequence.com namespace.",
+      "taskInstructions": "Open the browser, use <b>Cyber Search</b> to search for <b>DNS Dumpster passive</b>, and open the passive DNS portal. Start the preset report for <b>datasequence.com</b>, open the records table, and type the external NS hostname.",
+      "taskQuestion": "Which authoritative name server is hosted outside the datasequence.com namespace?",
+      "taskCompleteText": "<b>George:</b> The external name server is <b>ns2.external-ns.net</b>. That is a public dependency to compare with our approved inventory, not proof that the provider or record is unsafe."
+    }
+  ],
+  "taskID": "ismg6860_u01_q07_t01",
+  "parentQuestID": "ismg6860_u01_q07",
+  "articleID": "u01_dns_intelligence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

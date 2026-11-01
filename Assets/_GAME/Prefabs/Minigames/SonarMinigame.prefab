@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9121000000000001001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9121000000000001002}
+  - component: {fileID: 9121000000000001003}
+  - component: {fileID: 9121000000000001004}
+  m_Layer: 0
+  m_Name: SonarMinigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9121000000000001002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121000000000001001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9121000000000001003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121000000000001001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a7500e01c42c8a90f31d5b6e7c5001, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name: Sonar Sweep
+  minigameType: 121
+  instructionsLabel: Mark the real caches - ignore the false echoes
+  resultOnTimeout: 0
+  standardDuration: 75
+  minigameUIPrefab: {fileID: 9122000000000001003, guid: 50a7500e11c42c8a90f31d5b6e7c5011, type: 3}
+  descriptionImage: {fileID: 0}
+  descriptionHeader: Sonar Sweep - Read the Signal
+  description: 'A dark scanner arena. A sonar fan sweeps from the station in the middle,
+    and the blips it passes over flash and then fade in the dark - you only ever see
+    what you just scanned. Genuine DATA CACHES hold a steady, sharp signal; FALSE
+    ECHOES flicker and wobble like interference. In the fading window, click the ones
+    you judge to be real caches. Clicking a false echo overloads the scanner and costs
+    1 integrity, so verify how a blip behaves before you react. Contacts drift around the
+    arena and new ones keep fading in over time, so keep sweeping - you cannot clear them
+    all in one pass. Mark every cache before the clock runs out to win - patience beats
+    reflex, because false positives cost.'
+  scanIntegrity: 3
+  cacheCount: 6
+  initialCacheCount: 2
+  cacheSpawnInterval: 7
+  falseEchoCount: 6
+  maxConcurrentEchoes: 10
+  extraEchoInterval: 8
+  secondsPerRevolution: 6
+  afterglowSeconds: 2.3
+  fanHalfAngleStart: 26
+  fanHalfAngleEnd: 15
+  fanNarrowSeconds: 55
+  pointsPerCache: 130
+  freshSweepBonus: 60
+  falseEchoPenalty: 90
+  timeBonusPerSecond: 12
+  cacheLabel: DATA CACHE
+  echoLabel: FALSE ECHO
+--- !u!114 &9121000000000001004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121000000000001001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a7500e07c42c8a90f31d5b6e7c5007, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  arenaRadius: 7
+  innerClearRadius: 2.2
+  edgeMargin: 0.7
+  minBlipSeparation: 1.6
+  rangeRings: 3
+  blipY: 0.5
+  blipScale: 0.8
+  clickRadius: 0.75
+  clickableGlow: 0.12
+  echoFlickerSpeed: 5.5
+  cachePulseDepth: 0.12
+  blipDriftDegPerSec: 11
+  blipRadialAmp: 0.75
+  blipRadialSpeed: 0.45
+  blipRevectorMin: 3
+  blipRevectorMax: 6.5
+  fanRadius: 8.2
+  fanSegments: 20
+  fanY: 0.08
+  cacheColor: {r: 0.21, g: 0.88, b: 1, a: 1}
+  cacheMarkedColor: {r: 0.24, g: 1, b: 0.53, a: 1}
+  echoColor: {r: 1, g: 0.36, b: 0.28, a: 1}
+  fanColor: {r: 0.32, g: 0.95, b: 1, a: 1}
+  fanAlpha: 0.16
+  stationColor: {r: 0.5, g: 0.85, b: 1, a: 1}
+  floorColor: {r: 0.02, g: 0.04, b: 0.075, a: 1}
+  ringColor: {r: 0.08, g: 0.35, b: 0.45, a: 1}
+  backgroundColor: {r: 0.012, g: 0.025, b: 0.05, a: 1}
+  emissionIntensity: 1.6
+  logEvents: 0

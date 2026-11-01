@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> We confirmed reflected XSS in citizen-search, but we did not test session access, data exposure, or any connection to internal systems. Those remain hypotheses.\n\nFurther impact testing would require new actions outside the current read-only evidence. We need to decide how to handle that scope before proceeding.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Mara Voss:</b> Decide how to address the untested impact without overstating the finding."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The public search flaw is confirmed. Whether it can expose a session, reach protected data, or support another step is still untested.\n\nThose unknowns may be valuable, but answering them means choosing whether to expand the work beyond the current authorization.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> Decide whether the unanswered impact is worth crossing another boundary."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The resident-facing search flaw is confirmed. Claims about session theft, resident data, or internal access are not.\n\nIf Northbridge delays, public pressure may become necessary, but every statement must preserve the line between verified behavior and untested impact.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> Decide how to pursue accountability without presenting hypotheses as facts."
+    }
+  ],
+  "taskID": "ismg6860_u04_q15_t04_bridge",
+  "parentQuestID": "ismg6860_u04_q15",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

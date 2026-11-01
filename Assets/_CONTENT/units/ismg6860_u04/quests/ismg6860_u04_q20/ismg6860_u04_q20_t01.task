@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The scheduled-task review identifies a condition that could support persistence after an initial compromise. Read the account name exactly; the finding does not prove that persistence already exists.",
+      "taskInstructions": "Run <b>languard audit scheduled-tasks</b> in the terminal and read which account the NightlyExport task runs as.",
+      "taskQuestion": "Which account does NightlyExport run as?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. NightlyExport runs as the overprivileged svc-web account, a persistence condition that needs remediation.",
+      "answers": [
+        "The overprivileged svc-web service account.",
+        "A dedicated low-privilege backup account.",
+        "The local Guest account.",
+        "No account because NightlyExport is disabled."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A task that runs repeatedly with more privilege than it needs can preserve useful access after an initial compromise. Name the account the evidence identifies.",
+      "taskInstructions": "Run <b>languard audit scheduled-tasks</b> in the terminal and read which account the NightlyExport task runs as.",
+      "taskQuestion": "Which account does NightlyExport run as?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. svc-web is the overprivileged account attached to NightlyExport.",
+      "answers": [
+        "The overprivileged svc-web service account.",
+        "A dedicated low-privilege backup account.",
+        "The local Guest account.",
+        "No account because NightlyExport is disabled."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A cleanup is incomplete if an overprivileged recurring task can preserve access afterward. Identify the account in the evidence and report the condition without claiming a breach occurred.",
+      "taskInstructions": "Run <b>languard audit scheduled-tasks</b> in the terminal and read which account the NightlyExport task runs as.",
+      "taskQuestion": "Which account does NightlyExport run as?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. svc-web runs NightlyExport with more privilege than the task should require.",
+      "answers": [
+        "The overprivileged svc-web service account.",
+        "A dedicated low-privilege backup account.",
+        "The local Guest account.",
+        "No account because NightlyExport is disabled."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q20_t01",
+  "parentQuestID": "ismg6860_u04_q20",
+  "articleID": "u04_scheduled_task_persistence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

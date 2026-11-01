@@ -1,0 +1,26 @@
+{
+  "variants": [
+    {
+      "minigameType": "NetworkTrace",
+      "minigameHeaderText": "DataSequence Infrastructure",
+      "durationOverride": 0,
+      "difficulty": "Default",
+      "networkSettings": {
+        "devicesToHack": 0,
+        "reconMovesToWin": 10
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>George:</b> DNS relationships identify endpoints and providers, while a network path can include additional intermediate hops. Practice following a route so the report keeps DNS observations separate from path-mapping evidence.",
+      "taskInstructions": "In <b>DataSequence Infrastructure</b>, select a connected node for each move and complete ten successive network-trace hops.",
+      "taskQuestion": "Complete ten network-trace moves.",
+      "taskCompleteText": "<b>George:</b> You completed ten trace moves and practiced following successive hops. This exercise illustrates path mapping; it does not claim that the generated route is DataSequence’s real topology."
+    }
+  ],
+  "taskID": "ismg6860_u01_q07_t03",
+  "parentQuestID": "ismg6860_u01_q07",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

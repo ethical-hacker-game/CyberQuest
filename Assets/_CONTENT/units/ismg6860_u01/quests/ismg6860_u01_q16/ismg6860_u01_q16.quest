@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u01_q16",
+  "cityIndex": 3128,
+  "questIconID": "quest_icon_netcraft_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q16_t01",
+    "ismg6860_u01_q16_t02"
+  ],
+  "requiredQuestID": "ismg6860_u01_q15",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Domain Verification",
+      "questDescription": "Evelyn asks you to examine an urgent message that claims to be from Summit Trust Bank. Look up the sender address in NetLookup, compare its parsed domain and listed registrant with the bank's published domain, then explain what that mismatch does and does not establish.",
+      "questCompleteText": "<b>Evelyn Marston:</b> The sender address uses a different domain and listed registrant from Summit Trust Bank's published site. Treat the message as suspicious and verify it through the bank's known reporting channel; the lookup alone cannot prove who authored it.",
+      "questCharacterID": "u01_evelyn_marston",
+      "appScenarioID": ""
+    }
+  ]
+}

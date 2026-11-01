@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q07",
+  "cityIndex": 3685,
+  "questIconID": "quest_icon_dns_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q07_t01",
+    "ismg6860_u01_q07_t02",
+    "ismg6860_u01_q07_t03"
+  ],
+  "requiredQuestID": "ismg6860_u01_q06",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "DNS Footprint",
+      "questDescription": "DataSequence has requested a passive review of its public DNS relationships. Identify an externally hosted authoritative server, interpret the report within its evidentiary limits, and practice the difference between DNS inventory and network-path mapping.",
+      "questCompleteText": "<b>George:</b> You identified a public DNS dependency, treated provider and GeoIP data as clues rather than proof, and completed a separate path-mapping exercise without presenting its generated route as our real topology.",
+      "questCharacterID": "u01_george_wilkerson",
+      "appScenarioID": ""
+    }
+  ]
+}

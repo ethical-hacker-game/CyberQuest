@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q14",
+  "cityIndex": 4195,
+  "questIconID": "quest_icon_dumpsterdiving_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q14_t01",
+    "ismg6860_u01_q14_t02",
+    "ismg6860_u01_q14_t03"
+  ],
+  "requiredQuestID": "ismg6860_u01_q13",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Dumpster Diving",
+      "questDescription": "CipherDefense found fragments of internal financial documents on a public forum. Riley Park asks you to examine a possible physical exposure route, identify genuine violations in authorized camera feeds, and recommend safer document handling. The available evidence does not yet establish how the forum obtained the documents.",
+      "questCompleteText": "<b>Riley:</b> You documented physical exposure risks and recommended secure collection and disposal controls. The forum posting still needs a separate source investigation before we can link it to any observed violation.",
+      "questCharacterID": "u01_riley_park",
+      "appScenarioID": ""
+    }
+  ]
+}

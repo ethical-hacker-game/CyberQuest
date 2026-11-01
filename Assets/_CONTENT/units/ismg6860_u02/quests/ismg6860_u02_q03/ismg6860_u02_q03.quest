@@ -1,0 +1,27 @@
+{
+  "questID": "ismg6860_u02_q03",
+  "cityIndex": 4990,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q03_t00_unlock_zonemap",
+    "ismg6860_u02_q03_t01",
+    "ismg6860_u02_q03_t02",
+    "ismg6860_u02_q03_t03",
+    "ismg6860_u02_q03_t04_dialogue"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Three Zones",
+      "questDescription": "Map the DMZ, ticketing VLAN, and vendor maintenance segment before scanning deeper.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> The intended boundaries are clear. Next, decide how you will handle pressure to cross them.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": "zenmap_zone_map"
+    }
+  ]
+}

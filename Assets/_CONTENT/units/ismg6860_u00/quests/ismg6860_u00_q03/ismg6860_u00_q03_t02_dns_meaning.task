@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The portal has already been compromised.",
+        "The DNS record gives us permission to scan everything nearby.",
+        "The domain currently resolves to that address.",
+        "The case code is no longer relevant."
+      ],
+      "correctAnswer": 2,
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> Now interpret the output carefully. The DNS answer tells us something useful, but it does not prove a breach and it does not expand scope.",
+      "taskInstructions": "",
+      "taskQuestion": "What does the DNS result prove?",
+      "taskCompleteText": "<b>Ed:</b> Correct. The result proves current resolution, not compromise or permission."
+    }
+  ],
+  "taskID": "ismg6860_u00_q03_t02_dns_meaning",
+  "parentQuestID": "ismg6860_u00_q03",
+  "articleID": "u00_dns_basics",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

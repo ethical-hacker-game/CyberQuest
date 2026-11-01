@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "2025-06-09-impersonation-notice",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>George Wilkerson:</b> Public reporting about the incident may show which personal associations were already exposed. Find the report before drawing conclusions about where the impersonator obtained those details.",
+      "taskInstructions": "Open the browser, use <b>Cyber Search</b> to search for <b>George Wilkerson</b>, and open the GoalPost report about the impersonation incident.",
+      "taskQuestion": "Open the GoalPost report about the George Wilkerson impersonation incident.",
+      "taskCompleteText": "<b>George Wilkerson:</b> The GoalPost report names Eli Masters as my longtime friend and notes that the false post referenced him. This is a public lead, not proof that the impersonator used this article."
+    }
+  ],
+  "taskID": "ismg6860_u01_q04_t02",
+  "parentQuestID": "ismg6860_u01_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Riley forwarded a suspicious call transcript instead of calling the number back. Read what the supposed <b>support agent</b> requested and preserve the caller's exact words.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Fwd: voicemail from 'mobile support': is this real?</b>.",
+      "taskQuestion": "Open Riley's forwarded voicemail transcript.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The transcript is preserved. Now separate the caller's support pretext from the credential request.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q03_t01_voicemail"
+    }
+  ],
+  "taskID": "ismg6860_u03_q03_t01",
+  "parentQuestID": "ismg6860_u03_q03",
+  "articleID": "u03_message_and_call_phishing",
+  "mailsOnStart": [
+    "ismg6860_u03_q03_t01_voicemail"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

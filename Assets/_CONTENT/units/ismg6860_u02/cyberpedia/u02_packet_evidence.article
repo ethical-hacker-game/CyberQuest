@@ -1,0 +1,11 @@
+{
+  "articleID": "u02_packet_evidence",
+  "videoURL": null,
+  "title": "Packet Capture as Verification Evidence",
+  "content": "A packet capture records traffic observed at a particular network interface and time. It helps an analyst verify what a scanning tool sent, what answered, and which systems actually exchanged traffic. Tools such as Wireshark provide detailed inspection, while command-line capture tools can collect focused evidence during a test.\n\nBegin with the observable facts: source and destination addresses, transport protocol, ports, flags, timestamps, and relevant error messages. These fields can confirm a route or response without assuming why it occurred. For example, seeing traffic between two zones proves that the observed packets crossed the capture point; it does not by itself prove exploitation, authorization, or the full path in both directions.\n\n<b>Capture context matters</b>\n\nA capture only sees traffic available at its observation point. Switched networks, routing, encryption, asymmetric paths, dropped packets, and capture filters can hide part of the exchange. Record the interface, filter, clock, and test action alongside the capture. Preserve the original file or authoritative screenshot, and derive redacted excerpts for wider sharing rather than altering the source evidence.\n\nUse packet data to confirm or challenge higher-level labels. A scanner may report filtered, but the capture can show an ICMP policy response. A service label may be uncertain, while the observed destination and protocol remain clear.\n\nThe strongest conclusion is the narrowest one supported by the packets. Separate direct observations from interpretation, note visibility limits, and avoid including unrelated payload data. Packet evidence is valuable because another reviewer can inspect the same facts and reach a reasoned conclusion.",
+  "links": [
+    "packet evidence",
+    "packet capture",
+    "captured flow"
+  ]
+}

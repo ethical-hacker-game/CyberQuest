@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "EHLO",
+        "VRFY",
+        "ETRN",
+        "DSN"
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> There is a forwarding rule in the mail server config pointing at a BridgeWorks address, and I would rather understand that service than point a scanner at it. A mail server tends to volunteer more than it means to during the opening exchange, before anyone has authenticated to anything. I want to see for myself what this one admits to supporting.",
+      "taskInstructions": "Run <b>nc mail.hallowayprecision.com 25</b>, then greet the service with <b>EHLO cordatasecurity.com</b>.",
+      "taskQuestion": "Which command in the server's capability list can be used to check whether a user exists?",
+      "taskCompleteText": "<b>Dana Osei:</b> VRFY is advertised in the EHLO response. Its reply still has to be interpreted; availability does not guarantee a definitive answer."
+    },
+    {
+      "answers": [
+        "EHLO",
+        "VRFY",
+        "ETRN",
+        "DSN"
+      ],
+      "correctAnswer": 1,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> A mail server that answers questions about who exists will build a target list for you at no charge. The trick is knowing which verb to trust, and that starts with what the service says about itself before anybody logs in. Do this one by hand: a scanner hands you a summary and swallows the part that matters.",
+      "taskInstructions": "Run <b>nc mail.hallowayprecision.com 25</b>, then greet the service with <b>EHLO cordatasecurity.com</b>.",
+      "taskQuestion": "Which command in the server's capability list can be used to check whether a user exists?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> VRFY is available, but the numeric reply determines whether it reveals anything useful."
+    },
+    {
+      "answers": [
+        "EHLO",
+        "VRFY",
+        "ETRN",
+        "DSN"
+      ],
+      "correctAnswer": 1,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The configuration names a BridgeWorks forwarding address, but that does not prove delivery or readership. Start by recording which recipient-verification capability the server advertises.",
+      "taskInstructions": "Run <b>nc mail.hallowayprecision.com 25</b>, then greet the service with <b>EHLO cordatasecurity.com</b>.",
+      "taskQuestion": "Which command in the server's capability list can be used to check whether a user exists?",
+      "taskCompleteText": "<b>Priya Nandan:</b> VRFY is advertised. Now document what its response code actually confirms."
+    }
+  ],
+  "taskID": "ismg6860_u05_q07_t01",
+  "parentQuestID": "ismg6860_u05_q07",
+  "articleID": "u05_smtp_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

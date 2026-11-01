@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "bannerdb",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> A banner is a claim returned by the host, not proof that the product is genuine or vulnerable. Service Fingerprints gives you a consistent framework for recording the observation separately from your interpretation.",
+      "taskInstructions": "Open the Lab panel and spend 2,000 credits to unlock Service Fingerprints.",
+      "taskQuestion": "Unlock Service Fingerprints in the Lab panel.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Service Fingerprints is ready. Record the exact banner first, then decide what it supports."
+    }
+  ],
+  "taskID": "ismg6860_u02_q06_t00_unlock_bannerdb",
+  "parentQuestID": "ismg6860_u02_q06",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

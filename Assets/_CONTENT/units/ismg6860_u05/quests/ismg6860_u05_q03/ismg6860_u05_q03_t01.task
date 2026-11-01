@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "BRIDGEWORKS$"
+      ],
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> Keep the query to share metadata; the authorization excludes production historian data. Identify any hidden share outside the expected historian, print, and IPC entries.",
+      "taskInstructions": "Run <b>enum4linux -S 10.30.14.52</b> in the terminal and type the unexpected Sharename entry, including its dollar sign.",
+      "taskQuestion": "Name the share that does not belong to Halloway's standard set.",
+      "taskCompleteText": "<b>Dana Osei:</b> BRIDGEWORKS$ is a hidden integration share that does not appear in Halloway's current inventory."
+    }
+  ],
+  "taskID": "ismg6860_u05_q03_t01",
+  "parentQuestID": "ismg6860_u05_q03",
+  "articleID": "u05_netbios_smb",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

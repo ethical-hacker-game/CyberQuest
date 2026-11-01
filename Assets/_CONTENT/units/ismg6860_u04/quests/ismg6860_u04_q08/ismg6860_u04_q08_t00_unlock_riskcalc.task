@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "riskcalc",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Risk Calculator combines technical severity with exposure, likely impact, evidence confidence, and the role of the affected service.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Risk Calculator</b>.",
+      "taskQuestion": "Unlock the Risk Calculator in the Lab panel.",
+      "taskCompleteText": "<b>Mara Voss:</b> Risk Calculator is ready. Assess the public backup listing."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "riskcalc",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Risk Calculator adds exposure, likely impact, confidence, and asset purpose to the scanner's generic score.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Risk Calculator</b>.",
+      "taskQuestion": "Unlock the Risk Calculator in the Lab panel.",
+      "taskCompleteText": "<b>Felix Rane:</b> Risk Calculator is ready. Assess the public backup listing."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "riskcalc",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Risk Calculator adds exposure, likely impact, confidence, and the portal's public-service role to the technical score.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Risk Calculator</b>.",
+      "taskQuestion": "Unlock the Risk Calculator in the Lab panel.",
+      "taskCompleteText": "<b>Imani Vale:</b> Risk Calculator is ready. Assess the public backup listing."
+    }
+  ],
+  "taskID": "ismg6860_u04_q08_t00_unlock_riskcalc",
+  "parentQuestID": "ismg6860_u04_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

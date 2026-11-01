@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "12",
+        "45",
+        "75",
+        "150"
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Charisse:</b> I’m writing about how much information a crawler can gather from publicly reachable resources. I’ve authorized a controlled search using my name so readers can see a concrete result instead of an abstract warning.",
+      "taskInstructions": "Open the browser, use <b>Cyber Search</b> to search for <b>Charisse Morgangood</b>, and open the Public Web Crawl result. Run the crawl with her full name and read the displayed result count.",
+      "taskQuestion": "How many public entries does the crawl report for Charisse Morgangood?",
+      "taskCompleteText": "<b>Charisse:</b> The crawl reports <b>75</b> publicly reachable entries associated with my name. That count describes what this crawler found; it does not prove that every result is sensitive, current, or uniquely connected to me."
+    }
+  ],
+  "taskID": "ismg6860_u01_q06_t01",
+  "parentQuestID": "ismg6860_u01_q06",
+  "articleID": "u01_web_crawling_and_mirroring",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

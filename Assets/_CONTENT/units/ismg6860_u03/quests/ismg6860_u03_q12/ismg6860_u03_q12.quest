@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u03_q12",
+  "cityIndex": 5142,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q12_t00_voice",
+    "ismg6860_u03_q12_t01",
+    "ismg6860_u03_q12_t02",
+    "ismg6860_u03_q12_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Warranty Desk",
+      "questDescription": "Analyze how a warranty caller combines fear of losing coverage with a demand for account and recovery details.",
+      "questCompleteText": "<b>Asha Moreno:</b> The false warranty loss and unsafe request are documented. Staff can now verify such claims through a trusted route.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Warranty Desk",
+      "questDescription": "Analyze the invented warranty loss, false deadline, and information request that make the call effective.",
+      "questCompleteText": "<b>Felix Rane:</b> The pretext, pressure, and requested information are all documented.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Warranty Desk",
+      "questDescription": "Document the warranty pretext without blaming Riley, and identify the safe verification advice staff need.",
+      "questCompleteText": "<b>Imani Vale:</b> The warning can name the false warranty threat and direct staff to independent verification.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

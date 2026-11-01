@@ -1,0 +1,12 @@
+{
+  "articleID": "u05_rpc_enumeration",
+  "videoURL": null,
+  "title": "RPC, Portmapper, and Remote Method Invocation",
+  "content": "<b>Some services publish a directory so clients can find them. If that directory is reachable, it also becomes an enumeration source.</b>\n\nRemote procedure call lets a program invoke a function on another machine as though it were local. Because RPC services may listen on dynamically assigned ports, a registry maps program numbers to ports. In the Sun RPC family that registry is <b>portmapper</b>, also called rpcbind, on port 111.\n\nA portmapper query can return each registered program, version, protocol, and port. NFS file sharing commonly appears with mountd and a lock manager. The listing proves that the programs are registered; it does not by itself prove that an export can be mounted or that files were accessed.\n\nAn NFS export rule can restrict eligible clients by host or network range. A rule that includes an external range deserves priority review, but it still does not prove that a client mounted the export or transferred data.\n\nJava uses <b>remote method invocation</b>. Its registry commonly listens on port 1099 and names published objects. An advertised loopback endpoint that differs from the address contacted is a configuration clue, but the listing alone does not establish why the mismatch exists or whether the object can be invoked.\n\nRegistry listing behavior depends on the service and its configuration. Treat unauthenticated results as exposed metadata, then test access separately within scope.",
+  "links": [
+    "portmapper",
+    "rpcbind",
+    "remote method invocation",
+    "RPC"
+  ]
+}

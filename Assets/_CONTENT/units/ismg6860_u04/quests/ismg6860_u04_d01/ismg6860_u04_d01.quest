@@ -1,0 +1,23 @@
+{
+    "questID":  "ismg6860_u04_d01",
+    "cityIndex":  7195,
+    "questIconID":  "",
+    "decisionQuest":  true,
+    "taskIDs":  [
+                    "ismg6860_u04_d01_decision"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  true,
+    "variants":  [
+                     {
+                         "persona":  "Universal Persona Content",
+                         "questName":  "Sensitive Evidence Decision",
+                         "questDescription":  "Decide how to handle evidence of the exposed setup page, backup listing, and external probes.",
+                         "questCompleteText":  "The evidence has been handled according to your decision.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

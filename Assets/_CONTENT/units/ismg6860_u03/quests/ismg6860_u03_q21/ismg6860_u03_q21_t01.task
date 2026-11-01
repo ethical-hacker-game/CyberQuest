@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A forwarded warning, a scareware prompt, and inconsistent resolver answers were reported together. Review the observations separately before deciding what each one establishes.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Hoax, scareware, and resolver evidence</b>.",
+      "taskQuestion": "Open the combined evidence summary.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The mail preserves three findings and the resolver comparison without asserting a shared cause.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q21_t01_chain_warning"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Three findings arrived in the same window, but timing alone does not prove coordination. Read the resolver values and keep the chain and scareware observations distinct.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Hoax, scareware, and resolver evidence</b>.",
+      "taskQuestion": "Open the combined evidence summary.",
+      "taskCompleteText": "<b>Felix Rane:</b> The measurable DNS discrepancy is separated from assumptions about the other findings.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q21_t01_chain_warning"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Volunteers forwarded an alarming message while a scareware prompt and resolver discrepancy were also reported. Preserve each fact without blaming the people who repeated the warning.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Hoax, scareware, and resolver evidence</b>.",
+      "taskQuestion": "Open the combined evidence summary.",
+      "taskCompleteText": "<b>Imani Vale:</b> Each finding is documented separately, supporting a calm response instead of more panic.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q21_t01_chain_warning"
+    }
+  ],
+  "taskID": "ismg6860_u03_q21_t01",
+  "parentQuestID": "ismg6860_u03_q21",
+  "articleID": "u03_deceptive_redirects",
+  "mailsOnStart": [
+    "ismg6860_u03_q21_t01_chain_warning"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

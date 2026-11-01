@@ -1,0 +1,9 @@
+{
+  "skillID": "awareconsole",
+  "skillName": "Awareness Console",
+  "skillDescription": "A reader for authorized awareness-exercise results. Reports response rates, lure categories, and reporting times in aggregate only, with no individual identified, keeping the focus on safer processes rather than blame.",
+  "price": 3500,
+  "order": 50,
+  "requireTask": true,
+  "lockInDemo": false
+}

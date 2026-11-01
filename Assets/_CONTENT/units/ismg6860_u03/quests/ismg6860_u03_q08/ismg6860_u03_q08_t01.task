@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Security recorded unsolicited <b>proximity sharing</b> in the West Gate lobby. Review the log as evidence and do not accept or install the offered file.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Lobby proximity share: do not install</b>.",
+      "taskQuestion": "Open the lobby proximity share log.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The log records an unknown support kiosk offering an unsolicited file in the lobby.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q08_t01_bluetooth_share"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A device in the lobby is using <b>proximity sharing</b> to offer files without an email address or visible link. Read the log and identify what the sender expects people to accept.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Lobby proximity share: do not install</b>.",
+      "taskQuestion": "Open the lobby proximity share log.",
+      "taskCompleteText": "<b>Felix Rane:</b> The sender relies on physical proximity and a plausible device name to lower resistance.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q08_t01_bluetooth_share"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Unsolicited <b>proximity sharing</b> reached devices in the lobby where visitors will gather tomorrow. Read the log so the warning can name the sender and file precisely.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Lobby proximity share: do not install</b>.",
+      "taskQuestion": "Open the lobby proximity share log.",
+      "taskCompleteText": "<b>Imani Vale:</b> The sender and offered file are documented. Visitors can receive a specific warning.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q08_t01_bluetooth_share"
+    }
+  ],
+  "taskID": "ismg6860_u03_q08_t01",
+  "parentQuestID": "ismg6860_u03_q08",
+  "articleID": "u03_mobile_lures",
+  "mailsOnStart": [
+    "ismg6860_u03_q08_t01_bluetooth_share"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

@@ -1,0 +1,9 @@
+{
+  "articleID": "u03_sim_swap_and_account_recovery",
+  "videoURL": null,
+  "title": "SIM Swaps and Account Recovery Abuse",
+  "content": "A SIM swap is an unauthorized transfer of a phone number to a SIM or eSIM controlled by an attacker. The attacker may deceive a carrier, abuse a compromised carrier account, or use stolen identity information to request the change. Once the transfer succeeds, calls and text messages sent to the number can arrive on the attacker's device.\n\n<b>Why account recovery is targeted</b>\n\nMany services use phone numbers for password resets and authentication codes. An attacker who controls the number may be able to pass those checks even without knowing the original password. Recovery attempts, PIN changes, port-out requests, and new-device enrollments can therefore be evidence of a wider account-takeover attempt. SMS authentication is safer than no additional factor, but it is less resistant to number transfer than an authenticator application, passkey, or hardware security key.\n\nWarning signs include sudden loss of cellular service, an unexpected carrier notice, a new SIM or eSIM confirmation, changed account contact details, or password-reset messages that were not requested. A failed transfer still matters because it shows that someone may possess enough information to try again.\n\n<b>Respond through trusted channels</b>\n\nContact the carrier using a known number or official application, not information in the suspicious notice. Ask the carrier to secure the account and review recent SIM, port, recovery, and PIN activity. Notify the affected services and incident-response team, protect important accounts with phishing-resistant authentication where available, and review active sessions and recovery methods. Preserve timestamps and carrier notices. Do not publicly share the phone number, recovery data, or verification details used in the attempt.",
+  "links": [
+    "recovery attempt"
+  ]
+}

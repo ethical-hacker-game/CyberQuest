@@ -1,0 +1,10 @@
+{
+  "articleID": "u01_osint_fundamentals",
+  "videoURL": null,
+  "title": "OSINT Fundamentals",
+  "content": "Open-source intelligence, or OSINT, is the disciplined collection and analysis of information from sources available to the public. Sources can include search engines, news, public records, social platforms, code repositories, domain data, maps, and archived websites. Merely finding public data is not the same as producing reliable intelligence.\n\n<b>A repeatable process</b>\nBegin with a narrow question and identify which sources could answer it. Collect only what is relevant, record the source and time, and preserve enough context to review the observation later. Corroborate important claims with independent sources. Names, usernames, images, dates, and locations can be ambiguous; matching one field rarely proves that two records concern the same person or organization.\n\nFrameworks and tool directories help analysts choose suitable sources, but they do not validate results. Prefer the least intrusive source that can answer the question. Search snippets may be stale, profiles may be false, and registration or geolocation data may describe an intermediary rather than the responsible actor. Label these limitations instead of turning clues into accusations.\n\n<b>Minimize harm</b>\nPublic availability does not remove privacy, contractual, or ethical obligations. Avoid collecting unrelated personal data, interacting with targets under false pretenses, or redistributing sensitive material. Store evidence securely and share it only through the approved channel. Good OSINT turns scattered observations into a documented, proportionate assessment while keeping facts, hypotheses, and unknowns clearly separated.",
+  "links": [
+    "OSINT framework",
+    "public records and registries"
+  ]
+}

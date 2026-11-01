@@ -1,0 +1,44 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "bw-alerts",
+        "bw-alerts@hallowayprecision.com"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> You have seen how that conversation goes by hand, so let a module do the rest of the list. The server is not an open relay, which is the one thing about it I am genuinely not worried about, but it will still name who it has been forwarding for. Somebody configured that rule and nobody ever inherited it.",
+      "taskInstructions": "Run <b>msfconsole smtp_enum</b> against the mail server at 10.30.14.25.",
+      "taskQuestion": "Name the alert-forwarding mailbox still active on the mail server.",
+      "taskCompleteText": "<b>Dana Osei:</b> bw-alerts@hallowayprecision.com is configured to forward to the BridgeWorks NOC address. Disable or replace the stale rule after preserving the configuration evidence."
+    },
+    {
+      "correctAnswers": [
+        "bw-alerts",
+        "bw-alerts@hallowayprecision.com"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Enumerate the accepted names at scale and identify any forwarding rule tied to BridgeWorks. The configuration shows an exposure path, but it does not prove successful external delivery.",
+      "taskInstructions": "Run <b>msfconsole smtp_enum</b> against the mail server at 10.30.14.25.",
+      "taskQuestion": "Name the alert-forwarding mailbox still active on the mail server.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> bw-alerts@hallowayprecision.com forwards to the BridgeWorks NOC address. The configured path has value even though current domain control and delivery remain unverified."
+    },
+    {
+      "correctAnswers": [
+        "bw-alerts",
+        "bw-alerts@hallowayprecision.com"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Put the Halloway forwarding address in the record. The server configuration can prove where alerts are directed without claiming who received or read them.",
+      "taskInstructions": "Run <b>msfconsole smtp_enum</b> against the mail server at 10.30.14.25.",
+      "taskQuestion": "Name the alert-forwarding mailbox still active on the mail server.",
+      "taskCompleteText": "<b>Priya Nandan:</b> bw-alerts@hallowayprecision.com is configured to forward to the BridgeWorks NOC address. That stale route is the finding; actual receipt remains unverified."
+    }
+  ],
+  "taskID": "ismg6860_u05_q07_t04",
+  "parentQuestID": "ismg6860_u05_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

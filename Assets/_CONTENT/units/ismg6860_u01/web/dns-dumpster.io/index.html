@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dns-dumpster.io: Passive DNS Footprint Simulator</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f172a;
+      --panel: #14213d;
+      --accent: #38bdf8;
+      --accent-muted: #7dd3fc;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: rgba(148, 163, 184, 0.4);
+      font-size: 16px;
+      font-family: "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, rgba(56, 189, 248, 0.25), transparent 45%), var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      gap: 1.5rem;
+    }
+
+    header {
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      background: rgba(15, 23, 42, 0.8);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.3rem, 2vw, 1.75rem);
+      margin: 0;
+    }
+
+    .badge {
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      font-size: 1.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: min(1100px, 100%);
+      margin: 0 auto;
+      flex: 1;
+    }
+
+    .panel {
+      background: rgba(15, 23, 42, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-height: 0;
+    }
+
+    .panel h2 {
+      margin: 0;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    label {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 0.65rem 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.8);
+      color: var(--text);
+    }
+
+    input[readonly] {
+      opacity: 0.8;
+      cursor: not-allowed;
+    }
+
+    button {
+      border: 1px solid var(--accent);
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--text);
+      border-radius: 0.65rem;
+      padding: 0.65rem 0.75rem;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    button:hover,
+    button:focus-visible {
+      background: rgba(56, 189, 248, 0.25);
+      outline: none;
+    }
+
+    button:active {
+      transform: translateY(1px);
+    }
+
+    .graph-node:active {
+      transform: translate(-50%, -50%);
+    }
+
+    .controls button + button {
+      margin-top: 0.5rem;
+    }
+
+    .graph-canvas {
+      position: relative;
+      flex: 1;
+      border-radius: 0.65rem;
+      border: 1px dashed var(--border);
+      background: radial-gradient(circle, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.6));
+      overflow: hidden;
+      min-height: 360px;
+    }
+
+    .graph-links {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .graph-node {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.65rem;
+      border: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.95);
+      font-size: 0.85rem;
+      min-width: 120px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .graph-node.domain {
+      border-color: var(--accent);
+      font-weight: 600;
+    }
+
+    .graph-node.subdomain {
+      border-color: rgba(56, 189, 248, 0.5);
+    }
+
+    .graph-node.record {
+      border-color: rgba(248, 250, 252, 0.4);
+    }
+
+    .graph-node.ip {
+      border-style: dashed;
+    }
+
+    .graph-node.exposed {
+      background: rgba(248, 113, 113, 0.15);
+      border-color: rgba(248, 113, 113, 0.8);
+    }
+
+    .detail-card {
+      border: 1px solid var(--border);
+      border-radius: 0.65rem;
+      padding: 1rem;
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .detail-card header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .detail-card header h3 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .detail-card dl {
+      margin: 0.75rem 0 0;
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.25rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .detail-card dt {
+      color: var(--muted);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tabs button {
+      flex: 1;
+      border-color: transparent;
+      background: rgba(148, 163, 184, 0.12);
+    }
+
+    .tabs button[aria-selected="true"] {
+      border-color: var(--accent);
+      background: rgba(56, 189, 248, 0.18);
+    }
+
+    .tab-panel {
+      display: none;
+      flex: 1;
+      border: 1px solid var(--border);
+      border-radius: 0.65rem;
+      padding: 1rem;
+      overflow: auto;
+      background: rgba(15, 23, 42, 0.7);
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    .summary-list {
+      list-style: disc;
+      padding-left: 1.5rem;
+      line-height: 1.4;
+    }
+
+    pre, code {
+      font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+      padding: 0.4rem 0.5rem;
+      text-align: left;
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .hint {
+      border-left: 3px solid var(--accent);
+      padding-left: 0.75rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .status {
+      font-size: 0.85rem;
+      color: var(--accent-muted);
+      min-height: 1.2rem;
+    }
+
+    .text-only {
+      border: 1px dashed var(--border);
+      border-radius: 0.65rem;
+      padding: 0.75rem;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        padding: 1rem;
+      }
+
+      .graph-canvas {
+        min-height: 320px;
+      }
+    }
+  </style>
+  <script src="../cq-bridge.js"></script>
+</head>
+<body>
+  <header>
+    <span class="badge" aria-label="Training and sandbox mode">dns-dumpster.io</span>
+    <h1>Passive DNS Reconnaissance Portal</h1>
+  </header>
+  <main>
+    <section class="panel controls" aria-label="Controls">
+      <h2>Controls</h2>
+      <div>
+        <label for="domainInput">Target domain</label>
+        <input id="domainInput" type="text" value="datasequence.com" readonly aria-readonly="true">
+      </div>
+      <div class="status" id="statusMessage" role="status" aria-live="polite">Load the preset to begin.</div>
+      <div>
+        <button id="startBtn" type="button">Start Test</button>
+      </div>
+    </section>
+
+    <section class="panel graph-panel" aria-label="Graph view">
+      <h2>Passive Graph</h2>
+      <div class="graph-canvas" id="graphCanvas" role="img" aria-label="Node link map of datasequence.com infrastructure">
+        <svg id="graphLinks" class="graph-links" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      </div>
+      <div class="detail-card" id="nodeDetailCard" aria-live="polite">
+        <header>
+          <h3>Node details</h3>
+          <span class="muted">Select a node</span>
+        </header>
+        <p class="hint" id="detailHint">Click or tab to a node to inspect metadata and note whether it is externally exposed.</p>
+      </div>
+    </section>
+
+    <section class="panel output-panel" aria-label="Output tabs">
+      <h2>Outputs</h2>
+      <div class="tabs" role="tablist" aria-label="Output views">
+        <button role="tab" aria-selected="true" aria-controls="summaryPanel" id="summaryTab">Summary</button>
+        <button role="tab" aria-selected="false" aria-controls="recordsPanel" id="recordsTab">Records Table</button>
+        <button role="tab" aria-selected="false" aria-controls="rawPanel" id="rawTab">Raw Output</button>
+      </div>
+      <div id="summaryPanel" class="tab-panel active" role="tabpanel" aria-labelledby="summaryTab">
+        <ul class="summary-list" id="summaryList">
+          <li>Use <em>Start Test</em> to populate the pre-generated report.</li>
+          <li>Subdomains, NS, MX, and A records appear here once loaded.</li>
+        </ul>
+        <pre id="summaryPre" tabindex="0" aria-label="Summary text preview">(Summary unavailable. Start the test to generate it.)</pre>
+        <p class="hint">Text-only output updates automatically for screen readers.</p>
+        <div id="textOnlyBlock" class="text-only" tabindex="0" aria-live="polite"></div>
+      </div>
+      <div id="recordsPanel" class="tab-panel" role="tabpanel" aria-labelledby="recordsTab">
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Host</th>
+                <th scope="col">Type</th>
+                <th scope="col">Value</th>
+                <th scope="col">IP</th>
+                <th scope="col">Netblock Owner</th>
+                <th scope="col">GeoIP</th>
+                <th scope="col">Exposed</th>
+              </tr>
+            </thead>
+            <tbody id="recordsTbody">
+              <tr><td colspan="7">Start the test to view records.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="rawPanel" class="tab-panel" role="tabpanel" aria-labelledby="rawTab">
+        <pre id="rawOutput"># Awaiting passive collection...</pre>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const datasetTemplate = {
+      domain: "datasequence.com",
+      geoIpClue: "Primary IPs geolocated to United States (NY)",
+      notes: [
+        "ns2 hosted externally",
+        "mail host publicly reachable"
+      ],
+      netblock: "198.51.100.0/24 -> FictionalHoster-AS (US)",
+      records: [
+        { host: "www.datasequence.com", type: "A", value: "198.51.100.23", ip: "198.51.100.23", owner: "FictionalHoster-AS (US)", geo: "United States - New York", externallyExposed: false },
+        { host: "api.datasequence.com", type: "A", value: "198.51.100.24", ip: "198.51.100.24", owner: "FictionalHoster-AS (US)", geo: "United States - New York", externallyExposed: false },
+        { host: "app.datasequence.com", type: "CNAME", value: "app-hosting.provider.net", ip: "", owner: "ProviderNet-Edge", geo: "Global CDN", externallyExposed: false },
+        { host: "mail.datasequence.com", type: "MX", value: "203.0.113.45", ip: "203.0.113.45", owner: "FictionalMailGrid (US)", geo: "United States - New York", externallyExposed: false },
+        { host: "ns1.datasequence.com", type: "NS", value: "198.51.100.5", ip: "198.51.100.5", owner: "FictionalHoster-AS (US)", geo: "United States - New York", externallyExposed: false },
+        { host: "ns2.external-ns.net", type: "NS", value: "198.51.100.6", ip: "198.51.100.6", owner: "ExternalNS Services", geo: "United States - Virginia", externallyExposed: false }
+      ],
+      graphNodes: {
+        domain: { id: "domain", label: "datasequence.com", type: "domain", position: { x: 50, y: 10 } },
+        www: { id: "www", label: "www.datasequence.com", type: "subdomain", host: "www.datasequence.com", position: { x: 25, y: 45 } },
+        api: { id: "api", label: "api.datasequence.com", type: "subdomain", host: "api.datasequence.com", position: { x: 75, y: 45 } },
+        app: { id: "app", label: "app.datasequence.com", type: "subdomain", host: "app.datasequence.com", position: { x: 50, y: 45 } },
+        mail: { id: "mail", label: "mail.datasequence.com", type: "record", host: "mail.datasequence.com", position: { x: 20, y: 75 } },
+        ns1: { id: "ns1", label: "ns1.datasequence.com", type: "record", host: "ns1.datasequence.com", position: { x: 65, y: 75 } },
+        ns2: { id: "ns2", label: "ns2.external-ns.net", type: "record", host: "ns2.external-ns.net", position: { x: 85, y: 75 } },
+        ipCluster: { id: "ipCluster", label: "198.51.100.0/24", type: "ip", position: { x: 50, y: 90 } }
+      },
+      edges: [
+        { from: "domain", to: "www" },
+        { from: "domain", to: "api" },
+        { from: "domain", to: "app" },
+        { from: "domain", to: "mail" },
+        { from: "domain", to: "ns1" },
+        { from: "domain", to: "ns2" },
+        { from: "www", to: "ipCluster" },
+        { from: "api", to: "ipCluster" },
+        { from: "ns1", to: "ipCluster" }
+      ],
+      rawOutput: `# passive lookup (fictional)
+;; DOMAIN: datasequence.com
+www.datasequence.com.    300 IN A      198.51.100.23
+api.datasequence.com.    300 IN A      198.51.100.24
+app.datasequence.com.    300 IN CNAME  app-hosting.provider.net
+mail.datasequence.com.   600 IN MX 10  203.0.113.45
+ns1.datasequence.com.    3600 IN NS    198.51.100.5
+ns2.external-ns.net.      3600 IN NS    198.51.100.6
+
+# GeoIP snapshot
+198.51.100.0/24  FictionalHoster-AS (US)
+203.0.113.0/24   FictionalMailGrid (US)
+`
+    };
+
+    let state = {
+      loaded: false,
+      domain: datasetTemplate.domain,
+      records: [],
+      graphNodes: {},
+      edges: [],
+      notes: [],
+      geoIpClue: datasetTemplate.geoIpClue,
+      netblock: datasetTemplate.netblock,
+      rawOutput: datasetTemplate.rawOutput
+    };
+
+    const elements = {
+      startBtn: document.getElementById("startBtn"),
+      status: document.getElementById("statusMessage"),
+      recordsBody: document.getElementById("recordsTbody"),
+      rawOutput: document.getElementById("rawOutput"),
+      summaryList: document.getElementById("summaryList"),
+      summaryPre: document.getElementById("summaryPre"),
+      summaryHint: document.getElementById("summaryHint"),
+      textOnlyBlock: document.getElementById("textOnlyBlock"),
+      graphCanvas: document.getElementById("graphCanvas"),
+      graphLinks: document.getElementById("graphLinks"),
+      nodeDetailCard: document.getElementById("nodeDetailCard"),
+      detailHint: document.getElementById("detailHint")
+    };
+
+    const tabs = {
+      buttons: [document.getElementById("summaryTab"), document.getElementById("recordsTab"), document.getElementById("rawTab")],
+      panels: {
+        summaryTab: document.getElementById("summaryPanel"),
+        recordsTab: document.getElementById("recordsPanel"),
+        rawTab: document.getElementById("rawPanel")
+      }
+    };
+
+    function cloneDataset(template) {
+      return JSON.parse(JSON.stringify(template));
+    }
+
+    function loadDataset() {
+      const clone = cloneDataset(datasetTemplate);
+      state = { ...clone, loaded: true };
+      renderAll();
+      setStatus("Dataset loaded. Review each tab to extract findings.");
+    }
+
+    function resetSimulator() {
+      state = {
+        loaded: false,
+        domain: datasetTemplate.domain,
+        records: [],
+        graphNodes: {},
+        edges: [],
+        notes: [],
+        geoIpClue: datasetTemplate.geoIpClue,
+        netblock: datasetTemplate.netblock,
+        rawOutput: datasetTemplate.rawOutput
+      };
+      renderAll();
+      setStatus("Simulator reset. Start Test when ready.");
+    }
+
+    function setStatus(message) {
+      elements.status.textContent = message;
+    }
+
+    function renderAll() {
+      renderGraph();
+      renderRecordsTable();
+      elements.rawOutput.textContent = state.loaded ? state.rawOutput : "# Awaiting passive collection...";
+      renderSummary();
+      renderTextOnly();
+    }
+
+    function renderGraph() {
+      elements.graphLinks.innerHTML = "";
+      elements.graphCanvas.querySelectorAll(".graph-node").forEach(node => node.remove());
+
+      if (!state.loaded) {
+        elements.graphCanvas.setAttribute("aria-label", "Graph empty. Start Test to view nodes.");
+        elements.nodeDetailCard.innerHTML = `
+          <header>
+            <h3>Node details</h3>
+          </header>
+          <p class="hint">Graph is empty until the preset loads.</p>
+        `;
+        return;
+      }
+
+      elements.graphCanvas.setAttribute("aria-label", "Passive map loaded");
+
+      Object.values(state.edges).forEach(edge => edge);
+
+      state.edges.forEach(edge => {
+        const source = state.graphNodes[edge.from];
+        const target = state.graphNodes[edge.to];
+        if (!source || !target) return;
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", source.position.x);
+        line.setAttribute("y1", source.position.y);
+        line.setAttribute("x2", target.position.x);
+        line.setAttribute("y2", target.position.y);
+        line.setAttribute("stroke", "rgba(125, 211, 252, 0.4)");
+        line.setAttribute("stroke-width", "0.6");
+        elements.graphLinks.appendChild(line);
+      });
+
+      Object.values(state.graphNodes).forEach(node => {
+        const button = document.createElement("button");
+        button.className = `graph-node ${node.type} ${node.externallyExposed ? "exposed" : ""}`.trim();
+        button.style.left = `${node.position.x}%`;
+        button.style.top = `${node.position.y}%`;
+        button.textContent = node.label;
+        button.dataset.nodeId = node.id;
+        button.title = node.host ? `Inspect ${node.host}` : `Inspect ${node.label}`;
+        button.addEventListener("click", () => showNodeDetail(node.id));
+        button.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            showNodeDetail(node.id);
+          }
+        });
+        elements.graphCanvas.appendChild(button);
+      });
+    }
+
+    function showNodeDetail(nodeId) {
+      const node = state.graphNodes[nodeId];
+      if (!node) return;
+      const record = state.records.find(r => r.host === node.host);
+
+      const card = document.createElement("div");
+      card.className = "detail-card";
+      const header = document.createElement("header");
+      const title = document.createElement("h3");
+      title.textContent = node.label;
+      header.appendChild(title);
+      card.appendChild(header);
+
+      const list = document.createElement("dl");
+      list.innerHTML = `
+        <dt>Role</dt><dd>${node.type}</dd>
+        <dt>Linked record</dt><dd>${record ? record.type : "None"}</dd>
+        <dt>Value</dt><dd>${record ? record.value || "" : ": "}</dd>
+        <dt>IP</dt><dd>${record && record.ip ? record.ip : "(not set)"}</dd>
+        <dt>Owner</dt><dd>${record ? record.owner : "(n/a)"}</dd>
+        <dt>GeoIP</dt><dd>${record ? record.geo : "(n/a)"}</dd>
+      `;
+      card.appendChild(list);
+
+      const toggleWrapper = document.createElement("div");
+      if (record) {
+        const toggleId = `exposed-${node.id}`;
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.id = toggleId;
+        checkbox.checked = Boolean(record.externallyExposed);
+        checkbox.addEventListener("change", () => {
+          setExposure(record.host, checkbox.checked);
+        });
+        const label = document.createElement("label");
+        label.setAttribute("for", toggleId);
+        label.textContent = "Mark as externally exposed";
+        toggleWrapper.append(checkbox, label);
+      } else {
+        toggleWrapper.innerHTML = '<p class="hint">No exposure toggle for this helper node.</p>';
+      }
+
+      card.appendChild(toggleWrapper);
+      elements.nodeDetailCard.replaceWith(card);
+      elements.nodeDetailCard = card;
+    }
+
+    function setExposure(host, exposed) {
+      state.records = state.records.map(record => record.host === host ? { ...record, externallyExposed: exposed } : record);
+      Object.values(state.graphNodes).forEach(node => {
+        if (node.host === host) {
+          node.externallyExposed = exposed;
+        }
+      });
+      renderGraph();
+      renderRecordsTable();
+      renderSummary();
+      renderTextOnly();
+      setStatus(`${host} marked as ${exposed ? "externally exposed" : "internal"}.`);
+    }
+
+    function renderRecordsTable() {
+      if (!state.loaded || !state.records.length) {
+        elements.recordsBody.innerHTML = '<tr><td colspan="7">Start the test to view records.</td></tr>';
+        return;
+      }
+      const rows = state.records.map(record => `
+        <tr>
+          <td>${record.host}</td>
+          <td>${record.type}</td>
+          <td>${record.value || ""}</td>
+          <td>${record.ip || ""}</td>
+          <td>${record.owner}</td>
+          <td>${record.geo}</td>
+          <td>${record.externallyExposed ? "Yes" : "No"}</td>
+        </tr>
+      `).join("\n");
+      elements.recordsBody.innerHTML = rows;
+    }
+
+    function renderSummary() {
+      if (!state.loaded) {
+        elements.summaryList.innerHTML = `
+          <li>Use Start Test to populate data.</li>
+          <li>Highlight any externally exposed services before copying the summary.</li>
+        `;
+        elements.summaryPre.textContent = "(Summary unavailable. Start the test to generate it.)";
+        elements.summaryHint.style.display = "block";
+        return;
+      }
+
+      const subdomains = state.records.filter(r => ["A", "CNAME"].includes(r.type)).map(r => r.host);
+      const nsRecords = state.records.filter(r => r.type === "NS").map(r => r.host);
+      const mxRecords = state.records.filter(r => r.type === "MX");
+      const aRecords = state.records.filter(r => r.type === "A");
+      const exposed = state.records.filter(r => r.externallyExposed).map(r => r.host);
+
+      elements.summaryList.innerHTML = `
+        <li><strong>Domain:</strong> ${state.domain}</li>
+        <li><strong>Subdomains observed:</strong> ${subdomains.join(", ")}</li>
+        <li><strong>Authoritative NS:</strong> ${nsRecords.join(", ")}</li>
+        <li><strong>Mail path:</strong> ${mxRecords.map(r => `${r.host} (${r.value})`).join(", ")}</li>
+        <li><strong>A records:</strong> ${aRecords.map(r => `${r.host} → ${r.value}`).join(", ")}</li>
+        <li><strong>GeoIP clue:</strong> ${state.geoIpClue}</li>
+        <li><strong>Notes:</strong> ${[...state.notes, exposed.length ? `Marked as externally exposed: ${exposed.join(", ")}` : null].filter(Boolean).join("; ")}</li>
+      `;
+
+      const summaryText = buildSummaryText({ subdomains, nsRecords, mxRecords, aRecords, exposed });
+      elements.summaryPre.textContent = summaryText;
+      elements.summaryHint.style.display = "none";
+    }
+
+    function buildSummaryText({ subdomains, nsRecords, mxRecords, aRecords, exposed }) {
+      const mxLine = mxRecords.length ? mxRecords.map(r => `${r.host} -> ${r.value}`).join("; ") : "(none)";
+      const aLine = aRecords.length ? aRecords.map(r => `${r.host} -> ${r.value}`).join("; ") : "(none)";
+      const notesLine = [...state.notes, exposed.length ? `Marked as externally exposed: ${exposed.join(", ")}` : null]
+        .filter(Boolean)
+        .join("; ");
+
+      return [
+        `${state.domain}`,
+        `Subdomains: ${subdomains.join(", ")}`,
+        `NS: ${nsRecords.join(", ")}`,
+        `MX: ${mxLine}`,
+        `A: ${aLine}`,
+        `GeoIP: ${state.geoIpClue}`,
+        `Notes: ${notesLine}`
+      ].join("\n");
+    }
+
+    function buildTextOnlyText() {
+      if (!state.loaded) {
+        return "Text-only export will appear here once the dataset is loaded.";
+      }
+      const lines = state.records.map(record => `${record.type}\t${record.host}\t${record.value || record.ip}\t${record.ip || "-"}\t${record.owner}`);
+      return `# Text-only view\nDomain: ${state.domain}\n${lines.join("\n")}`;
+    }
+
+    function renderTextOnly() {
+      elements.textOnlyBlock.textContent = buildTextOnlyText();
+    }
+
+    function handleTabClick(event) {
+      const target = event.currentTarget;
+      tabs.buttons.forEach(button => {
+        const isSelected = button === target;
+        button.setAttribute("aria-selected", String(isSelected));
+        const panel = tabs.panels[button.id];
+        if (panel) {
+          panel.classList.toggle("active", isSelected);
+        }
+      });
+    }
+
+    tabs.buttons.forEach(button => button.addEventListener("click", handleTabClick));
+    elements.startBtn.addEventListener("click", loadDataset);
+
+    document.getElementById("recordsTab").addEventListener("click", () => setStatus("Review each record for quest answers."));
+    document.getElementById("rawTab").addEventListener("click", () => setStatus("Raw passive transcript ready."));
+
+    renderAll();
+  </script>
+</body>
+</html>

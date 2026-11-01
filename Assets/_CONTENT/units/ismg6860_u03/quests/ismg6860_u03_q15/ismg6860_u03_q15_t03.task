@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A visual match does not establish that two installers share the same provenance. Choose the comparison fields that directly distinguish the repackaged build.",
+      "taskInstructions": "Use the Trusted Build and Repackaged Build columns on the AppCheck page.",
+      "taskQuestion": "Which clue best supports the finding?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The package ID and signing publisher differ from the trusted build.",
+      "answers": [
+        "Both builds display the LanternPass name and artwork.",
+        "The repackaged build advertises a recent version number.",
+        "The package ID and signing publisher differ from the trusted build.",
+        "Both comparison columns use the same AppCheck layout."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The artwork matches, so appearance cannot settle the question. Choose the identity and signing evidence that exposes the repackaged build.",
+      "taskInstructions": "Use the Trusted Build and Repackaged Build columns on the AppCheck page.",
+      "taskQuestion": "Which detail exposes the repackaged build?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The package ID and signing publisher identify a different build origin.",
+      "answers": [
+        "Both builds display the LanternPass name and artwork.",
+        "The repackaged build advertises a recent version number.",
+        "Both comparison columns use the same AppCheck layout.",
+        "The package ID and signing publisher differ from the trusted build."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Staff need a checkable difference rather than advice to judge how trustworthy an installer looks. Choose the provenance evidence shown by AppCheck.",
+      "taskInstructions": "Use the Trusted Build and Repackaged Build columns on the AppCheck page.",
+      "taskQuestion": "Which clue most clearly marks the build as fake?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The package ID and signing publisher give staff concrete indicators to check.",
+      "answers": [
+        "The package ID and signing publisher differ from the trusted build.",
+        "Both builds display the LanternPass name and artwork.",
+        "The repackaged build advertises a recent version number.",
+        "Both comparison columns use the same AppCheck layout."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u03_q15_t03",
+  "parentQuestID": "ismg6860_u03_q15",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

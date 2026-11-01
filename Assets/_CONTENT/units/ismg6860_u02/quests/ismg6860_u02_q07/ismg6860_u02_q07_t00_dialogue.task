@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> You preserved the banner exactly. Now we need packet evidence showing what ECHO-73 actually exchanged, without claiming more than the capture can establish.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Open the focused capture and record the endpoints before interpreting the flow."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> A banner is cheap. Routes are expensive. If ECHO-73 talks somewhere it should not, that path is what makes the map worth keeping, and nobody ever closes a door they did not know was there.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Kade Mercer:</b> Open the capture and find the endpoint that makes this route valuable."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> Redaction only works when the underlying proof is solid. Right now all we have is a version string and a vendor's promise that maintenance stays on its own side of the fence. Riders deserve better than a promise.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Open the capture and keep the observation narrow enough to defend."
+    }
+  ],
+  "taskID": "ismg6860_u02_q07_t00_dialogue",
+  "parentQuestID": "ismg6860_u02_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

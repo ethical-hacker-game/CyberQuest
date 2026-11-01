@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "metareader",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A <b>casual photo</b> can expose embedded location, time, and device fields. Metadata Reader extracts those fields without altering the original file.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Metadata Reader</b>.",
+      "taskQuestion": "Unlock Metadata Reader.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Metadata Reader is ready to inspect the photo without changing it."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "metareader",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A <b>casual photo</b> may contain a visible image and embedded fields. Metadata Reader makes location, time, and device data readable without altering the file.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Metadata Reader</b>.",
+      "taskQuestion": "Unlock Metadata Reader.",
+      "taskCompleteText": "<b>Felix Rane:</b> Metadata Reader is ready to expose the file's embedded fields."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "metareader",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A <b>casual photo</b> may reveal more than its owner intended. Metadata Reader shows embedded location, time, and device fields directly from the file.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Metadata Reader</b>.",
+      "taskQuestion": "Unlock Metadata Reader.",
+      "taskCompleteText": "<b>Imani Vale:</b> Metadata Reader is ready to show what the file exposes."
+    }
+  ],
+  "taskID": "ismg6860_u03_q14_t00_unlock_metareader",
+  "parentQuestID": "ismg6860_u03_q14",
+  "articleID": "u03_personal_information_exposure",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

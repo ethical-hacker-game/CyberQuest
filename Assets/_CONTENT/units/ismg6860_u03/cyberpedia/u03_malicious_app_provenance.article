@@ -1,0 +1,12 @@
+{
+  "articleID": "u03_malicious_app_provenance",
+  "videoURL": null,
+  "title": "Malicious Apps and Provenance",
+  "content": "A malicious application may imitate a legitimate tool while stealing information, changing device behavior, or displaying content over trusted screens. Visual appearance is weak evidence: names, icons, screenshots, ratings, and security language can all be copied. Provenance answers the more important question: where did this build come from, and who is responsible for it?\n\n<b>Verify identity before installation</b>\n\nUse the organization's documented application store or download route. Check the exact publisher, package or bundle identifier, signing information, update source, and support domain. A repackaged application may preserve the original artwork while using a different package identity or signature. A fake VPN can use words such as secure, shield, or encrypted even though its operator cannot be verified.\n\n<b>Compare permissions with purpose</b>\n\nPermissions should match the feature being offered. A simple badge, map, or utility application normally has no reason to read messages and contacts, draw over other applications, control accessibility services, administer the device, or install additional software. VPN access is particularly sensitive because the provider may be able to observe or redirect network traffic. A long permission list is not automatically malicious, but unexplained power plus uncertain provenance is a strong reason to stop.\n\nDo not install a suspicious build merely to test it, and do not grant permissions to see what happens. Record the page, source, publisher, package identity, version, requested permissions, and file hash if an approved tool provides it without execution. Report the application through the approved channel. If it was installed, disconnect or isolate the device as policy directs and let the response team preserve evidence before removal.",
+  "links": [
+    "helper app",
+    "VPN's listing",
+    "build comparison",
+    "package identifier"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "articleID": "u01_phishing_and_email_investigation",
+  "videoURL": null,
+  "title": "Phishing and Email Investigation",
+  "content": "Phishing uses deceptive messages to make a recipient reveal information, open malicious content, send money, or perform another unsafe action. Spearphishing targets a particular person or group using details gathered through reconnaissance. Impersonation may copy a trusted brand, executive, colleague, or domain without compromising the real account.\n\n<b>Inspect safely</b>\nDo not click links, open unexpected attachments, reply, or call contact details supplied by the message. Preserve the original message and examine a copy in an approved analysis environment. The visible From name is only a label. Raw message headers can show routing hops, return paths, message identifiers, timestamps, and authentication results, but forwarded mail and relays may remove or add fields. Read the Received chain in context and correlate addresses with trusted logs or registration data; one IP or host does not prove who authored the message.\n\nLook for mismatched domains, look-alike spelling, recently registered infrastructure, unexpected reply addresses, urgent requests, and links whose destination differs from their label. An HTTP redirect is a server response that sends the client to another URL. A 3xx status and its Location header identify the next destination in that response; they do not identify who configured the redirect or prove what happened after the client followed it. Verify requests through a known channel obtained independently of the message. Report suspicious mail through the organization's process so defenders can search for related copies and protect other recipients.\n\n<b>Reduce spoofing and impact</b>\nSPF identifies permitted sending systems, DKIM signs message content, and DMARC applies domain alignment and policy while producing reports. These controls work together but cannot prove that every authenticated message is harmless. Combine them with secure account access, filtering, staff training, reduced public exposure of employee details, and rapid reporting. Preserve evidence before blocking infrastructure or removing messages so the response remains traceable.",
+  "links": [
+    "raw message source",
+    "sample header",
+    "phishing pages",
+    "stage phishing",
+    "phishing success",
+    "spearphish",
+    "email authentication",
+    "impersonation",
+    "HTTP redirect",
+    "Location header"
+  ]
+}

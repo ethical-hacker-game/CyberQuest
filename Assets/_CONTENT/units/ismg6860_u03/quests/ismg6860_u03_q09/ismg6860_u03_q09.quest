@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u03_q09",
+  "cityIndex": 5139,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q09_t01",
+    "ismg6860_u03_q09_t02",
+    "ismg6860_u03_q09_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Calendar That Pushes Back",
+      "questDescription": "Inspect a repeating badge-support invite and connect its organizer and reminder destination to the known QR lure.",
+      "questCompleteText": "<b>Asha Moreno:</b> The invite repeatedly directs Riley to the known external badge-login domain. Preserve it, warn Riley, and remove it safely.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Calendar That Pushes Back",
+      "questDescription": "Inspect how a calendar reminder repeatedly delivers the same campaign domain without requiring another message.",
+      "questCompleteText": "<b>Felix Rane:</b> The organizer, external URL, and fifteen-minute reminder loop are documented.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Calendar That Pushes Back",
+      "questDescription": "Document the organizer and reminder loop so Riley and other staff can recognize the malicious invite.",
+      "questCompleteText": "<b>Imani Vale:</b> The warning can now name the external domain and repeating reminder behavior without exposing Riley's schedule.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

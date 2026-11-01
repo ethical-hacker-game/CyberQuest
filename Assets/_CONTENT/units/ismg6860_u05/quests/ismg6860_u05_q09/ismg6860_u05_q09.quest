@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u05_q09",
+  "cityIndex": 7253,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q09_t01",
+    "ismg6860_u05_q09_t02_patch_hunt",
+    "ismg6860_u05_q09_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "RPC Enumeration",
+      "questDescription": "Dana Osei needs the historian's file-sharing surface documented. Query its RPC portmapper, identify the registered file-sharing service, and confirm the result with a second implementation.",
+      "questCompleteText": "<b>Dana Osei:</b> Two independent tools confirm that the historian registers NFS through RPC. The service now belongs in the remediation review.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "RPC Enumeration",
+      "questDescription": "Reyes Calloway reads the portmapper table as a service map. Identify the historian's registered file-sharing service and verify the program-to-port mapping independently.",
+      "questCompleteText": "<b>Reyes Calloway:</b> Both tools expose the same NFS registration and dynamic RPC ports. That is a verified service map, not proof of access to its files.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "RPC Enumeration",
+      "questDescription": "Priya Nandan wants the historian's exposed services documented precisely. Identify what the RPC registry publishes and verify the result before describing the risk.",
+      "questCompleteText": "<b>Priya Nandan:</b> The historian remotely identifies NFS and its supporting RPC services to the authorized tester. File access and data movement remain untested.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

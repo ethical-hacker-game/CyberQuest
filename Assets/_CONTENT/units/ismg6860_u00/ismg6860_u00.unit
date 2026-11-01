@@ -1,0 +1,51 @@
+{
+  "unitID": "ismg6860_u00",
+  "placeholder": false,
+  "order": 0,
+  "unitName": "0. First Signal",
+  "unitDescription": "Begin your first authorized security case with Ed at CyberQuest Academy. Investigate a warning on the Training Northstar portal, connect evidence from mail, websites, commands, and tools, and decide how to turn your findings into action as a Whitehat Hacker or Hacktivist.",
+  "defaultPlayerName": "Alex",
+  "unitEntryMessage": "Welcome to CyberQuest Academy, {player}. Training Northstar needs help reviewing a warning on its service portal. Ed has the authorization and your first lead. Check his briefing, establish the scope, and build a record the client can act on.",
+  "questIds": [
+    "ismg6860_u00_q01",
+    "ismg6860_u00_q02",
+    "ismg6860_u00_q03",
+    "ismg6860_u00_q09",
+    "ismg6860_u00_q04",
+    "ismg6860_u00_d01",
+    "ismg6860_u00_q05",
+    "ismg6860_u00_q06",
+    "ismg6860_u00_q07",
+    "ismg6860_u00_q08"
+  ],
+  "questsAreaSize": {
+    "x": 3600.0,
+    "y": 700.0
+  },
+  "questTreeOffset": 100.0,
+  "appIDs": [
+    "zenmap"
+  ],
+  "personas": [
+    {
+      "personaID": "michele",
+      "personaName": "Whitehat Hacker",
+      "personaDescription": "A <b>whitehat hacker</b> works with permission to protect systems and people. You document findings, help the owner fix the cause, and verify that the repair works. Michele is your operations contact for this case.",
+      "messagePlayerJoinedHeader": "Whitehat Path Chosen",
+      "messagePlayerJoined": "You are taking the <b>Whitehat</b> path: turn the evidence into a repair the owner can reproduce and verify. Michele will help you prepare the handoff.",
+      "messagePlayerUnloyalHeader": "Whitehat Code Challenged",
+      "messagePlayerUnloyal": "Keep your actions authorized and your findings reproducible. Protecting the service means respecting scope and following through on verification.",
+      "personaPictureID": "persona_white"
+    },
+    {
+      "personaID": "ana",
+      "personaName": "Hacktivist",
+      "personaDescription": "A <b>hacktivist</b> uses technical evidence to advocate for people and demand accountability. You explain the impact, press for a response, and protect sensitive details so the message does not create new harm. Ana is your communications contact for this case.",
+      "messagePlayerJoinedHeader": "Hacktivist Path Chosen",
+      "messagePlayerJoined": "You are taking the <b>Hacktivist</b> path: use the evidence to advocate for affected users and press for accountability. Ana will help you prepare a careful brief.",
+      "messagePlayerUnloyalHeader": "The Cause Challenged",
+      "messagePlayerUnloyal": "Keep the people affected at the center of the work. Ground your claims in evidence and avoid spreading details that would make the exposure worse.",
+      "personaPictureID": "persona_hacktivist"
+    }
+  ]
+}

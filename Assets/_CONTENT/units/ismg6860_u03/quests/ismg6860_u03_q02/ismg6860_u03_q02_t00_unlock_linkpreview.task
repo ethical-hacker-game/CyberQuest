@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "linkpreview",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Before inspecting a campaign link, we need a safe way to reveal its destination. Link Preview expands shortened addresses and renders pages without submitting forms or running their scripts.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Link Preview</b>.",
+      "taskQuestion": "Unlock Link Preview in the Lab panel.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Link Preview is ready. We can inspect the lure without interacting with its live page."
+    }
+  ],
+  "taskID": "ismg6860_u03_q02_t00_unlock_linkpreview",
+  "parentQuestID": "ismg6860_u03_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

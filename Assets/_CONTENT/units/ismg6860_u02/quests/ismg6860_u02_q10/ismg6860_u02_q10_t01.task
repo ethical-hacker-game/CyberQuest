@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> UDP silence is ambiguous. A quiet service and a firewall drop can produce the same result, so keep the scanner's hedged label instead of reporting a closed port.",
+      "taskInstructions": "Run <b>nmap -sU 10.42.18.73</b> in the terminal and read the state column of the UDP results.",
+      "taskQuestion": "What does open|filtered mean in this UDP result?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. Open|filtered records uncertainty between a quiet service and a filtered response.",
+      "answers": [
+        "The scanner cannot tell a quiet open service from a filtered one.",
+        "The service is confirmed exploitable on the listed UDP service port.",
+        "The host is fully offline and answered nothing at all.",
+        "UDP scanning falls outside the approved assessment scope."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> UDP silence makes the map uncertain, not empty. Preserve open|filtered when the probe cannot distinguish a listening service from a dropped response.",
+      "taskInstructions": "Run <b>nmap -sU 10.42.18.73</b> in the terminal and read the state column of the UDP results.",
+      "taskQuestion": "What does open|filtered mean in this UDP result?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Open|filtered is an uncertain but useful map note.",
+      "answers": [
+        "The scanner cannot tell a quiet open service from a filtered one.",
+        "The service is confirmed exploitable on the listed UDP service port.",
+        "The host is fully offline and answered nothing at all.",
+        "UDP scanning falls outside the approved assessment scope."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> UDP silence can be exaggerated into a threat or dismissed as nothing. Keep the wording exactly where the evidence sits: open|filtered and unresolved.",
+      "taskInstructions": "Run <b>nmap -sU 10.42.18.73</b> in the terminal and read the state column of the UDP results.",
+      "taskQuestion": "What does open|filtered mean in this UDP result?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Open|filtered preserves the uncertainty without hiding or exaggerating it.",
+      "answers": [
+        "The scanner cannot tell a quiet open service from a filtered one.",
+        "The service is confirmed exploitable on the listed UDP service port.",
+        "The host is fully offline and answered nothing at all.",
+        "UDP scanning falls outside the approved assessment scope."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u02_q10_t01",
+  "parentQuestID": "ismg6860_u02_q10",
+  "articleID": "u02_scan_states",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": false,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Maya:</b> The <b>Location header</b> points to a look-alike login host. My developers want to know whether that is enough to explain why the site redirected visitors.",
+      "taskInstructions": "Use the response excerpt from the previous task and the Cyberpedia guidance to assess what the evidence can establish.",
+      "taskQuestion": "Does the Location header alone identify who caused the redirect?",
+      "taskCompleteText": "<b>Maya:</b> No. The header identifies the destination, not the person or system that configured the redirect. We need the site's configuration and logs to investigate the cause."
+    }
+  ],
+  "taskID": "ismg6860_u01_q25_t02",
+  "parentQuestID": "ismg6860_u01_q25",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

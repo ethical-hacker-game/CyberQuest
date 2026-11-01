@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "pathmapper",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Separate findings can combine through reachability and trust. Unlock the Attack Path Mapper to distinguish confirmed connections from scenario assumptions and show where defenders can break the route.",
+      "taskInstructions": "",
+      "taskQuestion": "Unlock the Attack Path Mapper in the Lab panel.",
+      "taskCompleteText": "<b>Mara Voss:</b> Attack Path Mapper is ready. Build the route from confirmed evidence and label every assumption."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "pathmapper",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Individual findings matter less than the reach between them. Unlock the Attack Path Mapper to show which confirmed connection creates useful movement.",
+      "taskInstructions": "",
+      "taskQuestion": "Unlock the Attack Path Mapper in the Lab panel.",
+      "taskCompleteText": "<b>Felix Rane:</b> Attack Path Mapper is ready. The value of the route now depends on the evidence behind each connection."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "pathmapper",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Separate tickets can hide the relationship between a public service and an internal system. Unlock the Attack Path Mapper to make that relationship visible without overstating the evidence.",
+      "taskInstructions": "",
+      "taskQuestion": "Unlock the Attack Path Mapper in the Lab panel.",
+      "taskCompleteText": "<b>Imani Vale:</b> Attack Path Mapper is ready. Show the confirmed route and the boundary Northbridge needs to enforce."
+    }
+  ],
+  "taskID": "ismg6860_u04_q19_t00_unlock_pathmapper",
+  "parentQuestID": "ismg6860_u04_q19",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

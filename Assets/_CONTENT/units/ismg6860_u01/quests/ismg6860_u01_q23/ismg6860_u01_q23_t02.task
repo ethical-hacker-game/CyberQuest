@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": false,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Etienne:</b> A recently registered domain, <b>arcadia-support.com</b>, uses our name. That similarity is a lead to investigate, but registration alone does not identify its owner or prove who is behind it.",
+      "taskInstructions": "Review the guidance on <b>targeted intrusion</b> before judging what the registration proves.",
+      "taskQuestion": "Does the domain registration alone prove an APT is targeting Arcadia?",
+      "taskCompleteText": "<b>Etienne:</b> No. The name and registration date are clues; we need corroborating evidence before attributing the domain or activity to an APT."
+    }
+  ],
+  "taskID": "ismg6860_u01_q23_t02",
+  "parentQuestID": "ismg6860_u01_q23",
+  "articleID": "u01_persistent_threats",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

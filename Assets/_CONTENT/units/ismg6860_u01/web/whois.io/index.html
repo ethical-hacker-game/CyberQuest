@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Whois Search: shadowtech.com</title>
+	<style>
+		:root {
+			color-scheme: dark;
+			font-family: "Inter", "Segoe UI", Arial, sans-serif;
+			background-color: #050b15;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			background: #050b15;
+			color: #e5e7eb;
+		}
+
+		.page {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 40px 24px 80px;
+		}
+
+		.site-header {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			margin-bottom: 32px;
+		}
+
+		.site-title {
+			font-size: 32px;
+			font-weight: 700;
+			margin: 0;
+			background: linear-gradient(120deg, #60a5fa, #818cf8, #c084fc);
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+
+		.search-bar {
+			display: flex;
+			gap: 12px;
+			flex-wrap: wrap;
+		}
+
+		.search-bar input {
+			flex: 1 1 280px;
+			padding: 12px 14px;
+			font-size: 16px;
+			border: 1px solid #1f2937;
+			border-radius: 6px;
+			background: #0f172a;
+			color: #f3f4f6;
+		}
+
+		.search-bar input::placeholder {
+			color: #94a3b8;
+		}
+
+		.search-bar button {
+			padding: 12px 24px;
+			font-size: 16px;
+			border: none;
+			border-radius: 6px;
+			background: linear-gradient(135deg, #2563eb, #1d4ed8);
+			color: #fff;
+			cursor: pointer;
+			transition: transform 120ms ease, box-shadow 120ms ease;
+			box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+		}
+
+		.search-bar button:active {
+			transform: translateY(1px);
+		}
+
+		.result-card {
+			background: #111827;
+			border: 1px solid #1f2937;
+			border-radius: 8px;
+			padding: 24px;
+			box-shadow: 0 20px 40px rgba(2, 6, 23, 0.6);
+		}
+
+		.alert-card {
+			background: #1b2435;
+			border: 1px solid #f87171;
+			border-radius: 8px;
+			padding: 20px;
+			color: #fecaca;
+			box-shadow: 0 20px 40px rgba(2, 6, 23, 0.4);
+		}
+
+		.alert-card strong {
+			display: block;
+			margin-bottom: 4px;
+			color: #fca5a5;
+		}
+
+		.result-heading {
+			font-size: 18px;
+			margin-bottom: 12px;
+			color: #e2e8f0;
+		}
+
+		.whois-output {
+			background: #050b1f;
+			color: #e5e7eb;
+			font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+			font-size: 15px;
+			padding: 20px;
+			border-radius: 6px;
+			border: 1px solid #1e293b;
+			white-space: pre-wrap;
+			line-height: 1.6;
+		}
+
+		details {
+			margin-top: 24px;
+			font-size: 15px;
+		}
+
+		details summary {
+			cursor: pointer;
+			color: #38bdf8;
+		}
+
+		.raw-output {
+			margin-top: 12px;
+			padding: 18px;
+			background: #0b1120;
+			border: 1px solid #1f2937;
+			border-radius: 6px;
+			font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+			font-size: 15px;
+			white-space: pre-wrap;
+			line-height: 1.6;
+			color: #f3f4f6;
+		}
+
+		.hidden {
+			display: none;
+		}
+
+		footer {
+			margin-top: 40px;
+			font-size: 14px;
+			color: #94a3b8;
+			text-align: center;
+		}
+
+		@media (max-width: 520px) {
+			.site-title {
+				font-size: 22px;
+			}
+
+			.search-bar button {
+				width: 100%;
+			}
+		}
+	</style>
+  <script src="../cq-bridge.js"></script>
+</head>
+<body>
+	<main class="page" aria-label="Whois search result for shadowtech.com">
+		<header class="site-header">
+			<h1 class="site-title">Whois Search</h1>
+			<div class="search-bar" role="search" aria-label="Lookup form">
+				<input id="domain-input" type="text" value="shadowtech.com" aria-label="Domain name">
+				<button type="button" data-lookup>Lookup</button>
+			</div>
+		</header>
+
+		<section class="result-card hidden" aria-live="polite" aria-hidden="true" data-result>
+			<div class="result-heading">WHOIS OUTPUT</div>
+			<pre class="whois-output" tabindex="0">WHOIS RECORD
+Domain Name: SHADOWTECH.COM
+Registry Domain ID: D-1973564-SHADOWTECH
+Registrar: Frontier Domains, LLC
+Registrar IANA ID: 499
+Registrar URL: http://www.frontierdomains.com
+Updated Date: 2024-11-02T09:12:33Z
+Creation Date: 2019-05-18T13:45:00Z
+Registry Expiry Date: 2026-05-18T13:45:00Z
+Name Server: NS1.SHADOWTECH-CLOUD.NET
+Name Server: NS2.SHADOWTECH-CLOUD.NET
+Registrar Abuse Contact Email: abuse@frontierdomains.com
+
+Registrant Name: Riley Calder
+Registrant Organization: ShadowTech Projects
+Registrant Email: riley.calder@shadowtech.com
+
+Admin Name: Jordan Miles
+Admin Email: admin@shadowtech.com
+Tech Name: Casey Lin
+Tech Email: tech@shadowtech.com
+Query performed on: 2025-06-15T14:22:00Z</pre>
+
+			<details>
+				<summary>Raw output</summary>
+				<pre class="raw-output">WHOIS RECORD
+Domain Name: SHADOWTECH.COM
+Registry Domain ID: D-1973564-SHADOWTECH
+Registrar: Frontier Domains, LLC
+Registrar IANA ID: 499
+Registrar URL: http://www.frontierdomains.com
+Updated Date: 2024-11-02T09:12:33Z
+Creation Date: 2019-05-18T13:45:00Z
+Registry Expiry Date: 2026-05-18T13:45:00Z
+Name Server: NS1.SHADOWTECH-CLOUD.NET
+Name Server: NS2.SHADOWTECH-CLOUD.NET
+Registrar Abuse Contact Email: abuse@frontierdomains.com
+
+Registrant Name: Riley Calder
+Registrant Organization: ShadowTech Projects
+Registrant Email: riley.calder@shadowtech.com
+
+Admin Name: Jordan Miles
+Admin Email: admin@shadowtech.com
+Tech Name: Casey Lin
+Tech Email: tech@shadowtech.com
+Query performed on: 2025-06-15T14:22:00Z</pre>
+			</details>
+		</section>
+
+		<section class="alert-card hidden" aria-live="assertive" aria-hidden="true" data-error>
+			<strong>No record found</strong>
+			<span data-error-message>Unable to locate WHOIS data for the requested domain.</span>
+		</section>
+	</main>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const lookupButton = document.querySelector("[data-lookup]");
+			const resultCard = document.querySelector("[data-result]");
+			const errorCard = document.querySelector("[data-error]");
+			const errorMessage = document.querySelector("[data-error-message]");
+			const domainInput = document.getElementById("domain-input");
+			const expectedDomain = "shadowtech.com";
+
+			function showResult() {
+				resultCard.classList.remove("hidden");
+				resultCard.setAttribute("aria-hidden", "false");
+				errorCard.classList.add("hidden");
+				errorCard.setAttribute("aria-hidden", "true");
+			}
+
+			function showError(domain) {
+				resultCard.classList.add("hidden");
+				resultCard.setAttribute("aria-hidden", "true");
+				errorCard.classList.remove("hidden");
+				errorCard.setAttribute("aria-hidden", "false");
+				errorMessage.textContent = `Unable to locate WHOIS data for "${domain}". Please verify the domain name.`;
+			}
+
+			lookupButton.addEventListener("click", function () {
+				const requestedDomain = domainInput.value.trim();
+				if (requestedDomain.toLowerCase() === expectedDomain) {
+					showResult();
+				} else {
+					showError(requestedDomain || "(empty request)");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

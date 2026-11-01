@@ -1,0 +1,24 @@
+{
+  "questID": "ismg6860_u01_d03",
+  "cityIndex": 2046,
+  "questIconID": "sample_decision_icon_2",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u01_d03_decision"
+  ],
+  "requiredQuestID": "ismg6860_u01_q08",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "",
+      "questName": "Disclosure Decision",
+      "questDescription": "The ShadowTech WHOIS record exposes Riley Calder’s name, organization, and direct contact address. Decide whether to report the exposure privately, exploit it for personal gain, or raise public awareness without redistributing the personal data.",
+      "questCompleteText": "<b>Samira:</b> You chose how to handle Riley’s exposed registration data. The decision is recorded, while the record’s attribution limits and Riley’s privacy remain relevant regardless of the selected path.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": ""
+    }
+  ]
+}

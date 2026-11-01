@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A <b>QR sticker</b> appeared beside the West Gate registration desk. Decode its destination before judging it, and do not enter credentials on the page.",
+      "taskInstructions": "Run <b>lantern decode qr</b> in the terminal, then open the decoded URL in the browser without submitting information.",
+      "taskQuestion": "Open the QR code phishing or quishing evidence page.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Destination captured. The QR code leads to a badge login outside Harborview's established workflow.",
+      "correctAnswer": "harbor-badge-verify.com/revalidate"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A <b>QR sticker</b> hides its destination behind a pattern people cannot inspect at a glance. Decode where this one leads and observe the page without submitting data.",
+      "taskInstructions": "Run <b>lantern decode qr</b> in the terminal, then open the decoded URL in the browser without submitting information.",
+      "taskQuestion": "Open the QR code phishing or quishing evidence page.",
+      "taskCompleteText": "<b>Felix Rane:</b> Destination captured. The hidden route ends at an external badge-login page.",
+      "correctAnswer": "harbor-badge-verify.com/revalidate"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Visitors may trust a <b>QR sticker</b> placed beside registration. Decode its destination so we can warn them precisely, without submitting information to the page.",
+      "taskInstructions": "Run <b>lantern decode qr</b> in the terminal, then open the decoded URL in the browser without submitting information.",
+      "taskQuestion": "Open the QR code phishing or quishing evidence page.",
+      "taskCompleteText": "<b>Imani Vale:</b> Destination captured. The warning can now name the external badge-login page.",
+      "correctAnswer": "harbor-badge-verify.com/revalidate"
+    }
+  ],
+  "taskID": "ismg6860_u03_q07_t01",
+  "parentQuestID": "ismg6860_u03_q07",
+  "articleID": "u03_mobile_lures",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Assess the batch as a system rather than judging one message in isolation. Choose the evidence that combines repeated content, pressure, and measured scale.",
+      "taskInstructions": "Use the message count, sender count, and repeated template in the batch summary.",
+      "taskQuestion": "Which finding best explains how this spam batch operates?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. One reward-and-urgency template sent at scale can succeed with only a small response rate.",
+      "answers": [
+        "One reused template sends reward-plus-urgency at scale.",
+        "Several messages use prizes to compete for attention.",
+        "The senders keep the wording short enough for SMS.",
+        "The visible sender names help group the spam batch."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The operator does not need most recipients to respond. Choose the batch evidence that makes a low conversion rate worthwhile.",
+      "taskInstructions": "Use the message count, sender count, and repeated template in the batch summary.",
+      "taskQuestion": "Which finding best explains how this spam batch operates?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. A reused reward-and-urgency template makes scale, not individual persuasion, the business model.",
+      "answers": [
+        "Several messages use prizes to compete for attention.",
+        "One reused template sends reward-plus-urgency at scale.",
+        "The senders keep the wording short enough for SMS.",
+        "The visible sender names help group the spam batch."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The batch can catch a small number of recipients while exhausting everyone else. Choose the evidence that explains both effects.",
+      "taskInstructions": "Use the message count, sender count, and repeated template in the batch summary.",
+      "taskQuestion": "Which finding best explains how this spam batch operates?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Repeated reward-and-urgency messages create conversion pressure and can bury legitimate warnings.",
+      "answers": [
+        "Several messages use prizes to compete for attention.",
+        "The senders keep the wording short enough for SMS.",
+        "One reused template sends reward-plus-urgency at scale.",
+        "The visible sender names help group the spam batch."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u03_q13_t03",
+  "parentQuestID": "ismg6860_u03_q13",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

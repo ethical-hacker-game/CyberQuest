@@ -1,0 +1,9 @@
+{
+  "skillID": "linkpreview",
+  "skillName": "Link Preview",
+  "skillDescription": "A sandboxed viewer for hostile links. Expands a shortened URL, shows where it actually lands, and renders the page without submitting forms, running scripts, or registering you as a visitor.",
+  "price": 1200,
+  "order": 10,
+  "requireTask": true,
+  "lockInDemo": false
+}

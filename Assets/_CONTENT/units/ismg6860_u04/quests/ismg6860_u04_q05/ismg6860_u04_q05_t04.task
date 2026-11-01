@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Rate the observed exposure without claiming that we inspected the archive.",
+      "taskInstructions": "Use the public listing, the administrative filename, and the supplied evidence of external probes.",
+      "taskQuestion": "Which assessment is supported by the available evidence?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Public access and likely sensitive content support prompt remediation, while the archive's actual contents remain unverified.",
+      "answers": [
+        "High priority: restrict access promptly because the public administrative archive may contain sensitive configuration or account data.",
+        "Low, because an exposed directory listing is only a minor cosmetic presentation issue on the site.",
+        "Informational, because the archive filename by itself is not itself a valid working password.",
+        "Critical, but only after the backup archive has actually been downloaded and then modified."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q05_t04",
+  "parentQuestID": "ismg6860_u04_q05",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

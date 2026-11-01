@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The final report is ready for the <b>authorized incident owner</b>. Review the evidence and remediation language that operations will use before launch.",
+      "taskInstructions": "Open Mail and select <b>Final ECHO-73 scan report</b>.",
+      "taskQuestion": "Open the final ECHO-73 report.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> The report records the device, services, ticketing flow, IPv6 observation, and required controls.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u02_q15_t01_final_report"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> The retained map contains live hosts, services, and route details. Review it as the sensitive source record behind any safer <b>public communication</b>.",
+      "taskInstructions": "Open Mail and select <b>Final ECHO-73 scan report</b>.",
+      "taskQuestion": "Open the final ECHO-73 report.",
+      "taskCompleteText": "<b>Kade Mercer:</b> The map's value comes from its verified detail, which is also what makes mishandling it dangerous.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u02_q15_t01_final_report"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> The city receives the technical record now; the <b>redacted advisory</b> can follow after the fix window. Review the summary and confirm that live route details remain withheld from the public version.",
+      "taskInstructions": "Open Mail and select <b>Final ECHO-73 scan report</b>.",
+      "taskQuestion": "Open the final ECHO-73 report.",
+      "taskCompleteText": "<b>Lena Ortiz:</b> The summary preserves the verified risk and remediation need without publishing the live route.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u02_q15_t01_final_report"
+    }
+  ],
+  "taskID": "ismg6860_u02_q15_t01",
+  "parentQuestID": "ismg6860_u02_q15",
+  "articleID": "u02_responsible_reporting",
+  "mailsOnStart": [
+    "ismg6860_u02_q15_t01_final_report"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

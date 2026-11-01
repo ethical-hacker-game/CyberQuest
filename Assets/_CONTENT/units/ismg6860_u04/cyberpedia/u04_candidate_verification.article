@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_candidate_verification",
+  "videoURL": null,
+  "title": "Candidate and Verified Findings",
+  "content": "A <b>candidate finding</b> is a credible lead from a scan, banner, or observation. A <b>verified finding</b> is supported by repeatable evidence showing the affected target and condition. Check evidence confidence, location, reachability, and any required preconditions. Record only what the evidence proves: a detected version is not automatically exploitable, and a suspected internal service is not confirmed public exposure. Verification should use the least invasive authorized method needed to answer the question.",
+  "links": [
+    "candidate and verified findings"
+  ]
+}

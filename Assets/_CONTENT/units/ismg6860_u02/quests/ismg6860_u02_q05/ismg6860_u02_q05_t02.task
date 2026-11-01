@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Scan states describe packet responses. A SYN/ACK supports an open result, a reset commonly supports closed, and silence or a policy response may be reported as filtered. None of those labels tells us whether a service belongs there.",
+      "taskInstructions": "",
+      "taskQuestion": "Which interpretation matches the scan states?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. Open, closed, and filtered describe observed responses, not authorization or risk by themselves.",
+      "answers": [
+        "Filtered always means the exposed service is safe to ignore.",
+        "Open, closed, and filtered are packet-response categories.",
+        "Closed means the entire host is currently offline.",
+        "Open means the discovered service is authorized to exploit."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u02_q05_t02",
+  "parentQuestID": "ismg6860_u02_q05",
+  "articleID": "u02_scan_states",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

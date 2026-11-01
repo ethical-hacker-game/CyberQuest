@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "minigameType": "CamCleanDeskSweep",
+      "minigameHeaderText": "Finance Floor Exposure Sweep",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "cameraDeckSettings": {
+        "facilityId": "night_ops_office",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Finance Floor",
+        "targetLabel": "EXPOSED DOCUMENT",
+        "decoyLabel": "COMPLIANT ITEM",
+        "sweep": {
+          "violationCount": 5,
+          "decoyCount": 3,
+          "switchDelaySeconds": -1
+        }
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Riley:</b> Review our authorized camera feeds for exposed information. Judge each spot by its description and surrounding context; an ordinary object can be compliant or risky depending on how it is handled.",
+      "taskInstructions": "Switch between feeds and inspect the described spots. Report all five genuine <b>EXPOSED DOCUMENT</b> violations while avoiding the three compliant decoys. False reports reduce report credibility.",
+      "taskQuestion": "Identify the genuine exposure violations in the camera sweep.",
+      "taskCompleteText": "<b>Riley:</b> You identified five exposure violations in the feeds. They show handling risks, but do not prove how the financial documents reached the forum."
+    }
+  ],
+  "taskID": "ismg6860_u01_q14_t02",
+  "parentQuestID": "ismg6860_u01_q14",
+  "articleID": "u01_physical_information_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

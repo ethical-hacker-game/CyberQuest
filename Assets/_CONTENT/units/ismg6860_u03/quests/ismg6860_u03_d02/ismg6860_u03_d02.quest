@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u03_d02",
+  "cityIndex": 5150,
+  "questIconID": "u03_decision",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u03_d02_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Training Boundary Decision",
+      "questDescription": "Choose whether the awareness response prioritizes an approved simulation, unauthorized individual tracking, or immediate public warning.",
+      "questCompleteText": "<b>Asha Moreno:</b> The training boundary is set. Your choice determines which perspective guides the next phase.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    }
+  ]
+}

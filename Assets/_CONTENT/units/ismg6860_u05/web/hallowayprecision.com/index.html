@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halloway Precision Manufacturing</title>
+  <style>
+    :root{--ink:#1a1d21;--muted:#606a75;--line:#d5dae0;--steel:#2b4257;--amber:#c8811a;--paper:#f5f7f9}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:#eceff2;line-height:1.55}
+    header{background:var(--steel);color:#fff;border-bottom:4px solid var(--amber)}
+    .topbar{display:flex;justify-content:space-between;gap:24px;max-width:1140px;margin:auto;padding:9px 24px;font-size:12.5px;color:#c3d2df}
+    .brand{max-width:1140px;margin:auto;padding:26px 24px 22px;display:flex;align-items:center;gap:18px}
+    .mark{width:46px;height:46px;flex:none;border:3px solid var(--amber);border-radius:3px;position:relative}
+    .mark::after{content:"";position:absolute;inset:8px;background:var(--amber);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+    .brand h1{margin:0;font-size:30px;letter-spacing:.4px}
+    .brand p{margin:4px 0 0;color:#c3d2df;font-size:14px}
+    nav{background:#fff;border-bottom:1px solid var(--line)}
+    nav .inner{max-width:1140px;margin:auto;display:flex;gap:2px;padding:0 24px}
+    nav a{color:#2c4257;text-decoration:none;padding:13px 16px;font-weight:600;font-size:14px}
+    nav a.active{background:#e9eef3;color:#1b2c3c}
+    main{max-width:1140px;margin:26px auto;padding:0 24px 48px}
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:24px}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:5px;padding:22px}
+    .panel h2,.panel h3{margin-top:0;color:#1f3346}
+    .muted{color:var(--muted)}
+    .stats{display:flex;gap:28px;flex-wrap:wrap;margin:18px 0 0}
+    .stat b{display:block;font-size:26px;color:var(--steel)}
+    .stat span{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
+    table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;border-bottom:1px solid var(--line);padding:9px 8px;font-size:14px}
+    th{color:#34465b;background:#f1f4f7}
+    footer{border-top:1px solid var(--line);background:#fff;color:var(--muted);font-size:13px;padding:20px 24px;text-align:center}
+    footer a{color:var(--muted)}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.brand h1{font-size:23px}nav .inner{overflow:auto}.topbar{display:block}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar"><span>ISO 9001:2015 &middot; AS9100D certified</span><span>Plant 2 &middot; Rockford, Illinois</span></div>
+    <div class="brand">
+      <div class="mark" aria-hidden="true"></div>
+      <div>
+        <h1>Halloway Precision Manufacturing</h1>
+        <p>Close-tolerance machined components for aerospace and automotive suppliers.</p>
+      </div>
+    </div>
+  </header>
+  <nav><div class="inner">
+    <a class="active" href="index.html">Home</a>
+    <a href="capabilities/index.html">Capabilities</a>
+    <a href="quality/index.html">Quality</a>
+    <a href="contact/index.html">Contact</a>
+  </div></nav>
+  <main>
+    <section class="grid">
+      <div class="panel">
+        <h2>Precision to the tenth, at production volume</h2>
+        <p>Halloway Precision has machined close-tolerance components in Rockford since 1974. We run five-axis milling, Swiss turning, and centreless grinding across two plants, supplying tier-one aerospace and automotive customers under long-term supply agreements.</p>
+        <p>Our process control is built around full traceability. Every part carries a lot record from raw bar stock through final inspection, and our process historian retains machine telemetry for the life of the programme.</p>
+        <div class="stats">
+          <div class="stat"><b>1974</b><span>Established</span></div>
+          <div class="stat"><b>2</b><span>Plants</span></div>
+          <div class="stat"><b>184</b><span>Employees</span></div>
+          <div class="stat"><b>&plusmn;0.0002"</b><span>Typical tolerance</span></div>
+        </div>
+      </div>
+      <aside class="panel">
+        <h3>Certifications</h3>
+        <ul class="muted">
+          <li>AS9100D &mdash; aerospace quality</li>
+          <li>ISO 9001:2015</li>
+          <li>ITAR registered</li>
+          <li>NADCAP heat treat (partner)</li>
+        </ul>
+        <h3>Supplier portal</h3>
+        <p class="muted">Purchase order acknowledgement and ASN submission have moved to the supplier portal operated by our ERP provider. Contact your buyer for access.</p>
+      </aside>
+    </section>
+
+    <section class="panel" style="margin-top:24px">
+      <h2>Capability summary</h2>
+      <table>
+        <thead><tr><th>Process</th><th>Envelope</th><th>Typical materials</th></tr></thead>
+        <tbody>
+          <tr><td>5-axis milling</td><td>630 mm cube</td><td>Inconel 718, Ti-6Al-4V, 17-4 PH</td></tr>
+          <tr><td>Swiss turning</td><td>2 mm &ndash; 32 mm dia.</td><td>303/316 stainless, brass, PEEK</td></tr>
+          <tr><td>Centreless grinding</td><td>1 mm &ndash; 80 mm dia.</td><td>Hardened tool steel, carbide</td></tr>
+          <tr><td>CMM inspection</td><td>1200 &times; 800 mm</td><td>All production families</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel" style="margin-top:24px">
+      <h2>News</h2>
+      <p><b>Plant 2 cell expansion completed.</b> <span class="muted">June 2026</span><br>
+      Two additional five-axis cells are now running production parts, adding roughly eighteen percent to Plant 2 milling capacity.</p>
+      <p><b>Customer portal maintenance.</b> <span class="muted">March 2026</span><br>
+      Scheduled maintenance on customer-facing systems completed ahead of window. No production impact.</p>
+      <p><b>Halloway named supplier of the year by Kestrel Aerostructures.</b> <span class="muted">November 2025</span><br>
+      Recognised for on-time delivery performance across the KA-7 programme.</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2026 Halloway Precision Manufacturing &middot; 4400 Kishwaukee Street, Rockford, IL 61109 &middot;
+    <a href="contact/index.html">Contact</a>
+  </footer>
+  <script src="../cq-bridge.js"></script>
+</body>
+</html>

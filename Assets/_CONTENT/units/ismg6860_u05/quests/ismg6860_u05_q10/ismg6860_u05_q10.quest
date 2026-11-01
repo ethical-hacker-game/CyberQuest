@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u05_q10",
+  "cityIndex": 7270,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q10_t01",
+    "ismg6860_u05_q10_t02",
+    "ismg6860_u05_q10_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "RMI Enumeration",
+      "questDescription": "Dana Osei needs the historian's Java RMI exposure documented. Enumerate the registry, identify its published object, and compare the advertised endpoint with the address you contacted.",
+      "questCompleteText": "<b>Dana Osei:</b> The remotely reachable registry disclosed HistorianFeed and a loopback endpoint in its stub. Invocation and impact still require separate testing.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "RMI Enumeration",
+      "questDescription": "Reyes Calloway treats the reachable RMI registry as a source of service metadata. Enumerate its object name and inspect the endpoint published in the returned stub.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The registry exposed HistorianFeed and advertised 127.0.1.1:41855. Useful metadata, but not proof that the object can be invoked remotely.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "RMI Enumeration",
+      "questDescription": "Priya Nandan wants the Java registry finding recorded without exaggeration. Identify what it discloses and distinguish registry reachability from object access.",
+      "questCompleteText": "<b>Priya Nandan:</b> The registry disclosed a named object and loopback endpoint to the authorized tester. That is verified information exposure; object access remains untested.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

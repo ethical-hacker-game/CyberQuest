@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> FIN silence can result from an open stack that does not reply or from a control that drops the probe. The safest reading keeps both explanations visible.",
+      "taskInstructions": "Run <b>hping3 -F -p 8080 10.42.18.73</b> and interpret the reported result.",
+      "taskQuestion": "What is the safest interpretation of the FIN result?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. The FIN result remains open|filtered or a policy drop until another observation corroborates it.",
+      "answers": [
+        "No response here is firm proof that remote exploitation of the host is possible.",
+        "No response can mean open|filtered or a policy drop; corroborate it.",
+        "FIN packets are never written to any firewall log.",
+        "An RST reply always means the firewall is absent."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> FIN silence is easy to over-read as open. Preserve the ambiguity between open|filtered behavior and a policy drop.",
+      "taskInstructions": "Run <b>hping3 -F -p 8080 10.42.18.73</b> and interpret the reported result.",
+      "taskQuestion": "What is the safest interpretation of the FIN result?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Ambiguity noted. Corroboration keeps the map honest.",
+      "answers": [
+        "No response here is firm proof that remote exploitation of the host is possible.",
+        "No response can mean open|filtered or a policy drop; corroborate it.",
+        "FIN packets are never written to any firewall log.",
+        "An RST reply always means the firewall is absent."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> FIN silence is ambiguous, and a public explanation must say so. Preserve both plausible causes until another observation narrows them.",
+      "taskInstructions": "Run <b>hping3 -F -p 8080 10.42.18.73</b> and interpret the reported result.",
+      "taskQuestion": "What is the safest interpretation of the FIN result?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Good. The report keeps the uncertainty instead of turning silence into proof.",
+      "answers": [
+        "No response here is firm proof that remote exploitation of the host is possible.",
+        "No response can mean open|filtered or a policy drop; corroborate it.",
+        "FIN packets are never written to any firewall log.",
+        "An RST reply always means the firewall is absent."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u02_q11_t02",
+  "parentQuestID": "ismg6860_u02_q11",
+  "articleID": "u02_scan_states",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

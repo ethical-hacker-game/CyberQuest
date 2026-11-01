@@ -1,0 +1,9 @@
+{
+  "skillID": "deviceindex",
+  "skillName": "Device Index",
+  "skillDescription": "Access to an internet-wide device index. Searches service banners and device fingerprints instead of page text, which is how exposed appliances are found when a normal web search shows nothing.",
+  "price": 6000,
+  "order": 50,
+  "requireTask": true,
+  "lockInDemo": false
+}

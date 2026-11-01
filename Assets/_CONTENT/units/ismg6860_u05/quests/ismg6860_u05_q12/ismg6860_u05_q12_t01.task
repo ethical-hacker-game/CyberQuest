@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Only port 5060, with the TLS variant disabled on this gateway.",
+        "5060 for standard SIP signalling and 5061 for the TLS-protected variant.",
+        "Ports 2000 and 2001, which are the standard SIP signalling pair.",
+        "Only port 5061, since plain SIP has been disabled on this deployment."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Check the plant-floor voice gateway as a separate part of the authorized inventory. Start with the SIP listeners it exposes.",
+      "taskInstructions": "Run <b>nmap -sT -sU -p 5060,5061 --script sip-methods,sip-enum-users 10.30.16.5</b> in the terminal and inspect the port table.",
+      "taskQuestion": "Which ports is the SIP service listening on?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. SIP answers on TCP and UDP 5060, while SIP over TLS is listed on TCP 5061."
+    },
+    {
+      "answers": [
+        "Only port 5060, with the TLS variant disabled on this gateway.",
+        "5060 for standard SIP signalling and 5061 for the TLS-protected variant.",
+        "Ports 2000 and 2001, which are the standard SIP signalling pair.",
+        "Only port 5061, since plain SIP has been disabled on this deployment."
+      ],
+      "correctAnswer": 1,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Inventory the voice gateway too. SIP metadata can reveal useful structure, but preserve exactly what the scan returns.",
+      "taskInstructions": "Run <b>nmap -sT -sU -p 5060,5061 --script sip-methods,sip-enum-users 10.30.16.5</b> in the terminal and inspect the port table.",
+      "taskQuestion": "Which ports is the SIP service listening on?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The gateway exposes SIP on 5060 and SIP over TLS on 5061."
+    },
+    {
+      "answers": [
+        "Only port 5060, with the TLS variant disabled on this gateway.",
+        "5060 for standard SIP signalling and 5061 for the TLS-protected variant.",
+        "Ports 2000 and 2001, which are the standard SIP signalling pair.",
+        "Only port 5061, since plain SIP has been disabled on this deployment."
+      ],
+      "correctAnswer": 1,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Those handsets support plant-floor communication. Identify which SIP listeners the gateway exposes before assessing the metadata behind them.",
+      "taskInstructions": "Run <b>nmap -sT -sU -p 5060,5061 --script sip-methods,sip-enum-users 10.30.16.5</b> in the terminal and inspect the port table.",
+      "taskQuestion": "Which ports is the SIP service listening on?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The observed listeners are SIP on 5060 and SIP-TLS on 5061."
+    }
+  ],
+  "taskID": "ismg6860_u05_q12_t01",
+  "parentQuestID": "ismg6860_u05_q12",
+  "articleID": "u05_ipsec_voip",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

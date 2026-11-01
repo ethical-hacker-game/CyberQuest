@@ -1,0 +1,17 @@
+{
+  "id": "sentinel-sync",
+  "name": "Sentinel Sync",
+  "user": "cyberwatch",
+  "description": "Ops dashboard orchestrating blue-team runbooks with automation hooks.",
+  "isPublic": false,
+  "files": [
+    {
+      "name": "README.md",
+      "content": "# Sentinel Sync\nCentralizes incident response triggers and reporting widgets."
+    },
+    {
+      "name": "config.yml",
+      "content": "pipelines:\n  - name: midnight-watch\n    tasks: [audit, backup]"
+    }
+  ]
+}

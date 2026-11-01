@@ -1,0 +1,10 @@
+{
+  "articleID": "u05_web_enumeration",
+  "videoURL": null,
+  "title": "Web Enumeration and Forgotten Content",
+  "content": "<b>Removing a link is not the same as removing the content behind it.</b>\n\nContent discovery requests likely paths from a web server and records which ones respond. Comparing those results with visible navigation can identify pages that remain served but are no longer linked.\n\nLegacy content may disclose older software versions, configuration details, usernames, and dated publications. Treat each item according to what it proves. A CMS author endpoint exposes a username or profile; it does not prove that the account is enabled, that credentials are valid, or that a specific person still controls it.\n\nArchived pages can establish publication milestones, such as when a portal appeared or when a vendor posted a dissolution notice. They do not automatically establish the legal end of a contract, the approval status of access, or whether anyone authenticated after that date.\n\nCountermeasures include removing obsolete content from the server, updating or retiring legacy applications, suppressing unnecessary version detail, and disabling public author enumeration where it is not required.",
+  "links": [
+    "content discovery",
+    "directory listing"
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "variants": [
+    {
+      "minigameType": "FirewallRuleset",
+      "minigameHeaderText": "Halloway Plant Boundary Policy",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "firewallSettings": {
+        "traffic": [
+          {
+            "label": "Plant HMI reaching the historian",
+            "sourceIp": "10.30.14.80",
+            "port": 445,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The HMI console is the historian's documented client and must keep working."
+          },
+          {
+            "label": "Domain controller answering LDAP for plant hosts",
+            "sourceIp": "10.30.14.10",
+            "port": 389,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "Internal directory lookups from the domain controller are required for authentication."
+          },
+          {
+            "label": "Monitoring collector polling switch health",
+            "sourceIp": "10.30.14.90",
+            "port": 161,
+            "protocol": "UDP",
+            "shouldAllow": true,
+            "rationale": "The authorized monitoring collector needs read-only device telemetry."
+          },
+          {
+            "label": "External host requesting SMB on the historian",
+            "sourceIp": "198.51.100.77",
+            "port": 445,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "This external source is not documented as an authorized client of plant file shares."
+          },
+          {
+            "label": "External host querying SNMP on the core stack",
+            "sourceIp": "198.51.100.70",
+            "port": 161,
+            "protocol": "UDP",
+            "shouldAllow": false,
+            "rationale": "Device management must never be reachable from outside the plant boundary."
+          },
+          {
+            "label": "External host requesting a DNS zone transfer",
+            "sourceIp": "198.51.100.50",
+            "port": 53,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "Zone transfers belong to authorized secondaries only, never to arbitrary hosts."
+          }
+        ],
+        "ruleBudget": 4,
+        "overrideDefaultPolicy": true,
+        "defaultPolicy": "Deny"
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> This is the boundary policy I have to hand the network team, and I would rather it came out of your findings than out of a meeting. Default deny at the plant edge, with exceptions only for the traffic the floor genuinely cannot run without.\n\nChange control gave me four rules. Every one I spend has to be a line I can still defend when somebody asks a year from now why it exists.",
+      "taskInstructions": "Rules match source, port, and protocol from top to bottom; the first match wins and unmatched traffic falls through to default deny. Press TEST when all six requests are handled correctly.",
+      "taskQuestion": "Build the default-deny boundary policy.",
+      "taskCompleteText": "<b>Dana Osei:</b> The policy preserves three documented internal flows and blocks the tested external requests by default. Reviewing the IKE configuration remains separate work."
+    },
+    {
+      "minigameType": "FirewallRuleset",
+      "minigameHeaderText": "Halloway Plant Boundary Policy",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "firewallSettings": {
+        "traffic": [
+          {
+            "label": "Plant HMI reaching the historian",
+            "sourceIp": "10.30.14.80",
+            "port": 445,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The HMI console is the historian's documented client and must keep working."
+          },
+          {
+            "label": "Domain controller answering LDAP for plant hosts",
+            "sourceIp": "10.30.14.10",
+            "port": 389,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "Internal directory lookups from the domain controller are required for authentication."
+          },
+          {
+            "label": "Monitoring collector polling switch health",
+            "sourceIp": "10.30.14.90",
+            "port": 161,
+            "protocol": "UDP",
+            "shouldAllow": true,
+            "rationale": "The authorized monitoring collector needs read-only device telemetry."
+          },
+          {
+            "label": "External host requesting SMB on the historian",
+            "sourceIp": "198.51.100.77",
+            "port": 445,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "This external source is not documented as an authorized client of plant file shares."
+          },
+          {
+            "label": "External host querying SNMP on the core stack",
+            "sourceIp": "198.51.100.70",
+            "port": 161,
+            "protocol": "UDP",
+            "shouldAllow": false,
+            "rationale": "Device management must never be reachable from outside the plant boundary."
+          },
+          {
+            "label": "External host requesting a DNS zone transfer",
+            "sourceIp": "198.51.100.50",
+            "port": 53,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "Zone transfers belong to authorized secondaries only, never to arbitrary hosts."
+          }
+        ],
+        "ruleBudget": 4,
+        "overrideDefaultPolicy": true,
+        "defaultPolicy": "Deny"
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Build the policy they asked for. Default deny, minimal exceptions, and nothing left open that you cannot justify in a single sentence.\n\nI will say the quiet part. A tight boundary here is worth more to me than a sloppy one, because sloppy gets torn up and rewritten by somebody more careful in six months. Done once, it stays the shape you gave it.",
+      "taskInstructions": "Rules match source, port, and protocol from top to bottom; the first match wins and unmatched traffic falls through to default deny. Press TEST when all six requests are handled correctly.",
+      "taskQuestion": "Build the default-deny boundary policy.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The first-match policy permits the documented internal flows and leaves every tested external request to default deny."
+    },
+    {
+      "minigameType": "FirewallRuleset",
+      "minigameHeaderText": "Halloway Plant Boundary Policy",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "firewallSettings": {
+        "traffic": [
+          {
+            "label": "Plant HMI reaching the historian",
+            "sourceIp": "10.30.14.80",
+            "port": 445,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The HMI console is the historian's documented client and must keep working."
+          },
+          {
+            "label": "Domain controller answering LDAP for plant hosts",
+            "sourceIp": "10.30.14.10",
+            "port": 389,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "Internal directory lookups from the domain controller are required for authentication."
+          },
+          {
+            "label": "Monitoring collector polling switch health",
+            "sourceIp": "10.30.14.90",
+            "port": 161,
+            "protocol": "UDP",
+            "shouldAllow": true,
+            "rationale": "The authorized monitoring collector needs read-only device telemetry."
+          },
+          {
+            "label": "External host requesting SMB on the historian",
+            "sourceIp": "198.51.100.77",
+            "port": 445,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "This external source is not documented as an authorized client of plant file shares."
+          },
+          {
+            "label": "External host querying SNMP on the core stack",
+            "sourceIp": "198.51.100.70",
+            "port": 161,
+            "protocol": "UDP",
+            "shouldAllow": false,
+            "rationale": "Device management must never be reachable from outside the plant boundary."
+          },
+          {
+            "label": "External host requesting a DNS zone transfer",
+            "sourceIp": "198.51.100.50",
+            "port": 53,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "Zone transfers belong to authorized secondaries only, never to arbitrary hosts."
+          }
+        ],
+        "ruleBudget": 4,
+        "overrideDefaultPolicy": true,
+        "defaultPolicy": "Deny"
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Build a default-deny boundary with each required internal exception documented. The policy should reduce reachability without pretending the earlier evidence proved a working vendor route.",
+      "taskInstructions": "Rules match source, port, and protocol from top to bottom; the first match wins and unmatched traffic falls through to default deny. Press TEST when all six requests are handled correctly.",
+      "taskQuestion": "Build the default-deny boundary policy.",
+      "taskCompleteText": "<b>Priya Nandan:</b> The policy keeps the documented internal services reachable and rejects the tested external requests by default."
+    }
+  ],
+  "taskID": "ismg6860_u05_q15_t02_firewall",
+  "parentQuestID": "ismg6860_u05_q15",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

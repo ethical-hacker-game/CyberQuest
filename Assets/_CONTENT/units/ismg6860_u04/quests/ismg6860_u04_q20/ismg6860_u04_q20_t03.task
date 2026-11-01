@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The technical assessment closes with a relationship, not a claim that compromise occurred. Choose the conclusion that explains why isolated findings require pathway analysis.",
+      "taskInstructions": "Read <link=\"u04_scheduled_task_persistence\"><u>the NightlyExport persistence condition</u></link>, then select the evidence-based conclusion.",
+      "taskQuestion": "What is the main lesson from the pathway analysis?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. A chain of conditions can create a plausible path even when no individual observation proves compromise.",
+      "answers": [
+        "Only the findings that carry a critical scanner label are ever truly worth reporting.",
+        "A chain of misconfigurations can turn small exposures into a realistic attack path.",
+        "Internal findings never matter as long as the perimeter looks secure.",
+        "Remediation is a completely separate concern from the vulnerability analysis itself."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The important question is how conditions combine, not which scanner label appears beside each one. Choose the conclusion that captures that relationship.",
+      "taskInstructions": "Read <link=\"u04_scheduled_task_persistence\"><u>the NightlyExport persistence condition</u></link>, then select the evidence-based conclusion.",
+      "taskQuestion": "What is the main lesson from the pathway analysis?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Small conditions can form a plausible path when their relationships remain unaddressed.",
+      "answers": [
+        "Only the findings that carry a critical scanner label are ever truly worth reporting.",
+        "A chain of misconfigurations can turn small exposures into a realistic attack path.",
+        "Internal findings never matter as long as the perimeter looks secure.",
+        "Remediation is a completely separate concern from the vulnerability analysis itself."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A clear conclusion must explain the relationships between findings without claiming that data was accessed or a breach occurred. Choose the evidence-based lesson.",
+      "taskInstructions": "Read <link=\"u04_scheduled_task_persistence\"><u>the NightlyExport persistence condition</u></link>, then select the evidence-based conclusion.",
+      "taskQuestion": "What is the main lesson from the pathway analysis?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Connected conditions can create realistic risk before any confirmed breach exists.",
+      "answers": [
+        "Only the findings that carry a critical scanner label are ever truly worth reporting.",
+        "A chain of misconfigurations can turn small exposures into a realistic attack path.",
+        "Internal findings never matter as long as the perimeter looks secure.",
+        "Remediation is a completely separate concern from the vulnerability analysis itself."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q20_t03",
+  "parentQuestID": "ismg6860_u04_q20",
+  "articleID": "u04_scheduled_task_persistence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

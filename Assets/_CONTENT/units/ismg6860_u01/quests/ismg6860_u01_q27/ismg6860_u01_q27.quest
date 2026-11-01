@@ -1,0 +1,29 @@
+{
+  "questID": "ismg6860_u01_q27",
+  "cityIndex": 3153,
+  "questIconID": "quest_icon_phishing_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q27_t01",
+    "ismg6860_u01_q27_t02",
+    "ismg6860_u01_q27_t03",
+    "ismg6860_u01_q27_t04",
+    "ismg6860_u01_q27_t06_strength_forge",
+    "ismg6860_u01_q27_t05"
+  ],
+  "requiredQuestID": "ismg6860_u01_q26",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Phishing Recon",
+      "questDescription": "Marcus Hale is investigating messages that imitate SecureFund. Review the evidence for reused public details, a look-alike sender and login page, and domain-registration signals before recommending proportionate defenses.",
+      "questCompleteText": "You documented the message and domain indicators, treated the reported password entry as exposed, and recommended controls that reduce phishing risk without claiming to eliminate it.",
+      "questCharacterID": "u01_marcus_hale",
+      "appScenarioID": ""
+    }
+  ]
+}

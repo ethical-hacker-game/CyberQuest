@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "It proves the host was already compromised during the vendor laptop incident two weeks ago.",
+        "It shows more open ports but provides no information about the services behind them.",
+        "It identifies several services and versions that can be queried for more information.",
+        "It confirms that every listed service permits anonymous access from the plant segment."
+      ],
+      "correctAnswer": 2,
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> FORGE-HIST01 is our process historian. Review its service table and compare it with the other hosts in the scan.",
+      "taskInstructions": "Use the service names and versions visible in Zenmap.",
+      "taskQuestion": "Why does the version scan output justify a closer look at FORGE-HIST01?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The scan identifies several services on FORGE-HIST01 that we can now query within scope."
+    }
+  ],
+  "taskID": "ismg6860_u05_q01_t03",
+  "parentQuestID": "ismg6860_u05_q01",
+  "articleID": "u05_enumeration_concepts",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

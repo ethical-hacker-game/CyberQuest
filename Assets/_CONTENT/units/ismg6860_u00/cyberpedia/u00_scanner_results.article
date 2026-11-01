@@ -1,0 +1,12 @@
+{
+  "articleID": "u00_scanner_results",
+  "videoURL": null,
+  "title": "Reading Vulnerability Scanner Results",
+  "content": "A <b>vulnerability scanner</b> compares observed systems with checks for known weaknesses, exposed features, and unsafe configurations. Its report is a source of candidate findings, not an automatic verdict. Every important result should be reviewed in context before it becomes a ticket, risk statement, or remediation priority.\n\nStart with the affected asset and the evidence the scanner actually collected. Read the finding title, description, detected condition, severity, confidence, and suggested remediation. Determine whether the asset is in scope and whether the observation can be reproduced safely. Informational entries may provide useful context, while a high severity label may still require validation.\n\nSeparate <b>signal from noise</b> by asking practical questions: Is the condition present? Is the service exposed to likely users or attackers? What data or operation could be affected? Are existing controls reducing the risk? Could the result be a false positive, a duplicate, or an outdated observation? Severity is one input; exposure, impact, evidence quality, and business context determine what should happen first.\n\nWrite a finding so another person can act on it. Include the precise condition, affected asset, evidence, potential impact without exaggeration, and a safe reproduction or verification method. Avoid claiming that exploitation occurred unless separate evidence proves it. Avoid publishing sensitive paths, credentials, or unnecessary technical detail to audiences that do not need them.\n\nA useful scanner result leads to a testable next step: validate the condition, assign an owner, apply a proportionate fix, and rescan or otherwise verify that the condition is no longer present.",
+  "links": [
+    "scanner view",
+    "scanner report",
+    "signal from noise"
+  ]
+}
+

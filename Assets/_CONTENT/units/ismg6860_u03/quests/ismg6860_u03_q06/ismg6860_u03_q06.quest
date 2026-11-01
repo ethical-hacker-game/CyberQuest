@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u03_q06",
+  "cityIndex": 5136,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q06_t01",
+    "ismg6860_u03_q06_t02",
+    "ismg6860_u03_q06_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Number Taken",
+      "questDescription": "Review Dev Patel's carrier fraud note and document the failed attempt to transfer Riley's number.",
+      "questCompleteText": "<b>Asha Moreno:</b> The SIM-swap attempt failed, but Riley's number and account-recovery path now require protection.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Number Taken",
+      "questDescription": "Review Dev Patel's carrier fraud note and identify the account-recovery route tested against Riley's number.",
+      "questCompleteText": "<b>Felix Rane:</b> The SIM-swap attempt failed, but it exposed a route to Riley's calls and SMS authentication codes.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Number Taken",
+      "questDescription": "Review Dev Patel's fraud note and collect the facts Riley needs in a private, actionable warning.",
+      "questCompleteText": "<b>Imani Vale:</b> The failed SIM-swap attempt is documented. Riley can now be warned without exposing private recovery details.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

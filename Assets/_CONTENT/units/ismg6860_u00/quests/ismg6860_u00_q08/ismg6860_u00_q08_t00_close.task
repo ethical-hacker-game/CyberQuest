@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> Your record connects the authorization, public notice, DNS answer, and Zenmap result to the scanner finding. The Case Journal keeps those observations together, and the packet gate protects normal service while stopping suspicious traffic.\n\nBefore I send the final note, check the order of the work. The First Signal workflow in Cyberpedia explains how each step supports the next.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Michele:</b> Let us check the sequence once more before we close the case."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> We can now explain what was observed, why it matters, and what should happen next. The Case Journal keeps the claims checkable, and the packet gate protects the people using the service.\n\nBefore the final handoff, check the order of the work. The First Signal workflow in Cyberpedia explains how to build a clear record without exposing more than we need.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Ana:</b> Let us check the sequence once more before we close the case."
+    }
+  ],
+  "taskID": "ismg6860_u00_q08_t00_close",
+  "parentQuestID": "ismg6860_u00_q08",
+  "articleID": "u00_security_handoff",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> I inherited this network, and I cannot verify what is running on much of it. A vendor laptop spent forty minutes on our plant VLAN during a phishing incident; we found no confirmed compromise, but the incident exposed how unreliable our inventory is.\n\nBefore we change a firewall rule, I need an inventory based on what the services actually report.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dana Osei:</b> Ask each service what it can tell us. That is the job this week."
+    }
+  ],
+  "taskID": "ismg6860_u05_q01_t00_intro",
+  "parentQuestID": "ismg6860_u05_q01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

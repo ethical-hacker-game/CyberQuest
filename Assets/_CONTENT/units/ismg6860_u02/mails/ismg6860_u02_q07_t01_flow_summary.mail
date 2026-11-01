@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u02_q07_t01_flow_summary",
+  "parentTaskID": "ismg6860_u02_q07_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asterlink SOC <soc@asterlinktransit.com>",
+      "subject": "Capture review: ECHO-73",
+      "shortSummary": "Review the focused capture and record its endpoints before interpreting the flow.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nReview the focused ECHO-73 capture in Wireshark, then verify its endpoints with tcpdump. Record the source, destination, protocol, and direction before deciding what the traffic means.\n\nWe need a defensible observation, not speculation.\n\nAsterlink SOC",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Asterlink SOC <soc@asterlinktransit.com>",
+      "subject": "Capture review: ECHO-73",
+      "shortSummary": "Review the focused capture and record its endpoints before interpreting the flow.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nReview the focused ECHO-73 capture in Wireshark, then verify its endpoints with tcpdump. Record the source, destination, protocol, and direction before deciding what the traffic means.\n\nWe need a defensible observation, not speculation.\n\nAsterlink SOC",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Asterlink SOC <soc@asterlinktransit.com>",
+      "subject": "Capture review: ECHO-73",
+      "shortSummary": "Review the focused capture and record its endpoints before interpreting the flow.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nReview the focused ECHO-73 capture in Wireshark, then verify its endpoints with tcpdump. Record the source, destination, protocol, and direction before deciding what the traffic means.\n\nWe need a defensible observation, not speculation.\n\nAsterlink SOC",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> The online lures and physical access reports overlap in people, timing, and locations, so they require a coordinated response even though attribution remains open. We can send the protected package to <b>incident command and physical security</b>, reserve detailed route data for a controlled security test, or publish a redacted public-interest summary. Staff identities, authentication data, and exploitable access details must remain protected in every path.",
+      "taskInstructions": "Choose the authorized handling path for the combined evidence.",
+      "taskQuestion": "How should Harborview use and share the online and physical findings?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded. The selected path defines who receives the evidence, for what purpose, and with which protections."
+    }
+  ],
+  "taskID": "ismg6860_u03_d04_decision",
+  "parentQuestID": "ismg6860_u03_d04",
+  "articleID": "u03_safe_reporting",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision",
+  "decisions": [
+    {
+      "decisionText": "Send the protected evidence package to incident command and physical security for a coordinated response.",
+      "personaIndex": 0,
+      "personaValueChange": 20
+    },
+    {
+      "decisionText": "Restrict detailed route data to an authorized security test before wider operational sharing.",
+      "personaIndex": 1,
+      "personaValueChange": 20
+    },
+    {
+      "decisionText": "Publish a redacted summary of the targeted processes and demand safer visitor and volunteer procedures.",
+      "personaIndex": 2,
+      "personaValueChange": 20
+    }
+  ]
+}

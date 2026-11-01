@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Nikto found a setup page on the public portal. Check what is visible, but do not submit the form.",
+      "taskInstructions": "Open the Web Browser. In Cyber Search, search for <b>Northbridge setup</b> and open <b>Northbridge Portal Setup Wizard</b>.",
+      "taskQuestion": "Open the reported setup page.",
+      "taskCompleteText": "<b>Mara Voss:</b> The page is reachable. Identify its purpose from the visible content.",
+      "correctAnswer": "setup/install"
+    }
+  ],
+  "taskID": "ismg6860_u04_q04_t01",
+  "parentQuestID": "ismg6860_u04_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

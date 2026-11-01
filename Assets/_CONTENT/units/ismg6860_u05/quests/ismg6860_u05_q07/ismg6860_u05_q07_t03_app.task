@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "app_stage_changed",
+      "actionTag": "smtpstream",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> I had a capture running the whole time you were talking to that server. Before we move on, I want you to see what an SMTP conversation looks like to anybody else sitting on this segment: a contractor's laptop, a compromised workstation, the historian itself.",
+      "taskInstructions": "Open Wireshark and inspect the SMTP conversation for plaintext commands and replies.",
+      "taskQuestion": "Open the SMTP capture in Wireshark.",
+      "taskCompleteText": "<b>Dana Osei:</b> The capture exposes the SMTP commands, recipient address, and reply codes because STARTTLS was not negotiated."
+    },
+    {
+      "actionType": "app_stage_changed",
+      "actionTag": "smtpstream",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Everything you typed and everything the server said back crossed that wire as readable text. Nothing to decrypt, nothing to break: just a conversation that anyone patient enough to sit on the segment could have copied down word for word.",
+      "taskInstructions": "Open Wireshark and inspect the SMTP conversation for plaintext commands and replies.",
+      "taskQuestion": "Open the SMTP capture in Wireshark.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The capture exposes the sender, recipient, and server replies in plaintext. No payload decryption is required."
+    },
+    {
+      "actionType": "app_stage_changed",
+      "actionTag": "smtpstream",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The packet capture can establish whether this SMTP exchange was protected in transit. Inspect the commands and replies instead of relying on a policy claim.",
+      "taskInstructions": "Open Wireshark and inspect the SMTP conversation for plaintext commands and replies.",
+      "taskQuestion": "Open the SMTP capture in Wireshark.",
+      "taskCompleteText": "<b>Priya Nandan:</b> The capture shows the full unencrypted SMTP exchange, including the recipient and reply codes."
+    }
+  ],
+  "taskID": "ismg6860_u05_q07_t03_app",
+  "parentQuestID": "ismg6860_u05_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

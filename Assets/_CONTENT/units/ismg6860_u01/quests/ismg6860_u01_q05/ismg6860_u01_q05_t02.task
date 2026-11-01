@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": true,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> An unapproved name server is a significant finding, but the DNS response alone does not establish who added it or whether it has served false records. State the potential risk without turning it into a confirmed incident.",
+      "taskInstructions": "Use the DNS Intelligence article and the observed NS record to evaluate the statement.",
+      "taskQuestion": "Could an unapproved authoritative name server redirect some DNS responses or disrupt resolution?",
+      "taskCompleteText": "<b>Samira:</b> Yes. An unapproved authoritative server could return altered or unavailable answers, but we still need registrar and configuration evidence to determine what actually happened."
+    }
+  ],
+  "taskID": "ismg6860_u01_q05_t02",
+  "parentQuestID": "ismg6860_u01_q05",
+  "articleID": "u01_dns_intelligence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

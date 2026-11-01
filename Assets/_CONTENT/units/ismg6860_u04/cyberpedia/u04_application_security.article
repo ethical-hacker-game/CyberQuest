@@ -1,0 +1,12 @@
+{
+  "articleID": "u04_application_security",
+  "videoURL": null,
+  "title": "Application-Layer Vulnerability Analysis",
+  "content": "<b>Application-layer assessment examines how software handles input, identity, authorization, sessions, data, and business operations.</b> A server can be fully patched and correctly segmented while the application running on it still behaves unsafely.\n\nAutomated scanners can identify useful leads, but application findings require context. Record the affected feature, request and response behavior, user role, data flow, and conditions needed to reproduce the observation safely. Separate a confirmed behavior from the scanner's predicted impact. Different owners may be responsible for the web server, application code, framework, identity provider, and database, so precise evidence is essential for routing the fix.\n\nCross-site scripting, or XSS, is one class of application weakness. It occurs when untrusted content is included in a page in a form that a browser can interpret as active code. Reflected XSS returns input in an immediate response, stored XSS persists content for later viewers, and DOM-based XSS is created by client-side code. Safe assessment should demonstrate the unsafe handling with an approved, harmless marker rather than code that steals data, changes accounts, or affects other users.\n\nThe primary defense is context-aware output encoding combined with safe framework templates. Validate and normalize input where it supports the application's rules, but do not rely on input filtering as the only XSS control. Content Security Policy can reduce impact as defense in depth; it does not replace correct rendering. Other application findings may require authorization checks, secure session handling, parameterized database access, dependency updates, or redesign of a business workflow.\n\nRemediation belongs with the team that controls the unsafe behavior. Give developers a minimal reproduction, affected component, expected safe result, and regression test. Retest the original path and nearby uses of the same shared component so the fix addresses the root cause rather than one visible page.",
+  "links": [
+    "application-level",
+    "affected feature",
+    "unsafe application behavior",
+    "reflected XSS"
+  ]
+}

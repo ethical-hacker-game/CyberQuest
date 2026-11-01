@@ -1,0 +1,26 @@
+{
+    "questID":  "ismg6860_u04_q03",
+    "cityIndex":  7151,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q03_t01",
+                    "ismg6860_u04_q03_t02",
+                    "ismg6860_u04_q03_t03_patch_hunt",
+                    "ismg6860_u04_q03_t04"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  true,
+    "variants":  [
+                     {
+                         "persona":  "Universal Persona Content",
+                         "questName":  "Misconfiguration Exploits: Outdated Software",
+                         "questDescription":  "Use scanner evidence and service banners to determine whether an outdated component matters.",
+                         "questCompleteText":  "Quest complete. The evidence has been recorded for the Northbridge vulnerability assessment.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

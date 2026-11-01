@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Record the contextual factors that justify the rating and keep assumptions separate from confirmed facts.",
+      "taskInstructions": "Read <link=\"u04_practical_risk_context\"><u>practical risk context</u></link>, then select the complete evidence-based set.",
+      "taskQuestion": "Which factors should adjust the scanner severity for NB-VA-DIR-02?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Exposure, likely data sensitivity, service importance, and evidence confidence make the rating traceable.",
+      "answers": [
+        "Public reachability, likely data sensitivity, the portal's service role, and confidence in what was actually verified.",
+        "Report font, page color, time of day, and the length of the tracking ID.",
+        "Only the scanner's numeric severity; environmental context must never affect risk.",
+        "Assumed archive contents and assumed attacker actions, both treated as confirmed facts."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record what makes this exposure valuable without turning assumptions about the archive into facts.",
+      "taskInstructions": "Read <link=\"u04_practical_risk_context\"><u>practical risk context</u></link>, then select the complete evidence-based set.",
+      "taskQuestion": "Which factors should adjust the scanner severity for NB-VA-DIR-02?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Exposure, likely data sensitivity, service importance, and evidence confidence explain the practical value.",
+      "answers": [
+        "Public reachability, likely data sensitivity, the portal's service role, and confidence in what was actually verified.",
+        "Report font, page color, time of day, and the length of the tracking ID.",
+        "Only the scanner's numeric severity; environmental context must never affect risk.",
+        "Assumed archive contents and assumed attacker actions, both treated as confirmed facts."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Record the public-service context without claiming that residents' data was confirmed inside the archive.",
+      "taskInstructions": "Read <link=\"u04_practical_risk_context\"><u>practical risk context</u></link>, then select the complete evidence-based set.",
+      "taskQuestion": "Which factors should adjust the scanner severity for NB-VA-DIR-02?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Exposure, likely data sensitivity, service importance, and evidence confidence connect the finding to real risk without overstating it.",
+      "answers": [
+        "Public reachability, likely data sensitivity, the portal's service role, and confidence in what was actually verified.",
+        "Report font, page color, time of day, and the length of the tracking ID.",
+        "Only the scanner's numeric severity; environmental context must never affect risk.",
+        "Assumed archive contents and assumed attacker actions, both treated as confirmed facts."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q08_t03",
+  "parentQuestID": "ismg6860_u04_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

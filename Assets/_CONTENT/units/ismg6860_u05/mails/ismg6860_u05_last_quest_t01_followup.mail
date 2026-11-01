@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u05_last_quest_t01_followup",
+  "parentTaskID": "ismg6860_u05_last_quest_t01",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Dana Osei <dana.osei@hallowayprecision.com>",
+      "subject": "Re: Enumeration Engagement - What We Did About It",
+      "shortSummary": "Halloway's follow-up on the findings, and what changed after the report landed.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nCopying Colm because he asked for a note on outcomes.\n\nWe disabled svc_bridgeworks the morning your report arrived. After confirming it was no longer required, we removed the unaccounted bridgeworks-site IKE configuration and the maintenance trunk from the core stack. The historian now takes its time from our domain controller and the measured drift is gone.\n\nThe external NFS export rule is closed, zone transfers are restricted to our two secondaries, and the legacy support portal has been removed from the web server rather than merely unlinked.\n\nSNMP is still outstanding. Moving the stack to version 3 with authPriv needs a maintenance window I will not get before the quarter closes. It has an owner and date, and I asked Colm to scope a follow-up.\n\nBridgeWorks folded, but its service account remained enabled and later appeared in our activity records. We now have a vendor offboarding checklist that assigns ownership for account, network, and application removal.\n\nThank you for keeping the evidence precise and changing nothing during the assessment.\n\nDana",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Dana Osei <dana.osei@hallowayprecision.com>",
+      "subject": "Re: Enumeration Engagement - What We Did About It",
+      "shortSummary": "Halloway closed the account and reviewed the IKE configuration, but the underemphasized trunk remains.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nCopying Colm because he asked for a note on outcomes.\n\nWe disabled svc_bridgeworks the morning your report arrived, which ended the historian session recorded under that account. After validation, we also removed the unaccounted bridgeworks-site IKE configuration. The historian now uses our domain controller for time, the external NFS export rule is closed, zone transfers are restricted, and the legacy portal is off the server.\n\nThe maintenance trunk is still in the core stack configuration. Your section described it as housekeeping, so it entered change control at that priority. The board wants a vendor consultation before removal, even though BridgeWorks has dissolved.\n\nSNMPv3 authPriv is also outstanding because it requires a maintenance window.\n\nWe now have a vendor offboarding checklist with named owners. Read the trunk paragraph again and tell me whether its emphasis matches what you intended.\n\nDana",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Dana Osei <dana.osei@hallowayprecision.com>",
+      "subject": "Re: Enumeration Engagement - What We Did About It",
+      "shortSummary": "Halloway accelerated remediation, and Dana addresses how the findings travelled.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nCopying Colm because he asked for a note on outcomes.\n\nsvc_bridgeworks was disabled four hours after the findings reached me. After validation, the bridgeworks-site IKE configuration and maintenance trunk were removed. The historian now uses our domain controller for time, the external NFS export rule is closed, zone transfers are restricted, and the legacy portal is off the server. SNMPv3 authPriv is scheduled for next month's maintenance window. Everything is completed or has an owner and date.\n\nThe safety committee had your findings before my board and before I could coordinate the response. That delivery decision was not shared with me, even though I authorized and owned the engagement. I had to defend a process I was not allowed to participate in.\n\nWe now have a vendor offboarding checklist with named owners for accounts, network configuration, and applications. The technical findings improved our network. The way they travelled damaged trust. Both statements are true.\n\nDana",
+      "attachements": []
+    }
+  ]
+}

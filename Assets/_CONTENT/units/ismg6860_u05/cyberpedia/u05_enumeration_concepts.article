@@ -1,0 +1,12 @@
+{
+  "articleID": "u05_enumeration_concepts",
+  "videoURL": null,
+  "title": "Enumeration in the Assessment Chain",
+  "content": "<b>Scanning finds responding ports; enumeration queries the services behind them.</b>\n\nA version scan can identify which services are listening and which software versions they report. Enumeration then asks those services for information they expose, such as accounts and groups, file shares and exports, directory entries, or configuration details.\n\nEnumeration can create more visible activity than a basic scan because it may open sessions, bind to a directory, or request a share listing. Stay within the authorization boundary: use read-only queries, do not authenticate with discovered credentials, and do not overwhelm monitored or production systems.",
+  "links": [
+    "enumeration",
+    "null session",
+    "service account",
+    "scanning"
+  ]
+}

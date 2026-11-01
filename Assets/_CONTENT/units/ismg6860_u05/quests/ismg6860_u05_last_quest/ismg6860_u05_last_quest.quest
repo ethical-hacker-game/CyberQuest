@@ -1,0 +1,40 @@
+{
+  "questID": "ismg6860_u05_last_quest",
+  "cityIndex": 7389,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_last_quest_t00_voice",
+    "ismg6860_u05_last_quest_t01"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Engagement Review",
+      "questDescription": "Colm Fairweather reviews the Halloway engagement before it reaches the client. Cordata's name goes on this report, and he reads every one that leaves the practice.",
+      "questCompleteText": "<b>Colm Fairweather:</b> Engagement closed. Halloway disabled the account, removed the unaccounted IKE configuration after review, and assigned the remaining remediation.",
+      "questCharacterID": "u05_colm_fairweather",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Engagement Review",
+      "questDescription": "Colm Fairweather signs off on the official report. What he does not have in front of him is the sharper version, or where it went.",
+      "questCompleteText": "<b>Colm Fairweather:</b> Engagement closed. The official report underemphasized the maintenance trunk, which remains in Halloway's change process.",
+      "questCharacterID": "u05_colm_fairweather",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Engagement Review",
+      "questDescription": "Colm Fairweather reviews findings sent to the safety committee before official delivery and without Dana's knowledge. Halloway accelerated its response, but the delivery path damaged trust.",
+      "questCompleteText": "<b>Colm Fairweather:</b> Engagement closed. Priority risks were addressed or scheduled, but bypassing the authorized client contact carries a relationship cost.",
+      "questCharacterID": "u05_colm_fairweather",
+      "appScenarioID": ""
+    }
+  ]
+}

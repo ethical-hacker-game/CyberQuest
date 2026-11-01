@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Persona Inbox Timeline</title>
+  <style>
+    :root { --ink:#1f2933; --muted:#5b6675; --line:#d6dde6; --panel:#ffffff; --bg:#eef3f7; --accent:#235a87; --warn:#8a4b12; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
+    header { background:#173f5f; color:white; padding:28px 32px; border-bottom:4px solid #f2b84b; }
+    header h1 { margin:0; font-size:30px; letter-spacing:0; }
+    header p { margin:6px 0 0; color:#dceaf4; }
+    main { max-width:980px; margin:28px auto; padding:0 24px 42px; }
+    section { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:18px 20px; margin:0 0 16px; }
+    h2 { margin:0 0 8px; font-size:20px; color:#173f5f; }
+    p { margin:0; }
+    code { background:#eef2f6; border:1px solid #d9e1ea; border-radius:4px; padding:2px 5px; }
+    .archive { color:var(--muted); font-size:14px; }
+    .timeline { border-left:3px solid #9eb4c5; margin-left:8px; padding-left:18px; }
+    .message { margin:0 0 16px; padding:12px 14px; background:#f5f8fa; border:1px solid #dce3e8; border-radius:5px; }
+    .date { display:block; color:var(--muted); font-size:13px; margin-bottom:4px; }
+    .request { border-left:5px solid var(--warn); background:#fff7eb; }
+    footer { text-align:center; color:var(--muted); padding:20px; font-size:13px; }
+  </style>
+</head>
+<body>
+  <header><h1>VolunteerConnect Message Archive</h1><p>Persona Inbox timeline · Read-only</p></header>
+  <main>
+    <section>
+      <h2>Archive Details</h2>
+      <p class="archive">Conversation exported for incident review. Recipient identity has been removed.</p>
+    </section>
+    <section>
+      <h2>Profile Review</h2>
+      <p>Profile name: <code>Jordan Hale</code></p>
+      <p>No matching volunteer, vendor, or staff record was found in the Harborview directory.</p>
+    </section>
+    <section>
+      <h2>Message Timeline</h2>
+      <div class="timeline">
+        <div class="message"><span class="date">May 2 · Jordan Hale</span>Orientation looked busy today. How did your first volunteer shift go?</div>
+        <div class="message"><span class="date">May 5 · Jordan Hale</span>You mentioned the early setup crew. I hope tomorrow's shift is easier on you.</div>
+        <div class="message"><span class="date">May 9 · Jordan Hale</span>That exhibit photo was great. You all made the hall look ready ahead of schedule.</div>
+        <div class="message"><span class="date">May 12 · Jordan Hale</span>I may be helping with setup next week. Is your team still starting before the public doors open?</div>
+        <div class="message request"><span class="date">May 14 · Jordan Hale</span>My badge is not activated yet. Could you send a photo of the back of your staff badge and tell me which entrance opens before 7?</div>
+      </div>
+    </section>
+  </main>
+  <footer>VolunteerConnect · Preserved message archive</footer>
+  <script src="../../cq-bridge.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The domain controller's offset is +0.008 seconds.",
+        "The historian's network delay is 41.882 milliseconds.",
+        "The historian's clock offset is +184.204 seconds.",
+        "The historian's jitter is 3.117 milliseconds."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Put a number on it before I write this up. 'The clock is wrong' is a sentence a change board will argue about for an hour; a measured drift is not. I need to know exactly how far this host's idea of now sits from everyone else's.",
+      "taskInstructions": "Reopen <b>ntpq peers</b> and distinguish the historian's delay, offset, and jitter columns.",
+      "taskQuestion": "How many seconds is the historian's clock offset from the plant standard?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The historian reports an offset of +184.204 seconds. Investigators must compensate for that measured difference when correlating current logs."
+    },
+    {
+      "answers": [
+        "The domain controller's offset is +0.008 seconds.",
+        "The historian's network delay is 41.882 milliseconds.",
+        "The historian's clock offset is +184.204 seconds.",
+        "The historian's jitter is 3.117 milliseconds."
+      ],
+      "correctAnswer": 2,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Clock drift is room. However far off this box has wandered, that is exactly how much room somebody has if they ever need a sequence of events to be arguable. A number like that belongs in the notes rather than the report.",
+      "taskInstructions": "Reopen <b>ntpq peers</b> and distinguish the historian's delay, offset, and jitter columns.",
+      "taskQuestion": "How many seconds is the historian's clock offset from the plant standard?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The historian reports a +184.204-second offset. That uncertainty must be accounted for in any shared timeline."
+    },
+    {
+      "answers": [
+        "The domain controller's offset is +0.008 seconds.",
+        "The historian's network delay is 41.882 milliseconds.",
+        "The historian's clock offset is +184.204 seconds.",
+        "The historian's jitter is 3.117 milliseconds."
+      ],
+      "correctAnswer": 2,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> If there is ever an incident on that line, the gap between this machine's clock and everybody else's is the first thing the company's lawyers will use to blur the order of events. I want the exact size of that gap written down now, while nobody has a reason to argue about it.",
+      "taskInstructions": "Reopen <b>ntpq peers</b> and distinguish the historian's delay, offset, and jitter columns.",
+      "taskQuestion": "How many seconds is the historian's clock offset from the plant standard?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The historian reports a +184.204-second offset. The finding is measurable, and future records need a corrected time source."
+    }
+  ],
+  "taskID": "ismg6860_u05_q06_t03",
+  "parentQuestID": "ismg6860_u05_q06",
+  "articleID": "u05_ntp_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

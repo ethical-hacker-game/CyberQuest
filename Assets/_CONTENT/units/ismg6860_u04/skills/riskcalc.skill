@@ -1,0 +1,9 @@
+{
+  "skillID": "riskcalc",
+  "skillName": "Risk Calculator",
+  "skillDescription": "A severity model that extends a scanner base score with exposure, data sensitivity, and dependency context, producing a risk tier that can be defended line by line rather than quoted from a tool.",
+  "price": 2500,
+  "order": 40,
+  "requireTask": true,
+  "lockInDemo": false
+}

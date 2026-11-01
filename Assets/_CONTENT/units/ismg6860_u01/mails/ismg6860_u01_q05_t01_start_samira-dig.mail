@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u01_q05_t01_start_samira-dig",
+  "parentTaskID": "ismg6860_u01_q05_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Samira Linton <samira.linton@cyberworld.edu>",
+      "subject": "BikeForge Approved Name Servers",
+      "shortSummary": "Approved DNS baseline and the command for checking published name servers.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Hi {player},\r\n\r\nBikeForge confirms that its approved authoritative name servers are:\r\n- <b>ns1.bikeforge.host</b>\r\n- <b>ns2.bikeforge.host</b>\r\n\r\nRun <b>dig NS BikeForgeGames.com</b> and compare the <b>ANSWER SECTION</b> with this list. Preserve the complete response, including the resolver and query time, before recommending any change.\r\n\r\nAn unexpected record requires verification; it does not by itself prove compromise or malicious intent.\r\n\r\nSamira",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "skillID": "zonetransferkit",
+  "skillName": "Zone Transfer Kit",
+  "skillDescription": "Requests full DNS zone transfers and compares returned addresses with an organization's documented allocations, flagging out-of-range records for ownership and service validation.",
+  "price": 2800,
+  "order": 30,
+  "requireTask": true,
+  "lockInDemo": false
+}

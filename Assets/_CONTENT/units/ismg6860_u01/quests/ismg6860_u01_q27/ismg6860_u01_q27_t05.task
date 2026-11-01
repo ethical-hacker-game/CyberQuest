@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": true,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Marcus:</b> The draft recommends limiting unnecessary public employee details and deploying SPF, DKIM, and DMARC. These controls address different parts of spoofing and exposure, but no single measure blocks every phish.",
+      "taskInstructions": "Review the linked guidance on <b>email authentication</b> before evaluating the recommendation.",
+      "taskQuestion": "Can these measures reduce risk without guaranteeing that phishing will stop?",
+      "taskCompleteText": "<b>Marcus:</b> Yes. Reduced exposure and correctly configured email authentication can lower risk, alongside training, filtering, secure access, and reporting."
+    }
+  ],
+  "taskID": "ismg6860_u01_q27_t05",
+  "parentQuestID": "ismg6860_u01_q27",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "queries": [
+      "asterlink status",
+      "asterlink transit status",
+      "asterlink portal"
+    ],
+    "results": [
+      {
+        "title": "Asterlink Transit: System Status",
+        "description": "Live operational status for Asterlink Transit rider systems and the night-service launch.",
+        "interactive": true,
+        "url": "https://portal.asterlinktransit.com/status",
+        "realUrl": "/portal.asterlinktransit.com/status/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "common ports",
+      "scanlab ports",
+      "protocol reference"
+    ],
+    "results": [
+      {
+        "title": "Common ports & protocols: ScanLab Docs",
+        "description": "Reference for interpreting the service labels a scanner reports.",
+        "interactive": true,
+        "url": "https://reference.scanlab.io/ports-protocols",
+        "realUrl": "/reference.scanlab.io/ports-protocols/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "echo-73 diagnostics",
+      "railgate diagnostics",
+      "vendor maintenance note"
+    ],
+    "results": [
+      {
+        "title": "ECHO-series diagnostics node placement: RailGate Support",
+        "description": "Support knowledge base: ECHO diagnostics placement and the TCP/8080 console.",
+        "interactive": true,
+        "url": "https://vendor.railgatesystems.com/support/echo-73-diagnostics",
+        "realUrl": "/vendor.railgatesystems.com/support/echo-73-diagnostics/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "asterlink echo advisory",
+      "civicwatch echo-73",
+      "civicwatch advisory"
+    ],
+    "results": [
+      {
+        "title": "Advisory: vendor access on Asterlink's night-service network: CivicWatch",
+        "description": "Public-interest advisory on a vendor maintenance path reaching rider ticketing.",
+        "interactive": true,
+        "url": "https://advisory.civicwatch.org/asterlink-echo-73",
+        "realUrl": "/advisory.civicwatch.org/asterlink-echo-73/index.html"
+      }
+    ]
+  }
+]

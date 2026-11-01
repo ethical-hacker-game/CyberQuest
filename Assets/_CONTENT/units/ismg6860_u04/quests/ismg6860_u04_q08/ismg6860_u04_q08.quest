@@ -1,0 +1,42 @@
+{
+    "questID":  "ismg6860_u04_q08",
+    "cityIndex":  7236,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q08_t00_unlock_riskcalc",
+                    "ismg6860_u04_q08_t01",
+                    "ismg6860_u04_q08_t02",
+                    "ismg6860_u04_q08_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "Analysis: Risk Scoring",
+                         "questDescription":  "Assess the risk of NB-VA-DIR-02 using exposure, likely data sensitivity, evidence confidence, and service context.",
+                         "questCompleteText":  "Risk scoring complete. NB-VA-DIR-02 is rated High because a verified public listing exposes an administrative backup, while the archive contents and any misuse remain unconfirmed.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "Analysis: Risk Scoring",
+                         "questDescription":  "Assess the risk of NB-VA-DIR-02 using exposure, likely data sensitivity, evidence confidence, and service context.",
+                         "questCompleteText":  "Risk scoring complete. NB-VA-DIR-02 is rated High because a verified public listing exposes an administrative backup, while the archive contents and any misuse remain unconfirmed.",
+                         "questCharacterID":  "u04_felix_rane",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "Analysis: Risk Scoring",
+                         "questDescription":  "Assess the risk of NB-VA-DIR-02 using exposure, likely data sensitivity, evidence confidence, and service context.",
+                         "questCompleteText":  "Risk scoring complete. NB-VA-DIR-02 is rated High because a verified public listing exposes an administrative backup, while the archive contents and any misuse remain unconfirmed.",
+                         "questCharacterID":  "u04_imani_vale",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

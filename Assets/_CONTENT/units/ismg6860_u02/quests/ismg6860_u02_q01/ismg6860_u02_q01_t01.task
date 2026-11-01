@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Asterlink launches night-service ticketing in a few hours. We have authorization for a narrow scan window, not a license to wander. ECHO-73 appears in the handoff notes as a host and a label, but we do not yet know its role.\n\nBuild an accurate map so operations can act before launch.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Start with the authorization. It defines what we can examine and when we must stop."
+    }
+  ],
+  "taskID": "ismg6860_u02_q01_t01",
+  "parentQuestID": "ismg6860_u02_q01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

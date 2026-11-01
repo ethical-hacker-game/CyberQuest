@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "decisionText": "Submit the complete evidence-based report to Dana and Halloway leadership through the official channel.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Describe the maintenance trunk as housekeeping in the official report and retain the stronger risk framing for Reyes.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Send the complete findings to the safety committee before official delivery without consulting Dana.",
+      "personaIndex": 2,
+      "personaValueChange": 10
+    }
+  ],
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> We have verified an active vendor account, exposed service metadata, an externally sourced Unix session, an undocumented maintenance trunk, and an unaccounted IKE configuration. Some findings show disclosure or configuration only; the report must preserve those boundaries.\n\nI will sponsor the official report through Halloway's review process. Decide whether you keep that evidence and delivery intact or change its emphasis or audience.",
+      "taskInstructions": "Choose how the report is framed and delivered. The options change its emphasis, audience, and later follow-up.",
+      "taskQuestion": "How do you handle the final report?",
+      "taskCompleteText": "<b>Dana Osei:</b> Your report-handling decision is recorded. Its evidence, emphasis, and recipients will shape Halloway's response."
+    }
+  ],
+  "taskID": "ismg6860_u05_d03_decision",
+  "parentQuestID": "ismg6860_u05_d03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision"
+}

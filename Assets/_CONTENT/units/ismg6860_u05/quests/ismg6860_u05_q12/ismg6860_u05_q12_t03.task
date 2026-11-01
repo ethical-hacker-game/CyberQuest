@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "As the highest-priority finding, since voice systems carry safety-critical traffic.",
+        "As part of the vendor-account chain, since both involve the same network segment.",
+        "It should be omitted, because SIP enumeration is expected behaviour on any gateway.",
+        "As a standalone hardening gap, separate from the vendor-account findings."
+      ],
+      "correctAnswer": 3,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> So where does this land? I do not want it sitting beside the historian and competing for the same attention, because the historian is the thing that can actually hurt us. I am not willing to leave it out of the report either.",
+      "taskInstructions": "Use the observed SIP listeners and extension range with the VoIP guidance in Cyberpedia. Keep this finding separate from the vendor-access chain.",
+      "taskQuestion": "How should the VoIP finding be prioritized in the report?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. Report the enumerable SIP metadata as a standalone hardening gap, separate from the vendor-access evidence."
+    },
+    {
+      "answers": [
+        "As the highest-priority finding, since voice systems carry safety-critical traffic.",
+        "As part of the vendor-account chain, since both involve the same network segment.",
+        "It should be omitted, because SIP enumeration is expected behaviour on any gateway.",
+        "As a standalone hardening gap, separate from the vendor-account findings."
+      ],
+      "correctAnswer": 3,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Do not oversell this one. Dress a phone system up as a crisis and every serious line on that page gets read as theatre. Restraint is what makes the rest of it land.",
+      "taskInstructions": "Use the observed SIP listeners and extension range with the VoIP guidance in Cyberpedia. Keep this finding separate from the vendor-access chain.",
+      "taskQuestion": "How should the VoIP finding be prioritized in the report?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. It is a separate metadata-exposure and hardening issue, not evidence in the vendor-access chain."
+    },
+    {
+      "answers": [
+        "As the highest-priority finding, since voice systems carry safety-critical traffic.",
+        "As part of the vendor-account chain, since both involve the same network segment.",
+        "It should be omitted, because SIP enumeration is expected behaviour on any gateway.",
+        "As a standalone hardening gap, separate from the vendor-account findings."
+      ],
+      "correctAnswer": 3,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> I would rather this be recorded accurately than dramatically. Every time somebody like me overstates a phone-system finding, the next real one gets filed under exaggeration before anybody reads it. I have watched that happen more than once.",
+      "taskInstructions": "Use the observed SIP listeners and extension range with the VoIP guidance in Cyberpedia. Keep this finding separate from the vendor-access chain.",
+      "taskQuestion": "How should the VoIP finding be prioritized in the report?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. Keep the finding in the record as a separate hardening gap without inflating its demonstrated impact."
+    }
+  ],
+  "taskID": "ismg6860_u05_q12_t03",
+  "parentQuestID": "ismg6860_u05_q12",
+  "articleID": "u05_ipsec_voip",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

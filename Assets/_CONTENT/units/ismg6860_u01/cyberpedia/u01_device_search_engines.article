@@ -1,0 +1,13 @@
+{
+  "articleID": "u01_device_search_engines",
+  "videoURL": null,
+  "title": "Device Search Engines",
+  "content": "A device search engine indexes information returned by services on Internet-connected systems. Unlike a general web search, it can organize results around IP addresses, ports, protocols, products, certificates, and service banners. A banner is metadata a service exposes when a client connects, such as software type, version, device model, or configuration details. Shodan is a well-known example.\n\nDefenders can use these indexes to discover systems that appear reachable from the public Internet, including remote administration interfaces, cameras, building controls, databases, and other operational technology. Search results are observations, not a live asset inventory. They may be old, incomplete, associated with shared infrastructure, or based on a misleading banner. An exposed product name or version also does not prove that a vulnerability is exploitable.\n\n<b>Validate without causing harm</b>\nConfirm ownership through approved inventory, DNS, cloud, and network records before contacting a host. Note the result timestamp, address, port, protocol, banner, and query. Do not attempt authentication, change settings, or run exploit tests unless the assessment explicitly permits them. Coordinate suspicious findings with the asset owner and operations team, especially when safety-critical or industrial equipment may be involved.\n\nReduce risk by removing unnecessary Internet exposure, placing devices behind controlled gateways or VPNs, restricting source networks, disabling default accounts, using unique credentials and multifactor authentication where supported, patching safely, segmenting operational systems, and monitoring access. After remediation, verify both the live service and later index updates; disappearance from a search result alone is not proof that the exposure is fixed.",
+  "links": [
+    "device-indexing search",
+    "device indexer",
+    "service banners",
+    "Shodan",
+    "reduce risk"
+  ]
+}

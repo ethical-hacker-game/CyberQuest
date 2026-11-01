@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Route the finding to the team that controls how search input is rendered in HTML.",
+      "taskInstructions": "Read <link=\"u04_reflected_xss\"><u>reflected XSS remediation</u></link>, then select the primary owner and fix.",
+      "taskQuestion": "Who owns the primary remediation?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Developers must apply context-aware output encoding and verify the search endpoint.",
+      "answers": [
+        "Just a single perimeter firewall rule to block the affected port.",
+        "Only a one-time password reset for all the affected user accounts.",
+        "Developer remediation for input handling and output encoding.",
+        "Merely assigning the affected server a new hostname."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A network filter may reduce exposure, but the application team owns the unsafe rendering behavior.",
+      "taskInstructions": "Read <link=\"u04_reflected_xss\"><u>reflected XSS remediation</u></link>, then select the primary owner and fix.",
+      "taskQuestion": "Who owns the primary remediation?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Output encoding removes the behavior at its source.",
+      "answers": [
+        "Just a single perimeter firewall rule to block the affected port.",
+        "Only a one-time password reset for all the affected user accounts.",
+        "Developer remediation for input handling and output encoding.",
+        "Merely assigning the affected server a new hostname."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Assign the finding to the team that can correct the resident-facing search code.",
+      "taskInstructions": "Read <link=\"u04_reflected_xss\"><u>reflected XSS remediation</u></link>, then select the primary owner and fix.",
+      "taskQuestion": "Who owns the primary remediation?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The application team can fix and regression-test the unsafe rendering.",
+      "answers": [
+        "Just a single perimeter firewall rule to block the affected port.",
+        "Only a one-time password reset for all the affected user accounts.",
+        "Developer remediation for input handling and output encoding.",
+        "Merely assigning the affected server a new hostname."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q15_t03",
+  "parentQuestID": "ismg6860_u04_q15",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

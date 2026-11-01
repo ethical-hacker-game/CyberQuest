@@ -1,0 +1,33 @@
+{
+  "questID": "ismg6860_u00_q07",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_lab",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u00_q07_t01_evidence_mail",
+    "ismg6860_u00_q07_t02_case_id",
+    "ismg6860_u00_q07_t03_recommendation"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Evidence Packet",
+      "questDescription": "Michele turns the case evidence into a short operations packet and asks {player} to preserve the exact case ID and recommendation.",
+      "questCompleteText": "Evidence Packet complete. Michele has a concise, reproducible handoff for the system owner.",
+      "questCharacterID": "u00_michele",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Evidence Packet",
+      "questDescription": "Ana turns the case evidence into a short risk packet and asks {player} to preserve the exact case ID and safe recommendation.",
+      "questCompleteText": "Evidence Packet complete. Ana has a clear handoff that explains impact without exposing a live route.",
+      "questCharacterID": "u00_ana",
+      "appScenarioID": ""
+    }
+  ]
+}

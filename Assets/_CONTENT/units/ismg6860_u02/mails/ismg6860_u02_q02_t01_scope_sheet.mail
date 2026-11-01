@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u02_q02_t01_scope_sheet",
+  "parentTaskID": "ismg6860_u02_q02_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Dr. Mira Sen <mira.sen@asterlinktransit.com>",
+      "subject": "Scope sheet and route note",
+      "shortSummary": "The CIDR scope, jump host, and NAT note for the first scan tasks.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nUse this scope sheet for the opening tasks:\n\n- Authorized scan CIDR: 10.42.18.0/24\n- Jump host: 10.42.18.10\n- Public portal NAT: https://portal.asterlinktransit.com/status maps to 10.42.18.20\n- ECHO-73 candidate host: 10.42.18.73\n- Out of scope without written expansion: 10.42.30.0/24 and station camera networks\n\nRun netstat -rn on the jump host before you scan. A route table is boring until it prevents a scope mistake.\n\nMira",
+      "attachements": []
+    }
+  ]
+}

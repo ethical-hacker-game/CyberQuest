@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Secure PDF Viewer</title>
+	<style>
+		:root {
+			color-scheme: dark;
+		}
+		html, body {
+			height: 100%;
+			margin: 0;
+			background: #080b11;
+			font-family: "Segoe UI", Arial, sans-serif;
+			color: #f1f5ff;
+		}
+		body {
+			display: flex;
+			flex-direction: column;
+		}
+		.toolbar {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 1rem;
+			padding: 0.75rem 1rem;
+			background: #121726;
+			border-bottom: 1px solid #1d2539;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			font-size: 0.9rem;
+			color: #92a4ce;
+		}
+		.toolbar-title {
+			flex: 1;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.controls {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			text-transform: none;
+			letter-spacing: normal;
+		}
+		button {
+			appearance: none;
+			border: 1px solid #2b344a;
+			background: #1b2133;
+			color: #f5f8ff;
+			font-size: 1rem;
+			padding: 0.2rem 0.7rem;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		button:hover {
+			background: #252d42;
+		}
+		button:disabled {
+			opacity: 0.4;
+			cursor: not-allowed;
+		}
+		#zoom-display {
+			min-width: 3.5rem;
+			text-align: center;
+			font-variant-numeric: tabular-nums;
+			color: #c7d2f1;
+		}
+		.viewer-wrapper {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			padding: 0.75rem;
+			gap: 0.75rem;
+		}
+		.embed-shell {
+			position: relative;
+			flex: 1;
+			border-radius: 8px;
+			overflow: hidden;
+			background: #0f1422;
+		}
+		.pdf-frame {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+		.status-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: rgba(15, 20, 34, 0.85);
+			backdrop-filter: blur(2px);
+			text-align: center;
+			padding: 1rem;
+			font-size: 0.95rem;
+			color: #c3d2ff;
+		}
+		.status-overlay[hidden] {
+			display: none;
+		}
+		.note {
+			font-size: 0.8rem;
+			color: #7f8fb8;
+		}
+	</style>
+  <script src="../../../cq-bridge.js"></script>
+</head>
+<body>
+	<header class="toolbar">
+		<div id="viewer-title" class="toolbar-title">Document viewer</div>
+		<div class="controls" aria-label="Zoom controls" role="group">
+			<button id="zoom-out" type="button" aria-label="Zoom out">-</button>
+			<span id="zoom-display" aria-live="polite">100%</span>
+			<button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+		</div>
+	</header>
+	<div class="viewer-wrapper">
+		<div class="embed-shell">
+			<embed
+				id="pdf-frame"
+				class="pdf-frame"
+				src="./file.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=100"
+				type="application/pdf"
+				title="Protected PDF document"
+			/>
+			<div id="status-overlay" class="status-overlay">
+				<div>
+					<strong>Loading document…</strong>
+					<p>Please wait while the PDF is prepared.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		const PDF_PATH = './file.pdf';
+		const PDF_FRAGMENT = 'toolbar=0&navpanes=0&scrollbar=0';
+		const titleEl = document.getElementById('viewer-title');
+		const zoomDisplay = document.getElementById('zoom-display');
+		const zoomOutBtn = document.getElementById('zoom-out');
+		const zoomInBtn = document.getElementById('zoom-in');
+		let pdfFrame = document.getElementById('pdf-frame');
+		const statusOverlay = document.getElementById('status-overlay');
+
+		const resolveAbsoluteUrl = (relativePath) => {
+			try {
+				return new URL(relativePath, window.location.href).href;
+			} catch (error) {
+				console.warn('Unable to resolve PDF path, falling back to provided value.', error);
+				return relativePath;
+			}
+		};
+
+		const pdfBaseUrl = (() => {
+			const providedSrc = pdfFrame.getAttribute('src') || PDF_PATH;
+			const baseWithoutFragment = providedSrc.split('#')[0] || PDF_PATH;
+			return resolveAbsoluteUrl(baseWithoutFragment.trim());
+		})();
+
+		const deriveFolderName = () => {
+			const segments = window.location.pathname.split(/[\\/]+/).filter(Boolean);
+			if (!segments.length) {
+				return 'current folder';
+			}
+			const last = segments[segments.length - 1];
+			if (/\.[^.]+$/.test(last) && segments.length > 1) {
+				return segments[segments.length - 2];
+			}
+			return last;
+		};
+
+		titleEl.textContent = `Document viewer - ${deriveFolderName()}`;
+
+		let zoomLevel = 1.0; // 100%
+		const minZoom = 0.5;
+		const maxZoom = 2.0;
+		const zoomStep = 0.2;
+		let loadTimer = null;
+
+		const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+		const updateButtons = () => {
+			zoomDisplay.textContent = `${Math.round(zoomLevel * 100)}%`;
+			zoomOutBtn.disabled = zoomLevel <= minZoom + 0.001;
+			zoomInBtn.disabled = zoomLevel >= maxZoom - 0.001;
+		};
+
+		const setStatus = (message) => {
+			if (!message) {
+				statusOverlay.hidden = true;
+				return;
+			}
+			statusOverlay.hidden = false;
+			statusOverlay.querySelector('p').textContent = message;
+		};
+
+		const handleFrameLoad = () => {
+			clearTimeout(loadTimer);
+			setStatus('');
+		};
+
+		const handleFrameError = () => {
+			clearTimeout(loadTimer);
+			setStatus('Unable to load this PDF in the secure viewer. Please download it manually if the issue persists.');
+		};
+
+		const attachFrameListeners = (frame) => {
+			frame.addEventListener('load', handleFrameLoad);
+			frame.addEventListener('error', handleFrameError);
+		};
+
+		attachFrameListeners(pdfFrame);
+
+		const reloadPdf = () => {
+			const fragment = `${PDF_FRAGMENT}&zoom=${Math.round(zoomLevel * 100)}&ts=${Date.now()}`;
+			const nextSrc = `${pdfBaseUrl}#${fragment}`;
+			setStatus('Refreshing view with the requested zoom level…');
+			clearTimeout(loadTimer);
+			loadTimer = setTimeout(() => {
+				setStatus('Still working… large files can take a moment.');
+			}, 4000);
+			const newFrame = pdfFrame.cloneNode(false);
+			newFrame.setAttribute('src', nextSrc);
+			attachFrameListeners(newFrame);
+			pdfFrame.replaceWith(newFrame);
+			pdfFrame = newFrame;
+		};
+
+		zoomOutBtn.addEventListener('click', () => {
+			zoomLevel = clamp(zoomLevel - zoomStep, minZoom, maxZoom);
+			updateButtons();
+			reloadPdf();
+		});
+
+		zoomInBtn.addEventListener('click', () => {
+			zoomLevel = clamp(zoomLevel + zoomStep, minZoom, maxZoom);
+			updateButtons();
+			reloadPdf();
+		});
+
+		updateButtons();
+		setStatus('Loading document…');
+		reloadPdf();
+	</script>
+</body>
+</html>

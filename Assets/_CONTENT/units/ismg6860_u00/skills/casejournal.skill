@@ -1,0 +1,9 @@
+{
+  "skillID": "casejournal",
+  "skillName": "Case Journal",
+  "skillDescription": "A pinned evidence log for the active case. Every value you confirm - a case code, an address, a host, a finding - stays recorded and travels with your handoff, so nothing important depends on memory.",
+  "price": 1000,
+  "order": 0,
+  "requireTask": true,
+  "lockInDemo": false
+}

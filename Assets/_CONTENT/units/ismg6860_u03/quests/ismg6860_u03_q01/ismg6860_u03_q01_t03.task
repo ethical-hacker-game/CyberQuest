@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Record the shared marker so we can connect any later evidence to this intake.",
+      "taskInstructions": "Reopen the Blue Lantern intake in <b>Mail</b> and type the campaign marker, including its dashes.",
+      "taskQuestion": "What campaign marker ties the first reports together?",
+      "taskCompleteText": "<b>Asha Moreno:</b> BL-LANTERN-9 is now our lead for connecting related evidence. It does not prove who is behind the campaign.",
+      "correctAnswers": [
+        "BL-LANTERN-9",
+        "bl-lantern-9"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q01_t03",
+  "parentQuestID": "ismg6860_u03_q01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

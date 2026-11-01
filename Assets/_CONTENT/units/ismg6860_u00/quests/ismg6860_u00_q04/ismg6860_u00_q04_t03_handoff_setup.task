@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> The status notice, DNS record, and host check now give us a connected trail. The next question is what we want this evidence to achieve.\n\nMichele can help turn it into a repair request for the service owner. Ana can help explain the impact to the people who depend on the portal and press for a clear response.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Ed:</b> We have enough to choose a direction. Think about whether you want to lead with a repair request or with accountability to the people affected."
+    }
+  ],
+  "taskID": "ismg6860_u00_q04_t03_handoff_setup",
+  "parentQuestID": "ismg6860_u00_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

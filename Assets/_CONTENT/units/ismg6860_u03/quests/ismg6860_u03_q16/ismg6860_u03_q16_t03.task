@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Select the conclusion supported by the report's measured rates, without generalizing beyond this exercise.",
+      "taskInstructions": "Compare the four percentages in the OhPhish <b>Trigger Ranking</b> table.",
+      "taskQuestion": "What does the trigger report conclude?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. Urgency produced the highest response rate in this exercise.",
+      "answers": [
+        "Curiosity was measured but did not lead the results.",
+        "Urgency produced the highest response rate in the report.",
+        "Fear appears as one trigger, not proof that a message is true.",
+        "Belonging was tested as part of the lure design."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Choose the conclusion directly supported by the aggregate ranking rather than an impression about the messages.",
+      "taskInstructions": "Compare the four percentages in the OhPhish <b>Trigger Ranking</b> table.",
+      "taskQuestion": "What does the trigger report conclude?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Urgency produced the highest measured response in this report.",
+      "answers": [
+        "Curiosity was measured but did not lead the results.",
+        "Fear appears as one trigger, not proof that a message is true.",
+        "Urgency produced the highest response rate in the report.",
+        "Belonging was tested as part of the lure design."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Base the public warning on the report's aggregate conclusion and do not claim more than the exercise measured.",
+      "taskInstructions": "Compare the four percentages in the OhPhish <b>Trigger Ranking</b> table.",
+      "taskQuestion": "What does the trigger report conclude?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Urgency produced the highest response rate, so the warning can address deadline pressure.",
+      "answers": [
+        "Curiosity was measured but did not lead the results.",
+        "Fear appears as one trigger, not proof that a message is true.",
+        "Belonging was tested as part of the lure design.",
+        "Urgency produced the highest response rate in the report."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u03_q16_t03",
+  "parentQuestID": "ismg6860_u03_q16",
+  "articleID": "u03_human_triggers",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

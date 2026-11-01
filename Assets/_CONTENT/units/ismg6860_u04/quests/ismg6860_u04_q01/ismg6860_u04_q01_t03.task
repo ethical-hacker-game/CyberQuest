@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> We have the permission listing, but no file contents or access logs. Record what this evidence supports.",
+      "taskInstructions": "Use the listing and the <link=\"u04_file_permissions\"><u>file permissions</u></link> explanation. To view the evidence again, run <b>permcheck northbridge-docs</b> in the terminal.",
+      "taskQuestion": "Which conclusion is supported by the evidence?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Record the excessive read permission and recommend restricting access to accounts that need it. Confirming what the file contains or who accessed it needs further authorized evidence.",
+      "answers": [
+        "The file is confirmed to be downloadable from the public portal.",
+        "An attacker has already used a password from the file.",
+        "No exposure exists because other accounts cannot edit the file.",
+        "Other local accounts have read permission for private settings; the listing alone does not prove access or theft."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q01_t03",
+  "parentQuestID": "ismg6860_u04_q01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

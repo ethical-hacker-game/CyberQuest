@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_privilege_escalation_condition",
+  "videoURL": null,
+  "title": "Weak Service Permissions and Privilege Escalation",
+  "content": "A local service creates a <b>privilege-escalation condition</b> when a low-privilege account can modify service files or configuration that a more privileged account later executes. Confirm the writable resource, affected service identity, and required local access without turning the report into an exploitation guide. The condition increases potential impact; it does not prove that escalation occurred. Remediate by limiting modification rights to approved administrators, applying least privilege to the service account, and verifying the permissions after the change.",
+  "links": [
+    "privilege-escalation conditions"
+  ]
+}

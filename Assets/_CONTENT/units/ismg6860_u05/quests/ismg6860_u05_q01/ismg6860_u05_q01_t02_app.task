@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "actionType": "app_stage_changed",
+      "actionTag": "services",
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> Start wide. A version scan can identify the services behind responding ports and show which hosts deserve a closer look.",
+      "taskInstructions": "Open Zenmap and review the Halloway plant service scan.",
+      "taskQuestion": "Open the Zenmap service scan of the plant segment.",
+      "taskCompleteText": "<b>Dana Osei:</b> Compare FORGE-HIST01 with the other hosts before choosing where to enumerate first."
+    }
+  ],
+  "taskID": "ismg6860_u05_q01_t02_app",
+  "parentQuestID": "ismg6860_u05_q01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Action"
+}

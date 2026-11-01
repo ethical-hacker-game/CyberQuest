@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> AppCheck has the Signature Verifier results for the trusted and repackaged LanternPass installers. Review the comparison without downloading or running either build.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>lanternpass builds</b>, then open the Harborview AppCheck result.",
+      "taskQuestion": "Open the LanternPass build comparison.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The two builds are ready for an evidence-based comparison.",
+      "correctAnswer": "appcheck.harborviewexpo.org/lanternpass-builds"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The installers look alike, but AppCheck records their identity and signing fields side by side. Inspect the differences that appearance cannot establish.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>lanternpass builds</b>, then open the Harborview AppCheck result.",
+      "taskQuestion": "Open the LanternPass build comparison.",
+      "taskCompleteText": "<b>Felix Rane:</b> The visual match and provenance differences are both visible.",
+      "correctAnswer": "appcheck.harborviewexpo.org/lanternpass-builds"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Staff need specific checks that work even when two installers look identical. Review AppCheck's package and signing evidence.",
+      "taskInstructions": "Open the browser and search <b>Cyber Search</b> for <b>lanternpass builds</b>, then open the Harborview AppCheck result.",
+      "taskQuestion": "Open the LanternPass build comparison.",
+      "taskCompleteText": "<b>Imani Vale:</b> The comparison provides concrete differences staff can verify.",
+      "correctAnswer": "appcheck.harborviewexpo.org/lanternpass-builds"
+    }
+  ],
+  "taskID": "ismg6860_u03_q15_t01",
+  "parentQuestID": "ismg6860_u03_q15",
+  "articleID": "u03_malicious_app_provenance",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

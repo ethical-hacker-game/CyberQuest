@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Careful here. Credential material is the one kind of evidence that can create the incident you were hired to prevent. An exported hash file lives forever, in mailboxes, in backups, in somebody's downloads folder.\n\nOur finding is the weak policy, not the secrets themselves. We can prove the first without ever carrying the second around.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the safe handling rule?",
+      "taskCompleteText": "Correct. Credential material should be minimized, protected, and documented responsibly.",
+      "answers": [
+        "Email the recovered password hashes directly to every stakeholder involved in the project.",
+        "Protect credential material and document the risk without exporting hashes unnecessarily.",
+        "Paste sample cleartext passwords directly into the main report summary section for review.",
+        "Run public online cracking attempts that fall outside the assessment scope."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> This is the one place my advice sounds exactly like Mara's, for entirely selfish reasons. The moment credential material leaves your control it stops being your evidence and becomes somebody else's leverage, including over you.\n\nPeople get caught holding hashes, not reading them. That is the only rule in this business I have never seen anyone survive breaking twice.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the safe handling rule?",
+      "taskCompleteText": "Correct. Credential material should be minimized, protected, and documented responsibly.",
+      "answers": [
+        "Email the recovered password hashes directly to every stakeholder involved in the project.",
+        "Protect credential material and document the risk without exporting hashes unnecessarily.",
+        "Paste sample cleartext passwords directly into the main report summary section for review.",
+        "Run public online cracking attempts that fall outside the assessment scope."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> There are real people behind those accounts, and none of them agreed to have their credentials copied into a consultant's working folder. Careless handling here would make us precisely the thing we are accusing Northbridge of being.\n\nWe can describe the risk in full without ever holding the material that proves it. Anything else hands leadership a reason to argue with the messenger instead of the finding.",
+      "taskInstructions": "",
+      "taskQuestion": "What is the safe handling rule?",
+      "taskCompleteText": "Correct. Credential material should be minimized, protected, and documented responsibly.",
+      "answers": [
+        "Email the recovered password hashes directly to every stakeholder involved in the project.",
+        "Protect credential material and document the risk without exporting hashes unnecessarily.",
+        "Paste sample cleartext passwords directly into the main report summary section for review.",
+        "Run public online cracking attempts that fall outside the assessment scope."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q17_t03",
+  "parentQuestID": "ismg6860_u04_q17",
+  "articleID": "u04_credential_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

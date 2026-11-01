@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "decisionText": "Report the mixed-sensitivity share through the authorized engagement channel and preserve the listing as evidence.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Withhold the drawing exposure from the report and retain a private copy for resale.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Send the documented exposure to the worker safety coalition before Halloway decides how to respond.",
+      "personaIndex": 2,
+      "personaValueChange": 10
+    }
+  ],
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> BRIDGEWORKS$ exposes Halloway drawings alongside vendor configuration, and an enabled account carrying the same BridgeWorks name authenticated at 02:41. Halloway no longer works with that company.\n\nThe evidence is defensible, but the reporting channel matters. An outside disclosure could pressure Halloway to act, while withholding details or retaining client data would violate the engagement.",
+      "taskInstructions": "Choose who receives the evidence and how it is handled.",
+      "taskQuestion": "How do you handle the BRIDGEWORKS$ evidence?",
+      "taskCompleteText": "<b>Dana Osei:</b> Your choice is recorded. The evidence and reporting path will influence who guides the next stage of the investigation."
+    }
+  ],
+  "taskID": "ismg6860_u05_d01_decision",
+  "parentQuestID": "ismg6860_u05_d01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision"
+}

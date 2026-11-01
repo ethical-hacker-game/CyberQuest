@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u03_q03_t01_voicemail",
+  "parentTaskID": "ismg6860_u03_q03_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Riley Cho <riley.cho@harborviewexpo.org>",
+      "subject": "Fwd: voicemail from 'mobile support': is this real?",
+      "shortSummary": "Riley forwards a suspicious call transcript for review.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Asha,\n\nI caught this between two badge runs and did not call back. It felt wrong, so I saved the transcript.\n\n---\nCaller: This is Harborview mobile support. Your LanternPass number is scheduled for a security lockout.\nRiley: I didn't request a lockout.\nCaller: Then read me the one-time code so I can cancel it before your badge is disabled.\n---\n\nRiley",
+      "attachements": []
+    }
+  ]
+}

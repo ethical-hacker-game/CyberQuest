@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Rate NB-VA-DIR-02 using what we verified: public directory access, an administrative archive name, and no inspection of its contents.",
+      "taskInstructions": "Read <link=\"u04_practical_risk_context\"><u>practical risk context</u></link> before selecting the factor that raises risk.",
+      "taskQuestion": "Which factor increases the risk score?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Public reachability and the likely sensitivity of an administrative backup raise risk, while its contents remain unverified.",
+      "answers": [
+        "The report uses a short tracking ID for the finding.",
+        "The archive was listed on a public citizen-services portal and appears administrative.",
+        "The finding was reviewed after the setup finding.",
+        "The directory page uses a simple visual layout."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Rate NB-VA-DIR-02 using what is verified: public directory access and an administrative archive name, without claiming to know its contents.",
+      "taskInstructions": "Read <link=\"u04_practical_risk_context\"><u>practical risk context</u></link> before selecting the factor that raises risk.",
+      "taskQuestion": "Which factor increases the risk score?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Public reachability and a likely sensitive backup make the exposure valuable, even though its contents remain unverified.",
+      "answers": [
+        "The report uses a short tracking ID for the finding.",
+        "The archive was listed on a public citizen-services portal and appears administrative.",
+        "The finding was reviewed after the setup finding.",
+        "The directory page uses a simple visual layout."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Rate NB-VA-DIR-02 using the verified public exposure and the portal's role, without claiming the archive was opened or misused.",
+      "taskInstructions": "Read <link=\"u04_practical_risk_context\"><u>practical risk context</u></link> before selecting the factor that raises risk.",
+      "taskQuestion": "Which factor increases the risk score?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Public reachability and the likely sensitivity of an administrative backup raise the risk to a service residents depend on.",
+      "answers": [
+        "The report uses a short tracking ID for the finding.",
+        "The archive was listed on a public citizen-services portal and appears administrative.",
+        "The finding was reviewed after the setup finding.",
+        "The directory page uses a simple visual layout."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u04_q08_t01",
+  "parentQuestID": "ismg6860_u04_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

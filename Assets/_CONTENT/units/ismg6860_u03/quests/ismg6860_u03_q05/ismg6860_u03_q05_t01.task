@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> This <b>helper app</b> is distributed from its own website instead of Harborview's approved store. Inspect the public listing without downloading or installing anything.",
+      "taskInstructions": "Open the browser, search <b>lanternpass helper</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the Malicious application evidence page.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Listing captured without installation. Now verify its publisher and requested access.",
+      "correctAnswer": "blue-lantern-mobile.com/lanternpass-helper"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> This <b>helper app</b> is distributed from its own polished website, outside any store review. Inspect the listing; do not download the package.",
+      "taskInstructions": "Open the browser, search <b>lanternpass helper</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the Malicious application evidence page.",
+      "taskCompleteText": "<b>Felix Rane:</b> Listing captured. The useful details are the publisher, package identity, and access it requests.",
+      "correctAnswer": "blue-lantern-mobile.com/lanternpass-helper"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Staff threads are directing volunteers to this <b>helper app</b>. Inspect its public listing so our warning uses details people can check for themselves.",
+      "taskInstructions": "Open the browser, search <b>lanternpass helper</b> in <b>Cyber Search</b>, and open the result.",
+      "taskQuestion": "Open the Malicious application evidence page.",
+      "taskCompleteText": "<b>Imani Vale:</b> Listing captured without installation. Now record the publisher and requested access.",
+      "correctAnswer": "blue-lantern-mobile.com/lanternpass-helper"
+    }
+  ],
+  "taskID": "ismg6860_u03_q05_t01",
+  "parentQuestID": "ismg6860_u03_q05",
+  "articleID": "u03_malicious_app_provenance",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

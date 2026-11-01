@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The reply includes an A address, so it must be authoritative.",
+        "The NS reply has the aa flag and names ns1.novasolutions.com as an NS record.",
+        "The recursive A reply includes the ra flag, so it must be authoritative.",
+        "The resolver returns the same address twice, so it must own the DNS zone."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Brandon:</b> Compare the two DNS replies. The authoritative-answer flag tells us which response came from a server answering for the zone; a listed NS record by itself is not proof that the responding server was authoritative.",
+      "taskInstructions": "In the command shell, run <b>dig novasolutions.com NS</b> and <b>dig novasolutions.com A</b>. Compare their header flags, question types, answer records, and server lines.",
+      "taskQuestion": "Which observation indicates an authoritative answer?",
+      "taskCompleteText": "<b>Brandon:</b> The NS reply carries <b>aa</b>, the authoritative-answer flag, and returns <b>ns1.novasolutions.com</b> as an NS record. The recursive A reply lacks <b>aa</b>. Neither result explains the traffic spikes."
+    }
+  ],
+  "taskID": "ismg6860_u01_q20_t02",
+  "parentQuestID": "ismg6860_u01_q20",
+  "articleID": "u01_dns_intelligence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

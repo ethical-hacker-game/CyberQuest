@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "As a critical finding, because an exposed RMI registry always permits remote code execution attacks.",
+        "As a false positive, because RMI registries are not reachable across a network.",
+        "As information disclosure that reveals the software stack and adds to the unmanaged install.",
+        "As a low-priority item that should be omitted from the report entirely."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> So what do I actually write? I have limited space in this report and a leadership team that will fix roughly as many items as I can defend in one meeting. Spend a paragraph on something that turns out to be noise and I lose the paragraph that mattered.",
+      "taskInstructions": "Use the registry output and the RMI guidance in Cyberpedia. Classify only what the evidence establishes.",
+      "taskQuestion": "How should the RMI exposure be characterized?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The verified issue is service metadata disclosure; the evidence does not establish code execution."
+    },
+    {
+      "answers": [
+        "As a critical finding, because an exposed RMI registry always permits remote code execution attacks.",
+        "As a false positive, because RMI registries are not reachable across a network.",
+        "As information disclosure that reveals the software stack and adds to the unmanaged install.",
+        "As a low-priority item that should be omitted from the report entirely."
+      ],
+      "correctAnswer": 2,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Be honest with yourself about what this one is worth standing alone, separate from the share and the account. Overstating a finding feels productive for about a day. It is also the fastest way to have everything else you wrote discounted along with it.",
+      "taskInstructions": "Use the registry output and the RMI guidance in Cyberpedia. Classify only what the evidence establishes.",
+      "taskQuestion": "How should the RMI exposure be characterized?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The registry exposed useful software metadata, but no remote invocation was demonstrated."
+    },
+    {
+      "answers": [
+        "As a critical finding, because an exposed RMI registry always permits remote code execution attacks.",
+        "As a false positive, because RMI registries are not reachable across a network.",
+        "As information disclosure that reveals the software stack and adds to the unmanaged install.",
+        "As a low-priority item that should be omitted from the report entirely."
+      ],
+      "correctAnswer": 2,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> I have to put one word on this before it goes in the record. Overstate it and the safety committee stops believing the rest of my list. Understate it and it quietly becomes a maintenance ticket nobody ever closes. Both of those have happened to me.",
+      "taskInstructions": "Use the registry output and the RMI guidance in Cyberpedia. Classify only what the evidence establishes.",
+      "taskQuestion": "How should the RMI exposure be characterized?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. Report the information disclosure without inflating it into an unproven compromise."
+    }
+  ],
+  "taskID": "ismg6860_u05_q10_t03",
+  "parentQuestID": "ismg6860_u05_q10",
+  "articleID": "u05_rpc_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

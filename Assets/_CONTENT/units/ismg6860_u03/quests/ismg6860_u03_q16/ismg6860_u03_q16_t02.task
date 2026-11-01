@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Identify the trigger with the highest measured response so the defense can address the strongest pressure first.",
+      "taskInstructions": "In the OhPhish report, read the <b>Trigger Ranking</b> table and type the leading trigger.",
+      "taskQuestion": "Which emotional trigger had the highest response in the report?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: urgency, with the highest response rate in this exercise.",
+      "correctAnswers": ["urgency", "urgent"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The report ranks four pressures by measured response. Record the one that produced the highest rate.",
+      "taskInstructions": "In the OhPhish report, read the <b>Trigger Ranking</b> table and type the leading trigger.",
+      "taskQuestion": "Which trigger had the highest response in the report?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: urgency led this exercise's trigger ranking.",
+      "correctAnswers": ["urgency", "urgent"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A useful warning should name the pressure supported by the strongest aggregate result. Record the leading trigger.",
+      "taskInstructions": "In the OhPhish report, read the <b>Trigger Ranking</b> table and type the leading trigger.",
+      "taskQuestion": "Which trigger had the highest response in the report?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: urgency. The warning can address manufactured deadlines specifically.",
+      "correctAnswers": ["urgency", "urgent"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q16_t02",
+  "parentQuestID": "ismg6860_u03_q16",
+  "articleID": "u03_human_triggers",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

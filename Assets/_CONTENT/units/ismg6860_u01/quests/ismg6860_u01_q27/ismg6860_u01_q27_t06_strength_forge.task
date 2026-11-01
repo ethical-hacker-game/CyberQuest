@@ -1,0 +1,37 @@
+{
+  "variants": [
+    {
+      "minigameType": "StrengthForge",
+      "minigameHeaderText": "SecureFund Credential Recovery",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "strengthForgeSettings": {
+        "rounds": [
+          {
+            "label": "Recovered Mail Account",
+            "description": "The phished account is protected by throttled online login controls. Build a memorable replacement that resists dictionary and hybrid guessing.",
+            "dictionaryAttack": true,
+            "hybridAttack": true,
+            "bruteForceAttack": false,
+            "guessesPerSecond": 1000,
+            "requiredCrackSeconds": 86400,
+            "maxTokens": 5,
+            "memorabilityBudget": 9
+          }
+        ]
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Marcus:</b> The employee who reported the imitation page confirmed entering their password there. Treat it as exposed: rotate it, invalidate active sessions, and review account activity. Forge a unique replacement that can resist the listed guessing methods.",
+      "taskInstructions": "Review <b>sensitive credentials</b> guidance first. The account is throttled to roughly 1,000 guesses per second; the replacement must resist dictionary and hybrid guessing for at least a day, using no more than five tokens within the memorability budget.",
+      "taskQuestion": "Forge a safe replacement credential.",
+      "taskCompleteText": "<b>Marcus:</b> The replacement meets this exercise's guessing and memorability thresholds. The exposed credential still needs rotation, session invalidation, and log review."
+    }
+  ],
+  "taskID": "ismg6860_u01_q27_t06_strength_forge",
+  "parentQuestID": "ismg6860_u01_q27",
+  "articleID": "u01_credential_exposure",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

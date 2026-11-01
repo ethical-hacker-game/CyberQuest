@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Label the finding so the verified exposure and the untested impact are both clear.",
+      "taskInstructions": "Use <link=\"u04_feasibility_evidence\"><u>feasibility evidence</u></link> and the recorded form state.",
+      "taskQuestion": "How should this finding be labeled?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The exposed interface is verified; its ability to change configuration remains unverified.",
+      "answers": [
+        "Confirmed compromise, because the wizard successfully changed production settings.",
+        "False positive, because the public route did not respond.",
+        "Verified exposed interface; state-changing capability not established.",
+        "Confirmed harmless, because disabled controls prove the route can never become dangerous."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Keep the public opening in the report without inventing a working configuration path.",
+      "taskInstructions": "Use <link=\"u04_feasibility_evidence\"><u>feasibility evidence</u></link> and the recorded form state.",
+      "taskQuestion": "How should this finding be labeled?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The interface is exposed, but its practical state-changing value is still unknown.",
+      "answers": [
+        "Confirmed compromise, because the wizard successfully changed production settings.",
+        "False positive, because the public route did not respond.",
+        "Verified exposed interface; state-changing capability not established.",
+        "Confirmed harmless, because disabled controls prove the route can never become dangerous."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Describe the confirmed public exposure without claiming that anyone used it or that the disabled form can change state.",
+      "taskInstructions": "Use <link=\"u04_feasibility_evidence\"><u>feasibility evidence</u></link> and the recorded form state.",
+      "taskQuestion": "How should this finding be labeled?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The public exposure is verified and actionable even though deeper impact remains untested.",
+      "answers": [
+        "Confirmed compromise, because the wizard successfully changed production settings.",
+        "False positive, because the public route did not respond.",
+        "Verified exposed interface; state-changing capability not established.",
+        "Confirmed harmless, because disabled controls prove the route can never become dangerous."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q09_t03",
+  "parentQuestID": "ismg6860_u04_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

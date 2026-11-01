@@ -1,0 +1,9 @@
+{
+  "skillID": "niktoscan",
+  "skillName": "Web Server Scan",
+  "skillDescription": "Enables Nikto checks of approved web servers. Reports HTTP headers, methods, and exposed paths for review; results need verification before risk is assigned.",
+  "price": 1200,
+  "order": 10,
+  "requireTask": true,
+  "lockInDemo": false
+}

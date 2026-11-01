@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The campaign has used messages, calls, apps, physical placement, proximity sharing, calendars, and a game community. One mobile lead remains: a VPN claiming Harborview affiliation. Verify the publisher before accepting that <b>impersonation</b> claim.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Asha Moreno:</b> Inspect the VPN listing without downloading or installing the app."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> One mobile lead remains: a VPN using Harborview language to sell trust. Inspect the publisher behind the <b>impersonation</b> before deciding what the claim is worth.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> Read the listing without installing the app or routing traffic through it."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> One mobile lead remains: a VPN promoted as official protection for expo Wi-Fi. Check the publisher behind that <b>impersonation</b> so any warning rests on verifiable evidence.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> Inspect the public listing without downloading or installing the app."
+    }
+  ],
+  "taskID": "ismg6860_u03_q11_t00_voice",
+  "parentQuestID": "ismg6860_u03_q11",
+  "articleID": "u03_social_patterns",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

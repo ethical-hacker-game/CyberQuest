@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acunetix / Scan: Citizen Portal</title>
+  <style>
+    :root{--ink:#1f2733;--muted:#6b7686;--line:#e4e8ee;--bg:#f4f6f9;--rail:#16213a;--rail-h:#22335b;--accent:#16b378;
+      --crit:#b3203a;--high:#e35d2b;--med:#f0a800;--low:#2b86c5;--info:#8a96a6}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);font-size:14px}
+    .shell{display:flex;min-height:100vh}
+    .rail{width:212px;background:var(--rail);color:#c7d2e6;flex-shrink:0;padding-top:16px}
+    .rail .brand{display:flex;align-items:center;gap:10px;padding:6px 20px 18px;font-weight:800;font-size:18px;color:#fff;letter-spacing:.3px}
+    .rail .brand .mark{width:26px;height:26px;border-radius:6px;background:linear-gradient(135deg,#16b378,#0b8f9c);display:flex;align-items:center;justify-content:center;color:#06231b;font-weight:900}
+    .rail a{display:flex;align-items:center;gap:10px;padding:11px 20px;color:#a9b6cd;text-decoration:none;font-weight:600;font-size:13.5px}
+    .rail a.active{background:var(--rail-h);color:#fff;box-shadow:inset 3px 0 0 var(--accent)}
+    .rail a .ico{width:16px;text-align:center;opacity:.85}
+    .body{flex:1;display:flex;flex-direction:column}
+    .top{height:52px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 26px;gap:14px}
+    .top .t{font-weight:700;font-size:15px}
+    .top .spacer{flex:1}
+    .top .user{color:var(--muted);font-size:13px}
+    .main{padding:24px 28px 60px;max-width:1040px}
+    .row{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:8px}
+    .sum{flex:1;min-width:260px;padding:20px 22px}
+    .sum h2{margin:0 0 4px;font-size:18px}
+    .sum .url{color:var(--accent);font-weight:600;font-size:13.5px;word-break:break-all}
+    .sum .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;margin-top:16px;font-size:13px}
+    .sum .grid b{display:block;color:var(--muted);font-weight:600;font-size:11px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:2px}
+    .gauge{width:230px;padding:20px 22px;text-align:center}
+    .gauge .lvl{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;font-weight:700}
+    .gauge .big{font-size:34px;font-weight:800;color:var(--med);margin:6px 0}
+    .gauge .ring{height:8px;border-radius:4px;background:linear-gradient(90deg,var(--low),var(--med),var(--crit));margin-top:10px;position:relative}
+    .gauge .ring::after{content:"";position:absolute;top:-3px;left:46%;width:3px;height:14px;background:#1f2733;border-radius:2px}
+    .card .h{padding:13px 18px;border-bottom:1px solid var(--line);font-weight:700;font-size:13px;letter-spacing:.4px;text-transform:uppercase;color:#56636f}
+    table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;padding:13px 18px;border-bottom:1px solid var(--line);font-size:13.5px;vertical-align:middle}
+    th{background:#fafbfc;color:#56636f;font-weight:600;font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+    tr:last-child td{border-bottom:none}
+    .sev{display:inline-flex;align-items:center;gap:7px;font-weight:700}
+    .sev i{width:10px;height:10px;border-radius:50%;display:inline-block}
+    .s-crit{color:var(--crit)} .s-crit i{background:var(--crit)}
+    .s-high{color:var(--high)} .s-high i{background:var(--high)}
+    .s-med{color:var(--med)} .s-med i{background:var(--med)}
+    .s-low{color:var(--low)} .s-low i{background:var(--low)}
+    .s-info{color:var(--info)} .s-info i{background:var(--info)}
+    .vname{font-weight:700;color:#1d3550;text-decoration:none}
+    .vname:hover{color:var(--accent)}
+    code{background:#eef1f5;border:1px solid #dde3ea;border-radius:4px;padding:1px 5px;font-family:Consolas,monospace}
+    .pill{font-size:11px;font-weight:700;color:#fff;background:#2fa36b;border-radius:10px;padding:2px 9px}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <div class="brand"><span class="mark">A</span>acunetix</div>
+      <a href="../192.168.20.10;3443/"><span class="ico">&#9632;</span>Dashboard</a>
+      <a href="../192.168.20.10;3443/"><span class="ico">&#9678;</span>Targets</a>
+      <a class="active" href="../192.168.20.10;3443/"><span class="ico">&#9655;</span>Scans</a>
+      <a href="../192.168.20.10;3443/vulnerabilities/reflected-xss.html"><span class="ico">&#9888;</span>Vulnerabilities</a>
+      <a href="../192.168.20.10;3443/"><span class="ico">&#9636;</span>Reports</a>
+      <a href="../192.168.20.10;3443/"><span class="ico">&#9881;</span>Settings</a>
+    </aside>
+
+    <div class="body">
+      <div class="top">
+        <span class="t">Scan Result</span>
+        <span class="spacer"></span>
+        <span class="user">analyst@assessment</span>
+      </div>
+
+      <main class="main">
+        <div class="row">
+          <div class="card sum">
+            <h2>Citizen Portal</h2>
+            <div class="url">https://portal.northbridge.com</div>
+            <div class="grid">
+              <div><b>Status</b>Completed</div>
+              <div><b>Scan Type</b>Full Scan</div>
+              <div><b>Started</b>Today 11:05</div>
+              <div><b>Duration</b>00:08:41</div>
+              <div><b>Requests</b>3,412</div>
+              <div><b>Locations</b>27</div>
+            </div>
+          </div>
+          <div class="card gauge">
+            <div class="lvl">Threat Level</div>
+            <div class="big">Medium</div>
+            <div class="ring"></div>
+            <div style="margin-top:14px;font-size:13px;color:var(--muted)">1 confirmed vulnerability</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="h">Vulnerabilities</div>
+          <table>
+            <thead><tr><th style="width:130px">Severity</th><th>Vulnerability</th><th style="width:120px">Confidence</th><th>Affected Item</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="sev s-med"><i></i>Medium</span></td>
+                <td><a class="vname" href="../192.168.20.10;3443/vulnerabilities/reflected-xss.html">Cross-Site Scripting (Reflected)</a></td>
+                <td><span class="pill">Confirmed</span></td>
+                <td><code>/services/search</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="../cq-bridge.js"></script>
+</body>
+</html>

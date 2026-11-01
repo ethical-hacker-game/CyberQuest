@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Identification starts by selecting an observed security condition from the report.",
+      "taskInstructions": "Read <link=\"u04_candidate_verification\"><u>candidate and verified findings</u></link>. Run <b>openvas report northbridge-external</b>, then review the Results table.",
+      "taskQuestion": "Which reported item is a confirmed, internet-facing setup exposure?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The setup interface is listed on the public portal with high evidence confidence.",
+      "answers": [
+        "Missing X-Frame-Options Response Header",
+        "Possible Outdated Service Banner",
+        "Directory Listing Exposes Backup Archive",
+        "Exposed Setup / Install Interface"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Start with the confirmed public interface. It is a clearer opening than an unverified service banner.",
+      "taskInstructions": "Read <link=\"u04_candidate_verification\"><u>candidate and verified findings</u></link>. Run <b>openvas report northbridge-external</b>, then review the Results table.",
+      "taskQuestion": "Which reported item is a confirmed, internet-facing setup exposure?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The setup interface is listed on the public portal with high evidence confidence.",
+      "answers": [
+        "Missing X-Frame-Options Response Header",
+        "Possible Outdated Service Banner",
+        "Directory Listing Exposes Backup Archive",
+        "Exposed Setup / Install Interface"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Start with the confirmed interface exposed on the resident-facing portal. Keep the claim tied to the report.",
+      "taskInstructions": "Read <link=\"u04_candidate_verification\"><u>candidate and verified findings</u></link>. Run <b>openvas report northbridge-external</b>, then review the Results table.",
+      "taskQuestion": "Which reported item is a confirmed, internet-facing setup exposure?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The setup interface is listed on the public portal with high evidence confidence.",
+      "answers": [
+        "Missing X-Frame-Options Response Header",
+        "Possible Outdated Service Banner",
+        "Directory Listing Exposes Backup Archive",
+        "Exposed Setup / Install Interface"
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q06_t01",
+  "parentQuestID": "ismg6860_u04_q06",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

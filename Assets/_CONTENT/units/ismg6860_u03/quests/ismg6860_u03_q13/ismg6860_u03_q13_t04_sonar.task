@@ -1,0 +1,74 @@
+{
+  "variants": [
+    {
+      "minigameType": "SonarSweep",
+      "minigameHeaderText": "Prize Storm Signal Triage",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "sonarSettings": {
+        "scanIntegrity": 3,
+        "cacheCount": 6,
+        "falseEchoCount": 6,
+        "sweepSpeedMultiplier": 1.0,
+        "afterglowSeconds": 1.8,
+        "blipDriftMultiplier": 1.0,
+        "cacheLabel": "TARGETED LURE",
+        "echoLabel": "SPAM NOISE"
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Practice separating the marker-confirmed batch from unrelated prize noise. In this triage display, confirmed lures hold a steady, sharp pulse while unrelated noise wobbles and flickers.",
+      "taskInstructions": "Mark only the contacts holding a steady, sharp pulse as TARGETED LURE; the wobbling, flickering SPAM NOISE blips cost scan integrity, and three wrong marks burn out the scanner.",
+      "taskQuestion": "Separate targeted lures from spam noise.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The confirmed batch is isolated without treating every prize message as part of the same incident."
+    },
+    {
+      "minigameType": "SonarSweep",
+      "minigameHeaderText": "Prize Storm Signal Triage",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "sonarSettings": {
+        "scanIntegrity": 3,
+        "cacheCount": 6,
+        "falseEchoCount": 6,
+        "sweepSpeedMultiplier": 1.0,
+        "afterglowSeconds": 1.8,
+        "blipDriftMultiplier": 1.0,
+        "cacheLabel": "TARGETED LURE",
+        "echoLabel": "SPAM NOISE"
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Practice filtering the marker-confirmed batch from unrelated prize noise. The display encodes confirmed lures as steady, sharp pulses and noise as unstable echoes.",
+      "taskInstructions": "Mark only the contacts holding a steady, sharp pulse as TARGETED LURE; the wobbling, flickering SPAM NOISE blips cost scan integrity, and three wrong marks burn out the scanner.",
+      "taskQuestion": "Separate targeted lures from spam noise.",
+      "taskCompleteText": "<b>Felix Rane:</b> The confirmed signals are separated from the background noise without padding the campaign count."
+    },
+    {
+      "minigameType": "SonarSweep",
+      "minigameHeaderText": "Prize Storm Signal Triage",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "sonarSettings": {
+        "scanIntegrity": 3,
+        "cacheCount": 6,
+        "falseEchoCount": 6,
+        "sweepSpeedMultiplier": 1.0,
+        "afterglowSeconds": 1.8,
+        "blipDriftMultiplier": 1.0,
+        "cacheLabel": "TARGETED LURE",
+        "echoLabel": "SPAM NOISE"
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Practice separating the marker-confirmed batch from unrelated prize noise so the warning does not label every giveaway message as the same campaign.",
+      "taskInstructions": "Mark only the contacts holding a steady, sharp pulse as TARGETED LURE; the wobbling, flickering SPAM NOISE blips cost scan integrity, and three wrong marks burn out the scanner.",
+      "taskQuestion": "Separate targeted lures from spam noise.",
+      "taskCompleteText": "<b>Imani Vale:</b> The resulting count is specific enough to support a credible warning."
+    }
+  ],
+  "taskID": "ismg6860_u03_q13_t04_sonar",
+  "parentQuestID": "ismg6860_u03_q13",
+  "articleID": "u03_reward_and_volume_scams",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

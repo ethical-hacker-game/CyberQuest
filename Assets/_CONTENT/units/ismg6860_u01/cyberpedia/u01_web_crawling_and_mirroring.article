@@ -1,0 +1,13 @@
+{
+  "articleID": "u01_web_crawling_and_mirroring",
+  "videoURL": null,
+  "title": "Web Crawling and Site Mirroring",
+  "content": "A web crawler automatically follows reachable links and records resources such as pages, images, scripts, and documents. A site mirroring tool goes further by saving reachable resources into a local copy for offline review. These techniques can reveal forgotten files and relationships that are difficult to notice one page at a time. They only show what the crawler can reach with its permissions and settings; they do not prove that every server file was collected.\n\nCrawling and mirroring should be performed only on approved targets and at a controlled rate. Even read-only requests can create load, trigger defenses, or collect personal and confidential material. Record the target, time, tool settings, and scope. Review suspicious files locally, preserve source URLs, and avoid executing downloaded scripts or opening active content outside an isolated environment.\n\n<b>What exposure looks like</b>\nHigh-risk findings include configuration backups, environment files, database exports, source maps, logs, private documents, and directory listings. If a secret is exposed, remove the public source and rotate the secret; simply hiding the link is insufficient. Check deployment pipelines and storage locations for duplicate copies.\n\nA robots.txt file tells cooperative crawlers which paths they should avoid, but it is not authentication or access control. Malicious or poorly behaved crawlers may ignore it, and blocked URLs can still be discovered in other ways. Sensitive content should require authorization or be removed from the public host. Use crawler directives to manage legitimate indexing, then rely on access controls, deployment validation, and continuous external review to protect data.",
+  "links": [
+    "a web spider",
+    "web spiders",
+    "public crawl",
+    "site copier",
+    "mirrored folder"
+  ]
+}

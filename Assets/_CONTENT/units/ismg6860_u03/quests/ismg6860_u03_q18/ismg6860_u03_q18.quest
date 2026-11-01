@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u03_q18",
+  "cityIndex": 5148,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q18_t01",
+    "ismg6860_u03_q18_t02",
+    "ismg6860_u03_q18_t03",
+    "ismg6860_u03_q18_t04_camera_route"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Badge Voice",
+      "questDescription": "Review a call that used claimed authority and urgency to request an exception to badge verification, then assess the route at risk.",
+      "questCompleteText": "<b>Asha Moreno:</b> The authority claim, requested exception, and route risk are documented without claiming access succeeded.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Badge Voice",
+      "questDescription": "Analyze how a caller combined a borrowed title with deadline pressure to test the badge-verification process.",
+      "questCompleteText": "<b>Felix Rane:</b> The call's leverage and the potential route are separated from any unsupported claim of entry.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Badge Voice",
+      "questDescription": "Document the pressure placed on badge-desk staff and identify a verification process that lets them resist claimed authority safely.",
+      "questCompleteText": "<b>Imani Vale:</b> The response supports staff with a clear verification route instead of blaming them for the pressure.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

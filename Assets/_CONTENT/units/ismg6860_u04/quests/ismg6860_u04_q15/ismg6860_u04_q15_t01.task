@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Review how the portal handles input in its resident-facing search feature.",
+      "taskInstructions": "Run <b>acunetix scan citizen-portal</b>. In the Vulnerabilities table, compare the vulnerability name, confidence, and affected item.",
+      "taskQuestion": "Which application-level issue was confirmed?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Acunetix confirms reflected cross-site scripting on /services/search.",
+      "answers": [
+        "Confirmed Cross-Site Scripting (Reflected) on /services/search",
+        "Possible SQL injection on /account/login",
+        "Confirmed missing operating-system patches on portal-app-01",
+        "Possible SMB signing weakness on file-share-02"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Find the confirmed input-handling weakness on the public portal.",
+      "taskInstructions": "Run <b>acunetix scan citizen-portal</b>. In the Vulnerabilities table, compare the vulnerability name, confidence, and affected item.",
+      "taskQuestion": "Which application-level issue was confirmed?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The public search endpoint reflects input without sufficient output encoding.",
+      "answers": [
+        "Confirmed Cross-Site Scripting (Reflected) on /services/search",
+        "Possible SQL injection on /account/login",
+        "Confirmed missing operating-system patches on portal-app-01",
+        "Possible SMB signing weakness on file-share-02"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Identify the confirmed weakness in the resident-facing search function without extending the claim beyond the report.",
+      "taskInstructions": "Run <b>acunetix scan citizen-portal</b>. In the Vulnerabilities table, compare the vulnerability name, confidence, and affected item.",
+      "taskQuestion": "Which application-level issue was confirmed?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Reflected XSS is confirmed on the public search endpoint.",
+      "answers": [
+        "Confirmed Cross-Site Scripting (Reflected) on /services/search",
+        "Possible SQL injection on /account/login",
+        "Confirmed missing operating-system patches on portal-app-01",
+        "Possible SMB signing weakness on file-share-02"
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q15_t01",
+  "parentQuestID": "ismg6860_u04_q15",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

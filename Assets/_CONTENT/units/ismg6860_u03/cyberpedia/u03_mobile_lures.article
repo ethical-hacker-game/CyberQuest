@@ -1,0 +1,12 @@
+{
+  "articleID": "u03_mobile_lures",
+  "videoURL": null,
+  "title": "Mobile Delivery Lures",
+  "content": "Mobile delivery lures use phone features that people often treat as routine: QR codes, nearby sharing, configuration profiles, and calendar invitations. These mechanisms are not malicious by themselves. The risk comes from an untrusted sender using them to hide a destination, change device settings, or repeat a prompt until the recipient acts.\n\n<b>QR codes hide the destination</b>\n\nQR phishing, sometimes called quishing, places a web address behind a pattern that cannot be judged at a glance. Stickers can also be placed over legitimate codes in public locations. Preview the decoded address before opening it, check the full domain, and confirm that the requested action belongs to the expected process. A QR code near an official desk or sign is not automatically official.\n\n<b>Nearby shares can deliver active settings</b>\n\nAn unsolicited nearby file may appear trustworthy because the sender seems physically close. Verify both the sender and the file type before accepting. Mobile configuration profiles are especially sensitive: they can change network, certificate, account, VPN, or device-management settings. A profile disguised as a map or ordinary document should not be installed. Decline the transfer and record the displayed sender and file name.\n\n<b>Calendar invitations can create persistent pressure</b>\n\nOpen calendar formats allow invitations to arrive from outside an organization. A malicious invitation can place links and recurring reminders directly into a schedule, making the prompt feel familiar and urgent. Do not follow its link merely to identify the sender. Remove or report it through the calendar provider's safe controls and verify any claimed meeting independently.\n\nFor every mobile delivery lure, avoid scanning, accepting, installing, or entering information until the source and destination are verified through a known route. Preserve the code, sender, file name, invitation details, and time for reporting. If a profile was installed, contact the appropriate support team rather than changing settings at random.",
+  "links": [
+    "QR sticker",
+    "proximity sharing",
+    "calendar invite",
+    "standard calendar file"
+  ]
+}

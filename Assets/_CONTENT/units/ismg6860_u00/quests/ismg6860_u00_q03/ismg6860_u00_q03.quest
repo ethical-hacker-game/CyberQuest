@@ -1,0 +1,24 @@
+{
+  "questID": "ismg6860_u00_q03",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_terminal",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u00_q03_t01_dns_answer",
+    "ismg6860_u00_q03_t02_dns_meaning"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Terminal Proof",
+      "questDescription": "Ed introduces the terminal as a source of evidence. {player} runs a focused DNS lookup and learns to separate an observation from a conclusion.",
+      "questCompleteText": "Terminal Proof complete. {player} used command output as evidence without turning one technical fact into an overclaim.",
+      "questCharacterID": "u00_ed",
+      "appScenarioID": ""
+    }
+  ]
+}

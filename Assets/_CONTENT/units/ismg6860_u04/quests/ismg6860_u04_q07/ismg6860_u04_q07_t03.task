@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The route, response, and page identity are enough to verify exposure. Do not submit the setup form.",
+      "taskInstructions": "Use <link=\"u04_setup_validation\"><u>read-only setup validation</u></link> and stay within the approved scope.",
+      "taskQuestion": "Which verification method stays within scope?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Record the read-only response and leave state-changing testing for a separately approved window.",
+      "answers": [
+        "Capture the full URL, status code, headers, and page title without submitting any data.",
+        "Submit the setup forms to see whether the wizard actually completes fully.",
+        "Attempt repeated password guessing against the exposed setup login page.",
+        "Delete the entire setup directory from the server to prove that it exists."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The read-only response confirms the route. Submitting the wizard would change the target and exceed the approved test.",
+      "taskInstructions": "Use <link=\"u04_setup_validation\"><u>read-only setup validation</u></link> and stay within the approved scope.",
+      "taskQuestion": "Which verification method stays within scope?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The recorded response confirms exposure without altering the target.",
+      "answers": [
+        "Capture the full URL, status code, headers, and page title without submitting any data.",
+        "Submit the setup forms to see whether the wizard actually completes fully.",
+        "Attempt repeated password guessing against the exposed setup login page.",
+        "Delete the entire setup directory from the server to prove that it exists."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The read-only response supports the finding. Submitting the form would alter the service and weaken the evidence.",
+      "taskInstructions": "Use <link=\"u04_setup_validation\"><u>read-only setup validation</u></link> and stay within the approved scope.",
+      "taskQuestion": "Which verification method stays within scope?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The evidence remains defensible because the verification did not change the portal.",
+      "answers": [
+        "Capture the full URL, status code, headers, and page title without submitting any data.",
+        "Submit the setup forms to see whether the wizard actually completes fully.",
+        "Attempt repeated password guessing against the exposed setup login page.",
+        "Delete the entire setup directory from the server to prove that it exists."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q07_t03",
+  "parentQuestID": "ismg6860_u04_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

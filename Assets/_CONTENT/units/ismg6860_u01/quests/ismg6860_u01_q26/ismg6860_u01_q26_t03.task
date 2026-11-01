@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "A published article with final copy and no editorial notes.",
+        "A staff-only page hidden behind a login at capture time.",
+        "An internal preview marked as an unpublished investigation draft.",
+        "A public homepage with current scores and published headlines."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Kent:</b> One capture is dated May 20, 2023. Inspect its path and page text to distinguish a published story from an internal draft.",
+      "taskInstructions": "In the Wayback calendar, select <b>2023</b> and <b>May 20</b>, then inspect <b>/articles/preview-investigation</b>.",
+      "taskQuestion": "What does this archived page indicate?",
+      "taskCompleteText": "<b>Mara Kent:</b> The capture is marked as an internal investigation draft, with editorial notes and unresolved questions. This proves the archived copy contained draft material, not that the rival read it."
+    }
+  ],
+  "taskID": "ismg6860_u01_q26_t03",
+  "parentQuestID": "ismg6860_u01_q26",
+  "articleID": "u01_web_archives",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

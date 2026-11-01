@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "q=www.goalpost.net",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Kent:</b> Load the archive calendar for GoalPost so we can inspect captures by date and page path.",
+      "taskInstructions": "Open Cyber Search, search for <b>web archive</b>, and open <b>Internet Archive: Wayback Machine</b>. Enter <b>www.goalpost.net</b> and submit the search.",
+      "taskQuestion": "Load the archive calendar for www.goalpost.net.",
+      "taskCompleteText": "<b>Mara Kent:</b> The archive calendar is loaded. Inspect individual dates and paths before drawing conclusions; a capture date does not establish when a page was first exposed."
+    }
+  ],
+  "taskID": "ismg6860_u01_q26_t02",
+  "parentQuestID": "ismg6860_u01_q26",
+  "articleID": "u01_web_archives",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

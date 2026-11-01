@@ -1,0 +1,35 @@
+{
+  "decisions": [
+    {
+      "decisionText": "Send the URLs and preserved evidence to Taylor and NexaCore security for a documented internal investigation.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Keep a copy of the exposed records and try to sell them for personal profit.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Preserve the evidence and report the suspected financial irregularities to the appropriate authorities.",
+      "personaIndex": 2,
+      "personaValueChange": 10
+    }
+  ],
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Samira:</b> The two public screenshots expose client and payment information, and the second contains routing and approval anomalies. They justify further investigation, but they do not prove a crime or identify who published the files. We need to decide who receives the evidence and accept the risks of that choice.",
+      "taskInstructions": "Choose how to handle the evidence. Consider confidentiality, evidence preservation, independent verification, and potential harm to the affected clients.",
+      "taskQuestion": "How will you handle the exposed NexaCore records?",
+      "taskCompleteText": "<b>Samira:</b> Your decision has been recorded. Whatever path you chose, the screenshots remain unverified evidence of anomalies rather than proof of a crime."
+    }
+  ],
+  "taskID": "ismg6860_u01_d01_decision",
+  "parentQuestID": "ismg6860_u01_d01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision"
+}

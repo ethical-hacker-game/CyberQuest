@@ -1,0 +1,9 @@
+{
+  "skillID": "shareauditor",
+  "skillName": "Share Auditor",
+  "skillDescription": "Enumerates SMB shares, active sessions, and local accounts through a null session. Reveals what a host will disclose to a caller who presents no credential at all, including hidden shares whose names end in a dollar sign.",
+  "price": 1500,
+  "order": 10,
+  "requireTask": true,
+  "lockInDemo": false
+}

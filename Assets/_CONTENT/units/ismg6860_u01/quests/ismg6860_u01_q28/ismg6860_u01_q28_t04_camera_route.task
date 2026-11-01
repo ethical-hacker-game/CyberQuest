@@ -1,0 +1,34 @@
+{
+  "variants": [
+    {
+      "minigameType": "CamBlindRoute",
+      "minigameHeaderText": "Shoulder Watch Route",
+      "durationOverride": 0,
+      "difficulty": "Easy",
+      "cameraDeckSettings": {
+        "facilityId": "restricted_research_lab",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Public Service Office",
+        "targetLabel": "EXPOSED SCREEN",
+        "decoyLabel": "SAFE WAITING POINT",
+        "route": {
+          "sweepSpeedMultiplier": 0.85,
+          "playerSpeedMultiplier": 1.0
+        }
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Milo Navarro:</b> The approved Public Service Office assessment includes a route to a workstation whose screen faces public seating. Use the marked route to test whether an observer could reach that exposure point without being seen; do not interact with the device or its data.",
+      "taskInstructions": "For this authorized <b>shoulder surfing</b> assessment, move while a lens sweeps away and stop when it turns toward you. Reach <b>EXPOSED SCREEN</b> unseen; <b>SAFE WAITING POINT</b> is cover along the route, not the destination.",
+      "taskQuestion": "Complete the authorized route assessment without triggering detection.",
+      "taskCompleteText": "<b>Milo Navarro:</b> You reached the marked exposure point unseen. That demonstrates a surveillance gap in this assessment, not that anyone accessed the workstation or its data."
+    }
+  ],
+  "taskID": "ismg6860_u01_q28_t04_camera_route",
+  "parentQuestID": "ismg6860_u01_q28",
+  "articleID": "u01_physical_information_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

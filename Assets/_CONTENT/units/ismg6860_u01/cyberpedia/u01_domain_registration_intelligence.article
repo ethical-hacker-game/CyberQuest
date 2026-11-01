@@ -1,0 +1,11 @@
+{
+  "articleID": "u01_domain_registration_intelligence",
+  "videoURL": null,
+  "title": "Domain Registration Intelligence",
+  "content": "Domain registration intelligence uses registration and allocation records to understand a domain, IP range, or autonomous system. WHOIS is the traditional lookup protocol; RDAP is its structured, web-based successor for current registration data. Available fields vary because registries, registrars, privacy services, and applicable policies may redact or replace contact details.\n\nUseful observations include the registrar, creation and update dates, status codes, authoritative name servers, DNSSEC state, network allocation, and the organization that operates an address range. These fields help build a timeline and identify infrastructure relationships. A registrant name or hosting organization is not automatically the operator of a website, sender of a message, or attacker. Privacy proxies, resellers, cloud providers, compromised accounts, and stale or inaccurate data are common alternative explanations. Geolocation is also an estimate and should not be treated as physical attribution.\n\n<b>Investigative practice</b>\nSave the full response, lookup time, query target, and service used. Compare suspicious domains with the known official domain: spelling, creation date, registrar, name servers, certificate data, mail configuration, and observed use. Corroborate conclusions with independent evidence such as message headers, DNS history, or server logs. Recent registration and masked ownership can raise risk, but neither is malicious by itself.\n\nHandle personal registration data carefully. Collect only what the engagement requires, do not contact or accuse a named person based on a lookup alone, and share findings through the authorized reporting channel. If data appears improperly exposed, preserve minimal evidence and coordinate remediation with the owner, registrar, legal, or privacy team.",
+  "links": [
+    "Whois",
+    "domain lookup",
+    "registrant"
+  ]
+}

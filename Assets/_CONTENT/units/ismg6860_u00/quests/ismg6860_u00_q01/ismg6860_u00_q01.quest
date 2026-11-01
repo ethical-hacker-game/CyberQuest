@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u00_q01",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_lab",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u00_q01_t00_dialogue",
+    "ismg6860_u00_q01_t01_auth_mail",
+    "ismg6860_u00_q01_t02_scope_choice"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Welcome To The Lab",
+      "questDescription": "Ed briefs {player} on a warning at Training Northstar and asks them to establish the authorized scope before collecting evidence.",
+      "questCompleteText": "Welcome To The Lab complete. {player} has the scope letter open and understands why written authorization comes before evidence collection.",
+      "questCharacterID": "u00_ed",
+      "appScenarioID": ""
+    }
+  ]
+}

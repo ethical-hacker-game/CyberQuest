@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u01_q19",
+  "cityIndex": 6938,
+  "questIconID": "quesst_icon_sherlock",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q19_t01",
+    "ismg6860_u01_q19_t02"
+  ],
+  "requiredQuestID": "ismg6860_u01_q18",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Sherlock - Digital Footprint Audit",
+      "questDescription": "Kwame asks you to compare the supplied public-footprint results for five TechNova staff members. Use the in-game Sherlock command to find which result includes personal material, then identify the specific detail that could make a targeted message more convincing. Treat the results as leads that need verification.",
+      "questCompleteText": "<b>Kwame:</b> Brian Simpson's result contains family photos and personal blog references alongside a professional profile. You identified the added social-engineering risk without assuming the records prove account compromise or that anyone has used the information.",
+      "questCharacterID": "u01_kwame_mensah",
+      "appScenarioID": ""
+    }
+  ]
+}

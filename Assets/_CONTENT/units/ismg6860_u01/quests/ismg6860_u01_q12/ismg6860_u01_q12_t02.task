@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "r4nd0n3xq.onion",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Shade:</b> The case scope includes one supplied forum address. Open only that address and review the landing page structure; do not follow disabled listings or search for additional services.",
+      "taskInstructions": "In AnonSurf, enter <b>r4nd0n3xq.onion</b>. On the landing page, review the pinned threads and categories without signing in or posting.",
+      "taskQuestion": "Open the authorized forum address.",
+      "taskCompleteText": "<b>Shade:</b> You reached the supplied landing page. It exposes a pinned Vault-Archive thread and several forum categories; nothing here requires participant contact."
+    }
+  ],
+  "taskID": "ismg6860_u01_q12_t02",
+  "parentQuestID": "ismg6860_u01_q12",
+  "articleID": "u01_safe_investigation_environments",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

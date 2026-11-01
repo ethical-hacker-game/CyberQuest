@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_file_permissions",
+  "videoURL": null,
+  "title": "File Permissions: Reading the Mode",
+  "content": "File permissions specify what the <b>owner</b>, <b>group</b>, and <b>other accounts</b> may do. Read the nine characters in three groups: <b>rw- | r-- | ---</b> lets the owner read and write, the group read, and other accounts do neither. <b>r</b> means read, <b>w</b> write, <b>x</b> execute, and <b>-</b> no permission. Public notices may need broad read access; private configuration and logs should be limited to accounts that need them. Read access can expose settings even without write access. A file mode describes local account permissions: it does not by itself show that a file is available through a website, contains a password, or has been accessed by an attacker.",
+  "links": [
+    "reading the permission mode"
+  ]
+}

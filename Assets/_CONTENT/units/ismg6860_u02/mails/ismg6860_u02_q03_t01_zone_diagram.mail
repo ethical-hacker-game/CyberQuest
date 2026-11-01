@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u02_q03_t01_zone_diagram",
+  "parentTaskID": "ismg6860_u02_q03_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Dr. Mira Sen <mira.sen@asterlinktransit.com>",
+      "subject": "Asterlink zone sketch",
+      "shortSummary": "DMZ, ticketing VLAN, and vendor maintenance must remain separated.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nThe launch network is supposed to be segmented:\n\n- DMZ: public portal and status pages\n- Ticketing VLAN: validation service and fare sync\n- Vendor maintenance: diagnostics and signage support\n\nThe firewall should let the DMZ expose public services without letting vendor maintenance drift into ticketing. Use the Zenmap topology view, then practice the same idea in the network-device exercise.\n\nMira",
+      "attachements": []
+    }
+  ]
+}

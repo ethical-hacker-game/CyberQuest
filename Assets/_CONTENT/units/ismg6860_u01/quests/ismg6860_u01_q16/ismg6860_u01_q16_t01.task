@@ -1,0 +1,23 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "summit-trust.secure-mail.com"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Evelyn Marston:</b> The forwarded alert urges action within 24 hours. Its displayed sender address is <b>notifications@summit-trust.secure-mail.com</b>. Record the domain the lookup parses before drawing any conclusion about the sender.",
+      "taskInstructions": "Open the browser, search <b>netlookup</b> in Cyber Search, and open <b>NetLookup: Domain &amp; Host Lookup</b>. Enter <b>notifications@summit-trust.secure-mail.com</b>, then type the exact <b>Parsed domain</b> shown in the result.",
+      "taskQuestion": "What parsed domain does NetLookup show for the alert address?",
+      "taskCompleteText": "<b>Evelyn Marston:</b> The parsed domain is <b>summit-trust.secure-mail.com</b>. NetLookup lists SecureMail Hosting Ltd as the registrant; that record does not establish who wrote the message."
+    }
+  ],
+  "taskID": "ismg6860_u01_q16_t01",
+  "parentQuestID": "ismg6860_u01_q16",
+  "articleID": "u01_domain_registration_intelligence",
+  "mailsOnStart": [
+    "ismg6860_u01_q16_t01_start_evelyn-forwarded"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

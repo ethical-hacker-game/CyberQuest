@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greenbone: Northbridge Internal Scan</title>
+  <style>
+    :root{--ink:#22312a;--muted:#6a7a72;--line:#dde6df;--bg:#eef3ee;--green:#5a9e2f;--rail:#1d2b24;
+      --crit:#8b1a1a;--high:#cf3a2e;--med:#e08a00;--low:#2f72c0;--log:#8a958f}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);font-size:14px}
+    .topbar{display:flex;align-items:center;gap:18px;background:linear-gradient(90deg,#1d2b24,#2c4630);color:#fff;padding:0 22px;height:52px}
+    .logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:16px}
+    .logo .mark{width:24px;height:24px;border-radius:6px;background:radial-gradient(circle at 30% 30%,#9bd45a,#5a9e2f);display:flex;align-items:center;justify-content:center;color:#16320a;font-weight:900}
+    .logo small{font-weight:400;color:#bcd2bf;font-size:12px}
+    .topbar .spacer{flex:1}
+    .topbar .user{font-size:13px;color:#bcd2bf}
+    .menu{display:flex;gap:2px;background:#27412c;padding:0 16px}
+    .menu a{color:#d6e6d4;text-decoration:none;padding:11px 15px;font-weight:600;font-size:13.5px;border-bottom:3px solid transparent}
+    .menu a.active{color:#fff;border-bottom-color:var(--green)}
+    .main{max-width:1080px;margin:0 auto;padding:22px 26px 60px}
+    .crumbs{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .crumbs a{color:var(--green);text-decoration:none}
+    h1{margin:2px 0 4px;font-size:22px;font-weight:600}
+    .meta{display:flex;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-bottom:14px}
+    .meta b{color:#33473a;font-weight:600}
+    .banner{background:#fbf3df;border:1px solid #ecd9a6;border-left:4px solid var(--med);border-radius:5px;padding:11px 14px;font-size:13px;margin-bottom:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:20px}
+    .card>h3{margin:0;padding:12px 16px;border-bottom:1px solid var(--line);font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:#56655b;background:#f4f8f3}
+    table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:middle}
+    th{background:#f4f8f3;color:#56655b;font-weight:600;font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+    tr:last-child td{border-bottom:none}
+    .vuln{font-weight:700;color:#2c4f1c}
+    .oid{font-family:Consolas,monospace;font-size:11.5px;color:var(--muted)}
+    .sevcell{display:flex;align-items:center;gap:9px;white-space:nowrap}
+    .bar{width:86px;height:9px;border-radius:3px;background:#e7ede7;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+    .bar span{display:block;height:100%}
+    .cls{font-weight:700;font-size:11px;color:#fff;border-radius:3px;padding:2px 7px}
+    .c-crit{background:var(--crit)}.c-high{background:var(--high)}.c-med{background:var(--med)}.c-low{background:var(--low)}.c-log{background:var(--log)}
+    code{background:#eef3ee;border:1px solid #d6e2d6;border-radius:4px;padding:1px 5px;font-family:Consolas,monospace}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo"><span class="mark">G</span>Greenbone Security Assistant <small>OpenVAS</small></div>
+    <div class="spacer"></div>
+    <div class="user">analyst@assessment</div>
+  </div>
+  <div class="menu">
+    <a href="../../192.168.20.10;9392/">Dashboards</a>
+    <a href="../../192.168.20.10;9392/">Scans &#9662;</a>
+    <a class="active" href="../../192.168.20.10;9392/">Reports</a>
+    <a href="../../192.168.20.10;9392/">Assets</a>
+    <a href="../../192.168.20.10;9392/">Configuration</a>
+  </div>
+
+  <main class="main">
+    <div class="crumbs"><a href="../../192.168.20.10;9392/">Reports</a> &rsaquo; Northbridge Internal Scan</div>
+    <h1>Northbridge Internal Scan</h1>
+    <div class="meta">
+      <span><b>Segment:</b> internal (admin + app + storage)</span>
+      <span><b>Hosts:</b> portal-app-01, file-share-02</span>
+      <span><b>Results:</b> 4</span>
+      <span><b>Scan Config:</b> Full and fast</span>
+    </div>
+    <div class="banner">These results are visible only from inside the network. They <b>do not appear</b> in the external scan of the same systems.</div>
+
+    <div class="card">
+      <h3>Results</h3>
+      <table>
+        <thead><tr><th style="width:38%">Vulnerability</th><th style="width:170px">Severity</th><th style="width:70px">QoD</th><th>Host</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><div class="vuln">Apache Struts 2.x &mdash; Remote Code Execution Advisories</div><div class="oid">NB-VA-STRUTS-22 &middot; 1.3.6.1.4.1.25623.1.0.140112</div></td>
+            <td><div class="sevcell"><span class="cls c-crit">Critical</span><div class="bar"><span style="width:98%;background:var(--crit)"></span></div>9.8</div></td>
+            <td>97%</td>
+            <td>portal-app-01</td>
+          </tr>
+          <tr>
+            <td><div class="vuln">Portal App Server Can Reach Internal SMB Share</div><div class="oid">NB-VA-PATH-19 &middot; 1.3.6.1.4.1.25623.1.0.103998</div></td>
+            <td><div class="sevcell"><span class="cls c-high">High</span><div class="bar"><span style="width:72%;background:var(--high)"></span></div>7.2</div></td>
+            <td>90%</td>
+            <td>portal-app-01</td>
+          </tr>
+          <tr>
+            <td><div class="vuln">SMB Signing Disabled</div><div class="oid">NB-VA-SMB-11 &middot; 1.3.6.1.4.1.25623.1.0.802067</div></td>
+            <td><div class="sevcell"><span class="cls c-med">Medium</span><div class="bar"><span style="width:55%;background:var(--med)"></span></div>5.3</div></td>
+            <td>80%</td>
+            <td>file-share-02</td>
+          </tr>
+          <tr>
+            <td><div class="vuln">RDP Exposed on Admin Subnet</div><div class="oid">NB-VA-RDP-14 &middot; 1.3.6.1.4.1.25623.1.0.100062</div></td>
+            <td><div class="sevcell"><span class="cls c-med">Medium</span><div class="bar"><span style="width:55%;background:var(--med)"></span></div>5.3</div></td>
+            <td>95%</td>
+            <td>admin-subnet TCP/3389</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="../../cq-bridge.js"></script>
+</body>
+</html>

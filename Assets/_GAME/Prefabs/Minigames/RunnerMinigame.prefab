@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9100000000000001001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9100000000000001002}
+  - component: {fileID: 9100000000000001003}
+  - component: {fileID: 9100000000000001004}
+  m_Layer: 0
+  m_Name: RunnerMinigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9100000000000001002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100000000000001001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9100000000000001003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100000000000001001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac4e7a001b42c8a90f31d5b6e7c8001, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name: Packet Rush
+  minigameType: 91
+  instructionsLabel: Steer the payload - route around hostile infrastructure
+  resultOnTimeout: 1
+  standardDuration: 60
+  minigameUIPrefab: {fileID: 9200000000000001003, guid: 9ac4e7a011b42c8a90f31d5b6e7c8011, type: 3}
+  descriptionImage: {fileID: 0}
+  descriptionHeader: Packet Rush - Route the Payload
+  description: 'You ARE the packet: an emergency security patch rolling down the
+    backbone toward a quarantined server. Hostile infrastructure litters the three
+    fibers - red FIREWALL barriers, purple MALWARE mines and orange SNIFFER blades.
+    Use the big side buttons (or A / D and the arrow keys) to swerve the packet cube
+    between lanes and route around every hazard - a clear path always exists. Grab
+    cyan DATA crystals for points and green PATCH pickups to restore integrity.
+    Every hit costs 1 packet integrity; at zero the packet is dropped. Survive until
+    the delivery window closes and the payload arrives. Every lane switch is a
+    re-routing decision - the same thing dynamic routing does for real networks
+    under attack.'
+  packetIntegrity: 3
+  startSpeed: 0.35
+  maxSpeed: 0.8
+  speedRampSeconds: 45
+  spawnInterval: 1.5
+  minSpawnInterval: 0.85
+  hazardChance: 0.6
+  dataShardChance: 0.35
+  patchChance: 0.12
+  pointsPerDodge: 15
+  dataShardPoints: 120
+  patchPoints: 60
+  hitPenalty: 90
+--- !u!114 &9100000000000001004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100000000000001001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac4e7a007b42c8a90f31d5b6e7c8007, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  laneSpacing: 2.4
+  runLength: 55
+  killZ: -9
+  cubeY: 0.55
+  laneSwitchSpeed: 8
+  bankPerVelocity: 4.5
+  maxBankAngle: 34
+  bankSmoothing: 14
+  rollPerSpeed: 12
+  rollMinDegrees: 120
+  rollMaxDegrees: 460
+  zBand: 1.15
+  xBandFactor: 0.45
+  playerColor: {r: 0.13, g: 0.96, b: 0.88, a: 1}
+  firewallColor: {r: 1, g: 0.24, b: 0.35, a: 1}
+  malwareColor: {r: 0.77, g: 0.22, b: 1, a: 1}
+  snifferColor: {r: 1, g: 0.62, b: 0.17, a: 1}
+  dataColor: {r: 0.21, g: 0.88, b: 1, a: 1}
+  patchColor: {r: 0.24, g: 1, b: 0.53, a: 1}
+  warnColor: {r: 1, g: 0.35, b: 0.6, a: 1}
+  groundColor: {r: 0.03, g: 0.055, b: 0.1, a: 1}
+  laneLineColor: {r: 0.08, g: 0.35, b: 0.45, a: 1}
+  backgroundColor: {r: 0.024, g: 0.043, b: 0.078, a: 1}
+  emissionIntensity: 1.5
+  logSpawns: 0

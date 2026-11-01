@@ -1,0 +1,27 @@
+{
+    "questID":  "ismg6860_u04_q05",
+    "cityIndex":  7185,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q05_t01",
+                    "ismg6860_u04_q05_t02_data_rover",
+                    "ismg6860_u04_q05_t03",
+                    "ismg6860_u04_q05_t04",
+                    "ismg6860_u04_q05_t05_bridge"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  true,
+    "variants":  [
+                     {
+                         "persona":  "Universal Persona Content",
+                         "questName":  "Misconfiguration Exploits: Directory Listings",
+                         "questDescription":  "Confirm that a browsable directory exposes sensitive administrative material.",
+                         "questCompleteText":  "Quest complete. The evidence has been recorded for the Northbridge vulnerability assessment.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

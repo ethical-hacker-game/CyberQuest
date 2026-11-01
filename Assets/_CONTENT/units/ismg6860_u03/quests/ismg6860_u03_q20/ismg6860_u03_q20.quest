@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u03_q20",
+  "cityIndex": 5150,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q20_t00_voice",
+    "ismg6860_u03_q20_t01",
+    "ismg6860_u03_q20_t02",
+    "ismg6860_u03_q20_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Persona In The Inbox",
+      "questDescription": "Review a message timeline that moves from ordinary volunteer conversation to a request involving a staff badge and early entrance.",
+      "questCompleteText": "<b>Asha Moreno:</b> The alias, timeline, and shift from rapport to an access request are documented.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Persona In The Inbox",
+      "questDescription": "Analyze how repeated low-pressure messages establish trust before introducing a request for workplace access information.",
+      "questCompleteText": "<b>Felix Rane:</b> The timeline shows where ordinary rapport changes into a request with operational value.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Persona In The Inbox",
+      "questDescription": "Document a relationship-based access request without blaming the person who trusted the conversation.",
+      "questCompleteText": "<b>Imani Vale:</b> The finding identifies the manipulation while keeping responsibility on the requester, not the target.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

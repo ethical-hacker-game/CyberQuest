@@ -1,0 +1,33 @@
+{
+  "questID": "ismg6860_u00_q08",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_lab",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u00_q08_t00_close",
+    "ismg6860_u00_q08_t02_sequence_order",
+    "ismg6860_u00_q08_t01_final_mail"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "First Signal Closed",
+      "questDescription": "Michele closes the review by showing how a small, careful evidence chain becomes work another team can actually complete.",
+      "questCompleteText": "First Signal closed. The evidence and recommendation are ready for the next team, with a clear request for action.",
+      "questCharacterID": "u00_michele",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "First Signal Closed",
+      "questDescription": "Ana closes the review by showing how a small, careful evidence chain becomes a risk message that can help people without creating new harm.",
+      "questCompleteText": "First Signal closed. The evidence and recommendation are ready for the next team, with a clear request for action.",
+      "questCharacterID": "u00_ana",
+      "appScenarioID": ""
+    }
+  ]
+}

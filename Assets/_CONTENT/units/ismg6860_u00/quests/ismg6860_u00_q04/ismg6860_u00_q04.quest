@@ -1,0 +1,25 @@
+{
+  "questID": "ismg6860_u00_q04",
+  "cityIndex": 377,
+  "questIconID": "u00_quest_app",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u00_q04_t01_app_run",
+    "ismg6860_u00_q04_t02_app_host",
+    "ismg6860_u00_q04_t03_handoff_setup"
+  ],
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Visual Scan",
+      "questDescription": "Ed asks {player} to check the authorized target in Zenmap and connect its address to the DNS evidence.",
+      "questCompleteText": "Visual Scan complete. {player} has recorded the target address and is ready to decide how to use the evidence.",
+      "questCharacterID": "u00_ed",
+      "appScenarioID": "zenmap_quest_10_1"
+    }
+  ]
+}

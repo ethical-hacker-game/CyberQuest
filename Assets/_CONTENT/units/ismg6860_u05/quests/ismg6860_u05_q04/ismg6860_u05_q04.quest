@@ -1,0 +1,43 @@
+{
+  "questID": "ismg6860_u05_q04",
+  "cityIndex": 7168,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q04_t00_unlock_protocolprober",
+    "ismg6860_u05_q04_t01",
+    "ismg6860_u05_q04_t02_app",
+    "ismg6860_u05_q04_t03_sonar",
+    "ismg6860_u05_q04_t04"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "SNMP Enumeration",
+      "questDescription": "Dana Osei needs to know how far the leftover access reaches. Enumerate the managed switch stack with its documented read-only community string and preserve the results for remediation.",
+      "questCompleteText": "<b>Dana Osei:</b> The switch stack exposes its system and interface data through SNMPv2c, and the capture proves the shared community string travels in cleartext.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": "mibbrowser_halloway_walk"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "SNMP Enumeration",
+      "questDescription": "Reyes Calloway sees more value in infrastructure than in one file share. Enumerate the switch stack and determine what its SNMP configuration exposes.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The switch stack exposes its topology through SNMPv2c, and anyone who captures an authorized query can read the shared community string.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": "mibbrowser_halloway_walk"
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "SNMP Enumeration",
+      "questDescription": "Priya Nandan wants precise evidence about the switch stack carrying plant-floor traffic. Enumerate its exposed SNMP data and document the protocol weakness.",
+      "questCompleteText": "<b>Priya Nandan:</b> The stack exposes plant-network topology through SNMPv2c, and the cleartext community string is now documented with packet evidence.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": "mibbrowser_halloway_walk"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> A standard calendar format is not suspicious by itself. Identify the combination of behavior and destination that supports treating this invite as a lure.",
+      "taskInstructions": "Use the organizer, reminder loop, and embedded URL in the invite metadata.",
+      "taskQuestion": "Which finding most strongly supports treating the invite as a lure?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The invite repeatedly directs Riley to the same external badge-login URL every fifteen minutes.",
+      "answers": [
+        "It repeats every 15 minutes to the same external badge-login URL.",
+        "The calendar title sounds like badge support.",
+        "The invite includes a link in its description.",
+        "The entry reappears during the same workday."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The support title is costume. The useful mechanism is the calendar repeatedly driving Riley toward infrastructure already tied to the campaign.",
+      "taskInstructions": "Use the organizer, reminder loop, and embedded URL in the invite metadata.",
+      "taskQuestion": "Which finding most strongly supports treating the invite as a lure?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The calendar repeatedly delivers the same external badge-login URL without another message.",
+      "answers": [
+        "The calendar title sounds like badge support.",
+        "It repeats every 15 minutes to the same external badge-login URL.",
+        "The invite includes a link in its description.",
+        "The entry reappears during the same workday."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The warning should distinguish a malicious use of calendar reminders from an ordinary scheduling mistake. Choose the evidence that combines repeated pressure with the known lure.",
+      "taskInstructions": "Use the organizer, reminder loop, and embedded URL in the invite metadata.",
+      "taskQuestion": "Which finding most strongly supports treating the invite as a lure?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Repeated reminders route Riley to the same external badge-login URL every fifteen minutes.",
+      "answers": [
+        "The calendar title sounds like badge support.",
+        "The invite includes a link in its description.",
+        "It repeats every 15 minutes to the same external badge-login URL.",
+        "The entry reappears during the same workday."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u03_q09_t03",
+  "parentQuestID": "ismg6860_u03_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

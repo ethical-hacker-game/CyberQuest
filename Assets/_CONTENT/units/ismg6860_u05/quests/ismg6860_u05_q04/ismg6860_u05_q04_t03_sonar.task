@@ -1,0 +1,74 @@
+{
+  "variants": [
+    {
+      "minigameType": "SonarSweep",
+      "minigameHeaderText": "MIB Branch Triage",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "sonarSettings": {
+        "scanIntegrity": 3,
+        "cacheCount": 6,
+        "falseEchoCount": 5,
+        "sweepSpeedMultiplier": 1.0,
+        "afterglowSeconds": 1.9,
+        "blipDriftMultiplier": 0.9,
+        "cacheLabel": "REACHABLE INTERFACE",
+        "echoLabel": "COUNTER NOISE"
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> A walk like that returns a great deal which means nothing and a very little which means everything. I have sat in change-control meetings where a consultant raised forty counters and one real exposure, and the room had stopped listening long before the real one came up.\n\nWhat I need out of this pass is the short list I can defend line by line.",
+      "taskInstructions": "A REACHABLE INTERFACE pulses steadily and keeps its shape; COUNTER NOISE jitters in brightness and wobbles in size. Every contact drifts around the station, so movement proves nothing, and a third wrong mark burns out the scanner.",
+      "taskQuestion": "Separate the meaningful MIB branches from the noise.",
+      "taskCompleteText": "<b>Dana Osei:</b> The defensible finding is Gi1/0/24: an up/up 802.1Q trunk aliased bw-maint with no state change during the switch's 731-day uptime."
+    },
+    {
+      "minigameType": "SonarSweep",
+      "minigameHeaderText": "MIB Branch Triage",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "sonarSettings": {
+        "scanIntegrity": 3,
+        "cacheCount": 6,
+        "falseEchoCount": 5,
+        "sweepSpeedMultiplier": 1.0,
+        "afterglowSeconds": 1.9,
+        "blipDriftMultiplier": 0.9,
+        "cacheLabel": "REACHABLE INTERFACE",
+        "echoLabel": "COUNTER NOISE"
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Most of a management information base is padding. Packet counters, error tallies, uptime trivia that any device on earth will hand out to anybody who asks.\n\nThe value sits in the handful of entries where the device admits something about its own topology. Everything else is weight, and weight is what makes a report unsellable.",
+      "taskInstructions": "A REACHABLE INTERFACE pulses steadily and keeps its shape; COUNTER NOISE jitters in brightness and wobbles in size. Every contact drifts around the station, so movement proves nothing, and a third wrong mark burns out the scanner.",
+      "taskQuestion": "Separate the meaningful MIB branches from the noise.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Gi1/0/24 is the valuable entry: an up/up 802.1Q trunk aliased bw-maint with no state change during the switch's 731-day uptime."
+    },
+    {
+      "minigameType": "SonarSweep",
+      "minigameHeaderText": "MIB Branch Triage",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "sonarSettings": {
+        "scanIntegrity": 3,
+        "cacheCount": 6,
+        "falseEchoCount": 5,
+        "sweepSpeedMultiplier": 1.0,
+        "afterglowSeconds": 1.9,
+        "blipDriftMultiplier": 0.9,
+        "cacheLabel": "REACHABLE INTERFACE",
+        "echoLabel": "COUNTER NOISE"
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> If this ends up in front of an inspector, precision is the entire argument. Forty vague observations get filed as a fishing expedition and the plant gets a letter asking it to self-certify.\n\nA handful of entries that name exactly who can reach what, though, and the record stops being deniable.",
+      "taskInstructions": "A REACHABLE INTERFACE pulses steadily and keeps its shape; COUNTER NOISE jitters in brightness and wobbles in size. Every contact drifts around the station, so movement proves nothing, and a third wrong mark burns out the scanner.",
+      "taskQuestion": "Separate the meaningful MIB branches from the noise.",
+      "taskCompleteText": "<b>Priya Nandan:</b> Gi1/0/24 is the finding that survives review: an up/up 802.1Q trunk named bw-maint with no state change during the 731-day device uptime."
+    }
+  ],
+  "taskID": "ismg6860_u05_q04_t03_sonar",
+  "parentQuestID": "ismg6860_u05_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

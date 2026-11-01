@@ -1,0 +1,23 @@
+{
+    "questID":  "ismg6860_u04_d02",
+    "cityIndex":  7385,
+    "questIconID":  "",
+    "decisionQuest":  true,
+    "taskIDs":  [
+                    "ismg6860_u04_d02_decision"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  true,
+    "variants":  [
+                     {
+                         "persona":  "Universal Persona Content",
+                         "questName":  "Scope Pressure Decision",
+                         "questDescription":  "The reflected XSS finding is verified, but its effect on sessions, data, and connected systems remains untested under the current authorization.",
+                         "questCompleteText":  "The untested impact will be handled according to your decision.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

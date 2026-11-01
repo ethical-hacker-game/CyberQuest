@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the publisher declared on the listing before assessing whether it matches Harborview's approved source.",
+      "taskInstructions": "Type the name shown under <b>Publisher</b> on the app listing.",
+      "taskQuestion": "What publisher is the fake helper app listed under?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: Blue Lantern Mobile, not Harborview Civic Technology.",
+      "correctAnswers": [
+        "Blue Lantern Mobile"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the publisher declared on the listing. Provenance is more useful than copied colors or branding.",
+      "taskInstructions": "Type the name shown under <b>Publisher</b> on the app listing.",
+      "taskQuestion": "What publisher name appears on the listing?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: Blue Lantern Mobile. That name gives us a provenance lead.",
+      "correctAnswers": [
+        "Blue Lantern Mobile"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A useful warning needs a detail volunteers can compare with their screens. Record the publisher exactly as the listing presents it.",
+      "taskInstructions": "Type the name shown under <b>Publisher</b> on the app listing.",
+      "taskQuestion": "What name is the fake app published under?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: Blue Lantern Mobile. The warning can now name the listing precisely.",
+      "correctAnswers": [
+        "Blue Lantern Mobile"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q05_t02",
+  "parentQuestID": "ismg6860_u03_q05",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

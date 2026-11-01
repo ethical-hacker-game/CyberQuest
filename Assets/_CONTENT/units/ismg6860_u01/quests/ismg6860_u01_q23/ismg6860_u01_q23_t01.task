@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Research people, suppliers, domains, and exposed systems.",
+        "Deploy ransomware against the organization's servers.",
+        "Exploit a suspected vulnerability before verifying it.",
+        "Ask employees to send their account passwords."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Etienne:</b> Arcadia wants to understand how a targeted group might prepare before attempting access. Start with the information an actor could collect from public sources.",
+      "taskInstructions": "Review the OSINT overview and the guidance on <b>public records and registries</b>.",
+      "taskQuestion": "What kind of research can help an actor prepare a targeted operation?",
+      "taskCompleteText": "<b>Etienne:</b> Public research into people, suppliers, domains, and exposed systems can help shape targeting. It does not by itself show that an operation has begun."
+    }
+  ],
+  "taskID": "ismg6860_u01_q23_t01",
+  "parentQuestID": "ismg6860_u01_q23",
+  "articleID": "u01_osint_fundamentals",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "BridgeWorks has a confirmed working tunnel into every enumerated plant service.",
+        "An enabled, non-expiring vendor-labeled account had a 02:41 historian session from an external address; ownership and actions remain unverified.",
+        "The plant was compromised and production drawings were exfiltrated through the historian.",
+        "The review found configuration disclosures only and no evidence of account activity."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Last thing, and then I will let you go. This goes to a director who will read exactly one sentence before deciding what it costs, so no protocol names and no hostnames.\n\nI already know what the findings say. What I do not have is the plain version, the one that would still be true if none of the tools you used this week had ever existed.",
+      "taskInstructions": "Select the executive summary that states the verified activity and preserves what remains unknown.",
+      "taskQuestion": "Which sentence best states the core finding?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The account state and historian session are verified; source ownership, operator identity, actions, and wider access are not."
+    },
+    {
+      "answers": [
+        "BridgeWorks has a confirmed working tunnel into every enumerated plant service.",
+        "An enabled, non-expiring vendor-labeled account had a 02:41 historian session from an external address; ownership and actions remain unverified.",
+        "The plant was compromised and production drawings were exfiltrated through the historian.",
+        "The review found configuration disclosures only and no evidence of account activity."
+      ],
+      "correctAnswer": 1,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Sum it up in a line. If you cannot say it plainly, you do not understand it yet, and everything you collected this week is worth less than you think it is.\n\nI have read reports that ran ninety pages and never once said the thing. Yours does not get to be one of those.",
+      "taskInstructions": "Select the executive summary that states the verified activity and preserves what remains unknown.",
+      "taskQuestion": "Which sentence best states the core finding?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The concise version keeps the strong evidence and discards the invented route."
+    },
+    {
+      "answers": [
+        "BridgeWorks has a confirmed working tunnel into every enumerated plant service.",
+        "An enabled, non-expiring vendor-labeled account had a 02:41 historian session from an external address; ownership and actions remain unverified.",
+        "The plant was compromised and production drawings were exfiltrated through the historian.",
+        "The review found configuration disclosures only and no evidence of account activity."
+      ],
+      "correctAnswer": 1,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> One sentence, no jargon. It has to work for a shift supervisor deciding whether their floor is safe and for the board member who signs the remediation, because they are going to hear the same line.\n\nEverything else in this report can be argued about. That sentence is the part people repeat, so it has to be the true one.",
+      "taskInstructions": "Select the executive summary that states the verified activity and preserves what remains unknown.",
+      "taskQuestion": "Which sentence best states the core finding?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The summary communicates the activity without turning uncertainty into accusation."
+    }
+  ],
+  "taskID": "ismg6860_u05_q16_t03",
+  "parentQuestID": "ismg6860_u05_q16",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

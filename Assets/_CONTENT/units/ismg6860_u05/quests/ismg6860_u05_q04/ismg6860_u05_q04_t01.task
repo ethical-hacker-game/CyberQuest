@@ -1,0 +1,47 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "bridgeworks",
+        "noc@bridgeworksautomation.com",
+        "bridgeworks automation"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> The core stack is 10.30.14.1, and I already know what I would like the answer to be. Version three, with authentication. What I expect is version 2c and a community string somebody chose once and then forgot about. The plant runbook still lists that string as <b>brdgwks-ro</b>; bare walks without <b>-c</b> will just time out.\n\nThe field I care about is the one that says who to call when the device has a problem. Whoever is named there is who this box still thinks it answers to.",
+      "taskInstructions": "Run <b>snmpwalk -c brdgwks-ro 10.30.14.1</b> in the terminal and read the sysContact string in the system group.",
+      "taskQuestion": "Who does the switch stack list as its SNMP contact?",
+      "taskCompleteText": "<b>Dana Osei:</b> BridgeWorks Automation's NOC is still configured as the SNMP contact. That stale ownership record needs remediation."
+    },
+    {
+      "correctAnswers": [
+        "bridgeworks",
+        "noc@bridgeworksautomation.com",
+        "bridgeworks automation"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Start with the stack at 10.30.14.1. Most shops leave the vendor default in place for a decade and never think about it again, and those are the boring ones.\n\nIf Halloway actually changed theirs, that makes this more interesting rather than less, because it means a human being sat down and configured this box on purpose. People like that leave their name on things, and BridgeWorks left the poller string in their own notes as brdgwks-ro.",
+      "taskInstructions": "Run <b>snmpwalk -c brdgwks-ro 10.30.14.1</b> in the terminal and read the sysContact string in the system group.",
+      "taskQuestion": "Who does the switch stack list as its SNMP contact?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> BridgeWorks Automation's NOC is still configured as the contact. The management plane carries the old vendor's identity."
+    },
+    {
+      "correctAnswers": [
+        "bridgeworks",
+        "noc@bridgeworksautomation.com",
+        "bridgeworks automation"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The stack at 10.30.14.1 is the spine of that plant floor. Every interlock, every alarm, every signal my old line depended on crosses it.\n\nSo I want to know who this device believes it belongs to, because I am fairly sure it is not the people standing in front of it at six in the morning. The vendor poller notes still spell the community string as brdgwks-ro.",
+      "taskInstructions": "Run <b>snmpwalk -c brdgwks-ro 10.30.14.1</b> in the terminal and read the sysContact string in the system group.",
+      "taskQuestion": "Who does the switch stack list as its SNMP contact?",
+      "taskCompleteText": "<b>Priya Nandan:</b> BridgeWorks Automation's NOC is still configured as the contact. That is precise evidence of stale device ownership."
+    }
+  ],
+  "taskID": "ismg6860_u05_q04_t01",
+  "parentQuestID": "ismg6860_u05_q04",
+  "articleID": "u05_snmp_versions",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

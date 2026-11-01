@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the declared publisher before comparing it with the app's claim of official Harborview affiliation.",
+      "taskInstructions": "Type the full name shown under <b>Publisher</b> in the application details.",
+      "taskQuestion": "What publisher is the fake VPN listed under?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: Harbor Shield Labs.",
+      "correctAnswers": [
+        "Harbor Shield Labs"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the declared publisher. Its almost-familiar name is the provenance detail worth comparing with the affiliation claim.",
+      "taskInstructions": "Type the full name shown under <b>Publisher</b> in the application details.",
+      "taskQuestion": "What publisher is the fake VPN listed under?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: Harbor Shield Labs.",
+      "correctAnswers": [
+        "Harbor Shield Labs"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Record the publisher exactly so visitors can compare the warning with the listing themselves.",
+      "taskInstructions": "Type the full name shown under <b>Publisher</b> in the application details.",
+      "taskQuestion": "What publisher is the fake VPN listed under?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: Harbor Shield Labs. The warning can name the publisher precisely.",
+      "correctAnswers": [
+        "Harbor Shield Labs"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q11_t02",
+  "parentQuestID": "ismg6860_u03_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

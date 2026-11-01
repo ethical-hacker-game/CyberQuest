@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u05_q15",
+  "cityIndex": 7355,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q15_t01",
+    "ismg6860_u05_q15_t02_firewall",
+    "ismg6860_u05_q15_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Enumeration Countermeasures",
+      "questDescription": "Dana Osei needs the fix list before the report goes anywhere. Every service you enumerated has a specific control, and she has limited change-control approval to spend.",
+      "questCompleteText": "<b>Dana Osei:</b> The priority controls are documented: use SNMPv3 authPriv, enforce a default-deny boundary, and disable the active vendor account first. Other findings retain separate remediation owners.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Enumeration Countermeasures",
+      "questDescription": "Reyes Calloway is unbothered by the hardening list. Write it properly, because a client who fixes the obvious things stops looking for the rest.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The report separates immediate account revocation from protocol hardening and boundary policy. None of those controls erases the remaining findings.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Enumeration Countermeasures",
+      "questDescription": "Priya Nandan wants the countermeasures concrete and prioritized. A vague recommendation is what lets an institution claim it is working on it.",
+      "questCompleteText": "<b>Priya Nandan:</b> The immediate account action and longer-term hardening work are explicit, with no claim that one change closes every gap.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

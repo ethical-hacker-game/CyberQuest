@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the support identity used in the archived transcript so staff can recognize the specific indicator.",
+      "taskInstructions": "On the archived chat page, find <b>Support Identity</b> and type the agent display name.",
+      "taskQuestion": "What name does the fake support identity use?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: Harbor Mobile Recovery. The name is an indicator, not proof of legitimacy.",
+      "correctAnswers": [
+        "Harbor Mobile Recovery"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The helper uses a procedural-sounding display name. Record that identifier precisely for later detection.",
+      "taskInstructions": "On the archived chat page, find <b>Support Identity</b> and type the agent display name.",
+      "taskQuestion": "What name does the fake support identity use?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: Harbor Mobile Recovery. A plausible label still requires independent verification.",
+      "correctAnswers": [
+        "Harbor Mobile Recovery"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Name the support identity used in the transcript so the warning gives people a concrete reason to stop and verify.",
+      "taskInstructions": "On the archived chat page, find <b>Support Identity</b> and type the agent display name.",
+      "taskQuestion": "What name does the fake support identity use?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: Harbor Mobile Recovery. The warning can pair this indicator with the official support route.",
+      "correctAnswers": [
+        "Harbor Mobile Recovery"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q19_t02",
+  "parentQuestID": "ismg6860_u03_q19",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

@@ -1,0 +1,142 @@
+{
+  "appID": "zenmap",
+  "scenarioID": "zenmap_quest_10_1",
+  "header": "Zenmap",
+  "extension": "png",
+  "size": {
+    "x": 800,
+    "y": 672
+  },
+  "margin": {
+    "x": 71.0,
+    "y": 15.0,
+    "z": 145.0,
+    "w": 35.0
+  },
+  "stages": [
+    {
+      "stageID": "stage1",
+      "customHeader": "Zenmap",
+      "frames": [
+        {
+          "imageName": "frame_0000",
+          "delayMs": 700
+        },
+        {
+          "imageName": "frame_0002",
+          "delayMs": 1600
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "nmap -sn -PR",
+          "nextStageID": "stage2",
+          "linkPoistion": {
+            "x": 150.0,
+            "y": 91.0
+          },
+          "linkSize": {
+            "x": 120.0,
+            "y": 20.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage2",
+      "customHeader": "Zenmap",
+      "frames": [
+        {
+          "imageName": "frame_0061",
+          "delayMs": 700
+        },
+        {
+          "imageName": "frame_0079",
+          "delayMs": 300
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "185.254.57.124",
+          "nextStageID": "stage3",
+          "linkPoistion": {
+            "x": 130.0,
+            "y": 63.0
+          },
+          "linkSize": {
+            "x": 130.0,
+            "y": 20.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage3",
+      "customHeader": "Zenmap",
+      "frames": [
+        {
+          "imageName": "frame_0109",
+          "delayMs": 400
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage4",
+          "linkPoistion": {
+            "x": 555.0,
+            "y": 60.0
+          },
+          "linkSize": {
+            "x": 40.0,
+            "y": 30.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage4",
+      "customHeader": "Zenmap",
+      "frames": [
+        {
+          "imageName": "frame_0128",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0129",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0130",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0131",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0132",
+          "delayMs": 2700
+        },
+        {
+          "imageName": "frame_0159",
+          "delayMs": 800
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "exit",
+          "linkPoistion": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "linkSize": {
+            "x": 800.0,
+            "y": 700.0
+          }
+        }
+      ]
+    }
+  ]
+}

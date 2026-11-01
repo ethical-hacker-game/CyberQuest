@@ -1,0 +1,36 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The portal scan contains a critical remote code execution finding. Identify the affected component from the evidence; do not run an exploit payload.",
+      "taskInstructions": "Run <b>nessus compare internal</b> in the terminal to open the scan, then read the Component field of the Critical entry.",
+      "taskQuestion": "Which finding could lead to RCE?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Apache Struts is the component associated with the critical RCE finding.",
+      "correctAnswers": ["Apache Struts", "struts", "apache", "Apache Struts RCE", "Struts RCE", "Struts vulnerability", "Struts finding"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> One portal component carries the critical RCE finding. Name it from the scan without turning the assessment into an unauthorized exploit attempt.",
+      "taskInstructions": "Run <b>nessus compare internal</b> in the terminal to open the scan, then read the Component field of the Critical entry.",
+      "taskQuestion": "Which finding could lead to RCE?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Apache Struts is the component tied to the published RCE risk.",
+      "correctAnswers": ["Apache Struts", "struts", "apache", "Apache Struts RCE", "Struts RCE", "Struts vulnerability", "Struts finding"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A critical RCE finding affects the resident-facing portal tier. Identify the component clearly from the scan while keeping residents and production data out of the test.",
+      "taskInstructions": "Run <b>nessus compare internal</b> in the terminal to open the scan, then read the Component field of the Critical entry.",
+      "taskQuestion": "Which finding could lead to RCE?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The scan identifies Apache Struts as the component associated with the RCE risk.",
+      "correctAnswers": ["Apache Struts", "struts", "apache", "Apache Struts RCE", "Struts RCE", "Struts vulnerability", "Struts finding"]
+    }
+  ],
+  "taskID": "ismg6860_u04_q18_t01",
+  "parentQuestID": "ismg6860_u04_q18",
+  "articleID": "u04_struts_rce_response",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input",
+  "correctAnswers": []
+}

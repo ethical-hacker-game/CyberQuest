@@ -1,0 +1,13 @@
+{
+  "articleID": "u00_authorization_scope",
+  "videoURL": null,
+  "title": "Authorization and Scope",
+  "content": "<b>Authorization</b> is documented permission to perform specific security work. <b>Scope</b> defines the boundaries of that permission: which systems, accounts, data, dates, and techniques are included, and which are excluded. Together they protect the people conducting the work, the organization, and anyone whose data or services could be affected.\n\nA useful authorization record identifies the owner granting permission, the approved target, the purpose of the work, allowed actions, time limits, data-handling rules, reporting contacts, and conditions that require work to stop. A read-only review, an active scan, and an attempt to change a setting are different actions and may require different approval.\n\nA system being reachable from the public internet does not make deeper testing authorized. Public pages may be observed like any other visitor would observe them, but guessing hidden routes, submitting unexpected input, scanning adjacent hosts, or changing data can cross the boundary. Technical capability is not permission.\n\nBefore acting, confirm that the target and method are explicitly covered. During the work, compare each new idea with the written scope. If a redirect, related hostname, cloud service, or unexpected account leads outside it, pause and ask the authorized contact instead of assuming the boundary expanded. This prevents <i>scope drift</i>, where a legitimate investigation gradually moves into unapproved territory.\n\nGood security work is deliberate: obtain permission, stay within the stated limits, minimize impact, preserve evidence, and report anything that requires additional authorization.",
+  "links": [
+    "authorization note",
+    "written scope",
+    "unauthorized testing",
+    "public visibility"
+  ]
+}
+

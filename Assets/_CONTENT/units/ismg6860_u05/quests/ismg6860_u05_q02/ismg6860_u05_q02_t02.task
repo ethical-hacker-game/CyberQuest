@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Its name does not follow the HAL- convention every other host on the segment uses.",
+        "It is the only host in the sweep that failed to return a MAC address.",
+        "It reports a workgroup name that differs from every other host on the plant segment.",
+        "It is the only host in the sweep responding on the NetBIOS name service."
+      ],
+      "correctAnswer": 0,
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> Compare the whole segment before treating one name as unusual. Halloway's current convention uses the HAL- prefix for switches, servers, and workstations.",
+      "taskInstructions": "Run <b>nbtscan 10.30.14.0/24</b> in the terminal and read the name reported for every host that answers.",
+      "taskQuestion": "What stands out about FORGE-HIST01 in the segment-wide sweep?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. FORGE-HIST01 is the only responding name outside the HAL- convention. Record the anomaly, but do not infer ownership from the name alone."
+    }
+  ],
+  "taskID": "ismg6860_u05_q02_t02",
+  "parentQuestID": "ismg6860_u05_q02",
+  "articleID": "u05_netbios_smb",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

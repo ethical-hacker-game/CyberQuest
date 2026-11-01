@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Scanning changes service configuration; enumeration restores the original settings afterward.",
+        "Scanning finds responding ports; enumeration queries those services for information they expose.",
+        "Scanning lists users and shares; enumeration only confirms whether a host is online.",
+        "Scanning and enumeration are interchangeable names for the same collection step."
+      ],
+      "correctAnswer": 1,
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dana Osei:</b> Leadership treats scanning and enumeration as the same activity. The report needs to explain why they produce different evidence.",
+      "taskInstructions": "Use the Enumeration in the Assessment Chain article if you need to review the distinction.",
+      "taskQuestion": "How does enumeration differ from scanning?",
+      "taskCompleteText": "<b>Dana Osei:</b> Exactly. Scanning finds responding services; enumeration asks those services what users, shares, and configuration they expose."
+    }
+  ],
+  "taskID": "ismg6860_u05_q01_t04",
+  "parentQuestID": "ismg6860_u05_q01",
+  "articleID": "u05_enumeration_concepts",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

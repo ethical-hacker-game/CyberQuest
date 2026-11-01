@@ -1,0 +1,11 @@
+{
+  "articleID": "u01_ethical_reconnaissance",
+  "videoURL": null,
+  "title": "Ethical Reconnaissance",
+  "content": "Ethical hacking is authorized security work performed to improve a system rather than exploit it for personal gain. Authorization, scope, and handling rules are what separate a legitimate assessment from unauthorized access. A useful finding does not excuse crossing those boundaries.\n\n<b>Start with the least intrusive method</b>\nReconnaissance can be passive or active. Passive collection uses publicly available information or data already provided for the engagement. Active reconnaissance sends traffic to a target, requests resources, or otherwise interacts with its systems. Passive does not mean risk-free: public records may contain personal data, stale information, or material that should not be redistributed. Active work must be explicitly permitted and carefully limited.\n\nBefore collecting, confirm the approved targets, techniques, time window, data-retention rules, and escalation contact. Stop when a technique falls outside scope, could disrupt service, exposes unrelated personal data, or uncovers evidence of an ongoing incident that requires coordination. Do not test credentials, bypass controls, contact suspected attackers, or publish sensitive findings unless the rules specifically authorize it.\n\n<b>Produce defensible results</b>\nRecord where each observation came from, when it was collected, and what was actually verified. Separate facts from inference and avoid claiming that an anomaly proves malicious intent. Protect collected data, share it only with approved recipients, and recommend proportionate remediation. Ethical reconnaissance is successful when it gives the owner useful evidence while minimizing harm to systems, people, and third parties.",
+  "links": [
+    "ethical hacking",
+    "publicly available information",
+    "non-intrusive methods"
+  ]
+}

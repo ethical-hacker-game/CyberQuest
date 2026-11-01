@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Ilya calls ECHO-73 a diagnostics node, but the first scan states only show how its ports responded. Identify the open port that the scan flags for service review without claiming what runs there yet.",
+      "taskInstructions": "Run <b>nmap -sS 10.42.18.73</b> in the terminal and read the open ports it reports.",
+      "taskQuestion": "Which TCP port does the scan flag for service review?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. TCP/8080 is open and needs service identification before we describe what it exposes.",
+      "answers": [
+        "22/tcp",
+        "443/tcp",
+        "8080/tcp",
+        "9100/tcp"
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u02_q05_t01",
+  "parentQuestID": "ismg6860_u02_q05",
+  "articleID": "u02_scan_states",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

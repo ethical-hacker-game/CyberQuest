@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": "eli-masters",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>George Wilkerson:</b> Now verify whether Eli’s public profile independently confirms our connection. Collect only what is relevant; a visible friendship can explain what an impersonator could learn, but it cannot show which source they actually used.",
+      "taskInstructions": "Return to <b>Cyber Search</b>, search for <b>Eli Masters</b>, and open his SocialLoop profile. Review the public activity for the post that names George Wilkerson.",
+      "taskQuestion": "Open Eli Masters’ public SocialLoop profile.",
+      "taskCompleteText": "<b>George Wilkerson:</b> Eli’s public Fourth of July post names me as his friend. Together with the news report, it confirms that our association was publicly discoverable before the incident."
+    }
+  ],
+  "taskID": "ismg6860_u01_q04_t03",
+  "parentQuestID": "ismg6860_u01_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

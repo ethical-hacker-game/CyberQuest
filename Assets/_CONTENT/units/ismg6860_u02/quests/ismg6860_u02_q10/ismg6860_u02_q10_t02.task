@@ -1,0 +1,47 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> A port unreachable response provides packet-level support for a closed UDP port. Record the exact ICMP error so another analyst can verify the conclusion.",
+      "taskInstructions": "Run <b>tcpdump udp or icmp</b> alongside the scan and read the ICMP type and code out of the capture; either the plain name or the numeric pair is accepted.",
+      "taskQuestion": "What ICMP error indicates a closed UDP port?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. ICMP type 3 code 3 is the port unreachable evidence for the closed UDP port.",
+      "correctAnswers": [
+        "port unreachable",
+        "type 3 code 3",
+        "icmp 3/3"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> A port unreachable response is more specific than a summary label. Record the ICMP error that supports the closed UDP result.",
+      "taskInstructions": "Run <b>tcpdump udp or icmp</b> alongside the scan and read the ICMP type and code out of the capture; either the plain name or the numeric pair is accepted.",
+      "taskQuestion": "What ICMP error indicates a closed UDP port?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Type 3 code 3. That is the specific response worth keeping.",
+      "correctAnswers": [
+        "port unreachable",
+        "type 3 code 3",
+        "icmp 3/3"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> A port unreachable response makes the closed-port claim checkable. Record the exact ICMP term or numeric type and code.",
+      "taskInstructions": "Run <b>tcpdump udp or icmp</b> alongside the scan and read the ICMP type and code out of the capture; either the plain name or the numeric pair is accepted.",
+      "taskQuestion": "What ICMP error indicates a closed UDP port?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Port unreachable, type 3 code 3. Clear, precise, and verifiable.",
+      "correctAnswers": [
+        "port unreachable",
+        "type 3 code 3",
+        "icmp 3/3"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u02_q10_t02",
+  "parentQuestID": "ismg6860_u02_q10",
+  "articleID": "u02_scan_states",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

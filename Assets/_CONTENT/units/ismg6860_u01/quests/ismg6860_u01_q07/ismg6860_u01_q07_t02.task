@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The external name server proves that DataSequence’s DNS has been compromised.",
+        "The GeoIP labels prove that the listed systems are physically located in New York.",
+        "The results identify public DNS relationships that must be compared with the approved asset inventory before risks are prioritized.",
+        "The public mail record proves that the mail server contains an exploitable vulnerability."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>George:</b> The report shows hosts, record types, providers, and GeoIP clues, but it does not include our approved inventory or vulnerability evidence. Give leadership a conclusion that respects those limits.",
+      "taskInstructions": "Select the conclusion supported by the passive DNS report and the DNS Intelligence article.",
+      "taskQuestion": "What can you responsibly conclude from the passive DNS results?",
+      "taskCompleteText": "<b>George:</b> The report provides an external inventory for comparison and follow-up. It does not prove compromise, physical location, or a vulnerable service by itself."
+    }
+  ],
+  "taskID": "ismg6860_u01_q07_t02",
+  "parentQuestID": "ismg6860_u01_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

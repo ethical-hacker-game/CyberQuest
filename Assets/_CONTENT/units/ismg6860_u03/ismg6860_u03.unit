@@ -1,0 +1,75 @@
+{
+  "unitID": "ismg6860_u03",
+  "placeholder": false,
+  "order": 3,
+  "unitName": "3. Social Engineering",
+  "unitDescription": "This unit teaches social engineering through the Blue Lantern campaign against Harborview Expo. Players analyze mobile lures, human vulnerability triggers, physical access pretexts, and computer-based scams while preserving evidence and shaping the response through persona decisions.",
+  "defaultPlayerName": "Alex",
+  "unitEntryMessage": "Welcome back, {player}. Harborview Expo opens tomorrow, and staff are already receiving suspicious texts, calls, app links, QR redirects, and calendar invites. Asha Moreno will guide the first response. Your job is to connect the Blue Lantern evidence without blaming the people being targeted.",
+  "questIds": [
+    "ismg6860_u03_q01",
+    "ismg6860_u03_q02",
+    "ismg6860_u03_q03",
+    "ismg6860_u03_q04",
+    "ismg6860_u03_d01",
+    "ismg6860_u03_q05",
+    "ismg6860_u03_q06",
+    "ismg6860_u03_q07",
+    "ismg6860_u03_q08",
+    "ismg6860_u03_q09",
+    "ismg6860_u03_q10",
+    "ismg6860_u03_q11",
+    "ismg6860_u03_d02",
+    "ismg6860_u03_q12",
+    "ismg6860_u03_q13",
+    "ismg6860_u03_q14",
+    "ismg6860_u03_q15",
+    "ismg6860_u03_q16",
+    "ismg6860_u03_d03",
+    "ismg6860_u03_q17",
+    "ismg6860_u03_q18",
+    "ismg6860_u03_q19",
+    "ismg6860_u03_d04",
+    "ismg6860_u03_q20",
+    "ismg6860_u03_q21",
+    "ismg6860_u03_q22"
+  ],
+  "questsAreaSize": {
+    "x": 11200.0,
+    "y": 900.0
+  },
+  "questTreeOffset": 100.0,
+  "appIDs": [],
+  "personas": [
+    {
+      "personaID": "whitehat",
+      "personaName": "Whitehat Hacker",
+      "personaDescription": "A whitehat hacker protects affected people, preserves evidence, avoids credential collection, and turns social-engineering findings into practical reporting and training.",
+      "messagePlayerJoinedHeader": "Whitehat Path Chosen",
+      "messagePlayerJoined": "You are keeping the response disciplined: preserve evidence, protect staff, and reduce pressure without blaming targets.",
+      "messagePlayerUnloyalHeader": "Whitehat Discipline Challenged",
+      "messagePlayerUnloyal": "That choice moved away from responsible incident handling. Refocus on authorization, evidence quality, and harm reduction.",
+      "personaPictureID": "persona_white"
+    },
+    {
+      "personaID": "blackhat",
+      "personaName": "Blackhat Hacker",
+      "personaDescription": "A blackhat hacker treats influence chains as leverage and studies which human pressure points can be used for personal advantage.",
+      "messagePlayerJoinedHeader": "Blackhat Path Chosen",
+      "messagePlayerJoined": "You are reading the campaign like an attacker: every channel, trigger, and trust failure can become leverage if kept private.",
+      "messagePlayerUnloyalHeader": "Blackhat Instincts Checked",
+      "messagePlayerUnloyal": "That choice protected the targets instead of exploiting the opening. The blackhat path values leverage over trust.",
+      "personaPictureID": "persona_black"
+    },
+    {
+      "personaID": "hacktivist",
+      "personaName": "Hacktivist",
+      "personaDescription": "A hacktivist uses social-engineering evidence to pressure institutions, protect communities, and force public accountability with careful redaction.",
+      "messagePlayerJoinedHeader": "Hacktivist Path Chosen",
+      "messagePlayerJoined": "You are framing Blue Lantern around public impact: volunteers and visitors deserve timely warnings when institutions move slowly.",
+      "messagePlayerUnloyalHeader": "Hacktivist Purpose Challenged",
+      "messagePlayerUnloyal": "That choice served process more than pressure. Keep public consequence at the center if you want the hacktivist path.",
+      "personaPictureID": "persona_hacktivist"
+    }
+  ]
+}

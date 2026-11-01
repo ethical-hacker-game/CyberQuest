@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "198.51.99.0/24",
+        "198.51.100.0/24",
+        "198.51.101.0/24",
+        "198.51.0.0/24"
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Brandon:</b> The lookups mention <b>198.51.100.24</b> and <b>198.51.100.30</b>. They fit in one /24, but two DNS observations do not establish that NovaSolutions owns or uses every address in it.",
+      "taskInstructions": "Run <b>nslookup 198.51.100.24</b>, <b>nslookup 198.51.100.30</b>, and <b>nslookup novasolutions.com</b>. Select the /24 that contains both returned addresses.",
+      "taskQuestion": "Which /24 contains both observed addresses?",
+      "taskCompleteText": "<b>Brandon:</b> Both addresses fall within <b>198.51.100.0/24</b>. We can group them for review, then confirm ownership and actual traffic with asset and network records."
+    }
+  ],
+  "taskID": "ismg6860_u01_q20_t03",
+  "parentQuestID": "ismg6860_u01_q20",
+  "articleID": "u01_dns_intelligence",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

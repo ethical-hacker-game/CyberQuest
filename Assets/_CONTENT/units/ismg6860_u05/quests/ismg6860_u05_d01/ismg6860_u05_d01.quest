@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u05_d01",
+  "cityIndex": 7161,
+  "questIconID": "",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u05_d01_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Decision: The Share Evidence",
+      "questDescription": "The BRIDGEWORKS$ listing mixes vendor configuration with Halloway drawings. Decide who should receive the evidence and whether to remain inside the authorized reporting channel.",
+      "questCompleteText": "<b>Dana Osei:</b> Your choice determines who receives this evidence and which voice shapes the rest of the engagement.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    }
+  ]
+}

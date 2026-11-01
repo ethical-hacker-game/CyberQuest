@@ -1,0 +1,36 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Record the tracking ID so the network rule and remediation ticket refer to the same finding.",
+      "taskInstructions": "Run <b>openvas report northbridge-internal</b>. In the <b>Results</b> table, locate <b>RDP Exposed on Admin Subnet</b> and enter the short <b>NB-VA-…</b> code shown beneath its title.",
+      "taskQuestion": "Which finding ID marks the unexpected RDP exposure?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. NB-VA-RDP-14 tracks the RDP exposure on the administration subnet.",
+      "correctAnswers": ["NB-VA-RDP-14", "NB VA RDP 14", "NBVARDP14", "RDP-14", "RDP 14"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the tracking ID attached to the RDP opening so it can be referenced precisely.",
+      "taskInstructions": "Run <b>openvas report northbridge-internal</b>. In the <b>Results</b> table, locate <b>RDP Exposed on Admin Subnet</b> and enter the short <b>NB-VA-…</b> code shown beneath its title.",
+      "taskQuestion": "Which finding ID marks the unexpected RDP exposure?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. NB-VA-RDP-14 is the record for this management path.",
+      "correctAnswers": ["NB-VA-RDP-14", "NB VA RDP 14", "NBVARDP14", "RDP-14", "RDP 14"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Tie the RDP exposure to its tracking ID so remediation cannot be reduced to a vague promise.",
+      "taskInstructions": "Run <b>openvas report northbridge-internal</b>. In the <b>Results</b> table, locate <b>RDP Exposed on Admin Subnet</b> and enter the short <b>NB-VA-…</b> code shown beneath its title.",
+      "taskQuestion": "Which finding ID marks the unexpected RDP exposure?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. NB-VA-RDP-14 gives the exposure a traceable remediation record.",
+      "correctAnswers": ["NB-VA-RDP-14", "NB VA RDP 14", "NBVARDP14", "RDP-14", "RDP 14"]
+    }
+  ],
+  "taskID": "ismg6860_u04_q14_t02",
+  "parentQuestID": "ismg6860_u04_q14",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input",
+  "correctAnswers": []
+}

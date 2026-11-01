@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u04_q01_t01_scope",
+  "parentTaskID": "ismg6860_u04_q01_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Mara Voss <mara.voss@northbridge.com>",
+      "subject": "Authorized Vulnerability Assessment Scope",
+      "shortSummary": "Approved targets and limits for the Northbridge assessment.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nApproved: review the public citizen services portal, the document exchange evidence package, security-office scanner reports, and explicitly supplied internal evidence. Use only the checks specified for those targets.\n\nDo not change settings, submit setup forms, or download or publish sensitive files. Additional targets or tests require written approval.\n\nStart with the supplied document exchange permission listing. Record findings for remediation.\n\nMara Voss\nSecurity Program Manager",
+      "attachements": []
+    }
+  ]
+}

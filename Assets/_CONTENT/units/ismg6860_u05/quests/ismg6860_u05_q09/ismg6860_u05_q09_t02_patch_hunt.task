@@ -1,0 +1,68 @@
+{
+  "variants": [
+    {
+      "minigameType": "PatchHunt",
+      "minigameHeaderText": "NFS Export Triage",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "patchHuntSettings": {
+        "packetIntegrity": 3,
+        "spawnInterval": 1.5,
+        "breachLifetime": 3.0,
+        "honeypotChance": 0.55,
+        "breachLabel": "EXTERNAL EXPORT",
+        "honeypotLabel": "INTERNAL MOUNT"
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> An export restricted to an internal range and one offered to an external range do not carry the same review priority. Triage them without turning normal internal mounts into findings.",
+      "taskInstructions": "Click each red <b>EXTERNAL EXPORT</b> before its timer ring closes, and leave the green <b>INTERNAL MOUNT</b> decoys untouched. Three exports getting past you ends the run.",
+      "taskQuestion": "Flag every external export and leave the internal mounts alone.",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. Externally scoped exports require investigation; internal mounts are not findings solely because they exist."
+    },
+    {
+      "minigameType": "PatchHunt",
+      "minigameHeaderText": "NFS Export Triage",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "patchHuntSettings": {
+        "packetIntegrity": 3,
+        "spawnInterval": 1.5,
+        "breachLifetime": 3.0,
+        "honeypotChance": 0.55,
+        "breachLabel": "EXTERNAL EXPORT",
+        "honeypotLabel": "INTERNAL MOUNT"
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Internal mounts are ordinary noise. An export scoped to an external range is the lead worth preserving, though the rule alone does not prove anyone mounted it.",
+      "taskInstructions": "Click each red <b>EXTERNAL EXPORT</b> before its timer ring closes, and leave the green <b>INTERNAL MOUNT</b> decoys untouched. Three exports getting past you ends the run.",
+      "taskQuestion": "Flag every external export and leave the internal mounts alone.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> You separated external exposure from internal noise without claiming access the evidence does not show."
+    },
+    {
+      "minigameType": "PatchHunt",
+      "minigameHeaderText": "NFS Export Triage",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "patchHuntSettings": {
+        "packetIntegrity": 3,
+        "spawnInterval": 1.5,
+        "breachLifetime": 3.0,
+        "honeypotChance": 0.55,
+        "breachLabel": "EXTERNAL EXPORT",
+        "honeypotLabel": "INTERNAL MOUNT"
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Focus on exports available to external ranges. Internal mounts need context too, but their existence alone does not establish outside exposure.",
+      "taskInstructions": "Click each red <b>EXTERNAL EXPORT</b> before its timer ring closes, and leave the green <b>INTERNAL MOUNT</b> decoys untouched. Three exports getting past you ends the run.",
+      "taskQuestion": "Flag every external export and leave the internal mounts alone.",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. You prioritized external exposure while keeping the conclusion limited to the configured scope."
+    }
+  ],
+  "taskID": "ismg6860_u05_q09_t02_patch_hunt",
+  "parentQuestID": "ismg6860_u05_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "correctAnswer": false,
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> One boundary check before we continue. The status page is public, but public visibility is not the same as permission to probe hidden pages or change settings.",
+      "taskInstructions": "",
+      "taskQuestion": "True or false: because the status page is public, deeper testing is automatically authorized.",
+      "taskCompleteText": "<b>Ed:</b> Correct. Public visibility lets us observe. Authorization decides whether we may test deeper."
+    }
+  ],
+  "taskID": "ismg6860_u00_q02_t03_scope_boundary",
+  "parentQuestID": "ismg6860_u00_q02",
+  "articleID": "u00_authorization_scope",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "TrueFalse"
+}

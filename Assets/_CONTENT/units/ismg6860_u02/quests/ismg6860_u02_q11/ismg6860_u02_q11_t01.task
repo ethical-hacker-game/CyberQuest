@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> ACK behavior gives us a narrow observation about the path. A reply or silence does not identify every device involved, so keep the conclusion limited to the response.",
+      "taskInstructions": "Run <b>hping3 -A -p 8080 10.42.18.73</b> and interpret the reported result.",
+      "taskQuestion": "What state does the ACK probe suggest?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. The ACK probe was filtered by a stateful firewall or policy device.",
+      "answers": [
+        "Filtered by a stateful firewall or policy device.",
+        "Unfiltered because the host returned an RST.",
+        "Closed because the host sent an ICMP port-unreachable response.",
+        "Open because the host returned a SYN/ACK."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> ACK behavior can distinguish a visible reset from silence imposed by a stateful boundary. Run the probe and keep the map tied to the reported response.",
+      "taskInstructions": "Run <b>hping3 -A -p 8080 10.42.18.73</b> and interpret the reported result.",
+      "taskQuestion": "What state does the ACK probe suggest?",
+      "taskCompleteText": "<b>Kade Mercer:</b> Filtered. The output points to a stateful firewall or policy device.",
+      "answers": [
+        "Filtered by a stateful firewall or policy device.",
+        "Unfiltered because the host returned an RST.",
+        "Closed because the host sent an ICMP port-unreachable response.",
+        "Open because the host returned a SYN/ACK."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> ACK behavior can document a filtering control without becoming an evasion guide. Run the approved probe and report only its defensive interpretation.",
+      "taskInstructions": "Run <b>hping3 -A -p 8080 10.42.18.73</b> and interpret the reported result.",
+      "taskQuestion": "What state does the ACK probe suggest?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Filtered by a stateful firewall or policy device. That explains the control without encouraging misuse.",
+      "answers": [
+        "Filtered by a stateful firewall or policy device.",
+        "Unfiltered because the host returned an RST.",
+        "Closed because the host sent an ICMP port-unreachable response.",
+        "Open because the host returned a SYN/ACK."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u02_q11_t01",
+  "parentQuestID": "ismg6860_u02_q11",
+  "articleID": "u02_scan_states",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

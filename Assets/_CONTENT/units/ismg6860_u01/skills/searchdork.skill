@@ -1,0 +1,9 @@
+{
+  "skillID": "searchdork",
+  "skillName": "Search Operators",
+  "skillDescription": "An operator pack for the in-game search engine. Unlocks advanced queries such as allinanchor, filetype, and site, so you can see what a target has already published without touching their systems.",
+  "price": 1500,
+  "order": 10,
+  "requireTask": true,
+  "lockInDemo": false
+}

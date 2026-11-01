@@ -1,0 +1,28 @@
+{
+  "questID": "ismg6860_u01_q11",
+  "cityIndex": 380,
+  "questIconID": "quest_icon_socialengineering_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q11_t01",
+    "ismg6860_u01_q11_t02",
+    "ismg6860_u01_q11_t03",
+    "ismg6860_u01_q11_t04",
+    "ismg6860_u01_q11_t05"
+  ],
+  "requiredQuestID": "ismg6860_u01_q10",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "NorthTec Recon",
+      "questDescription": "Jamal Rivers, SecOps Lead at NorthTec, asks you to triage a forwarded UWork-lookalike message and reports of similar mail. Preserve and escalate the evidence, investigate how public profile data may support targeting, separate observation from attribution, and recommend a proportionate layered response.",
+      "questCompleteText": "<b>Jamal Rivers:</b> You treated the messages as a targeted-phishing investigation without overstating who was behind them. NorthTec can now preserve related evidence, block confirmed indicators, improve mail defenses, and help staff recognize and report similar attempts.",
+      "questCharacterID": "u01_jamal_rivers",
+      "appScenarioID": ""
+    }
+  ]
+}

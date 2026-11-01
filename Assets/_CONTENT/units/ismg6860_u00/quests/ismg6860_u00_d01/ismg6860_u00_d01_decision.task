@@ -1,0 +1,30 @@
+{
+  "decisions": [
+    {
+      "decisionText": "Whitehat Hacker: work with Michele to get the exposure fixed and verified.",
+      "personaIndex": 0,
+      "personaValueChange": 10
+    },
+    {
+      "decisionText": "Hacktivist: work with Ana to explain the impact and press for accountability.",
+      "personaIndex": 1,
+      "personaValueChange": 10
+    }
+  ],
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> What should we do with these findings? You can take a <b>Whitehat Hacker</b> approach and work with Michele on a verified fix for the owner. Or take a <b>Hacktivist</b> approach and work with Ana on an evidence-based brief that calls for accountability while protecting sensitive details.\n\nBoth start with the evidence in front of us. Choose the outcome you want to pursue.",
+      "taskInstructions": "",
+      "taskQuestion": "How will you use the evidence?",
+      "taskCompleteText": "<b>Ed:</b> Understood. Keep the evidence precise as you put that choice into action."
+    }
+  ],
+  "taskID": "ismg6860_u00_d01_decision",
+  "parentQuestID": "ismg6860_u00_d01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Decision"
+}

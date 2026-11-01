@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "appperms",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Do not install the app to investigate it. Permission Inspector reads the publisher, package identity, and requested permissions from its listing.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Permission Inspector</b>.",
+      "taskQuestion": "Unlock the Permission Inspector in the Lab panel.",
+      "taskCompleteText": "<b>Asha Moreno:</b> Permission Inspector is ready. We can assess the listing without installing the app."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "appperms",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Do not install a package when its listing already exposes the useful details. Permission Inspector extracts its publisher, package identity, and requested permissions.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Permission Inspector</b>.",
+      "taskQuestion": "Unlock the Permission Inspector in the Lab panel.",
+      "taskCompleteText": "<b>Felix Rane:</b> Permission Inspector is ready. Read what the publisher chose to request."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "appperms",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Permission Inspector records the publisher, package identity, and requested permissions without installing the app. We need those exact facts for a useful warning.",
+      "taskInstructions": "Open the <b>Lab</b> panel and unlock <b>Permission Inspector</b>.",
+      "taskQuestion": "Unlock the Permission Inspector in the Lab panel.",
+      "taskCompleteText": "<b>Imani Vale:</b> Permission Inspector is ready. The listing can now support a specific warning."
+    }
+  ],
+  "taskID": "ismg6860_u03_q05_t00b_unlock_appperms",
+  "parentQuestID": "ismg6860_u03_q05",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

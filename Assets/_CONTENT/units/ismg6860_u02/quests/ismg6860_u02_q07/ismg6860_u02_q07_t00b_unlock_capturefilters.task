@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "capturefilters",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> A focused filter should isolate the relevant conversation without altering the source capture. Capture Filters gives you a repeatable framework for choosing and documenting that filter.",
+      "taskInstructions": "Open the Lab panel and spend 2,500 credits to unlock Capture Filters.",
+      "taskQuestion": "Unlock Capture Filters in the Lab panel.",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Capture Filters is ready. Apply the framework to the ECHO-73 capture and preserve the original evidence."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "capturefilters",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> A capture you cannot narrow is worth nothing. Capture Filters gives you a framework for finding the conversation that matters without losing its source context.",
+      "taskInstructions": "Open the Lab panel and spend 2,500 credits to unlock Capture Filters.",
+      "taskQuestion": "Unlock Capture Filters in the Lab panel.",
+      "taskCompleteText": "<b>Kade Mercer:</b> Capture Filters is ready. Use the framework to isolate the valuable conversation."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "capturefilters",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> You cannot redact responsibly until you can isolate the relevant packets from unrelated traffic. Capture Filters gives you a framework for doing that while preserving the source capture.",
+      "taskInstructions": "Open the Lab panel and spend 2,500 credits to unlock Capture Filters.",
+      "taskQuestion": "Unlock Capture Filters in the Lab panel.",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Capture Filters is ready. Keep unrelated traffic out of any excerpt you share."
+    }
+  ],
+  "taskID": "ismg6860_u02_q07_t00b_unlock_capturefilters",
+  "parentQuestID": "ismg6860_u02_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

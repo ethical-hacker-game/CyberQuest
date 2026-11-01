@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "minigameType": "NetworkDistance",
+      "minigameHeaderText": "Public Egress",
+      "durationOverride": 0,
+      "difficulty": "Default",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Brandon:</b> Before reading DNS records, practice following a network path while keeping its limits in mind. This exercise tests route selection and data integrity; it does not report an exit-node IP.",
+      "taskInstructions": "Follow connected nodes toward the highlighted green destination. Avoid red threat areas so data integrity remains above zero.",
+      "taskQuestion": "Reach the highlighted destination in the NetworkDistance exercise.",
+      "taskCompleteText": "<b>Brandon:</b> You reached the destination while preserving data integrity. The route exercise produced no IP address or evidence about the traffic spikes."
+    }
+  ],
+  "taskID": "ismg6860_u01_q20_t01",
+  "parentQuestID": "ismg6860_u01_q20",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Minigame"
+}

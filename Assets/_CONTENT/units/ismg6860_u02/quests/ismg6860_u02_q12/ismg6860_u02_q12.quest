@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u02_q12",
+  "cityIndex": 5002,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q12_t01",
+    "ismg6860_u02_q12_t03_network_distance",
+    "ismg6860_u02_q12_t02"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "The Other Address Family",
+      "questDescription": "Help Mira document the IPv6 observation without extending the authorized scope beyond the evidence.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> ECHO-73's IPv6 address is documented, and the report now distinguishes the observation from the scope decision.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "The Other Address Family",
+      "questDescription": "Help Kade add the verified IPv6 observation to the asset map without inventing an untested route.",
+      "questCompleteText": "<b>Kade Mercer:</b> ECHO-73 now has both observed addresses on the map, with no guesswork about what either path permits.",
+      "questCharacterID": "u02_kade_mercer",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "The Other Address Family",
+      "questDescription": "Help Lena record the IPv6 observation precisely and turn it into a defensible coverage recommendation.",
+      "questCompleteText": "<b>Lena Ortiz:</b> The record now shows the verified IPv6 address and the need to confirm coverage across both address families.",
+      "questCharacterID": "u02_lena_ortiz",
+      "appScenarioID": ""
+    }
+  ]
+}

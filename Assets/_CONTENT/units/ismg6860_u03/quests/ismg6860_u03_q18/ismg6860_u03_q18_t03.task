@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Base the finding on the requested control bypass, not on the caller's tone or the lobby's workload.",
+      "taskInstructions": "Use the preserved call summary and identify what the caller asked staff to bypass.",
+      "taskQuestion": "Which clue best supports suspected authority impersonation?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. Claimed authority was used to request bypassing badge verification.",
+      "answers": [
+        "The caller knows the event name and uses a calm tone.",
+        "The request arrives during visitor-processing pressure.",
+        "The visitor sounds polite while waiting at the entrance.",
+        "Claimed authority is used to bypass badge verification."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Ignore presentation and choose the detail that tests the actual access control.",
+      "taskInstructions": "Use the preserved call summary and identify what the caller asked staff to bypass.",
+      "taskQuestion": "Which detail exposes the authority pretext?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The caller paired claimed authority with a request to skip verification.",
+      "answers": [
+        "Claimed authority is used to bypass badge verification.",
+        "The caller knows the event name and uses a calm tone.",
+        "The request arrives during visitor-processing pressure.",
+        "The visitor sounds polite while waiting at the entrance."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Focus the warning on the requested exception rather than on whether the caller sounded rude or polite.",
+      "taskInstructions": "Use the preserved call summary and identify what the caller asked staff to bypass.",
+      "taskQuestion": "Which clue most clearly supports an authority pretext?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The request used claimed authority to pressure staff past the badge rule.",
+      "answers": [
+        "The caller knows the event name and uses a calm tone.",
+        "Claimed authority is used to bypass badge verification.",
+        "The request arrives during visitor-processing pressure.",
+        "The visitor sounds polite while waiting at the entrance."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u03_q18_t03",
+  "parentQuestID": "ismg6860_u03_q18",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

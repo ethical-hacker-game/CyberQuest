@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OhPhish Trigger Summary</title>
+  <style>
+    :root { --ink:#1f2933; --muted:#5b6675; --line:#d6dde6; --panel:#ffffff; --bg:#eef3f7; --accent:#235a87; --warn:#8a4b12; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
+    header { background:#173f5f; color:white; padding:28px 32px; border-bottom:4px solid #f2b84b; }
+    header h1 { margin:0; font-size:30px; letter-spacing:0; }
+    header p { margin:6px 0 0; color:#dceaf4; }
+    main { max-width:980px; margin:28px auto; padding:0 24px 42px; }
+    section { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:18px 20px; margin:0 0 16px; }
+    h2 { margin:0 0 8px; font-size:20px; color:#173f5f; }
+    p { margin:0; }
+    code { background:#eef2f6; border:1px solid #d9e1ea; border-radius:4px; padding:2px 5px; }
+    .scope { color:var(--muted); margin-top:6px; }
+    table { width:100%; border-collapse:collapse; margin-top:12px; }
+    th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); }
+    th { background:#edf3f7; color:#29485f; }
+    .highest { color:var(--warn); font-weight:700; }
+    ul { margin:8px 0 0; padding-left:22px; }
+    footer { text-align:center; color:var(--muted); padding:20px; font-size:13px; }
+  </style>
+</head>
+<body>
+  <header><h1>OhPhish Awareness Console</h1><p>Harborview Expo trigger summary</p></header>
+  <main>
+    <section>
+      <h2>Report Scope</h2>
+      <p>Authorized awareness exercise · 226 delivered messages · 226 recorded outcomes</p>
+      <p class="scope">Results are aggregated by lure category. Credentials were not collected, and participant names are excluded.</p>
+    </section>
+    <section>
+      <h2>Trigger Ranking</h2>
+      <table>
+        <thead><tr><th>Rank</th><th>Trigger</th><th>Delivered</th><th>Responses</th><th>Response rate</th></tr></thead>
+        <tbody>
+          <tr class="highest"><td>1</td><td>Urgency</td><td>58</td><td>20</td><td>34.5%</td></tr>
+          <tr><td>2</td><td>Fear</td><td>56</td><td>15</td><td>26.8%</td></tr>
+          <tr><td>3</td><td>Belonging</td><td>57</td><td>11</td><td>19.3%</td></tr>
+          <tr><td>4</td><td>Curiosity</td><td>55</td><td>7</td><td>12.7%</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Recommended Response</h2>
+      <ul>
+        <li>Teach staff to pause when a message imposes an unexpected deadline.</li>
+        <li>Provide one independent verification route and one reporting path.</li>
+        <li>Measure improvements by category without ranking individual participants.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>OhPhish Awareness Console · Aggregate reporting</footer>
+  <script src="../../../cq-bridge.js"></script>
+</body>
+</html>

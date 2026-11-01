@@ -1,0 +1,90 @@
+{
+  "appID": "languard",
+  "scenarioID": "languard_hostaudit",
+  "header": "GFI LanGuard - Network Audit",
+  "extension": "png",
+  "size": {
+    "x": 900,
+    "y": 620
+  },
+  "margin": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 45.0
+  },
+  "stages": [
+    {
+      "stageID": "dashboard",
+      "customHeader": "GFI LanGuard - Scan Results: Northbridge",
+      "frames": [
+        {
+          "imageName": "dashboard_0000",
+          "delayMs": 600
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "host_nbfin07",
+          "linkPoistion": {
+            "x": 216.0,
+            "y": 412.0
+          },
+          "linkSize": {
+            "x": 660.0,
+            "y": 44.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "host_nbfin07",
+      "customHeader": "GFI LanGuard - NB-FIN-07",
+      "frames": [
+        {
+          "imageName": "host_nbfin07_0000",
+          "delayMs": 600
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "host_nbfin07_patches",
+          "linkPoistion": {
+            "x": 216.0,
+            "y": 286.0
+          },
+          "linkSize": {
+            "x": 660.0,
+            "y": 56.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "host_nbfin07_patches",
+      "customHeader": "GFI LanGuard - NB-FIN-07 Missing Patches",
+      "frames": [
+        {
+          "imageName": "host_nbfin07_patches_0000",
+          "delayMs": 600
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "exit",
+          "linkPoistion": {
+            "x": 687.0,
+            "y": 121.0
+          },
+          "linkSize": {
+            "x": 62.0,
+            "y": 33.0
+          }
+        }
+      ]
+    }
+  ]
+}

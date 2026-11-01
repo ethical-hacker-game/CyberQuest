@@ -1,0 +1,23 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Service identification is strongest when another analyst can repeat the check and observe the same product and version string. Record what TCP/8080 returns before interpreting it.",
+      "taskInstructions": "Run <b>nmap -sV 10.42.18.73</b> in the terminal and type the product name and version shown on TCP/8080.",
+      "taskQuestion": "What product and version does TCP/8080 report?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. TCP/8080 reports RailGate Diagnostics 3.4.7. That is the observation we can preserve.",
+      "correctAnswers": [
+        "RailGate Diagnostics 3.4.7",
+        "RailGate Diagnostics v3.4.7",
+        "RailGate 3.4.7"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u02_q06_t01",
+  "parentQuestID": "ismg6860_u02_q06",
+  "articleID": "u02_service_identification",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

@@ -1,0 +1,10 @@
+{
+  "articleID": "u00_authorized_scanning",
+  "videoURL": null,
+  "title": "Authorized Network Scanning",
+  "content": "A <b>network scan</b> sends selected probes to hosts and interprets their responses. Analysts use scans to discover reachable systems, identify exposed services, check configurations, and verify remediation. Because scanning creates traffic and interacts with a target, it is an active technique that requires explicit authorization.\n\nBefore scanning, confirm the approved addresses or hostnames, time window, scan intensity, permitted probe types, and contact for unexpected impact. Do not assume that a related address, redirect, or neighboring host is included. Start with the least intrusive profile that can answer the question, especially when availability is important.\n\n<b>Zenmap</b> is a graphical interface for Nmap. It helps users select or review commands and organize results, but the interface does not change the effect of the underlying scan. The exact command matters: different options can perform host discovery, service checks, version detection, or more intensive tests. Record the command, target, time, and output so another authorized analyst can reproduce the observation.\n\nInterpret results carefully. A host marked as reachable only shows that it responded to the probes used. An open port suggests that a network service accepted or responded to traffic; it does not prove a vulnerability or compromise. Filtering, firewalls, packet loss, and timing can also affect results.\n\nStop if the scan causes instability, reaches an unapproved target, or produces evidence that requires a different testing method. Escalate the new question and obtain additional permission. Responsible scanning is defined by clear purpose, controlled impact, accurate records, and conclusions that do not claim more than the responses show.",
+  "links": [
+    "Zenmap"
+  ]
+}
+

@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u02_d01",
+  "cityIndex": 4991,
+  "questIconID": "u02_decision",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u02_d01_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Scope Pressure",
+      "questDescription": "Choose how to answer pressure to expand the scan beyond its written boundaries.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> Your position is clear. Now the evidence has to withstand the consequences of it.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    }
+  ]
+}

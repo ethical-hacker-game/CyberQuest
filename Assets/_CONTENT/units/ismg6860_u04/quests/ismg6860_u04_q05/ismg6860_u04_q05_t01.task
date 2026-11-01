@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Nikto also reported a browsable backup directory. Confirm what the public page reveals without downloading any files.",
+      "taskInstructions": "Open the Web Browser. In Cyber Search, search for <b>Northbridge backups</b> and open <b>Public Backup Directory</b>.",
+      "taskQuestion": "Open the reported backup directory.",
+      "taskCompleteText": "<b>Mara Voss:</b> The directory exposes file names and metadata without authentication. Identify the entry that needs immediate review.",
+      "correctAnswer": "public/backups"
+    }
+  ],
+  "taskID": "ismg6860_u04_q05_t01",
+  "parentQuestID": "ismg6860_u04_q05",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Website"
+}

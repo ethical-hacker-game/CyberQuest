@@ -1,0 +1,80 @@
+{
+  "variants": [
+    {
+      "minigameType": "CamBlindSpotAudit",
+      "minigameHeaderText": "Staging Route Coverage Audit",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "cameraDeckSettings": {
+        "facilityId": "archive_depot",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Staging Depot",
+        "targetLabel": "EXPOSED STAGING ROUTE",
+        "decoyLabel": "COVERED APPROACH",
+        "audit": {
+          "cameraBudget": 3,
+          "passingRating": 80
+        }
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The public photo exposed a staging route that the current camera layout does not adequately cover. Use the available cameras to reduce that gap before opening.",
+      "taskInstructions": "Place and rotate up to three cameras, then select <b>RUN AUDIT</b>. Cover the six routes and critical assets well enough to reach a rating of 80 within three runs.",
+      "taskQuestion": "Protect the exposed staging route.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The revised layout covers the exposed route and critical areas."
+    },
+    {
+      "minigameType": "CamBlindSpotAudit",
+      "minigameHeaderText": "Staging Route Coverage Audit",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "cameraDeckSettings": {
+        "facilityId": "archive_depot",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Staging Depot",
+        "targetLabel": "EXPOSED STAGING ROUTE",
+        "decoyLabel": "COVERED APPROACH",
+        "audit": {
+          "cameraBudget": 3,
+          "passingRating": 80
+        }
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The photo makes an uncovered staging route easier to use. Reposition the limited camera set so the route no longer offers an obvious advantage.",
+      "taskInstructions": "Place and rotate up to three cameras, then select <b>RUN AUDIT</b>. Cover the six routes and critical assets well enough to reach a rating of 80 within three runs.",
+      "taskQuestion": "Protect the exposed staging route.",
+      "taskCompleteText": "<b>Felix Rane:</b> The obvious paths are covered, reducing the route's practical value."
+    },
+    {
+      "minigameType": "CamBlindSpotAudit",
+      "minigameHeaderText": "Staging Route Coverage Audit",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "cameraDeckSettings": {
+        "facilityId": "archive_depot",
+        "profileId": "default",
+        "integrity": -1,
+        "facilityLabel": "Harborview Staging Depot",
+        "targetLabel": "EXPOSED STAGING ROUTE",
+        "decoyLabel": "COVERED APPROACH",
+        "audit": {
+          "cameraBudget": 3,
+          "passingRating": 80
+        }
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Removing one post cannot erase every copy, and blaming Riley does not close the route. Use the existing cameras to correct the institutional gap.",
+      "taskInstructions": "Place and rotate up to three cameras, then select <b>RUN AUDIT</b>. Cover the six routes and critical assets well enough to reach a rating of 80 within three runs.",
+      "taskQuestion": "Protect the exposed staging route.",
+      "taskCompleteText": "<b>Imani Vale:</b> The coverage gap is corrected without shifting responsibility onto Riley."
+    }
+  ],
+  "taskID": "ismg6860_u03_q14_t04_camera_audit",
+  "parentQuestID": "ismg6860_u03_q14",
+  "articleID": "u03_personal_information_exposure",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

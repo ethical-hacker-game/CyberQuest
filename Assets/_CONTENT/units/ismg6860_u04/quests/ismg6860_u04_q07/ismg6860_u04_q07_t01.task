@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Compare the scanner claim with the read-only response recorded for the setup route.",
+      "taskInstructions": "Read <link=\"u04_candidate_verification\"><u>candidate and verified findings</u></link>. Run <b>nessus verify portal</b>, then read the setup finding's Output block.",
+      "taskQuestion": "Which evidence verifies the exposed setup finding?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The URL, 200 response, and matching page title corroborate the scanner claim.",
+      "answers": [
+        "A secondhand rumor about the portal passed along quietly by another department.",
+        "A scanner severity label with no affected URL or supporting request.",
+        "HTTP 200 response from /setup/install/ plus the visible setup wizard title.",
+        "A screenshot taken from an entirely different domain and its web application."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A severity label is only a claim. Check whether the route answers and identifies itself as the reported setup interface.",
+      "taskInstructions": "Read <link=\"u04_candidate_verification\"><u>candidate and verified findings</u></link>. Run <b>nessus verify portal</b>, then read the setup finding's Output block.",
+      "taskQuestion": "Which evidence verifies the exposed setup finding?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The URL, 200 response, and matching page title corroborate the scanner claim.",
+      "answers": [
+        "A secondhand rumor about the portal passed along quietly by another department.",
+        "A scanner severity label with no affected URL or supporting request.",
+        "HTTP 200 response from /setup/install/ plus the visible setup wizard title.",
+        "A screenshot taken from an entirely different domain and its web application."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A scanner label is easy to dismiss. Check whether the route answers and identifies itself as the reported setup interface.",
+      "taskInstructions": "Read <link=\"u04_candidate_verification\"><u>candidate and verified findings</u></link>. Run <b>nessus verify portal</b>, then read the setup finding's Output block.",
+      "taskQuestion": "Which evidence verifies the exposed setup finding?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The URL, 200 response, and matching page title corroborate the scanner claim.",
+      "answers": [
+        "A secondhand rumor about the portal passed along quietly by another department.",
+        "A scanner severity label with no affected URL or supporting request.",
+        "HTTP 200 response from /setup/install/ plus the visible setup wizard title.",
+        "A screenshot taken from an entirely different domain and its web application."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q07_t01",
+  "parentQuestID": "ismg6860_u04_q07",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,23 @@
+{
+  "questID": "ismg6860_u05_d03",
+  "cityIndex": 7348,
+  "questIconID": "",
+  "decisionQuest": true,
+  "taskIDs": [
+    "ismg6860_u05_d03_decision"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Decision: Assembling the Report",
+      "questDescription": "The investigation produced findings with different evidence strength, from active account telemetry to service disclosure and unaccounted configuration. Decide whether the official report preserves the full framing and delivery path.",
+      "questCompleteText": "<b>Dana Osei:</b> Your choice of emphasis and recipients is recorded and will affect the engagement follow-up.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    }
+  ]
+}

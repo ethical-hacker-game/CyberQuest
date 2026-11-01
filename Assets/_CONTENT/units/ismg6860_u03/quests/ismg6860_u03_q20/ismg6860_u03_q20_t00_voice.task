@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The response path is recorded. Next, review a <b>message timeline</b> in which ordinary volunteer conversation gradually shifts toward a badge and entrance request.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Asha Moreno:</b> Judge the sequence as a whole rather than treating warmth alone as evidence."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The response path is set. This <b>message timeline</b> matters because the sensitive request arrives only after several ordinary conversations.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> Look for the point where rapport begins serving an access objective."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The handling path is recorded. Review the <b>message timeline</b> without treating trust as foolishness; the relevant evidence is how the requester later uses it.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> Document the manipulative request while respecting the person who trusted the conversation."
+    }
+  ],
+  "taskID": "ismg6860_u03_q20_t00_voice",
+  "parentQuestID": "ismg6860_u03_q20",
+  "articleID": "u03_relationship_scams",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Riley forwarded a <b>calendar invite</b> that repeats a badge-support prompt every fifteen minutes. Preserve its organizer, reminder schedule, and embedded URL before removing it through the calendar's safe controls.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Fwd: repeating badge-support invite: Riley</b>.",
+      "taskQuestion": "Open the calendar invite metadata.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The invite metadata is preserved. Now identify who sent it and how it applies pressure.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q09_t01_calendar_invite"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> This <b>calendar invite</b> puts a repeated prompt inside Riley's schedule, where the calendar delivers it every fifteen minutes. Preserve the organizer, timing, and destination before the entry is removed.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Fwd: repeating badge-support invite: Riley</b>.",
+      "taskQuestion": "Open the calendar invite metadata.",
+      "taskCompleteText": "<b>Felix Rane:</b> The invite turns the calendar's own reminder system into a repeating delivery channel.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q09_t01_calendar_invite"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> This <b>calendar invite</b> has prompted Riley every fifteen minutes for hours. Preserve the metadata so the warning can show the organizer, timing, and destination without exposing Riley's schedule.",
+      "taskInstructions": "Open <b>Mail</b> and read <b>Fwd: repeating badge-support invite: Riley</b>.",
+      "taskQuestion": "Open the calendar invite metadata.",
+      "taskCompleteText": "<b>Imani Vale:</b> The repeating prompt is documented without publishing Riley's private calendar details.",
+      "actionType": "mail_opened",
+      "actionTag": "ismg6860_u03_q09_t01_calendar_invite"
+    }
+  ],
+  "taskID": "ismg6860_u03_q09_t01",
+  "parentQuestID": "ismg6860_u03_q09",
+  "articleID": "u03_mobile_lures",
+  "mailsOnStart": [
+    "ismg6860_u03_q09_t01_calendar_invite"
+  ],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

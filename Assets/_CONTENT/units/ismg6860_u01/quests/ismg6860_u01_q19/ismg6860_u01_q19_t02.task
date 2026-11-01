@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Family photo captions and personal blog posts alongside Brian's work role.",
+        "Aisha's public speaking event and professional CTO profile.",
+        "Tunde's company announcement naming his HR role.",
+        "Diego's professional infrastructure-lead profile."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Kwame:</b> A targeted phishing message can use personal details to sound familiar. Which item actually appears in the command results and adds that context beyond a job title?",
+      "taskInstructions": "Reopen the command shell and compare the Sherlock results if needed. Choose the observed item most useful for personalizing a deceptive message.",
+      "taskQuestion": "Which observed item creates the strongest personal-context risk?",
+      "taskCompleteText": "<b>Kwame:</b> The family photo captions and blog posts add personal context that a sender could misuse. We should verify the links, discuss privacy settings with Brian, and avoid republishing the personal material."
+    }
+  ],
+  "taskID": "ismg6860_u01_q19_t02",
+  "parentQuestID": "ismg6860_u01_q19",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

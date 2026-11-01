@@ -1,0 +1,41 @@
+{
+    "questID":  "ismg6860_u04_q12",
+    "cityIndex":  7304,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q12_t01",
+                    "ismg6860_u04_q12_t02",
+                    "ismg6860_u04_q12_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "Assessment Types: Active vs Passive",
+                         "questDescription":  "Mara Voss frames this step for {player}. Choose assessment intensity based on system fragility and scope.",
+                         "questCompleteText":  "Assessment Types: Active vs Passive complete. Scan intensity is matched to a fragile legacy service, so the assessment never causes the outage it warns about.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "Assessment Types: Active vs Passive",
+                         "questDescription":  "Felix Rane frames this step for {player}. Choose assessment intensity based on system fragility and scope.",
+                         "questCompleteText":  "Assessment Types: Active vs Passive complete. Felix notes which systems are too brittle to touch loudly, useful knowledge in the wrong hands.",
+                         "questCharacterID":  "u04_felix_rane",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "Assessment Types: Active vs Passive",
+                         "questDescription":  "Imani Vale frames this step for {player}. Choose assessment intensity based on system fragility and scope.",
+                         "questCompleteText":  "Assessment Types: Active vs Passive complete. Imani points out that a careless scan would hurt the same residents the audit is meant to protect.",
+                         "questCharacterID":  "u04_imani_vale",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

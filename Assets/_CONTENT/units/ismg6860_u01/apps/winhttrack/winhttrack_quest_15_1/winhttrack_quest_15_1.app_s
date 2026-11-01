@@ -1,0 +1,542 @@
+{
+  "appID": "winhttrack",
+  "scenarioID": "winhttrack_quest_15_1",
+  "header": "WinHTTrack Website Copier",
+  "extension": "png",
+  "size": {
+    "x": 800,
+    "y": 600
+  },
+  "margin": {
+    "x": 37.0,
+    "y": 75.0,
+    "z": 15.0,
+    "w": 45.0
+  },
+  "stages": [
+    {
+      "stageID": "stage1",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0000",
+          "delayMs": 1100
+        },
+        {
+          "imageName": "frame_0010",
+          "delayMs": 100
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage2",
+          "linkPoistion": {
+            "x": 530.0,
+            "y": 436.0
+          },
+          "linkSize": {
+            "x": 78.0,
+            "y": 25.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage2",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0012",
+          "delayMs": 600
+        },
+        {
+          "imageName": "frame_0015",
+          "delayMs": 700
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "GreenNetCopy",
+          "nextStageID": "stage3",
+          "linkPoistion": {
+            "x": 450.0,
+            "y": 89.0
+          },
+          "linkSize": {
+            "x": 120.0,
+            "y": 20.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage3",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0048",
+          "delayMs": 400
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage4",
+          "linkPoistion": {
+            "x": 530.0,
+            "y": 436.0
+          },
+          "linkSize": {
+            "x": 78.0,
+            "y": 25.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage4",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0056",
+          "delayMs": 900
+        },
+        {
+          "imageName": "frame_0060",
+          "delayMs": 600
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "https://www.greennet.org.uk",
+          "nextStageID": "stage5",
+          "linkPoistion": {
+            "x": 280.0,
+            "y": 233.0
+          },
+          "linkSize": {
+            "x": 220.0,
+            "y": 20.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage5",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0081",
+          "delayMs": 400
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage6",
+          "linkPoistion": {
+            "x": 530.0,
+            "y": 436.0
+          },
+          "linkSize": {
+            "x": 78.0,
+            "y": 25.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage6",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0087",
+          "delayMs": 600
+        },
+        {
+          "imageName": "frame_0090",
+          "delayMs": 600
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage7",
+          "linkPoistion": {
+            "x": 230.0,
+            "y": 106.0
+          },
+          "linkSize": {
+            "x": 86.0,
+            "y": 20.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage7",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0099",
+          "delayMs": 1200
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage8",
+          "linkPoistion": {
+            "x": 187.0,
+            "y": 230.0
+          },
+          "linkSize": {
+            "x": 20.0,
+            "y": 20.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage8",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0111",
+          "delayMs": 900
+        },
+        {
+          "imageName": "frame_0120",
+          "delayMs": 100
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage9",
+          "linkPoistion": {
+            "x": 307.0,
+            "y": 230.0
+          },
+          "linkSize": {
+            "x": 20.0,
+            "y": 20.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage9",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0121",
+          "delayMs": 900
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage10",
+          "linkPoistion": {
+            "x": 427.0,
+            "y": 230.0
+          },
+          "linkSize": {
+            "x": 20.0,
+            "y": 20.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage10",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0130",
+          "delayMs": 1200
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage11",
+          "linkPoistion": {
+            "x": 421.0,
+            "y": 458.0
+          },
+          "linkSize": {
+            "x": 78.0,
+            "y": 25.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage11",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0142",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0143",
+          "delayMs": 1400
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage12",
+          "linkPoistion": {
+            "x": 530.0,
+            "y": 436.0
+          },
+          "linkSize": {
+            "x": 78.0,
+            "y": 25.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage12",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0170",
+          "delayMs": 1200
+        },
+        {
+          "imageName": "frame_0182",
+          "delayMs": 100
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage13",
+          "linkPoistion": {
+            "x": 530.0,
+            "y": 436.0
+          },
+          "linkSize": {
+            "x": 78.0,
+            "y": 25.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage13",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0183",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0184",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0185",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0186",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0187",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0188",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0189",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0190",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0191",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0192",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0193",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0194",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0195",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0196",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0197",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0198",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0199",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0200",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0201",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0202",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0203",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0204",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0205",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0206",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0207",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0208",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0209",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0210",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0211",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0212",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0213",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0214",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0215",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0216",
+          "delayMs": 200
+        },
+        {
+          "imageName": "frame_0218",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0219",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0220",
+          "delayMs": 100
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "stage14",
+          "linkPoistion": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "linkSize": {
+            "x": 800.0,
+            "y": 600.0
+          }
+        }
+      ]
+    },
+    {
+      "stageID": "stage14",
+      "customHeader": "",
+      "frames": [
+        {
+          "imageName": "frame_0255",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0256",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0257",
+          "delayMs": 100
+        },
+        {
+          "imageName": "frame_0258",
+          "delayMs": 900
+        },
+        {
+          "imageName": "frame_0267",
+          "delayMs": 200
+        }
+      ],
+      "links": [
+        {
+          "textToInput": "",
+          "nextStageID": "exit",
+          "linkPoistion": {
+            "x": 265.0,
+            "y": 260.0
+          },
+          "linkSize": {
+            "x": 136.0,
+            "y": 25.0
+          }
+        }
+      ]
+    }
+  ]
+}

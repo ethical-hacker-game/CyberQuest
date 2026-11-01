@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> The durable fix must remove unnecessary reachability between the portal app server and file-share-02. Choose the control that breaks this path.",
+      "taskInstructions": "Read <link=\"u04_portal_smb_path\"><u>the confirmed portal-to-SMB path</u></link>, then select the remediation that addresses it.",
+      "taskQuestion": "What remediation reduces internal movement risk?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Segmentation, restricted SMB access, and least privilege remove the unnecessary route.",
+      "answers": [
+        "Move the internal file share directly out onto the open public internet.",
+        "Grant the portal application server full domain administrator-level rights.",
+        "Segment the app server, restrict SMB access, and enforce least privilege.",
+        "Disable all system and security event logging across the entire network."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Removing reach makes the pathway useless even if another weakness appears later. Choose the control that closes the SMB route.",
+      "taskInstructions": "Read <link=\"u04_portal_smb_path\"><u>the confirmed portal-to-SMB path</u></link>, then select the remediation that addresses it.",
+      "taskQuestion": "What remediation reduces internal movement risk?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Restricting TCP/445 and the application identity removes the movement opportunity.",
+      "answers": [
+        "Move the internal file share directly out onto the open public internet.",
+        "Grant the portal application server full domain administrator-level rights.",
+        "Segment the app server, restrict SMB access, and enforce least privilege.",
+        "Disable all system and security event logging across the entire network."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Fixing one vulnerability while leaving the unnecessary SMB route intact preserves the pathway. Choose the control that removes the relationship itself.",
+      "taskInstructions": "Read <link=\"u04_portal_smb_path\"><u>the confirmed portal-to-SMB path</u></link>, then select the remediation that addresses it.",
+      "taskQuestion": "What remediation reduces internal movement risk?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Segmentation and least privilege protect the internal host without claiming unsupported impact.",
+      "answers": [
+        "Move the internal file share directly out onto the open public internet.",
+        "Grant the portal application server full domain administrator-level rights.",
+        "Segment the app server, restrict SMB access, and enforce least privilege.",
+        "Disable all system and security event logging across the entire network."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q19_t03",
+  "parentQuestID": "ismg6860_u04_q19",
+  "articleID": "u04_portal_smb_path",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

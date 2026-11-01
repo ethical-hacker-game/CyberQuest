@@ -1,0 +1,27 @@
+{
+  "questID": "ismg6860_u05_q01",
+  "cityIndex": 7117,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q01_t00_intro",
+    "ismg6860_u05_q01_t01",
+    "ismg6860_u05_q01_t02_app",
+    "ismg6860_u05_q01_t03",
+    "ismg6860_u05_q01_t04"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "Enumeration Concepts",
+      "questDescription": "Dana Osei has authorized read-only enumeration across the Halloway plant network. Confirm the scope, review the service scan, and identify the strongest lead.",
+      "questCompleteText": "<b>Dana Osei:</b> The scope is clear, and FORGE-HIST01 gives us the strongest lead for service-by-service enumeration.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": "zenmap_halloway_services"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u01_q03_t01_start_samira-imagesearch",
+  "parentTaskID": "ismg6860_u01_q03_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Samira Linton <samira.linton@cyberworld.edu>",
+      "subject": "NexaCore Public Image Search",
+      "shortSummary": "Authorized search scope and queries for the exposed NexaCore images.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Hi {player},\r\n\r\nTaylor authorized a public-source check after NexaCore recorded off-hours access to Q4NexList. Use Cyber Search and stay within publicly indexed results.\r\n\r\nStart with <b>Q4NexList filetype:jpg</b>. If you confirm the first image, broaden the search with <b>NexaCore filetype:jpg</b> to check for related exports instead of guessing directory paths.\r\n\r\nRecord the source URL and only the details needed to describe the exposure. Do not redistribute the images or treat their contents as proof of who published them.\r\n\r\nSamira",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "variants": [
+    {
+      "minigameType": "TraceIntruder",
+      "minigameHeaderText": "svc_bridgeworks Footprint",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "traceSettings": {
+        "nodes": [
+          {
+            "id": "bw-endpoint",
+            "label": "BW-REMOTE",
+            "role": "Entry",
+            "detail": "External session source at 198.51.100.77; ownership unverified",
+            "position": {
+              "x": 0.06,
+              "y": 0.52
+            }
+          },
+          {
+            "id": "edge-tunnel",
+            "label": "HAL-EDGE01",
+            "role": "Pivot",
+            "detail": "IKE responder exposing the unaccounted bridgeworks-site identity",
+            "position": {
+              "x": 0.27,
+              "y": 0.62
+            }
+          },
+          {
+            "id": "core-switch",
+            "label": "HAL-CORE-SW",
+            "role": "Pivot",
+            "detail": "Core stack exposing SNMP metadata with a cleartext community string",
+            "position": {
+              "x": 0.48,
+              "y": 0.74
+            }
+          },
+          {
+            "id": "dc01",
+            "label": "HAL-DC01",
+            "role": "Pivot",
+            "detail": "Directory holding the enabled, non-expiring svc_bridgeworks account",
+            "position": {
+              "x": 0.5,
+              "y": 0.34
+            }
+          },
+          {
+            "id": "historian",
+            "label": "FORGE-HIST01",
+            "role": "Target",
+            "detail": "Historian reporting a svc_bridgeworks session sourced from 198.51.100.77",
+            "position": {
+              "x": 0.93,
+              "y": 0.55
+            }
+          },
+          {
+            "id": "voice",
+            "label": "HAL-VOICE01",
+            "role": "Decoy",
+            "detail": "VoIP gateway on a separate segment with no path to the historian",
+            "position": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "links": [
+          {
+            "fromId": "bw-endpoint",
+            "toId": "historian",
+            "attackerCanTraverse": true,
+            "evidence": "The Unix session record shows svc_bridgeworks on FORGE-HIST01 with source 198.51.100.77.",
+            "isContainmentPoint": true
+          },
+          {
+            "fromId": "bw-endpoint",
+            "toId": "edge-tunnel",
+            "attackerCanTraverse": false,
+            "evidence": "The external address and bridgeworks-site identity are separate observations; no tunnel traversal was tested.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "edge-tunnel",
+            "toId": "core-switch",
+            "attackerCanTraverse": false,
+            "evidence": "The IKE response exposes configuration metadata but does not prove an established route to the core switch.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "edge-tunnel",
+            "toId": "dc01",
+            "attackerCanTraverse": false,
+            "evidence": "No tested evidence links the IKE responder to directory access.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "core-switch",
+            "toId": "historian",
+            "attackerCanTraverse": false,
+            "evidence": "The maintenance trunk is configured, but this assessment did not test traversal through it.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "dc01",
+            "toId": "historian",
+            "attackerCanTraverse": false,
+            "evidence": "The directory account and historian session share an identity, but the authentication path was not tested.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "core-switch",
+            "toId": "voice",
+            "attackerCanTraverse": false,
+            "evidence": "The VoIP finding is separate and no route from the core switch was tested.",
+            "isContainmentPoint": false
+          }
+        ],
+        "attackerStepEvery": 5
+      },
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Trace only the relationship the logs establish: a svc_bridgeworks session on <b>FORGE-HIST01</b> sourced from 198.51.100.77. Treat the IKE, directory, SNMP, and VoIP observations as context unless a tested link connects them.",
+      "taskInstructions": "Trace the single evidence-backed route to the historian. Links marked as untested context cannot be traversed. Once you reach the target, cut the verified session path to isolate it.",
+      "taskQuestion": "Trace and isolate the verified external-source session path.",
+      "taskCompleteText": "<b>Dana Osei:</b> The session record directly connects 198.51.100.77 to svc_bridgeworks on the historian. No multi-hop tunnel route was demonstrated."
+    },
+    {
+      "minigameType": "TraceIntruder",
+      "minigameHeaderText": "svc_bridgeworks Footprint",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "traceSettings": {
+        "nodes": [
+          {
+            "id": "bw-endpoint",
+            "label": "BW-REMOTE",
+            "role": "Entry",
+            "detail": "External session source at 198.51.100.77; ownership unverified",
+            "position": {
+              "x": 0.06,
+              "y": 0.52
+            }
+          },
+          {
+            "id": "edge-tunnel",
+            "label": "HAL-EDGE01",
+            "role": "Pivot",
+            "detail": "IKE responder exposing the unaccounted bridgeworks-site identity",
+            "position": {
+              "x": 0.27,
+              "y": 0.62
+            }
+          },
+          {
+            "id": "core-switch",
+            "label": "HAL-CORE-SW",
+            "role": "Pivot",
+            "detail": "Core stack exposing SNMP metadata with a cleartext community string",
+            "position": {
+              "x": 0.48,
+              "y": 0.74
+            }
+          },
+          {
+            "id": "dc01",
+            "label": "HAL-DC01",
+            "role": "Pivot",
+            "detail": "Directory holding the enabled, non-expiring svc_bridgeworks account",
+            "position": {
+              "x": 0.5,
+              "y": 0.34
+            }
+          },
+          {
+            "id": "historian",
+            "label": "FORGE-HIST01",
+            "role": "Target",
+            "detail": "Historian reporting a svc_bridgeworks session sourced from 198.51.100.77",
+            "position": {
+              "x": 0.93,
+              "y": 0.55
+            }
+          },
+          {
+            "id": "voice",
+            "label": "HAL-VOICE01",
+            "role": "Decoy",
+            "detail": "VoIP gateway on a separate segment with no path to the historian",
+            "position": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "links": [
+          {
+            "fromId": "bw-endpoint",
+            "toId": "historian",
+            "attackerCanTraverse": true,
+            "evidence": "The Unix session record shows svc_bridgeworks on FORGE-HIST01 with source 198.51.100.77.",
+            "isContainmentPoint": true
+          },
+          {
+            "fromId": "bw-endpoint",
+            "toId": "edge-tunnel",
+            "attackerCanTraverse": false,
+            "evidence": "The external address and bridgeworks-site identity are separate observations; no tunnel traversal was tested.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "edge-tunnel",
+            "toId": "core-switch",
+            "attackerCanTraverse": false,
+            "evidence": "The IKE response exposes configuration metadata but does not prove an established route to the core switch.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "edge-tunnel",
+            "toId": "dc01",
+            "attackerCanTraverse": false,
+            "evidence": "No tested evidence links the IKE responder to directory access.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "core-switch",
+            "toId": "historian",
+            "attackerCanTraverse": false,
+            "evidence": "The maintenance trunk is configured, but this assessment did not test traversal through it.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "dc01",
+            "toId": "historian",
+            "attackerCanTraverse": false,
+            "evidence": "The directory account and historian session share an identity, but the authentication path was not tested.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "core-switch",
+            "toId": "voice",
+            "attackerCanTraverse": false,
+            "evidence": "The VoIP finding is separate and no route from the core switch was tested.",
+            "isContainmentPoint": false
+          }
+        ],
+        "attackerStepEvery": 5
+      },
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> A defensible map distinguishes a logged session from an attractive theory. Trace the external source directly to the historian and leave every untested hop out of the route.",
+      "taskInstructions": "Trace the single evidence-backed route to the historian. Links marked as untested context cannot be traversed. Once you reach the target, cut the verified session path to isolate it.",
+      "taskQuestion": "Trace and isolate the verified external-source session path.",
+      "taskCompleteText": "<b>Reyes Calloway:</b> The Unix record supports one direct session relationship. The rest is context until somebody tests it."
+    },
+    {
+      "minigameType": "TraceIntruder",
+      "minigameHeaderText": "svc_bridgeworks Footprint",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "traceSettings": {
+        "nodes": [
+          {
+            "id": "bw-endpoint",
+            "label": "BW-REMOTE",
+            "role": "Entry",
+            "detail": "External session source at 198.51.100.77; ownership unverified",
+            "position": {
+              "x": 0.06,
+              "y": 0.52
+            }
+          },
+          {
+            "id": "edge-tunnel",
+            "label": "HAL-EDGE01",
+            "role": "Pivot",
+            "detail": "IKE responder exposing the unaccounted bridgeworks-site identity",
+            "position": {
+              "x": 0.27,
+              "y": 0.62
+            }
+          },
+          {
+            "id": "core-switch",
+            "label": "HAL-CORE-SW",
+            "role": "Pivot",
+            "detail": "Core stack exposing SNMP metadata with a cleartext community string",
+            "position": {
+              "x": 0.48,
+              "y": 0.74
+            }
+          },
+          {
+            "id": "dc01",
+            "label": "HAL-DC01",
+            "role": "Pivot",
+            "detail": "Directory holding the enabled, non-expiring svc_bridgeworks account",
+            "position": {
+              "x": 0.5,
+              "y": 0.34
+            }
+          },
+          {
+            "id": "historian",
+            "label": "FORGE-HIST01",
+            "role": "Target",
+            "detail": "Historian reporting a svc_bridgeworks session sourced from 198.51.100.77",
+            "position": {
+              "x": 0.93,
+              "y": 0.55
+            }
+          },
+          {
+            "id": "voice",
+            "label": "HAL-VOICE01",
+            "role": "Decoy",
+            "detail": "VoIP gateway on a separate segment with no path to the historian",
+            "position": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "links": [
+          {
+            "fromId": "bw-endpoint",
+            "toId": "historian",
+            "attackerCanTraverse": true,
+            "evidence": "The Unix session record shows svc_bridgeworks on FORGE-HIST01 with source 198.51.100.77.",
+            "isContainmentPoint": true
+          },
+          {
+            "fromId": "bw-endpoint",
+            "toId": "edge-tunnel",
+            "attackerCanTraverse": false,
+            "evidence": "The external address and bridgeworks-site identity are separate observations; no tunnel traversal was tested.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "edge-tunnel",
+            "toId": "core-switch",
+            "attackerCanTraverse": false,
+            "evidence": "The IKE response exposes configuration metadata but does not prove an established route to the core switch.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "edge-tunnel",
+            "toId": "dc01",
+            "attackerCanTraverse": false,
+            "evidence": "No tested evidence links the IKE responder to directory access.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "core-switch",
+            "toId": "historian",
+            "attackerCanTraverse": false,
+            "evidence": "The maintenance trunk is configured, but this assessment did not test traversal through it.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "dc01",
+            "toId": "historian",
+            "attackerCanTraverse": false,
+            "evidence": "The directory account and historian session share an identity, but the authentication path was not tested.",
+            "isContainmentPoint": false
+          },
+          {
+            "fromId": "core-switch",
+            "toId": "voice",
+            "attackerCanTraverse": false,
+            "evidence": "The VoIP finding is separate and no route from the core switch was tested.",
+            "isContainmentPoint": false
+          }
+        ],
+        "attackerStepEvery": 5
+      },
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Put the verified session on one page, but do not connect it through systems the assessment never traversed. Precision makes the finding harder to dismiss.",
+      "taskInstructions": "Trace the single evidence-backed route to the historian. Links marked as untested context cannot be traversed. Once you reach the target, cut the verified session path to isolate it.",
+      "taskQuestion": "Trace and isolate the verified external-source session path.",
+      "taskCompleteText": "<b>Priya Nandan:</b> The map shows exactly one verified external-source session path and labels the other relationships as untested."
+    }
+  ],
+  "taskID": "ismg6860_u05_q16_t02_trace",
+  "parentQuestID": "ismg6860_u05_q16",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

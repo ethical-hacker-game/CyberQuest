@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Branding can be copied, and a long permission list is not proof by itself. Identify the finding that most strongly justifies blocking this unverified badge helper pending review.",
+      "taskInstructions": "Compare the app's stated purpose with the permissions shown on its listing.",
+      "taskQuestion": "Which finding most strongly justifies blocking the app pending review?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. SMS, contacts, and overlay access do not fit a simple badge helper, especially from an unverified source.",
+      "answers": [
+        "It requests SMS, contacts, and screen-overlay access.",
+        "The listing copies LanternPass colors and badge language.",
+        "The page shows reviews that make the helper look trusted.",
+        "The app name sounds useful during a badge problem."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Copied branding is weak evidence. The stronger finding is a capability that exceeds what a badge helper needs and creates obvious leverage over the device.",
+      "taskInstructions": "Compare the app's stated purpose with the permissions shown on its listing.",
+      "taskQuestion": "Which finding most strongly justifies blocking the app pending review?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. SMS, contacts, and overlay access create far more capability than a badge helper requires.",
+      "answers": [
+        "The listing copies LanternPass colors and badge language.",
+        "It requests SMS, contacts, and screen-overlay access.",
+        "The page shows reviews that make the helper look trusted.",
+        "The app name sounds useful during a badge problem."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> A warning should cite a concrete mismatch, not call an app malicious because it looks unfamiliar. Choose the access request that a badge helper cannot reasonably explain.",
+      "taskInstructions": "Compare the app's stated purpose with the permissions shown on its listing.",
+      "taskQuestion": "Which finding most strongly justifies blocking the app pending review?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. SMS, contacts, and overlay access are specific, verifiable reasons to block this unverified helper.",
+      "answers": [
+        "The listing copies LanternPass colors and badge language.",
+        "The page shows reviews that make the helper look trusted.",
+        "It requests SMS, contacts, and screen-overlay access.",
+        "The app name sounds useful during a badge problem."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u03_q05_t03",
+  "parentQuestID": "ismg6860_u03_q05",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

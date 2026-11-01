@@ -1,0 +1,30 @@
+{
+  "unitID": "ismg6860_u02",
+  "places": [
+    {
+      "cityIndex": 4988,
+      "action": "ShowNotificationWindow",
+      "labelText": "Asterlink Transit SOC",
+      "extraText": "Authorized scan window for the night-service launch.",
+      "poiIconID": "u02_station",
+      "devNote": "Opening location for Unit 02."
+    },
+    {
+      "cityIndex": 4996,
+      "action": "ShowNotificationWindow",
+      "labelText": "ECHO-73",
+      "extraText": "Undocumented vendor diagnostics host at 10.42.18.73.",
+      "poiIconID": "u02_vendor",
+      "devNote": "Throughline host."
+    },
+    {
+      "cityIndex": 5003,
+      "action": "ShowNotificationWindow",
+      "labelText": "DMZ Edge Firewall",
+      "extraText": "FW-2871 logs scan probes but does not explain the internal ticketing flow.",
+      "poiIconID": "u02_alert",
+      "devNote": "Final act monitoring context."
+    }
+  ],
+  "lines": []
+}

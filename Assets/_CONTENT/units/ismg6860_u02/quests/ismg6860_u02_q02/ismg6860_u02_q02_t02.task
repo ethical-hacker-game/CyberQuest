@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Where a scan starts matters as much as where it lands. The launch record must identify the approved source host, not only the destination range.",
+      "taskInstructions": "Run <b>netstat -rn</b> in the terminal and type the jump host address shown below the route table.",
+      "taskQuestion": "What is the jump host address?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. 10.42.18.10 is the approved jump host.",
+      "correctAnswers": [
+        "10.42.18.10"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u02_q02_t02",
+  "parentQuestID": "ismg6860_u02_q02",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

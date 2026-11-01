@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> The report includes an old service version. A banner is a clue, but installed patches and network access determine what it means.",
+      "taskInstructions": "",
+      "taskQuestion": "What should we do before treating an old version banner as a confirmed vulnerability?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. A package can include security fixes without changing its upstream version. Verify the installation and exposure before making a claim.",
+      "answers": [
+        "Mark it exploitable based only on its version number.",
+        "Ignore it because banners cannot provide useful evidence.",
+        "Attempt an exploit before checking the installed package.",
+        "Verify the installed package, patch status, and network exposure."
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "taskID": "ismg6860_u04_q03_t01",
+  "parentQuestID": "ismg6860_u04_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

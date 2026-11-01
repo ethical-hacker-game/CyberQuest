@@ -1,0 +1,1975 @@
+fileFormatVersion: 2
+guid: 96e39174998be8846b5bdbfb77c02f78
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: achievments_ph_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984c11d342955f544ae416d0dbc2408a
+      internalID: -1244434216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39475450301e63149b6eed8dde7c739a
+      internalID: 1757498196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26df926318bdd7641952e58cc0009441
+      internalID: -670961830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_3
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dbc563ab54d2947b090302deefb69f
+      internalID: -1305699063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c9277697d41604c8a1d03e7ad84db0
+      internalID: -1846850211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_5
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2d1bb4c60c0084eb9a6a7b926626c8
+      internalID: -174070013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_6
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e352d44d44e0e4bb706828881316da
+      internalID: 1071250454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_7
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a197826cc42e22c46a9b7b1676e7be80
+      internalID: -570767417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_8
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d46390854827c49b360d016de46faa
+      internalID: 1631973340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_9
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebd36f4fe2f1cb4e8debed81c6b38be
+      internalID: -1833741776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_10
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ace09e10ea1ef41ba9bb7f46ed9995
+      internalID: 1242235239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_11
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 876
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0f253ed681d5042a1901e5766b5cc7
+      internalID: 883982562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8451383147cce234ebd43a8beb96c5ce
+      internalID: 1475594196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_13
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210ebf472f3c8084692631410c9a7ff0
+      internalID: 1430423830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_14
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc2921c7ba12a645bf23dd568ad6f76
+      internalID: -24000624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_15
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3fb9193ca392b4e87090a93533c631
+      internalID: 1116418641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b235b40299d68b94997deba759d3e09f
+      internalID: -562560530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_17
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa6134d4442c424aa6b8df84b5b1854
+      internalID: -1036562945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_18
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f5c281e01c24f4cbdcd48d03821705
+      internalID: 1263727552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_19
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cddcb50d0695e0479df83ac8498fc3e
+      internalID: 144963147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_20
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45f26a2add28a74fa458f5d7535ce19
+      internalID: -1166393732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_21
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94121b02d52fab469069af00d51b4b1
+      internalID: 694392570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_22
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994e4e10be3b813408bda70018e26e5a
+      internalID: 1377456095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_23
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 734
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a306b46ab6abcdc46a4ea86e8e2c621e
+      internalID: -152218897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_24
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3cb716f701b9c4ea92a1cc849d6fb4
+      internalID: 1137036047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_25
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f5303b10b8d2b46b326153ded7ee48
+      internalID: -1804428342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_26
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e8e185c278339408586007e9706183
+      internalID: -1880542473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_27
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c4947f340dcd54abf0454dd6970fc6
+      internalID: 208909865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_28
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8b1462f3dfae74d8e92f4f650ca8bc
+      internalID: 1681325858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_29
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3564d6141b509e549830016361852259
+      internalID: 57494413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_30
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdfcd35e1d33384eb11e08e9024219a
+      internalID: 1928441465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_31
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44431ef01ec9af34d946399cb589ef09
+      internalID: -1015520953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_32
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242ea6bfc3d305c429b8b4452299a2a2
+      internalID: 1366873774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_33
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6dbed6b45632146988476aba9d719f
+      internalID: -673660068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_34
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541fd13b3a3a088498b1178231904419
+      internalID: 623377284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_35
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 592
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca484178a8d3b9345879d06e18573dad
+      internalID: 926716414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_36
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8eea6ab503f1047a0daf67a143b2fa
+      internalID: 1927067921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_37
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7171ed76e029fb041b805af7b9ea72f9
+      internalID: 469953931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_38
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6253dff56b79cac42ac98a7819b925b3
+      internalID: 288088451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_39
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e8cf1551311244eae1b050d1336677
+      internalID: 123925342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_40
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe9b4ae801671845846c7d6a51a3617
+      internalID: -1499153753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_41
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33c4f9fd45c93a4790f1e72c3328929
+      internalID: -825218559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_42
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adacaa2462a899e4783ea593efba6cdb
+      internalID: 101043385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_43
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df42796fa9364343819156a0c70da39
+      internalID: 1361822901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_44
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8380beeaeb841744ab534d9b8ba25b70
+      internalID: -256815044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_45
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f591643eeed5e4789e541575206471
+      internalID: -997038007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_46
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2594d9f35da7d2844b8bb914422db55e
+      internalID: 341887935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_47
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 450
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d29759ede1b6d4c82d1f2a4fad8f55
+      internalID: -792633893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_48
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44b2ec2c54b3a04ea95cfaff2e9f710
+      internalID: 1794428586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_49
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa499d4eb68d3604496945cb326b1f74
+      internalID: -2061304562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_50
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6c73aa6242ed8419256f292aa75269
+      internalID: 422055184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_51
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb8087b118f3634a8aa07a4c9365268
+      internalID: 382580441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_52
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7050ea7c3de8a434eb580934e544ebcd
+      internalID: -2137229440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_53
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad22d74b4def1a4fa04cab6dcf863b1
+      internalID: 961385444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_54
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67f6b2526aad4749b612b99d7f5b89a
+      internalID: -1201516850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_55
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58e8b1e921962e4cb1369c8e3831205
+      internalID: -942000025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_56
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be064b57242416468bd0ae4cee3088d
+      internalID: 926400734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_57
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697e41b5848236642baf9d870531f340
+      internalID: -1233071060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_58
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e580fba20984cab4d92f7954ee770091
+      internalID: 653142409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_59
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 308
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e210494f7b8cb841934645efdb8b702
+      internalID: -1896335052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_60
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62b8cdd9ccc58849b55401cf76f47b4
+      internalID: 155694176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_61
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7d31164ac404849affa5cc3bef8e4b
+      internalID: -736588741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_62
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c39e7beb8506747897565e2dc785b8
+      internalID: -1663334190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_63
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d682ab389d5c94da0d1f328f120f43
+      internalID: 1514629566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_64
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0eeb35d1211f704c9935ddd27f19141
+      internalID: -1093502413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_65
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d6e0eb98b9f354eb277db515750d0b
+      internalID: -1828167777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_66
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d69ff20ea22f14c867260919e37899
+      internalID: -1560553813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_67
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6258d528cde270e4995edac6d0cccd1d
+      internalID: -70872966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_68
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d38fb42cce3d504cb3a763d6ed29730
+      internalID: -2049317086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_69
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296886e0845f30f4b81166c69b5abdde
+      internalID: -995116476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_70
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7395f896f2446049930c3076e578e1f
+      internalID: 1631652591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_71
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 166
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f18f0bae5b9042429d931e0c5d55205
+      internalID: -638819763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_72
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63512bc333713fb439aa9ce05d88666a
+      internalID: -317476825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_73
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e335d060140e4b04d8f1ffbdb9714e10
+      internalID: -2144398555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_74
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c5a02fa01e3e242830b63e156c5881
+      internalID: -878838780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_75
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bdccdb70f38eb4dbee76882ae85894
+      internalID: -1057593057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_76
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a64fa7a134c0e04fb06d7eba7fbe3e5
+      internalID: -1255891051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_77
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6a7c4f2c297a54ca6b2e124ca7bc7c
+      internalID: -1603550930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_78
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8752ac79f3871f84e8acba99afe189c1
+      internalID: -2080608757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_79
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32eafa966eed8e449434202af3645bf
+      internalID: -655270719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_80
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7293482b2a8d11b47939c8fb70e7c241
+      internalID: -751880211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_81
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cff42c7d580b0c42984828302eaf0ad
+      internalID: 941662075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_82
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c48e4bf7c8e4f4993c8988b9649b7b
+      internalID: 1464110413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: achievments_ph_83
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 24
+        width: 119
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ab373ee1ebf0941b59af972aa3cc35
+      internalID: 1876844760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 612da967fa6283841a0ef787fdc543b4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      achievments_ph_0: -1244434216
+      achievments_ph_1: 1757498196
+      achievments_ph_10: 1242235239
+      achievments_ph_11: 883982562
+      achievments_ph_12: 1475594196
+      achievments_ph_13: 1430423830
+      achievments_ph_14: -24000624
+      achievments_ph_15: 1116418641
+      achievments_ph_16: -562560530
+      achievments_ph_17: -1036562945
+      achievments_ph_18: 1263727552
+      achievments_ph_19: 144963147
+      achievments_ph_2: -670961830
+      achievments_ph_20: -1166393732
+      achievments_ph_21: 694392570
+      achievments_ph_22: 1377456095
+      achievments_ph_23: -152218897
+      achievments_ph_24: 1137036047
+      achievments_ph_25: -1804428342
+      achievments_ph_26: -1880542473
+      achievments_ph_27: 208909865
+      achievments_ph_28: 1681325858
+      achievments_ph_29: 57494413
+      achievments_ph_3: -1305699063
+      achievments_ph_30: 1928441465
+      achievments_ph_31: -1015520953
+      achievments_ph_32: 1366873774
+      achievments_ph_33: -673660068
+      achievments_ph_34: 623377284
+      achievments_ph_35: 926716414
+      achievments_ph_36: 1927067921
+      achievments_ph_37: 469953931
+      achievments_ph_38: 288088451
+      achievments_ph_39: 123925342
+      achievments_ph_4: -1846850211
+      achievments_ph_40: -1499153753
+      achievments_ph_41: -825218559
+      achievments_ph_42: 101043385
+      achievments_ph_43: 1361822901
+      achievments_ph_44: -256815044
+      achievments_ph_45: -997038007
+      achievments_ph_46: 341887935
+      achievments_ph_47: -792633893
+      achievments_ph_48: 1794428586
+      achievments_ph_49: -2061304562
+      achievments_ph_5: -174070013
+      achievments_ph_50: 422055184
+      achievments_ph_51: 382580441
+      achievments_ph_52: -2137229440
+      achievments_ph_53: 961385444
+      achievments_ph_54: -1201516850
+      achievments_ph_55: -942000025
+      achievments_ph_56: 926400734
+      achievments_ph_57: -1233071060
+      achievments_ph_58: 653142409
+      achievments_ph_59: -1896335052
+      achievments_ph_6: 1071250454
+      achievments_ph_60: 155694176
+      achievments_ph_61: -736588741
+      achievments_ph_62: -1663334190
+      achievments_ph_63: 1514629566
+      achievments_ph_64: -1093502413
+      achievments_ph_65: -1828167777
+      achievments_ph_66: -1560553813
+      achievments_ph_67: -70872966
+      achievments_ph_68: -2049317086
+      achievments_ph_69: -995116476
+      achievments_ph_7: -570767417
+      achievments_ph_70: 1631652591
+      achievments_ph_71: -638819763
+      achievments_ph_72: -317476825
+      achievments_ph_73: -2144398555
+      achievments_ph_74: -878838780
+      achievments_ph_75: -1057593057
+      achievments_ph_76: -1255891051
+      achievments_ph_77: -1603550930
+      achievments_ph_78: -2080608757
+      achievments_ph_79: -655270719
+      achievments_ph_8: 1631973340
+      achievments_ph_80: -751880211
+      achievments_ph_81: 941662075
+      achievments_ph_82: 1464110413
+      achievments_ph_83: 1876844760
+      achievments_ph_9: -1833741776
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

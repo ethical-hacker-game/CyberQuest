@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> Harborview Expo opens tomorrow, and staff are already reporting badge warnings, support calls, unwanted calendar invites, and suspicious app links. Each message looks minor alone, but together they may be a coordinated <b>social engineering</b> campaign.\n\nPreserve what you find, slow the pressure down, and never blame the people being targeted. Start with the incident intake, {player}.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Asha Moreno:</b> Begin with the intake. It puts the first reports side by side."
+    }
+  ],
+  "taskID": "ismg6860_u03_q01_t00_intro",
+  "parentQuestID": "ismg6860_u03_q01",
+  "articleID": "u03_social_patterns",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9200becf81f011245ac74a7f1688e6cd, type: 3}
+  m_Name: BuildProfile_WinEditor
+  m_EditorClassIdentifier: 
+  buildProfileType: 2
+  gameName: CyberQuest
+  outputFolder: Builds/WinEditor
+  targetPlatform: 19
+  buildOptions: 9
+  keepRepositoryFiles: 1
+  scenes:
+  - {fileID: 102900000, guid: f791c42e018d95f439855a2f991ee33f, type: 3}
+  - {fileID: 102900000, guid: 45447b971f4e9444d8cad574a69f63f4, type: 3}

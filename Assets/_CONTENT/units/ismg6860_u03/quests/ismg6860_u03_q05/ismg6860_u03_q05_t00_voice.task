@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> The campaign is moving from messages onto staff phones through fake apps, hijacked numbers, and nearby devices. Stay with the evidence and protect the people being targeted. First, investigate an app distributed outside Harborview's approved store.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Asha Moreno:</b> Start with the app's source, publisher, and requested permissions."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The campaign is moving from messages onto devices through apps, SIM cards, and proximity. Map what the operators request and where they distribute it. Start with an app outside the approved store.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> Start with the app's source, publisher, and requested permissions."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The campaign is reaching volunteers through apps, phone numbers, and nearby devices. Build a warning from facts people can verify. Start with an app distributed outside the approved store.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> Start with the app's source, publisher, and requested permissions."
+    }
+  ],
+  "taskID": "ismg6860_u03_q05_t00_voice",
+  "parentQuestID": "ismg6860_u03_q05",
+  "articleID": "u03_social_patterns",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

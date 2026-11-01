@@ -1,0 +1,68 @@
+using System.IO;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+
+public static class CyberQuestLocalMapRestoration
+{
+    [MenuItem("Tools/CyberQuest/Rebuild Map Resources in Open Scenes")]
+    private static void RebuildOpenScenes()
+    {
+        string projectRoot = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
+        if (!File.Exists(Path.Combine(projectRoot, ".cyberquest-local-project.json")))
+        {
+            Debug.LogError("Map resource restoration is restricted to a prepared local working project.");
+            return;
+        }
+
+        const string maskPath = "Assets/_ASSETS/WorldPoliticalMapGlobeEdition/Resources/Textures/Earth/EarthMask.png";
+        Texture2D gridMask = AssetDatabase.LoadAssetAtPath<Texture2D>(maskPath);
+        if (gridMask == null || !gridMask.isReadable)
+        {
+            Debug.LogError($"Restore the licensed globe mask at {maskPath}, enable Read/Write in its "
+                + "Texture Import Settings and run restoration again. No scenes were rebuilt.");
+            return;
+        }
+
+        int restored = 0;
+        foreach (WPM.WorldMapGlobe globe in Resources.FindObjectsOfTypeAll<WPM.WorldMapGlobe>())
+        {
+            if (!globe.gameObject.scene.IsValid() || !globe.gameObject.scene.isLoaded
+                || !globe.gameObject.activeInHierarchy)
+                continue;
+
+            globe.hexaGridMask = gridMask;
+            globe.ReloadData();
+            globe.Redraw(true);
+            RepairMeshColliders(globe.gameObject);
+            EditorSceneManager.MarkSceneDirty(globe.gameObject.scene);
+            restored++;
+        }
+
+        foreach (WorldMapStrategyKit.WMSK map in Resources.FindObjectsOfTypeAll<WorldMapStrategyKit.WMSK>())
+        {
+            if (!map.gameObject.scene.IsValid() || !map.gameObject.scene.isLoaded
+                || !map.gameObject.activeInHierarchy)
+                continue;
+
+            map.ReloadData();
+            map.RedrawNow(true);
+            RepairMeshColliders(map.gameObject);
+            EditorSceneManager.MarkSceneDirty(map.gameObject.scene);
+            restored++;
+        }
+
+        Debug.Log($"Rebuilt {restored} map components in open local scenes. Review and save the local scenes. "
+            + "Generated vendor resources must remain outside the public source tree.");
+    }
+
+    private static void RepairMeshColliders(GameObject root)
+    {
+        foreach (MeshCollider collider in root.GetComponentsInChildren<MeshCollider>(true))
+        {
+            MeshFilter filter = collider.GetComponent<MeshFilter>();
+            if (collider.sharedMesh == null && filter != null && filter.sharedMesh != null)
+                collider.sharedMesh = filter.sharedMesh;
+        }
+    }
+}

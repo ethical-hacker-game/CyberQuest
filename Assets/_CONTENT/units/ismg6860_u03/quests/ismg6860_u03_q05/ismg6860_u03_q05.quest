@@ -1,0 +1,44 @@
+{
+  "questID": "ismg6860_u03_q05",
+  "cityIndex": 5135,
+  "questIconID": "u03_social",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u03_q05_t00_voice",
+    "ismg6860_u03_q05_t00b_unlock_appperms",
+    "ismg6860_u03_q05_t01",
+    "ismg6860_u03_q05_t02",
+    "ismg6860_u03_q05_t04_patch_hunt",
+    "ismg6860_u03_q05_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "App Outside The Store",
+      "questDescription": "Inspect an unapproved LanternPass Helper listing, verify its publisher, and compare its permissions with its stated purpose.",
+      "questCompleteText": "<b>Asha Moreno:</b> The unverified helper requests access far beyond its stated purpose. Block it pending review and warn staff using these indicators.",
+      "questCharacterID": "u03_asha_moreno",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "App Outside The Store",
+      "questDescription": "Inspect an unapproved LanternPass Helper listing and map the publisher and permissions behind its claimed purpose.",
+      "questCompleteText": "<b>Felix Rane:</b> The publisher and excessive permissions are documented. Those are the useful parts of the listing.",
+      "questCharacterID": "u03_felix_rane",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "App Outside The Store",
+      "questDescription": "Inspect the LanternPass Helper spreading through staff threads and collect verifiable indicators for a warning.",
+      "questCompleteText": "<b>Imani Vale:</b> The warning can now name the publisher and excessive permissions without blaming the volunteers targeted by it.",
+      "questCharacterID": "u03_imani_vale",
+      "appScenarioID": ""
+    }
+  ]
+}

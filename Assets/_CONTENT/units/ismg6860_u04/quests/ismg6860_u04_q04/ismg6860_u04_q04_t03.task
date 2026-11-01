@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> We can document the exposed interface without running it. Keep the evidence within our read-only scope.",
+      "taskInstructions": "Read <link=\"u04_setup_validation\"><u>read-only setup validation</u></link>, then choose the evidence to record.",
+      "taskQuestion": "Which action documents the exposure without changing the portal?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Report the visible setup interface and recommend restricting access or removing it after deployment. Testing whether it can change settings requires separate approval.",
+      "answers": [
+        "Submit the form with its current values to see whether it works.",
+        "Try default administrator credentials to measure the impact.",
+        "Record the URL, page heading, and visible fields without submitting the form.",
+        "Change the database profile and restore it after the test."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "taskID": "ismg6860_u04_q04_t03",
+  "parentQuestID": "ismg6860_u04_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

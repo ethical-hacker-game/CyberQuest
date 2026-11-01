@@ -1,0 +1,17 @@
+{
+  "id": "lumen-lab",
+  "name": "Lumen Lab",
+  "user": "photon",
+  "description": "Learning hub for creative coding challenges with live mentors.",
+  "isPublic": true,
+  "files": [
+    {
+      "name": "README.md",
+      "content": "# Lumen Lab\nWeekly creative coding challenges with mentor feedback streams."
+    },
+    {
+      "name": "schedule.md",
+      "content": "## Upcoming\n- Shader Sculpting\n- Generative Graffiti"
+    }
+  ]
+}

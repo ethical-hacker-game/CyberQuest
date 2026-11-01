@@ -1,0 +1,13 @@
+{
+  "articleID": "u02_fingerprinting",
+  "videoURL": null,
+  "title": "Network Fingerprinting and Confidence",
+  "content": "Network fingerprinting estimates characteristics of a remote system from its observable behavior. Scanners may compare TCP responses, timing, option order, window sizes, time-to-live values, service banners, and other signals with known patterns to suggest an operating system or device type.\n\nA fingerprint is an inference, not a direct inventory record. Different systems can produce similar responses. Firewalls, proxies, network address translation, customized protocol stacks, and packet loss can change the evidence. A TTL value also decreases as a packet crosses routers, so the observed value is not necessarily the sender's original setting. One clue should never be treated as a certain identity.\n\n<b>Use confidence honestly</b>\n\nRecord the tool's confidence or accuracy estimate, the signals that support the hypothesis, and any conflicting evidence. Compare the result with service behavior, asset records, vendor documentation, or another permitted scan method. If several independent observations agree, confidence can increase; they still may not prove an exact version.\n\nReport language should match the evidence. Write that results are consistent with, suggest, or support a hypothesis when uncertainty remains. Avoid turning a probability into a fact, especially when the conclusion affects remediation, ownership, or public communication.\n\nFingerprinting is useful for prioritizing follow-up and identifying inventory gaps. Its value comes from combining clues responsibly, preserving limitations, and confirming important details through authorized sources rather than trusting a single automated guess.",
+  "links": [
+    "OS fingerprint",
+    "Observed TTL",
+    "OS hint",
+    "confidence level",
+    "TTL and window-size"
+  ]
+}

@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5200000000000001001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5200000000000001002}
+  - component: {fileID: 5200000000000001003}
+  m_Layer: 0
+  m_Name: OrderMinigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5200000000000001002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5200000000000001001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5200000000000001003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5200000000000001001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cdea111003b42c8a90f31d5b6e7c903, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name: Sequence Order
+  minigameType: 81
+  instructionsLabel: Rebuild the sequence in the correct order
+  resultOnTimeout: 0
+  standardDuration: 120
+  minigameUIPrefab: {fileID: 6200000000000001003, guid: 0cdea111011b42c8a90f31d5b6e7c911, type: 3}
+  descriptionImage: {fileID: 0}
+  descriptionHeader: Sequence Order
+  description: 'The briefing names a security sequence you must know by heart. The
+    terms on the left are SCRAMBLED - click one to drop it into the lowest free slot
+    on the right, and click a placed term to take it back. When every slot is filled,
+    press CHECK ORDER - correct positions LOCK in green, wrong ones bounce back to
+    the pool. Every failed check burns one of your limited checks - run out and the
+    console locks. Placing and rearranging is free; checking is not.'
+  scenarios:
+  - scenarioName: Data encapsulation
+    recommendedDifficulty: 1
+    headline: Order the encapsulation stages of outgoing data - from the application
+      payload down to the signals on the wire.
+    items:
+    - DATA
+    - SEGMENT
+    - PACKET
+    - FRAME
+    - BITS
+    lesson: Each layer wraps the payload from the layer above with its own header
+      - the name of the wrapped unit (PDU) tells you which layer you are looking
+      at.
+  - scenarioName: DHCP lease (DORA)
+    recommendedDifficulty: 1
+    headline: Order the DHCP messages a new client exchanges with the server to obtain
+      an IP address.
+    items:
+    - DISCOVER
+    - OFFER
+    - REQUEST
+    - ACKNOWLEDGE
+    lesson: DORA - Discover, Offer, Request, Acknowledge. A rogue device can answer
+      the broadcast Discover too, which is why rogue-DHCP detection matters.
+  - scenarioName: OSI model
+    recommendedDifficulty: 2
+    headline: Stack the OSI model from Layer 1 in slot 1 (the wire) up to Layer 7
+      in slot 7 (the user application).
+    items:
+    - PHYSICAL
+    - DATA LINK
+    - NETWORK
+    - TRANSPORT
+    - SESSION
+    - PRESENTATION
+    - APPLICATION
+    lesson: Please Do Not Throw Sausage Pizza Away - Physical, Data Link, Network,
+      Transport, Session, Presentation, Application.
+  - scenarioName: Cyber Kill Chain
+    recommendedDifficulty: 2
+    headline: Reconstruct the Cyber Kill Chain - from the attacker's first step to
+      the final impact.
+    items:
+    - RECONNAISSANCE
+    - WEAPONIZATION
+    - DELIVERY
+    - EXPLOITATION
+    - INSTALLATION
+    - 'COMMAND & CONTROL'
+    - ACTIONS ON OBJECTIVES
+    lesson: Breaking ANY single link stops the whole chain - the defender only needs
+      to win at one stage, the attacker must win them all.
+  - scenarioName: Incident response
+    recommendedDifficulty: 2
+    headline: Order the incident-response lifecycle a SOC follows once an intrusion
+      is confirmed.
+    items:
+    - PREPARATION
+    - 'DETECTION & ANALYSIS'
+    - CONTAINMENT
+    - ERADICATION
+    - RECOVERY
+    - LESSONS LEARNED
+    lesson: Containment comes BEFORE eradication - cut the attacker off first, clean
+      up second, and feed lessons learned back into preparation.
+  - scenarioName: Digital forensics
+    recommendedDifficulty: 3
+    headline: Order the digital-forensics process - from the first sighting of evidence
+      to the courtroom.
+    items:
+    - IDENTIFICATION
+    - PRESERVATION
+    - COLLECTION
+    - EXAMINATION
+    - ANALYSIS
+    - PRESENTATION
+    lesson: Preserve before you collect and analyse - evidence handled out of order
+      breaks the chain of custody and dies in court.
+  checksAllowed: 3
+  pointsPerCorrectSlot: 100
+  failedCheckPenalty: 75
+  solveBonus: 300
+  timeBonusPerSecond: 5
+  bonusPerCheckLeft: 100

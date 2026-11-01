@@ -1,0 +1,13 @@
+{
+  "articleID": "u04_identification_verification",
+  "videoURL": null,
+  "title": "Vulnerability Identification vs Verification",
+  "content": "<b>Identification finds a credible lead. Verification establishes what can be defended as fact.</b>\n\nA scanner alert, version string, unexpected service response, or permission anomaly may indicate a vulnerability. At the identification stage, the analyst records the affected asset, the observed condition, and why it may matter. The result is a candidate finding, not a claim that exploitation has occurred. Automated tools can misread banners, miss compensating controls, or report behavior that no longer exists.\n\nVerification increases confidence with evidence that is relevant, repeatable, and gathered within authorization. A useful process is to:\n\n- reproduce the observation with the least invasive method available;\n- corroborate it with an independent source, such as a second tool, a direct response, configuration evidence, or an approved owner statement;\n- separate what was observed from what is inferred;\n- record the target, time, method, response, and a stable tracking ID;\n- consider reachability, required privileges, existing controls, and affected function;\n- assign a clear status such as candidate, verified, rejected, or not tested.\n\nVerification does not require demonstrating the worst possible impact. If proving impact would submit data, change state, expose sensitive records, interrupt service, or exceed scope, stop at the strongest safe evidence and document the limitation. A limitation lowers certainty about the untested step; it does not erase the confirmed condition.\n\nStrong findings use calibrated language. Say that evidence confirms reachability when that is what was tested. Say that a condition may enable a later step when the transition was not exercised. This distinction reduces false positives, prevents exaggerated reports, and gives remediation teams a reliable basis for action.",
+  "links": [
+    "candidate vulnerability",
+    "identification first",
+    "independent evidence",
+    "version lead",
+    "verification turns tool output"
+  ]
+}

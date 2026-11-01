@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "252 confirms the mailbox, while 250 means the message has already been delivered.",
+        "Both replies refuse verification, but 250 records a temporary server error.",
+        "252 does not verify the user; 250 accepts the target as a recipient, while 550 rejects the unknown control.",
+        "252 rejects the address, while 250 confirms that the sender account is valid."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Now find out whether that mailbox is really there. Two different verbs will answer the question, and only one of them is actually telling you something: the other is just being polite. I am not writing 'confirmed' next to an account on the strength of a server being polite.",
+      "taskInstructions": "Run <b>VRFY svc_bridgeworks</b>, then <b>MAIL FROM: audit@cordatasecurity.com</b>. Compare <b>RCPT TO: svc_bridgeworks@hallowayprecision.com</b> with <b>RCPT TO: notauser@hallowayprecision.com</b>.",
+      "taskQuestion": "What is the difference between the 252 and the 250 response?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. 252 does not verify the user. After MAIL FROM, the server accepts svc_bridgeworks with 250 and rejects the unknown control with 550. That proves recipient handling, not completed delivery."
+    },
+    {
+      "answers": [
+        "252 confirms the mailbox, while 250 means the message has already been delivered.",
+        "Both replies refuse verification, but 250 records a temporary server error.",
+        "252 does not verify the user; 250 accepts the target as a recipient, while 550 rejects the unknown control.",
+        "252 rejects the address, while 250 confirms that the sender account is valid."
+      ],
+      "correctAnswer": 2,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Most people ask the verification verb, get a polite non-answer, and write it into the report as a confirmation. The delivery verb cannot do that, because the server has to decide there and then whether it would accept the message. Those two replies are not worth the same thing.",
+      "taskInstructions": "Run <b>VRFY svc_bridgeworks</b>, then <b>MAIL FROM: audit@cordatasecurity.com</b>. Compare <b>RCPT TO: svc_bridgeworks@hallowayprecision.com</b> with <b>RCPT TO: notauser@hallowayprecision.com</b>.",
+      "taskQuestion": "What is the difference between the 252 and the 250 response?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. VRFY stays ambiguous, while RCPT TO distinguishes the accepted target from the rejected control. It maps recipient behavior, not final delivery."
+    },
+    {
+      "answers": [
+        "252 confirms the mailbox, while 250 means the message has already been delivered.",
+        "Both replies refuse verification, but 250 records a temporary server error.",
+        "252 does not verify the user; 250 accepts the target as a recipient, while 550 rejects the unknown control.",
+        "252 rejects the address, while 250 confirms that the sender account is valid."
+      ],
+      "correctAnswer": 2,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> I have to be able to say plainly that this account exists on Halloway's mail server, not that a server declined to deny it. That distinction is the first thing their counsel will go after, and I would rather lose the argument here than in front of the committee.",
+      "taskInstructions": "Run <b>VRFY svc_bridgeworks</b>, then <b>MAIL FROM: audit@cordatasecurity.com</b>. Compare <b>RCPT TO: svc_bridgeworks@hallowayprecision.com</b> with <b>RCPT TO: notauser@hallowayprecision.com</b>.",
+      "taskQuestion": "What is the difference between the 252 and the 250 response?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The server accepts svc_bridgeworks and rejects the unknown control. That distinction is defensible without claiming delivery or readership."
+    }
+  ],
+  "taskID": "ismg6860_u05_q07_t02",
+  "parentQuestID": "ismg6860_u05_q07",
+  "articleID": "u05_smtp_enumeration",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

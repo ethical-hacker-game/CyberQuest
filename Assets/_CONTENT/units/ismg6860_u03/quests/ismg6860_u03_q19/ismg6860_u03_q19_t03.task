@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Choose the observed sequence that makes this support contact unsafe, without claiming the transcript proves who caused the initial error.",
+      "taskInstructions": "Use the archived error notice and chat transcript.",
+      "taskQuestion": "Which clue best supports the finding?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. An unverified helper followed the error and requested a one-time code.",
+      "answers": [
+        "The chat opens with familiar support wording.",
+        "The help page shows a normal-looking icon and agent name.",
+        "An unverified helper appears after the error and requests a one-time code.",
+        "The account error gives Riley a reason to seek help."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Ignore the branding and select the sequence that gives the helper leverage while staying within what the archive proves.",
+      "taskInstructions": "Use the archived error notice and chat transcript.",
+      "taskQuestion": "Which detail defines the reverse play?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The helper used the moment after the error to request an authentication secret.",
+      "answers": [
+        "The chat opens with familiar support wording.",
+        "The help page shows a normal-looking icon and agent name.",
+        "The account error gives Riley a reason to seek help.",
+        "An unverified helper appears after the error and requests a one-time code."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Choose the evidence that explains the pressure without blaming Riley or inventing causation the archive cannot establish.",
+      "taskInstructions": "Use the archived error notice and chat transcript.",
+      "taskQuestion": "Which clue most clearly marks this as reverse social engineering?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The unverified helper exploited the need for support by asking for a one-time code.",
+      "answers": [
+        "An unverified helper appears after the error and requests a one-time code.",
+        "The chat opens with familiar support wording.",
+        "The help page shows a normal-looking icon and agent name.",
+        "The account error gives Riley a reason to seek help."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u03_q19_t03",
+  "parentQuestID": "ismg6860_u03_q19",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

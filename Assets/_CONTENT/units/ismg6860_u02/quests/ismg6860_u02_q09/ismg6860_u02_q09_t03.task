@@ -1,0 +1,40 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> Service identification now has both halves of the finding: the observed service and RailGate's placement rule. Identify the maintenance-only console port so the remediation ticket remains precise.",
+      "taskInstructions": "Read the console port from the RailGate note, or run <b>nmap -sV 10.42.18.73</b> to see which port serves <b>RailGate Diagnostics 3.4.7</b>.",
+      "taskQuestion": "Which TCP port carries the exposed diagnostics service?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Correct. TCP/8080 is the maintenance-only diagnostics console that requires remediation.",
+      "answers": ["443/tcp", "8080/tcp", "9100/tcp", "22/tcp"],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> Service identification is useful when the profile names the exact maintenance-only console instead of hiding behind a vague warning. Identify the port RailGate says to restrict before production.",
+      "taskInstructions": "Read the console port from the RailGate note, or run <b>nmap -sV 10.42.18.73</b> to see which port serves <b>RailGate Diagnostics 3.4.7</b>.",
+      "taskQuestion": "Which TCP port carries the exposed diagnostics service?",
+      "taskCompleteText": "<b>Kade Mercer:</b> TCP/8080 is the specific console the vendor says should be restricted.",
+      "answers": ["443/tcp", "8080/tcp", "9100/tcp", "22/tcp"],
+      "correctAnswer": 1
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> Responsible service identification names the observed maintenance-only console without claiming reachability we have not tested. Identify the exact port supported by both sources.",
+      "taskInstructions": "Read the console port from the RailGate note, or run <b>nmap -sV 10.42.18.73</b> to see which port serves <b>RailGate Diagnostics 3.4.7</b>.",
+      "taskQuestion": "Which TCP port carries the exposed diagnostics service?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> TCP/8080 is specific enough to support remediation without exaggerating the evidence.",
+      "answers": ["443/tcp", "8080/tcp", "9100/tcp", "22/tcp"],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u02_q09_t03",
+  "parentQuestID": "ismg6860_u02_q09",
+  "articleID": "u02_service_identification",
+  "mailsOnStart": [],
+  "mailsOnEnd": [
+    "ismg6860_u02_d03_ids_alert"
+  ],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

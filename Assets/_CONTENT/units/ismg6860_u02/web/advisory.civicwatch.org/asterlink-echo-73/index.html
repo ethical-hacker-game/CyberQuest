@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advisory: vendor access on the Asterlink night-service network: CivicWatch</title>
+  <script src="../../cq-bridge.js"></script>
+  <style>
+    :root{
+      --ink:#1a1a1e;--muted:#6b6b73;--line:#e5e3dd;--bg:#fbfaf7;--paper:#ffffff;
+      --brand:#8a1f2b;--brandink:#7a1a25;--accent:#1c5c7a;--tagbg:#f3e6e0;--redact:#1a1a1e;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--bg);line-height:1.65}
+    a{color:var(--accent)}
+    .sans{font-family:"Segoe UI",Helvetica,Arial,sans-serif}
+    /* masthead */
+    header{background:var(--paper);border-bottom:3px double #d8d4ca}
+    .util{background:var(--brand);color:#f6e9e6}
+    .util .in{max-width:900px;margin:auto;padding:6px 24px;font-size:12px;letter-spacing:.4px;display:flex;gap:16px;font-family:"Segoe UI",Arial,sans-serif}
+    .util .sp{margin-left:auto}
+    .mast{max-width:900px;margin:auto;padding:20px 24px 8px;text-align:center}
+    .mast .logo{font-size:34px;font-weight:800;letter-spacing:1px}
+    .mast .logo span{color:var(--brand)}
+    .mast .tagline{color:var(--muted);font-size:12.5px;letter-spacing:3px;text-transform:uppercase;font-family:"Segoe UI",Arial,sans-serif;margin-top:2px}
+    nav.main{border-top:1px solid var(--line);margin-top:12px}
+    nav.main .in{max-width:900px;margin:auto;display:flex;gap:22px;justify-content:center;padding:9px 24px;font-family:"Segoe UI",Arial,sans-serif;font-size:13.5px;font-weight:600}
+    nav.main a{color:#33333a;text-decoration:none}
+    nav.main a.on{color:var(--brand)}
+    /* article */
+    main{max-width:720px;margin:30px auto;padding:0 24px}
+    .tag{display:inline-block;font-family:"Segoe UI",Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--brandink);background:var(--tagbg);border-radius:3px;padding:4px 10px}
+    h1{font-size:33px;line-height:1.2;margin:14px 0 10px}
+    .byline{color:var(--muted);font-size:13.5px;font-family:"Segoe UI",Arial,sans-serif;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:20px}
+    .byline b{color:#33333a}
+    .lede{font-size:19px;line-height:1.55;color:#2a2a30}
+    p{font-size:17px}
+    h2{font-size:15px;font-family:"Segoe UI",Arial,sans-serif;text-transform:uppercase;letter-spacing:.6px;color:var(--brandink);margin:28px 0 6px}
+    .redact{background:var(--redact);color:var(--redact);border-radius:2px;padding:0 4px;user-select:none;transition:color .15s}
+    .redact:hover{color:#5a5a5a}
+    .note{font-family:"Segoe UI",Arial,sans-serif;font-size:13px;color:var(--muted);background:#f4f2ec;border-left:3px solid #cdc8bc;padding:10px 14px;margin:20px 0}
+    blockquote{margin:20px 0;padding:6px 0 6px 18px;border-left:3px solid var(--brand);font-style:italic;color:#33333a}
+    .pull{font-size:15px}
+    .share{display:flex;gap:10px;align-items:center;font-family:"Segoe UI",Arial,sans-serif;font-size:13px;color:var(--muted);border-top:1px solid var(--line);margin-top:26px;padding-top:16px}
+    .share a{border:1px solid var(--line);border-radius:5px;padding:5px 11px;text-decoration:none;color:#33333a}
+    .donate{background:#fff;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:8px;padding:16px 18px;margin:26px 0;font-family:"Segoe UI",Arial,sans-serif}
+    .donate b{font-size:15px}
+    .donate .btn{display:inline-block;margin-top:8px;background:var(--brand);color:#fff;text-decoration:none;border-radius:6px;padding:8px 16px;font-weight:700;font-size:13.5px}
+    footer{border-top:3px double #d8d4ca;background:#fff;color:var(--muted);font-family:"Segoe UI",Arial,sans-serif;font-size:12.5px}
+    footer .in{max-width:900px;margin:auto;padding:20px 24px;display:flex;flex-wrap:wrap;gap:6px 20px}
+    footer .sp{margin-left:auto}
+    @media(max-width:600px){h1{font-size:26px}nav.main .in{flex-wrap:wrap;gap:12px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="util"><div class="in"><span>Independent civic technology watchdog</span><span class="sp">Tips · Securely contact us</span></div></div>
+    <div class="mast">
+      <div class="logo">Civic<span>Watch</span></div>
+      <div class="tagline">Accountability for public systems</div>
+    </div>
+    <nav class="main"><div class="in"><a href="#">Investigations</a><a class="on" href="#">Advisories</a><a href="#">Data</a><a href="#">About</a><a href="#">Donate</a></div></nav>
+  </header>
+
+  <main>
+    <span class="tag">Public-interest advisory</span>
+    <h1>Vendor maintenance reached rider ticketing on Asterlink's night-service network</h1>
+    <div class="byline">By <b>the CivicWatch technology desk</b> · Draft prepared for coordinated release · Reading time 4 min</div>
+
+    <p class="lede">A maintenance device supplied by a transit vendor was observed communicating across a
+    boundary that is supposed to keep upkeep systems separated from the network that validates rider fares.
+    The draft recommends giving Asterlink Transit a short window to fix the exposure before wider release.</p>
+
+    <p>The concern is not that anyone was harmed. It is that a system nobody documented as rider-facing was able
+    to reach the fare-validation network at all. When maintenance and payments share a path, a problem on one side
+    can become a problem for riders on the other.</p>
+
+    <h2>What we can say</h2>
+    <p>A vendor diagnostics appliance in the launch environment initiated a connection toward ticketing
+    validation: a path that segmentation was meant to prevent. Consistent with responsible disclosure, we have
+    withheld live technical detail while the operator remediates: host addresses are shown as
+    <span class="redact">redacted&nbsp;&nbsp;&nbsp;</span> and route specifics as
+    <span class="redact">redacted&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> in this advisory.</p>
+
+    <blockquote>Riders can't audit a network they can't see. That is exactly why segmentation and monitoring
+    have to be verifiable before launch, not after an incident.</blockquote>
+
+    <h2>What we're asking Asterlink to do</h2>
+    <p>Our recommendations track ordinary good practice for transit technology operators:</p>
+    <p>Isolate the vendor diagnostics host, reduce its exposed diagnostics interface, and add monitoring at the
+    ticketing boundary so a maintenance-to-payments crossing cannot go unseen again. Vendor access paths should be
+    validated for <b>both IPv4 and IPv6</b>, segmentation controls should be documented, and the remediation
+    outcome should be published: without exposing live technical details that would put riders at risk.</p>
+
+    <div class="note">This advisory intentionally omits live host addresses, service banners, and packet-level
+    route details during the operator's fix window. CivicWatch will publish a follow-up once remediation is confirmed.</div>
+
+    <div class="donate">
+      <b>Independent oversight is reader-funded.</b><br>
+      CivicWatch takes no money from the vendors or agencies we cover.
+      <br><a class="btn" href="#">Support our work</a>
+    </div>
+
+    <div class="share"><span>Share:</span><a href="#">Link</a><a href="#">Email</a><a href="#">Secure tip</a></div>
+  </main>
+
+  <footer><div class="in">
+    <span>© CivicWatch: a nonprofit civic technology watchdog</span>
+    <span>Corrections</span><span>Ethics</span><span>Secure contact</span>
+    <span class="sp">Advisory: asterlink-echo-73</span>
+  </div></footer>
+</body>
+</html>

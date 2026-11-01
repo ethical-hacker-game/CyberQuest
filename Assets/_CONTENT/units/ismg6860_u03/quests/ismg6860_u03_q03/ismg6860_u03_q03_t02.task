@@ -1,0 +1,19 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Asha Moreno:</b> First record the authentication secret requested by the caller. We will assess what that request means next.",
+      "taskInstructions": "Reopen Riley's voicemail transcript in <b>Mail</b> and type the requested item.",
+      "taskQuestion": "What did the caller pressure Riley to read aloud?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: the caller asked Riley to read back a one-time code.",
+      "correctAnswers": ["one-time code", "one time code"]
+    }
+  ],
+  "taskID": "ismg6860_u03_q03_t02",
+  "parentQuestID": "ismg6860_u03_q03",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

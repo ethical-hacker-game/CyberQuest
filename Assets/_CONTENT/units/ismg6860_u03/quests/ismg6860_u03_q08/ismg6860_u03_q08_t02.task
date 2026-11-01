@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Record the offered filename. Its extension identifies the file type hidden behind the floor-plan wording.",
+      "taskInstructions": "Type the filename exactly as shown in the log, including its extension.",
+      "taskQuestion": "What file is the proximity share offering?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Recorded: Expo_FloorPlan_Update.mobileconfig, a configuration profile presented as a floor-plan update.",
+      "correctAnswers": [
+        "Expo_FloorPlan_Update.mobileconfig"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Record the offered filename. The operational wording creates trust, while the extension reveals the actual file type.",
+      "taskInstructions": "Type the filename exactly as shown in the log, including its extension.",
+      "taskQuestion": "What file is the proximity share offering?",
+      "taskCompleteText": "<b>Felix Rane:</b> Recorded: Expo_FloorPlan_Update.mobileconfig, a device profile disguised as an ordinary update.",
+      "correctAnswers": [
+        "Expo_FloorPlan_Update.mobileconfig"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Record the exact filename so visitors can recognize the offered profile before accepting it.",
+      "taskInstructions": "Type the filename exactly as shown in the log, including its extension.",
+      "taskQuestion": "What file is the proximity share offering?",
+      "taskCompleteText": "<b>Imani Vale:</b> Recorded: Expo_FloorPlan_Update.mobileconfig. Put the full name in the warning.",
+      "correctAnswers": [
+        "Expo_FloorPlan_Update.mobileconfig"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u03_q08_t02",
+  "parentQuestID": "ismg6860_u03_q08",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

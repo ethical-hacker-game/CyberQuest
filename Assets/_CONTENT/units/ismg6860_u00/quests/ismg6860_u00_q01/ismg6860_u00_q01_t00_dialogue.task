@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Ed:</b> {player}, welcome to First Signal. Training Northstar has asked us to look into a warning on its service portal. Before we investigate, we need to know exactly what the client has authorized.\n\nRead the scope, keep a record of what you find, and leave the systems as you found them.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Ed:</b> I have sent you the authorization note. Start there; it sets the boundary for our work."
+    }
+  ],
+  "taskID": "ismg6860_u00_q01_t00_dialogue",
+  "parentQuestID": "ismg6860_u00_q01",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Dialogue"
+}

@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Investigation: Phishing landing capture: arcadia-support[.]com</title>
+		<meta
+			name="description"
+			content="Archived capture and sanitized evidence of a phishing landing page and related email headers linked to arcadia-support.com."
+		/>
+		<style>
+			:root {
+				color-scheme: light;
+				--bg: #f6f5fb;
+				--text: #111827;
+				--muted: #4b5563;
+				--muted-strong: #374151;
+				--card: #ffffff;
+				--card-subtle: #faf9ff;
+				--border: #e7e4f5;
+				--placeholder: #f1effa;
+				--header-bg: #2b155f;
+				--header-text: #ffffff;
+				--header-border: rgba(255, 255, 255, 0.12);
+				--code-bg: #1e1341;
+				--code-text: #e5e7eb;
+				--spinner-track: rgba(17, 24, 39, 0.2);
+				--spinner-head: rgba(17, 24, 39, 0.9);
+				--pill-bg: #f3f0ff;
+				--pill-border: #e0d7ff;
+				--link: #5b21b6;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					color-scheme: dark;
+					--bg: #070513;
+					--text: #e5e7eb;
+					--muted: #9ca3af;
+					--muted-strong: #cbd5e1;
+					--card: #0f0b22;
+					--card-subtle: #0b0820;
+					--border: rgba(224, 215, 255, 0.16);
+					--placeholder: rgba(148, 163, 184, 0.12);
+					--header-bg: #0a071a;
+					--header-text: #e5e7eb;
+					--header-border: rgba(229, 231, 235, 0.12);
+					--code-bg: #0a071a;
+					--code-text: #e5e7eb;
+					--spinner-track: rgba(229, 231, 235, 0.18);
+					--spinner-head: rgba(229, 231, 235, 0.85);
+					--pill-bg: rgba(224, 215, 255, 0.12);
+					--pill-border: rgba(224, 215, 255, 0.18);
+					--link: #a78bfa;
+				}
+			}
+			body {
+				margin: 0;
+				font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+					"Segoe UI Emoji";
+				line-height: 1.45;
+				background: var(--bg);
+				color: var(--text);
+			}
+			a {
+				color: var(--link);
+			}
+			.wrap {
+				max-width: none;
+				width: 100%;
+				margin: 0;
+				padding: 20px;
+			}
+			header {
+				background: var(--header-bg);
+				color: var(--header-text);
+				border-bottom: 1px solid var(--header-border);
+			}
+			.brand {
+				font-size: 12px;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				opacity: 0.9;
+			}
+			h1 {
+				margin: 8px 0 6px;
+				font-size: 24px;
+				line-height: 1.2;
+			}
+			.subtitle {
+				margin: 0;
+				opacity: 0.9;
+				max-width: 78ch;
+			}
+			main {
+				padding: 18px 0 36px;
+			}
+			section {
+				background: var(--card);
+				border: 1px solid var(--border);
+				border-radius: 10px;
+				padding: 16px;
+				margin: 14px 0;
+			}
+			section > h2 {
+				margin: 0 0 10px;
+				font-size: 18px;
+			}
+			.meta {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 10px;
+				margin-top: 10px;
+			}
+			@media (min-width: 780px) {
+				.meta {
+					grid-template-columns: 1fr 1fr;
+				}
+			}
+			.box {
+				border: 1px solid var(--border);
+				border-radius: 10px;
+				padding: 12px;
+				background: var(--card-subtle);
+			}
+			.box h3 {
+				margin: 0 0 8px;
+				font-size: 14px;
+				letter-spacing: 0.02em;
+				text-transform: uppercase;
+				color: var(--muted-strong);
+			}
+			dl {
+				margin: 0;
+				display: grid;
+				grid-template-columns: 160px 1fr;
+				gap: 6px 10px;
+			}
+			dt {
+				font-weight: 600;
+				color: var(--muted-strong);
+			}
+			dd {
+				margin: 0;
+				color: var(--text);
+			}
+			figure {
+				margin: 0;
+			}
+			figure img {
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+				border: 1px solid var(--border);
+				background: var(--placeholder);
+			}
+			.capture-placeholder {
+				width: 100%;
+				min-height: 280px;
+				border-radius: 10px;
+				border: 1px solid var(--border);
+				background: var(--placeholder);
+				display: grid;
+				place-items: center;
+			}
+			.spinner {
+				width: 56px;
+				height: 56px;
+				border-radius: 999px;
+				border: 6px solid var(--spinner-track);
+				border-top-color: var(--spinner-head);
+				animation: spin 0.9s linear infinite;
+			}
+			@keyframes spin {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+			figcaption {
+				margin-top: 8px;
+				color: var(--muted-strong);
+				font-size: 13px;
+			}
+			pre {
+				margin: 0;
+				padding: 12px;
+				border-radius: 10px;
+				border: 1px solid var(--border);
+				background: var(--code-bg);
+				color: var(--code-text);
+				overflow: auto;
+				tab-size: 2;
+				white-space: pre;
+			}
+			.small {
+				color: var(--muted);
+				font-size: 13px;
+			}
+			ul {
+				margin: 8px 0 0;
+				padding-left: 18px;
+			}
+			.pill {
+				display: inline-block;
+				padding: 2px 8px;
+				border-radius: 999px;
+				border: 1px solid var(--pill-border);
+				background: var(--pill-bg);
+				color: var(--muted-strong);
+				font-size: 12px;
+				vertical-align: middle;
+			}
+		</style>
+	  <script src="../../cq-bridge.js"></script>
+</head>
+	<body>
+		<header>
+			<div class="wrap">
+				<div class="brand">Arcadia OSINT Portal</div>
+				<h1>Investigation: Phishing landing capture: arcadia-support[.]com</h1>
+				<p class="subtitle">
+					Archived capture and sanitized evidence of a phishing landing page and related email headers linked to
+					arcadia-support.com.
+				</p>
+			</div>
+		</header>
+
+		<main class="wrap" aria-label="Investigation report">
+			<section aria-labelledby="exec-summary">
+				<h2 id="exec-summary">1) Executive summary <span class="pill">Mid-Dec 2025</span></h2>
+				<p>
+					A look-alike domain (arcadia-support.com) was observed hosting a cloned support/login experience resembling
+					Arcadia Robotics. An archived landing page capture and sanitized phishing email headers show messages
+					originating from the look-alike domain, with hosting and DNS details indicating active mail capability.
+				</p>
+				<p>
+					This infrastructure is consistent with reconnaissance and credential collection activity and should be
+					prioritized for monitoring and coordinated takedown requests with relevant providers.
+				</p>
+			</section>
+
+			<section aria-labelledby="landing-capture">
+				<h2 id="landing-capture">2) Archived landing page capture (visual artifact)</h2>
+
+				<figure>
+					<div
+						class="capture-placeholder"
+						role="img"
+						aria-label="Screenshot capture asset is not available; a continuous loading indicator is shown in its place."
+					>
+						<div class="spinner" aria-hidden="true"></div>
+					</div>
+					<figcaption>Archived 2025-12-16 08:12:30 UTC: capture ID: ARC-20251216-PL-01</figcaption>
+				</figure>
+
+				<div class="box" style="margin-top: 12px">
+					<h3>Screenshot summary (sanitized)</h3>
+					<ul>
+						<li><strong>Visible browser address bar:</strong> https://www.arcadia-support.com/login</li>
+						<li><strong>Page header text:</strong> “Arcadia Robotics: Support Login”</li>
+						<li>
+							<strong>Visible fields:</strong> corporate email input and password input, button labeled “Sign in”
+						</li>
+						<li>
+							<strong>Brand similarity:</strong> visual styling is similar to Arcadia’s public branding (color palette
+							and logo style); the logo is visually similar but not identical.
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section aria-labelledby="email-header">
+				<h2 id="email-header">3) Sanitized email header (preformatted block)</h2>
+				<p class="small">
+					The following header is sanitized for player readability and highlights key routing/authentication signals.
+				</p>
+				<pre aria-label="Sanitized email header, selectable text">From: &quot;Arcadia HR&quot; &lt;jobs@arcadia-support.com&gt;
+To: &quot;Alexis Reynard&quot; &lt;alexis.reynard@arcadiarobotics.com&gt;
+Subject: Action required: Verify your support account
+Date: Tue, 16 Dec 2025 08:12:35 +0000
+Received: from mx1.arcadia-support.com (198.51.100.24) by inbound-mail.examplecorp.net with ESMTP id ABC12345; Tue, 16 Dec 2025 08:12:35 +0000
+Authentication-Results: inbound-mail.examplecorp.net; spf=neutral (mail from 198.51.100.24 not in arcadiarobotics.com SPF); dkim=none; dmarc=none</pre>
+				<p class="small" style="margin-top: 10px">
+					What is visible here: the origin domain is <strong>arcadia-support.com</strong>, the message was received
+					from <strong>198.51.100.24</strong>, and SPF/DKIM did not authenticate as Arcadia Robotics.
+				</p>
+			</section>
+
+			<section aria-labelledby="domain-hosting">
+				<h2 id="domain-hosting">4) Domain &amp; hosting snapshot (concise metadata box)</h2>
+				<div class="box">
+					<h3>WHOIS / DNS / Hosting snapshot</h3>
+					<dl>
+						<dt>Domain</dt>
+						<dd>arcadia-support.com</dd>
+						<dt>Registrar</dt>
+						<dd>ExampleRegistrar LLC</dd>
+						<dt>Creation date</dt>
+						<dd>2025-12-09</dd>
+						<dt>Registrant</dt>
+						<dd>Whois Proxy Service (contact@whoisproxy.net)</dd>
+						<dt>Name servers</dt>
+						<dd>ns1.smallhost.net, ns2.smallhost.net</dd>
+						<dt>Hosting IP(s)</dt>
+						<dd>198.51.100.23 (web), 198.51.100.24 (mail)</dd>
+						<dt>Notes</dt>
+						<dd>Recent registration and proxy use; active MX and web records supporting phishing capability.</dd>
+					</dl>
+				</div>
+			</section>
+
+			<section aria-labelledby="provenance">
+				<h2 id="provenance">5) Capture provenance and integrity</h2>
+				<div class="meta" role="group" aria-label="Provenance and integrity metadata">
+					<div class="box">
+						<h3>Capture metadata</h3>
+						<dl>
+							<dt>Capture timestamp</dt>
+							<dd>2025-12-16 08:12:30 UTC</dd>
+							<dt>Archive method</dt>
+							<dd>web-archive snapshot</dd>
+							<dt>Capture ID</dt>
+							<dd>ARC-20251216-PL-01</dd>
+						</dl>
+					</div>
+					<div class="box">
+						<h3>Integrity marker</h3>
+						<dl>
+							<dt>SHA256</dt>
+							<dd>0000000000000000000000000000000000000000000000000000000000000000</dd>
+						</dl>
+					</div>
+				</div>
+				<p class="small" style="margin-top: 10px">
+					Evidence preserved as an archived web capture and sanitized header export. Original artifacts available to
+					investigators via secured channels.
+				</p>
+			</section>
+
+			<section aria-labelledby="context-evidence">
+				<h2 id="context-evidence">6) Contextual evidence (short)</h2>
+				<ul>
+					<li>
+						“A cached job listing (staff aggregator) shows Arcadia email format firstname.lastname@arcadiarobotics.com: 
+						enables targeted messages.”
+					</li>
+					<li>
+						“WHOIS proxy is in use; registrar abuse contact available via ExampleRegistrar’s support channels.”
+					</li>
+				</ul>
+			</section>
+
+			<section aria-labelledby="interpretation">
+				<h2 id="interpretation">7) Interpretation &amp; indicators (actionable, non-technical)</h2>
+				<ul>
+					<li>
+						Fresh look-alike domain matching brand + active mail server = likely phishing infrastructure.
+					</li>
+					<li>
+						Visual clone of support login is consistent with credential harvesting landing pages.
+					</li>
+					<li>
+						Email header shows messages claiming to be internal but originating from the look-alike domain and failing
+						Arcadia’s SPF/DKIM.
+					</li>
+				</ul>
+				<p class="small" style="margin-top: 10px">
+					These are detection and defense signals intended for monitoring and triage; this report does not include
+					operational exploitation instructions.
+				</p>
+			</section>
+
+			<section aria-labelledby="recommendations">
+				<h2 id="recommendations">8) Recommended immediate response (high-level defensive options)</h2>
+				<ul>
+					<li>
+						Consider monitoring authentication, email security, and web proxy logs for indicators related to
+						arcadia-support.com and associated infrastructure.
+					</li>
+					<li>
+						Consider issuing a short employee advisory reminding staff to verify login URLs and to report suspicious
+						messages referencing “support account” verification.
+					</li>
+					<li>
+						Consider submitting a registrar/hosting abuse report and takedown request referencing the archived capture
+						ID and sanitized evidence.
+					</li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>

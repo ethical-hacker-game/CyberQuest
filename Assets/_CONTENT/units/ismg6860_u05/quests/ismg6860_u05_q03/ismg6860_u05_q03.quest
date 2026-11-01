@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u05_q03",
+  "cityIndex": 7151,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q03_t00_unlock_shareaudit",
+    "ismg6860_u05_q03_t01",
+    "ismg6860_u05_q03_t02_data_rover",
+    "ismg6860_u05_q03_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "questName": "SMB Enumeration",
+      "questDescription": "FORGE-HIST01 permits null-session enumeration. Identify its exposed shares and local accounts while keeping the authorized queries within the plant's monitoring threshold.",
+      "questCompleteText": "<b>Dana Osei:</b> We have recorded the BRIDGEWORKS$ share and an enabled svc_bridgeworks account with recent off-hours activity. Keep both intact as evidence.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    }
+  ]
+}

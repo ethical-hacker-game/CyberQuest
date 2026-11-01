@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_framing_protection",
+  "videoURL": null,
+  "title": "Framing Protection: Interpreting a Missing Header",
+  "content": "An attacker may place a sensitive page inside a frame and trick someone into clicking its controls: this is <b>clickjacking</b>. <b>X-Frame-Options</b> can restrict framing, but the <b>frame-ancestors</b> directive in Content-Security-Policy (CSP) can also provide protection. A missing X-Frame-Options header alone does not establish exposure. Check whether an enforced CSP restricts framing and whether a sensitive page can actually be framed before assigning risk.",
+  "links": [
+    "framing protection"
+  ]
+}

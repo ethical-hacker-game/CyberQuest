@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "203.0.113.5"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> The numbered lines also contain responding hop addresses. Identify the address shown at a specific intermediate hop without assuming who owns that router.",
+      "taskInstructions": "In the command shell, run <b>traceroute www.ctf.shadowtrace.net</b> again and read the IP address on line 6.",
+      "taskQuestion": "What IP address is shown at hop 6?",
+      "taskCompleteText": "<b>Samira:</b> Hop 6 replies from <b>203.0.113.5</b> in this trace. The address marks an observed response, not proof of the router's owner or a permanent route."
+    }
+  ],
+  "taskID": "ismg6860_u01_q21_t02",
+  "parentQuestID": "ismg6860_u01_q21",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

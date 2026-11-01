@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> You chose the authorized channel. From here, every reported finding needs a clear observation, a stable identifier, and evidence that supports the claim.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Mara Voss:</b> Start by separating confirmed weaknesses from scanner leads."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> You kept an undisclosed copy. Before it has value, separate confirmed weaknesses from scanner leads and label each one precisely.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Felix Rane:</b> Start with the findings that describe a usable opening."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> You preserved a protected disclosure option. Build it on findings Northbridge cannot dismiss: distinguish confirmed weaknesses from leads and keep every claim tied to evidence.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Imani Vale:</b> Start with what the evidence proves."
+    }
+  ],
+  "taskID": "ismg6860_u04_q06_t00_voice",
+  "parentQuestID": "ismg6860_u04_q06",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

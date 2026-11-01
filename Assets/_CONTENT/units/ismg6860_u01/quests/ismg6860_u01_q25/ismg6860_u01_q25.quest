@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q25",
+  "cityIndex": 3125,
+  "questIconID": "quest_icon_journalist_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q25_t01",
+    "ismg6860_u01_q25_t02",
+    "ismg6860_u01_q25_t03"
+  ],
+  "requiredQuestID": "ismg6860_u01_q24",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Hidden Redirects",
+      "questDescription": "<b>Maya:</b> Readers report that requests to my site are being redirected to a look-alike login page. Inspect the HTTP response, identify its stated destination, and separate that observation from claims about who caused it.",
+      "questCompleteText": "<b>Maya:</b> The response returned status 302 and sent the request to expose-login.freepress-check.com. That destination is a lead, not attribution; we need the site's configuration and server logs to determine why the redirect occurred.",
+      "questCharacterID": "u01_maya_ruiz",
+      "appScenarioID": ""
+    }
+  ]
+}

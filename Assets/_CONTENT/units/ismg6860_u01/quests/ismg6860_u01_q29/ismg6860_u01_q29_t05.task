@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Filter unnecessary ICMP at relevant boundaries while preserving required diagnostics.",
+        "Block all inbound and outbound traffic to prevent any host discovery.",
+        "Reset every lab account password on a daily schedule.",
+        "Install endpoint anti-malware instead of changing network controls."
+      ],
+      "correctAnswer": 0,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Aisha:</b> Sentinel needs to preserve network diagnostics while reducing unnecessary reachability probes. The capture supports a focused review of inbound ICMP policy, not a blanket shutdown of the lab network.",
+      "taskInstructions": "Use the <b>reachability probes</b> guidance to choose a scoped control.",
+      "taskQuestion": "Which mitigation best balances discovery risk and lab operations?",
+      "taskCompleteText": "<b>Aisha:</b> Correct. Filter unnecessary ICMP at appropriate boundaries, retain required diagnostics, and monitor the approved traffic. Broad blocking can disrupt network functions and does not prevent every mapping method."
+    }
+  ],
+  "taskID": "ismg6860_u01_q29_t05",
+  "parentQuestID": "ismg6860_u01_q29",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u01_q16_t01_start_evelyn-forwarded",
+  "parentTaskID": "ismg6860_u01_q16_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Evelyn Marston <e.marston@summittrust.com> <i>(Summit Trust Bank Alerts <notifications@summit-trust.secure-mail.com>)</i>",
+      "subject": "FW: Urgent: Verify your account information",
+      "shortSummary": "Email urging immediate account verification.",
+      "date": "0001-01-01T00:00:00",
+      "body": "  Dear customer,\r\n\r\n  We detected unusual activity on your account. Please verify your account within 24 hours to avoid suspension.\r\n\r\n  Verify now: <u><b>[link]\r</b></u>\n\r\n  If this wasn’t you, contact support immediately.",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "time.bridgeworksautomation.com"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Every other machine in this building takes its time from HAL-DC01, one stratum below our own reference. This one answers to something else entirely, and I need the hostname of whatever that is for the report. Not a description of it, the actual name.",
+      "taskInstructions": "Run <b>ntptrace 10.30.14.52</b> and read the hostname one hop above the historian.",
+      "taskQuestion": "What upstream time source does the historian use?",
+      "taskCompleteText": "<b>Dana Osei:</b> time.bridgeworksautomation.com is the selected upstream peer. BridgeWorks is defunct, so Halloway must replace and independently verify that dependency."
+    },
+    {
+      "correctAnswers": [
+        "time.bridgeworksautomation.com"
+      ],
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Whatever sits above this host in the time hierarchy is a party Halloway trusts without ever having decided to trust it. Every stratum up is one more name on that list, and accidental trust is the cheapest kind there is to acquire. I want the name at the top of it.",
+      "taskInstructions": "Run <b>ntptrace 10.30.14.52</b> and read the hostname one hop above the historian.",
+      "taskQuestion": "What upstream time source does the historian use?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> time.bridgeworksautomation.com is the selected peer. A dependency on a defunct vendor's namespace creates risk, but this trace does not establish who currently controls it."
+    },
+    {
+      "correctAnswers": [
+        "time.bridgeworksautomation.com"
+      ],
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Every timestamp this historian has ever written is anchored to whoever sits above it in the time hierarchy. A safety filing that cannot say where its clock came from is a filing that gets thrown out, so I want that name in the record and the stratum written beside it.",
+      "taskInstructions": "Run <b>ntptrace 10.30.14.52</b> and read the hostname one hop above the historian.",
+      "taskQuestion": "What upstream time source does the historian use?",
+      "taskCompleteText": "<b>Priya Nandan:</b> time.bridgeworksautomation.com is the selected peer. Halloway needs a managed source before relying on future historian timestamps."
+    }
+  ],
+  "taskID": "ismg6860_u05_q06_t02",
+  "parentQuestID": "ismg6860_u05_q06",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

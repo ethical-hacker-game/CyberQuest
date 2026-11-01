@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "The account is disabled and retained only for audit history purposes.",
+        "The account is currently locked out following repeated failed authentication attempts.",
+        "The account is enabled but expired, so authentication would now fail.",
+        "The account is enabled, unlocked, and configured so its password never expires."
+      ],
+      "correctAnswer": 3,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Before you tell me what to do about this thing, read what the directory says about the state it is in. I have to take a recommendation into change control on Thursday, and 'it looked wrong to me' is not a recommendation anyone in that room will sign off on.",
+      "taskInstructions": "In the ldapsearch result, inspect userAccountControl and lockoutTime.",
+      "taskQuestion": "What do the account control flags show?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The account is enabled, not locked, and its password is configured never to expire. The record does not identify who currently owns that decision."
+    },
+    {
+      "answers": [
+        "The account is disabled and retained only for audit history purposes.",
+        "The account is currently locked out following repeated failed authentication attempts.",
+        "The account is enabled but expired, so authentication would now fail.",
+        "The account is enabled, unlocked, and configured so its password never expires."
+      ],
+      "correctAnswer": 3,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> Read the account state before deciding whether this identity is usable evidence. Enabled, lockout, and password-expiration flags tell us what the directory permits, not who controls it.",
+      "taskInstructions": "In the ldapsearch result, inspect userAccountControl and lockoutTime.",
+      "taskQuestion": "What do the account control flags show?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The account is enabled, unlocked, and configured with a non-expiring password. That persistence has value even though its privileges remain unknown."
+    },
+    {
+      "answers": [
+        "The account is disabled and retained only for audit history purposes.",
+        "The account is currently locked out following repeated failed authentication attempts.",
+        "The account is enabled but expired, so authentication would now fail.",
+        "The account is enabled, unlocked, and configured so its password never expires."
+      ],
+      "correctAnswer": 3,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> The directory flags can establish the account's current state. They cannot tell us who made the configuration decision, so keep the finding tied to what the record actually shows.",
+      "taskInstructions": "In the ldapsearch result, inspect userAccountControl and lockoutTime.",
+      "taskQuestion": "What do the account control flags show?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The account is enabled, not locked, and its password never expires. Those are directory facts the review cannot dismiss."
+    }
+  ],
+  "taskID": "ismg6860_u05_q05_t02",
+  "parentQuestID": "ismg6860_u05_q05",
+  "articleID": "u05_ldap_directory",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

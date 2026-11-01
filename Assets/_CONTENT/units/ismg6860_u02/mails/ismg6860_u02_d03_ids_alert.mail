@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u02_d03_ids_alert",
+  "parentTaskID": "ismg6860_u02_q09_t03",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asterlink Firewall <fw-alerts@asterlinktransit.com>",
+      "subject": "Scan activity logged",
+      "shortSummary": "The firewall has begun logging scan probes against ECHO-73.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Mira,\n\nAlert FW-2871: repeated SYN probes from 10.42.18.10 to 10.42.18.73. Rate is below block threshold, but the activity is now visible in the DMZ edge logs.\n\nRecommendation: coordinate any additional checks before the next scan pass.\n\nAsterlink Firewall",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Asterlink Firewall <fw-alerts@asterlinktransit.com>",
+      "subject": "Scan activity logged",
+      "shortSummary": "The firewall has begun logging scan probes against ECHO-73.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nAlert FW-2871 recorded repeated SYN probes from 10.42.18.10 to 10.42.18.73. The rate remains below the block threshold, and the activity is visible in the DMZ edge logs.\n\nCoordinate any additional checks before the next scan pass.\n\nAsterlink Firewall",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Asterlink Firewall <fw-alerts@asterlinktransit.com>",
+      "subject": "Scan activity logged",
+      "shortSummary": "The firewall has begun logging scan probes against ECHO-73.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nAlert FW-2871 recorded repeated SYN probes from 10.42.18.10 to 10.42.18.73. The rate remains below the block threshold, and the activity is visible in the DMZ edge logs.\n\nCoordinate any additional checks before the next scan pass.\n\nAsterlink Firewall",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> SET, <b>Gophish and OhPhish</b> are dual-use tools. Choose the use that stays within written authorization, the approved audience, and the no-credential boundary.",
+      "taskInstructions": "Apply the ethical awareness-testing rules from Cyberpedia.",
+      "taskQuestion": "Which use meets the authorized testing boundary?",
+      "taskCompleteText": "<b>Asha Moreno:</b> Correct. The authorized exercise collects no real credentials and targets only the approved audience.",
+      "answers": [
+        "A private clone for the approved audience that stores passwords for later analysis.",
+        "A live phishing run against expo visitors that measures clicks without consent.",
+        "A carrier-account SIM-swap test against Riley without the carrier's approval.",
+        "An authorized exercise for the approved audience that collects no real credentials."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> SET, <b>Gophish and OhPhish</b> can reproduce attacker techniques, but authorization, audience, and data handling determine whether their use is legitimate.",
+      "taskInstructions": "Apply the ethical awareness-testing rules from Cyberpedia.",
+      "taskQuestion": "Which use meets the authorized testing boundary?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Scope and data limits make this an authorized exercise rather than a real attack.",
+      "answers": [
+        "An authorized exercise for the approved audience that collects no real credentials.",
+        "A private clone for the approved audience that stores passwords for later analysis.",
+        "A live phishing run against expo visitors that measures clicks without consent.",
+        "A carrier-account SIM-swap test against Riley without the carrier's approval."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> SET, <b>Gophish and OhPhish</b> must be used within written authorization, a defined audience, and safeguards that prevent real credential collection.",
+      "taskInstructions": "Apply the ethical awareness-testing rules from Cyberpedia.",
+      "taskQuestion": "Which use meets the authorized testing boundary?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Ethical testing protects participants while teaching specific recognition and reporting skills.",
+      "answers": [
+        "A private clone for the approved audience that stores passwords for later analysis.",
+        "An authorized exercise for the approved audience that collects no real credentials.",
+        "A live phishing run against expo visitors that measures clicks without consent.",
+        "A carrier-account SIM-swap test against Riley without the carrier's approval."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "taskID": "ismg6860_u03_q22_t01",
+  "parentQuestID": "ismg6860_u03_q22",
+  "articleID": "u03_awareness_testing",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

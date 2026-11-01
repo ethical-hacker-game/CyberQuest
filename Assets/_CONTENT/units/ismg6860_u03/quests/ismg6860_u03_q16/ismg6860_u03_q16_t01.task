@@ -1,0 +1,35 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Asha Moreno:</b> Open the privacy-preserving exercise report and review the trigger rates as a defender, not as a scorekeeper.",
+      "taskInstructions": "Open the terminal and run <b>ohphish report triggers</b>.",
+      "taskQuestion": "Open the OhPhish trigger summary.",
+      "taskCompleteText": "<b>Asha Moreno:</b> The four aggregate trigger rates are available for comparison.",
+      "correctAnswer": "console.ohphishtraining.com/reports/trigger-summary"
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> The trigger summary replaces anecdotes with aggregate response rates. Open it and compare the ranking.",
+      "taskInstructions": "Open the terminal and run <b>ohphish report triggers</b>.",
+      "taskQuestion": "Open the OhPhish trigger summary.",
+      "taskCompleteText": "<b>Felix Rane:</b> The trigger ranking and response rates are ready to inspect.",
+      "correctAnswer": "console.ohphishtraining.com/reports/trigger-summary"
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> The aggregate trigger summary can support a specific warning without publishing participant-level data. Open the report and preserve that boundary.",
+      "taskInstructions": "Open the terminal and run <b>ohphish report triggers</b>.",
+      "taskQuestion": "Open the OhPhish trigger summary.",
+      "taskCompleteText": "<b>Imani Vale:</b> The report provides measurable evidence without identifying participants.",
+      "correctAnswer": "console.ohphishtraining.com/reports/trigger-summary"
+    }
+  ],
+  "taskID": "ismg6860_u03_q16_t01",
+  "parentQuestID": "ismg6860_u03_q16",
+  "articleID": "u03_human_triggers",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Website"
+}

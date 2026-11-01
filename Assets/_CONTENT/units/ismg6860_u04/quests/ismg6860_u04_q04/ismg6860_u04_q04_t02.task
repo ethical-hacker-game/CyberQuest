@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "taskMessage": "<b>Mara Voss:</b> Check the page heading and description. What is this interface intended to do?",
+      "taskInstructions": "Read the heading and opening paragraph. To return to the page, search for <b>Northbridge setup</b> in Cyber Search.",
+      "taskQuestion": "What type of interface prepares the portal for first use?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. This is a setup interface. Its visible fields describe initial configuration, but seeing the page does not prove that changes can be submitted.",
+      "correctAnswers": [
+        "setup",
+        "set up",
+        "set-up",
+        "setup wizard",
+        "setup page",
+        "setup interface",
+        "portal setup",
+        "portal setup wizard",
+        "Northbridge Portal Setup Wizard",
+        "installer",
+        "install",
+        "installation",
+        "installation wizard",
+        "installation page",
+        "installation interface",
+        "configuration wizard",
+        "configuration",
+        "initial setup",
+        "initial configuration",
+        "deployment utility"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u04_q04_t02",
+  "parentQuestID": "ismg6860_u04_q04",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input",
+  "correctAnswers": []
+}

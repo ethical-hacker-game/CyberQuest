@@ -1,0 +1,162 @@
+[
+  {
+    "queries": [
+      "hv badge revalidation",
+      "lanternpass alert",
+      "sms revalidation"
+    ],
+    "results": [
+      {
+        "title": "LanternPass Badge Revalidation",
+        "description": "The message uses short link hv-lantern.link/r/BL-LANTERN-9 and asks staff to revalidate badges outside the official app.",
+        "interactive": true,
+        "url": "https://lanternpass-alerts.com/alerts/revalidate.html",
+        "realUrl": "/lanternpass-alerts.com/alerts/revalidate.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "harborview help desk assist",
+      "help desk impersonation",
+      "harborview support profile"
+    ],
+    "results": [
+      {
+        "title": "Harborview Expo Help Desk",
+        "description": "A profile using the Harborview Help Desk name offers fast badge and mobile-access support.",
+        "interactive": true,
+        "url": "https://harborview-helpdesk.com/helpdesk",
+        "realUrl": "/harborview-helpdesk.com/helpdesk/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "lanternpass helper",
+      "blue lantern mobile",
+      "lanternpass helper app"
+    ],
+    "results": [
+      {
+        "title": "LanternPass Helper",
+        "description": "A mobile badge companion offered as a direct download outside the approved application store.",
+        "interactive": true,
+        "url": "https://blue-lantern-mobile.com/lanternpass-helper",
+        "realUrl": "/blue-lantern-mobile.com/lanternpass-helper/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "west gate qr",
+      "badge revalidate qr",
+      "harbor badge verify"
+    ],
+    "results": [
+      {
+        "title": "Badge Revalidation",
+        "description": "Sticker redirects to harbor-badge-verify.com/revalidate with campaign ID BL-LANTERN-9.",
+        "interactive": true,
+        "url": "https://harbor-badge-verify.com/revalidate",
+        "realUrl": "/harbor-badge-verify.com/revalidate/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "lucky squad drop",
+      "expo prize crate",
+      "mobile game giveaway"
+    ],
+    "results": [
+      {
+        "title": "Lucky Squad Drop",
+        "description": "A limited mobile-game event advertises Harborview Expo prize crates for eligible players.",
+        "interactive": true,
+        "url": "https://lucky-squad-drop.com/lucky-squad-drop",
+        "realUrl": "/lucky-squad-drop.com/lucky-squad-drop/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "harbor shield vpn",
+      "expo wifi vpn",
+      "vpn app warning"
+    ],
+    "results": [
+      {
+        "title": "Harbor Shield VPN",
+        "description": "A VPN download page advertises official Wi-Fi protection for Harborview Expo visitors.",
+        "interactive": true,
+        "url": "https://harborshieldvpn.com/harbor-shield-vpn",
+        "realUrl": "/harborshieldvpn.com/harbor-shield-vpn/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "riley setup photo",
+      "west gate setup photo",
+      "volunteerloop riley"
+    ],
+    "results": [
+      {
+        "title": "Riley Setup Photo",
+        "description": "A public setup-morning post from a Harborview Expo volunteer.",
+        "interactive": true,
+        "url": "https://volunteerloop.net/riley-setup-photo",
+        "realUrl": "/volunteerloop.net/riley-setup-photo/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "lanternpass builds",
+      "lanternpass publisher hash",
+      "official lanternpass package"
+    ],
+    "results": [
+      {
+        "title": "LanternPass Build Comparison",
+        "description": "Harborview AppCheck comparison of two LanternPass installers.",
+        "interactive": true,
+        "url": "https://appcheck.harborviewexpo.org/lanternpass-builds",
+        "realUrl": "/appcheck.harborviewexpo.org/lanternpass-builds/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "lantern support chat",
+      "fake support chat",
+      "riley one time code"
+    ],
+    "results": [
+      {
+        "title": "LanternPass Support Chat",
+        "description": "Read-only archive of a LanternPass support conversation preserved for review.",
+        "interactive": true,
+        "url": "https://lantern-supportdesk.com/fake-support",
+        "realUrl": "/lantern-supportdesk.com/fake-support/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "jordan hale messages",
+      "persona inbox",
+      "volunteer connect inbox"
+    ],
+    "results": [
+      {
+        "title": "Persona Inbox Timeline",
+        "description": "Read-only VolunteerConnect message timeline preserved for incident review.",
+        "interactive": true,
+        "url": "https://volunteerconnect.net/persona-inbox",
+        "realUrl": "/volunteerconnect.net/persona-inbox/index.html"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "12",
+        "twelve"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> A <b>traceroute</b> lists numbered replies along a path to a destination. Count what this trace displays; silent or changing hops can limit what it tells us.",
+      "taskInstructions": "In the command shell, run <b>traceroute www.ctf.shadowtrace.net</b> and count the numbered hop lines, including the destination.",
+      "taskQuestion": "How many numbered hops appear in the trace?",
+      "taskCompleteText": "<b>Samira:</b> This trace displays 12 numbered hops, ending at the destination. That is the observed path for this probe, not a permanent network map."
+    }
+  ],
+  "taskID": "ismg6860_u01_q21_t01",
+  "parentQuestID": "ismg6860_u01_q21",
+  "articleID": "u01_network_mapping_and_scanning",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

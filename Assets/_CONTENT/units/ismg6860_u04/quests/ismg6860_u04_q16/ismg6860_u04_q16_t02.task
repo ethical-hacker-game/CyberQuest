@@ -1,0 +1,36 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Record the observed condition precisely, without describing an exploit procedure.",
+      "taskInstructions": "Read <link=\"u04_privilege_escalation_condition\"><u>privilege-escalation conditions</u></link>. You can rerun <b>languard audit services</b> to review the wording.",
+      "taskQuestion": "What condition increases escalation likelihood?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. The verified condition is a local service writable by non-admin accounts.",
+      "correctAnswers": ["weak service permissions", "weak service permission", "writable by non-admin", "writable by non admin", "non-admin write access", "non admin write access", "service writable by non-admin", "service permissions"]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Name the exact permission weakness confirmed by the service audit.",
+      "taskInstructions": "Read <link=\"u04_privilege_escalation_condition\"><u>privilege-escalation conditions</u></link>. You can rerun <b>languard audit services</b> to review the wording.",
+      "taskQuestion": "What condition increases escalation likelihood?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Non-admin write access to the local service is the confirmed condition.",
+      "correctAnswers": ["weak service permissions", "weak service permission", "writable by non-admin", "writable by non admin", "non-admin write access", "non admin write access", "service writable by non-admin", "service permissions"]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> State the confirmed permission condition in clear, reviewable language.",
+      "taskInstructions": "Read <link=\"u04_privilege_escalation_condition\"><u>privilege-escalation conditions</u></link>. You can rerun <b>languard audit services</b> to review the wording.",
+      "taskQuestion": "What condition increases escalation likelihood?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The audit confirms weak service permissions, not a completed escalation attack.",
+      "correctAnswers": ["weak service permissions", "weak service permission", "writable by non-admin", "writable by non admin", "non-admin write access", "non admin write access", "service writable by non-admin", "service permissions"]
+    }
+  ],
+  "taskID": "ismg6860_u04_q16_t02",
+  "parentQuestID": "ismg6860_u04_q16",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input",
+  "correctAnswers": []
+}

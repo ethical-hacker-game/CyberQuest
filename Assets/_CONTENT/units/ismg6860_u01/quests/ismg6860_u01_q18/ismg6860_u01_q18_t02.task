@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "BuiltWith: identify site technologies",
+        "GitHub Search: search code and repositories",
+        "ExifTool: extract file and document metadata",
+        "Shodan: search internet-connected devices and services"
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> If the approved review later finds a public document, its metadata might provide context. Use the OSINT Framework directory to identify a suitable inspection tool before examining any file.",
+      "taskInstructions": "Open the browser, search <b>OSINT</b> in Cyber Search, open <b>OSINT Framework</b>, and expand <b>Files / Metadata</b>. Choose the tool listed for extracting file and image metadata.",
+      "taskQuestion": "Which listed tool extracts file metadata?",
+      "taskCompleteText": "<b>Samira:</b> ExifTool is listed for file and image metadata. Its entry identifies a method; we have not inspected or attributed a Neon Vault file."
+    }
+  ],
+  "taskID": "ismg6860_u01_q18_t02",
+  "parentQuestID": "ismg6860_u01_q18",
+  "articleID": "u01_osint_fundamentals",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

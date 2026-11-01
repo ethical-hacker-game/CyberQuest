@@ -1,0 +1,161 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "minigameType": "FirewallRuleset",
+      "minigameHeaderText": "Northbridge Admin Boundary",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "firewallSettings": {
+        "traffic": [
+          {
+            "label": "Admin jump host using RDP",
+            "sourceIp": "10.64.10.5",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The approved jump host is the documented RDP administration path."
+          },
+          {
+            "label": "Monitoring collector using HTTPS",
+            "sourceIp": "10.64.20.12",
+            "port": 443,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The monitoring collector requires read-only health telemetry."
+          },
+          {
+            "label": "Staff workstation requesting RDP",
+            "sourceIp": "10.64.30.44",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "General workstation traffic must not reach the admin segment."
+          },
+          {
+            "label": "Public source requesting RDP",
+            "sourceIp": "203.0.113.70",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "Internet-originated management access is never approved."
+          }
+        ],
+        "ruleBudget": 2,
+        "overrideDefaultPolicy": true,
+        "defaultPolicy": "Deny"
+      },
+      "taskMessage": "<b>Mara Voss:</b> Allow only the approved RDP jump host and HTTPS monitoring collector. Default deny should block the remaining traffic.",
+      "taskInstructions": "Create two <b>ALLOW</b> rules: one for the jump host's RDP flow and one for the monitoring collector's HTTPS flow. Unmatched traffic is denied automatically. Press TEST when ready.",
+      "taskQuestion": "Configure the admin-segment rules.",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Approved administration and monitoring still work, while general and public RDP traffic is blocked."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "minigameType": "FirewallRuleset",
+      "minigameHeaderText": "Northbridge Admin Boundary",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "firewallSettings": {
+        "traffic": [
+          {
+            "label": "Admin jump host using RDP",
+            "sourceIp": "10.64.10.5",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The approved jump host is the documented RDP administration path."
+          },
+          {
+            "label": "Monitoring collector using HTTPS",
+            "sourceIp": "10.64.20.12",
+            "port": 443,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The monitoring collector requires read-only health telemetry."
+          },
+          {
+            "label": "Staff workstation requesting RDP",
+            "sourceIp": "10.64.30.44",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "General workstation traffic must not reach the admin segment."
+          },
+          {
+            "label": "Public source requesting RDP",
+            "sourceIp": "203.0.113.70",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "Internet-originated management access is never approved."
+          }
+        ],
+        "ruleBudget": 2,
+        "overrideDefaultPolicy": true,
+        "defaultPolicy": "Deny"
+      },
+      "taskMessage": "<b>Felix Rane:</b> Preserve the two approved flows and let default deny close every other path into the segment.",
+      "taskInstructions": "Create two <b>ALLOW</b> rules: one for the jump host's RDP flow and one for the monitoring collector's HTTPS flow. Unmatched traffic is denied automatically. Press TEST when ready.",
+      "taskQuestion": "Configure the admin-segment rules.",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The approved paths remain, and the broad RDP opening is gone."
+    },
+    {
+      "persona": "Hacktivist",
+      "minigameType": "FirewallRuleset",
+      "minigameHeaderText": "Northbridge Admin Boundary",
+      "durationOverride": 0,
+      "difficulty": "Normal",
+      "firewallSettings": {
+        "traffic": [
+          {
+            "label": "Admin jump host using RDP",
+            "sourceIp": "10.64.10.5",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The approved jump host is the documented RDP administration path."
+          },
+          {
+            "label": "Monitoring collector using HTTPS",
+            "sourceIp": "10.64.20.12",
+            "port": 443,
+            "protocol": "TCP",
+            "shouldAllow": true,
+            "rationale": "The monitoring collector requires read-only health telemetry."
+          },
+          {
+            "label": "Staff workstation requesting RDP",
+            "sourceIp": "10.64.30.44",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "General workstation traffic must not reach the admin segment."
+          },
+          {
+            "label": "Public source requesting RDP",
+            "sourceIp": "203.0.113.70",
+            "port": 3389,
+            "protocol": "TCP",
+            "shouldAllow": false,
+            "rationale": "Internet-originated management access is never approved."
+          }
+        ],
+        "ruleBudget": 2,
+        "overrideDefaultPolicy": true,
+        "defaultPolicy": "Deny"
+      },
+      "taskMessage": "<b>Imani Vale:</b> Keep the two required operational flows and block unnecessary access to the administration segment.",
+      "taskInstructions": "Create two <b>ALLOW</b> rules: one for the jump host's RDP flow and one for the monitoring collector's HTTPS flow. Unmatched traffic is denied automatically. Press TEST when ready.",
+      "taskQuestion": "Configure the admin-segment rules.",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Required operations continue without exposing RDP to staff or public sources."
+    }
+  ],
+  "taskID": "ismg6860_u04_q14_t04_segment",
+  "parentQuestID": "ismg6860_u04_q14",
+  "articleID": "u04_network_segmentation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Minigame"
+}

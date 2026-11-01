@@ -1,0 +1,34 @@
+{
+  "mailID": "ismg6860_u03_q22_t02_final_report",
+  "parentTaskID": "ismg6860_u03_q22_t02",
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Asha Moreno <asha.moreno@harborviewexpo.org>",
+      "subject": "Blue Lantern debrief: evidence status",
+      "shortSummary": "Asha summarizes confirmed links, open attribution, safeguards, and assigned response actions.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nThe Blue Lantern debrief is ready.\n\nConfirmed marker-linked evidence:\n- Repeated campaign marker: BL-LANTERN-9\n- Preserved mobile, QR, call, and prize-message artifacts carrying that marker\n\nRelated findings with attribution still open:\n- Unbadged West Gate access request; entry not confirmed\n- Authority-based badge exception request; outcome not recorded\n- Unverified support chat requesting a one-time code\n- Relationship-lure profile requesting badge and entrance information\n- DNS answer on affected clients differing from the approved baseline and independent resolvers\n\nResponse status:\n- Incident command and physical security have protected evidence packages\n- Staff guidance uses one verified reporting route and avoids blame\n- Awareness exercises collected no real credentials or participant names\n\nAsha",
+      "attachements": []
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "author": "Felix Rane <felix@quietrelay.net>",
+      "subject": "Blue Lantern debrief: evidence status",
+      "shortSummary": "Felix summarizes measured patterns, confirmed marker links, and unresolved attribution.",
+      "date": "0001-01-01T00:00:00",
+      "body": "The Blue Lantern debrief keeps the useful distinctions intact.\n\nConfirmed marker-linked evidence:\n- Repeated campaign marker: BL-LANTERN-9\n- Preserved mobile, QR, call, and prize-message artifacts carrying that marker\n\nRelated findings with attribution still open:\n- Unbadged West Gate access request; entry not confirmed\n- Authority-based badge exception request; outcome not recorded\n- Unverified support chat requesting a one-time code\n- Relationship-lure profile requesting badge and entrance information\n- DNS answer on affected clients differing from the approved baseline and independent resolvers\n\nControlled review status:\n- Detailed access-route data is restricted to authorized testing\n- Aggregate trigger results remain separate from individual identities\n- Awareness exercises collected no real credentials or participant names\n\nFelix",
+      "attachements": []
+    },
+    {
+      "persona": "Hacktivist",
+      "author": "Imani Vale <imani@civicwatch.org>",
+      "subject": "Blue Lantern debrief: evidence status",
+      "shortSummary": "Imani summarizes the redacted public findings and the evidence that remains restricted.",
+      "date": "0001-01-01T00:00:00",
+      "body": "The redacted Blue Lantern debrief is ready.\n\nConfirmed marker-linked evidence:\n- Repeated campaign marker: BL-LANTERN-9\n- Preserved mobile, QR, call, and prize-message artifacts carrying that marker\n\nPublic findings with attribution labels:\n- Physical access and badge-exception requests were reported; successful entry is not confirmed\n- An unverified support identity requested a one-time code\n- A relationship-lure profile requested badge and entrance information\n- Affected clients returned a DNS answer inconsistent with trusted comparison values\n\nWithheld from public release:\n- Target identities and authentication data\n- Live lure destinations and internal access routes\n- Details reserved for incident response or authorized testing\n\nImani",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "articleID": "u05_ipsec_voip",
+  "videoURL": null,
+  "title": "IPsec and VoIP Service Discovery",
+  "content": "<b>Some services announce their own existence simply by responding.</b>\n\n<b>IPsec.</b> IKE and ISAKMP commonly negotiate on UDP 500. A response establishes that an IKE responder is configured at the target; it does not prove that a site-to-site tunnel is established or that the tester can authenticate. An Aggressive Mode response may disclose a peer identity and proposed transform set: encryption, hash, authentication method, key exchange group, and security association lifetime.\n\nA legacy algorithm such as 3DES is evidence about what the responder offers, not a timestamp for when it was configured. An identity absent from the current inventory is an ownership discrepancy that requires review. Neither observation alone proves tunnel access.\n\n<b>VoIP.</b> Session Initiation Protocol services commonly listen on 5060, with 5061 for the TLS variant. Enumeration may reveal gateway software, user agents, or valid extension patterns. Those details can support follow-up assessment, but they do not establish toll fraud, spoofing, or voice phishing.\n\nReport the metadata the service actually returns and test access or impact separately within scope.",
+  "links": [
+    "ISAKMP",
+    "transform set",
+    "Session Initiation Protocol",
+    "IPsec",
+    "SIP"
+  ]
+}

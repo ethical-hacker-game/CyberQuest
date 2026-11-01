@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "It resolves inside Halloway's own public allocation, so the record is expected.",
+        "It resolves outside Halloway's documented allocation and requires ownership validation.",
+        "It fails to resolve at all, which means the record is a harmless leftover entry.",
+        "It resolves to a private address, so the record cannot be reached from the public internet."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dana Osei:</b> Halloway's documented public allocation is 203.0.113.0/24. Resolve the remote record and compare its address with that known range before deciding what still needs verification.",
+      "taskInstructions": "Run <b>dig remote.hallowayprecision.com</b> in the terminal and check the address against Halloway's own 203.0.113.0/24 allocation.",
+      "taskQuestion": "What does the address that remote.hallowayprecision.com resolves to tell you?",
+      "taskCompleteText": "<b>Dana Osei:</b> Correct. The record resolves outside our documented allocation. We now need to establish the endpoint owner, purpose, and exposed service."
+    },
+    {
+      "answers": [
+        "It resolves inside Halloway's own public allocation, so the record is expected.",
+        "It resolves outside Halloway's documented allocation and requires ownership validation.",
+        "It fails to resolve at all, which means the record is a harmless leftover entry.",
+        "It resolves to a private address, so the record cannot be reached from the public internet."
+      ],
+      "correctAnswer": 1,
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Reyes Calloway:</b> A hostname is a label; the address underneath it is the next lead. Compare that address with Halloway's documented 203.0.113.0/24 allocation before deciding who might control it.",
+      "taskInstructions": "Run <b>dig remote.hallowayprecision.com</b> in the terminal and check the address against Halloway's own 203.0.113.0/24 allocation.",
+      "taskQuestion": "What does the address that remote.hallowayprecision.com resolves to tell you?",
+      "taskCompleteText": "<b>Reyes Calloway:</b> Correct. The address falls outside Halloway's documented allocation. Ownership and service validation determine whether the lead has value."
+    },
+    {
+      "answers": [
+        "It resolves inside Halloway's own public allocation, so the record is expected.",
+        "It resolves outside Halloway's documented allocation and requires ownership validation.",
+        "It fails to resolve at all, which means the record is a harmless leftover entry.",
+        "It resolves to a private address, so the record cannot be reached from the public internet."
+      ],
+      "correctAnswer": 1,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Priya Nandan:</b> Resolve the record and compare it with Halloway's documented 203.0.113.0/24 allocation. An external address expands the investigation but does not prove plant access.",
+      "taskInstructions": "Run <b>dig remote.hallowayprecision.com</b> in the terminal and check the address against Halloway's own 203.0.113.0/24 allocation.",
+      "taskQuestion": "What does the address that remote.hallowayprecision.com resolves to tell you?",
+      "taskCompleteText": "<b>Priya Nandan:</b> Correct. The address is outside Halloway's documented allocation. Verify ownership and service exposure before describing the risk to workers."
+    }
+  ],
+  "taskID": "ismg6860_u05_q08_t03",
+  "parentQuestID": "ismg6860_u05_q08",
+  "articleID": "u05_dns_zone_transfer",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

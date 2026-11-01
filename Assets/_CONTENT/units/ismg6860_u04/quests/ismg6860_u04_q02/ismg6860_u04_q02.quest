@@ -1,0 +1,26 @@
+{
+    "questID":  "ismg6860_u04_q02",
+    "cityIndex":  7134,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q02_t00_unlock_niktoscan",
+                    "ismg6860_u04_q02_t01",
+                    "ismg6860_u04_q02_t02",
+                    "ismg6860_u04_q02_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  true,
+    "variants":  [
+                     {
+                         "persona":  "Universal Persona Content",
+                         "questName":  "Misconfiguration Exploits: Web Server",
+                         "questDescription":  "Review the public portal from an external viewpoint and separate useful findings from low-priority noise.",
+                         "questCompleteText":  "Quest complete. The evidence has been recorded for the Northbridge vulnerability assessment.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

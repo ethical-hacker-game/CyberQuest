@@ -1,0 +1,26 @@
+{
+  "questID": "ismg6860_u01_q21",
+  "cityIndex": 3143,
+  "questIconID": "quest_icon_traceroute_1",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u01_q21_t01",
+    "ismg6860_u01_q21_t02",
+    "ismg6860_u01_q21_t03_packet_rush"
+  ],
+  "requiredQuestID": "ismg6860_u01_q20",
+  "fanOffset": 0.0,
+  "overrideFanSpan": false,
+  "fanSpan": 0.0,
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Traceroute Mapping",
+      "questDescription": "<b>Samira:</b> Trace the route to www.ctf.shadowtrace.net, count the numbered hops, and identify one intermediate address. The trace offers a partial view of the path, not a complete network map. Then practice keeping a packet intact in a routing exercise.",
+      "questCompleteText": "<b>Samira:</b> You counted 12 displayed hops, identified the address at hop 6, and completed the packet-routing exercise. A trace shows responding hops on this attempt; it does not prove the path is fixed.",
+      "questCharacterID": "u01_samira_linton",
+      "appScenarioID": ""
+    }
+  ]
+}

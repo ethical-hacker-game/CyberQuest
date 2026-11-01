@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u02_d01_scope_pressure",
+  "parentTaskID": "ismg6860_u02_q03_t03",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Ilya Voss <ilya.voss@railgatesystems.com>",
+      "subject": "Can we include the vendor block?",
+      "shortSummary": "Ilya asks to scan a nearby vendor range, while Lena asks why cameras are outside scope.",
+      "date": "0001-01-01T00:00:00",
+      "body": "{player},\n\nECHO-73 is one of our normal diagnostics nodes. If you scan 10.42.30.0/24 too, you can save everyone time and prove the maintenance side is clean. I know it is not in the current scope, but it is still our equipment.\n\nIlya\n\nForwarded note from Lena Ortiz:\nWhy are public-facing station camera endpoints not in the launch review? If the city says the scan protects riders, the scope should explain what is excluded and why.",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u05_q12",
+  "cityIndex": 7304,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q12_t01",
+    "ismg6860_u05_q12_t02",
+    "ismg6860_u05_q12_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "VoIP Enumeration",
+      "questDescription": "Dana Osei asks you to check the plant-floor phone system while you are here. Not every finding is part of the same story, and she needs the ordinary gaps recorded too.",
+      "questCompleteText": "<b>Dana Osei:</b> The voice gateway exposes SIP on 5060 and SIP-TLS on 5061, plus the extension range 2001-2048. This belongs in the report as a separate hardening gap.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "VoIP Enumeration",
+      "questDescription": "Reyes Calloway wants the reachable SIP metadata catalogued without turning a range of extensions into identities the scan never returned.",
+      "questCompleteText": "<b>Reyes Calloway:</b> The gateway disclosed its SIP ports, software identifier, realm, and extension range. Names and call access remain unknown.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "VoIP Enumeration",
+      "questDescription": "Priya Nandan cares about the plant-floor phones specifically. Those handsets are how the floor calls for help.",
+      "questCompleteText": "<b>Priya Nandan:</b> The authorized scan enumerated the gateway's SIP services and extension range. That exposure should be hardened without claiming calls were intercepted or placed.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

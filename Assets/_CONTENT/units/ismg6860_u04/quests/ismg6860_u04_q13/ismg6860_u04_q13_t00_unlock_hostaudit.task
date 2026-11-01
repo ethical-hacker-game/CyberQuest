@@ -1,0 +1,38 @@
+{
+  "variants": [
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "hostaudit",
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Host Audit Agent reads patch state, service permissions, local policy, and scheduled tasks from authorized endpoints.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Host Audit Agent</b>.",
+      "taskQuestion": "Unlock the Host Audit Agent in the Lab panel.",
+      "taskCompleteText": "<b>Mara Voss:</b> Host Audit Agent is ready. Open the completed LanGuard audit."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "hostaudit",
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Host Audit Agent exposes local patch state, service permissions, password policy, and scheduled tasks that an external scan cannot see.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Host Audit Agent</b>.",
+      "taskQuestion": "Unlock the Host Audit Agent in the Lab panel.",
+      "taskCompleteText": "<b>Felix Rane:</b> Host Audit Agent is ready. Open the completed LanGuard audit."
+    },
+    {
+      "actionType": "skill_unlocked",
+      "actionTag": "hostaudit",
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Host Audit Agent measures patch and policy conditions on the internal endpoints supporting public services.",
+      "taskInstructions": "Open the Lab panel and unlock <b>Host Audit Agent</b>.",
+      "taskQuestion": "Unlock the Host Audit Agent in the Lab panel.",
+      "taskCompleteText": "<b>Imani Vale:</b> Host Audit Agent is ready. Open the completed LanGuard audit."
+    }
+  ],
+  "taskID": "ismg6860_u04_q13_t00_unlock_hostaudit",
+  "parentQuestID": "ismg6860_u04_q13",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Action"
+}

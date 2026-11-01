@@ -1,0 +1,11 @@
+{
+  "articleID": "u04_safe_validation",
+  "videoURL": null,
+  "title": "Safe Validation Boundaries",
+  "content": "<b>Safe validation gathers enough evidence to support a finding without creating avoidable harm or exceeding authorization.</b>\n\nEvery assessment begins with written permission that defines targets, techniques, time windows, data-handling rules, and prohibited actions. A technically possible test is not automatically an authorized test. When the next step is unclear, state-changing, destructive, or outside the documented boundary, pause and obtain explicit approval.\n\nUse the least invasive method that can answer the assessment question. Safe evidence may include a read-only request, a response code paired with visible content, a configuration review, an authenticated scanner check approved by the owner, or corroboration from a second source. Capture only what is necessary. Avoid downloading sensitive material, submitting forms, changing configuration, creating accounts, executing payloads, or stressing production systems unless those actions are specifically approved and controlled.\n\nBefore validation, define stop conditions. Stop when the test could interrupt service, expose unrelated personal data, alter records, reach an excluded asset, trigger uncontrolled automation, or produce an effect that cannot be reversed safely. High-impact conditions such as possible remote code execution demand urgency, but urgency is not permission to run a payload on a production system. Strong non-invasive evidence, accurate wording, rapid containment, and a separately approved test window are often the safer response.\n\nA good validation record includes the authorization reference, target, time, method, observed result, evidence location, and actions deliberately not performed. Distinguish confirmed facts from untested impact. For example, evidence may confirm that a risky interface is reachable while deeper impact remains conditional because further interaction was not authorized.\n\nRestraint strengthens a finding. It protects the client and users, preserves system integrity, and makes the evidence easier to defend during remediation and review.",
+  "links": [
+    "safe validation",
+    "validation method",
+    "testing boundary"
+  ]
+}

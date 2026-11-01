@@ -1,0 +1,41 @@
+{
+  "questID": "ismg6860_u05_q13",
+  "cityIndex": 7321,
+  "questIconID": "",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u05_q13_t01",
+    "ismg6860_u05_q13_t02",
+    "ismg6860_u05_q13_t03"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Unix and Linux User Enumeration",
+      "questDescription": "Dana Osei wants the directory timestamp checked against the historian's own Unix session data. Confirm what each source establishes without treating mail-recipient enumeration as login evidence.",
+      "questCompleteText": "<b>Dana Osei:</b> The directory timestamp and Unix session record both show svc_bridgeworks activity at 02:41. SMTP confirms the address exists, but not that it logged in.",
+      "questCharacterID": "u05_dana_osei",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Unix and Linux User Enumeration",
+      "questDescription": "Reyes Calloway wants a second telemetry source before treating the directory timestamp as current activity. Inspect the historian's session records and their source address.",
+      "questCompleteText": "<b>Reyes Calloway:</b> Two telemetry sources record activity at 02:41, and the Unix session lists 198.51.100.77 as its source. One event does not establish a routine.",
+      "questCharacterID": "u05_reyes_calloway",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Unix and Linux User Enumeration",
+      "questDescription": "Priya Nandan wants the evidence separated by what it proves. Compare the directory timestamp, mail-recipient result, and Unix session without counting all three as activity logs.",
+      "questCompleteText": "<b>Priya Nandan:</b> The account exists across the reviewed systems, while two sources specifically support recent activity. The distinction belongs in the record.",
+      "questCharacterID": "u05_priya_nandan",
+      "appScenarioID": ""
+    }
+  ]
+}

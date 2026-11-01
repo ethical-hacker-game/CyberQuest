@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Conclude that finance staff leaked the files based only on the forum post.",
+        "Discard the original forum evidence because cameras provide a better record.",
+        "Keep a copy of discovered files for personal use to investigate later.",
+        "Inspect authorized finance-area disposal points for a possible physical exposure route."
+      ],
+      "correctAnswer": 3,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Riley:</b> I'm Riley Park, CipherDefense's Facilities and Security Liaison. Fragments of internal financial documents appeared on a public forum. We do not know how they got there, but I can authorize a check of our physical handling practices.",
+      "taskInstructions": "Choose a scoped first step within Riley's facilities remit. Preserve the forum evidence for the wider investigation.",
+      "taskQuestion": "Which physical exposure lead should you check?",
+      "taskCompleteText": "<b>Riley:</b> Finance-area disposal points are a relevant lead. Finding a weakness there would warrant remediation, but would not by itself explain the forum post."
+    }
+  ],
+  "taskID": "ismg6860_u01_q14_t01",
+  "parentQuestID": "ismg6860_u01_q14",
+  "articleID": "u01_physical_information_security",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSA Report - First Signal</title>
+  <script src="../../cq-bridge.js"></script>
+  <style>
+    body { margin: 0; font-family: Segoe UI, Arial, sans-serif; background: #f2f5f7; color: #1b2836; }
+    header { background: #1d3a2a; color: #fff; padding: 18px 32px; }
+    header h1 { margin: 0; font-size: 22px; }
+    header p { margin: 4px 0 0; color: #c6e4cf; }
+    main { max-width: 1040px; margin: 24px auto; padding: 0 24px 40px; }
+    .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
+    .tile, .finding, .details { background: #fff; border: 1px solid #d7e0e7; padding: 18px; }
+    .tile strong { display: block; font-size: 24px; color: #1d3a2a; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #d7e0e7; }
+    th, td { text-align: left; border-bottom: 1px solid #e6edf2; padding: 12px; }
+    th { background: #eef5ef; color: #243b2f; }
+    .medium { color: #9a5b00; font-weight: 700; }
+    .low { color: #536471; font-weight: 700; }
+    .tag { display: inline-block; padding: 3px 8px; background: #edf7ef; border: 1px solid #b8d9c0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Greenbone Security Assistant</h1>
+    <p>Report: First Signal / Target: Training Northstar public status area</p>
+  </header>
+  <main>
+    <section class="summary">
+      <div class="tile"><span>Report ID</span><strong>FS-00-417</strong></div>
+      <div class="tile"><span>Source Case</span><strong>NS-1047</strong></div>
+      <div class="tile"><span>Host</span><strong>185.254.57.124</strong></div>
+      <div class="tile"><span>Findings</span><strong>3</strong></div>
+    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>Severity</th>
+          <th>Finding</th>
+          <th>Affected URL</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="medium">Medium</td>
+          <td>Directory Indexing Enabled</td>
+          <td>https://portal.trainingnorthstar.com/status/exports/</td>
+          <td>Confirmed by crawler response</td>
+        </tr>
+        <tr>
+          <td class="low">Low</td>
+          <td>Missing Informational Header</td>
+          <td>https://portal.trainingnorthstar.com/status/</td>
+          <td>Informational</td>
+        </tr>
+        <tr>
+          <td class="low">Low</td>
+          <td>Verbose Server Banner</td>
+          <td>https://portal.trainingnorthstar.com/status/</td>
+          <td>Observation only</td>
+        </tr>
+      </tbody>
+    </table>
+    <section class="details">
+      <h2>Primary Finding Detail</h2>
+      <p><span class="tag">Directory Indexing Enabled</span></p>
+      <p>The exports directory returns a browsable file list. The scanner did not retrieve protected content, but file names and timestamps are visible enough to support a remediation ticket.</p>
+      <p><b>Recommended action:</b> disable directory indexing, move exposed files outside the public web root, and rescan the affected path.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+    "questID":  "ismg6860_u04_q20",
+    "cityIndex":  7440,
+    "questIconID":  "",
+    "decisionQuest":  false,
+    "taskIDs":  [
+                    "ismg6860_u04_q20_t01",
+                    "ismg6860_u04_q20_t02",
+                    "ismg6860_u04_q20_t03"
+                ],
+    "fanOffset":  0,
+    "overrideFanSpan":  false,
+    "fanSpan":  0,
+    "universalPersonaContent":  false,
+    "variants":  [
+                     {
+                         "persona":  "Whitehat Hacker",
+                         "questName":  "Exploitation Pathways: Maintaining Access",
+                         "questDescription":  "Mara Voss frames this step for {player}. Recognize persistence risk indicators and close the technical sequence.",
+                         "questCompleteText":  "Exploitation Pathways: Maintaining Access complete. The overprivileged NightlyExport task is recorded as a persistence condition to remove, closing the assessment cleanly.",
+                         "questCharacterID":  "u04_mara_voss",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Blackhat Hacker",
+                         "questName":  "Exploitation Pathways: Maintaining Access",
+                         "questDescription":  "Felix Rane frames this step for {player}. Recognize persistence risk indicators and close the technical sequence.",
+                         "questCompleteText":  "Exploitation Pathways: Maintaining Access complete. Felix notes the overprivileged scheduled task as the way back in, the detail most reports miss.",
+                         "questCharacterID":  "u04_felix_rane",
+                         "appScenarioID":  ""
+                     },
+                     {
+                         "persona":  "Hacktivist",
+                         "questName":  "Exploitation Pathways: Maintaining Access",
+                         "questDescription":  "Imani Vale frames this step for {player}. Recognize persistence risk indicators and close the technical sequence.",
+                         "questCompleteText":  "Exploitation Pathways: Maintaining Access complete. Imani ends on persistence because it is how a quiet breach becomes a long, unnoticed harm to the public.",
+                         "questCharacterID":  "u04_imani_vale",
+                         "appScenarioID":  ""
+                     }
+                 ]
+}

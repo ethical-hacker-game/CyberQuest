@@ -1,0 +1,104 @@
+[
+  {
+    "queries": [
+      "halloway",
+      "halloway precision",
+      "halloway precision manufacturing",
+      "precision machining rockford",
+      "hallowayprecision.com"
+    ],
+    "results": [
+      {
+        "title": "Halloway Precision Manufacturing",
+        "description": "Close-tolerance machined components for aerospace and automotive suppliers. AS9100D and ISO 9001:2015 certified, two plants in Rockford, Illinois.",
+        "interactive": true,
+        "url": "https://hallowayprecision.com",
+        "realUrl": "/hallowayprecision.com/index.html"
+      },
+      {
+        "title": "Capabilities - Halloway Precision Manufacturing",
+        "description": "Five-axis milling, Swiss turning, centreless grinding, and CMM inspection. Machining envelopes, cell counts, and material families.",
+        "interactive": true,
+        "url": "https://hallowayprecision.com/capabilities/",
+        "realUrl": "/hallowayprecision.com/capabilities/index.html"
+      },
+      {
+        "title": "Quality - Halloway Precision Manufacturing",
+        "description": "AS9100D quality management system, inspection equipment, gauge calibration, and published supplier quality documents.",
+        "interactive": true,
+        "url": "https://hallowayprecision.com/quality/",
+        "realUrl": "/hallowayprecision.com/quality/index.html"
+      },
+      {
+        "title": "Contact - Halloway Precision Manufacturing",
+        "description": "Plant addresses, department contacts, and supplier enquiry guidance for Halloway Precision Manufacturing.",
+        "interactive": true,
+        "url": "https://hallowayprecision.com/contact/",
+        "realUrl": "/hallowayprecision.com/contact/index.html"
+      }
+    ]
+  },
+  {
+    "queries": [
+      "bridgeworks",
+      "bridgeworks automation",
+      "bridgeworks automation dissolution"
+    ],
+    "results": [
+      {
+        "title": "BridgeWorks Automation - dissolution filing",
+        "description": "Illinois business registry summary. BridgeWorks Automation LLC, systems integration, status dissolved. Final filing recorded June 2023.",
+        "interactive": false,
+        "url": "",
+        "realUrl": ""
+      },
+      {
+        "title": "Industrial integrator BridgeWorks winds down operations",
+        "description": "Trade press summary from 2023 reporting that the midwest systems integrator ceased trading, with support obligations passing back to its customers.",
+        "interactive": false,
+        "url": "",
+        "realUrl": ""
+      }
+    ]
+  },
+  {
+    "queries": [
+      "cordata",
+      "cordata security",
+      "cordata security partners"
+    ],
+    "results": [
+      {
+        "title": "Cordata Security Partners",
+        "description": "Independent security assessment practice. Enumeration, vulnerability assessment, and remediation advisory for industrial and manufacturing clients.",
+        "interactive": false,
+        "url": "",
+        "realUrl": ""
+      }
+    ]
+  },
+  {
+    "queries": [
+      "enumeration",
+      "smb enumeration",
+      "snmp enumeration",
+      "null session"
+    ],
+    "results": [
+      {
+        "title": "Service enumeration in security assessment",
+        "description": "Reference overview of enumeration: querying identified services for users, shares, directory entries, and configuration once the scanning phase is complete.",
+        "interactive": false,
+        "url": "",
+        "realUrl": ""
+      },
+      {
+        "title": "SNMP community strings and version history",
+        "description": "Why SNMPv1 and v2c transmit community strings in cleartext, and what version 3 changes about authentication and message privacy.",
+        "interactive": false,
+        "url": "",
+        "realUrl": ""
+      }
+    ]
+  }
+]

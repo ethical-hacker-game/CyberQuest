@@ -1,0 +1,9 @@
+{
+  "articleID": "u04_practical_risk_context",
+  "videoURL": null,
+  "title": "Practical Risk Context",
+  "content": "Scanner severity describes a technical condition. Practical risk also considers <b>exposure</b>, <b>likely data sensitivity</b>, <b>service importance</b>, and <b>evidence confidence</b>. Public reachability and impact on an essential service can raise priority. Uncertainty should be stated separately: a public file named as an administrative backup suggests sensitive content, but its filename does not prove what is inside or whether anyone used it. A defensible rating explains both the verified risk factors and the untested assumptions.",
+  "links": [
+    "practical risk context"
+  ]
+}

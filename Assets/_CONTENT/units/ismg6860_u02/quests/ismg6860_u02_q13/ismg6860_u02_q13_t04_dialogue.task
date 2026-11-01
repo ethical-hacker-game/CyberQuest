@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The controls told us where visibility starts and where it quietly stops, which is as much as any scan can give us here. What is left is not technical at all: it is a judgement about who receives this evidence and how much detail they need to act before the launch window closes.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> The technical finding is complete. Now choose how to report it."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> The route, the service, and the control gap. That is a complete map, and complete maps are worth something to more than one kind of buyer. What leaves your hands now, and what stays in your own notes, is the only decision still open.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Kade Mercer:</b> The map is complete. Now decide who receives it and at what level of detail."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> The vendor path and the monitoring gap are both visible now, and this is exactly the moment where accountability usually gets negotiated down to nothing. Enough detail to force a fix, not enough to hand a stranger a live attack path: that line is the whole argument ahead of us.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Lena Ortiz:</b> The evidence is ready. Now choose a reporting path that supports both remediation and responsible disclosure."
+    }
+  ],
+  "taskID": "ismg6860_u02_q13_t04_dialogue",
+  "parentQuestID": "ismg6860_u02_q13",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

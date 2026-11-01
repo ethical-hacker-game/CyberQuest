@@ -1,0 +1,12 @@
+{
+  "articleID": "u04_rce_response",
+  "videoURL": null,
+  "title": "Remote Code Execution Risk and Response",
+  "content": "<b>Remote code execution, or RCE, is the ability to make a target system run attacker-controlled instructions from another system.</b> Its potential impact is high because successful execution may affect application data, service identity, host integrity, and connected systems. A reported RCE condition is not proof that arbitrary code has already run.\n\nAssess the claim through evidence and preconditions. Identify the affected component and supported version, confirm that the relevant feature is present and reachable, review trustworthy advisory or vendor information, and note required authentication, configuration, user action, and network position. Check whether patches, mitigations, filtering, isolation, or disabled functionality change practical exposure. Keep confirmed observations separate from predicted impact.\n\nProduction validation should use the least invasive evidence that answers the question. Do not run a payload merely to make the report dramatic. Payload execution can alter state, expose data, interrupt service, trigger other systems, or cross the authorized boundary. If deeper testing is necessary, obtain explicit written approval and use a controlled environment, agreed test action, monitoring, rollback plan, and stop conditions.\n\nA credible exposed RCE condition requires rapid defensive action even when exploitation has not been demonstrated. Reduce reachability, disable the affected feature or service when operationally possible, apply the supported patch or mitigation, and increase monitoring for relevant process, application, authentication, and network activity. Preserve evidence before destructive changes if compromise is suspected. Review secrets and service accounts available to the affected process, because code execution inherits a security context.\n\nAfter remediation, verify the installed version or configuration, confirm that the vulnerable behavior or exposure is gone, and monitor for recurrence. Report the remaining uncertainty honestly. Fast containment and careful verification are compatible: urgency determines how quickly defenders reduce risk, not how recklessly an assessor proves impact.",
+  "links": [
+    "remote code execution",
+    "RCE risk",
+    "reckless proof-of-exploit behavior",
+    "running a payload"
+  ]
+}

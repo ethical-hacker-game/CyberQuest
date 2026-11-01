@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "correctAnswers": [
+        "expose-login.freepress-check.com"
+      ],
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Maya:</b> Recheck the destination with the command-line response before I add it to my incident notes. This confirms what the endpoint returned for this request; it does not show who set the redirect.",
+      "taskInstructions": "In the command shell, run <b>curl -sI https://expose.freepress.org</b>. Type the hostname shown in the <b>Location header</b>.",
+      "taskQuestion": "Which hostname did the response name as its redirect destination?",
+      "taskCompleteText": "<b>Maya:</b> The response points to <b>expose-login.freepress-check.com</b>. Record it with the request and timestamp, then compare it with the site's configuration and server logs."
+    }
+  ],
+  "taskID": "ismg6860_u01_q25_t03",
+  "parentQuestID": "ismg6860_u01_q25",
+  "articleID": "u01_phishing_and_email_investigation",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "Input"
+}

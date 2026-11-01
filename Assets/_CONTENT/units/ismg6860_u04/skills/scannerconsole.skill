@@ -1,0 +1,9 @@
+{
+  "skillID": "scannerconsole",
+  "skillName": "Scanner Console",
+  "skillDescription": "A triage view for vulnerability scanner output. Collects findings into one list with plugin names and tracking identifiers, so a result can be cited and revisited instead of screenshotted.",
+  "price": 2000,
+  "order": 20,
+  "requireTask": true,
+  "lockInDemo": false
+}

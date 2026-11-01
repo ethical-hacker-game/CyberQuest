@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeNest Search</title>
+  <script src="../../cq-bridge.js"></script>
+</head>
+<body>
+  <script>
+    const query = new URLSearchParams(location.search).get('q') || '';
+    location.replace(`../index.html#/search${query ? `?q=${encodeURIComponent(query)}` : ''}`);
+  </script>
+</body>
+</html>

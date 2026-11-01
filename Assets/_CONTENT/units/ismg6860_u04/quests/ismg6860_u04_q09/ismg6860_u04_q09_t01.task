@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Determine what the setup evidence proves before assessing whether the interface can change anything.",
+      "taskInstructions": "Run <b>nessus verify portal</b>. In the setup finding's Output block, compare the response, page identity, and observed form state.",
+      "taskQuestion": "Which conclusion is supported by the recorded evidence?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Exposure is verified, while state-changing capability remains untested.",
+      "answers": [
+        "The public setup page returned 200 OK, but the observed controls were disabled and no state-changing action was tested.",
+        "The setup wizard was successfully submitted and changed the production database profile.",
+        "The route was unreachable, so the scanner finding is disproved.",
+        "An attacker has already used the wizard to create an administrator account."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> Separate a reachable page from a usable configuration path. The evidence establishes only one of them.",
+      "taskInstructions": "Run <b>nessus verify portal</b>. In the setup finding's Output block, compare the response, page identity, and observed form state.",
+      "taskQuestion": "Which conclusion is supported by the recorded evidence?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The opening is visible, but the current evidence does not show that it can change state.",
+      "answers": [
+        "The public setup page returned 200 OK, but the observed controls were disabled and no state-changing action was tested.",
+        "The setup wizard was successfully submitted and changed the production database profile.",
+        "The route was unreachable, so the scanner finding is disproved.",
+        "An attacker has already used the wizard to create an administrator account."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> State the public exposure clearly, but do not turn an untested setup form into a claim of compromise.",
+      "taskInstructions": "Run <b>nessus verify portal</b>. In the setup finding's Output block, compare the response, page identity, and observed form state.",
+      "taskQuestion": "Which conclusion is supported by the recorded evidence?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The exposure is real, but the evidence does not establish a working state-changing path.",
+      "answers": [
+        "The public setup page returned 200 OK, but the observed controls were disabled and no state-changing action was tested.",
+        "The setup wizard was successfully submitted and changed the production database profile.",
+        "The route was unreachable, so the scanner finding is disproved.",
+        "An attacker has already used the wizard to create an administrator account."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q09_t01",
+  "parentQuestID": "ismg6860_u04_q09",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

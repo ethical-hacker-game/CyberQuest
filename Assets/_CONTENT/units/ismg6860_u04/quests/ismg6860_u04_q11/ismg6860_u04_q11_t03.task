@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> Route each finding to the team that controls the affected system while keeping the assessment owner informed.",
+      "taskInstructions": "Match the public portal findings to application owners and internal network findings to infrastructure or endpoint owners.",
+      "taskQuestion": "Who should receive each report section?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Clear ownership lets each team remediate and verify its part of the assessment.",
+      "answers": [
+        "External findings should go to the public portal owners, while internal findings also involve the infrastructure and endpoint teams.",
+        "All findings should go only to the central security team, without assigning owners in application or infrastructure teams.",
+        "High-severity findings should go to executives, while technical owners receive only Low and Informational items.",
+        "Both report sections should go only to the public portal team because the assessment began from a website."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A finding closes faster when it reaches the team that owns the affected application, host, or network path.",
+      "taskInstructions": "Match the public portal findings to application owners and internal network findings to infrastructure or endpoint owners.",
+      "taskQuestion": "Who should receive each report section?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. The distribution list determines which team can remove each opening.",
+      "answers": [
+        "External findings should go to the public portal owners, while internal findings also involve the infrastructure and endpoint teams.",
+        "All findings should go only to the central security team, without assigning owners in application or infrastructure teams.",
+        "High-severity findings should go to executives, while technical owners receive only Low and Informational items.",
+        "Both report sections should go only to the public portal team because the assessment began from a website."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Assign findings to teams that can implement and verify the fixes, rather than routing technical work through communications.",
+      "taskInstructions": "Match the public portal findings to application owners and internal network findings to infrastructure or endpoint owners.",
+      "taskQuestion": "Who should receive each report section?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. Named technical owners make remediation accountable.",
+      "answers": [
+        "External findings should go to the public portal owners, while internal findings also involve the infrastructure and endpoint teams.",
+        "All findings should go only to the central security team, without assigning owners in application or infrastructure teams.",
+        "High-severity findings should go to executives, while technical owners receive only Low and Informational items.",
+        "Both report sections should go only to the public portal team because the assessment began from a website."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q11_t03",
+  "parentQuestID": "ismg6860_u04_q11",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

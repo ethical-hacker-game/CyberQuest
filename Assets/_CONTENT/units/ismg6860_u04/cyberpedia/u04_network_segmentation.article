@@ -1,0 +1,13 @@
+{
+  "articleID": "u04_network_segmentation",
+  "videoURL": null,
+  "title": "Network Segmentation and Management Access",
+  "content": "<b>Network segmentation divides systems into zones and permits only the connections required for an approved business function.</b> Its purpose is to reduce unnecessary reachability, limit lateral movement, and make important trust boundaries visible to defenders.\n\nInternal does not mean trusted. A compromised user device, vendor system, or public-facing server may already operate inside part of the network. Broad access from such a system to file shares, databases, or management services can turn one weakness into a larger incident. Administrative protocols deserve especially narrow access because they can provide powerful control over a host.\n\nEvaluate a connection as a specific flow: source identity or zone, destination, protocol and port, direction, authentication method, business owner, and required time window. Compare the observed flow with documented policy. A reachable service is not automatically vulnerable, but access that is undocumented, overly broad, or available from the wrong zone is a control weakness.\n\nStrong segmentation uses default-deny rules between zones and explicit exceptions for necessary traffic. Management access can be routed through hardened jump hosts or dedicated administration networks, protected with multifactor authentication, limited administrator roles, and session logging. Endpoint firewalls provide another boundary when network controls alone are not sufficient. Temporary vendor or maintenance rules should expire automatically and be reviewed after use.\n\nRemediation should break high-risk paths at reliable choke points. Remove unused routes, narrow source ranges, separate public services from internal data, apply least privilege to service identities, and monitor allowed traffic across the boundary. Validate both permitted and blocked cases after a rule change; a diagram or firewall entry is not proof that the intended policy works.\n\nSegmentation is effective when compromise of one zone does not automatically grant useful access to the next one, while legitimate services continue to function through small, observable, and justified paths.",
+  "links": [
+    "network-based assessment",
+    "internal does not automatically mean trusted",
+    "segmentation rules",
+    "internal movement risk",
+    "segmentation and least privilege"
+  ]
+}

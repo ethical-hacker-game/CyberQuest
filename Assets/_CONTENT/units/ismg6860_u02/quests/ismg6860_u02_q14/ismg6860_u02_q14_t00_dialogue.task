@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> You handed this to the authorized incident owner, which means the next thing they read has to be usable rather than impressive. Nobody can act on \"something looks wrong near the ticketing segment\": the conclusion has to say what ECHO-73 is, why it matters, and which boundary has to change. Write it any looser than that and the fix window closes with nothing fixed.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> Start with the device's verified role, then connect it to the boundary evidence."
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> You kept a private copy, and that is your call to make. What you cannot afford to guess at is how much that copy is actually worth, because the value sits in what ECHO-73 connects, not in how many ports answered. Nobody trades a finding they cannot describe in a single honest line.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Kade Mercer:</b> Start with what the device actually does and which systems it can reach."
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> A redacted advisory only holds up if the technical core underneath it is airtight. The first time a reporter asks what ECHO-73 really is, a vague answer makes us look like we are bluffing, and a careless one hands out a live route map. Getting that one line right is the whole difference between pressure and harm.",
+      "taskInstructions": "",
+      "taskQuestion": "",
+      "taskCompleteText": "<b>Lena Ortiz:</b> Start with an accurate technical description that remains safe to summarize publicly."
+    }
+  ],
+  "taskID": "ismg6860_u02_q14_t00_dialogue",
+  "parentQuestID": "ismg6860_u02_q14",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Dialogue"
+}

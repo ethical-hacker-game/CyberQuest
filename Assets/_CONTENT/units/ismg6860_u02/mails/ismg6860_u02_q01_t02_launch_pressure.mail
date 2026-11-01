@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u02_q01_t02_launch_pressure",
+  "parentTaskID": "ismg6860_u02_q01_t02",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Universal Persona Content",
+      "author": "Tomas Hale <tomas.hale@asterlinktransit.com>",
+      "subject": "Night-service launch risk",
+      "shortSummary": "Ticketing and station signage must stay online during the scan window.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Mira and {player},\n\nOperations is aligned with the scan window, but I need the practical risk stated clearly. Ticketing validation, station signage, and platform status boards must stay online during the launch. A bad scan that floods a controller is still an incident, even if the intent is defensive.\n\nIf ECHO-73 is harmless, I want that documented. If it can reach ticketing or signage, I need a recommendation before launch.\n\nTomas Hale\nStation Operations Manager",
+      "attachements": []
+    }
+  ]
+}

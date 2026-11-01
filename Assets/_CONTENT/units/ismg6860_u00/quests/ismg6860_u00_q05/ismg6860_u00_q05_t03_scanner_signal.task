@@ -1,0 +1,39 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Every informational header warning is the same priority.",
+        "The scanner proves an attacker already changed the site.",
+        "The finding should be ignored because the affected page is already public.",
+        "Directory listing exposes file names and should be fixed first."
+      ],
+      "correctAnswer": 3,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Michele:</b> A useful ticket separates signal from noise. Operations needs an interpretation that matches the report and points to a clear first fix.",
+      "taskInstructions": "",
+      "taskQuestion": "Which interpretation is the best signal?",
+      "taskCompleteText": "<b>Michele:</b> Correct. Directory listing is the first fix because it exposes file names and can be verified cleanly."
+    },
+    {
+      "answers": [
+        "Directory listing exposes file names and should be fixed first.",
+        "Every informational header warning is the same priority.",
+        "The scanner proves an attacker already changed the site.",
+        "The finding should be ignored because the affected page is already public."
+      ],
+      "correctAnswer": 0,
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Ana:</b> A useful warning separates signal from noise. The right interpretation explains the risk clearly without claiming more than the report shows.",
+      "taskInstructions": "",
+      "taskQuestion": "Which interpretation is the best signal?",
+      "taskCompleteText": "<b>Ana:</b> Correct. Directory listing is concrete, understandable, and safe to describe."
+    }
+  ],
+  "taskID": "ismg6860_u00_q05_t03_scanner_signal",
+  "parentQuestID": "ismg6860_u00_q05",
+  "articleID": "u00_scanner_results",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}

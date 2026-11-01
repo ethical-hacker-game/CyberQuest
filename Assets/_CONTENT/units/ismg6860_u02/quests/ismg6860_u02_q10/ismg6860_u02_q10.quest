@@ -1,0 +1,42 @@
+{
+  "questID": "ismg6860_u02_q10",
+  "cityIndex": 5000,
+  "questIconID": "u02_scan",
+  "decisionQuest": false,
+  "taskIDs": [
+    "ismg6860_u02_q10_t00_dialogue",
+    "ismg6860_u02_q10_t01",
+    "ismg6860_u02_q10_t04_waves",
+    "ismg6860_u02_q10_t02"
+  ],
+  "fanOffset": 0,
+  "overrideFanSpan": false,
+  "fanSpan": 0,
+  "universalPersonaContent": false,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "questName": "Quiet Targets",
+      "questDescription": "Interpret quiet UDP responses and preserve the uncertainty supported by the scan and packet capture.",
+      "questCompleteText": "<b>Dr. Mira Sen:</b> UDP/161 remains open|filtered, while ICMP type 3 code 3 supports UDP/123 as closed.",
+      "questCharacterID": "u02_mira_sen",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "questName": "Quiet Targets",
+      "questDescription": "Use quiet UDP responses to sharpen the map without turning silence into certainty.",
+      "questCompleteText": "<b>Kade Mercer:</b> UDP/161 stays unresolved as open|filtered, while UDP/123 has a port unreachable response.",
+      "questCharacterID": "u02_kade_mercer",
+      "appScenarioID": ""
+    },
+    {
+      "persona": "Hacktivist",
+      "questName": "Quiet Targets",
+      "questDescription": "Describe quiet UDP responses precisely enough for a defensible public record.",
+      "questCompleteText": "<b>Lena Ortiz:</b> The record preserves uncertainty for UDP/161 and the exact closed-port evidence for UDP/123.",
+      "questCharacterID": "u02_lena_ortiz",
+      "appScenarioID": ""
+    }
+  ]
+}

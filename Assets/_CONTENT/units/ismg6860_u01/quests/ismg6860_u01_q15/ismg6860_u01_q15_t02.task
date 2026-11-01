@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Contact page listing staff names, roles, and email addresses.",
+        "A config backup file containing API keys and credentials.",
+        "A public site map showing all office locations.",
+        "Duplicate marketing content, images, and banners."
+      ],
+      "correctAnswer": 1,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Kateryna Bondarenko:</b> The guided run does not show us a file inventory. Before reviewing any collected pages, tell me which hypothetical finding would demand the quickest security response.",
+      "taskInstructions": "Choose the file type that would expose usable secrets if it were publicly reachable. Do not assume the mirror actually found it.",
+      "taskQuestion": "Which potential mirror finding is the most urgent credential exposure?",
+      "taskCompleteText": "<b>Kateryna Bondarenko:</b> A configuration backup containing usable keys or credentials would be urgent. We would verify its source, preserve minimal evidence, remove public access, and rotate the affected secrets."
+    }
+  ],
+  "taskID": "ismg6860_u01_q15_t02",
+  "parentQuestID": "ismg6860_u01_q15",
+  "articleID": "u01_credential_exposure",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

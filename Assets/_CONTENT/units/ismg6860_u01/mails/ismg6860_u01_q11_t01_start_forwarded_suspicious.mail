@@ -1,0 +1,16 @@
+{
+  "mailID": "ismg6860_u01_q11_t01_start_forwarded_suspicious",
+  "parentTaskID": "ismg6860_u01_q11_t01",
+  "universalPersonaContent": true,
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "author": "Susie Zhang <susie.zhang@nortech.com> <i>(UWork Notifications <notifications@uw0rk.com>)</i>",
+      "subject": "FW: Action Required: Review Document Approvals",
+      "shortSummary": "A forwarded UWork-lookalike message from the deceptive domain uw0rk.com pressures Susie to open a document-approval link.",
+      "date": "0001-01-01T00:00:00",
+      "body": "Hi Susie,\r\n\r\nYou have pending document approvals that require your attention. Please review the items through your secure UWork dashboard.\r\n\r\n<u><b>View Approvals</b></u>\r\n\r\nThank you,\r\n\r\nUWork Team\r\n\r\n<i>This message was sent to Susie Zhang at NorthTec. If you did not request this notification, please contact your IT administrator.</i>",
+      "attachements": []
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "articleID": "u03_safe_reporting",
+  "videoURL": null,
+  "title": "Safe Reporting",
+  "content": "Safe reporting turns a suspicious interaction into useful defensive evidence without increasing the risk to the reporter or other people. Report early, even when you are uncertain. Several small reports may reveal a coordinated campaign that no single person can see.\n\n<b>Preserve what you received</b>\n\nKeep the original message, voicemail, invitation, account name, URL, file name, or access note when policy allows. Record the time, channel, claimed identity, requested action, and what happened before and after the contact. Screenshots are useful, but original messages and headers may contain details that a screenshot omits. Do not continue the conversation, test credentials, install a file, or visit additional pages merely to collect more evidence.\n\nIf the event involves a door, badge, visitor, or device near a facility, note the location and notify physical security as well as the cyber incident channel. Linked digital and physical activity should be coordinated through the appropriate incident lead so teams can act on the same facts. Immediate danger or an active unauthorized entry takes priority over documentation.\n\n<b>Use the approved route</b>\n\nSend the report through the organization's known reporting process, not through contact information supplied by the suspicious sender. Include observable indicators rather than guesses about who is responsible. A concise report states what was seen, where and when it occurred, what action was requested, whether anyone interacted with it, and where the original evidence is stored.\n\n<b>Warn without causing more harm</b>\n\nA useful warning gives people specific indicators and a safe action to take. Remove credentials, personal details, internal access routes, and unnecessary information about targeted individuals before wider sharing. Coordinate public disclosure so it protects potential targets without publishing a ready-made attack map.\n\nReporting is not an admission of failure. Thank the reporter, protect their identity when appropriate, and avoid blaming anyone who clicked, replied, or held a door. A learning-focused response produces faster reports and stronger defenses.",
+  "links": [
+    "preserved, reported",
+    "safe way to report",
+    "incident command and physical security",
+    "redacted evidence"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "variants": [
+    {
+      "answers": [
+        "Publish an unverified vulnerability claim before collecting evidence.",
+        "Try staff credentials to discover which accounts exist.",
+        "Review public search results and repositories within the program scope.",
+        "Probe unlisted API endpoints before reading the bounty rules."
+      ],
+      "correctAnswer": 2,
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Samira:</b> Neon Vault has opened a bug-bounty program. Start with its published scope and information already available to the public before considering any direct tests.",
+      "taskInstructions": "Choose an initial step that stays within the published scope and avoids interacting with Neon Vault accounts or services.",
+      "taskQuestion": "What is the best first reconnaissance step?",
+      "taskCompleteText": "<b>Samira:</b> Public search results and repositories are a reasonable starting point. Record any relevant source and timestamp; this choice has not produced a Neon Vault finding yet."
+    }
+  ],
+  "taskID": "ismg6860_u01_q18_t01",
+  "parentQuestID": "ismg6860_u01_q18",
+  "articleID": "u01_ethical_reconnaissance",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": true,
+  "TaskType": "SingleChoice"
+}

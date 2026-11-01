@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GateSentry: FW-2871 Security Console</title>
+  <script src="../cq-bridge.js"></script>
+  <style>
+    :root{--ink:#1a2530;--muted:#66737f;--line:#e2e7ec;--bg:#f2f4f7;--rail:#101c2b;
+      --accent:#e08a1e;--crit:#8a1226;--high:#d63b2f;--med:#e08a00;--low:#3f9142;--ok:#2fa36b}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);font-size:14px}
+    a{text-decoration:none}
+    /* top bar */
+    .topbar{display:flex;align-items:center;gap:20px;background:#101c2b;color:#fff;padding:0 22px;height:52px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.4px;font-size:17px}
+    .logo .mark{width:22px;height:22px;border-radius:5px;background:linear-gradient(135deg,#f0a03a,#c9701a);box-shadow:0 0 0 3px rgba(224,138,30,.22)}
+    .topbar nav{display:flex;gap:2px;height:100%}
+    .topbar nav a{color:#cdd8e4;padding:0 15px;display:flex;align-items:center;font-weight:600;border-bottom:3px solid transparent}
+    .topbar nav a.active{color:#fff;border-bottom-color:var(--accent)}
+    .topbar .spacer{flex:1}
+    .topbar .dev{font-size:13px;color:#9fb0c2}
+    /* shell */
+    .shell{display:flex;min-height:calc(100vh - 52px)}
+    .side{width:210px;background:#fff;border-right:1px solid var(--line);padding:16px 0}
+    .side h4{margin:0;padding:8px 20px;font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:var(--muted)}
+    .side a{display:flex;justify-content:space-between;align-items:center;padding:9px 20px;color:#2a3947;font-weight:600}
+    .side a.active{background:#fdf3e5;color:#a25e10;border-left:3px solid var(--accent);padding-left:17px}
+    .side a .count{font-size:12px;color:#b23b2f;font-weight:700}
+    .main{flex:1;padding:22px 28px}
+    .crumb{color:var(--muted);font-size:12.5px;margin-bottom:4px}
+    .page-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+    .page-h h1{margin:0;font-size:23px;font-weight:600}
+    .pill{font-size:12px;font-weight:700;color:#fff;background:var(--high);border-radius:20px;padding:4px 12px}
+    .cards{display:flex;gap:14px;margin-bottom:18px}
+    .card{flex:1;background:#fff;border:1px solid var(--line);border-radius:7px;padding:14px 16px}
+    .card .k{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+    .card .v{font-size:26px;font-weight:700;margin-top:5px}
+    .card .s{font-size:12px;color:var(--muted);margin-top:2px}
+    /* table */
+    .panel{background:#fff;border:1px solid var(--line);border-radius:7px;overflow:hidden;margin-bottom:18px}
+    .panel .ph{padding:12px 16px;font-weight:700;border-bottom:1px solid var(--line);font-size:13.5px;display:flex;justify-content:space-between;align-items:center}
+    .panel .ph .sub{font-weight:400;color:var(--muted);font-size:12.5px}
+    table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;padding:11px 16px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:middle}
+    th{background:#fafbfc;color:#56646f;font-weight:600;font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+    tr:last-child td{border-bottom:none}
+    code{font-family:Consolas,"Courier New",monospace;background:#f4f6f8;border:1px solid #e5e9ee;border-radius:3px;padding:1px 5px;font-size:12.5px;color:#274156}
+    .sev{display:inline-flex;align-items:center;gap:7px;font-weight:700}
+    .sev .d{width:9px;height:9px;border-radius:50%}
+    .sev.high{color:var(--high)} .sev.high .d{background:var(--high)}
+    .sev.med{color:var(--med)} .sev.med .d{background:var(--med)}
+    .sev.info{color:#5b6675} .sev.info .d{background:#9aa4b1}
+    .flow{font-family:Consolas,"Courier New",monospace;font-size:12.5px;color:#274156}
+    .arrow{color:var(--high);font-weight:700}
+    /* coverage gap callout */
+    .gap{display:flex;gap:14px}
+    .gap .col{flex:1;background:#fff;border:1px solid var(--line);border-radius:7px;padding:14px 16px}
+    .gap .col.warn{border-color:#e6cf7a;background:#fffaf0}
+    .gap .col h5{margin:0 0 8px;font-size:12.5px}
+    .cov{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px dashed #eef1f4;font-size:13px}
+    .cov:last-child{border-bottom:none}
+    .cov .tag{font-size:11px;font-weight:700;border-radius:3px;padding:2px 8px}
+    .cov .yes{background:#e7f6ee;color:#217a4b}
+    .cov .no{background:#fdeaea;color:#b23530}
+    .rec{background:#fffaf0;border:1px solid #e6cf7a;border-left:4px solid var(--accent);border-radius:6px;padding:12px 15px;color:#6a5210;line-height:1.55;font-size:13px}
+    .foot{color:var(--muted);font-size:12px;margin-top:20px;border-top:1px solid var(--line);padding-top:12px}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo"><span class="mark"></span>GateSentry</div>
+    <nav>
+      <a href="../10.42.18.1;8443/">Dashboard</a>
+      <a class="active" href="../10.42.18.1;8443/">Threats</a>
+      <a href="../10.42.18.1;8443/">Policies</a>
+      <a href="../10.42.18.1;8443/">Logs</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="dev">FW-2871 &nbsp;|&nbsp; soc-viewer</div>
+  </div>
+
+  <div class="shell">
+    <aside class="side">
+      <h4>Monitoring</h4>
+      <a href="../10.42.18.1;8443/">Overview</a>
+      <a class="active" href="../10.42.18.1;8443/">IDS / IPS Alerts <span class="count">3</span></a>
+      <a href="../10.42.18.1;8443/">Sensors</a>
+      <a href="../10.42.18.1;8443/">Interfaces</a>
+      <h4>Configuration</h4>
+      <a href="../10.42.18.1;8443/">Zones &amp; Segments</a>
+      <a href="../10.42.18.1;8443/">NAT / Routing</a>
+    </aside>
+
+    <main class="main">
+      <div class="crumb">Threats &rsaquo; IDS / IPS Alerts &rsaquo; FW-2871 (DMZ edge)</div>
+      <div class="page-h">
+        <h1>IDS / IPS Alerts</h1>
+        <span class="pill">1 correlation flagged</span>
+      </div>
+
+      <div class="cards">
+        <div class="card"><div class="k">Sensor</div><div class="v" style="font-size:18px;padding-top:6px">FW-2871</div><div class="s">DMZ edge firewall</div></div>
+        <div class="card"><div class="k">Alerts (24h)</div><div class="v">3</div><div class="s">2 scan-probe, 1 policy</div></div>
+        <div class="card"><div class="k">Internal sensors</div><div class="v" style="color:var(--high)">0</div><div class="s">ticketing boundary uncovered</div></div>
+      </div>
+
+      <div class="panel">
+        <div class="ph">Recent alerts <span class="sub">interface: dmz0 &middot; last 24h</span></div>
+        <table>
+          <thead>
+            <tr><th style="width:120px">Time</th><th>Signature</th><th>Source &rarr; Destination</th><th style="width:120px">Severity</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>22:07:44</td>
+              <td>Portscan: multiple SYN, no session</td>
+              <td class="flow">10.42.18.10 <span class="arrow">&rarr;</span> 10.42.18.73</td>
+              <td><span class="sev med"><span class="d"></span>Medium</span></td>
+            </tr>
+            <tr>
+              <td>22:08:12</td>
+              <td>Repeated SYN probe to host</td>
+              <td class="flow">10.42.18.10 <span class="arrow">&rarr;</span> 10.42.18.73:8080</td>
+              <td><span class="sev med"><span class="d"></span>Medium</span></td>
+            </tr>
+            <tr>
+              <td>: </td>
+              <td>ECHO-73 &rarr; ticketing session (seen by capture, <b>not</b> by any sensor)</td>
+              <td class="flow">10.42.18.73 <span class="arrow">&rarr;</span> 10.42.22.41</td>
+              <td><span class="sev info"><span class="d"></span>No alert</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="gap">
+        <div class="col">
+          <h5>Sensor coverage</h5>
+          <div class="cov"><span class="tag yes">covered</span> DMZ edge &mdash; inbound probes to <code>10.42.18.73</code></div>
+          <div class="cov"><span class="tag yes">covered</span> DMZ &harr; internet on <code>FW-2871</code></div>
+          <div class="cov"><span class="tag no">blind</span> vendor-maintenance &rarr; ticketing &nbsp;<code>10.42.18.73 &rarr; 10.42.22.41</code></div>
+          <div class="cov"><span class="tag no">blind</span> internal ticketing boundary (VLAN 22)</div>
+        </div>
+        <div class="col warn">
+          <h5>Why the scan looks quiet inside</h5>
+          <p style="margin:0;line-height:1.6;color:#4a4436">The edge firewall logged the discovery probes, but there is
+          <b>no internal sensor</b> between vendor-maintenance and ticketing. The ECHO-73 &rarr; 10.42.22.41 session that the
+          packet capture proves never generated an alert here, because nothing watches that boundary.</p>
+        </div>
+      </div>
+
+      <div class="rec">
+        <b>Recommendation.</b> Add internal visibility and segmentation at the ticketing boundary (VLAN 22): place an
+        IDS sensor between vendor-maintenance and ticketing, and restrict the ECHO-73 diagnostics path so it cannot
+        reach <code>10.42.22.41</code>. Edge alerting alone cannot see an east-west session that never crosses FW-2871.
+      </div>
+
+      <div class="foot">GateSentry NGFW &middot; FW-2871 &middot; DMZ edge &middot; console 10.42.18.1:8443 &middot; read-only SOC view</div>
+    </main>
+  </div>
+</body>
+</html>

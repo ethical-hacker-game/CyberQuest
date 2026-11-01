@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Dr. Mira Sen:</b> The IPv4 discovery pass could not show whether ECHO-73 also responds over IPv6. Check the approved evidence sources for a <b>dual-stack</b> observation, then record only the address they support.",
+      "taskInstructions": "Run <b>nmap -6 -sn fd42:18::/64</b> in the terminal, then confirm the responding host with <b>tcpdump ip6</b>.",
+      "taskQuestion": "What IPv6 address maps to ECHO-73?",
+      "taskCompleteText": "<b>Dr. Mira Sen:</b> fd42:18::73 is the IPv6 address supported by both discovery and packet evidence.",
+      "correctAnswers": [
+        "fd42:18::73"
+      ]
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Kade Mercer:</b> An IPv4 result says nothing about what the second address family will reveal. Check whether ECHO-73 is <b>dual-stack</b>, and keep the conclusion limited to the address the evidence actually identifies.",
+      "taskInstructions": "Run <b>nmap -6 -sn fd42:18::/64</b> in the terminal, then confirm the responding host with <b>tcpdump ip6</b>.",
+      "taskQuestion": "What IPv6 address maps to ECHO-73?",
+      "taskCompleteText": "<b>Kade Mercer:</b> fd42:18::73 is now tied to ECHO-73; reachability beyond that remains untested.",
+      "correctAnswers": [
+        "fd42:18::73"
+      ]
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Lena Ortiz:</b> An inventory that records only IPv4 can miss a <b>dual-stack</b> asset. Use the discovery result and packet capture to identify ECHO-73's IPv6 address without claiming more than they prove.",
+      "taskInstructions": "Run <b>nmap -6 -sn fd42:18::/64</b> in the terminal, then confirm the responding host with <b>tcpdump ip6</b>.",
+      "taskQuestion": "What IPv6 address maps to ECHO-73?",
+      "taskCompleteText": "<b>Lena Ortiz:</b> fd42:18::73 is documented as ECHO-73's responding IPv6 address.",
+      "correctAnswers": [
+        "fd42:18::73"
+      ]
+    }
+  ],
+  "taskID": "ismg6860_u02_q12_t01",
+  "parentQuestID": "ismg6860_u02_q12",
+  "articleID": "u02_dual_stack_visibility",
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "Input"
+}

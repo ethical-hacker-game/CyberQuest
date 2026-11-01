@@ -1,0 +1,12 @@
+{
+  "articleID": "u00_dns_basics",
+  "videoURL": null,
+  "title": "Reading a DNS Lookup",
+  "content": "The <b>Domain Name System (DNS)</b> translates names used by people and applications into records used by networks. A lookup asks a DNS resolver for records associated with a name. An A record contains an IPv4 address, an AAAA record contains an IPv6 address, and other record types describe mail routing, aliases, name servers, and additional services.\n\nTools such as <b>dig</b> organize a response into sections. The question states what was requested. The answer section contains records returned for that request. A record normally includes the name, a time-to-live value, its record type, and the returned address. The time-to-live tells caches how long they may reuse the result before asking again.\n\nTreat a DNS response as a time-bound observation. Records can change, cached answers can remain visible for a while, and large services may return several addresses because of load balancing or content delivery networks. Record the queried name, record type, resolver when relevant, timestamp, and exact result if the lookup will become evidence.\n\nA DNS answer does <b>not</b> prove that the host is compromised, that the named organization owns every part of the infrastructure, or that testing the returned address is authorized. It also does not show which services are running unless separate, permitted evidence establishes that fact.\n\nDNS is valuable because it helps analysts connect names and network locations. The safe conclusion should stay narrow: report what the name resolved to, when it was observed, and what additional authorized validation would be needed before making a broader claim.",
+  "links": [
+    "DNS answer",
+    "IPv4 address",
+    "answer section"
+  ]
+}
+

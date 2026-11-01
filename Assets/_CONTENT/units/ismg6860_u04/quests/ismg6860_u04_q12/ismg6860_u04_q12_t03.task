@@ -1,0 +1,53 @@
+{
+  "variants": [
+    {
+      "persona": "Whitehat Hacker",
+      "taskMessage": "<b>Mara Voss:</b> We still need evidence, but the plan must protect availability during month-end close.",
+      "taskInstructions": "Use the staged approach in <link=\"u04_active_passive_assessment\"><u>active and passive assessment</u></link>.",
+      "taskQuestion": "Which assessment plan best fits the fragile records service?",
+      "taskCompleteText": "<b>Mara Voss:</b> Correct. Start with existing evidence, then use owner-approved low-impact checks with monitoring and stop conditions.",
+      "answers": [
+        "Review existing logs and configuration first, then schedule low-impact authenticated checks with owner approval, monitoring, and stop conditions.",
+        "Run a high-intensity scan during month-end close so failures are easier to observe.",
+        "Exclude the service permanently and report that no assessment is possible.",
+        "Run low-impact checks immediately without notifying the owner because they are unlikely to cause disruption."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Blackhat Hacker",
+      "taskMessage": "<b>Felix Rane:</b> A staged plan can gather useful evidence without knocking over the service or drawing an incident response.",
+      "taskInstructions": "Use the staged approach in <link=\"u04_active_passive_assessment\"><u>active and passive assessment</u></link>.",
+      "taskQuestion": "Which assessment plan best fits the fragile records service?",
+      "taskCompleteText": "<b>Felix Rane:</b> Correct. Passive evidence and controlled low-impact checks preserve access while answering the assessment question.",
+      "answers": [
+        "Review existing logs and configuration first, then schedule low-impact authenticated checks with owner approval, monitoring, and stop conditions.",
+        "Run a high-intensity scan during month-end close so failures are easier to observe.",
+        "Exclude the service permanently and report that no assessment is possible.",
+        "Run low-impact checks immediately without notifying the owner because they are unlikely to cause disruption."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "persona": "Hacktivist",
+      "taskMessage": "<b>Imani Vale:</b> Avoid both unsafe testing and permanent exclusion. Use a staged plan that produces evidence while protecting service users.",
+      "taskInstructions": "Use the staged approach in <link=\"u04_active_passive_assessment\"><u>active and passive assessment</u></link>.",
+      "taskQuestion": "Which assessment plan best fits the fragile records service?",
+      "taskCompleteText": "<b>Imani Vale:</b> Correct. The plan gathers evidence while protecting residents from an avoidable outage.",
+      "answers": [
+        "Review existing logs and configuration first, then schedule low-impact authenticated checks with owner approval, monitoring, and stop conditions.",
+        "Run a high-intensity scan during month-end close so failures are easier to observe.",
+        "Exclude the service permanently and report that no assessment is possible.",
+        "Run low-impact checks immediately without notifying the owner because they are unlikely to cause disruption."
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "taskID": "ismg6860_u04_q12_t03",
+  "parentQuestID": "ismg6860_u04_q12",
+  "articleID": null,
+  "mailsOnStart": [],
+  "mailsOnEnd": [],
+  "universalPersonaContent": false,
+  "TaskType": "SingleChoice"
+}
