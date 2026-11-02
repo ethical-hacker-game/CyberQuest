@@ -2,7 +2,7 @@
 
 CyberQuest is a Unity cybersecurity learning game with six educational units. Scenarios combine quests, persona choices, mail, a simulated terminal and browser, application screens, Cyberpedia articles, map locations and minigames. A retained content editor supports local educational-content authoring.
 
-This source preparation requires separately obtained Unity assets and locally restored resources. It is not a ready-to-run clean checkout. Compilation, builds, gameplay and a clean dependency installation have not been verified. The project-wide code/content license has not yet been selected; third-party notices do not grant a license to the rest of the project.
+This source preparation requires separately obtained Unity assets and locally restored resources. It is not a ready-to-run clean checkout. Compilation, builds, gameplay and a clean dependency installation have not been verified.
 
 ## Requirements and setup
 
@@ -46,10 +46,14 @@ Build outputs resolve relative to the project under `Builds/<profile>`. The buil
 
 The standalone browser uses Unity Web Browser/CEF and a unit-local HTTP server bound to loopback. Displayed websites, accounts, credentials and command responses are fictional training evidence; the terminal and browser are simulations. Preserve the local web payloads and browser/RPC settings. This preparation does not include the former hosted WebGL deployment, runtime AI integrations, surveys or Steam integration, and needs no associated API keys.
 
+## Minigame credits
+
+The first three minigames added to CyberQuest — **Connections**, **Waves** and **Network** — are based on code shared by **Lukasz Kusyk**. These minigames originated in his independent projects and were adapted for CyberQuest.
+
 ## Content, media and limitations
 
-Educational app imagery is retained for the scenarios, including screenshots and simulated/recreated application screens. Character/persona/unit/minigame/logo artwork includes AI-generated media. Fonts, commercial UI/maps/icons/music and their derivatives keep their own dependency terms; local installation does not make them part of a future project-wide license.
+Educational app imagery is retained for the scenarios, including screenshots and simulated/recreated application screens. Character/persona/unit/minigame/logo artwork includes AI-generated media. Fonts, commercial UI/maps/icons/music and their derivatives retain their applicable publisher terms and attribution requirements.
 
 Current persona, learning points and article-reading progress use the retained game state. Unsupported reputation, ethics, affiliation, title and other fixed progress statistics are labeled `Not tracked`.
 
-Before distributing any build, retain the bundled notices and collect the actual installed dependency/native-engine notices as described in [Third-party notices](THIRD_PARTY_NOTICES.md). Project licensing and distribution review remain pending. Runtime behavior, platform support, generated map appearance and media readability in game remain unverified.
+Before distributing any build, retain the bundled notices and collect the actual installed dependency/native-engine notices as described in [Third-party notices](THIRD_PARTY_NOTICES.md). Runtime behavior, platform support, generated map appearance and media readability in game remain unverified.

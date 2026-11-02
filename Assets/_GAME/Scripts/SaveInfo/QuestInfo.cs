@@ -26,7 +26,6 @@ public class QuestInfo
 
     public QuestInfo(string questID, float questTimer, int hintStage, bool timerStarted, bool isDone, List<TaskInfo> tasks)
     {
-        UnityEngine.Debug.LogError("isDone jednak potrzebne????");
         this.questID = questID ?? throw new ArgumentNullException(nameof(questID));
         this.questTimer = questTimer;
         this.hintStage = hintStage;

@@ -1,6 +1,6 @@
 # Third-party notices and distribution
 
-These notices cover identified dependencies and do not select a project-wide code/content license. Commercial assets and derived fonts/maps/UI/icons/music are local-install resources; their inclusion in a local working copy does not permit publishing their source files. Preserve the applicable publisher terms when distributing a player build.
+These notices cover identified assets and software dependencies. Commercial assets and derived fonts/maps/UI/icons/music are local-install resources; their inclusion in a local working copy does not permit publishing their source files. Preserve the applicable publisher terms when distributing a player build.
 
 ## Bundled material
 
@@ -36,6 +36,3 @@ If restoring the soundtrack, credit **Dark Fantasy Studio and Nicolas Jeudy** fo
 
 Registry notice collection includes packages published under `com.unity.*`, such as the Newtonsoft.Json wrapper, as well as the browser/native transitives. A Unity package prefix does not replace the licenses of its third-party components.
 
-## Project content
-
-Scenario text/data, first-party code, educational application imagery and AI-generated artwork are not relicensed by the dependency licenses above. Brand names and imagery used in educational simulations may have separate rights. Project-wide licensing and attribution scope remain pending before release. No third-party terms are replaced by a claim of educational purpose.
